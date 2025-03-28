@@ -1,0 +1,1 @@
+El módulo `Unicode` proporciona funcionalidad esencial para gestionar caracteres y cadenas Unicode. Incluye validación, determinación de categorías, normalización, transformación de mayúsculas y minúsculas, y segmentación de grafemas, lo que permite un manejo efectivo de datos Unicode.

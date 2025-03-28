@@ -1,0 +1,1 @@
+Le module `Unicode` fournit des fonctionnalités essentielles pour la gestion des caractères et des chaînes Unicode. Il inclut la validation, la détermination de la catégorie, la normalisation, la transformation de cas et la segmentation des graphèmes, permettant une gestion efficace des données Unicode.

@@ -1,0 +1,1 @@
+Ein Logger steuert, wie Protokolleinträge gefiltert und weitergeleitet werden. Wenn ein Protokolleintrag generiert wird, ist der Logger der erste Teil des benutzerkonfigurierbaren Codes, der den Eintrag inspiziert und entscheidet, was damit geschehen soll.

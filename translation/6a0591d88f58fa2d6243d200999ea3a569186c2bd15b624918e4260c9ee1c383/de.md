@@ -1,0 +1,1 @@
+Hilfsprogramme zum Erfassen, Filtern und Präsentieren von Streams von Protokollereignissen. Normalerweise müssen Sie `Logging` nicht importieren, um Protokollereignisse zu erstellen; dafür sind die standardmäßigen Protokollierungs-Makros wie `@info` bereits von `Base` exportiert und standardmäßig verfügbar.

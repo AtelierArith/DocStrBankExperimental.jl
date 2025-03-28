@@ -1,0 +1,7 @@
+```
+ca_roots() :: Union{Nothing, String}
+```
+
+La fonction `ca_roots()` indique à l'appelant où, le cas échéant, trouver un fichier ou un répertoire de racines d'autorité de certification encodées en PEM. Par défaut, sur des systèmes comme Windows et macOS où les moteurs TLS intégrés savent comment vérifier les hôtes en utilisant le mécanisme de vérification de certificat intégré du système, cette fonction renverra `nothing`. Sur les systèmes UNIX classiques (à l'exception de macOS), les certificats racines sont généralement stockés dans un fichier dans `/etc` : les emplacements courants pour le système UNIX actuel seront recherchés et si l'un de ces chemins existe, il sera renvoyé ; si aucun de ces chemins de certificats racines typiques n'existe, alors le chemin vers l'ensemble des certificats racines qui sont fournis avec Julia est renvoyé.
+
+La valeur par défaut renvoyée par `ca_roots()` peut être remplacée en définissant les variables d'environnement `JULIA_SSL_CA_ROOTS_PATH`, `SSL_CERT_DIR` ou `SSL_CERT_FILE`, auquel cas cette fonction renverra toujours la valeur de la première de ces variables qui est définie (que le chemin existe ou non). Si `JULIA_SSL_CA_ROOTS_PATH` est défini sur une chaîne vide, alors les autres variables sont ignorées (comme si elles n'étaient pas définies) ; si les autres variables sont définies sur une chaîne vide, elles se comportent comme si elles n'étaient pas définies.

@@ -1,0 +1,1 @@
+Le `GenericArray` peut être utilisé pour tester les API de tableau génériques qui programment l'interface `AbstractArray`, afin de s'assurer que les fonctions peuvent fonctionner avec des types de tableau autres que le type `Array` standard.

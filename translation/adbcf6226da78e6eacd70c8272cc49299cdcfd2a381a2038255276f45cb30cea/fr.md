@@ -1,0 +1,1 @@
+Le `GenericString` peut être utilisé pour tester les API de chaînes génériques qui programment l'interface `AbstractString`, afin de s'assurer que les fonctions peuvent fonctionner avec des types de chaînes autres que le type standard `String`.

@@ -1,0 +1,1 @@
+Utilitaires pour capturer, filtrer et présenter des flux d'événements de journal. Normalement, vous n'avez pas besoin d'importer `Logging` pour créer des événements de journal ; pour cela, les macros de journalisation standard telles que `@info` sont déjà exportées par `Base` et disponibles par défaut.

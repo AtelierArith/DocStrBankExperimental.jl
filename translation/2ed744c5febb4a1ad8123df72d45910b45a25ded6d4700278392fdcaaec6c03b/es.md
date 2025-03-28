@@ -1,0 +1,1 @@
+El `GenericArray` se puede utilizar para probar las API de arreglos genéricos que programan a la interfaz `AbstractArray`, con el fin de asegurar que las funciones puedan trabajar con tipos de arreglos además del tipo de arreglo estándar `Array`.

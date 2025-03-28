@@ -1,0 +1,5 @@
+```
+geevx!(balanc, jobvl, jobvr, sense, A) -> (A, w, VL, VR, ilo, ihi, scale, abnrm, rconde, rcondv)
+```
+
+Trouve le système d'eigen de `A` avec équilibrage de matrice. Si `jobvl = N`, les vecteurs propres à gauche de `A` ne sont pas calculés. Si `jobvr = N`, les vecteurs propres à droite de `A` ne sont pas calculés. Si `jobvl = V` ou `jobvr = V`, les vecteurs propres correspondants sont calculés. Si `balanc = N`, aucun équilibrage n'est effectué. Si `balanc = P`, `A` est permuté mais pas mis à l'échelle. Si `balanc = S`, `A` est mis à l'échelle mais pas permuté. Si `balanc = B`, `A` est permuté et mis à l'échelle. Si `sense = N`, aucun nombre de condition réciproque n'est calculé. Si `sense = E`, des nombres de condition réciproque sont calculés uniquement pour les valeurs propres. Si `sense = V`, des nombres de condition réciproque sont calculés uniquement pour les vecteurs propres à droite. Si `sense = B`, des nombres de condition réciproque sont calculés pour les vecteurs propres à droite et les vecteurs propres. Si `sense = E,B`, les vecteurs propres à droite et à gauche doivent être calculés.

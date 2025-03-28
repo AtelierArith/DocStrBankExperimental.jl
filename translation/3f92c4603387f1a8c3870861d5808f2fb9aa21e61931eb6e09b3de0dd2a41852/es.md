@@ -1,0 +1,1 @@
+Un registrador controla cómo se filtran y despachan los registros de log. Cuando se genera un registro de log, el registrador es la primera pieza de código configurable por el usuario que inspecciona el registro y decide qué hacer con él.

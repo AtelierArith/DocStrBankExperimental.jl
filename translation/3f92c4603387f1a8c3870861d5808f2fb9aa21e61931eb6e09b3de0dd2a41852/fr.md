@@ -1,0 +1,1 @@
+Un logger contrôle comment les enregistrements de log sont filtrés et dispatchés. Lorsqu'un enregistrement de log est généré, le logger est le premier morceau de code configurable par l'utilisateur qui inspecte l'enregistrement et décide quoi en faire.

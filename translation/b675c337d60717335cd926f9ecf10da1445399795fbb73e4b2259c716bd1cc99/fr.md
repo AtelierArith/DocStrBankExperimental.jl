@@ -1,0 +1,1 @@
+Le `GenericSet` peut être utilisé pour tester les API de ensembles génériques qui programment l'interface `AbstractSet`, afin de s'assurer que les fonctions peuvent fonctionner avec des types d'ensembles autres que les types standard `Set` et `BitSet`.
