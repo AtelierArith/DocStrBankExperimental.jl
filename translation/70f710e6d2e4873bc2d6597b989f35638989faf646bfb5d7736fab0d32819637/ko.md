@@ -1,0 +1,5 @@
+```
+TransposeFactorization
+```
+
+기본 `Factorization` 객체의 전치에 대한 지연 래퍼 유형입니다. 일반적으로 `TransposeFactorization` 생성자는 직접 호출하지 않아야 하며, 대신 [`transpose(:: Factorization)`](@ref)를 사용하십시오.

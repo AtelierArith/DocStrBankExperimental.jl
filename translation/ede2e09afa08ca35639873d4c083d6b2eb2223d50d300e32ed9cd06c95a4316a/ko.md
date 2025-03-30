@@ -1,0 +1,1 @@
+`Broadcast.ArrayStyle{MyArrayType}()`는 객체가 브로드캐스팅을 위해 배열처럼 동작함을 나타내는 [`BroadcastStyle`](@ref)입니다. 이는 특정 `AbstractArray` 컨테이너 유형에 대한 [`Broadcast.AbstractArrayStyle`](@ref)를 구성하는 간단한 방법을 제공합니다. 이렇게 생성된 브로드캐스트 스타일은 차원 정보를 잃게 되며, 만약 차원 정보를 유지하는 것이 당신의 유형에 중요하다면, 자신만의 사용자 정의 [`Broadcast.AbstractArrayStyle`](@ref)를 생성해야 합니다.

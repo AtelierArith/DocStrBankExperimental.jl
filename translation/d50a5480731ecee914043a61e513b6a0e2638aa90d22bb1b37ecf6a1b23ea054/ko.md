@@ -1,0 +1,1 @@
+`Broadcast.DefaultArrayStyle{N}()`는 브로드캐스팅을 위해 객체가 `N`차원 배열처럼 동작함을 나타내는 [`BroadcastStyle`](@ref)입니다. 구체적으로, `DefaultArrayStyle`은 특수화된 스타일을 정의하지 않은 모든 `AbstractArray` 유형에 사용되며, 다른 `broadcast` 인수에서 오버라이드가 없을 경우 결과 출력 유형은 `Array`입니다. `broadcast`에 여러 입력이 있을 때, `DefaultArrayStyle`은 다른 모든 [`Broadcast.ArrayStyle`](@ref)에게 "패배"합니다.

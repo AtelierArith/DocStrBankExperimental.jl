@@ -1,0 +1,7 @@
+# FreeBSD
+
+Clang, FreeBSD 11.0-RELEASE ve üzerindeki varsayılan derleyicidir. Kalan derleme araçları Ports Collection'dan mevcuttur ve `pkg install git gcc gmake cmake pkgconf` komutunu kullanarak kurulabilir. Julia'yı derlemek için, basitçe `gmake` komutunu çalıştırın. (Not: FreeBSD'de `make` yerine `gmake` kullanılmalıdır, çünkü `make` FreeBSD'de uyumsuz BSD Make'e karşılık gelir, GNU Make'e değil.)
+
+Yukarıda belirtildiği gibi, `USE_SYSTEM_*` bayraklarının FreeBSD'de dikkatli bir şekilde kullanılması önemlidir. Bunun nedeni, birçok sistem kütüphanesinin ve hatta Ports Collection'dan gelen kütüphanelerin, sistemin `libgcc_s.so.1` kütüphanesine veya sistem `libgcc_s` ile bağlantılı başka bir kütüphaneye bağlı olmasıdır. Bu kütüphane, GCC sürümünü 4.6 olarak beyan eder ki bu, Julia'yı derlemek için çok eski bir sürümdür ve bağlantı sırasında diğer kütüphanelerle çelişir. Bu nedenle, Julia'nın tüm bağımlılıklarını derlemesine izin vermek şiddetle önerilir. Eğer `USE_SYSTEM_*` bayraklarını kullanmaya karar verirseniz, `/usr/local`'ın varsayılan olarak derleyici yolunda olmadığını unutmayın, bu nedenle `Make.user` dosyanıza `LDFLAGS=-L/usr/local/lib` ve `CPPFLAGS=-I/usr/local/include` eklemeniz gerekebilir, ancak bunu yapmak diğer bağımlılıklarla çelişebilir.
+
+x86 mimarısının, derleyici çalışma zamanı kütüphanesi desteğinin eksikliği nedeniyle çoklu iş parçacığını desteklemediğini unutmayın, bu nedenle 32-bit bir sistemdeyseniz `Make.user` dosyanızda `JULIA_THREADS=0` ayarlamanız gerekebilir.

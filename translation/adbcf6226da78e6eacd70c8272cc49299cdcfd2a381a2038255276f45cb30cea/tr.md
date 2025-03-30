@@ -1,0 +1,1 @@
+`GenericString`, `AbstractString` arayüzüne program yapan genel dize API'lerini test etmek için kullanılabilir, böylece işlevlerin standart `String` türü dışında dize türleriyle çalışabilmesi sağlanır.

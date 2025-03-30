@@ -1,0 +1,22 @@
+```
+diag(M, k::Integer=0)
+```
+
+Bir matrisin `k`'nci diyagonalını, bir vektör olarak.
+
+Ayrıca bkz. [`diagm`](@ref), [`diagind`](@ref), [`Diagonal`](@ref), [`isdiag`](@ref).
+
+# Örnekler
+
+```jldoctest
+julia> A = [1 2 3; 4 5 6; 7 8 9]
+3×3 Matrix{Int64}:
+ 1  2  3
+ 4  5  6
+ 7  8  9
+
+julia> diag(A,1)
+2-element Vector{Int64}:
+ 2
+ 6
+```

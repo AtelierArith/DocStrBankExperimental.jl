@@ -1,0 +1,1 @@
+`Broadcast.ArrayStyle{MyArrayType}()` 是一个 [`BroadcastStyle`](@ref)，表示一个对象在广播时表现得像一个数组。它提供了一种简单的方法来为特定的 `AbstractArray` 容器类型构造 [`Broadcast.AbstractArrayStyle`](@ref)。以这种方式创建的广播样式会失去维度信息；如果对你的类型保持维度信息很重要，你应该创建自己的自定义 [`Broadcast.AbstractArrayStyle`](@ref)。

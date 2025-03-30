@@ -1,0 +1,23 @@
+```
+zero(x)
+zero(::Type)
+```
+
+`x` için toplama kimlik elemanını alır (`x` aynı zamanda türü de belirtebilir).
+
+Ayrıca bkz. [`iszero`](@ref), [`one`](@ref), [`oneunit`](@ref), [`oftype`](@ref).
+
+# Örnekler
+
+```jldoctest
+julia> zero(1)
+0
+
+julia> zero(big"2.0")
+0.0
+
+julia> zero(rand(2,2))
+2×2 Matrix{Float64}:
+ 0.0  0.0
+ 0.0  0.0
+```

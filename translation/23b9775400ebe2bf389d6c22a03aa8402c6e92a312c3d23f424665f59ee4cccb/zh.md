@@ -1,0 +1,12 @@
+```
+RTLD_DEEPBIND
+RTLD_FIRST
+RTLD_GLOBAL
+RTLD_LAZY
+RTLD_LOCAL
+RTLD_NODELETE
+RTLD_NOLOAD
+RTLD_NOW
+```
+
+[`dlopen`](@ref) 的枚举常量。有关详细信息，请参阅您的平台手册页（如果适用）。

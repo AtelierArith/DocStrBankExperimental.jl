@@ -1,0 +1,1 @@
+`Broadcast.DefaultArrayStyle{N}()` 是一个 [`BroadcastStyle`](@ref)，表示一个对象在广播时表现为 `N` 维数组。具体来说，`DefaultArrayStyle` 用于任何未定义专门样式的 `AbstractArray` 类型，并且在没有其他 `broadcast` 参数的覆盖时，结果输出类型为 `Array`。当有多个输入传递给 `broadcast` 时，`DefaultArrayStyle` 会“输给”任何其他 [`Broadcast.ArrayStyle`](@ref)。

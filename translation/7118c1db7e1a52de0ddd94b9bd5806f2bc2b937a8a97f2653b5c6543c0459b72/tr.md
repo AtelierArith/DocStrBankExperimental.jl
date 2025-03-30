@@ -1,0 +1,5 @@
+```
+geevx!(balanc, jobvl, jobvr, sense, A) -> (A, w, VL, VR, ilo, ihi, scale, abnrm, rconde, rcondv)
+```
+
+`A` matrisinin özdeğer sistemini bulur ve matris dengelemesi yapar. Eğer `jobvl = N` ise, `A`'nın sol özvektörleri hesaplanmaz. Eğer `jobvr = N` ise, `A`'nın sağ özvektörleri hesaplanmaz. Eğer `jobvl = V` veya `jobvr = V` ise, ilgili özvektörler hesaplanır. Eğer `balanc = N` ise, dengeleme yapılmaz. Eğer `balanc = P` ise, `A` permütasyon yapılır ama ölçeklendirilmez. Eğer `balanc = S` ise, `A` ölçeklendirilir ama permütasyon yapılmaz. Eğer `balanc = B` ise, `A` hem permütasyon yapılır hem de ölçeklendirilir. Eğer `sense = N` ise, ters koşul sayıları hesaplanmaz. Eğer `sense = E` ise, yalnızca özdeğerler için ters koşul sayıları hesaplanır. Eğer `sense = V` ise, yalnızca sağ özvektörler için ters koşul sayıları hesaplanır. Eğer `sense = B` ise, hem sağ özvektörler hem de özvektörler için ters koşul sayıları hesaplanır. Eğer `sense = E,B` ise, sağ ve sol özvektörlerin hesaplanması gerekir.
