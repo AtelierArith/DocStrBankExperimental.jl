@@ -1,1 +1,0 @@
-`GenericArray`, `AbstractArray` arayüzüne program yapan genel dizi API'lerini test etmek için kullanılabilir, böylece işlevlerin standart `Array` türü dışında dizi türleriyle çalışabilmesini sağlanır.

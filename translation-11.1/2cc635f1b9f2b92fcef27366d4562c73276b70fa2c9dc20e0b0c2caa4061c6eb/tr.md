@@ -1,1 +1,0 @@
-LAPACK alt programlarına arayüzler.

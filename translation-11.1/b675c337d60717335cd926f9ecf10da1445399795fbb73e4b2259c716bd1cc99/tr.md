@@ -1,1 +1,0 @@
-`GenericSet`, `AbstractSet` arayüzüne program yapan genel küme API'lerini test etmek için kullanılabilir, böylece işlevlerin standart `Set` ve `BitSet` türleri dışında küme türleriyle çalışabileceğinden emin olunur.

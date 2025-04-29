@@ -1,1 +1,0 @@
-Multithreading-Unterstützung.

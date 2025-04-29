@@ -1,1 +1,0 @@
-Çoklu iş parçacığı desteği.

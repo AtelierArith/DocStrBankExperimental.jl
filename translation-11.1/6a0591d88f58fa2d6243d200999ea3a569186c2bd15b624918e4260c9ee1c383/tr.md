@@ -1,1 +1,0 @@
-Log olaylarının akışlarını yakalamak, filtrelemek ve sunmak için yardımcı programlar. Genellikle, log olayları oluşturmak için `Logging`'i içe aktarmanıza gerek yoktur; bunun için standart loglama makroları, örneğin `@info`, `Base` tarafından zaten dışa aktarılmıştır ve varsayılan olarak mevcuttur.

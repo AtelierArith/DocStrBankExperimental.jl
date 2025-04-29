@@ -1,1 +1,0 @@
-SSH kimlik türü

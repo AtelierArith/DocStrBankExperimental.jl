@@ -1,5 +1,0 @@
-```
-geevx!(balanc, jobvl, jobvr, sense, A) -> (A, w, VL, VR, ilo, ihi, scale, abnrm, rconde, rcondv)
-```
-
-Findet das Eigenwertsystem von `A` mit Matrizenbalancierung. Wenn `jobvl = N`, werden die linken Eigenvektoren von `A` nicht berechnet. Wenn `jobvr = N`, werden die rechten Eigenvektoren von `A` nicht berechnet. Wenn `jobvl = V` oder `jobvr = V`, werden die entsprechenden Eigenvektoren berechnet. Wenn `balanc = N`, wird keine Balancierung durchgeführt. Wenn `balanc = P`, wird `A` permutiert, aber nicht skaliert. Wenn `balanc = S`, wird `A` skaliert, aber nicht permutiert. Wenn `balanc = B`, wird `A` permutiert und skaliert. Wenn `sense = N`, werden keine reziproken Bedingungszahlen berechnet. Wenn `sense = E`, werden reziproke Bedingungszahlen nur für die Eigenwerte berechnet. Wenn `sense = V`, werden reziproke Bedingungszahlen nur für die rechten Eigenvektoren berechnet. Wenn `sense = B`, werden reziproke Bedingungszahlen für die rechten Eigenvektoren und die Eigenvektoren berechnet. Wenn `sense = E,B`, müssen die rechten und linken Eigenvektoren berechnet werden.

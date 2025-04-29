@@ -1,1 +1,0 @@
-Das `GenericSet` kann verwendet werden, um generische Set-APIs zu testen, die auf das `AbstractSet`-Interface abzielen, um sicherzustellen, dass Funktionen auch mit Set-Typen neben den Standardtypen `Set` und `BitSet` funktionieren.

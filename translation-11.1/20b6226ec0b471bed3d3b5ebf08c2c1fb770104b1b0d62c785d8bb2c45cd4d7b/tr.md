@@ -1,1 +1,0 @@
-Yineleyicilerle çalışmak için yöntemler.

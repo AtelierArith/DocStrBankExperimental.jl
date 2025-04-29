@@ -1,1 +1,0 @@
-Hilfsfunktionen für Metaprogrammierung.

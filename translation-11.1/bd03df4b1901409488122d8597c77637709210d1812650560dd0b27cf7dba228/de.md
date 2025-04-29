@@ -1,1 +1,0 @@
-Speichert Anmeldeinformationen zur Wiederverwendung

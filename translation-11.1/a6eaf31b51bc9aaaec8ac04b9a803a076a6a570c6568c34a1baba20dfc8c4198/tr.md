@@ -1,1 +1,0 @@
-BLAS alt programlarına arayüz.

@@ -1,7 +1,0 @@
-```
-ca_roots() :: Union{Nothing, String}
-```
-
-Die Funktion `ca_roots()` informiert den Aufrufer, wo, falls vorhanden, eine Datei oder ein Verzeichnis mit PEM-kodierten Wurzeln von Zertifizierungsstellen zu finden ist. Standardmäßig gibt diese Funktion auf Systemen wie Windows und macOS, auf denen die integrierten TLS-Engines wissen, wie man Hosts mit dem integrierten Zertifikatsüberprüfungsmechanismus des Systems verifiziert, `nothing` zurück. Auf klassischen UNIX-Systemen (außer macOS) werden Wurzelzertifikate typischerweise in einer Datei in `/etc` gespeichert: die gängigen Orte für das aktuelle UNIX-System werden durchsucht, und wenn einer dieser Pfade existiert, wird er zurückgegeben; wenn keiner dieser typischen Wurzelzertifikatpfade existiert, wird der Pfad zu den Wurzelzertifikaten zurückgegeben, die mit Julia gebündelt sind.
-
-Der Standardwert, der von `ca_roots()` zurückgegeben wird, kann überschrieben werden, indem die Umgebungsvariablen `JULIA_SSL_CA_ROOTS_PATH`, `SSL_CERT_DIR` oder `SSL_CERT_FILE` gesetzt werden, in diesem Fall gibt diese Funktion immer den Wert der ersten dieser Variablen zurück, die gesetzt ist (unabhängig davon, ob der Pfad existiert oder nicht). Wenn `JULIA_SSL_CA_ROOTS_PATH` auf den leeren String gesetzt ist, werden die anderen Variablen ignoriert (als ob sie nicht gesetzt wären); wenn die anderen Variablen auf den leeren String gesetzt sind, verhalten sie sich so, als wären sie nicht gesetzt.

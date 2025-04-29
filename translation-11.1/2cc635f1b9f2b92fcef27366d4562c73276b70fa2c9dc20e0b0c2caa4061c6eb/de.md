@@ -1,1 +1,0 @@
-Schnittstellen zu LAPACK-Subroutinen.

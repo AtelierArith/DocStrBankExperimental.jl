@@ -1,1 +1,0 @@
-Bir günlüğü kaydedici, günlük kayıtlarının nasıl filtreleneceğini ve dağıtılacağını kontrol eder. Bir günlük kaydı oluşturulduğunda, günlüğü kaydedici, kaydı inceleyen ve onunla ne yapılacağına karar veren ilk kullanıcı yapılandırılabilir kod parçasıdır.

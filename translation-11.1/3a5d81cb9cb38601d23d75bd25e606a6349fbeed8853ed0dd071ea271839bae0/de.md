@@ -1,1 +1,0 @@
-Das `Unicode`-Modul bietet grundlegende Funktionen zur Verwaltung von Unicode-Zeichen und -Strings. Es umfasst Validierung, Kategoriebestimmung, Normalisierung, Groß-/Kleinschreibungstransformation und Graphemsegmentierung, die eine effektive Handhabung von Unicode-Daten ermöglichen.

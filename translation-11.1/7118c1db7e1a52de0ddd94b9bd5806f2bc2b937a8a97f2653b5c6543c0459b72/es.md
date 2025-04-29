@@ -1,5 +1,0 @@
-```
-geevx!(balanc, jobvl, jobvr, sense, A) -> (A, w, VL, VR, ilo, ihi, scale, abnrm, rconde, rcondv)
-```
-
-Encuentra el sistema de eigenvalores de `A` con balanceo de matrices. Si `jobvl = N`, los eigenvectores izquierdos de `A` no se calculan. Si `jobvr = N`, los eigenvectores derechos de `A` no se calculan. Si `jobvl = V` o `jobvr = V`, se calculan los eigenvectores correspondientes. Si `balanc = N`, no se realiza ningún balanceo. Si `balanc = P`, `A` se permuta pero no se escala. Si `balanc = S`, `A` se escala pero no se permuta. Si `balanc = B`, `A` se permuta y se escala. Si `sense = N`, no se calculan números de condición recíprocos. Si `sense = E`, se calculan números de condición recíprocos solo para los eigenvalores. Si `sense = V`, se calculan números de condición recíprocos solo para los eigenvectores derechos. Si `sense = B`, se calculan números de condición recíprocos para los eigenvectores derechos y los eigenvectores. Si `sense = E,B`, se deben calcular los eigenvectores derechos e izquierdos.

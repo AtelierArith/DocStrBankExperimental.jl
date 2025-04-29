@@ -1,1 +1,0 @@
-`Unicode` modülü, Unicode karakterleri ve dizeleri yönetmek için temel işlevsellik sağlar. Doğrulama, kategori belirleme, normalizasyon, büyük/küçük harf dönüşümü ve graphem segmentasyonu gibi işlemleri içerir ve etkili Unicode veri yönetimini mümkün kılar.

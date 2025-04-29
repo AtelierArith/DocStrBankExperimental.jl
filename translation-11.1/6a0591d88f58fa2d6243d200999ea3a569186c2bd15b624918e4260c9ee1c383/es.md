@@ -1,1 +1,0 @@
-Utilidades para capturar, filtrar y presentar flujos de eventos de registro. Normalmente no necesitas importar `Logging` para crear eventos de registro; para esto, los macros de registro estándar como `@info` ya están exportados por `Base` y disponibles por defecto.

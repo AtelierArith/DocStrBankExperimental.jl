@@ -1,1 +1,0 @@
-Le `GenericDict` peut être utilisé pour tester les API de dictionnaire génériques qui programment l'interface `AbstractDict`, afin de s'assurer que les fonctions peuvent fonctionner avec des types associatifs en plus du type `Dict` standard.

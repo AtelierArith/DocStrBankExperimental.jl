@@ -1,1 +1,0 @@
-Der `GenericString` kann verwendet werden, um generische String-APIs zu testen, die auf das `AbstractString`-Interface abzielen, um sicherzustellen, dass Funktionen mit String-Typen neben dem Standard-`String`-Typ arbeiten können.

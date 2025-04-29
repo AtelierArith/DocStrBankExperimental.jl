@@ -1,1 +1,0 @@
-Das `GenericArray` kann verwendet werden, um generische Array-APIs zu testen, die auf das `AbstractArray`-Interface abzielen, um sicherzustellen, dass Funktionen auch mit Array-Typen neben dem Standard-`Array`-Typ arbeiten können.

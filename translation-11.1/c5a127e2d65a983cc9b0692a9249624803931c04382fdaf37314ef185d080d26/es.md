@@ -1,1 +1,0 @@
-Soporte de multihilo.

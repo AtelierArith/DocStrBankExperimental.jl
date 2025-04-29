@@ -1,1 +1,0 @@
-Schnittstelle zu BLAS-Unterprogrammen.

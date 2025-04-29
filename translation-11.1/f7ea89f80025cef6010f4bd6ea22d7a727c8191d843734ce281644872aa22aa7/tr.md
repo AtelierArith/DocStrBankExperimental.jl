@@ -1,1 +1,0 @@
-`GenericDict`, `AbstractDict` arayüzüne program yapan genel dict API'lerini test etmek için kullanılabilir, böylece işlevlerin standart `Dict` türü dışında ilişkilendirilmiş türlerle çalışabileceğinden emin olunabilir.
