@@ -1,0 +1,1 @@
+Specify all the columns to collect for a frame. We would have liked to specify this as `AbstractVector{<:FrameColumn}` but Julia in its infinite wisdom considers `["a", "b" => "c"]` to be a `Vector{Any}`, which would require literals to be annotated with the type.

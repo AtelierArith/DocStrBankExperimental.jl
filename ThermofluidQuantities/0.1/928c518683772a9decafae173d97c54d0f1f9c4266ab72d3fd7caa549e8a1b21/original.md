@@ -1,0 +1,3 @@
+```
+StagnationEnthalpy <: DimensionalPhysicalQuantity
+```

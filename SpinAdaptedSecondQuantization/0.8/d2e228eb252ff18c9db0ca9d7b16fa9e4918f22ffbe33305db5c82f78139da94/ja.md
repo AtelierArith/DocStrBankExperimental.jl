@@ -1,0 +1,1 @@
+印刷項をnumpyのeinsumルーチンに

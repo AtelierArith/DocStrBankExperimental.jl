@@ -1,0 +1,1 @@
+given a basic network data dict, returns a sparse real valued Jacobian matrix of the ac power flow problem.  The power variables are ordered by p and then q while voltage values are ordered by voltage angle and then voltage magnitude.

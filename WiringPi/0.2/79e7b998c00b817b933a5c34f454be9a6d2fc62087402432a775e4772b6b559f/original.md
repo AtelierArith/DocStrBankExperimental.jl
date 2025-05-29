@@ -1,0 +1,3 @@
+```
+gpioClockSet(pin, freq)
+```

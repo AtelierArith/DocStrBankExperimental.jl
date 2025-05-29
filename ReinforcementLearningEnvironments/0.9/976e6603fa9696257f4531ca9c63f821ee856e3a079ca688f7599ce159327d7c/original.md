@@ -1,0 +1,1 @@
+Cache the state so that `state(env)` will always return the same result before the next interaction with `env`. This function is useful because some environments are stateful during each `state(env)`. For example: `StateTransformedEnv(StackFrames(...))`.

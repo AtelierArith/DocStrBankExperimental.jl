@@ -1,0 +1,13 @@
+```
+XCBConnectionError <: Exception
+```
+
+The `type` field contains the code for the error. It is one of:
+
+  * `XCB_CONN_ERROR`
+  * `XCB_CONN_CLOSED_EXT_NOTSUPPORTED`
+  * `XCB_CONN_CLOSED_MEM_INSUFFICIENT`
+  * `XCB_CONN_CLOSED_REQ_LEN_EXCEED`
+  * `XCB_CONN_CLOSED_PARSE_ERR`
+  * `XCB_CONN_CLOSED_INVALID_SCREEN`
+  * `XCB_CONN_CLOSED_FDPASSING_FAILED`

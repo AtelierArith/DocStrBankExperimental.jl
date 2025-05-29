@@ -1,0 +1,24 @@
+```
+Whittle(λ, [σ = 1], [p = 2])
+```
+
+Whittle共分散構造は、相関長 `λ`、（オプションの）周辺標準偏差 `σ` および（オプションの）`p`-ノルムとして定義されます。
+
+$$
+C(x, y) = σ^2 \displaystyle\frac{ρ}{λ} K₁\left(\frac{ρ}{λ}\right)
+$$
+
+ここで、$ρ = ||x-y||_p$ です。
+
+# 例
+
+```jldoctest
+julia> Whittle(0.1)
+Whittle (λ=0.1, σ=1.0, p=2.0)
+
+julia> Whittle(1.0, σ=2)
+Whittle (λ=1.0, σ=2.0, p=2.0)
+
+```
+
+参照: [`Exponential`](@ref), [`Linear`](@ref), [`Spherical`](@ref), [`Gaussian`](@ref), [`SquaredExponential`](@ref), [`Matern`](@ref)

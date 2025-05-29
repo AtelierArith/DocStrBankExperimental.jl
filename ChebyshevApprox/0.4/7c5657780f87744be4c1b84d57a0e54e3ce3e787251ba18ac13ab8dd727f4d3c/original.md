@@ -1,0 +1,1 @@
+CApproxPlan is an immutable struct that contains the information used to approximate a multi-dimensional function. CApproxPlan has three fileds: A Grid type that summarizes the approximating points, the degree of the  approximating polynomials, and the approximation domain.

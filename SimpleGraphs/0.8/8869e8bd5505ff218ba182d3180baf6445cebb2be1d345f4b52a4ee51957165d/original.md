@@ -1,0 +1,5 @@
+```
+DG
+```
+
+Abbreviation for `DirectedGraph`.

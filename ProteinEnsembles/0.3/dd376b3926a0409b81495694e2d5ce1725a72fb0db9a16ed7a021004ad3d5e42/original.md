@@ -1,0 +1,1 @@
+Reads a DSSP file. If atoms are provided, creates additional '-' entries for residues not present in the DSSP file. Returns a dictionary where key is residue number and chain, and value is secondary structure.

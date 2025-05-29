@@ -1,0 +1,1 @@
+Given a data dictionary following the Infrastructure Models conventions, builds an initial "ref" dictionary converting strings to symbols and component keys to integers. The global keys argument specifies which keys should remain in the root of dictionary when building a multi-network

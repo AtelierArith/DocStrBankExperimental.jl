@@ -1,0 +1,1 @@
+`AbstractUnbalancedPowerModel`構造体からマルチネットワークの`ids`にアクセスするためのヘルパー関数で、整数を返します。

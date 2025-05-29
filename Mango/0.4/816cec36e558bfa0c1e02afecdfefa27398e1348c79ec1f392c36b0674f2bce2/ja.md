@@ -1,0 +1,1 @@
+SimpleCommunicationSimulationの実装

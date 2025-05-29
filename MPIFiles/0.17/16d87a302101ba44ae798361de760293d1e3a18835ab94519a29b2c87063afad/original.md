@@ -1,0 +1,5 @@
+```
+studyUuid(mdf)
+```
+
+Universally Unique Identifier (RFC 4122) of study

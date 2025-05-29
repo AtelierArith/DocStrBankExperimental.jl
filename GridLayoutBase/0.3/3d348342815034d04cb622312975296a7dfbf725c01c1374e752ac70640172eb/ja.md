@@ -1,0 +1,1 @@
+AlignModeは、パディングがNothingのInsideと、RealのOutsideです。

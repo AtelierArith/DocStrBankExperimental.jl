@@ -1,0 +1,3 @@
+AbstractStoppingMeta
+
+停止のための専門的なメタが実装される場合、それらはAbstractStoppingMetaのサブタイプである必要があります。

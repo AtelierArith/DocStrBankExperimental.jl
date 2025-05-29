@@ -1,0 +1,1 @@
+ProductItemSectionはProductItemコンポーネントのセクションです（上記参照）。

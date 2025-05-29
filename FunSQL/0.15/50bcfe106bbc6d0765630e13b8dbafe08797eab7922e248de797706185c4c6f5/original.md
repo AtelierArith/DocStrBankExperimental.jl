@@ -1,0 +1,47 @@
+```
+With(; over = nothing, args, materialized = nothing)
+With(args...; over = nothing, materialized = nothing)
+```
+
+`With` assigns a name to a temporary dataset.  The dataset content can be retrieved within the `over` query using the [`From`](@ref) node.
+
+`With` is translated to a common table expression:
+
+```
+WITH $args...
+SELECT ...
+FROM $over
+```
+
+# Examples
+
+```jldoctest
+julia> person = SQLTable(:person, columns = [:person_id, :year_of_birth]);
+
+julia> condition_occurrence =
+           SQLTable(:condition_occurrence, columns = [:condition_occurrence_id,
+                                                      :person_id,
+                                                      :condition_concept_id]);
+
+julia> q = From(:person) |>
+           Where(Fun.in(Get.person_id, From(:essential_hypertension) |>
+                                       Select(Get.person_id))) |>
+           With(:essential_hypertension =>
+                    From(:condition_occurrence) |>
+                    Where(Get.condition_concept_id .== 320128));
+
+julia> print(render(q, tables = [person, condition_occurrence]))
+WITH "essential_hypertension_1" ("person_id") AS (
+  SELECT "condition_occurrence_1"."person_id"
+  FROM "condition_occurrence" AS "condition_occurrence_1"
+  WHERE ("condition_occurrence_1"."condition_concept_id" = 320128)
+)
+SELECT
+  "person_1"."person_id",
+  "person_1"."year_of_birth"
+FROM "person" AS "person_1"
+WHERE ("person_1"."person_id" IN (
+  SELECT "essential_hypertension_2"."person_id"
+  FROM "essential_hypertension_1" AS "essential_hypertension_2"
+))
+```

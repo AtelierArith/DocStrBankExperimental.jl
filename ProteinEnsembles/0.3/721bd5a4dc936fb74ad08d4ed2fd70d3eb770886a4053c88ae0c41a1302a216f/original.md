@@ -1,0 +1,1 @@
+Find the interactions between atoms in a list of atoms. Returns 2D array of interactions by integer label. Interactions the same as De Groot et. al., Structure, 1997, but cis/trans limits not implemented.

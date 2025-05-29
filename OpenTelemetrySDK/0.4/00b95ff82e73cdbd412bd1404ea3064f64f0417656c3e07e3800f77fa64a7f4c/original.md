@@ -1,0 +1,1 @@
+Always sample the span.

@@ -1,0 +1,1 @@
+Uses `bwbench` to measure the memory bandwidth for an increasing number of threads (`1:max_nthreads`). Returns a matrix whose rows correspond to the number of threads and different columns hold the bandwidth results for each kernel.

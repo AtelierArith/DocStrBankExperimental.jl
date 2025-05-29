@@ -1,0 +1,1 @@
+Skip whitespace in input

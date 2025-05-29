@@ -1,0 +1,3 @@
+```
+BindOnce(state, control)
+```

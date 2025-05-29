@@ -1,0 +1,5 @@
+```
+KL(p::Exponential, q::Exponential)
+```
+
+[KL Exponential](https://en.wikipedia.org/wiki/Exponential_distribution#Kullback%E2%80%93Leibler_divergence)を参照してください。

@@ -1,0 +1,1 @@
+get_data returns a value for a given category. Note that if the value points to a different category, then it must be the id value for that category, i.e. the order in which that value appears in the key data name column.

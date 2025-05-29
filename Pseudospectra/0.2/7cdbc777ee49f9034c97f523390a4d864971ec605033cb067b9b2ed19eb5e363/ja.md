@@ -1,0 +1,1 @@
+Pseudospectraで使用されるGUIの状態を保持するオブジェクト

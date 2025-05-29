@@ -1,0 +1,1 @@
+Generalized M-Quantile estimator

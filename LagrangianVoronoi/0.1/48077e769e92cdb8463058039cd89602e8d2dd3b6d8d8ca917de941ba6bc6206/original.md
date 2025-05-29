@@ -1,0 +1,5 @@
+```
+VECNULL
+```
+
+Undefined vector.

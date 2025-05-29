@@ -1,0 +1,1 @@
+IncCCとIncSumの間のキャスト

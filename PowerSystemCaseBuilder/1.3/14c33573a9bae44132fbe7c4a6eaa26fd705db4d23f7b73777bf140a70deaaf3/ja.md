@@ -1,0 +1,1 @@
+PowerSimulationsDynamics.jlのテスト用カテゴリ。すべてのケースが機能するわけではありません。

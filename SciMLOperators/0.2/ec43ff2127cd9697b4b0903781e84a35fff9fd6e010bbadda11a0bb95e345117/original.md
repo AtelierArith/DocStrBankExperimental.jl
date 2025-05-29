@@ -1,0 +1,10 @@
+Matrix free operator given by a function
+
+  * `op`:  Function with signature op(u, p, t) and (if isinplace) op(du, u, p, t)
+  * `op_adjoint`:  Adjoint operator
+  * `op_inverse`:  Inverse operator
+  * `op_adjoint_inverse`:  Adjoint inverse operator
+  * `traits`:  Traits
+  * `p`:  Parameters
+  * `t`:  Time
+  * `cache`:  Cache

@@ -1,0 +1,1 @@
+`ImGuiStoragePair`のデストラクタ

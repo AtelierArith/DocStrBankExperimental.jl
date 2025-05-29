@@ -1,0 +1,3 @@
+measIsTFCorrected(mdf)
+
+データがtransferFunctionによって修正されている場合はフラグを立てます。

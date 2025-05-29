@@ -1,0 +1,1 @@
+Colimit in a category.

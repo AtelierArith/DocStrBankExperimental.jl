@@ -1,0 +1,1 @@
+ChebPoly is an immutable struct that contains two fields: an array that contains a Chebyshev polynomial of degree `n``evaluated over`$N$` points and a DataType that describes how the points were generated.  First- and  second-derivatives of Chebyshev polynomials are also represented using the ChebPoly type.

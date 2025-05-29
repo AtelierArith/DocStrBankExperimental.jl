@@ -1,0 +1,5 @@
+```
+Reaction{T}
+```
+
+Reaction type.

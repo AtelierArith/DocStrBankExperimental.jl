@@ -1,0 +1,1 @@
+SROCK1: S-ROCKメソッドは、剛性問題に対する固定ステップサイズの安定化明示法です。デフォルトではIto問題を解決しますが、SROCK1(interpretation=SciMLBase.AlgorithmInterpretation.Stratonovich)を使用すると、ストラトノビッチ問題を解決できます。収束の強いオーダーは0.5で、弱いオーダーは1ですが、スカラー/対角ノイズの場合にオーダー1を得るように最適化されています。

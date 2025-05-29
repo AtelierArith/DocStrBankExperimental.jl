@@ -1,0 +1,1 @@
+`Segregating` sites are positions which show differences (polymorphisms) between related genes in a sequence alignment (are not conserved). Segregating sites include conservative, semi-conservative and non-conservative mutations.

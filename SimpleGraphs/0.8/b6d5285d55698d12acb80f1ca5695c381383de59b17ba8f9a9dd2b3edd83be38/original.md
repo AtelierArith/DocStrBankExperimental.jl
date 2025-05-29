@@ -1,0 +1,1 @@
+`tikz_file(G,label,filename)` writes the tikz code for drawing the graph `G` into `filename`. If `label` is omitted (or `false`) vertex labels are not drawn. If `filename` is omitted, it defaults to `graph.tex`.

@@ -1,0 +1,20 @@
+```
+p8est_refine_ext(p8est_, refine_recursive, maxlevel, refine_fn, init_fn, replace_fn)
+```
+
+制限された精緻化レベルと置換オプションを持つフォレストを精緻化します。
+
+### パラメータ
+
+  * `p8est`:[in,out] フォレストはその場で変更されます。
+  * `refine_recursive`:[in] 再帰的な精緻化を決定するためのブール値。
+  * `maxlevel`:[in] 許可される最大精緻化レベル（含む）。これが負の場合、レベルは `p8est.h` のコンパイル時定数 QMAXLEVEL のみで制限されます。
+  * `refine_fn`:[in] 四分木を精緻化する必要がある場合に true を返すコールバック関数。`refine_recursive` が true の場合、`refine_fn` は既存の四分木と新しく作成された四分木のすべてに対して呼び出されます。そうでない場合は、既存の四分木に対してのみ呼び出されます。コールバックによって行われた精緻化要求が無視される可能性があります。この場合をキャッチするために、`init_fn` または `replace_fn` が呼び出されるかどうかを調べることができます。
+  * `init_fn`:[in] 新しく作成された四分木のためにユーザーデータを初期化するコールバック関数で、確実に割り当てられます。この関数ポインタは NULL である可能性があります。
+  * `replace_fn`:[in] ユーザーが置き換える四分木に基づいて受信する四分木を変更できるコールバック関数; NULL である可能性があります。
+
+### プロトタイプ
+
+```c
+void p8est_refine_ext (p8est_t * p8est, int refine_recursive, int maxlevel, p8est_refine_t refine_fn, p8est_init_t init_fn, p8est_replace_t replace_fn);
+```

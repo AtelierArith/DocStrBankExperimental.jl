@@ -1,0 +1,1 @@
+この関数は、MutableListをinMapFuncと追加の引数argを使って折りたたみます。

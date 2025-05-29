@@ -1,0 +1,1 @@
+`ImGuiTableColumnSortSpecs`のデストラクタ

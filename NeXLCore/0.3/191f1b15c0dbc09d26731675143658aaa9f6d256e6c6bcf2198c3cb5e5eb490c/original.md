@@ -1,0 +1,1 @@
+Cited personal communication in @article{berger196410,   title={10. Tables of energy-losses and ranges of electrons and positrons},   author={Berger, M and Seltzer, S},   journal={Studies in penetration of charged particles in matter},   number={39},   pages={205},   year={1964} }

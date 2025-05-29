@@ -1,0 +1,3 @@
+```
+iscancelled(j::Job) :: Bool
+```

@@ -1,0 +1,1 @@
+Struct describing a testimage.

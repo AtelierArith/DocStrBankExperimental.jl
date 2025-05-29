@@ -1,0 +1,1 @@
+LUTは、行列のSVector型のアンテナ要素の数の長さを持つベクトルでなければなりません。各行列は、#elevation angles x #azimuth anglesのサイズを持つ必要があります。方位角はx軸から始まり、y軸に向かって増加します。天頂は行列の上部にあり、水平/底部は行列の下部にあります。最大の仰角は`max_elevation`によって与えられます。`π/2`の値は水平を意味し、`π`はアンテナの底までを意味します。補間のタイプは、オプションのパラメータ`interpolation`によって設定できます。可能な値は、`Constant`、`Linear`、または`Quadratic`です。補間に関する詳細については、次を参照してください: https://github.com/JuliaMath/Interpolations.jl.

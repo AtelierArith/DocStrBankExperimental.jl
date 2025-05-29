@@ -1,0 +1,1 @@
+このUnitTypeは、単位kgを持つUnitTypes.KiloGramの基本的な測定を表します。

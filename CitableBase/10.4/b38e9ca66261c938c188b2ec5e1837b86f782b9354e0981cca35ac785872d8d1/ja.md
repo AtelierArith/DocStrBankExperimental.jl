@@ -1,0 +1,1 @@
+CitableTraitのデフォルト値をNotCitableとして定義します。

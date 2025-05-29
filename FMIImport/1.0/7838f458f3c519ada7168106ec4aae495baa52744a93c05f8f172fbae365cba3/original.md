@@ -1,0 +1,39 @@
+```
+fmi3EnterInitializationMode(c::FMU3Instance, toleranceDefined::fmi3Boolean,
+    tolerance::fmi3Float64,
+    startTime::fmi3Float64,
+    stopTimeDefined::fmi3Boolean,
+    stopTime::fmi3Float64)
+```
+
+Informs the FMU to enter Initialization Mode. Before calling this function, all variables with attribute <Datatype initial = "exact" or "approx"> can be set with the “fmi3SetXXX” functions (the ScalarVariable attributes are defined in the Model Description File, see section 2.4.7). Setting other variables is not allowed. Also sets the simulation start and stop time.
+
+# Arguments
+
+  * `c::FMU3Instance`: Argument `c` is a Mutable struct represents an instantiated instance of an FMU in the FMI 3.0 Standard.
+  * `toleranceDefined::fmi3Boolean`: Arguments `toleranceDefined` depend on the FMU type:
+
+      * fmuType = fmi3ModelExchange: If `toleranceDefined = fmi3True`, then the model is called with a numerical integration scheme where the step size is controlled by using `tolerance` for error estimation. In such a case, all numerical algorithms used inside the model (for example, to solve non-linear algebraic equations) should also operate with an error estimation of an appropriate smaller relative tolerance.
+      * fmuType = fmi3CoSimulation: If `toleranceDefined = fmi3True`, then the communication interval of the slave is controlled by error estimation.  In case the slave utilizes a numerical integrator with variable step size and error estimation, it is suggested to use “tolerance” for the error estimation of the internal integrator (usually as relative tolerance). An FMU for Co-Simulation might ignore this argument.
+  * `tolerance::fmi3Float64`: Argument `tolerance` is the desired tolerance
+  * `startTime::fmi3Float64`: Argument `startTime` can be used to check whether the model is valid within the given boundaries or to allocate memory which is necessary for storing results. It is the fixed initial value of the independent variable and if the independent variable is `time`, `startTime` is the starting time of initializaton.
+  * `stopTimeDefined::fmi3Boolean`:  If `stopTimeDefined = fmi3True`, then stopTime is the defined final value of the independent variable and if `stopTimeDefined = fmi3False`, then no final value
+
+of the independent variable is defined and argument `stopTime` is meaningless.
+
+  * `stopTime::fmi3Float64`: Argument `stopTime` can be used to check whether the model is valid within the given boundaries or to allocate memory which is necessary for storing results. It is the fixed final value of the independent variable and if the independent variable is “time”, stopTime is the stop time of the simulation.
+
+# Returns
+
+  * `status::fmi3Status`: Return `status` is an enumeration of type `fmi3Status` and indicates the success of the function call.
+
+More detailed:     - `fmi3OK`: all well     - `fmi3Warning`: things are not quite right, but the computation can continue     - `fmi3Discard`: if the slave computed successfully only a subinterval of the communication step     - `fmi3Error`: the communication step could not be carried out at all     - `fmi3Fatal`: if an error occurred which corrupted the FMU irreparably
+
+# Source
+
+  * FMISpec3.0 Link: [https://fmi-standard.org/](https://fmi-standard.org/)
+  * FMISpec3.0: 2.2.3 Platform Dependent Definitions
+  * FMISpec3.0: 2.2.4 Status Returned by Functions
+  * FMISpec3.0: 2.3.2. State: Instantiated
+
+See also [`fmi3EnterInitializationMode`](@ref).

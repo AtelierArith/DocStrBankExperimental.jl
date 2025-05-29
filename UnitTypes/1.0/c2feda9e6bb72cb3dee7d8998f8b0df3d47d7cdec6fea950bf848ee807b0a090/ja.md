@@ -1,0 +1,1 @@
+このUnitTypeは、単位Nを持つUnitTypes.Newtonの基本的な測定を表します。

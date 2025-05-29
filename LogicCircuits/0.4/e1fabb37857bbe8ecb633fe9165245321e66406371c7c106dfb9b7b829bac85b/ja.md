@@ -1,0 +1,1 @@
+sddをStructLogicCircuitにスムーズに変換する

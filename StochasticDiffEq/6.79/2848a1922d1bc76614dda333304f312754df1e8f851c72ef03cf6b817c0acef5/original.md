@@ -1,0 +1,1 @@
+SROCK1: S-ROCK Method Is a fixed step size stabilized explicit method for stiff problems. Defaults to solving th Ito problem but SROCK1(interpretation=SciMLBase.AlgorithmInterpretation.Stratonovich) can make it solve the Stratonovich problem. Strong order of convergence is 0.5 and weak order 1, but is optimised to get order 1 in case os scalar/diagonal noise.

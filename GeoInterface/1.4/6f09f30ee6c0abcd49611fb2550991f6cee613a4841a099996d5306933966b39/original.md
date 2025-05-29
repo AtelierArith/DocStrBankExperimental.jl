@@ -1,0 +1,3 @@
+```
+getcoord(geom) -> iterator
+```

@@ -1,0 +1,5 @@
+The action for merging the values of a property from the concatenated data sets into the result data set. This is used to properties that do not apply to the concatenation axis (that is, scalar properties, and vector and matrix properties of other axes). Valid values are:
+
+  * `SkipProperty` - do not create the property in the result. This is the default.
+  * `LastValue` - use the value from the last concatenated data set (that has a value for the property). This is useful for properties that have the same value for all concatenated data sets.
+  * `CollectAxis` - collect the values from all the data sets, adding a dimension to the data (that is, convert a scalar property to a vector, and a vector property to a matrix). This can't be applied to matrix properties, because we can't directly store 3D data inside `Daf`. In addition, this requires that a dataset axis is created in the target, and that an empty value is specified for the property if it is missing from any of the concatenated data sets.

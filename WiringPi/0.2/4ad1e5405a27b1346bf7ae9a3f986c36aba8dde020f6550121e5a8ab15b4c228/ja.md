@@ -1,0 +1,3 @@
+```
+wiringPiI2CRead(fd)
+```

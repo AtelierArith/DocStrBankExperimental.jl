@@ -1,0 +1,1 @@
+Data pertaining to selecting, inspecting, and profiling algorithms. A pointer to this structure is hooked into the `p4est` main structure. Declared in p4est_extended.h. Used to profile important algorithms.

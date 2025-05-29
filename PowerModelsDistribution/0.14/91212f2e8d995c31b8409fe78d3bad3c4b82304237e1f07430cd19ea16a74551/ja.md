@@ -1,0 +1,1 @@
+AbstractNLExplicitNeutralIVRModelの具体的な型で、枝削減されたもの（ReducedExplicitNeutralIVRModelsへの包含を通じて実装されています）

@@ -1,0 +1,13 @@
+```
+ref_least_core(mode, ref_dist, optimizer; norm, verbose)
+```
+
+Function to calculte a stable profit distribution that belongs to the least core and minimizes the variance of the profit allocation among the players with respect to a pre-defined reward distribution function for a game described by the utility function and the grand coalition of player_set.
+
+## Inputs
+
+mode : AbstractCalcMode     Calculation mode: enumerative technique ref_dist : AbstrctDict     Reference distribution by player optimizer : Any     Optimizer function for the JuMP model used for computation purposes norm (optional, default nothing)     Normalization denominator for every player     Default value nothing, hence for every player the Normalization     factor is 1.0 verbose : Bool (optional, default true)     When true, it shows a progress bar to describe the current execution status
+
+## Outputs
+
+specific*least*core_dist : Dict     Dictionary of the fair distributions of the profits among the players

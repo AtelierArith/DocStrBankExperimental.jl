@@ -1,0 +1,1 @@
+Constructs a prompt by replacing the element*id*tag with the corresponding element in the element*list. If the element*list is longer than the number of occurrences of the element*id*tag, the missing elements are added after the last occurrence. If the element*list is shorter than the number of occurrences of the element*id_tag, the extra ids are removed.

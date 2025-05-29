@@ -1,0 +1,5 @@
+```
+AbstractBinnedResampling
+```
+
+データがビンに分けられるリサンプリングスキーム。

@@ -1,0 +1,21 @@
+```
+solve(prob::CauchyProblem[, alg::BoltzmannODE; verbose]) -> Solution
+solve(prob::SorptivityCauchyProblem[, alg::BoltzmannODE; verbose]) -> Solution
+```
+
+問題 `prob` を解決します。
+
+# 引数
+
+  * `prob`: 解決する問題。
+  * `alg=BoltzmannODE()`: 使用するアルゴリズム。
+
+# キーワード引数
+
+  * `verbose=true`: 解決が失敗した場合に警告を出すかどうか。
+
+# 参考文献
+
+GERLERO, G. S.; BERLI, C. L. A.; KLER, P. A. 水平毛細管流の直接および逆解法のためのオープンソース高性能ソフトウェアパッケージ。Capillarity, 2023, vol. 6, no. 2, p. 31-40。
+
+関連情報: [`Solution`](@ref), [`BoltzmannODE`](@ref)

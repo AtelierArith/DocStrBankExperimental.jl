@@ -1,0 +1,1 @@
+quantile(C::ClimGrid)

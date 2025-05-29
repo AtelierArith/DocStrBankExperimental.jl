@@ -1,0 +1,1 @@
+A gameboard is stored on a UInt (64bit) where each row (TODO shall I make it column major) is stored using 16 bits. So 4 bits for each cell. So each cell can contain values form 0-15. 2^15 = 32678 and 2^11 is 2048. So it's there's plenty of room

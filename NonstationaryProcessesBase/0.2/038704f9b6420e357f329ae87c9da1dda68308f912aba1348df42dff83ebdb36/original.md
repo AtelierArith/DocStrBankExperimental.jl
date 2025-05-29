@@ -1,0 +1,1 @@
+Save the solution of a [`Process`](@ref) in a given folder. This replaces the `:solution` field of the [`Process`](@ref) with the location of the saved data, and subsequent calls of [`timeseries`](@ref) read from this file.

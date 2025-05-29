@@ -1,0 +1,5 @@
+```
+SHExpandDHC(...)
+```
+
+[`SHExpandDH`](@ref) のエイリアス

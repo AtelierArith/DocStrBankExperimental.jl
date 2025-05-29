@@ -1,0 +1,1 @@
+`ImGuiNavItemData`のデストラクタ

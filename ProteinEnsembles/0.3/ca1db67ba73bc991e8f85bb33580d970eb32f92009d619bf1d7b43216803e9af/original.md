@@ -1,0 +1,1 @@
+Find the transformations to map the first set of coordinates onto the second. See Kabsch algorithm for details. Returns the translation to center the first set, the translation to center the second set and the rotation to map the first set onto the second.

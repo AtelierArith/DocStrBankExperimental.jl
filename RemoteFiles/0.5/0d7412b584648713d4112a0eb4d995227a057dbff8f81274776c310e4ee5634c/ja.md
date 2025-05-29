@@ -1,0 +1,9 @@
+```
+@RemoteFileSet name description begin
+    file1 = @RemoteFile ...
+    file2 = @RemoteFile ...
+    ...
+end
+```
+
+`name`という`description`の下に保存された`RemoteFileSet`にいくつかの`RemoteFile`を集めます。

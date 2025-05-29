@@ -1,0 +1,3 @@
+```
+softPwmStop(pin)
+```

@@ -1,0 +1,3 @@
+```
+Representing an output variable
+```

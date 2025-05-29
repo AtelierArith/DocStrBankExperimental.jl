@@ -1,0 +1,3 @@
+```
+getPinModeAlt(pin)
+```

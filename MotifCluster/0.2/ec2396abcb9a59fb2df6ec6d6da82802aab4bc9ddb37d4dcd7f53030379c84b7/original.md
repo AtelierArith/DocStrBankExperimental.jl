@@ -1,0 +1,1 @@
+Run motif-based spectral clustering on the adjacency matrix of a (weighted directed) network, using a specified motif, motif type, weighting scheme, embedding dimension, number of clusters and Laplacian type. Optionally restrict to the largest connected component before clustering.

@@ -1,0 +1,1 @@
+The `PlanarFlow(dim::Int64)` function creates a mutable `PlanarFlow` structure with parameters corresponding to input of dimensions `dim`. The parameters are each random sampled from a standard (multivariate) normal distribution.

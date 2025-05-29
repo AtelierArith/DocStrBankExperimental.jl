@@ -1,0 +1,1 @@
+`Particles` are an array of matrices. The i'th matrix contains in each row the vector of states of the nodes of the i'th layer of an RBM or a DBM. The set of rows with the same index define an activation state in a Boltzmann Machine. Therefore, the size of the i'th matrix is (number of samples/particles, number of nodes in layer i).

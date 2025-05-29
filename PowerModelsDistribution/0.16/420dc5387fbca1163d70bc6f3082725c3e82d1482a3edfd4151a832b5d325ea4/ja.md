@@ -1,0 +1,1 @@
+AbstractQuadraticExplicitNeutralIVRModelの具体的な型

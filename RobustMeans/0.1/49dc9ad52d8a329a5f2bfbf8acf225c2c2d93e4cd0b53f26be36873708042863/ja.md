@@ -1,0 +1,1 @@
+" sqrt(2log(1 / δ) / n) # (1 + o(1)) で因子を掛ける。ここで o(1) = (1+O(sqrt(log(1/δ)/n)))*(1+log(log(1/δ))/log(1/δ)) は (log(1/δ)/n, δ)→ (0, 0) のときにゼロに近づく。詳細は https://www.youtube.com/watch?v=Kr0Kl_sXsJM Q&A を参照。

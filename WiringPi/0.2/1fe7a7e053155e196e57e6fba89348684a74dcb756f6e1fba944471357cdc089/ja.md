@@ -1,0 +1,3 @@
+```
+wiringPiSPISetupMode(channel, speed, mode)
+```

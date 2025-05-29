@@ -1,0 +1,5 @@
+```
+NegativeQuarterInteger
+```
+
+Negative [`QuarterInteger`](@ref).

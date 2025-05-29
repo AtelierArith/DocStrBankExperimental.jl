@@ -1,0 +1,1 @@
+This function returns a lookup table with columns `freqidx` | `mx` | `my` | `mz` | `mixingOrder` for all frequencies in `freq = frequencies(bSF)`, where only the lowest order mixing coefficients `mx`, `my`, and `mz` are listed.

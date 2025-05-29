@@ -1,0 +1,1 @@
+SROCKEM: S-ROCK Method Is fixed step Euler-Mayurama with first order ROCK stabilization thus can handle stiff problems. Only for Ito problems. Defaults to strong and weak order 1.0, but can solve with weak order 0.5 as SROCKEM(strong*order*1=false). This method can handle 1-dimensional, diagonal and multi-dimensional noise.

@@ -1,0 +1,1 @@
+`kfactor(G,k=1)` returns a `k`-factor of `G`. This is a set of edges with the property that every vertex of `G` is incident with exactly `k` edges in the set. An error is thrown if no such set exists.

@@ -1,0 +1,47 @@
+```
+unitary_rollout_fidelity(
+    Ũ⃗_init::AbstractVector{<:Real},
+    Ũ⃗_goal::AbstractVector{<:Real},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+unitary_rollout_fidelity(
+    Ũ⃗_goal::AbstractVector{<:Real},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+unitary_rollout_fidelity(
+    U_init::AbstractMatrix{<:Complex},
+    U_goal::AbstractMatrix{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+unitary_rollout_fidelity(
+    U_goal::AbstractMatrix{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+unitary_rollout_fidelity(
+    U_goal::EmbeddedOperator,
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    subspace::AbstractVector{Int}=U_goal.subspace,
+    kwargs...
+)
+unitary_rollout_fidelity(
+    traj::NamedTrajectory,
+    sys::AbstractQuantumSystem;
+    kwargs...
+)
+```
+
+Calculate the fidelity between the final state of a unitary rollout and a goal state.  If the initial unitary is not provided, the identity operator is assumed. If `phases` and `phase_operators` are provided, the free phase unitary fidelity is calculated.

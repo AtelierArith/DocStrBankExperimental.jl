@@ -1,0 +1,5 @@
+```
+InstanceOptimizer
+```
+
+サンプルベースの手続きでサンプリングされた問題を解決するために使用されるAbstractStructuredOptimizer/AbstractOptimizerを指定するためのオプティマイザー属性です。

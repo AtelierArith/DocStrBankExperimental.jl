@@ -1,0 +1,1 @@
+A  `Stabchain`  is  a  `Vector{Stablink}`  `S=[S₁,…,Sₖ]`  associated  to  a `PermGroup{T}`  `G`. The `Vector{T}` given by `B=[S₁.b,…,Sₖ.b]` is called a `base`   for  `G`.   At  each   stage  one   has  `Sᵢ.c=C_G(B[1:i-1])`  and `Sᵢ.δ=transversal(Sᵢ.c,Sᵢ.b)`

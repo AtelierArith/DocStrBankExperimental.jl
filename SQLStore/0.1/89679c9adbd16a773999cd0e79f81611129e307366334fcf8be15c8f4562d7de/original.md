@@ -1,0 +1,16 @@
+`updateonly!(query => qset, tbl::Table)`
+
+Update the only row that matches `query` with the `qset` specification. Throw an exception if zero or multiple rows match `query`.
+
+The filtering `query` corresponds to the SQL `WHERE` clause. It can be specified in one of the following forms:
+
+  * `NamedTuple`: specified fields are matched against corresponding table columns, combined with `AND`. Values are converted to corresponding SQL types, see `create_table` for details.
+  * `String`: kept as-is.
+  * Tuple `(String, args...)`: the `String` is passed to `WHERE` as-is, `args` are SQL statement parameters and can be referred as `?`.
+  * Tuple `(String, NamedTuple)`: the `String` is passed to `WHERE` as-is, the `NamedTuple` contains SQL statement parameters that can be referred by name, `:param_name`.
+
+The `qset` part corresponds to the SQL `SET` clause in `UPDATE`. Can be specified in the following ways:
+
+  * `NamedTuple`: specified fields correspond to table columns. Values are converted to their SQL types, see `create_table` for details.
+  * `String`: kept as-is.
+  * Tuple `(String, NamedTuple)`: the `String` is passed to `SET` as-is, the `NamedTuple` contains SQL statement parameters that can be referred by name, `:param_name`.

@@ -1,0 +1,3 @@
+YearlyDate
+
+YearlyDateはUTInstant{Year}をラップします。

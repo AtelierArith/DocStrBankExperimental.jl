@@ -1,0 +1,11 @@
+High-level wrapper for VkPhysicalDeviceMaintenance3Properties.
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkPhysicalDeviceMaintenance3Properties.html)
+
+```julia
+struct PhysicalDeviceMaintenance3Properties <: Vulkan.HighLevelStruct
+```
+
+  * `next::Any`
+  * `max_per_set_descriptors::UInt32`
+  * `max_memory_allocation_size::UInt64`

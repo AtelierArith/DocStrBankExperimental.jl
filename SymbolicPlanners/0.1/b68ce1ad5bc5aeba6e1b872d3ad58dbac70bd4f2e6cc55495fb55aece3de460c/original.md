@@ -1,0 +1,1 @@
+Max UCB selection strategy.

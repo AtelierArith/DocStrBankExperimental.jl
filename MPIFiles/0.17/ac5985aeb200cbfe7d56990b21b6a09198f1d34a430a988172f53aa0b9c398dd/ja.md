@@ -1,0 +1,1 @@
+この関数は、`numPos` を FF-位置の数とする FF 測定の時間データ `timeData` Array(Float32,numPos,samplingPoints,channels,1,numFrames) を返します。この関数は、全体の FF 測定を FF 位置ごとの測定に分割します。第二の返り値として、対応する位置ベクトル `pos` Array(Float64,3,1,numPos) が返されます。

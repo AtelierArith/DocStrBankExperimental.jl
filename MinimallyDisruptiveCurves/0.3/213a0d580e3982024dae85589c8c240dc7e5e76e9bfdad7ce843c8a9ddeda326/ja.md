@@ -1,0 +1,1 @@
+parameters[indices]を固定するTransformationStructureを返します。

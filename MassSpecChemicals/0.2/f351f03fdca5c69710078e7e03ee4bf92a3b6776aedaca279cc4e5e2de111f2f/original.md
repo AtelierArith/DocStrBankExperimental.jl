@@ -1,0 +1,5 @@
+```
+Fluoridation <: AbstractNegAdduct
+```
+
+[M+F]-

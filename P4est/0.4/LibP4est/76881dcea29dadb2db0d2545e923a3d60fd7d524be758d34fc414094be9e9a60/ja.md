@@ -1,0 +1,9 @@
+```
+p4est_partition_to_p6est_partition(p6est_, num_columns_in_proc, num_layers_in_proc)
+```
+
+### プロトタイプ
+
+```c
+void p4est_partition_to_p6est_partition (p6est_t * p6est, p4est_locidx_t * num_columns_in_proc, p4est_locidx_t * num_layers_in_proc);
+```

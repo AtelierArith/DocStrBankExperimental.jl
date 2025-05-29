@@ -1,0 +1,3 @@
+QuarterlyDate
+
+QuarterlyDateはUTInstant{Quarter}をラップし、先行グレゴリオ暦に従って解釈します。

@@ -1,0 +1,1 @@
+SampleBufSource is a SampleSource backed by a buffer. It's mostly useful to hook into the stream conversion infrastructure, because you can wrap a buffer in a SampleBufSource and then write it into a sink with a different channel count, sample rate, or channel count.

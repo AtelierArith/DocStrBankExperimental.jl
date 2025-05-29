@@ -1,0 +1,1 @@
+入力構造体のコピーであるPersistenceBarcodes構造体を返します。

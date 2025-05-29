@@ -1,0 +1,1 @@
+Fit `KernelCenter` object

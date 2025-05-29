@@ -1,0 +1,1 @@
+The length and size of a dictionary may not be enough to uniquely determine the size of the dictionary, if it has additional internal structure. The output of dimensions is such that `resize(dict, dimensions(dict)) == dict`.

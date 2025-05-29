@@ -1,0 +1,5 @@
+```
+ℕRing
+```
+
+Alias for `ZPlusRing`.

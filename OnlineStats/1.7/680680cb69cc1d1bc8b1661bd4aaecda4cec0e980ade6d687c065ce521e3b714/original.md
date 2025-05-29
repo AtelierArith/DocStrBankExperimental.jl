@@ -1,0 +1,12 @@
+```
+value(o::DPMM)
+```
+
+Realize the mixture model where each component is the marginal predictive distribution obtained as
+
+```
+q(x; mₖ, lₖ, aₖ, bₖ)
+    = ∫ N(x; μₖ, sqrt(1/τₖ)) q(μₖ | τₖ; mₖ, lₖ) q(τₖ; aₖ, bₖ) dμₖ dτₖ
+    = ∫ N(x; mₖ, sqrt(1/τₖ + 1/(lₖ*τₖ))) Gamma(τₖ; aₖ, bₖ) dμₖ dτₖ
+    = TDist( 2*aₖ, mₖ, sqrt(bₖ/aₖ*(lₖ+1)/lₖ) )
+```

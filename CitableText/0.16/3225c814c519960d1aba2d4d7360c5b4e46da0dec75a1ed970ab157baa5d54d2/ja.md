@@ -1,0 +1,1 @@
+`CtsUrn`DocStringExtensionsのURN比較トレイトの値

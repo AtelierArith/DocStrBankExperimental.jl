@@ -1,0 +1,1 @@
+layer_plain(Kx,Kyk0,thi,epsilon) Computes the eigenmodes of propagation through a plain layer, in a Layer object Kx: x-axis component of the propagation vector Ky: y-axis component of the propagation vector k0: is 2pi/lambda, to normalize the thickness thi: layer thickness epsilon: Bulk permittivity of the layer returns layer object

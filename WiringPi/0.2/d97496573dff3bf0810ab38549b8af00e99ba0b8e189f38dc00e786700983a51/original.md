@@ -1,0 +1,3 @@
+```
+serialPutchar(fd, c)
+```

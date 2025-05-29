@@ -1,0 +1,28 @@
+```Julia
+solarmass(U::UnitSystem) = mass(1.9884092485076926e30,U)
+```
+
+太陽の `mass` は重力定数の推定値から算出されます (kg または slug)。
+
+```Julia
+julia> solarmass(Metric) # kg
+1.9884092485076926e30
+
+julia> solarmass(British) # slug
+1.3624931295372337e29
+
+julia> solarmass(English) # lb
+4.383692010753383e30
+
+julia> solarmass(IAUE) # ME
+332946.04408781475
+
+julia> solarmass(IAUJ) # MJ
+1047.5654837077257
+
+julia> solarmass(QCD) # mₚ
+1.1887977912642768e57
+
+julia> solarmass(Metric)/dalton(Metric) # Da
+1.1974480387115297e57
+```

@@ -1,0 +1,1 @@
+The `@states` macro is used to define a set of FSM states. The macro takes in a list of state names and defines a singleton constant for each state. This is useful when defining simple symbolic states for an FSM.

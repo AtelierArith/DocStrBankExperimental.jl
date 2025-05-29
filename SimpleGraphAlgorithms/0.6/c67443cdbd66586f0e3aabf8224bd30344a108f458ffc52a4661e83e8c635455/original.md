@@ -1,0 +1,1 @@
+`vertex_color(G,a,b)` returns an `a:b`-coloring of the graph `G`. This is a mapping from the vertices of `G` to `b`-element subsets of  `{1,2,...,a}` such that adjacent vertices are assigned disjoint sets. An error is thrown if no such coloring exists.

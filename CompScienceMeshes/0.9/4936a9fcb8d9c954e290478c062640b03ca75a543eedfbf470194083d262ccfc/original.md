@@ -1,0 +1,1 @@
+Creates a predicate that can be used to check wheter a vertex is interior to a surface (true) or on its boundary (false). In particular it expects as argument an index pointing into the vertex buffer of `mesh`.

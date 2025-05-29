@@ -1,0 +1,1 @@
+"     constraint*mc*power*balance*shed(pm::AbstractUnbalancedPowerModel, i::Int; nw::Int=nw*id*default)::Nothing Template function for KCL constraints for load shed problem. It is based on PowerModelsDistribution.constraint*mc*power*balance*shed and adds balance for inline switches, branch*ne, and switch*ne

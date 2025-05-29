@@ -1,0 +1,1 @@
+`Paley(p)` creates the Paley graph with `p` vertices named `0:(p-1)`. Here `p` must be a prime with `p%4==1`. Vertices `u` and `v` are adjacent iff `u-v` is a quadratic residue (perfect square) modulo `p`.

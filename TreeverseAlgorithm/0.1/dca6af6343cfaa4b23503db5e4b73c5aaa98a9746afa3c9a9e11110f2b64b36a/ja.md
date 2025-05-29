@@ -1,0 +1,5 @@
+```
+loadlog(filename::String)
+```
+
+JSONファイルからTreeverseLogをロードします。

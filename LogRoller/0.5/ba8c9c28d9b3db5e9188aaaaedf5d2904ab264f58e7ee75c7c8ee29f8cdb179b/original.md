@@ -1,0 +1,1 @@
+Register a function to be called with the rotated file name just after the current log file is rotated. The file name of the rotated file is passed as an argument. The function is blocking and so any lengthy operation that needs to be done should be done asynchronously.

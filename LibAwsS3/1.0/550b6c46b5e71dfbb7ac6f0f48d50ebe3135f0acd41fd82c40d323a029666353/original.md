@@ -1,0 +1,1 @@
+Invoked to report the telemetry of the meta request once a single request finishes. Note: *metrics is only valid for the duration of the callback. If you need to keep it around, use [`aws_s3_request_metrics_acquire`](@ref)

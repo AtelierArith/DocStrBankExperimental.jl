@@ -1,0 +1,1 @@
+Function needed for converting vector of sampled parameters into ComponentVector in case of Lux chain output, derivatives the sampled parameters are of exotic type `Dual` due to ForwardDiff's autodiff tagging.

@@ -1,0 +1,1 @@
+Returns a list of columns in the specified tables. Optional parameter `catalog` must contain a full catalog name. Optional parameters `schema_pattern`, `table_pattern` and `column_pattern` can contain a search pattern. Result Set Columns are the same as those for the ODBC CLIColumns function.

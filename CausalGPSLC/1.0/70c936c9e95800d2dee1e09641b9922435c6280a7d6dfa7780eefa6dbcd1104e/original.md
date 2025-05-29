@@ -1,0 +1,1 @@
+Binary Treatment No Covariates

@@ -1,0 +1,1 @@
+evaluateがinchannelを閉じるまで評価します。

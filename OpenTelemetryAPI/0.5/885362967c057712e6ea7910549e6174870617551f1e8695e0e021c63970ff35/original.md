@@ -1,0 +1,17 @@
+Each concrete span should have the following interfaces implemented.
+
+  * [`tracer`](@ref)
+  * [`span_context`](@ref)
+  * [`span_kind`](@ref)
+  * [`parent_span_context`](@ref)
+  * [`attributes`](@ref)
+  * [`is_recording`](@ref)
+  * [`start_time`](@ref)
+  * [`end_time`](@ref)
+  * [`end_span!`](@ref)
+  * [`span_status!`](@ref)
+  * [`span_status`](@ref)
+  * [`span_name!`](@ref)
+  * [`span_name`](@ref)
+  * [`span_links`](@ref)
+  * [`span_events`](@ref)

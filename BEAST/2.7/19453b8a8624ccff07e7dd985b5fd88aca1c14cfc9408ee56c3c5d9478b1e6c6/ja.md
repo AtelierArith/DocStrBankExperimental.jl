@@ -1,0 +1,3 @@
+MWDoubleLayerRotatedFarField3D
+
+3D用の回転マクスウェル二重層遠方場演算子。

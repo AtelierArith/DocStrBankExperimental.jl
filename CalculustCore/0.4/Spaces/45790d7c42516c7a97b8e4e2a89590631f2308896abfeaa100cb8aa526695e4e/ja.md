@@ -1,0 +1,7 @@
+```julia
+diffusionOp(ν, V, discr, Vd; ...)
+diffusionOp(ν, V, discr, Vd, J; ν_update_func)
+
+```
+
+`Galerkin` 離散化は、通常は高次の空間 `Vd` で積分が行われるベクトル解析演算の非エイリアス実装をサポートします。これはオーバーインテグレーションと呼ばれます。`Vd` が提供されていない場合、積分は `V` で行われます。`J` は `V` から `Vd` へのグリッド間補間演算子です。`J` が提供されていない場合、再計算されます。`Vd == V` の場合、`J` は `IdentityOperator(V)` になります。

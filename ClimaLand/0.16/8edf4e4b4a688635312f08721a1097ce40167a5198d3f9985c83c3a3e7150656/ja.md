@@ -1,0 +1,9 @@
+```
+FieldMatrixWithSolver(Y::ClimaCore.Fields.FieldVector)
+```
+
+FieldMatrixWithSolverヤコビ行列構造体の外部コンストラクタ。これはClimaCore.FieldMatrixからコンストラクタを拡張し、オブジェクトをClimaLand特有の値で満たします。
+
+暗黙的にステップされる変数に対して、ヤコビ行列は三重対角行列です。明示的にステップされる変数に対して、ヤコビ行列は負の単位行列です。
+
+1つ以上の予測変数を暗黙的にステップしてモデルを実行するには、ヤコビ行列を構築し、ソルバーに渡す必要があります。モデルのすべての暗黙的にステップされた変数は`implicit_names`タプルに追加し、明示的にステップされた変数は`explicit_names`タプルに追加する必要があります。

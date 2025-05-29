@@ -1,0 +1,5 @@
+```
+Stochastic()
+```
+
+デフォルト [`ChanceStyle`](@ref).

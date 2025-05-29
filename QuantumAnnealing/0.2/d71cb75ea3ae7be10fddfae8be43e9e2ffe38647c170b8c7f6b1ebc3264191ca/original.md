@@ -1,0 +1,1 @@
+This function reads in a bqpjson file and generates the ising model dictionary  inputs: bqpjson::String - a bqpjson file (v1.0.0) that can be run on D-Wave hardware outputs: n - number of qubits ising_model::Dict{Tuple => Float64} - Dictionary of qubits and couplings to weights mapping:Dict{Int => Int} - mapping of the qubits in the bqpjson file to simulation qubits

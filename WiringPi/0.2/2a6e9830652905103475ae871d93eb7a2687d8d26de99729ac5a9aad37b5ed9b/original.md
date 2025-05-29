@@ -1,0 +1,3 @@
+```
+wiringPiVersion(major, minor)
+```

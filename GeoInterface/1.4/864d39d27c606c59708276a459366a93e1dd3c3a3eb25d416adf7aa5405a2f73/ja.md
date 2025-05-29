@@ -1,0 +1,1 @@
+すべての多面体表面のためのAbstractPolyhedralSurfaceTrait型。

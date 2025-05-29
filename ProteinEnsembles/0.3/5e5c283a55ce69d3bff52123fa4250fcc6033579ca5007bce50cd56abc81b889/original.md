@@ -1,0 +1,1 @@
+Run the interaction finding pipeline with one or two structures. If one structure is given, returns a `Constraints` object. If two structures are given, returns three `Constraints` objects corresponding to the combined constraints, constraints from structure one and constraints from structure two.

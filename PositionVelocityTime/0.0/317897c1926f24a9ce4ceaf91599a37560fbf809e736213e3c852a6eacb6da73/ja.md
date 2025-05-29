@@ -1,0 +1,1 @@
+PVTSolution、使用されたsatsとelおよびazを含む。

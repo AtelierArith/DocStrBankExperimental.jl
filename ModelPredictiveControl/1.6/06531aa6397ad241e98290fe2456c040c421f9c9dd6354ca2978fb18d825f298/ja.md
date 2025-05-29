@@ -1,0 +1,1 @@
+`evaloutput`のエイリアスとして呼び出し可能な`StateEstimator`オブジェクトを許可するファンクタ。

@@ -1,0 +1,3 @@
+```
+SpecificWeight <: DimensionalPhysicalQuantity
+```

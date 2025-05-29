@@ -1,0 +1,1 @@
+The results returned by `assign_taxonomy`. Individual columns can be accessed by e.g. `my_result.Genus`,  and a list of column names can be accessed by `names(my_result)`. The result can  be converted to a `DataFrame` by `using DataFrames; DataFrame(my_result)` or written to CSV with headers by  `using CSV; CSV.write("my_result.csv",my_result)`.

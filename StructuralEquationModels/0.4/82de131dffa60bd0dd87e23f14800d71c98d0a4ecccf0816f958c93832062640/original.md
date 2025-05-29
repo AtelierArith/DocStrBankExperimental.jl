@@ -1,0 +1,1 @@
+Supertype of all objects that can serve as the `optimizer` field of a SEM. Connects the SEM to its optimization backend and controls options like the optimization algorithm. If you want to connect the SEM package to a new optimization backend, you should implement a subtype of SemOptimizer.

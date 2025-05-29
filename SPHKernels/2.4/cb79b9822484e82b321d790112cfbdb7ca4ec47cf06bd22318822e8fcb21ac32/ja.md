@@ -1,0 +1,5 @@
+```
+Quintic(T::DataType=Float64, dim::Integer=3)
+```
+
+指定されたデータ型 `T` のために `Quintic` カーネルを設定します。

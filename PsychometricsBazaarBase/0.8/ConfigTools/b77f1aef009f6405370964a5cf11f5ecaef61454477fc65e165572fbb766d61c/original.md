@@ -1,0 +1,1 @@
+This module contains utilities to implement highly configurible library code where configuration is performed through structs, and smart defaults allow sloppy or flat specification of otherwise deeply nested configuration structs.

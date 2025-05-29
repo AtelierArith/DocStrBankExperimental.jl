@@ -1,0 +1,3 @@
+```
+posteriors(g::Game)
+```

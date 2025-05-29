@@ -1,0 +1,1 @@
+`ChemicalEntity` is an *abstract type* that englobes `Molecule`, `Atom`, `AtomicOrbital` and `MolecularOrbital` structures. `Molecule` is a *subtype* of `ChemicalEntity` that stores coordinates, atomic symbols and atomic numbers as objects. 

@@ -1,0 +1,1 @@
+Data structure for a mesh material that is used to describe the light components of a [Phong reflection](https://en.wikipedia.org/wiki/Phong_reflection_model) type model. All data is stored as RGBα for Red, Green, Blue and transparency.

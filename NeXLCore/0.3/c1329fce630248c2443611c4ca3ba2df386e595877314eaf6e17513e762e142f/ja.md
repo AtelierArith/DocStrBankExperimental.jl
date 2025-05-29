@@ -1,0 +1,1 @@
+@article{castellano2004analytical,   title={0.25–20 keVフォトンエネルギー範囲におけるブレムストラールングスペクトルのための解析モデル},   author={カステリャーノ, グスタボ and オサン, ヤーノシュ and トリンカヴェッリ, ホルヘ},   journal={スペクトロキミカ アクタ パート B: 原子スペクトロスコピー},   volume={59},   number={3},   pages={313–319},   year={2004},   publisher={エルゼビア} }

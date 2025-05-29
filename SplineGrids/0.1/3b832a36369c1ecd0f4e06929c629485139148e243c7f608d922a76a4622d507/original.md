@@ -1,0 +1,1 @@
+Perform `deactivate_control_points` for every refinement level except the last one in reverse order. For more details see `deactivate_overwritten_control_points!(::LocallyRefinedControlPoints, ::Integer)`.

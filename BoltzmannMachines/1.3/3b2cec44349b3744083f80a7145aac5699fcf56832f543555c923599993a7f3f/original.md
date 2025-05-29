@@ -1,0 +1,1 @@
+Abstract supertype for layerwise training specification. May be specifications for a normal RBM layer (see `TrainLayer`) or multiple combined specifications for a partitioned layer (see `TrainPartitionedLayer`).

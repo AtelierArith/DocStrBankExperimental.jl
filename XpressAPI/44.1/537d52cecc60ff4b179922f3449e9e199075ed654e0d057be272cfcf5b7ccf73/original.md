@@ -1,0 +1,39 @@
+```
+XPRSloadmip64(prob, probname, ncols, nrows, rowtype, rhs, rng, objcoef, start, collen, rowind, rowcoef, lb, ub, nentities, nsets, coltype, entind, limit, settype, setstart, setind, refval)::prob
+```
+
+Used to load a MIP problem into the Optimizer data structures.
+
+Integer, binary, partial integer, semi-continuous and semi-continuous integer variables can be defined, together with sets of type 1 and 2. The reference row values for the set members are passed as an array rather than specifying a reference row.
+
+# Arguments
+
+  * `prob::XPRSprob`: The current problem.
+  * `probname::Union{Nothing,AbstractString}`: A string of up to MAXPROBNAMELENGTH characters containing a name for the problem.
+  * `ncols::Integer`: Number of structural columns in the matrix.
+  * `nrows::Integer`: Number of rows in the matrix not (including the objective row).
+  * `rowtype::AbstractVector{Cchar}`: Character array of length `nrows` containing the row types: Lindicates a `<=` constraint; Eindicates an = constraint; Gindicates a `>=` constraint; Rindicates a range constraint; Nindicates a nonbinding constraint.
+  * `rhs::AbstractVector{Number}`: Double array of length `nrows` containing the right hand side coefficients.
+  * `rng::AbstractVector{Number}`: Double array of length `nrows` containing the range values for range rows.
+  * `objcoef::AbstractVector{Number}`: Double array of length `ncols` containing the objective function coefficients.
+  * `start::AbstractVector{Integer}`: Integer array containing the offsets in the `rowind` and `rowcoef` arrays of the start of the elements for each column.
+  * `collen::AbstractVector{Integer}`: Integer array of length `ncols` containing the number of nonzero elements in each column.
+  * `rowind::AbstractVector{Integer}`: Integer arrays containing the row indices for the nonzero elements in each column.
+  * `rowcoef::AbstractVector{Number}`: Double array containing the nonzero element values length as for `rowind`.
+  * `lb::AbstractVector{Number}`: Double array of length `ncols` containing the lower bounds on the columns.
+  * `ub::AbstractVector{Number}`: Double array of length `ncols` containing the upper bounds on the columns.
+  * `nentities::Integer`: Number of binary, integer, semi-continuous, semi-continuous integer and partial integer entities.
+  * `nsets::Integer`: Number of SOS1 and SOS2 sets.
+  * `coltype::AbstractVector{Cchar}`: Character array of length `nentities` containing the entity types: Bbinary variables; Iinteger variables; Ppartial integer variables; Ssemi-continuous variables; Rsemi-continuous integer variables.
+  * `entind::AbstractVector{Integer}`: Integer array of length `nentities` containing the column indices of the MIP entities.
+  * `limit::AbstractVector{Number}`: Double array of length `nentities` containing the integer limits for the partial integer variables and lower bounds for semi-continuous and semi-continuous integer variables (any entries in the positions corresponding to binary and integer variables will be ignored).
+  * `settype::AbstractVector{Cchar}`: Character array of length `nsets` containing the set types: 1SOS1 type sets; 2SOS2 type sets.May be `nothing` if not required.
+  * `setstart::AbstractVector{Integer}`: Integer array containing the offsets in the `setind` and `refval` arrays indicating the start of the sets.
+  * `setind::AbstractVector{Integer}`: Integer array of length `setstart[nsets]-1` containing the columns in each set.
+  * `refval::AbstractVector{Number}`: Double array of length `setstart[nsets]-1` containing the reference row entries for each member of the sets.
+
+# Return value
+
+  * `prob::XPRSprob`: The current problem.
+
+See also the documentation of the correponding function [XPRSloadmip64](https://www.fico.com/fico-xpress-optimization/docs/latest/solver/optimizer/HTML/XPRSloadmip64.html) in the C API.

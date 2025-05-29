@@ -1,0 +1,3 @@
+```
+Bit{T} <: BinarySite{T}
+```

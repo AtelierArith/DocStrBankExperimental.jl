@@ -1,0 +1,1 @@
+FrequencySimulationの結果を保持するための構造体

@@ -1,0 +1,5 @@
+```
+MakeGridDHC!(...)
+```
+
+[`MakeGridDH!`](@ref) のエイリアス

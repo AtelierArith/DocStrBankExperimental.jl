@@ -1,0 +1,1 @@
+acsetsおよびacsetスキーマのJSONシリアル化。

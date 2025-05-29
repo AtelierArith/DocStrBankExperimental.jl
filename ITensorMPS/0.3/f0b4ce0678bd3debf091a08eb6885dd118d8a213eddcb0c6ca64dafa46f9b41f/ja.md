@@ -1,0 +1,1 @@
+NoObserverは、AbstractObserverを受け取るDMRGルーチンのデフォルト引数として使用できるオブザーバータイプの単純な実装です。

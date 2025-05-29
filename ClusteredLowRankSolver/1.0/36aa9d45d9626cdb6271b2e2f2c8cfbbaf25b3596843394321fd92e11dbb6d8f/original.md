@@ -1,0 +1,5 @@
+```
+basis_gegenbauer(d, n, x)
+```
+
+Basis for the Gegenbauer polynomials in dimension n up to degree d.  This is the Gegenbauer polynomial with parameter lambda = n/2-1,  or the Jacobi polynomial with alpha = beta = (n-3)/2.  Normalized to evaluate to 1 at 1.  Taken from arxiv/2001.00256, ancillary files, SemidefiniteProgramming.jl.

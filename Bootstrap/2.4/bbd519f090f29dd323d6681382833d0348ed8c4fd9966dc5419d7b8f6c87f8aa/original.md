@@ -1,0 +1,5 @@
+Exact Sampling
+
+```julia
+ExactSampling()
+```

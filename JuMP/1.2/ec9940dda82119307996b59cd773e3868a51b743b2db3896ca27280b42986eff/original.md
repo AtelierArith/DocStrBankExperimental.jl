@@ -1,0 +1,5 @@
+```
+moi_function(constraint::AbstractConstraint)
+```
+
+Return the function of the constraint `constraint` in the function-in-set form as a `MathOptInterface.AbstractFunction`.

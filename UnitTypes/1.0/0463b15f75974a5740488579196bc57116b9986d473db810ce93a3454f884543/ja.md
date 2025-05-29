@@ -1,0 +1,1 @@
+このUnitTypeは、単位N*mを持つUnitTypes.NewtonMeterの基本的な測定を表します。

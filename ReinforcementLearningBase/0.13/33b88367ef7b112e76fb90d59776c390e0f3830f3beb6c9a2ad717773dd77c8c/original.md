@@ -1,0 +1,1 @@
+Usually used to describe [extensive-form game](https://en.wikipedia.org/wiki/Extensive-form_game). The environment contains a chance player and the corresponding probability is known. Therefore, [`prob`](@ref)`(env, player=chance_player(env))` must be defined.

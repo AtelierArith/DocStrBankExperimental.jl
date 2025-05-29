@@ -1,0 +1,1 @@
+On rank 0, this function returns a `Dict{Int, Vector{Int}}` where the keys are the MPI rank ids and the values are the CPU IDs of the CPU-threads that are currently running the Julia threads of the MPI rank. Returns `nothing` on all other ranks.

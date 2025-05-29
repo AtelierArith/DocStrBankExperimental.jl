@@ -1,0 +1,1 @@
+@article{reed1975shape,   title={連続X線スペクトルの形状とエネルギー分散型電子プローブ分析のための背景補正},   author={Reed, SJB},   journal={X線スペクトロメトリー},   volume={4},   number={1},   pages={14–17},   year={1975},   publisher={Wiley Online Library} }

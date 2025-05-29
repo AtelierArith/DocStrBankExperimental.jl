@@ -1,0 +1,1 @@
+Run this function with a string representing the robot you want the kinematic functions for, e.g. `get_kinematic_functions("YuMi")` Currently supports YuMi and ABB IRB7600 returns `fkine(q), ikine(T,q0), jacobian(q)` TODO: implement YuMi*left, Yumi*right Tbase*ikinePOE

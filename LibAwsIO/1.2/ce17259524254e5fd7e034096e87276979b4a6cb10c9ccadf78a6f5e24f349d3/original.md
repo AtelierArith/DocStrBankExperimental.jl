@@ -1,0 +1,1 @@
+Function signature for configuring your own resolver (the default just uses getaddrinfo()). The type in output_addresses is struct [`aws_host_address`](@ref) (by-value). We assume this function blocks, hence this absurdly complicated design.

@@ -1,0 +1,1 @@
+`newton_roots(p::SimplePolynomial, nits::Integer=10)` uses Newton's method to find all the roots of the polynomial `p`. This function uses `roots` to provide a starting value for each root  and then applies Newton's method to achieve much high accuracy.

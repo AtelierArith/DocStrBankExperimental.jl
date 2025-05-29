@@ -1,0 +1,1 @@
+This structure holds the 2D+1D inter-tree connectivity information. It is essentially a wrapper of the 2D p4est_connecitivity_t datatype, with some additional information about how the third dimension is embedded.

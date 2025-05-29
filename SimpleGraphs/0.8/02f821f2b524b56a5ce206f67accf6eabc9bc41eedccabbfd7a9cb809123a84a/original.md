@@ -1,0 +1,1 @@
+`HG(A)` where `A` is an `n`-by-`m` matrix creates a hypergraph with `n` vertices and `m` edges determined by the nonzero entries in the columns of `A`. This is a sort of inverse operation to `incidence`.

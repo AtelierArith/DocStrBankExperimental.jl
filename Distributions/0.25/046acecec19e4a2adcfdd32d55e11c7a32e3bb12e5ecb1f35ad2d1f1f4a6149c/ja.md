@@ -1,0 +1,3 @@
+```
+Epanechnikov(μ, σ)
+```

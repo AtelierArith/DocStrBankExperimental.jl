@@ -1,0 +1,1 @@
+`ImGuiErrorRecoveryState`のデストラクタ

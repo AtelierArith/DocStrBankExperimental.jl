@@ -1,0 +1,3 @@
+```
+pwmSetClock(divisor)
+```

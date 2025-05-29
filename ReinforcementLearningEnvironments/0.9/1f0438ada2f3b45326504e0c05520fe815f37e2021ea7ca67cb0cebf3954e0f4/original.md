@@ -1,0 +1,1 @@
+The multi-arm bandits environment is a stochastic environment. The resulted reward may be different even after taking the same actions each time. So for this kind of environments, the `Random.seed!(env)` must be implemented to help increase reproducibility without creating a new instance of the same `rng`.

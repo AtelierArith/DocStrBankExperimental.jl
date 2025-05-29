@@ -1,0 +1,1 @@
+This enumeration contains all modes in which we can open a saved cmesh. The cmesh can be loaded with more processes than it was saved and the mode controls, which of the processes open files and distribute the data.

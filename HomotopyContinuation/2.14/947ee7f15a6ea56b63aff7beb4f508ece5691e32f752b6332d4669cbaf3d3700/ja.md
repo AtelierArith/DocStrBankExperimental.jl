@@ -1,0 +1,7 @@
+```
+excess_solution_check!(path_result::PathResult,
+                       F::RandomizedSystem,
+                       newton_cache = NewtonCache(F.system))
+```
+
+[`PathResult`](@ref) `path_result` に `return_code` `:excess_solution` を割り当てます。これは、`path_result` がランダム化システム `F` の解であるが、`F` の基になる多項式システムの解ではない場合に行われます。これは、非特異解に対してニュートン法を使用し、特異解の解の残差を比較することによって実行されます。

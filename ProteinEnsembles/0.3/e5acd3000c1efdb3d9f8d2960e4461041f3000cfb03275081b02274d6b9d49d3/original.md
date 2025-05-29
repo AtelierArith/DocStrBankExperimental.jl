@@ -1,0 +1,1 @@
+Determines if two atoms are closer than the sum of the VDW radii plus extra*dist Angstroms. Currently counting C and H atoms only. Applies a crude 5 A distance cutoff for speed, so extra*dist values above ~1.5 A will have no effect.

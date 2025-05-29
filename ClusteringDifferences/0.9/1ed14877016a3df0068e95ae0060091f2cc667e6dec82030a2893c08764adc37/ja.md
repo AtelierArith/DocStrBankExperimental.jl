@@ -1,0 +1,5 @@
+```
+AbstractClusteringDifference
+```
+
+クラスタリングの違いのスーパークラス。

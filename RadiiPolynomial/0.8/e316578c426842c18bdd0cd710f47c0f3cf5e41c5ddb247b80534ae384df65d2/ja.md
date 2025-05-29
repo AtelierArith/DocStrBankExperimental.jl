@@ -1,0 +1,5 @@
+```
+IdentityWeight <: Weight
+```
+
+アイデンティティウェイト。

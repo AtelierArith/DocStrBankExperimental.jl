@@ -1,0 +1,5 @@
+```
+ncomponents(X)
+```
+
+ktensorのコンポーネント数。

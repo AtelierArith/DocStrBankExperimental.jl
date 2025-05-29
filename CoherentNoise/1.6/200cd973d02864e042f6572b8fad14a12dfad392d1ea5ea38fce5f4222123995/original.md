@@ -1,0 +1,14 @@
+```
+fbm_fractal_3d(; kwargs...)
+```
+
+Construct a sampler that outputs a 3-dimensional fractional Brownian motion fractal noise when it is sampled from.
+
+# Arguments
+
+  * `seed`: An unsigned integer used to seed the random number generator for this sampler, or `nothing` for non-deterministic results.
+  * `source::AbstractSampler=opensimplex2_3d()`: A 3-dimensional sampler instance to use as the source of the fractal.
+  * `octaves=4`: An integer between 1 and 32, denoting the number of octaves to apply.
+  * `frequency=1.0`: The frequency of the first octave's signal.
+  * `lacunarity=2.0`: A multiplier that determines how quickly the frequency increases for successive octaves.
+  * `persistence=0.5`: A multiplier that determines how quickly the amplitude diminishes for successive octaves.

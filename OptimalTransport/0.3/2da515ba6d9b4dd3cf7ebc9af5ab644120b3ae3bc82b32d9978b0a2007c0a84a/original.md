@@ -1,0 +1,5 @@
+```
+SinkhornGibbs()
+```
+
+Vanilla Sinkhorn algorithm.

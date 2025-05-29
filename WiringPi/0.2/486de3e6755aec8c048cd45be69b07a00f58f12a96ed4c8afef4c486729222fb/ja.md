@@ -1,0 +1,3 @@
+```
+softPwmWrite(pin, value)
+```

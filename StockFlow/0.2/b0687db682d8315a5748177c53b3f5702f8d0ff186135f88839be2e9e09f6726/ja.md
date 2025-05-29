@@ -1,0 +1,1 @@
+CausalLoopPMの頂点の数を返します。

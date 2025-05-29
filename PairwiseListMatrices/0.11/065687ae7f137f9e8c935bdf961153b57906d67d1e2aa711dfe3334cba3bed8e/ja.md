@@ -1,0 +1,1 @@
+この関数は、`PairwiseListMatrix`オブジェクトのベクターと`PairwiseListMatrix`を受け取り、ベクターの中央値と標準偏差を使用して行列にzスコア値を埋め込みます。

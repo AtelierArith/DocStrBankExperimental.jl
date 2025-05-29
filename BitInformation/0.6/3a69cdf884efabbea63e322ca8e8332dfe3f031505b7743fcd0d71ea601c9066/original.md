@@ -1,0 +1,1 @@
+Bitsetting for floats. Replace trailing bits with `1`s (round away from zero). `setmask` is an unsigned integer with bits being `1` for those that are set to one and `0` otherwise, such that the bits to keep are unaffected.

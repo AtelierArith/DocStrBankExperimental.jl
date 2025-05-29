@@ -1,0 +1,1 @@
+`iso_matrix(G,H)` returns a permutation matrix `P` such that `A*P==P*B` where `A` is the adjacency matrix of `G` and `B` is the adjacency matrix of `H`.  If the graphs are not isomorphic, an error is raised.

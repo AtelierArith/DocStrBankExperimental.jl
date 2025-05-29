@@ -1,0 +1,1 @@
+参照:     TBD（元のfymから借用したが、表記が異なる） 注:     state = [x, y, z, V, gamma, chi]         x, y, z: NED位置 [m]         V: （地上）速度 [m/s]         gamma: 垂直飛行経路角 [rad]         chi: 水平飛行経路角 [rad]     input = [CL, phi]         CL: 揚力係数         phi: バンク角 [rad]

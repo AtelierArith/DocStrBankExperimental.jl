@@ -1,0 +1,1 @@
+InfrastructureModelsの`apply!`関数のためのPowerModelsラッパー。

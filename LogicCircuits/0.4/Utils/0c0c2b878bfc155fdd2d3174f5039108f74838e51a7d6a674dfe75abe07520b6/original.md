@@ -1,0 +1,1 @@
+Literals are represented as 32-bit signed integers. Positive literals are positive integers identical to their variable. Negative literals are their negations. Integer 0 should not be used to represent literals.

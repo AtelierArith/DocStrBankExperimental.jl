@@ -1,0 +1,1 @@
+`PolymerParameter`型のアクセサ。

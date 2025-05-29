@@ -1,0 +1,1 @@
+Use a circular buffer to contain used RuleNodes to be recycled. First check the recycle bin to see if there are available RuleNodes, if not allocated a new one.  This helps minimize memory allocations and improves performance

@@ -1,0 +1,1 @@
+function SkeletonOfFiltration(Fz::FiltrationOfZ2Complexes, level)::FiltrationOfZ2Complexes; Returns the skelton of of the specified level (i.e. only facets whose dimension is at most equal to the level  )

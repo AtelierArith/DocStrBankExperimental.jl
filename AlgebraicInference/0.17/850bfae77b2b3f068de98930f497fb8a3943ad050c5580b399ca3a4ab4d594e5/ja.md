@@ -1,0 +1,5 @@
+```
+LauritzenSpiegelhalter <: ArchitectureType
+```
+
+Lauritzen-Spiegelhalterアーキテクチャ。

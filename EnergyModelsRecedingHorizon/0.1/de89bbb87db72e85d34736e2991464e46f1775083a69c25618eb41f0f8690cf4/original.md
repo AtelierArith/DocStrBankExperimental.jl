@@ -1,0 +1,1 @@
+Main module for `EnergyModelsRecedingHorizon`, a package that extends [`EnergyModelsX`](https://github.com/EnergyModelsX) with the implementation of a receding horizon framework for stress testing the invested energy system in an operational framework.

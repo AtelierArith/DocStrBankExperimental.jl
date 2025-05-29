@@ -1,0 +1,1 @@
+Gridは、単一のフィールドを持つ不変の構造体であり、そのフィールドはノードのサブタイプ（ChebRoots、ChebExtrema、ChebExtended）のタプルです。

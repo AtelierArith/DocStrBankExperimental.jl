@@ -1,0 +1,25 @@
+```
+verify_rounds(::Client, ::TestRound, ::Verbose, rounds_as_graphs, pass_threshold)
+```
+
+クライアントのメタグラフのリストから複数の計算ラウンドを検証します。この関数はメタグラフを反復処理し、`ComputationRound`のラウンドタイプを持つものをスキップし、ラウンドを検証し、その結果をリストに格納します。次に、失敗したラウンドの数をカウントし、失敗したラウンドと合格したラウンドの数を含むタプルを返します。
+
+# 引数
+
+  * `::Client`: `Client`インスタンス。
+  * `::TestRound`: `TestRound`インスタンス。
+  * `::Verbose`: `Verbose`インスタンス。
+  * `rounds_as_graphs`: クライアントのメタグラフのリスト。
+  * `pass_threshold`: ラウンドが合格と見なされるための閾値。
+
+# 戻り値
+
+  * `Tuple`: 失敗したラウンドと合格したラウンドの数を含むタプル。
+
+# 例
+
+```julia
+rounds_as_graphs = [create_meta_graph(Client()) for _ in 1:5]
+pass_threshold = 3
+round_verification = verify_rounds(Client(), TestRound(), Verbose(), rounds_as_graphs, pass_threshold)
+```

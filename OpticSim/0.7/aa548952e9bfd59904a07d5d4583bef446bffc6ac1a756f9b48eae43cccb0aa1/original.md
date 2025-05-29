@@ -1,0 +1,1 @@
+returns a 3D point. This takes into account the offset of centerpoint and the rotation vector used to construct the Rectangle. u and v are scaled by the size of the rectangle so that u=0,v=0 is one corner and u=v=1 is the diagonal corner. This function should go away once we have a sensible object transform hierarchy system.

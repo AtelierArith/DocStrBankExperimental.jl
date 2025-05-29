@@ -1,0 +1,1 @@
+Project the structures in an ensemble onto the eigenvectors of a PCA to get the principal coordinates. Non-zero eigenvalues only are returned. Assumes the ensemble is aligned and corresponds exactly to the PCA.

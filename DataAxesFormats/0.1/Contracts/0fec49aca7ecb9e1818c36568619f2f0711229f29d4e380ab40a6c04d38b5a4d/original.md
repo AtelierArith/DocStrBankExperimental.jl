@@ -1,0 +1,1 @@
+A pair where the key is the axis name and the value is a tuple of the [`ContractExpectation`](@ref) and a description of the axis (for documentation). We also allow specifying a tuple instead of a pairs to make it easy to invoke the API from other languages such as Python which do not have the concept of a `Pair`.

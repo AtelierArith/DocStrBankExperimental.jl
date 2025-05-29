@@ -1,0 +1,1 @@
+@article{reed1975shape,   title={The shape of the continuous X-ray spectrum and background corrections for energy-dispersive electron microprobe analysis},   author={Reed, SJB},   journal={X-Ray Spectrometry},   volume={4},   number={1},   pages={14–17},   year={1975},   publisher={Wiley Online Library} }

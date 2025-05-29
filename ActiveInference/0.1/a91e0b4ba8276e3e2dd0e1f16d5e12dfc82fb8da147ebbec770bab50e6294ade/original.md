@@ -1,0 +1,1 @@
+Normalizes a Categorical probability distribution

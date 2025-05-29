@@ -1,0 +1,5 @@
+```
+plot()
+```
+
+Blank plot.

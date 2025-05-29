@@ -1,0 +1,46 @@
+```
+PCPSAFTModel <: PCSAFTModel
+
+const PPCSAFT = PCPSAFT
+
+PCPSAFT(components;
+idealmodel = BasicIdeal,
+userlocations = String[],
+ideal_userlocations = String[],
+reference_state = nothing,
+verbose = false,
+assoc_options = AssocOptions())
+```
+
+## Input parameters
+
+  * `Mw`: Single Parameter (`Float64`) - Molecular Weight `[g/mol]`
+  * `segment`: Single Parameter (`Float64`) - Number of segments (no units)
+  * `sigma`: Single Parameter (`Float64`) - Segment Diameter [`A°`]
+  * `epsilon`: Single Parameter (`Float64`) - Reduced dispersion energy  `[K]`
+  * `k`: Pair Parameter (`Float64`) (optional) - Binary Interaction Paramater (no units)
+  * `dipole`: Single Parameter (`Float64`) - Dipole moment `[D]`
+  * `epsilon_assoc`: Association Parameter (`Float64`) - Reduced association energy `[K]`
+  * `bondvol`: Association Parameter (`Float64`) - Association Volume `[m^3]`
+
+## Model Parameters
+
+  * `Mw`: Single Parameter (`Float64`) - Molecular Weight `[g/mol]`
+  * `segment`: Single Parameter (`Float64`) - Number of segments (no units)
+  * `sigma`: Pair Parameter (`Float64`) - Mixed segment Diameter `[m]`
+  * `epsilon`: Pair Parameter (`Float64`) - Mixed reduced dispersion energy`[K]`
+  * `dipole`: Single Parameter (`Float64`) (optional) - Dipole moment `[D]`
+  * `epsilon_assoc`: Association Parameter (`Float64`) - Reduced association energy `[K]`
+  * `bondvol`: Association Parameter (`Float64`) - Association Volume
+
+## Input models
+
+  * `idealmodel`: Ideal Model
+
+## Description
+
+Perturbed-Chain Polar SAFT (PCP-SAFT)
+
+## References
+
+1. Gross, J., & Vrabec, J. (2005). An equation-of-state contribution for polar components: Dipolar molecules. AIChE Journal, 52(3), 856-1282. [doi:10.1002/aic.10683](https://doi.org/10.1002/aic.10683)

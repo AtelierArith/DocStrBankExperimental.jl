@@ -1,0 +1,5 @@
+```
+LossElectron <: AbstractPosAdduct
+```
+
+[M]+

@@ -1,0 +1,1 @@
+Creates a predicate that can be used to check wheter an edge is interior to a surface (true) or on its boundary (false). This predicate is based on combinatorics. In particular it expects as argument a tuple of indices pointing into the vertex buffer of `mesh`.

@@ -1,0 +1,43 @@
+```
+compare_kets(ψ_0::Ket,ψ_1::Ket)
+```
+
+Checks for equivalence allowing for a global phase difference between two input kets.
+
+# Examples
+
+```jldoctest
+julia> ψ_0 = Ket([1., 2., 3., 4.])
+4-element Ket{ComplexF64}:
+1.0 + 0.0im
+2.0 + 0.0im
+3.0 + 0.0im
+4.0 + 0.0im
+
+
+julia> δ = π/3 # phase offset
+1.0471975511965976
+
+julia> ψ_1 = exp(im * δ) * ψ_0
+4-element Ket{ComplexF64}:
+0.5000000000000001 + 0.8660254037844386im
+1.0000000000000002 + 1.7320508075688772im
+1.5000000000000004 + 2.598076211353316im
+2.0000000000000004 + 3.4641016151377544im
+
+
+julia> compare_kets(ψ_0, ψ_1)
+true
+
+julia> apply_instruction!(ψ_1, sigma_x(1))
+4-element Ket{ComplexF64}:
+1.5000000000000004 + 2.598076211353316im
+2.0000000000000004 + 3.4641016151377544im
+0.5000000000000001 + 0.8660254037844386im
+1.0000000000000002 + 1.7320508075688772im
+
+
+julia> compare_kets(ψ_0, ψ_1) # no longer equivalent after SigmaX gate
+false
+
+```

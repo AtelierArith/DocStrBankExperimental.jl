@@ -1,0 +1,3 @@
+```
+StatsBase.islinear(model::LMM)
+```

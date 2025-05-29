@@ -1,0 +1,1 @@
+このUnitTypeは、単位Ωを持つUnitTypes.Ohmの基本的な測定を表します。

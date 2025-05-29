@@ -1,0 +1,1 @@
+すべてのセグメントを返すRegularizationPathセグメントセレクタ

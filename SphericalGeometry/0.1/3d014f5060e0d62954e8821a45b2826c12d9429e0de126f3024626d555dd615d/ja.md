@@ -1,0 +1,3 @@
+```
+isselfintersecting(polygon::Polygon)
+```

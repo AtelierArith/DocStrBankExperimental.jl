@@ -1,0 +1,1 @@
+This function takes the original XML file downloaded from Apple and creates separate collections of dictionaries for each parent node. The metadata is preserved as key value pairs appended to the original dictionaries.

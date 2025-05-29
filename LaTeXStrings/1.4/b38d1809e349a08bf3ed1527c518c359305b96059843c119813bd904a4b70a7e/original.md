@@ -1,0 +1,3 @@
+A `LaTeXString` is a string type whose contents represent a fragment of LaTeX code, typically containing an equation (`$...$`).   In certain environments (e.g. IJulia) this will display with LaTeX-like formatting.   For the most part, you can use a `LaTeXString` object in any context that expects an `AbstractString` object.
+
+The `L"..."` macro is convenient for constructing `LaTeXString` objects, because it eliminates the need to escape backslashes and dollar signs, and implicitly inserts dollar signs around the string if none are present.  For example, `L"$\alpha$"`, `L"\alpha"`, and `LaTeXString("\$\\alpha\$")` are all equivalent.

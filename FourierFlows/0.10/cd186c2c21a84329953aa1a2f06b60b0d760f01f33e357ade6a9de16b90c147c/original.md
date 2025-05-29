@@ -1,0 +1,1 @@
+Abstract supertype for variables.

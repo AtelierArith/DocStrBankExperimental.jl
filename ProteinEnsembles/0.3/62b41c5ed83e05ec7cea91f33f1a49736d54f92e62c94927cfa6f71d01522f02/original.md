@@ -1,0 +1,1 @@
+Determines if two atoms are part of a hydrogen bond where the donor-acceptor distance is <= 3.5 Angstroms, the hydrogen-acceptor distance is <= 2.5 Angstroms and the donor-hydrogen-acceptor angle is minimally 90 degrees. Won't pick up the donor-H pairing, even though it is part of the H bond, as this pairing is covalent. Sulfur not considered.

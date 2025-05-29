@@ -1,0 +1,6 @@
+```julia
+set_Tr!(value::PowerSystems.EXAC1A, val) -> Any
+
+```
+
+Set [`EXAC1A`](@ref) `Tr`.

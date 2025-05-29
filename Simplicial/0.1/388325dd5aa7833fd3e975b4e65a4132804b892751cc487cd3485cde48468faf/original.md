@@ -1,0 +1,1 @@
+The function subset*of*a*sequence(the*seq::DirectedCodeword,the*subset::CodeWord)::DirectedCodeword   takes a sequence the*seq and a subset of vertices the*subset and outputs a new sequence obtained by discaring all the vertices in the*seq   that were not in the_subset

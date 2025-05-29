@@ -1,0 +1,1 @@
+An OPF formulation conforming to the ARPA-e GOC Challenge 1 specification. Power balance and branch flow constraints are strictly enforced. The primary departure from the PowerModels standard formulation is dispatchable bus shunts and a slight change in the transformer model.

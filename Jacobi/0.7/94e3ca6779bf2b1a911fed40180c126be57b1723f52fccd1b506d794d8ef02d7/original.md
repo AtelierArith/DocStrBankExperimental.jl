@@ -1,0 +1,1 @@
+Return quadrature `b` weight

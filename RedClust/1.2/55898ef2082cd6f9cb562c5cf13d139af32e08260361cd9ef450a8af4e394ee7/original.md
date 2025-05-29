@@ -1,0 +1,1 @@
+summarise([io::IO], clusts::ClustLabelVector, truth::ClustLabelVector, printoutput = true) -> String Prints a summary of the clustering accuracy of `clusts` with respect to the ground truth in `truth`. The output is printed to the output stream `io`, which defaults to `stdout` if not provided.

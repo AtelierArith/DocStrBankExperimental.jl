@@ -1,0 +1,1 @@
+`hurwitz(l,i::Integer)` the  Hurwitz action of the  generator σᵢ of the  braid group Bₙ on the list `l`   of  length  `n`  of  group  elements,  which  replaces  `lᵢ,lᵢ₊₁`  by `lᵢ₊₁,lᵢ^lᵢ₊₁`.  If `i<0`, does the action of `inv(σⱼ)` where `j=-i`, which replaces `lⱼ,lⱼ₊₁` by `lⱼ₊₁^inv(lⱼ),lⱼ`.

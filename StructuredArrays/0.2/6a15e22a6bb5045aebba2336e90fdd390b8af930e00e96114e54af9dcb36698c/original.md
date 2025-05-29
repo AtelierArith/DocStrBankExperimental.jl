@@ -1,0 +1,1 @@
+Package `StructuredArrays` implements arrays whose elements have values that only depend on the indices. Examples of such arrays are uniform arrays with constant values, structured arrays with Boolean values indicating whether an entry is significant.

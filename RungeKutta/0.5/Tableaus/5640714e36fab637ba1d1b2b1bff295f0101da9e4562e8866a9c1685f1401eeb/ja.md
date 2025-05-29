@@ -1,0 +1,1 @@
+[`TableauImplicitEuler`](@ref)のエイリアス

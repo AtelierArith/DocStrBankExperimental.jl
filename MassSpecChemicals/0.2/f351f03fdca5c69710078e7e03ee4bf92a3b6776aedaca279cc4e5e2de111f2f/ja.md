@@ -1,0 +1,5 @@
+```
+フルオリデーション <: AbstractNegAdduct
+```
+
+[M+F]-

@@ -1,0 +1,1 @@
+[`aws_event_stream_message`](@ref) が検出されたときに呼び出されます。メッセージが正常に解析された場合、message は非 null であり、error*code は AWS*ERROR*SUCCESS になります。そうでない場合、message は null になり、error*code は発生したエラーを表します。error*code が AWS*OP_SUCCESS でない場合、チャネルもシャットダウンすることに注意してください。

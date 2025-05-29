@@ -1,0 +1,3 @@
+```
+serialOpen(device, baud)
+```

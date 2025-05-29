@@ -1,0 +1,1 @@
+`RGB` is the standard Red-Green-Blue (sRGB) colorspace.  Values of the individual color channels range from 0 (black) to 1 (saturated). If you want "Integer" storage types (e.g., 255 for full color), use `N0f8(1)` instead (see FixedPointNumbers).

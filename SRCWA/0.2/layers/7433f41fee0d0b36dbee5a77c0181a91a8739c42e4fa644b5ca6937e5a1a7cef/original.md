@@ -1,0 +1,1 @@
+Halfspace(V,W,Kz) Computed Eigenmodes of an unpatterned, infinitely thin halfspace V: coordinate transform between eigenmode amplitude and magnetic field W: coordinate transform between eigenmode amplitude and electric field Kz: z-axis component of the propagation vector

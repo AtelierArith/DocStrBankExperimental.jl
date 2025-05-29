@@ -1,0 +1,3 @@
+TaylorSolution{T, U, N, VT<:AbstractVector{T}, AX<:AbstractArray{U,N},         P<:Union{Nothing, AbstractArray{Taylor1{U}, N}},         VTE<:Union{Nothing, AbstractVector{U}},         AXE<:Union{Nothing, AbstractArray{U, N}},         VΛ<:Union{Nothing, AbstractArray{U,N}}} <: AbstractTaylorSolution{T, U}
+
+この `struct` は `taylorinteg` の戻り値の型を表します。フィールド `t` と `x` はそれぞれ、時間（独立変数）の値を持つベクトルと、計算された従属変数の値を持つベクトルを表します。`taylorinteg` が `dense=true` で呼び出されると、フィールド `p` は各時間ステップで計算されたテイラー多項式展開を格納します。フィールド `tevents`、`xevents` および `gresids` は `taylorinteg` の根探索法に関連しており、`λ` は [lyap_taylorinteg](@ref) の出力に関連しています。

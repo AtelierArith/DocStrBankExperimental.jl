@@ -1,0 +1,1 @@
+`simplify(H::SimpleHypergraph)` converts a hypergraph into a simple graph, `G`. The vertices of `G` are the same as those in `H`. Two vertices of `G` are adjacent iff they lie in a common edge of `H`.

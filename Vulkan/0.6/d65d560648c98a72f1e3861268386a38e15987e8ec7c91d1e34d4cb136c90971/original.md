@@ -1,0 +1,18 @@
+Extension: VK_KHR_wayland_surface
+
+Arguments:
+
+  * `physical_device::PhysicalDevice`
+  * `queue_family_index::UInt32`
+  * `display::Ptr{wl_display}`
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/vkGetPhysicalDeviceWaylandPresentationSupportKHR.html)
+
+```julia
+_get_physical_device_wayland_presentation_support_khr(
+    physical_device,
+    queue_family_index::Integer,
+    display::Ptr{Nothing}
+) -> Bool
+
+```

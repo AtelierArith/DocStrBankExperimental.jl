@@ -1,0 +1,1 @@
+persistModelStateContract(previous::Dict{String,Any}, current::Dict{String,Any}, w::Workflow, component::Component) 	persist the delta between previous and current state into into the workflow context

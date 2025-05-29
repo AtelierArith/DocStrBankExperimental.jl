@@ -1,0 +1,1 @@
+==(f,g) This takes two arrays of pseudomonomials (interpreted as canonical forms) and checks if they are identical (discarding the particular ordering as arrays – for some reason the obvious set operations did not work here)

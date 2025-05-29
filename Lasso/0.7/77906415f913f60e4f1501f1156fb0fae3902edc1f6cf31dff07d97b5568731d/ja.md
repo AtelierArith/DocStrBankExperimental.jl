@@ -1,0 +1,1 @@
+LassoModelはLassoPathから選択されたセグメントを表します。

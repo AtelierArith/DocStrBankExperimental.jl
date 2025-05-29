@@ -1,0 +1,26 @@
+```
+Solve Toxicokinetics Models with MCMC parameters
+
+$\frac{dx(t)}{dt} = k_d (conc(t) - x(t))$
+```
+
+**Fields**
+
+```
+- `tps` -- time vector
+- `conc` -- exposure vector
+- `kd` -- parameter, scalar
+```
+
+Return an `Array{Array{Float64,1},1}`.
+
+# Example
+
+```julia
+julia> myTK = runTK_MCMC([0,1,2,3], [0,1,20,2], [0.5, 2.4]);
+
+julia> myTK.TK
+2-element Array{Array{Float64,1},1}:
+ [0.0, 0.21800446293645104, 4.570824232907027, 6.801199145490319]
+ [0.0, 0.6019164649918195, 12.77507909562312, 8.171280475528322]
+```

@@ -1,0 +1,1 @@
+This function spilts a FF-measurement according to it FF-positions in measurements per position and treats them as single measurements. It returns `fileNames` Array{String,1} and the correspodning `paramsArray` as Array{Dict,1}, which are the data dictionaries. Both can be used to save the data with saveasMDF(...).

@@ -1,0 +1,5 @@
+```
+SNN(...)
+```
+
+Alias for StandardNeuralNetwork.

@@ -1,0 +1,63 @@
+```julia
+gen_code!(sampled_code, gnss, prn, sampling_frequency)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency
+)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency,
+    start_phase
+)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency,
+    start_phase,
+    start_index_shift
+)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency,
+    start_phase,
+    start_index_shift,
+    maximum_expected_sampling_frequency
+)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency,
+    start_phase,
+    start_index_shift,
+    maximum_expected_sampling_frequency,
+    maximum_expected_doppler
+)
+gen_code!(
+    sampled_code,
+    gnss,
+    prn,
+    sampling_frequency,
+    code_frequency,
+    start_phase,
+    start_index_shift,
+    maximum_expected_sampling_frequency,
+    maximum_expected_doppler,
+    PHASET
+)
+
+```
+
+Generate the code signal inplace for PRN-Number `prn` of system `gnss` at chip rate `code_frequency`, sampled at sampling rate `sampling_frequency`. Make sure, that `sampling_frequency` is larger than `code_frequency` to avoid overflows with the modulo calculation.

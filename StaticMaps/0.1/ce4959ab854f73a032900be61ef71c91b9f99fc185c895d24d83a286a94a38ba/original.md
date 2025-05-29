@@ -1,0 +1,5 @@
+```
+StaticMap{F, Tuple}
+```
+
+...

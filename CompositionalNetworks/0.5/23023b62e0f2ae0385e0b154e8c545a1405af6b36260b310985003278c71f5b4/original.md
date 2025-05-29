@@ -1,0 +1,3 @@
+```
+minkowski(x, X, p)
+```

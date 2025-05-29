@@ -1,0 +1,5 @@
+```
+rotation_about_axis(θ::Real,v::Vector) -> SMatrix{3,3}
+```
+
+Constructs the rotation matrix corresponding to rotation about the axis `v` by angle θ. The matrix transforms the coordinates of a vector in system A to coordinates in system B, where Θ is the angle of A with respect to B. (Flip the sign of the input Θ if you want it to correspond to B's angle relative to A.)

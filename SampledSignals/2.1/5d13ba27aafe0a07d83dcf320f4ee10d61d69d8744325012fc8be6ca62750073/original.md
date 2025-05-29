@@ -1,0 +1,1 @@
+SampleBufSink is a SampleSink backed by a buffer. It's mostly useful to hook into the stream conversion infrastructure, because you can wrap a buffer in a SampleBufSink and then read a source into it with a different channel count, sample rate, or channel count.

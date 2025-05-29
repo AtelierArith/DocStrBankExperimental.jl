@@ -1,0 +1,1 @@
+Sine-weighted moving average

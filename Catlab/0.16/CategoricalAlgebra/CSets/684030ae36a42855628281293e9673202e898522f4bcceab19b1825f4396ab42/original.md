@@ -1,0 +1,1 @@
+Check whether an ACSetTransformation is still valid, despite possible deletion  of elements in the codomain. An ACSetTransformation that isn't in bounds will  throw an error, rather than return `false`, if run through `is_natural`.

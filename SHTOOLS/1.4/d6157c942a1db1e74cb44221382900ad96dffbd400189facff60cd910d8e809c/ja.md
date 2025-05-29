@@ -1,0 +1,3 @@
+MakeGridPointC(...)
+
+[`MakeGridPoint`](@ref)のエイリアスです。

@@ -1,0 +1,1 @@
+Load S&P Stock Market dataset, as used in [An Introduction to Statistical Learning with applications in R](https://rdrr.io/cran/ISLR/man/Smarket.html), by Witten et al (2013), Springer-Verlag, New York.

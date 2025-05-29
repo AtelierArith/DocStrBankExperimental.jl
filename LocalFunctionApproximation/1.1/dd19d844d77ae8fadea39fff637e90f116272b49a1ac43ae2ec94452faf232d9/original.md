@@ -1,0 +1,1 @@
+This module implements various methods of locally approximating a function, such as multi-linear, simplex and k-nearest-neighbor approximation. An example use case is for locally approximating value functions in value iteration

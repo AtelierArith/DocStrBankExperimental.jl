@@ -1,0 +1,1 @@
+このUnitTypeは、単位Paを持つUnitTypes.Pascalの基本的な測定を表します。

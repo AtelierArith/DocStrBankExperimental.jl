@@ -1,0 +1,3 @@
+```
+isdone(j::Job) :: Bool
+```

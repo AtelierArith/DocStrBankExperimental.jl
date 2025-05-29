@@ -1,0 +1,14 @@
+```
+summarize_table(::Val{:annual_cf_lim})
+```
+
+| column_name     | data_type      | unit                            | required | description                                                                                                                                                                                      |
+|:--------------- |:-------------- |:------------------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `genfuel`       | AbstractString | E4ST.NA                         | false    | The fuel type that the generator uses.  Leave blank to not filter by genfuel.                                                                                                                    |
+| `gentype`       | String         | E4ST.NA                         | false    | The generation technology type that the generator uses.  Leave blank to not filter by gentype.                                                                                                   |
+| `area`          | AbstractString | E4ST.NA                         | false    | The area with which to filter by. I.e. "state". Leave blank to not filter by area.                                                                                                               |
+| `subarea`       | AbstractString | E4ST.NA                         | false    | The subarea to include in the filter.  I.e. "maryland".  Leave blank to not filter by area.                                                                                                      |
+| `filter_`       | String         | E4ST.NA                         | false    | There can be multiple filter conditions - `filter1`, `filter2`, etc.  It denotes a comparison used for selecting the table rows to apply the adjustment to.  See `parse_comparison` for examples |
+| `status`        | Bool           | E4ST.NA                         | false    | Whether or not to use this limit                                                                                                                                                                 |
+| `annual_cf_min` | Float64        | E4ST.MWhGeneratedPerMWhCapacity | false    | The minimum annual capacity factor ∈ (0,1].  If outside these bounds, not set.  Be very careful - easy to make model infeasible if contradictory to availability factors.                        |
+| `annual_cf_max` | Float64        | E4ST.MWhGeneratedPerMWhCapacity | false    | The maximum annual capacity factor ∈ [0,1).  If outside these bounds, not set.                                                                                                                   |

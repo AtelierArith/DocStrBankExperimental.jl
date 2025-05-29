@@ -1,0 +1,5 @@
+```
+ fdif2ngap(sysr::FDFilterIF, SFDI, freq) -> (gap, β, γ)
+```
+
+Compute the fault-to-noise gap `gap` (and the related quantities `β` and `γ`)  for the stable fault detection filter internal form object `sysr::FDFilterIF` and the associated binary structure vector `SFDI`. `sysr.sys[:,sysr.faults]` is the fault to residual channel of the filter  with the corresponding transfer function matrix `Rf(λ)` and  `sysr.sys[:,sysr.noise]` is the noise to residual channel of the filter  with the corresponding transfer function matrix `Rw(λ)`.    If  `Rff(λ)` is the transfer function matrix formed of those `j`-th columns of `Rf(λ)`  for which `SFDI[j] = 1` and `Rdf(λ)` is the transfer function matrix formed of  those `j`-th columns of `Rf(λ)` for which `SFDI[j] = false`, then:    `β` is the H∞- index of `Rff(λ)`, `γ` is the H∞-norm of `[Rdf(λ) Rw(λ)]` and  `gap` is the fault-to-noise gap evaluated as `gap := β/γ`.  If `freq` is a vector of real frequency values, then `β` and `γ` are evaluated over the frequencies contained in `freq`.  `gap = ∞` if `[Rdf(λ) Rw(λ)] = 0` and `gap = 0` if `Rff(λ) = 0`.

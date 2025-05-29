@@ -1,0 +1,1 @@
+Evaluate a functional and store results in passed arrays. If for a particular quantity no array is passed, it is not computed. Required input arguments depend on the functional type (`rho` for all functionals, `sigma` for GGA and mGGA, `tau` and `lapl` for mGGA).

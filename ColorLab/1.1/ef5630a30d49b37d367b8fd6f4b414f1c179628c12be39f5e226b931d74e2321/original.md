@@ -1,0 +1,1 @@
+2-deg CIE(2008) "physiologically-relevant" luminous efficiency function V(λ), consistent with the Stockman & Sharpe(2000) 2-deg cone fundamentals. Each row are the wavelength(nm), photopic luminous efficiency(Linear Energy).

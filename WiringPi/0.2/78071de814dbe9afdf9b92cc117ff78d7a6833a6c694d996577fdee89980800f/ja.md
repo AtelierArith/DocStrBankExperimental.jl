@@ -1,0 +1,3 @@
+```
+wiringPiSetupGpioDevice(pinType)
+```

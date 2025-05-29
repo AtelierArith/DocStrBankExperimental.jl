@@ -1,0 +1,1 @@
+AbstractReteJoinNodeは、すべてのRete結合ノードの抽象スーパタイプです。

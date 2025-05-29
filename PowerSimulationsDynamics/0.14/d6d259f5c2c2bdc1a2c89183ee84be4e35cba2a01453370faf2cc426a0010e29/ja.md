@@ -1,0 +1,1 @@
+ODE入力のためのResidualModelをインスタンス化します。

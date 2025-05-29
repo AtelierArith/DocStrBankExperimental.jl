@@ -1,0 +1,1 @@
+For the first reaction sampler, you can call next() multiple times and get different, valid, answers. That isn't the case here. When you call next() on a CombinedNextReaction sampler, it returns the key associated with the clock that fires and marks that clock as fired. Calling next() again would return a nonsensical value.

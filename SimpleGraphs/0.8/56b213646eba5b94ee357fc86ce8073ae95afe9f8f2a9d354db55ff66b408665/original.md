@@ -1,0 +1,1 @@
+`RandomDigraph(n,p)` creates an Erdos-Renyi style random directed graph with vertices `1:n` and edge probability `p` (equal to 0.5 by default). The possible edges `(u,v)` and `(v,u)` are independent. No loops are created. To also create loops (each with probability `p`) use `RandomDigraph(n,p,true)`.

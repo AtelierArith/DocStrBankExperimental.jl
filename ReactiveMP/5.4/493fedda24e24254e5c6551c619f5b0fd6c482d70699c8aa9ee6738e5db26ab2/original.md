@@ -1,0 +1,1 @@
+`PermutationMatrix(dim::T; switch_first::Bool=true)` Generates a random permutation matrix of size (dim x dim). The `switch_first` argument specifies whether the first index always has to be permuted.

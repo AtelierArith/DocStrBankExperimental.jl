@@ -1,0 +1,1 @@
+`F <: ArrayLikeVariate{N}` specifies the number of axes of a variate or a sample with an array-like shape, e.g. univariate (scalar, `N == 0`), multivariate (vector, `N == 1`) or matrix-variate (matrix, `N == 2`).

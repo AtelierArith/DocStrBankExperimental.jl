@@ -1,0 +1,3 @@
+```
+update!(storage, val) -> storage
+```

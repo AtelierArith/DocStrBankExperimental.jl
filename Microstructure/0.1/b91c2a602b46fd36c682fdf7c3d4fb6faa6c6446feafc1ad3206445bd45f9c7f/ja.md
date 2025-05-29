@@ -1,0 +1,1 @@
+nn_estimate(         dmri::MRI,         mask::MRI,         mlp::Chain{T},         netarg::NetworkArg,         ntest::Int,         savedir::String,         savename::String,     )  学習済みのmlpモデルをデータに適用し、推定されたパラメータマップをnifti形式で保存します。

@@ -1,0 +1,9 @@
+```
+providesUnitPrefix(unitCatalogue::UnitCatalogue, name::String)
+```
+
+`unitCatalogue`に名前`name`の[`UnitPrefix`](@ref)が保存されているか確認します。
+
+# 出力
+
+`::Bool`

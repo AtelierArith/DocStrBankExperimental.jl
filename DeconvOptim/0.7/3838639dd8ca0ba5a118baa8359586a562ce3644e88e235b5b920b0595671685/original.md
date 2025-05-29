@@ -1,0 +1,5 @@
+```
+Piecewise_positive()
+```
+
+Returns a function and an inverse function  to map numbers to larger than 0 via two function stitched together.

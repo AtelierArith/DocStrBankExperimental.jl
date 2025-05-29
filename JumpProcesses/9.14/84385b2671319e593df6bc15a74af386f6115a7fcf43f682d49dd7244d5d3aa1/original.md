@@ -1,0 +1,1 @@
+David F. Anderson, Masanori Koyama; An asymptotic relationship between coupling methods for stochastically modeled population processes. IMA J Numer Anal 2015; 35 (4): 1757-1778. doi: 10.1093/imanum/dru044

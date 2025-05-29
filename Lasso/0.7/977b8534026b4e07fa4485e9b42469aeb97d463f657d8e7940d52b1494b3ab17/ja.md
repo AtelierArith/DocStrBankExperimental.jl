@@ -1,0 +1,1 @@
+GammaLassoModelは、GammaLassoPathから選択されたセグメントを表します。

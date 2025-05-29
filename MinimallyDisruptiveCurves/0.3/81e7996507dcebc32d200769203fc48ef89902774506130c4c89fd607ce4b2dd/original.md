@@ -1,0 +1,1 @@
+Experimental. See documentation for MomentumReadjustment. This acts the  same, but instead of modifying the momentum, it modifies the state of the curve (i.e. current parameters) itself, by doing gradient descent to minimise the cost function, subject to the constraint that the distance from the initial parameters does not decrease. 

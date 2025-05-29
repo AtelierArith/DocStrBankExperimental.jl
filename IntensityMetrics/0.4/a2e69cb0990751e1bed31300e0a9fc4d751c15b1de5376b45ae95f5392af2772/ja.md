@@ -1,0 +1,1 @@
+struct Excitation                 f0: 中心周波数 [Hz]     pulse*duration: エキサイテーションパルスのオンタイム / 持続時間 [s]         duty*cycle: [0, 1]     total_duration: 波形の総持続時間 [s]                 fs: 受信信号のサンプリング周波数 [Hz] end

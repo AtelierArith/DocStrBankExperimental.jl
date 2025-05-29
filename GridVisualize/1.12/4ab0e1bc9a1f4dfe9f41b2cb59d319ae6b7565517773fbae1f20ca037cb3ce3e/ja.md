@@ -1,0 +1,6 @@
+```julia
+isplutovista(Plotter)
+
+```
+
+ヒューリスティックにPlotterがPlutoVistaであるかをチェックします。

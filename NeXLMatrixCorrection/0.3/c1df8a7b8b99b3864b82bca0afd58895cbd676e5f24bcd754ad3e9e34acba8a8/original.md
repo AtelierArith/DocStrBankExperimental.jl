@@ -1,0 +1,1 @@
+The `WegsteinUpdateRule` implements the very effective method of Reed and Mason (S.J.B. Reed and P.K. Mason, Transactions ofthe Second National Conference on Electron Microprobe Analysis, Boston, 1967.) for updating the composition estimate between iteration steps.

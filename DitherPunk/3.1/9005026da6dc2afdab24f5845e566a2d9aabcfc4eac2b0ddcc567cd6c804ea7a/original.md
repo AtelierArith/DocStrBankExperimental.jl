@@ -1,0 +1,1 @@
+Simplest form of image quantization by turning each pixel to the closest one in the provided color palette `cs`. Technically this not a dithering algorithm as the quatization error is not "randomized".

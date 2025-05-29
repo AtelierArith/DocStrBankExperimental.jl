@@ -1,0 +1,1 @@
+Abstract DMR returned object

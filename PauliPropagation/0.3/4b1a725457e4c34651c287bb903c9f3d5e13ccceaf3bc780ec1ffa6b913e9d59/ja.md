@@ -1,0 +1,1 @@
+PathPropertiesの整形表示

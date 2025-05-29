@@ -1,0 +1,1 @@
+logm(x) = log(-x)

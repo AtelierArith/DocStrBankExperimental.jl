@@ -1,0 +1,3 @@
+```
+digitalRead(pin)
+```

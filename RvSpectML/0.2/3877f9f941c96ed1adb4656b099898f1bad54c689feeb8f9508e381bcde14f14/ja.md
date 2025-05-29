@@ -1,0 +1,1 @@
+`calc_formal_rv_precission(spectra, chunklist_timeseries; smooth_factor)` 各スペクトルの配列と対応する chunklist_timeseries に対する期待される RV 不確実性を計算します。与えられた分散を持つ光子ノイズのみを仮定します。

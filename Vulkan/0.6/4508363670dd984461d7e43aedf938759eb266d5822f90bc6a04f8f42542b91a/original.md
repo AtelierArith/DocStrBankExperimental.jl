@@ -1,0 +1,10 @@
+Intermediate wrapper for VkBufferImageCopy2.
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkBufferImageCopy2.html)
+
+```julia
+struct _BufferImageCopy2 <: Vulkan.VulkanStruct{true}
+```
+
+  * `vks::VulkanCore.LibVulkan.VkBufferImageCopy2`
+  * `deps::Vector{Any}`

@@ -1,0 +1,5 @@
+```julia
+struct IsPrimitive
+```
+
+プリミティブモデルのトレイト

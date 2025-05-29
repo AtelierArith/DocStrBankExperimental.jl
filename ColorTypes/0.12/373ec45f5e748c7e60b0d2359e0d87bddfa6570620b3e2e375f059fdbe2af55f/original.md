@@ -1,0 +1,1 @@
+`Colorant{T,N}` is the abstract super-type of all types in ColorTypes, and refers to both (opaque) colors and colors-with-transparency (alpha channel) information.  `T` is the element type (extractable with `eltype`) and `N` is the number of *meaningful* entries (extractable with `length`), i.e., the number of arguments you would supply to the constructor.

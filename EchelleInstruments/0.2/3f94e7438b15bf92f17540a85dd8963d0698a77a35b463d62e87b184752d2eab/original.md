@@ -1,0 +1,1 @@
+Delegates loading of code with functions and parameters specific to different instruments. Subdirectories of src/instruments include provide functions specialized for each instrument, typically the file I/O and pre-processing, so data ends up in a common format. src/instruments/common.jl provides routines that can be shared by instruments.

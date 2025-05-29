@@ -1,0 +1,5 @@
+```
+undecided(C::RegionsResult)
+```
+
+Returns the regions in `C` that were labelled undecided.

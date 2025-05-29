@@ -1,0 +1,3 @@
+This structure holds the information associated to an attribute of a tree. The attributes of each are stored in a key-value storage, where the key consists of the two entries (package_id,key) both being integers. The package_id serves to identify the application layer that added the attribute and the key identifies the attribute within that application layer.
+
+All attribute info objects of one tree are stored in an array and adding a tree's att_offset entry to the tree's address yields this array. The attributes themselves are stored in an array directly behind the array of the attribute infos.

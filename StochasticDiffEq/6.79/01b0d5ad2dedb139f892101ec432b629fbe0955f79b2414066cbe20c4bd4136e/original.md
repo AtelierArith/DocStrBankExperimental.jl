@@ -1,0 +1,1 @@
+Komori, Y., & Burrage, K. (2011). Supplement: Efficient weak second order stochastic Runge–Kutta methods for non-commutative Stratonovich stochastic differential equations. Journal of computational and applied mathematics, 235(17), pp. 5326 - 5329 (2011) DOI:10.1016/j.cam.2011.04.021

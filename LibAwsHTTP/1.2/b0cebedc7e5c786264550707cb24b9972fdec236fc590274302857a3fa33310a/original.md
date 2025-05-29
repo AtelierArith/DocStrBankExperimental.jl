@@ -1,0 +1,1 @@
+Invoked at the start of an incoming request. To process the request, the user must create a request handler stream and return it to the connection. If NULL is returned, the request will not be processed and the last error will be reported as the reason for failure.

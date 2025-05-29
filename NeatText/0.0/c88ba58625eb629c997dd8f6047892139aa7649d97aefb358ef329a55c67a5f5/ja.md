@@ -1,0 +1,1 @@
+extract_streetaddress: 与えられたテキストからすべての住所を抽出します

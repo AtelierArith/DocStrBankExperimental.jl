@@ -1,0 +1,1 @@
+Returns the labels associated with state s  For each state, it should return a list of atomic proposition that evaluate to true, all the other propositions are assumed false. labels(mdp::M, s, a) where {M <: Union{MDP,POMDP}}

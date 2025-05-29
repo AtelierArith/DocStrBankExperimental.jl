@@ -1,0 +1,18 @@
+Extension: VK_NV_cooperative_matrix
+
+Arguments:
+
+  * `cooperative_matrix::Bool`
+  * `cooperative_matrix_robust_buffer_access::Bool`
+  * `next::Any`: defaults to `C_NULL`
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkPhysicalDeviceCooperativeMatrixFeaturesNV.html)
+
+```julia
+PhysicalDeviceCooperativeMatrixFeaturesNV(
+    cooperative_matrix::Bool,
+    cooperative_matrix_robust_buffer_access::Bool;
+    next
+) -> Vulkan.PhysicalDeviceCooperativeMatrixFeaturesNV
+
+```

@@ -1,0 +1,1 @@
+`ImGuiLastItemData`のデストラクタ

@@ -1,0 +1,3 @@
+Función que genera una vecindad de la retícula cuasiperiódica alrededor de un punto dado
+
+`β` - es el margen de error asociado a los números enteros generados por la proyección del punto sobre los vectores estrella. `AvgDist` - es la separación promedio entre las franjas cuasiperiódicas. `StarVecs` - son los vectores estrella del GDM. `AlphasA` - son los valores de la separación respecto al origen del conjunto de rectas ortogonales a los vectores estrella. `Site` - es el punto alrededor de donde se va a generar la vecindad. `Precision` - indica si trabajaremos con precisión BigFloat o precisión Float64.

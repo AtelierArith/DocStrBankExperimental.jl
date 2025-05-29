@@ -1,0 +1,3 @@
+```
+ARCHModel <: StatisticalModel
+```

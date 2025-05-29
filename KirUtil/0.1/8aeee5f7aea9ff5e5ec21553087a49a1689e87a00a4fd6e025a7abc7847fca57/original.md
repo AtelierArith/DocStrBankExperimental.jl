@@ -1,0 +1,1 @@
+`decamelcase(str; uppercase::Bool = false)` Remove camel-case and transform into lowercase or uppercase with underscore separators (e.g. "fooBarBaz" to "foo*bar*baz"). If `uppercase` is true, the result will be uppercased, otherwise lowercased.

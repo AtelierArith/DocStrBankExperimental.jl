@@ -1,0 +1,16 @@
+```
+sqrt_up(a)
+```
+
+`sqrt(a)`を丸めモード[`Base.Rounding.RoundUp`](https://docs.julialang.org/en/v1/base/math/#Base.Rounding.RoundUp)で計算します。
+
+```jldoctest
+julia> sqrt_up(2.0)
+1.4142135623730951
+
+julia> sqrt_up(0.0)
+0.0
+
+julia> sqrt_up(-0.0)
+-0.0
+```

@@ -1,0 +1,7 @@
+```
+SizeScorer
+```
+
+# Keyword Arguments
+
+  * `weight`

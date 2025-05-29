@@ -1,0 +1,5 @@
+MutablePose2Pose2Gaussianの残差関数。
+
+関連
+
+Pose2Pose2、Pose3Pose3、InertialPose3、DynPose2Pose2、Point2Point2、VelPoint2VelPoint2

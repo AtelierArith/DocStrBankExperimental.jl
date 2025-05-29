@@ -1,0 +1,1 @@
+すべてのPowerSystemsコンポーネントのスーパタイプ。すべてのサブタイプはInfrastructureSystemsInternalメンバーを含む必要があります。サブタイプはデフォルトでInfrastructureSystemsInternal()を呼び出す必要がありますが、既存の値をデシリアライズできるコンストラクタも提供する必要があります。

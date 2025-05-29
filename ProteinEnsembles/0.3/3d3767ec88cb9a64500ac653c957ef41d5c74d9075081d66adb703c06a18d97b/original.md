@@ -1,0 +1,1 @@
+Write a list of atoms as a PDB file. The atoms are not reordered so it is assumed they are in a sensible order, e.g. the order they were read in. Only ATOM records are written; no TER labels. Could write a brief header for generated models.

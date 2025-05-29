@@ -1,0 +1,5 @@
+```
+postorder(tree::AbstractTree, i=1) :: Vector{Int}
+```
+
+全体の木または根ノード `tree[i]` を持つ部分木の後順走査シーケンスを返します。

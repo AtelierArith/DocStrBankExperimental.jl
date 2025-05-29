@@ -1,0 +1,1 @@
+Dictionary from pseudopotential identifiers to respective `PseudoLibrary` instances. Note, that in the REPL typing `PseudoPotentialData.families["dojo. <Tab>` allows to find the pseudofamily identifier by Tab completion.

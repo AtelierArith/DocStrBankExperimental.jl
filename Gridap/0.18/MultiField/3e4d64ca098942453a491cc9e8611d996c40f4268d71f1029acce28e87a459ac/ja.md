@@ -1,0 +1,3 @@
+```
+MultiFieldFESpace(spaces::Vector{<:SingleFieldFESpace})
+```

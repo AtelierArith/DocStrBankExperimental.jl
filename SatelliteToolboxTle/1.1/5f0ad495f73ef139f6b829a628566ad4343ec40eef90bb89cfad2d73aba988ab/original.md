@@ -1,0 +1,25 @@
+```
+@tles_str(str) -> Vector{TLE}
+```
+
+Parse a set of TLEs in the string `str` and return them as a `Vector{TLE}`.
+
+!!! note
+    This function verifies the checksums of the TLE. If the checksum verification is not desired, use [`@tles_nc_str`](@ref).
+
+
+# Example
+
+```julia-repl
+julia> tles = tles"""
+       CBERS 4
+       1 40336U 14079A   18166.15595376 -.00000014  00000-0  10174-4 0  9993
+       2 40336  98.4141 237.7928 0001694  75.7582 284.3804 14.35485112184485
+       SCD 1
+       1 22490U 93009B   18165.62596833  .00000225  00000-0  11410-4 0  9991
+       2 22490  24.9690 231.7852 0042844 200.7311 292.7198 14.44524498338066
+       SCD 2
+       1 25504U 98060A   18165.15074951  .00000201  00000-0  55356-5 0  9994
+       2 25504  24.9961  80.1303 0017060 224.4822 286.6438 14.44043397 37312
+       """
+```

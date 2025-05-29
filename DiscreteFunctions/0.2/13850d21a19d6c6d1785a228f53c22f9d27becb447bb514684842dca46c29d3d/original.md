@@ -1,0 +1,1 @@
+`DiscreteFunction(A)` creates a new discrete function based on the square matrix `A`. It is required that each row of `A` have exactly one nonzero element. Note that if `A=Matrix(f)` then `DiscreteFunction(A)==f`.

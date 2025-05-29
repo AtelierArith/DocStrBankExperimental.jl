@@ -1,0 +1,1 @@
+aws*aws*event*stream*streaming_decoderがエラーに遭遇したときに呼び出されます。このコールバックの後、デコーダーは使用するのに適した状態ではありません。

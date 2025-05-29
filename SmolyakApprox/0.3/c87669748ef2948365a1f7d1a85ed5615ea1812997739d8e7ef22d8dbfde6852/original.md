@@ -1,0 +1,1 @@
+SApproxPlan is an immutable struct that contains the information used to approximate a multi-dimensional function. SApproxPlan has four fileds: A node type that describes how the approximating points are generated, the approximation grid, the multi-index associated with the Smolyak polynomial, and the approximation domain.

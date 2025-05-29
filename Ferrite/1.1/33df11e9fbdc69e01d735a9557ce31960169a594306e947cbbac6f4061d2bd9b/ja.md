@@ -1,0 +1,1 @@
+`<:AbstractGrid`のcelltypeを返します。

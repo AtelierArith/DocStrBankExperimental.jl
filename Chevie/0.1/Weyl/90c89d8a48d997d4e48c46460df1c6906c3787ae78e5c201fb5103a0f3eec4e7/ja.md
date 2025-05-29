@@ -1,0 +1,1 @@
+`rootlengths(W::FiniteCoxeterGroup)` は `W` の根の（平方）長さのベクトルです。不可約サブシステムにおける最短の根は長さ1が与えられます。ウェイル群では、他の根は長さ2（またはタイプ `G₂` では3）になります。`W` 不変の二次形式の行列は `Diagonal(rootlengths(W)[1:ngens(W)])*cartan(W)` で与えられます。

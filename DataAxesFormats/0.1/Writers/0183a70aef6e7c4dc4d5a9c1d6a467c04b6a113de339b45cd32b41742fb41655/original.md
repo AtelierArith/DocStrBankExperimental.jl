@@ -1,0 +1,1 @@
+The [`DafWriter`](@ref) interface specify a high-level API for writing `Daf` data. This API is implemented here, on top of the low-level [`FormatWriter`](@ref) API. This is an extension of the [`DafReader`](@ref) API and provides provides thread safety for reading and writing to the same data set from multiple threads, so the low-level API can (mostly) ignore this issue.

@@ -1,0 +1,5 @@
+```
+Potassiation <: AbstractPosAdduct
+```
+
+[M+K]+

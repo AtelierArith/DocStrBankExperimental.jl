@@ -1,0 +1,3 @@
+```
+getDicMlIrt(Cond, Data, Post)
+```

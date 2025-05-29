@@ -1,0 +1,1 @@
+Project a list of atoms onto the eigenvectors of a PCA. Atom map is the mapping of the input atom indices to the reference atoms. It is not required if the atoms correspond to the PCA. `calpha_inds` is only required if atom_map is non-trivial and is a list of C-alpha indices. 0 means the atom is not in the reference atoms. Assumes the structure is aligned.

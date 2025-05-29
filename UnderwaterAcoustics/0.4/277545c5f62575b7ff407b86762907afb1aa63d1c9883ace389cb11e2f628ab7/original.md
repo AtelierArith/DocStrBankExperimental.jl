@@ -1,0 +1,1 @@
+Rigid boundary condition.

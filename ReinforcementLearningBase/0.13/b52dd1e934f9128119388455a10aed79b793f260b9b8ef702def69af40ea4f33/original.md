@@ -1,0 +1,1 @@
+No chance player in the environment. And the game is stochastic. To help increase reproducibility, these environments should generally accept a `AbstractRNG` as a keyword argument. For some third-party environments, at least a `seed` is exposed in the constructor.

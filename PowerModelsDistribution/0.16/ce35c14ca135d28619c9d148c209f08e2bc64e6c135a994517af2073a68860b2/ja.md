@@ -1,0 +1,1 @@
+AbstractUnbalancedPowerModel構造体の`sol`にアクセスするためのヘルパー関数で、Dictを返します。

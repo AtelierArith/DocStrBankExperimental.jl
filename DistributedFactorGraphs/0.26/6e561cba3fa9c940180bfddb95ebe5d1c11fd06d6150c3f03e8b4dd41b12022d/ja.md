@@ -1,0 +1,1 @@
+DFGからVector{VariableSummary}として変数を取得します。

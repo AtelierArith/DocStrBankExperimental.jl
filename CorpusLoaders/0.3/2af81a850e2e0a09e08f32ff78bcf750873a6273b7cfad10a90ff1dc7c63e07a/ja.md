@@ -1,0 +1,1 @@
+StanfordSentimentTreebank は、フレーズとそれに対応する感情をそれぞれ持つ dict および senti フィールドを持つタイプです。

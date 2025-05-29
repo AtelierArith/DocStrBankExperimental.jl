@@ -1,0 +1,1 @@
+A variant of `run_opf_cheap` model, specialized for solving very large AC Power Flow models in rectangular coordinates for faster derivative computations.  Support sparse collections of flow constrains for increased performance.

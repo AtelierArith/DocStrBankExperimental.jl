@@ -1,0 +1,1 @@
+Compute the Square-Root approximation to the generator of Langevin diffusion for a given potential vector `u` and connectivity matrix `C` at coldness `beta`. `C` describes the geometry via C*ij = A*ij / (h*ij * V*i) with A, V, and h the area, volume and distances.

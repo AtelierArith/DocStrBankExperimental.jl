@@ -1,0 +1,5 @@
+```
+Toeplitz
+```
+
+A Toeplitz matrix.

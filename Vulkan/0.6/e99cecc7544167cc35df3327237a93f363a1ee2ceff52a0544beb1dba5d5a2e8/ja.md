@@ -1,0 +1,13 @@
+戻りコード:
+
+  * `SUCCESS`
+  * `ERROR_OUT_OF_HOST_MEMORY`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/vkEnumerateInstanceVersion.html)
+
+```julia
+_enumerate_instance_version(
+
+) -> ResultTypes.Result{VersionNumber, Vulkan.VulkanError}
+
+```

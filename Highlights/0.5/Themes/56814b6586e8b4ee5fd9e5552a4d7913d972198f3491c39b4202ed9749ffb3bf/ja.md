@@ -1,0 +1,16 @@
+ソースコードに色を付けるために使用できるテーマの選択を提供するサブモジュールです。
+
+  * [`AbstractTheme`](@ref)
+  * [`DefaultTheme`](@ref)
+  * [`EmacsTheme`](@ref)
+  * [`GitHubTheme`](@ref)
+  * [`MonokaiMiniTheme`](@ref)
+  * [`MonokaiTheme`](@ref)
+  * [`PygmentsTheme`](@ref)
+  * [`@S_str`](@ref)
+  * [`TangoTheme`](@ref)
+  * [`TracTheme`](@ref)
+  * [`VimTheme`](@ref)
+  * [`VisualStudioTheme`](@ref)
+  * [`XcodeTheme`](@ref)
+  * [`@theme`](@ref)

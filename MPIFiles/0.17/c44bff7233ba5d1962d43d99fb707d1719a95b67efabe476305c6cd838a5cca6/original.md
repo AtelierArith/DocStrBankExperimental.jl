@@ -1,0 +1,5 @@
+```
+acqNumPeriodsPerFrame(mdfPart)
+```
+
+Number of drive-field periods within a frame denoted by J

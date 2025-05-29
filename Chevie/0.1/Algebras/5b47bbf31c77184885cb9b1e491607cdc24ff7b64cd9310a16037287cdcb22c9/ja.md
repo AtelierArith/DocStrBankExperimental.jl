@@ -1,0 +1,1 @@
+これはCédric BonnaféによるGAP3パッケージAlgebrasの移植版です。

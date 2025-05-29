@@ -1,0 +1,1 @@
+Generate sets of coordinates with the correct chirality from distance constraints. discard*ratio gives the fraction of extra structures to calculate, then the low-scoring structures are discarded. If `remove*mod`is true then modulator atoms and coords are removed from the ensemble before it is returned. Returns a`ModelledEnsemble`.

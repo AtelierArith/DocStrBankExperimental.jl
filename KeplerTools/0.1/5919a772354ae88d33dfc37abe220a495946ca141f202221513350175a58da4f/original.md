@@ -1,0 +1,1 @@
+A Keplerian orbit, defined, by semimajor axis (`.a`), eccentricity (`.e`), inclination(`.i`), right ascension of the ascending node (`.Ω`), argument of the periapsis (`.ω`),  mean anomaly at epoch(`.Mo`), and an epoch (`.epoch`), as well as the celestial body around which the orbit takes place (.`primary`).

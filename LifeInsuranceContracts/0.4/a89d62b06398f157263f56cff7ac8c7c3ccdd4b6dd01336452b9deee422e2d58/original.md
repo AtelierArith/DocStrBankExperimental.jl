@@ -1,0 +1,1 @@
+compareRevisions(t, previous::Dict{String,Any}, current::Dict{String,Any}) where {T<:BitemporalPostgres.ComponentRevision} compare corresponding revision elements and return nothing if equal a pair of both else

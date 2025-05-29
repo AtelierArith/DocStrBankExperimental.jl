@@ -1,0 +1,1 @@
+≷ `\gtrless[tab]` または `Ne`

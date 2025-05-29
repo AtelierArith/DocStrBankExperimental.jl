@@ -1,0 +1,1 @@
+`EnergyModelsRecedingHorizon`のメインモジュールで、運用フレームワークにおける投資されたエネルギーシステムのストレステストのためのリシーディングホライズンフレームワークの実装を持つ[`EnergyModelsX`](https://github.com/EnergyModelsX)を拡張するパッケージです。

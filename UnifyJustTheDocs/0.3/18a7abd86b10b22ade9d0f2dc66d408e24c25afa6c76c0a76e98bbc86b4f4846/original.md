@@ -1,0 +1,1 @@
+A `JDTPage` has markdown content, and four optional settings from its YAML header.  If the page lacks properties for `parent` or `grand_parent`, their value will be `nothing`; if no `nav_order` is set, its value is 0.

@@ -1,0 +1,11 @@
+```
+XPRS_EXTRAROWS
+```
+
+The initial number of extra rows to allow for in the matrix, including cuts. (integer)
+
+If rows are to be added to the matrix, then, for maximum efficiency, space should be reserved for the rows before the matrix is input by setting the `EXTRAROWS` control. If this is not done, resizing will occur automatically, but more space may be allocated than the user actually requires.
+
+Default value: 0
+
+Domain: 0~+INF

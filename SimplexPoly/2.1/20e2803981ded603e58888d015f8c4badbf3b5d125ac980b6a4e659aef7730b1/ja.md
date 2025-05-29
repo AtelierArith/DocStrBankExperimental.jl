@@ -1,0 +1,3 @@
+extended*trimmed*polynomial_complex
+
+これは実験的なものであり、実際には複素数ではないことに注意してください。

@@ -1,0 +1,1 @@
+`ImGuiOldColumnData`のデストラクタ

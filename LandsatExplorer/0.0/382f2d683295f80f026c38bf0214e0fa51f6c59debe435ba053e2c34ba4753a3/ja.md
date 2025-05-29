@@ -1,0 +1,5 @@
+```
+logout()
+```
+
+Earth Explorerからログアウトします。

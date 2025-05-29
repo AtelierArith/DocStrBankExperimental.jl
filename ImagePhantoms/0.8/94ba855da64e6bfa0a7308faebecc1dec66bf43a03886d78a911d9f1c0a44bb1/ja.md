@@ -1,0 +1,3 @@
+```
+Dirac{D} <: AbstractShape{D}
+```

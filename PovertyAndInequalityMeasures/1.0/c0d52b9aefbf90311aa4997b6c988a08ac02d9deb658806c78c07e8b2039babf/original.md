@@ -1,0 +1,1 @@
+As above, but using the QueryVerse IterableTables interface rawdata - basically anything resembling a dataframe; see: [https://github.com/queryverse/IterableTables.jl] throws an exception if rawdata doesn't support iterabletable interface

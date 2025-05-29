@@ -1,0 +1,1 @@
+このUnitTypeは、単位Vを持つUnitTypes.Voltの基本的な測定を表します。

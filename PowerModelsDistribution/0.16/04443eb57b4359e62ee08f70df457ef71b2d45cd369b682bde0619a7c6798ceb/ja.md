@@ -1,0 +1,1 @@
+AbstractExplicitNeutralIVRModelの具体的な型

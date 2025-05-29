@@ -1,0 +1,3 @@
+```
+AngularVelocity <: DimensionalPhysicalQuantity
+```

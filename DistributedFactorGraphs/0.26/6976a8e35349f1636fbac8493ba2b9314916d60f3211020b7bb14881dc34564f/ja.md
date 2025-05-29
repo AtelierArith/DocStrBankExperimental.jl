@@ -1,0 +1,1 @@
+InferenceVariableの`variableType`次元を返すインターフェース関数を作成し、この関数をすべてのTypes<:InferenceVariableに対して拡張します。

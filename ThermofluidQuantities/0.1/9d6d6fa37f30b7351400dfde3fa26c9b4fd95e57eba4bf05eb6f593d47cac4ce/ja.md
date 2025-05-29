@@ -1,0 +1,3 @@
+```
+GasConstant <: DimensionalPhysicalQuantity
+```

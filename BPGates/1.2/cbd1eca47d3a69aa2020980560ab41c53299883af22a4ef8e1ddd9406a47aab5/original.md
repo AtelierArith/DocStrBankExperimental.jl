@@ -1,0 +1,1 @@
+Most general representation of a Bell preserving gate on two qubits. The general gate consists of a two Pauli permutations, a double qubit permutation, two single qubit permutations, and two indices indicating which pair of Bell states the general Bell preserving gate will be applied to.

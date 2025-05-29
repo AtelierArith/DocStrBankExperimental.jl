@@ -1,0 +1,1 @@
+すべての特徴のためのAbstractFeatureTrait

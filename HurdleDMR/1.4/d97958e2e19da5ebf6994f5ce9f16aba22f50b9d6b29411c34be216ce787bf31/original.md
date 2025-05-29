@@ -1,0 +1,1 @@
+Builds the design matrix X for predicting covar in direction projdir   hdmr version   Assumes that covars include all variables for both positives and zeros models   and indicates which variables are where with the index arrays inpos and inzero.   inz=[1,2] if both zpos and zzero are included   inz=[2] if zpos is dropped due to collinearity

@@ -1,0 +1,1 @@
+このUnitTypeは、単位CであるUnitTypes.Coulombの基本的な測定を表します。

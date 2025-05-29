@@ -1,0 +1,11 @@
+```
+transpose(tsrc::AbstractTensorMap, (p₁, p₂)::Index2Tuple;
+          copy::Bool=false)
+    -> tdst::TensorMap
+```
+
+Return tensor `tdst` obtained by transposing the indices of `tsrc`. The codomain and domain of `tdst` correspond to the indices in `p₁` and `p₂` of `tsrc` respectively. The new index positions should be attainable without any indices crossing each other, i.e., the permutation `(p₁..., reverse(p₂)...)` should constitute a cyclic permutation of `(codomainind(tsrc)..., reverse(domainind(tsrc))...)`.
+
+If `copy=false`, `tdst` might share data with `tsrc` whenever possible. Otherwise, a copy is always made.
+
+To permute into an existing destination, see [permute!](@ref) and [`add_permute!`](@ref)

@@ -1,0 +1,1 @@
+DMRGObserver is an implementation of an observer object (<:AbstractObserver) which implements custom measurements and allows the `dmrg` function to return early if an energy convergence criterion is met.

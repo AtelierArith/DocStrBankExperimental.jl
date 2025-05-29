@@ -1,0 +1,11 @@
+```julia
+struct UA_CreateSubscriptionResponse
+```
+
+Fields:
+
+  * `responseHeader::Open62541.UA_ResponseHeader`
+  * `subscriptionId::UInt32`
+  * `revisedPublishingInterval::Float64`
+  * `revisedLifetimeCount::UInt32`
+  * `revisedMaxKeepAliveCount::UInt32`

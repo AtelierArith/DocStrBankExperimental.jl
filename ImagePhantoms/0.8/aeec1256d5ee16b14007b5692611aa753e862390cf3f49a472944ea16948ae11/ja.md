@@ -1,0 +1,3 @@
+```
+Ellipsoid <: AbstractShape{3}
+```

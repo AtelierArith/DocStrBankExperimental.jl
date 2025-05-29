@@ -1,0 +1,1 @@
+Julia構造体のObsidianボールト。

@@ -1,0 +1,1 @@
+`Knight(r::Int=8,c::Int=8)` creates a Knight's Moves graph on a `r`-by-`c` grid. That is, the vertices of this graph are the squares of an `r`-by-`c` chess board. Two vertices are adjacent if a Knight can go from one of these squares to the other in a single move.

@@ -1,0 +1,1 @@
+Apply the getter function `func`, which operates on `data` for a specific infrastructure, `it`. Here, `apply_to_subnetworks` specifies whether or not `func` should be applied to all subnetworks in a multinetwork dataset. If so, a dictionary of retrieved data using `func` is returned, indexed by the indices of the multinetwork. Otherwise, a single value is returned.

@@ -1,0 +1,6 @@
+```julia
+isvtkview(Plotter)
+
+```
+
+ヒューリスティックにPlotterがVTKViewであるかをチェックします。

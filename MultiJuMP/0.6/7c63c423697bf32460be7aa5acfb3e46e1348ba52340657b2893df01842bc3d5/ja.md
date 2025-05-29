@@ -1,0 +1,1 @@
+MultiData構造体からNadir点を抽出します。

@@ -1,0 +1,5 @@
+```
+Obstacle{<:AbstractFloat}
+```
+
+Obstacle スーパタイプ。

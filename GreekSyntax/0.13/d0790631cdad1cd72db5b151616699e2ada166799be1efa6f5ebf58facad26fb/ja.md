@@ -1,0 +1,4 @@
+```julia
+htmlgroup(vu; palette)
+
+```

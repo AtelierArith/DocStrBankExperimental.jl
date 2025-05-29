@@ -1,0 +1,17 @@
+```
+eigen(A::Union{SymTridiagonal, Hermitian, Symmetric}, vl::Real, vu::Real) -> Eigen
+```
+
+行列 `A` の固有値分解を計算し、固有値を `F.values` に、固有ベクトルを行列 `F.vectors` の列に含む [`Eigen`](@ref) 因子化オブジェクト `F` を返します。（`k` 番目の固有ベクトルはスライス `F.vectors[:, k]` から取得できます。）
+
+分解を反復すると、コンポーネント `F.values` と `F.vectors` が得られます。
+
+`Eigen` オブジェクトに対して利用可能な関数は、[`inv`](@ref)、[`det`](@ref)、および [`isposdef`](@ref) です。
+
+`vl` は検索する固有値のウィンドウの下限で、`vu` は上限です。
+
+!!! note
+    [`vl`, `vu`] に `A` のすべての固有値が含まれていない場合、返される因子化は *切り捨てられた* 因子化になります。
+
+
+```

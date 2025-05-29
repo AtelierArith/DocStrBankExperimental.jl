@@ -1,0 +1,9 @@
+```
+iTfbd
+```
+
+A composite recursive type of supertype `iT` representing a binary phylogenetic tree with  `λ` and `μ` evolving as a Geometric Brownian motion with fossils for `insane` use, with the following fields:
+
+d1:   daughter tree 1   d2:   daughter tree 2   e:    pendant edge   iμ:   if extinct node   iψ:   if is fossil   fx:   if fix (observed) node   dt:   choice of time lag   fdt:  final `dt`   lλ:   array of a Brownian motion evolution of `log(λ)`   lμ:   array of a Brownian motion evolution of `log(μ)`
+
+iTfbd(d1 ::iTfbd,         d2 ::iTfbd,         e  ::Float64,         dt ::Float64,         fdt::Float64,         iμ ::Bool,         iψ ::Bool,         fx ::Bool,         lλ ::Array{Float64,1},         lμ ::Array{Float64,1})

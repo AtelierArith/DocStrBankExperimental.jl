@@ -1,0 +1,1 @@
+`sorted(col, alg::Base.Sort.Algorithm, ord::Base.Order.Ordering)` returns a copy of collection `col` sorted according to algorithm `alg` and order `ord`. `alg` and `ord` are optional, `alg` defaults to `StaticLengthSortStable()` (stable merge sort), while `ord` defaults to `Base.Order.Forward` (the default order based on `isless`).

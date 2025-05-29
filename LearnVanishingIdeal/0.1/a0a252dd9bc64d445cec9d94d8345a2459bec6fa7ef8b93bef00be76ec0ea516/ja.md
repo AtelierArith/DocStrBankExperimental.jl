@@ -1,0 +1,1 @@
+このメソッドは、leastSquaresListOfEquations_quickメソッドのより正確なバリアントです。最良近似多項式を決定するために平均距離（HomotopyContinuation）を使用します。また、tau=2.0の閾値と400の勾配降下ステップを使用します。

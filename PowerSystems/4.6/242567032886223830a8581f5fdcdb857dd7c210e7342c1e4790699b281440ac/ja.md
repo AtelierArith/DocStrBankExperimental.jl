@@ -1,0 +1,16 @@
+```julia
+get_groups(
+    scope_limiter::Union{Nothing, Function},
+    selector::InfrastructureSystems.ComponentSelector,
+    sys::PowerSystems.System
+) -> Any
+
+```
+
+[`ComponentSelector`](@ref)を構成するグループを取得します。オプションで、考慮すべきコンポーネントを制限するために最初の引数としてフィルタ関数`scope_limiter`を指定できます。
+
+# 引数
+
+  * `scope_limiter::Union{Function, Nothing}`: [`ComponentSelector`](@ref)を参照
+  * `selector::ComponentSelector`: 取得するグループの`ComponentSelector`
+  * `sys::System`: コンポーネントを引き出すシステム

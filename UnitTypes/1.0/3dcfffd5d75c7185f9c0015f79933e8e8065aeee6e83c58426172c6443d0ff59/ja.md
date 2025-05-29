@@ -1,0 +1,1 @@
+このUnitTypeは、単位radを持つUnitTypes.Radianの基本的な測定を表します。

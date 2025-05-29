@@ -1,0 +1,5 @@
+```
+IdentityWeight <: Weight
+```
+
+Identity weight.

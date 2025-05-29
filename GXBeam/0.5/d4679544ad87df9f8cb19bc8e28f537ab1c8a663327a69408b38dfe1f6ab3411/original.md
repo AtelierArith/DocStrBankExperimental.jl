@@ -1,0 +1,50 @@
+```
+eigenvalue_analysis(assembly; kwargs...)
+```
+
+Compute the eigenvalues and eigenvectors of the system of nonlinear beams contained in `assembly`.  Return the modified system, eigenvalues, eigenvectors, and a convergence flag indicating whether the corresponding steady-state analysis converged.
+
+# General Keyword Arguments
+
+  * `prescribed_conditions = Dict{Int,PrescribedConditions{Float64}}()`:      A dictionary with keys corresponding to the points at      which prescribed conditions are applied and values of type      [`PrescribedConditions`](@ref) which describe the prescribed conditions      at those points.  If time varying, this input may be provided as a      function of time.
+  * `distributed_loads = Dict{Int,DistributedLoads{Float64}}()`: A dictionary      with keys corresponding to the elements to which distributed loads are      applied and values of type [`DistributedLoads`](@ref) which describe      the distributed loads on those elements.  If time varying, this input may      be provided as a function of time.
+  * `point_masses = Dict{Int,PointMass{Float64}}()`: A dictionary with keys      corresponding to the points to which point masses are attached and values      of type [`PointMass`](@ref) which contain the properties of the attached      point masses.  If time varying, this input may be provided as a function of time.
+  * `linear_velocity = zeros(3)`: Prescribed linear velocity of the body frame.      If time varying, this input may be provided as a function of time.
+  * `angular_velocity = zeros(3)`: Prescribed angular velocity of the body frame.      If time varying, this input may be provided as a function of time.
+  * `linear_acceleration = zeros(3)`: Prescribed linear acceleration of the body frame.      If time varying, this input may be provided as a function of time.
+  * `angular_acceleration = zeros(3)`: Prescribed angular acceleration of the body frame.      If time varying, this input may be provided as a function of time.
+  * `gravity = [0,0,0]`: Gravity vector in the inertial frame.  If time varying, this input      may be provided as a function of time.
+  * `time = 0.0`: Current time or vector of times corresponding to each step. May be used      in conjunction with time varying prescribed conditions, distributed loads, and      body frame motion to gradually increase displacements and loads.
+
+# Control Flag Keyword Arguments
+
+  * `reset_state = true`: Flag indicating whether the system state variables should be      set to zero prior to performing this analysis.
+  * `initial_state = nothing`: Object of type [`AssemblyState`](@ref) which contains the      initial state variables.  If not provided (or set to `nothing`), then the state      variables stored in `system` (which default to zeros) will be used as the initial      state variables.
+  * `structural_damping = false`: Indicates whether to enable structural damping
+  * `linear = false`: Flag indicating whether a linear analysis should be performed.
+  * `two_dimensional = false`: Flag indicating whether to constrain results to the x-y plane
+  * `show_trace = false`: Flag indicating whether to display the solution progress.
+
+# Linear Analysis Keyword Arguments
+
+  * `update_linearization = false`: Flag indicating whether to update the linearization state      variables for a linear analysis with the instantaneous state variables. If `false`,      then the initial set of state variables will be used for the linearization.
+
+# Nonlinear Analysis Keyword Arguments
+
+  * `method = :newton`: Method (as defined in NLsolve) to solve nonlinear system of equations
+  * `linesearch = LineSearches.LineSearches.BackTracking(maxstep=1e6)`: Line search used to      solve the nonlinear system of equations
+  * `ftol = 1e-9`: tolerance for solving the nonlinear system of equations
+  * `iterations = 1000`: maximum iterations for solving the nonlinear system of equations
+
+# Sensitivity Analysis Keyword Arguments
+
+  * `xpfunc = (x, p, t) -> (;)`: Similar to `pfunc`, except that parameters can also be      defined as a function of GXBeam's state variables.  Using this function forces      the system jacobian to be computed using automatic differentiation and switches      the nonlinear solver to a Newton-Krylov solver (with linesearch).
+  * `pfunc = (p, t) -> (;)`: Function which returns a named tuple with fields corresponding      to updated versions of the arguments `assembly`, `prescribed_conditions`,      `distributed_loads`, `point_masses`, `linear_velocity`, `angular_velocity`,      `linear_acceleration`, `angular_acceleration`, and `gravity`. Only fields contained      in the resulting named tuple will be overwritten.
+  * `p`: Sensitivity parameters, as defined in conjunction with the keyword argument `pfunc`.      While not necessary, using `pfunc` and `p` to define the arguments to this function      allows automatic differentiation sensitivities to be computed more efficiently
+
+# Eigenvalue Analysis Keyword Arguments
+
+  * `nev = 6`: Number of eigenvalues to compute
+  * `steady = reset_state && !linear`: Flag indicating whether the steady state      solution should be found prior to performing the eigenvalue analysis.
+  * `left = false`: Flag indicating whether to return left and right eigenvectors rather      than just right eigenvectors.
+  * `Uprev = nothing`: Previous left eigenvector matrix.  May be provided in order to      reorder eigenvalues based on results from a previous iteration.

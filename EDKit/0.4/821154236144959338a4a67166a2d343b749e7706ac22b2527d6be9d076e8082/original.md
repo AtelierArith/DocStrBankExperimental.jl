@@ -1,0 +1,1 @@
+Return normalization and index.

@@ -1,0 +1,1 @@
+[`ComponentSelector`](@ref) subtype that can only refer to zero or one components. `get_components` will always return zero or one components; `get_component` will return the component directly if there is one and return `nothing` if there is not.

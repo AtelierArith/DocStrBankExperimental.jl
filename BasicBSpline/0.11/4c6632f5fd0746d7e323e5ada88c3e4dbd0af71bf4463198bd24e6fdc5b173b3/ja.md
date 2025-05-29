@@ -1,0 +1,1 @@
+BSplineSpaceをBSplineSpaceに変換します。

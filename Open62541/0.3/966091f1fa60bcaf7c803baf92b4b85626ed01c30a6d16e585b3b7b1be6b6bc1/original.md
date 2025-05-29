@@ -1,0 +1,5 @@
+```
+UA_Client_readValueAttribute(client::Ptr{UA_Client}, nodeId::Ptr{UA_NodeId}, out::Ptr{UA_Variant})
+```
+
+Uses the UA Client API to read the value of attribute Value from the NodeId `nodeId` accessed through the client `client`. 

@@ -1,0 +1,1 @@
+In previous versions of BLAKJac, a `resource` argument was required. In the current version it is removed because it was not used in the function. For backwards-compatability purposes, we allow BLAKJac_analysis! to be called with the `resource` argument. 

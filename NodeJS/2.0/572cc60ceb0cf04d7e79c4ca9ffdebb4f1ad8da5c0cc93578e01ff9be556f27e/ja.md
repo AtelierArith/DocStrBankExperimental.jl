@@ -1,0 +1,1 @@
+The full path of the npm command is typically `/usr/local/bin/npm` on macOS and Linux systems, and `C:\Program Files\nodejs\npm` on Windows systems. However, the exact path may vary depending on your installation method and operating system. You can find the full path by running the command `which npm` on macOS or Linux, or `where npm` on Windows in your command line interface.

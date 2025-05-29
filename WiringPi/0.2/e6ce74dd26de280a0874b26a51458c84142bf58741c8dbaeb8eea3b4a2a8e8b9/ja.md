@@ -1,0 +1,3 @@
+```
+pwmWrite(pin, value)
+```

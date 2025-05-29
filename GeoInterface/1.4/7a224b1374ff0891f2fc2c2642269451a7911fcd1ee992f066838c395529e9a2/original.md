@@ -1,0 +1,1 @@
+An AbstractFeatureCollectionTrait for all feature collections

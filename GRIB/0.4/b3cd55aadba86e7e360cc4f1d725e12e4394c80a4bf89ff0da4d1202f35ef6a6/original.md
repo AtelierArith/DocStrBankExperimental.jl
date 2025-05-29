@@ -1,0 +1,1 @@
+Safely destroy the index. 

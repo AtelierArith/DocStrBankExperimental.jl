@@ -1,0 +1,1 @@
+No Covariates Continuous/Binary

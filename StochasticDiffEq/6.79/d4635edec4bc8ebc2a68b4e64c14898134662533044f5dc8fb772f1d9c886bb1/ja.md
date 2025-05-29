@@ -1,0 +1,3 @@
+checkSRIOrder(RosslerSRI)
+
+SRI法の表を通じて順序条件が満たされているかどうかを判断します。

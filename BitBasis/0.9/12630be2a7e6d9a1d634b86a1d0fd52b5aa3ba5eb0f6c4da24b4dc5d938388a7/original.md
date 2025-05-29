@@ -1,0 +1,3 @@
+```
+neg(b::BitStr) -> BitStr
+```

@@ -1,0 +1,15 @@
+```
+BlackBoxControlDiscreteSystem <: AbstractDiscreteSystem
+```
+
+右辺が次の形で定義された離散時間制御システム：
+
+$$
+    x_{k+1} = f(x_k, u_k) \; \forall k.
+$$
+
+### フィールド
+
+  * `f`        – 右辺を保持する関数
+  * `statedim` – 状態変数の数
+  * `inputdim` – 入力変数の数

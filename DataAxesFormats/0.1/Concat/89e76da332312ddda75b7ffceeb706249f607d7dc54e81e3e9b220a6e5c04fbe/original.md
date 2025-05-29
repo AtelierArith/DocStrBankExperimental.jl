@@ -1,0 +1,1 @@
+Specify all the data to merge. We would have liked to specify this as `AbstractVector{<:MergeDatum}` but Julia in its infinite wisdom considers `["a" => "b", ("c", "d") => "e"]` to be a `Vector{Any}`, which would require literals to be annotated with the type.

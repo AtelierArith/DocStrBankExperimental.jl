@@ -1,0 +1,5 @@
+```
+SNN(...)
+```
+
+StandardNeuralNetworkのエイリアスです。

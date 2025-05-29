@@ -1,0 +1,1 @@
+@article{brizuela1990study,   title={Study of mean excitation energy and K-shell effect for electron probe microanalysis},   author={Brizuela, Horacio and Riveros, Jos{'e} Alberto},   journal={X-Ray Spectrometry},   volume={19},   number={4},   pages={173–176},   year={1990},   publisher={Wiley Online Library} }

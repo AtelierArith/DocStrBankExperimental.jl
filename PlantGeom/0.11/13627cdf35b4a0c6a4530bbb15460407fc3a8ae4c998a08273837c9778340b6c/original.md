@@ -1,0 +1,1 @@
+Returns a tapered mesh using dDwn and dUp based on the geometry of an input mesh. Tapering a mesh transforms it into a tapered version (*i.e.* pointy) or enlarged object, *e.g.* make a cone from a cylinder.

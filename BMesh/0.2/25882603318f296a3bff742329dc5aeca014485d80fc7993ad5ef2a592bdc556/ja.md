@@ -1,0 +1,1 @@
+BMesh2DおよびBMesh3Dのスーパタイプ

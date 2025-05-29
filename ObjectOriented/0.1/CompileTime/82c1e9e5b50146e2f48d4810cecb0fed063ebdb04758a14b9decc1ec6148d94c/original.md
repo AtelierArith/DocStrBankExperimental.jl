@@ -1,0 +1,1 @@
+`@like(type)` convert a Julia type to its covariant shape type. Given an OO type `Cls` whose orm is `[Cls, Base1, Base2]`, the corresponding covariant shape type is `@like(Cls) == Object{U} where U >: Union{Cls, Base1, Base2}`.

@@ -1,0 +1,11 @@
+```
+XPRS_EXTRACOLS
+```
+
+The initial number of extra columns to allow for in the matrix. (integer)
+
+If columns are to be added to the matrix, then, for maximum efficiency, space should be reserved for the columns before the matrix is input by setting the `EXTRACOLS` control. If this is not done, resizing will occur automatically, but more space may be allocated than the user actually requires.
+
+Default value: `0`
+
+Domain: 0~+INF

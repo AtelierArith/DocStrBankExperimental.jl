@@ -1,0 +1,5 @@
+```
+WGraph
+```
+
+Alias for `SimpleWeightedGraph`.

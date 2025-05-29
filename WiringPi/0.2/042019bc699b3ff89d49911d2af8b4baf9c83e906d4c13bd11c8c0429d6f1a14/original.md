@@ -1,0 +1,3 @@
+```
+digitalReadByte2()
+```

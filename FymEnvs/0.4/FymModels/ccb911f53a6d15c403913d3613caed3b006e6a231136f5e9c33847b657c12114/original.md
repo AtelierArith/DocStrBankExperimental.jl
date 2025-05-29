@@ -1,0 +1,1 @@
+Reference:     TBD (borrowed from the original fym, but notation is different) Note:     state = [x, y, z, V, gamma, chi]         x, y, z: NED position [m]         V: (ground) speed [m/s]         gamma: vertical flight path angle [rad]         chi: horizontal flight path angle [rad]     input = [CL, phi]         CL: lift coefficient         phi: bank angle [rad]

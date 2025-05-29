@@ -1,0 +1,7 @@
+Computes invariant balanced polytopes for system `s` using the algorithm of [GP13] with the spectral maximizing product candidate (s.m.p.) `smp`. The choice between Complex Balanced Polytope, Real Balanced Polytope or Conitope using invariance of the positive orthant is done automatically. The solver used is `optimizer_constructor`. This solver should support second order cone if the Complex Balanced Polytope is used (e.g. if the leading eigenvalue has an imaginary part). The maximum depth considered is `max_length`, a point `x` is considered to be in the interior of the polytope if the maximum `λ` such that `λ * x` is in the polytope is larger than `1 + tol`.
+
+New s.m.p. candidates are considered with tolerance `new_candidate_tol`. A maximum of `max_cycles` times the current s.m.p. candidate is prepended to this new candidate to try to find a candidate with growth rate higher than the current one, we also stop adding cycles if the length reaches `max_smp_length`. If `gready`, then cycles continue to be prepended even if the it has a higher growth rate than the current s.m.p. until the growth rate decreases when prepending a new cycle.
+
+If `verbose` is 1, the number of leaves is printed when the depth is a multiple of `log_step_length`.
+
+[GP13] N. Guglielmi and V. Protasov. *Exact computation of joint spectral characteristics of linear operators*. Foundations of Computational Mathematics 13.1, **2013**, 37-97.

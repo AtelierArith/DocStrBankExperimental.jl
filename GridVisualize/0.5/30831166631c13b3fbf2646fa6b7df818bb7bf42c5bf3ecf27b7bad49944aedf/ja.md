@@ -1,0 +1,6 @@
+```julia
+ispyplot(Plotter)
+
+```
+
+ヒューリスティックにPlotterがPyPlotかどうかをチェックします。

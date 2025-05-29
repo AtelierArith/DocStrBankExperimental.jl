@@ -1,0 +1,1 @@
+A parameter-parallel `SciMLLinearSolveAlgorithm`.

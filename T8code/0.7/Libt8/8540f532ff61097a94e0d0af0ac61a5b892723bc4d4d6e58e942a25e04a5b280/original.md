@@ -1,0 +1,1 @@
+If a forest is to be derived from another forest, there are different possibilities how the original forest is modified. Currently we support: Copying, adapting, partitioning, and balancing a forest. The latter 3 can be combined, in which case the order is 1. Adapt, 2. Partition, 3. Balance. We store the methods in an int8_t and use these defines to distinguish between them.

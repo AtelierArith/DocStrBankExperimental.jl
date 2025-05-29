@@ -1,0 +1,1 @@
+構造のアンサンブルを読み込み、ModelledEnsembleを返します。

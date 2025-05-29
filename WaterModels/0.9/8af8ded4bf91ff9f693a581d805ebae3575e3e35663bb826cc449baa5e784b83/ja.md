@@ -1,0 +1,21 @@
+```
+constraint_intermediate_directionality(
+    wm::AbstractNCModel,
+    n::Int,
+    i::Int,
+    pipe_fr::Array{Int,1},
+    pipe_to::Array{Int,1},
+    des_pipe_fr::Array{Int,1},
+    des_pipe_to::Array{Int,1},
+    pump_fr::Array{Int,1},
+    pump_to::Array{Int,1},
+    regulator_fr::Array{Int,1},
+    regulator_to::Array{Int,1},
+    short_pipe_fr::Array{Int,1},
+    short_pipe_to::Array{Int,1},
+    valve_fr::Array{Int,1},
+    valve_to::Array{Int,1}
+)
+```
+
+現在、`AbstractNCModel`型のモデルに対しては何も行いません。ここで、`wm`はWaterModelsオブジェクトであり、`n`はサブネットワーク（時間）インデックス、`i`はノードのインデックスであり、`pipe_fr`、`pipe_to`などはそれぞれノード`i`からまたはノード`i`への接続コンポーネントのインデックスです。

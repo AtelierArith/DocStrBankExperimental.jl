@@ -1,0 +1,1 @@
+データに位置を適用し、edge*comp*mapおよびconnector_mapのマッピングを使用します。

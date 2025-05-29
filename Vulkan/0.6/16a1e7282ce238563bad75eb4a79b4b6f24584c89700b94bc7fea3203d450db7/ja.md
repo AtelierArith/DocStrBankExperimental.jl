@@ -1,0 +1,12 @@
+引数:
+
+  * `command_buffer::CommandBuffer` (externsync)
+  * `query_pool::QueryPool`
+  * `query::UInt32`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/vkCmdEndQuery.html)
+
+```julia
+cmd_end_query(command_buffer, query_pool, query::Integer)
+
+```

@@ -1,0 +1,1 @@
+Intracellular concentrations of glycolytic intermediates in mammalian cells (M units). `glycolysis_init_conc` can be used as initial condition for simulating `glycolysis_ODEs` glycolysis ODEs model. Values are corrected for protein concentration and cytosol fraction to better represent metabolite concentration in cytosol.

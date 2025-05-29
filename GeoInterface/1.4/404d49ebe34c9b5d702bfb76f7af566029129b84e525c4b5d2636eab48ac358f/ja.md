@@ -1,0 +1,1 @@
+MultiPointTraitは[`PointTrait`](@ref)のコレクションです。

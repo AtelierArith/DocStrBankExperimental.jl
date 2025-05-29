@@ -1,0 +1,1 @@
+This type is used to set the parameters that control the behavior of a sparse factorization, to collect information about its execution (number of flops, memory consumpnion etc) and store the result of  the factorization, namely, the factors with all the symbolic information needed to use them in the solve phase.

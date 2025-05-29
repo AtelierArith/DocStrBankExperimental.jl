@@ -1,0 +1,5 @@
+```
+AbstractHMM
+```
+
+[`AbstractHiddenMarkovModel`](@ref) のエイリアスです。

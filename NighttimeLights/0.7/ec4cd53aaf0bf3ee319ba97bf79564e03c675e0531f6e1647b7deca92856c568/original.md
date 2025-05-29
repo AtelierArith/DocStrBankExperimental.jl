@@ -1,0 +1,5 @@
+There are extremely high values in the nighttime lights data due to fires, gas flare etc. You may find some values even greater than the aggregate radiance of large cities. Such pixels also have high standard deviation. These pixels may not be of importantance from the point of view of measureming prosperity. The `outlier_variance` function generates a mask of pixels with standard deviation less that a user defined cutoff value, that defaults to the 99.9th percentile. Essentially, this function can be used to remove the pixels with the high standard deviation. A mask can be provided to the function, so that it calculates the percentile based on the lit pixel of the mask. For example, if the `radiance_datacube` is a box around Mumbai and the mask is the polygon mask of Mumbai, the `outlier_variance` function will calculate the 99th percentile (default cutoff value) of the standard deviation of the pixels inside Mumbai's boundary. 
+
+```julia
+outlier_variance(radiance_datacube, mask; cutoff = 0.999)
+```

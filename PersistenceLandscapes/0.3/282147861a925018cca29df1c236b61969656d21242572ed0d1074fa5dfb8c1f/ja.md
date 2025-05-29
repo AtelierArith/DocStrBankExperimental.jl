@@ -1,0 +1,1 @@
+PersistenceBarcodes構造体の次元を返します。

@@ -1,0 +1,5 @@
+```
+propagate!
+```
+
+[`propagate`](@ref) のインプレースバージョンです。

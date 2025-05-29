@@ -1,0 +1,1 @@
+`showpic(p;opt...)` display a graphical representation of the Hasse diagram of  the `Poset` or `CPoset` using the  commands `dot` and `open`. If `p isa Poset` it is possible to give as keyword aguments a list of `IO` properties which will be forwarded to the `show_element` method of `p`.

@@ -1,0 +1,1 @@
+POSIXメッセージキューを使用した`AbstractChannel`の実装。

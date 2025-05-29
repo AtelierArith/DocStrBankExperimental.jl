@@ -1,0 +1,5 @@
+```
+LaplacianKernel()
+```
+
+[`ExponentialKernel`](@ref) のエイリアスです。

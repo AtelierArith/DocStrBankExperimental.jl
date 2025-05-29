@@ -1,0 +1,9 @@
+```julia
+struct UA_MonitoredItemCreateRequest
+```
+
+Fields:
+
+  * `itemToMonitor::Open62541.UA_ReadValueId`
+  * `monitoringMode::Open62541.UA_MonitoringMode`
+  * `requestedParameters::Open62541.UA_MonitoringParameters`

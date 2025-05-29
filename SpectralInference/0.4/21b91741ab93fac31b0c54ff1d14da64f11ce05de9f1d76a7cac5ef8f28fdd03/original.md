@@ -1,0 +1,3 @@
+```
+explainedvariance(s::AbstractVector{<:Number})
+```

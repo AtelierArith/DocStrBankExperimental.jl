@@ -1,0 +1,3 @@
+D-Wave Systemsによってハードウェアで使用されるものに近いアニーリングスケジュール
+
+注意：ユーザーは特定のD-Wave Systemsデバイス用のアニーリングスケジュールをダウンロードし、`parse_dwave_annealing_schedule`を使用してロードすることを強く推奨します。

@@ -1,0 +1,1 @@
+LatticeはVector{LatticeBond}のエイリアスです。

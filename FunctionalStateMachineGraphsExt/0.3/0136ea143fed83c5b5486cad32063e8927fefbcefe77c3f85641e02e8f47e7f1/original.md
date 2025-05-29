@@ -1,0 +1,16 @@
+```julia
+animateStateMachineHistoryByTime(
+    hist;
+    frames,
+    folder,
+    title,
+    show,
+    startT,
+    stopT,
+    rmfirst,
+    vertColor
+)
+
+```
+
+Draw simultaneously separate time synchronized frames from each of the desired state machines.  These images can be produced into synchronous side-by-side videos which allows for easier debugging and comparison of concurrently running state machines.

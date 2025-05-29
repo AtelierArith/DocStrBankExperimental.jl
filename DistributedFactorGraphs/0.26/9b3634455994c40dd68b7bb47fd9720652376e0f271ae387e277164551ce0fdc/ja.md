@@ -1,0 +1,1 @@
+InferenceVariableの多様体ポイントタイプを返すインターフェース関数を作成し、この関数をすべてのTypes<:InferenceVariableに拡張します。

@@ -1,0 +1,1 @@
+Invoked right before request/response stream is complete to report the tracing metrics for [`aws_http_stream`](@ref). This may be invoked synchronously when [`aws_http_stream_release`](@ref)() is called. This is invoked even if the stream is never activated. See [`aws_http_stream_metrics`](@ref) for details.

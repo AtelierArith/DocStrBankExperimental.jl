@@ -1,0 +1,7 @@
+An `OctaminimalGaussianArray` is an array of octahedral grids, subtyping `AbstractReducedGridArray`, that use Gaussian latitudes for each ring. First dimension of the underlying `N`-dimensional `data` represents the horizontal dimension, in ring order (0 to 360˚E, then north to south), other dimensions are used for the vertical and/or time or other dimensions. The resolution parameter of the horizontal grid is `nlat_half` (number of latitude rings on one hemisphere, Equator included) and the ring indices are precomputed in `rings`.
+
+These grids are called octahedral because after starting with 4 points on the first ring around the north pole (default) they increase the number of longitude points for each ring by 4, such that they can be conceptually thought of as lying on the 4 faces of an octahedron on each hemisphere. Hence, these grids have 4, 8, 12, ... longitude points for ring 1, 2, 3, ... which is in contrast to the `OctahedralGaussianArray` which starts with 20 points around the poles, hence "minimal". There is no ring on the Equator and the two rings around it have 4nlat_half longitude points before reducing the number of longitude points per ring by 4 towards the southern-most ring j = nlat. `rings` are the precomputed ring indices, in the example above `rings = [1:4, 5:12, 13:24, ...]`. For efficient looping see `eachring` and `eachgrid`. Fields are
+
+  * `data::AbstractArray`
+  * `nlat_half::Int64`
+  * `rings::Vector{UnitRange{Int64}}`

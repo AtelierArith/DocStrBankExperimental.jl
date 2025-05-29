@@ -1,0 +1,1 @@
+`InfiniteBipartiteRegularGraph` is a data type for an infinite bipartite random regular graph, where by     symmetry there are only two types of messages and beliefs, therefore it is enough to store two message     and two beliefs. BP functions can be called on an `InfiniteBipartiteRegularGraph` the same way one would for a normal      graph.    

@@ -1,0 +1,1 @@
+`ImGuiInputTextCallbackData`のデストラクタ

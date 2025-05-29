@@ -1,0 +1,1 @@
+Support writing "well-behaved" computations. Such computations declare a [`Contract`](@ref) describing their inputs and outputs. This is enforced, so that the implementation need not worry about missing inputs, and the caller can rely on the results. It is also self-documenting, so the generated documentation is always contains a clear up-to-date description of the contract.

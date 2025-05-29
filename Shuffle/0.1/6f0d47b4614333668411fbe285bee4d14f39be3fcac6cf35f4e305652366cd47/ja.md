@@ -1,0 +1,5 @@
+```
+outweave
+```
+
+[`outfaro`](@ref) のエイリアスです。

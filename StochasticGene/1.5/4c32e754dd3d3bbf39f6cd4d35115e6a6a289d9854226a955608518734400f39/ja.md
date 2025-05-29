@@ -1,0 +1,3 @@
+write_winners(resultfolder,measure)
+
+測定の最良のパフォーマンスモデルを書き込む

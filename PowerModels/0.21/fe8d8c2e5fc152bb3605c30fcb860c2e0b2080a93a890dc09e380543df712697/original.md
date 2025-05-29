@@ -1,0 +1,1 @@
+given a basic network data dict, returns a real valued ptdf matrix with one row for each branch and one column for each bus in the network. Multiplying the ptdf matrix by bus injection values yields a vector active power flow values on each branch.

@@ -1,0 +1,1 @@
+Checks a given operating point against the contingencies to look for branch flow violations.  The DC Power Flow approximation is used for flow simulation. If a violation is found, computes a PTDF cut based on bus injections.  Uses the participation factor based generator response model from the ARPA-e GOC Challenge 1 specification.

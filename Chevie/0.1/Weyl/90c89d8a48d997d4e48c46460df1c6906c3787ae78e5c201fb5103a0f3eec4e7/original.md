@@ -1,0 +1,1 @@
+`rootlengths(W::FiniteCoxeterGroup)`  the vector  of the (squared)  length of the roots of `W`.  The  shortest roots in an irreducible subsystem are given the length 1. In  a Weyl group the others then have length 2 (or 3 in type `G₂`). The matrix  of the `W`-invariant bilinear form is given by  `Diagonal(rootlengths(W)[1:ngens(W)])*cartan(W)`.

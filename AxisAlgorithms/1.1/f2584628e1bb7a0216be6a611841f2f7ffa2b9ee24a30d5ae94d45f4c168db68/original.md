@@ -1,0 +1,1 @@
+`A_ldiv_B_md(F, src, dim)` solves `F` for slices `b` of `src` along dimension `dim`, storing the result along the same dimension of the output. Currently, `F` must be an LU-factorized tridiagonal matrix or a Woodbury matrix.

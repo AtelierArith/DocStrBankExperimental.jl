@@ -1,0 +1,36 @@
+引数:
+
+  * `image_type::ImageType`
+  * `format::Format`
+  * `extent::Extent3D`
+  * `mip_levels::UInt32`
+  * `array_layers::UInt32`
+  * `samples::SampleCountFlag`
+  * `tiling::ImageTiling`
+  * `usage::ImageUsageFlag`
+  * `sharing_mode::SharingMode`
+  * `queue_family_indices::Vector{UInt32}`
+  * `initial_layout::ImageLayout`
+  * `next::Any`: デフォルトは `C_NULL`
+  * `flags::ImageCreateFlag`: デフォルトは `0`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkImageCreateInfo.html)
+
+```julia
+ImageCreateInfo(
+    image_type::Vulkan.ImageType,
+    format::Vulkan.Format,
+    extent::Vulkan.Extent3D,
+    mip_levels::Integer,
+    array_layers::Integer,
+    samples::Vulkan.SampleCountFlag,
+    tiling::Vulkan.ImageTiling,
+    usage::Vulkan.ImageUsageFlag,
+    sharing_mode::Vulkan.SharingMode,
+    queue_family_indices::AbstractArray,
+    initial_layout::Vulkan.ImageLayout;
+    next,
+    flags
+) -> Vulkan.ImageCreateInfo
+
+```

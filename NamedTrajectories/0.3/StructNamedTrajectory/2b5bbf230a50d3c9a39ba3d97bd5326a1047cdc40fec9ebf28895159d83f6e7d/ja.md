@@ -1,0 +1,3 @@
+```
+NamedTrajectory コンストラクタ
+```

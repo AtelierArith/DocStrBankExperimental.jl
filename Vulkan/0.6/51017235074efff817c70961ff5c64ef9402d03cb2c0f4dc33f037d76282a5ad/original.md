@@ -1,0 +1,32 @@
+Extension: VK_NV_optical_flow
+
+Arguments:
+
+  * `width::UInt32`
+  * `height::UInt32`
+  * `image_format::Format`
+  * `flow_vector_format::Format`
+  * `output_grid_size::OpticalFlowGridSizeFlagNV`
+  * `next::Any`: defaults to `C_NULL`
+  * `cost_format::Format`: defaults to `0`
+  * `hint_grid_size::OpticalFlowGridSizeFlagNV`: defaults to `0`
+  * `performance_level::OpticalFlowPerformanceLevelNV`: defaults to `0`
+  * `flags::OpticalFlowSessionCreateFlagNV`: defaults to `0`
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkOpticalFlowSessionCreateInfoNV.html)
+
+```julia
+OpticalFlowSessionCreateInfoNV(
+    width::Integer,
+    height::Integer,
+    image_format::Vulkan.Format,
+    flow_vector_format::Vulkan.Format,
+    output_grid_size::Vulkan.OpticalFlowGridSizeFlagNV;
+    next,
+    cost_format,
+    hint_grid_size,
+    performance_level,
+    flags
+)
+
+```

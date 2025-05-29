@@ -1,0 +1,1 @@
+`ImGuiTableTempData`のデストラクタ

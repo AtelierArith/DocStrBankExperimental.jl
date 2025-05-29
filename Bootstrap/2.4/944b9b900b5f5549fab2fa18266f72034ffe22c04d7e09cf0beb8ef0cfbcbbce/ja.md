@@ -1,0 +1,1 @@
+ブートストラップ(statistic, data, sampling)

@@ -1,0 +1,1 @@
+Usage:  Bettis = Intervals2Bettis(Intervals, NumberOfFiltrationSteps, maxdim) This function transforms Persistent intervals to Betti Curves. Beta*0 is discarded. The output is therefore Bettis[d,s]= the betti number eta*d

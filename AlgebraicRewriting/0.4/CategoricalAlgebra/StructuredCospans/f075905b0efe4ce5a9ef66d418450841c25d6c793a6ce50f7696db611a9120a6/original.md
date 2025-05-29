@@ -1,0 +1,1 @@
+Apply a rewrite rule to a structured multicospan, where a matching cospan homomorphism is found automatically. If multiple matches are found, a particular one can be selected using `m_index`. Returns `nothing` if none are found.

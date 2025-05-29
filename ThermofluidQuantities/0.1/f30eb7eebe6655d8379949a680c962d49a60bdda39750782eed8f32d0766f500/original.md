@@ -1,0 +1,3 @@
+```
+SpecificGravity <: DimensionlessPhysicalQuantity
+```

@@ -1,0 +1,1 @@
+@article{springer1967electron,   title={Electron Transport in Amorphous Materials. I},   author={Springer, Bernard},   journal={Physical Review},   volume={154},   number={3},   pages={614},   year={1967},   publisher={APS} }

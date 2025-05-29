@@ -1,0 +1,1 @@
+`@fixed_range 3:10` behaves like the standard range `3:10`, but is stored within the type system, so that `some_tuple[@fixed_range 3:10]` is type-stable. Also supports `some_tuple[@fixed_range 3:end-5]` 

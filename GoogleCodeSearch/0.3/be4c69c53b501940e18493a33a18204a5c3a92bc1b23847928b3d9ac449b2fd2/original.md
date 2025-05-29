@@ -1,0 +1,1 @@
+Index paths by calling the index method. While indexing, ensure paths are sorted such that paths appearing later are not substrings of those earlier. Otherwise, the earlier indexed entries are erased (strange behavior of `cindex`).

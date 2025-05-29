@@ -1,0 +1,5 @@
+```
+HexagonalPrism(side_length::T, visheight::T = 2.0; interface::NullOrFresnel{T} = nullinterface(T)) -> CSGGenerator{T}
+```
+
+Create an infinitely tall hexagonal prism with axis `(0, 0, 1)`, the longer hexagon diameter is along the x axis. For visualization `visheight` is used, **note that this does not fully represent the surface**.

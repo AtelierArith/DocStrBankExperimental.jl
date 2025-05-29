@@ -1,0 +1,5 @@
+```
+nblocks(::BlockDim)
+```
+
+BlockDimのブロック数。

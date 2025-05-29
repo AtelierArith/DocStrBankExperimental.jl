@@ -1,0 +1,1 @@
+JoinNode implements a join operation between multiple streams of inputs.  The first argiment of `join_function` is the JoinNode itself. The remaining arguments come from the input streams of the join node. `join_function` should call `emit` for each new fact it wants to assert.

@@ -1,0 +1,5 @@
+```
+JackknifeVectorSet
+
+`MCObservableSet{JackknifeVector}`のエイリアス。
+```

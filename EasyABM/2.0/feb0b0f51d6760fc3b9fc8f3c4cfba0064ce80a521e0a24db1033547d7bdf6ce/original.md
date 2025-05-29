@@ -1,0 +1,14 @@
+```julia
+neighbor_patches_moore(
+    agent::EasyABM.Agent2D,
+    model::EasyABM.SpaceModel2D
+) -> Vector{Tuple{Int64, Int64}}
+neighbor_patches_moore(
+    agent::EasyABM.Agent2D,
+    model::EasyABM.SpaceModel2D,
+    dist::Int64
+) -> Vector{Tuple{Int64, Int64}}
+
+```
+
+Returns patches neighboring the given patch.

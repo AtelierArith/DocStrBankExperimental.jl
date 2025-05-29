@@ -1,0 +1,5 @@
+```
+closeAllFigures()
+```
+
+Close all figures.

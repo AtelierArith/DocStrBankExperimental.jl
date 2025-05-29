@@ -1,0 +1,6 @@
+```
+track = loadtrack("simlation/path/_output"::AbstractString)
+track = loadtrack("simlation/path/_output/fort.track"::AbstractString)
+```
+
+関数: fort.track リーダー

@@ -1,0 +1,1 @@
+Called by aws_aws_event_stream_streaming_decoder when payload data has been received. 'data' doesn't belong to you, so copy the data if it is needed beyond the scope of your callback. final_segment == 1 indicates the current data is the last payload buffer for that message.

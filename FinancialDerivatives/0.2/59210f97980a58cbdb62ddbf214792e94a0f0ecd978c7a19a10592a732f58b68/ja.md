@@ -1,0 +1,1 @@
+`FinancialDerivatives`モジュールは、Juliaで金融デリバティブの価格設定のための便利なモデルを提供します。

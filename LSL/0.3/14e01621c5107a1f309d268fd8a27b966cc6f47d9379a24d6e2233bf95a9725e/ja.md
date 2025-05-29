@@ -1,0 +1,3 @@
+LSLXMLElement
+
+LSLXMLElement型は、StreamInfo型のストリーム記述の操作を可能にします。

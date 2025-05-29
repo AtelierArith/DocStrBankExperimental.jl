@@ -1,0 +1,40 @@
+```
+ta_wma(t_array::TimeArray, n::Integer; kw...) -> TimeArray
+ta_wma(t_array::TimeArray, p::Period; kw...) -> TimeArray
+```
+
+Applies [Weighted Moving Average](https://en.wikipedia.org/wiki/Moving_average#Weighted_moving_average) algorithm with window size `n` or period `p` to the elements of `t_array`.
+
+## Keyword arguments
+
+  * See [`ta_rolling`](@ref) for more information.
+
+## Examples
+
+```jldoctest
+julia> using Dates
+
+julia> t_array = TimeArray([
+           TimeTick(DateTime("2024-01-02"), 1.0),
+           TimeTick(DateTime("2024-01-03"), 2.0),
+           TimeTick(DateTime("2024-01-05"), 3.0),
+           TimeTick(DateTime("2024-01-06"), 4.0),
+           TimeTick(DateTime("2024-01-09"), 5.0),
+       ]);
+
+julia> ta_wma(t_array, 3)
+5-element TimeArray{DateTime, Float64}:
+ TimeTick(2024-01-02T00:00:00, NaN)
+ TimeTick(2024-01-03T00:00:00, NaN)
+ TimeTick(2024-01-05T00:00:00, 2.333333333333333)
+ TimeTick(2024-01-06T00:00:00, 3.333333333333333)
+ TimeTick(2024-01-09T00:00:00, 4.333333333333333)
+
+julia> ta_wma(t_array, Day(3); observations = 2)
+5-element TimeArray{DateTime, Float64}:
+ TimeTick(2024-01-02T00:00:00, NaN)
+ TimeTick(2024-01-03T00:00:00, 1.6666666666666665)
+ TimeTick(2024-01-05T00:00:00, 2.6666666666666665)
+ TimeTick(2024-01-06T00:00:00, 3.6666666666666665)
+ TimeTick(2024-01-09T00:00:00, NaN)
+```

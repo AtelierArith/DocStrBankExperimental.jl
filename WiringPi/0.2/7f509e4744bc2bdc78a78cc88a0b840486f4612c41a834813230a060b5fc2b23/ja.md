@@ -1,0 +1,3 @@
+```
+wiringPiSPIDataRW(channel, data, len)
+```

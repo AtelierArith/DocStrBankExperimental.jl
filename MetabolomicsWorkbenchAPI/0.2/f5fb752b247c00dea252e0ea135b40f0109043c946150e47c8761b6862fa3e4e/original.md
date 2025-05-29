@@ -1,0 +1,21 @@
+```
+fetch_data(studyname::String) => DataFrame
+```
+
+Return the metabolite data of the study as a dataframe.  
+
+# Example:
+
+```
+julia> df = fetch_data("ST001710");
+julia> df[1:5,1:3]
+5×3 DataFrame
+ Row │ Metabolite           1022385746  1022385747 
+     │ String               String      String     
+─────┼─────────────────────────────────────────────
+   1 │ CE(16:0) + CE(18:1)  0.1062      -1.9080
+   2 │ CE(18:0)             0.2580      0.2774
+   3 │ CE(18:2)             1.0654      0.1419
+   4 │ CE(20:4)             0.7983      -0.3442
+   5 │ Cer(d18:1/23:0)      1.2658      0.9246
+```

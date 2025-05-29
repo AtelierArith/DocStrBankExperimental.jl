@@ -1,0 +1,11 @@
+```
+s_byte_buf_init_autogenned(buf, alloc, length, style)
+```
+
+Documentation not found.
+
+### Prototype
+
+```c
+static inline void s_byte_buf_init_autogenned( struct aws_byte_buf *buf, struct aws_allocator *alloc, size_t length, enum aws_autogen_style style);
+```

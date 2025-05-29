@@ -1,0 +1,1 @@
+MultiCurveTraitは[`CircularStringTrait`](@ref)のコレクションです。

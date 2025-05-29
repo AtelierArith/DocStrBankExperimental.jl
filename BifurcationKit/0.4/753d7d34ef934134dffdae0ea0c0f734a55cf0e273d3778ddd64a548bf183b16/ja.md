@@ -1,0 +1,1 @@
+このメソッドは、Sparse表現を使用してPeriodicOrbitTrapProblemにエンコードされた関数Gのヤコビアンを返します。

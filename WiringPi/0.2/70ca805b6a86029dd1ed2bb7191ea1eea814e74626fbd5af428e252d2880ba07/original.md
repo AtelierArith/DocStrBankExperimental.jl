@@ -1,0 +1,3 @@
+```
+wiringPiSPIxSetup(number, channel, speed)
+```

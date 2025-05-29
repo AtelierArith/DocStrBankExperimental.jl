@@ -1,0 +1,1 @@
+参考文献: B. L. Stevens et al. "Aircraft Control and Simulation", 3/e, 2016 例 5.3-1: F-16 横方向レギュレータダイナミクスのLQR設計: x*dot = Ax + Bu 状態: x = [beta, phi, p, r, del*a, del*r, x*w] beta, phi: [rad], p, r: [rad/s], del*a, del*r: [deg] 制御入力: u = [u*a, u*r](エルロンおよびラダーサーボ入力, [deg])

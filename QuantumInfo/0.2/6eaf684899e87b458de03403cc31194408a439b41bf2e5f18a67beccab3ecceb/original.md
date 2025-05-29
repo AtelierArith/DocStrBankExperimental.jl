@@ -1,0 +1,1 @@
+Computes the average fidelity of the outputs of two quantum operations in the Liouville representation. One of the operations is assumed to be a unitary quantum operation. The fidelity measure used is the one defined by Josza.

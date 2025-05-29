@@ -1,0 +1,5 @@
+```
+MakeGridGLQC!(...)
+```
+
+[`SHExpandGLQ!`](@ref) のエイリアス

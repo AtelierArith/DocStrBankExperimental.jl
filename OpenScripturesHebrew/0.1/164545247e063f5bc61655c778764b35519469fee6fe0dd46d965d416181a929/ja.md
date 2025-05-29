@@ -1,0 +1,4 @@
+```julia
+ishebrew(tpl)
+
+```

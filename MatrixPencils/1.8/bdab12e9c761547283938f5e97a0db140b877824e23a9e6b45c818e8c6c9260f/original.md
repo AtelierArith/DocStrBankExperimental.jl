@@ -1,0 +1,19 @@
+```
+pmpoles(P; CF1, fast = false, atol::Real = 0, rtol::Real = atol>0 ? 0 : n*ϵ) -> (val, ip, id)
+```
+
+Return the finite and infinite poles of the polynomial matrix `P(λ)` in `val`,  the multiplicities of infinite poles in `ip` and the infinite elementary divisors of   `Q(λ) = [P(λ) I; I 0]` in `id`.  The computation of pole-structure employs strong linearizations of `Q(λ)` in either  the first companion form, if `CF1 = true`, or the second companion form, if `CF1 = false`. 
+
+`P(λ)` can be specified as a grade `k` polynomial matrix of the form `P(λ) = P_1 + λ P_2 + ... + λ**k P_(k+1)`,  for which the coefficient matrices `P_i`, `i = 1, ..., k+1`, are stored in the 3-dimensional matrix `P`,  where `P[:,:,i]` contains the `i`-th coefficient matrix `P_i` (multiplying `λ**(i-1)`). 
+
+`P(λ)` can also be specified as a matrix, vector or scalar of elements of the `Polynomial` type  provided by the [Polynomials](https://github.com/JuliaMath/Polynomials.jl) package.   
+
+The information on the finite and infinite poles of the polynomial matrix `P(λ)` is obtained from the  Kronecker-structure information of the underlying linearization `Q(λ)` using the results of [1] and [2].  The computation of the poles is performed by building the companion form based linearization `M-λN`  of the extended polynomial matrix `Q(λ) = [P(λ) I; I 0]` (see [1]) and then reducing the pencil `M-λN` to an appropriate  Kronecker-like form (KLF) which exhibits information on its Kronecker structure.  Since `Q(λ)` is regular, `M-λN` has no left or right Kronecker indices. The multiplicities of the infinite poles of `P(λ)`, returned in `ip`, are the positive differences between the multiplicities of  the infinite eigenvalues of `M-λN` and the degree of `P(λ)` [2].  The number of finite poles in `val` is equal to the number of finite eigenvalues of `M-λN` (returned in `KRInfo.nf`),  while the number of infinite poles in `val` is the sum of multiplicites in `ip`.  The multiplicities of the infinite eigenvalues of `Q(λ)` are returned in `id`.
+
+The reduction of `M-λN` to the KLF is performed using orthonal similarity transformations and involves rank decisions  based on rank revealing QR-decompositions with column pivoting,  if `fast = true`, or, the more reliable, SVD-decompositions, if `fast = false`. For efficiency purposes, the reduction is only partially performed, without accumulating the performed orthogonal transformations.
+
+The keyword arguments `atol`  and `rtol` specify the absolute and relative tolerances for the nonzero  coefficients of `P(λ)`,  respectively.  The default relative tolerance is `n*ϵ`, where `n` is the size of the smallest dimension of `P(λ)`, and `ϵ` is the  machine epsilon of the element type of coefficients of `P(λ)`. 
+
+[1] F. De Terán, F. M. Dopico, D. S. Mackey, Spectral equivalence of polynomial matrices and the Index Sum Theorem, Linear Algebra and Its Applications, vol. 459, pp. 264-333, 2014.
+
+[2] A. Varga, On computing the Kronecker structure of polynomial matrices using Julia, June 2020,  [arXiv:2006.06825](https://arxiv.org/pdf/2006.06825).

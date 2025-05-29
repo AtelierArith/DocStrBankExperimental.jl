@@ -1,0 +1,1 @@
+ImmutableリストlstをMutableList、delstの前に追加します。

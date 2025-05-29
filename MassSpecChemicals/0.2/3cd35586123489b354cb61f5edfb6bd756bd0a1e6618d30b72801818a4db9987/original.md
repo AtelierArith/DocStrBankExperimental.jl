@@ -1,0 +1,5 @@
+```
+Deprotonation <: AbstractNegAdduct
+```
+
+[M-H]-

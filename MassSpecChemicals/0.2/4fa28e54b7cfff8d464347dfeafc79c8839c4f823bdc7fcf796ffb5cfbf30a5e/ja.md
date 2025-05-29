@@ -1,0 +1,5 @@
+```
+AddOAc <: AbstractNegAdduct
+```
+
+[M+OAc]-

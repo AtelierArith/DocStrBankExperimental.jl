@@ -1,0 +1,1 @@
+このUnitTypeは、単位°Kを持つUnitTypes.Kelvinの基本的な測定を表します。

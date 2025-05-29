@@ -1,0 +1,5 @@
+```
+ℕRingElem
+```
+
+Alias for `ZPlusRingElem`.

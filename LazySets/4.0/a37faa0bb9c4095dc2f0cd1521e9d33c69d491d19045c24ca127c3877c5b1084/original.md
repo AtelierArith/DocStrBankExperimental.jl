@@ -1,0 +1,5 @@
+```
+CHArray
+```
+
+Alias for `ConvexHullArray`.

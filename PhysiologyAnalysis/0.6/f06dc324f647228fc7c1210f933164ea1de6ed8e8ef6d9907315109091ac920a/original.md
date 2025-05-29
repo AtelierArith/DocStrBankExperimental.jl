@@ -1,0 +1,1 @@
+This function uses a histogram method to find the saturation point.      - In ERG datas, a short nose component is usually present in saturated values     - Does this same function work for the Rmax of nonsaturated responses?     - Setting the saturated threshold to infinity will completely disregard the histogram method

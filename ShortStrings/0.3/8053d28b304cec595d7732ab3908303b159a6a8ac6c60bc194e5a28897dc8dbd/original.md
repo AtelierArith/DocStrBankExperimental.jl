@@ -1,0 +1,1 @@
+Create a ShortString, using the smallest ShortString that can fit the string, unless the second argument `maxlen` is passed. If the keyword argument `types` is passed with a list (a tuple or Vector) of Unsigned types, in order of their size, then one of those types will be used.

@@ -1,0 +1,1 @@
+Invoked when new HTTP/2 settings from peer have been applied. Settings_array is the array of aws_http2_settings that contains all the settings we just changed in the order we applied (the order settings arrived). Num_settings is the number of elements in that array.

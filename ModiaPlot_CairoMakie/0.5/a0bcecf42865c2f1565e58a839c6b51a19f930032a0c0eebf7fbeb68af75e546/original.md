@@ -1,0 +1,5 @@
+```
+closeFigure(figure)
+```
+
+Close `figure`.

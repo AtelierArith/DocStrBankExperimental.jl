@@ -1,0 +1,1 @@
+ACSetTransformationが、コドメイン内の要素が削除される可能性にもかかわらず、まだ有効であるかどうかを確認します。範囲外のACSetTransformationは、`is_natural`を通して実行されると、`false`を返すのではなく、エラーをスローします。

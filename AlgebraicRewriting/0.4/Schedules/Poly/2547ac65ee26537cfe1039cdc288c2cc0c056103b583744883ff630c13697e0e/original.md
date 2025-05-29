@@ -1,0 +1,1 @@
+Equips a wiring diagram description of a simulator with mutable data structures (now behavior trees for each box, but possibly incremental homomorphism caches  in the future). Requires that all the boxes of the WiringDiagram be convertable  to BTrees.

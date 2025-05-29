@@ -1,0 +1,5 @@
+```
+LinearConstraint
+```
+
+Alias for `HalfSpace`

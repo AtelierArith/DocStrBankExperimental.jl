@@ -1,0 +1,1 @@
+エッジのすべての側に関する情報。tree*boundaryがfalseの場合、エッジはツリーの内部にあります。tree*boundaryがfalseのとき、sides[0]にはエッジに接触する最も低いz-orderの四分円が含まれます。tree*boundaryがtrueの場合、その値はエッジのツリーに対する位置に応じてP8EST*CONNECT_FACE/EDGEになります。

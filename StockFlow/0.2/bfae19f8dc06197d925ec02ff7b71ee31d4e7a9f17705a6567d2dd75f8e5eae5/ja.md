@@ -1,0 +1,1 @@
+CausalLoopPolは、極性のベクトルを返します。

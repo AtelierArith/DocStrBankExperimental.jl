@@ -1,0 +1,1 @@
+Displays nice TODO graphic inline as an H1 heading (so will show up in PlutoUI's table of contents).  Useful for demarcating work-in-progress sections or parts that could be imporved or will be worked on later, etc.

@@ -1,0 +1,1 @@
+Produce some text/html code which allows to interactively view the system. Currently uses Bio3DView and some kwargs can be used to customise the representation. Note that the backend as well as interface is likely going to change in the future.

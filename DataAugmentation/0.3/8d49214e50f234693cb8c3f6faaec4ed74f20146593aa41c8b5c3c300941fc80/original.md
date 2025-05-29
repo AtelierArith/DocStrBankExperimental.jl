@@ -1,0 +1,5 @@
+```
+showitems(items)
+```
+
+Visualize `items`.

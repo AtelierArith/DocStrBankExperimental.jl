@@ -1,0 +1,7 @@
+```julia
+getVariables(dfg; ...)
+getVariables(dfg, regexFilter; tags, solvable, detail)
+
+```
+
+List the DFGVariables in the DFG. Optionally specify a label regular expression to retrieves a subset of the variables. Tags is a list of any tags that a node must have (at least one match).

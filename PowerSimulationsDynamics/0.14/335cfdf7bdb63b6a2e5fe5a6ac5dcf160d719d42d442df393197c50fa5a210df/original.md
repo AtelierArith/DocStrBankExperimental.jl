@@ -1,0 +1,1 @@
+Instantiate a MassMatrixModel for ForwardDiff calculations

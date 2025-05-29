@@ -1,0 +1,1 @@
+[`TableauRunge`](@ref)のエイリアス

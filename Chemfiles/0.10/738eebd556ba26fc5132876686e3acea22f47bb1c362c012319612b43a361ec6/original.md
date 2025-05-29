@@ -1,0 +1,1 @@
+A `Topology` describes the organisation of the particles in the system: what their names are, how they are bonded together, *etc.* A `Topology` is a list of [`Atom`](@ref)s in the system, together with the list of bonds between the atoms.

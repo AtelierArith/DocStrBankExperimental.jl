@@ -1,0 +1,3 @@
+```
+serialPuts(fd, s)
+```

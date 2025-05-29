@@ -1,0 +1,1 @@
+Observableを削除します。

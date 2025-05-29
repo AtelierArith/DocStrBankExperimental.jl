@@ -1,0 +1,1 @@
+save spline solver parameters

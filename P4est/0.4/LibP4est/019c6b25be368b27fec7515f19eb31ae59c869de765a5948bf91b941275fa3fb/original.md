@@ -1,0 +1,20 @@
+```
+p8est_ghost_exchange_custom_levels_begin(p8est_, ghost, minlevel, maxlevel, data_size, mirror_data, ghost_data)
+```
+
+Begin an asynchronous ghost data exchange by posting messages. The arguments are identical to [`p8est_ghost_exchange_custom_levels`](@ref). The return type is always non-NULL and must be passed to [`p8est_ghost_exchange_custom_levels_end`](@ref) to complete the exchange. The ghost data must not be accessed before completion. The mirror data can be safely discarded right after this function returns since it is copied into internal send buffers.
+
+### Parameters
+
+  * `mirror_data`:[in] Not required to stay alive any longer.
+  * `ghost_data`:[in,out] Must stay alive into the completion call.
+
+### Returns
+
+Transient storage for messages in progress.
+
+### Prototype
+
+```c
+p8est_ghost_exchange_t *p8est_ghost_exchange_custom_levels_begin (p8est_t * p8est, p8est_ghost_t * ghost, int minlevel, int maxlevel, size_t data_size, void **mirror_data, void *ghost_data);
+```

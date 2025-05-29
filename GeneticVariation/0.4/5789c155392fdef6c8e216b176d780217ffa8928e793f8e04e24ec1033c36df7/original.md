@@ -1,0 +1,1 @@
+A `Conserved` site describes a site where two aligned nucleotides are definately conserved. By definately conserved this means that the symbols of the site are non-ambiguity symbols, and they are the same symbol.

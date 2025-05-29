@@ -1,0 +1,1 @@
+A package to allow serializing and deserializing data from a Pluto notebook. Provides `serialize` and `deserialize` functions which follow the same interface as those provided by the `Serialization`, but do not extend it. Importing both will result in name conflicts, use one or the other, not both.

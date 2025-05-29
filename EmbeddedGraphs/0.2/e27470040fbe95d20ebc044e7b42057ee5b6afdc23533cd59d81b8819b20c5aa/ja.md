@@ -1,0 +1,1 @@
+EmbeddedGraph構造体のコンストラクタ関数

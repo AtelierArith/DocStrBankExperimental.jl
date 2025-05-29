@@ -1,0 +1,3 @@
+```
+wiringPiSPIxClose(number, channel)
+```

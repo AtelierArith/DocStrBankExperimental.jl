@@ -1,0 +1,5 @@
+```
+PureAction
+```
+
+`Integer`のエイリアスです。

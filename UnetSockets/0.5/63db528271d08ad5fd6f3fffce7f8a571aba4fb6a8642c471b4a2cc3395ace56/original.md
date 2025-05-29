@@ -1,0 +1,1 @@
+Sets the timeout for datagram reception. The default timeout is infinite. i.e., the receive() call blocks forever. A timeout of 0 means the receive() call is non-blocking. Negative timeout is considered infinite.

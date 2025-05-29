@@ -1,0 +1,1 @@
+The global context for running tests. This is mainly used to access the test environment; by accessing `tc.foo` one obtains the value of some `foo` property which was previously set up by a `test_set` or by the `test_case` itself.

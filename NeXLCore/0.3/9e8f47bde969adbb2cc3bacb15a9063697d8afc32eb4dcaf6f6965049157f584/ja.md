@@ -1,0 +1,1 @@
+@article{ smithgoldtomlinson1975     title="X線連続強度の原子番号依存性とエネルギー分散型電子プローブ分析における背景の実用的計算",     author = {Smith, D. G. W.  and Gold, C. M. and Tomlinson, D. A.},     journal={X線スペクトロメトリー},     volume={4},     pages={149-156},     year={1975},     doi={10.1002/xrs.1300040311}, }

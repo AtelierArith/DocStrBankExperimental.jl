@@ -1,0 +1,1 @@
+Simulation is an entity determining the parameters of the experiment: time span of simulation, global physical constants, borders of the simulation cell, external magnetic or electric fields, etc. The required arguments for the NBodySImulation constructor are the system to be tested and the time span of the simulation.

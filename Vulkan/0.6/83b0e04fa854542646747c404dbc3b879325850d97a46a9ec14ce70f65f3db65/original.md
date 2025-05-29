@@ -1,0 +1,16 @@
+Arguments:
+
+  * `semaphore_type::SemaphoreType`
+  * `initial_value::UInt64`
+  * `next::Ptr{Cvoid}`: defaults to `C_NULL`
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkSemaphoreTypeCreateInfo.html)
+
+```julia
+_SemaphoreTypeCreateInfo(
+    semaphore_type::Vulkan.SemaphoreType,
+    initial_value::Integer;
+    next
+) -> Vulkan._SemaphoreTypeCreateInfo
+
+```

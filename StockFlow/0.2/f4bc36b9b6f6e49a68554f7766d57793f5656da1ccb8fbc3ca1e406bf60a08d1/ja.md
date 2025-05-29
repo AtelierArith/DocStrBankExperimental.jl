@@ -1,0 +1,1 @@
+CausalLoopPolをGraphsパッケージのGraphに変換します。

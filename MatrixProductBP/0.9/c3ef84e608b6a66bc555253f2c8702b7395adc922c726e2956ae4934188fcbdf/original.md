@@ -1,0 +1,1 @@
+`InfiniteRegularGraph` is a data type for an infinite random regular graph, where by     symmetry all messages and beliefs are equal, therefore it is enough to store one message     and one belief. BP functions can be called on an `InfiniteRegularGraph` the same way one would for a normal      graph.    

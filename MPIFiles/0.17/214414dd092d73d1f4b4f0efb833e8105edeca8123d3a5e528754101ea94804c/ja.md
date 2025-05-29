@@ -1,0 +1,5 @@
+```
+version(mdfPart, value)
+```
+
+ファイルフォーマットのバージョン

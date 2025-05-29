@@ -1,0 +1,1 @@
+DFGからVariableSummaryを取得します。

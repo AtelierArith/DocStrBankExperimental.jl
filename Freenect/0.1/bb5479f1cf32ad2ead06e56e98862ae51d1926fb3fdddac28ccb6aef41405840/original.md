@@ -1,0 +1,1 @@
+Enumeration of available resolutions. Not all available resolutions are actually supported for all video formats. Frame modes may not perfectly match resolutions.  For instance, `resolution_medium` is 640x488 for the IR camera.

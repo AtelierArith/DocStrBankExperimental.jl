@@ -1,0 +1,1 @@
+ContinuousPolynomial{0} は区分的レジェンドルです。ContinuousPolynomial{1} は最初のブロックでハット関数、残りはバブル関数です。Ultraspherical(-1/2) ContinuousPolynomial{-1} はデルタ関数（境界外）で、残りはUltraspherical(1/2) == diff(Legendre())[:,2:end] です。要素の内部では、レジェンドルを微分することで一貫性があります：左側には (-1)^k のデルタ関数があり、右側には -1 があります。

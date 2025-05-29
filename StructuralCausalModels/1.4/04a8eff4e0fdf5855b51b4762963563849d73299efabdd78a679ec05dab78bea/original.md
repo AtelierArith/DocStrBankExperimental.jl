@@ -1,0 +1,3 @@
+SCM
+
+Alias for StructuralCausalModels

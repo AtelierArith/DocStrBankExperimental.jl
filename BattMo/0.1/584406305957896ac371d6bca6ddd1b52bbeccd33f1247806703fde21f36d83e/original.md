@@ -1,0 +1,1 @@
+sineup rampup function

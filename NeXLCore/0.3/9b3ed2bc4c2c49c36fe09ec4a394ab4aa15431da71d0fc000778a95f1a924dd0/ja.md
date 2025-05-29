@@ -1,0 +1,1 @@
+@article{small1987modeling,   title={純元素ターゲットにおける10–40 keV電子によって生成されるブレムストラールング放射のモデリング},   author={Small, John A and Leigh, Stefan D and Newbury, Dale E and Myklebust, Robert L},   journal={応用物理学ジャーナル},   volume={61},   number={2},   pages={459–469},   year={1987},   publisher={アメリカ物理学会} }

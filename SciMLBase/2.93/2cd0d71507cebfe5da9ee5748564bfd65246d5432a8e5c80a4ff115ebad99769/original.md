@@ -1,0 +1,5 @@
+```
+remake(func::AbstractSciMLFunction; f = missing, g = missing, f2 = missing, kwargs...)
+```
+
+`remake` the given `func`. Return an `AbstractSciMLFunction` of the same kind, `isinplace` and `specialization` as `func`. Retain the properties of `func`, except those that are overridden by keyword arguments. For stochastic functions (e.g. `SDEFunction`) the `g` keyword argument is used to override `func.g`. For split functions (e.g. `SplitFunction`) the `f2` keyword argument is used to override `func.f2`, and `f` is used for `func.f1`. If `f isa AbstractSciMLFunction` and `func` is not a split function, properties of `f` will override those of `func` (but not ones provided via keyword arguments). Properties of `f` that are `nothing` will fall back to those in `func` (unless provided via keyword arguments). If `f` is a different type of `AbstractSciMLFunction` from `func`, the returned function will be of the kind of `f` unless `func` is a split function. If `func` is a split function, `f` and `f2` will be wrapped in the appropriate `AbstractSciMLFunction` type with the same `isinplace` and `specialization` as `func`.

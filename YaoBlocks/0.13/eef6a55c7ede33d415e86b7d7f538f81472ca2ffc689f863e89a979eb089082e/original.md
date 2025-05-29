@@ -1,0 +1,5 @@
+```
+PhaseGate
+```
+
+Global phase gate.

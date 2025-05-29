@@ -1,0 +1,4 @@
+```julia
+lexeme(compound)
+
+```

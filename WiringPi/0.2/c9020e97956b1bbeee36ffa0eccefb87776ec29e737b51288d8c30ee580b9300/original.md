@@ -1,0 +1,3 @@
+```
+wiringPiSPIxGetFd(number, channel)
+```

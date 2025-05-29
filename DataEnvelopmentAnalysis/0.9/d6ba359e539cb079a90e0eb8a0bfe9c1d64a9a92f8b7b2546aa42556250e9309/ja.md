@@ -1,0 +1,1 @@
+AbstractBootstrapDEAModel ブートストラップ DEA モデルを表す抽象型。

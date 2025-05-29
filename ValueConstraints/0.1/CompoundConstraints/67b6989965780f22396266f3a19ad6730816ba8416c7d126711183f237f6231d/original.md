@@ -1,0 +1,1 @@
+Contains all functionality related to 'compound constraints', i.e. constraints consisting of one or more 'sub-constraints' bound by a higher level constraint on the result of those 'sub-constraints', e.g. 'all of these constraints', 'some of these constraints', etc.

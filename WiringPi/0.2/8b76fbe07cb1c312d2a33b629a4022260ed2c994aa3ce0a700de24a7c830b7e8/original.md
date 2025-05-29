@@ -1,0 +1,3 @@
+```
+waitForInterruptClose(pin)
+```

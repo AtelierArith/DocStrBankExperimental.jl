@@ -1,0 +1,5 @@
+```
+BinningScheme
+```
+
+CausalityToolsエコシステムにおけるすべてのビニングスキームのスーパークラス。

@@ -1,0 +1,1 @@
+LambaEulerHeun: Nonstiff Method A modified Euler-Heun method with adaptive time stepping with an error estimator based on Lamba due to Rackauckas. Strong order 0.5 in the Stratonovich sense. Can handle all forms of noise, including non-diagonal, scalar, and colored noise.

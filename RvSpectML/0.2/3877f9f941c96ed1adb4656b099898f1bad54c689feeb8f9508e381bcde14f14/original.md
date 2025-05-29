@@ -1,0 +1,1 @@
+`calc_formal_rv_precission(spectra, chunklist_timeseries; smooth_factor)` Calculate expected RV uncertainty for each spectrum in an array of spectra and corresponding chunklist_timeseries, Assumies only photon noise with given variances.

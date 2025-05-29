@@ -1,0 +1,1 @@
+View a chain of `Daf` data as a single data set. This allows creating a small `Daf` data set that contains extra (or overriding) data on top of a larger read-only data set. In particular this allows creating several such incompatible extra data sets (e.g., different groupings of cells to metacells), without having to duplicate the common (read only) data.

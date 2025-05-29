@@ -1,0 +1,1 @@
+RadeonProRenderオブジェクトに任意の値を設定します。

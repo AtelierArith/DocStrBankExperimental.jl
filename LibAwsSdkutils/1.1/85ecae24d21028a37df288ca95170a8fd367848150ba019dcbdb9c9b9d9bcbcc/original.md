@@ -1,0 +1,11 @@
+```
+aws_endpoints_ruleset_get_version(ruleset)
+```
+
+Documentation not found.
+
+### Prototype
+
+```c
+struct aws_byte_cursor aws_endpoints_ruleset_get_version(const struct aws_endpoints_ruleset *ruleset);
+```

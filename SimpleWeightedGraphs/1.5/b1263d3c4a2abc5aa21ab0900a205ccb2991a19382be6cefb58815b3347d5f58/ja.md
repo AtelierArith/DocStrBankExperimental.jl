@@ -1,0 +1,5 @@
+```
+WGraph
+```
+
+`SimpleWeightedGraph`のエイリアスです。

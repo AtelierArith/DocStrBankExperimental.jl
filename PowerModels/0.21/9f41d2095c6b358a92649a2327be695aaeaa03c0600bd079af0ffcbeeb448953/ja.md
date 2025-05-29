@@ -1,0 +1,1 @@
+`vmin <= vm[i] <= vmax`

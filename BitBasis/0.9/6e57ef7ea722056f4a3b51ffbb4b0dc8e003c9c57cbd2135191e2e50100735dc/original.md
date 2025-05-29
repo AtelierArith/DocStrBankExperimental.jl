@@ -1,0 +1,3 @@
+```
+bint(b::BitStr) -> Integer
+```

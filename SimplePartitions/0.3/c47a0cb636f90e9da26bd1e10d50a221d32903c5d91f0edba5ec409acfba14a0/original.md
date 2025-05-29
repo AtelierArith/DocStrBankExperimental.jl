@@ -1,0 +1,1 @@
+`PartitionBuilder(A,check=true)` takes a set of nonempty, pairwise disjoint sets and creates the corresponding partition. It is the inverse operation to `parts(P)`. The optional parameter `check` causes sanity checks to be return on the input set of sets (throwing errors if it is invalid).

@@ -1,0 +1,1 @@
+Naive-Bayes relational neighbour learner (trainable).  Calculates neighbourhood likelihoods (i.e. given a vertex's class,  the class distribution in its neighbourhood) and uses the resulting information to compute class estimates for each vertex using a Bayesian approach.

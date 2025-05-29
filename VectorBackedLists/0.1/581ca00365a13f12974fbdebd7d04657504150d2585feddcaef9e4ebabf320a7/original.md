@@ -1,0 +1,1 @@
+Create a list from an indexable container. The list provided a view on the container, so any mutations realised through calling the list API will be reflected in the state of the underlying container.

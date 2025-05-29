@@ -1,0 +1,6 @@
+```
+@superzeros T a b c d...
+@superzeros T dims b c d...
+```
+
+Generate arrays `b, c, d...` with the super-dimensions of `a` and innereltype `T`.

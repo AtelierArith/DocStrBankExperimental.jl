@@ -1,0 +1,1 @@
+Abstract supertype for all ring grids, representing 2-dimensional data on the sphere unravelled into a Julia `Vector`. Subtype of `AbstractGridArray` with `N=1` and `ArrayType=Vector{T}` of `eltype T`.

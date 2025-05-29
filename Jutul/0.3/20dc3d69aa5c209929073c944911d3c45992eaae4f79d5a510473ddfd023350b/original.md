@@ -1,0 +1,1 @@
+Take value of AD.

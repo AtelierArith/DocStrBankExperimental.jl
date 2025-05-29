@@ -1,0 +1,5 @@
+```
+getDefaultDeviceId()
+```
+
+はデフォルトデバイスのdeviceIdを返します。

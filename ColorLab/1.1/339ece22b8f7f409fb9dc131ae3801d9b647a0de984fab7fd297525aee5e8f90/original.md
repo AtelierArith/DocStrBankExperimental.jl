@@ -1,0 +1,1 @@
+CAM16 Uniform Color Space in polar[J′, M′, h] or cartesian[J′, a′, b′] Luo, M.R., Cui, G., and Li, C. (2006). Uniform colour spaces based on CIECAM02 colour appearance model. Color Research & Application 31, 320–330.

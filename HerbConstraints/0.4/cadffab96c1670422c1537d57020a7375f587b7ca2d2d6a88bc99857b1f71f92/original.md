@@ -1,0 +1,1 @@
+Generic fallback function for commutativity. Swaps arguments 1 and 2, then dispatches to a more specific signature. If this gets stuck in an infinite loop, the implementation of an AbstractRuleNode type pair is missing.

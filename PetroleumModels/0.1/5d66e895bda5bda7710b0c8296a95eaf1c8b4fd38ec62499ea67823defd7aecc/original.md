@@ -1,0 +1,1 @@
+Economic objective function for petroleum models that takes the form of $min \sum_{i \in producer} c_i - \sum_{i \in consumer} c_i + \frac{\rho * g}{1000} * \sum_{ij \in pump} c_{ij} * q_{ij} * \frac{(h_i - h_j)}{\eta_{ij} * \eta_{em} * \eta{et}}$ where 1000 is the factor to convert kw seconds into Joules (kg * m^2)/s.

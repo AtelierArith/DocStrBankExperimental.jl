@@ -1,0 +1,1 @@
+Compute all possible new states after the application of the given operator. Reports the probability of each one of them. Deterministic (as it reports all branches of potentially random processes), part of the Perturbative Expansion interface.

@@ -1,0 +1,1 @@
+`PairwiseListMatrix{T, diagonal, VT}` is a (squared) symmetric matrix that stores a `list` of type `VT` with values of type `T` for the pairwise comparison/evaluation of `nelements`. If `diagonal` is `true` the first element of the list is `1, 1` otherwise is `1, 2`. If `diagonal` is `false` the diagonal values are stored in a vector on the `diag` field.

@@ -1,0 +1,1 @@
+`prog = Progress(n; dt=0.1, desc="Progress: ", color=:green, output=stderr, barlen=tty_width(desc), start=0)` は、`n` 回の反復または段階から始まるタスクのための進捗メーターを作成します。出力は、少なくとも `dt` 秒の間隔で生成され、各反復が `dt` よりも長くかかる場合はさらに長くなる可能性があります。`desc` は現在のタスクの説明です。オプションで、`enabled=false` を設定することで進捗バーを無効にすることができます。また、`showspeed=true` を設定することで、説明に反復ごとの平均持続時間を "(12.34 ms/it)" のように追加することもできます。

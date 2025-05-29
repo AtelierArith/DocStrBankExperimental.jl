@@ -1,0 +1,1 @@
+このUnitTypeは、単位Tで表されるUnitTypes.Teslaの基本的な測定を表します。

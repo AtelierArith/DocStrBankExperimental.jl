@@ -1,0 +1,20 @@
+引数:
+
+  * `wait_semaphores::Vector{Semaphore}`
+  * `wait_dst_stage_mask::Vector{PipelineStageFlag}`
+  * `command_buffers::Vector{CommandBuffer}`
+  * `signal_semaphores::Vector{Semaphore}`
+  * `next::Ptr{Cvoid}`: デフォルトは `C_NULL`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkSubmitInfo.html)
+
+```julia
+_SubmitInfo(
+    wait_semaphores::AbstractArray,
+    wait_dst_stage_mask::AbstractArray,
+    command_buffers::AbstractArray,
+    signal_semaphores::AbstractArray;
+    next
+) -> Vulkan._SubmitInfo
+
+```

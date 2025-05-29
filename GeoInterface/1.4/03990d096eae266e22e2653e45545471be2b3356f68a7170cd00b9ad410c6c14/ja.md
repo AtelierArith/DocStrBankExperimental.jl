@@ -1,0 +1,1 @@
+MultiSurfaceTraitは[`AbstractSurfaceTrait`](@ref)のコレクションです。

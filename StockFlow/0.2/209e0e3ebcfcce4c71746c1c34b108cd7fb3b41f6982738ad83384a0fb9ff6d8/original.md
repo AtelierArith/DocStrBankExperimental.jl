@@ -1,0 +1,1 @@
+Identity function on CausalLoop. 

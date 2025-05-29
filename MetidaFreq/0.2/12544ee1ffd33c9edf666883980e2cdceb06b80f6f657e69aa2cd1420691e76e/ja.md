@@ -1,0 +1,3 @@
+```
+HypothesisTests.ChisqTest(contab::ConTab)
+```

@@ -1,0 +1,1 @@
+StatsModels.TableRegressionModelに似ていますが、カウント行列とモデルも保持します。

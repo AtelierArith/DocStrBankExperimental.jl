@@ -1,0 +1,1 @@
+```julia PartialChernNumber(Ham::Hamiltonian, band::Int64, mu::Float64) --> Float64 Function to get the Chern number of a partially filled band given a`Hamiltonian`, a`band`index, and a chemical potential`mu`.

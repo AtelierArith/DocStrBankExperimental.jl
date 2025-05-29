@@ -1,0 +1,1 @@
+[`RecurrencesFindAndMatch`](@ref)のエイリアス。

@@ -1,0 +1,1 @@
+If no categories are explicitely provided, will a CxC symmetric probability matrix, with C the number of != categories. the element [i,j] of this matrix corresponds to Pij at lag 'Lag'. Use this function if you want to have the contingency table at lag 'Lag'.

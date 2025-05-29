@@ -1,0 +1,1 @@
+Class-distribution relational neighbour (trainable). Claculates a reference vector (RV) for each class (using the vertex neighbourhood information) and compares vertices to the reference vectors corresponding to each class using a similarity measure.

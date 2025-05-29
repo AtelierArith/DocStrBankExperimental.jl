@@ -1,0 +1,5 @@
+```
+measIsFramePermutation(mdfPart, value)
+```
+
+Flag, if the order of frames has been changed, see framePermutation

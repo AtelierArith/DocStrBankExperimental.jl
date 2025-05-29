@@ -1,0 +1,5 @@
+```
+label(d::AbstractDeviceOrTrigger)
+```
+
+デバイスのラベル。

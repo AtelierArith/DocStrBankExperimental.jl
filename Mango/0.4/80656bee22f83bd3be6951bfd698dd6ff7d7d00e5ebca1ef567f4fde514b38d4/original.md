@@ -1,0 +1,1 @@
+Context of the agent. Represents the environment for the specific agent. Therefore it includes a  connection to the container, including all functions used for interacting with the environment for the agent.

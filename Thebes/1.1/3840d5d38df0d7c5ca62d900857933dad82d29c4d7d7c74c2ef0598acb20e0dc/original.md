@@ -1,0 +1,3 @@
+```
+face(o::Object, n)
+```

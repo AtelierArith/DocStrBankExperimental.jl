@@ -1,0 +1,1 @@
+Read a custom pocket point file in PDB format where the residue number is the pocket number. This file can be generated using a script from the LIGSITEcs pocket*r.pdb and pocket*all.pdb files. Returns a dictionary where key is pocket number and value is point coords.

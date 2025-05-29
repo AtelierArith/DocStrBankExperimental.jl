@@ -1,0 +1,1 @@
+このUnitTypeは、単位cdのUnitTypes.Candelaの基本的な測定を表します。

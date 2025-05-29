@@ -1,0 +1,3 @@
+```
+isselfintersecting(arcs::Arcs)
+```

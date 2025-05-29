@@ -1,0 +1,1 @@
+send(pluto,buffer;repeat=false) Send the buffer `buffer` with the Pluto device. If flag is set to true, repeat the transmission indefinively. If use*internal*buffer is set to true, the buffer used is the one already stored in the Pluto device (it saves buffer re-alloc)

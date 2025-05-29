@@ -1,0 +1,1 @@
+すべての幾何学に対するAbstractGeometryTrait型。

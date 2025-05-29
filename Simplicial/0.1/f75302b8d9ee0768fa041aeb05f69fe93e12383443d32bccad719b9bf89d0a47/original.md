@@ -1,0 +1,1 @@
+MaximalHomologicalDimension=8 This is the maximal homological dimension allowed by certain memory-intensive  methods that are computing too many faces. This is used as a precaution against crushing when demanding too much memory

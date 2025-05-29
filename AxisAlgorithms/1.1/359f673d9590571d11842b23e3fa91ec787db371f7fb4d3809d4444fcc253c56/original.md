@@ -1,0 +1,1 @@
+`A_mul_B_md(M, src, dim)` computes `M*x` for slices `x` of `src` along dimension `dim`, storing the resulting vector along the same dimension of the output. `M` must be an `AbstractMatrix`. This uses an in-place naive algorithm.

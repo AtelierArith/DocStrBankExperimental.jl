@@ -1,0 +1,311 @@
+```
+struct TSFrame
+  coredata :: DataFrame
+end
+```
+
+`::TSFrame` - A type to hold ordered data with an index.
+
+A TSFrame object is essentially a [DataFrame](https://dataframes.juliadata.org/) with a specific column marked as an index. The first argument can accept a DataFrame, Vector, or an Array with 2-dimensions. Any [Tables.jl](https://github.com/JuliaData/Tables.jl) compatible table is also accepted as an input.
+
+If the first argument is a `DataFrame` then the DataFrame may contain an indexing column also. The indexing column can be identified by providing either the column number or the column name as `String` or `Symbol` in the DataFrame as the second argument `index`.
+
+In case, an indexing column is not present in the DataFrame then a sequential index is created automatically.
+
+The input `DataFrame` is sorted during construction and is stored in the property `coredata`. The index is stored in the column called `Index` of the `coredata` DataFrame. This index can be fetched using the [`index()`](@ref) method.
+
+Providing an empty DataFrame to the constructor results in a TSFrame object with an empty index and no columns. Similarly, providing empty Vector or empty Array as the first argument results in an empty TSFrame with no columns.
+
+Permitted data inputs to the constructors are `DataFrame`, `Vector`, and 2-dimensional `Array`.
+
+`TSFrame(coredata::DataFrame)`: Here, the constructor looks for a column named `Index` in `coredata` as the index column, if this is not found then the first column of `coredata` is made the index by default. If `coredata` only has a single column then a new sequential index is generated.
+
+Since `TSFrame.coredata` is a DataFrame it can be operated upon independently using methods provided by the DataFrames package (ex. `transform`, `combine`, etc.).
+
+# Constructors
+
+```julia
+TSFrame(coredata::DataFrame, index::Union{String, Symbol, Int}; issorted = false, copycols = true)
+TSFrame(coredata::DataFrame, index::AbstractVector{T}; issorted = false, copycols = true) where {T<:Union{Int, TimeType}}
+TSFrame(coredata::DataFrame; issorted = false, copycols = true)
+TSFrame(coredata::DataFrame, index::UnitRange{Int}; issorted = false, copycols = true)
+TSFrame(coredata::AbstractVector{T}, index::AbstractVector{V}; colnames=:auto, issorted = false, copycols = true) where {T, V}
+TSFrame(coredata::AbstractVector{T}; colnames=:auto, issorted = false, copycols = true) where {T}
+TSFrame(coredata::AbstractArray{T,2}; colnames=:auto, issorted = false, copycols = true) where {T}
+TSFrame(coredata::AbstractArray{T,2}, index::AbstractVector{V}; colnames=:auto, issorted = false, copycols = true) where {T, V}
+TSFrame(IndexType::DataType; n::Int=1)
+TSFrame(IndexType::DataType, cols::Vector{Tuple{DataType, S}}; issorted = false, copycols = true) where S <: Union{Symbol, String}
+```
+
+When `issorted` is `true``, no sort operations are performed on the input. When`copycols`is`true`, the inputs are not copied, but placed directly in the TSFrame.   This can be dangerous, so please only set this to`false` if the input arrays  will not be mutated later.
+
+`issorted = true, copycols = false` offers performance benefits,  especially when constructing TSFrames in loops or other performance sensitive code.
+
+# Examples
+
+```jldoctest; setup = :(using TSFrames, DataFrames, Dates, Random, Statistics)
+julia> using Random;
+julia> random(x) = rand(MersenneTwister(123), x);
+
+julia> df = DataFrame(x1 = random(10))
+10×1 DataFrame
+ Row │ x1
+     │ Float64
+─────┼───────────
+   1 │ 0.768448
+   2 │ 0.940515
+   3 │ 0.673959
+   4 │ 0.395453
+   5 │ 0.313244
+   6 │ 0.662555
+   7 │ 0.586022
+   8 │ 0.0521332
+   9 │ 0.26864
+  10 │ 0.108871
+
+julia> ts = TSFrame(df)   # generates index
+(10 x 1) TSFrame with Int64 Index
+
+ Index  x1
+ Int64  Float64
+──────────────────
+     1  0.768448
+     2  0.940515
+     3  0.673959
+     4  0.395453
+     5  0.313244
+     6  0.662555
+     7  0.586022
+     8  0.0521332
+     9  0.26864
+    10  0.108871
+
+# ts.coredata is a DataFrame
+julia> combine(ts.coredata, :x1 => Statistics.mean, DataFrames.nrow)
+1×2 DataFrame
+ Row │ x1_mean  nrow
+     │ Float64  Int64
+─────┼────────────────
+   1 │ 0.49898    418
+
+julia> df = DataFrame(ind = [1, 2, 3], x1 = random(3))
+3×2 DataFrame
+ Row │ ind    x1
+     │ Int64  Float64
+─────┼─────────────────
+   1 │     1  0.768448
+   2 │     2  0.940515
+   3 │     3  0.673959
+
+julia> ts = TSFrame(df, 1)        # the first column is index
+(3 x 1) TSFrame with Int64 Index
+
+ Index  x1
+ Int64  Float64
+─────────────────
+     1  0.768448
+     2  0.940515
+     3  0.673959
+
+julia> df = DataFrame(x1 = random(3), x2 = random(3), Index = [1, 2, 3]);
+3×3 DataFrame
+ Row │ x1        x2        Index
+     │ Float64   Float64   Int64
+─────┼───────────────────────────
+   1 │ 0.768448  0.768448      1
+   2 │ 0.940515  0.940515      2
+   3 │ 0.673959  0.673959      3
+
+julia> ts = TSFrame(df)   # uses existing `Index` column
+(3 x 2) TSFrame with Int64 Index
+
+ Index  x1        x2
+ Int64  Float64   Float64
+───────────────────────────
+     1  0.768448  0.768448
+     2  0.940515  0.940515
+     3  0.673959  0.673959
+
+julia> dates = collect(Date(2017,1,1):Day(1):Date(2017,1,10));
+
+julia> df = DataFrame(dates = dates, x1 = random(10))
+10×2 DataFrame
+ Row │ dates       x1
+     │ Date        Float64
+─────┼───────────────────────
+   1 │ 2017-01-01  0.768448
+   2 │ 2017-01-02  0.940515
+   3 │ 2017-01-03  0.673959
+   4 │ 2017-01-04  0.395453
+   5 │ 2017-01-05  0.313244
+   6 │ 2017-01-06  0.662555
+   7 │ 2017-01-07  0.586022
+   8 │ 2017-01-08  0.0521332
+   9 │ 2017-01-09  0.26864
+  10 │ 2017-01-10  0.108871
+
+julia> ts = TSFrame(df, :dates)
+(10 x 1) TSFrame with Date Index
+
+ Index       x1
+ Date        Float64
+───────────────────────
+ 2017-01-01  0.768448
+ 2017-01-02  0.940515
+ 2017-01-03  0.673959
+ 2017-01-04  0.395453
+ 2017-01-05  0.313244
+ 2017-01-06  0.662555
+ 2017-01-07  0.586022
+ 2017-01-08  0.0521332
+ 2017-01-09  0.26864
+ 2017-01-10  0.108871
+
+julia> ts = TSFrame(DataFrame(x1=random(10)), dates);
+
+julia> ts = TSFrame(random(10))
+(10 x 1) TSFrame with Int64 Index
+
+ Index  x1
+ Int64  Float64
+──────────────────
+     1  0.768448
+     2  0.940515
+     3  0.673959
+     4  0.395453
+     5  0.313244
+     6  0.662555
+     7  0.586022
+     8  0.0521332
+     9  0.26864
+    10  0.108871
+
+julia> ts = TSFrame(random(10), colnames=[:A]) # column is named A
+(10 x 1) TSFrame with Int64 Index
+
+ Index  A
+ Int64  Float64
+──────────────────
+     1  0.768448
+     2  0.940515
+     3  0.673959
+     4  0.395453
+     5  0.313244
+     6  0.662555
+     7  0.586022
+     8  0.0521332
+     9  0.26864
+    10  0.108871
+
+julia> ts = TSFrame(random(10), dates)
+(10 x 1) TSFrame with Date Index
+
+ Index       x1        
+ Date        Float64   
+───────────────────────
+ 2017-01-01  0.768448
+ 2017-01-02  0.940515
+ 2017-01-03  0.673959
+ 2017-01-04  0.395453
+ 2017-01-05  0.313244
+ 2017-01-06  0.662555
+ 2017-01-07  0.586022
+ 2017-01-08  0.0521332
+ 2017-01-09  0.26864
+ 2017-01-10  0.108871
+
+julia> ts = TSFrame(random(10), dates, colnames=[:A]) # column is named A
+(10 x 1) TSFrame with Date Index
+
+ Index       A         
+ Date        Float64   
+───────────────────────
+ 2017-01-01  0.768448
+ 2017-01-02  0.940515
+ 2017-01-03  0.673959
+ 2017-01-04  0.395453
+ 2017-01-05  0.313244
+ 2017-01-06  0.662555
+ 2017-01-07  0.586022
+ 2017-01-08  0.0521332
+ 2017-01-09  0.26864
+ 2017-01-10  0.108871
+
+julia> ts = TSFrame([random(10) random(10)]) # matrix object
+(10 x 2) TSFrame with Int64 Index
+
+ Index  x1         x2        
+ Int64  Float64    Float64   
+─────────────────────────────
+     1  0.768448   0.768448
+     2  0.940515   0.940515
+     3  0.673959   0.673959
+     4  0.395453   0.395453
+     5  0.313244   0.313244
+     6  0.662555   0.662555
+     7  0.586022   0.586022
+     8  0.0521332  0.0521332
+     9  0.26864    0.26864
+    10  0.108871   0.108871
+
+julia> ts = TSFrame([random(10) random(10)], colnames=[:A, :B]) # columns are named A and B
+(10 x 2) TSFrame with Int64 Index
+
+ Index  A          B       
+ Int64  Float64    Float64   
+─────────────────────────────
+     1  0.768448   0.768448
+     2  0.940515   0.940515
+     3  0.673959   0.673959
+     4  0.395453   0.395453
+     5  0.313244   0.313244
+     6  0.662555   0.662555
+     7  0.586022   0.586022
+     8  0.0521332  0.0521332
+     9  0.26864    0.26864
+    10  0.108871   0.108871
+
+julia> ts = TSFrame([random(10) random(10)], dates) 
+(10 x 2) TSFrame with Date Index
+
+ Index       x1         x2
+ Date        Float64    Float64
+──────────────────────────────────
+ 2017-01-01  0.768448   0.768448
+ 2017-01-02  0.940515   0.940515
+ 2017-01-03  0.673959   0.673959
+ 2017-01-04  0.395453   0.395453
+ 2017-01-05  0.313244   0.313244
+ 2017-01-06  0.662555   0.662555
+ 2017-01-07  0.586022   0.586022
+ 2017-01-08  0.0521332  0.0521332
+ 2017-01-09  0.26864    0.26864
+ 2017-01-10  0.108871   0.108871
+
+julia> ts = TSFrame([random(10) random(10)], dates, colnames=[:A, :B]) # columns are named A and B
+(10 x 2) TSFrame with Date Index
+
+ Index       A          B         
+ Date        Float64    Float64   
+──────────────────────────────────
+ 2017-01-01  0.768448   0.768448
+ 2017-01-02  0.940515   0.940515
+ 2017-01-03  0.673959   0.673959
+ 2017-01-04  0.395453   0.395453
+ 2017-01-05  0.313244   0.313244
+ 2017-01-06  0.662555   0.662555
+ 2017-01-07  0.586022   0.586022
+ 2017-01-08  0.0521332  0.0521332
+ 2017-01-09  0.26864    0.26864
+ 2017-01-10  0.108871   0.108871
+
+julia> ts = TSFrame(Int64; n=5) # empty TSFrame with 5 columns of type Any and with Int64 index type
+0×5 TSFrame with Int64 Index
+
+julia> ts = TSFrame(Date, [(Int64, :col1), (String, :col2), (Float64, :col3)]) # empty TSFrame with specific column names and types
+0×3 TSFrame with Date Index
+
+julia> ts = TSFrame(Date, [(Int64, "col1"), (String, "col2"), (Float64, "col3")]) # using strings instead of symbols
+0×3 TSFrame with Date Index
+
+```

@@ -1,0 +1,1 @@
+ImmutableリストlstをMutableListに変換します。

@@ -1,0 +1,1 @@
+Generic PDDL planning domain.

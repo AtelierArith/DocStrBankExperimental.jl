@@ -1,0 +1,3 @@
+```
+readchaincoeffs(fdir, params...)
+```

@@ -1,0 +1,1 @@
+ODE入力のためのMassMatrixModelをインスタンス化します。

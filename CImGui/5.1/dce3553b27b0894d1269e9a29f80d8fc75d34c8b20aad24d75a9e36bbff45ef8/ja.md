@@ -1,0 +1,1 @@
+`ImGuiIDStackTool`のデストラクタ

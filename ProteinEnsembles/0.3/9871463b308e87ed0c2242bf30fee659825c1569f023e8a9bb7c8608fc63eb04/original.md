@@ -1,0 +1,1 @@
+Assign pocket numbers to LIGSITEcs pocket*r.pdb file points. Arguments are pocket*r.pdb file, pocket*all.pdb file and new pocket*r.pdb file. New file has pocket number in place of residue number. Apears to agree largely but not completely with the LIGSITEcs clustering. Unassigned points given number 0 and should be fixed manually.

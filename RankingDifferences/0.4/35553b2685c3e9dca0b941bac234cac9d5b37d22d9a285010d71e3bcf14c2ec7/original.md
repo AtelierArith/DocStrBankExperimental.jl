@@ -1,0 +1,5 @@
+```
+AbstractRanking
+```
+
+Supertype for rankings.

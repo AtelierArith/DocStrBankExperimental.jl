@@ -1,0 +1,3 @@
+```
+softPwmCreate(pin, value, range)
+```

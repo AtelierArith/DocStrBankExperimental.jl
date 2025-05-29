@@ -1,0 +1,1 @@
+`ImGuiTableSettings`のデストラクタ

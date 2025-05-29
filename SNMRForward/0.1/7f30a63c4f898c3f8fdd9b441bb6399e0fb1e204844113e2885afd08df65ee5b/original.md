@@ -1,0 +1,1 @@
+boltzmann constant (Joule/Kelvin)

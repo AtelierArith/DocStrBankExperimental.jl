@@ -1,0 +1,1 @@
+given a basic network data dict, returns a sparse real valued branch susceptance matrix with one row for each branch and one column for each bus in the network. Multiplying the branch susceptance matrix by bus phase angels yields a vector active power flow values for each branch.

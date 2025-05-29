@@ -1,0 +1,5 @@
+```
+tracerBatch(mdfPart, value)
+```
+
+トレーサーのバッチ

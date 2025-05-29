@@ -1,0 +1,12 @@
+Used in the computation of cramer's V and cohen's K. Returns the lagged bivariate probability of two given categories, Pij. Given i and j two categories, and l a lag, Pij is the probability to have the category j at time t + l, if we have i at time t.
+
+```
+inputs :
+- time series : the data to analyse
+- lag : the value of lag at which one wants Pij
+- category1 : the first category
+- category2 : the second category
+
+output :
+- Pij : the probability to observe j at t + l if we observe i at time t.
+```

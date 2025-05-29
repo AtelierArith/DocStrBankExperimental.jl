@@ -1,0 +1,1 @@
+vanishes*at(p, c) This checks if the pseudomonomial p evaluates to zero at x=binary*vector_form(c) Note that this longish implementation is optimized for speed and memory Otherwise we could have just done return !(isempty(intersect(p.y,c))) || !(issubset(p.x,c)  )

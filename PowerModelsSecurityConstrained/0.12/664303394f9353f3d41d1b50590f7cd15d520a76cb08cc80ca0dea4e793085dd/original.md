@@ -1,0 +1,1 @@
+Checks a given operating point against the contingencies to look for branch flow violations.  The DC Power Flow approximation is used for flow simulation. Returns a list of contingencies where a violation is found.

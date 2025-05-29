@@ -1,0 +1,1 @@
+`SignedDistanceField`を、指定された`resolution`（デフォルト=0.1）で`bounds`上の関数をサンプリングすることによって構築します。サンプリンググリッドは規則的でなければならないため、入力のHyperRectangleよりも大きな最大境界を持つ新しいHyperRectangleがSignedDistanceFieldのために生成される場合があります。デフォルトのFieldタイプはFloat64ですが、`fieldT`引数を使用して変更することができます。

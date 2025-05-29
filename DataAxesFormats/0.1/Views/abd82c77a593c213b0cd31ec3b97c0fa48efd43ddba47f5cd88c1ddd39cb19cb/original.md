@@ -1,0 +1,1 @@
+A vector to use in the `data` parameters of [`viewer`](@ref) to specify the view exposes all the data of the exposed axes. This is the default, so the only reason do this is to say `VIEW_ALL_DATA...` followed by some modifications.

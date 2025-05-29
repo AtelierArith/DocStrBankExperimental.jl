@@ -1,0 +1,1 @@
+このUnitTypeは、単位Hを持つUnitTypes.Henryの基本的な測定を表します。

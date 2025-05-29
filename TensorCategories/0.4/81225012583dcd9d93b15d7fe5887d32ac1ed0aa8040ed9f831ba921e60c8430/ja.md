@@ -1,0 +1,5 @@
+```
+ℤ₊RingElem
+```
+
+`ZPlusRingElem`のエイリアスです。

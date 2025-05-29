@@ -1,0 +1,1 @@
+Neighborhood.jl共通APIのすべての可能な検索タイプのスーパタイプ。

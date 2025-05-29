@@ -1,0 +1,1 @@
+Do debug output `debug_id` - name of the directory for the `log` mode output `title` - name of the file inside the output directory `data_func` - source data function `fmt` - format of ouput. See `FORMAT_WRITERS` constant.

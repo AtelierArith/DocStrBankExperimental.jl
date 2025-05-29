@@ -1,0 +1,1 @@
+`ImGuiPtrOrIndex`のデストラクタ

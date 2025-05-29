@@ -1,0 +1,5 @@
+```
+EyeKernel()
+```
+
+[`WhiteKernel`](@ref) のエイリアスです。

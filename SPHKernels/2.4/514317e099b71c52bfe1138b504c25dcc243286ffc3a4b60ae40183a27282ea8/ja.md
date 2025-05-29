@@ -1,0 +1,5 @@
+```
+AbstractSPHKernel
+```
+
+すべてのSPHカーネルのスーパタイプです。

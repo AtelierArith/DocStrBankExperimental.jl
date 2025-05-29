@@ -1,0 +1,1 @@
+We want control over the type class hierarchy of acsets; this allows us to create abstract types that subtype StructACSet. For instance, we might have an `AbstractGraph` type, and then assume (this is not enforced) that any subtype of `AbstractGraph` has `E,V,src,tgt` in its schema.

@@ -1,0 +1,1 @@
+SecondaryCodeOrBitDetectorは、二次コードまたはビットシフトを検出します。

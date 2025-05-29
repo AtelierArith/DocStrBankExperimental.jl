@@ -1,0 +1,1 @@
+A package to help users navigate to Julia package home repositories and documentation sites. See help for exported functions `pkg_site`, `add_pkg_docs`, `remove_pkg_docs`,  `list_pkg_docs`, `pkg_docs_site`, and the convenience macro `@docs`.

@@ -1,0 +1,1 @@
+`RandomRegular(n,d)` creates a random `d`-regular graph on `n` vertices. This can take a while especially if the arguments are large. Call with an optional third argument to activate verbose progress reports: `RandomRegular(n,p,true)`.

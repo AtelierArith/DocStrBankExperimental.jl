@@ -1,0 +1,1 @@
+AbstractUnbalancedPowerModel構造体の`var`にアクセスするためのヘルパー関数で、JuMPのVariableRefを返します。

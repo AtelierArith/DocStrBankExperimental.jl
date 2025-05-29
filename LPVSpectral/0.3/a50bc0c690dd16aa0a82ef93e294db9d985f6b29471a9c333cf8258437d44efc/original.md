@@ -1,0 +1,1 @@
+detrend(x, order=0, t = 1:length(x)) Removes the trend of order `order`, i.e, mean and, if order=1, the slope of the signal `x` If `order` = 1, then the sampling points of `x` can be supplied as `t` (default: `t = 1:length(x)`)

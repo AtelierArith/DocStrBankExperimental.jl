@@ -1,0 +1,1 @@
+Supertype of all objects that can serve as the implied field of a SEM. Computes model-implied values that should be compared with the observed data to find parameter estimates, e. g. the model implied covariance or mean. If you would like to implement a different notation, e.g. LISREL, you should implement a subtype of SemImplied.

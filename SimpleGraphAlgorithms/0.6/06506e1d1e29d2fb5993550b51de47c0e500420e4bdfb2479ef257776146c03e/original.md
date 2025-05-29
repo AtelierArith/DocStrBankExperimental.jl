@@ -1,0 +1,1 @@
+`fast_iso_test(G,H)` applies various heuristics to see if the graphs *might* be isomorphic. A `false` return certifies the graphs are **not** isomorphic; a `true` result indicates the graphs might be (indeed, likely are) isomorphic.

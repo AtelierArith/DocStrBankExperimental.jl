@@ -1,0 +1,1 @@
+YaoArrayRegister.jlは、[Yao.jl](https://github.com/QuantumBFS/Yao.jl)エコシステムのコンポーネントパッケージです。これは、Juliaにおける量子計算シミュレーションのための最も基本的な機能を提供し、量子レジスタ型`ArrayReg`を提供します。このパッケージを使用することで、原則として単独で量子回路をシミュレートすることができます。

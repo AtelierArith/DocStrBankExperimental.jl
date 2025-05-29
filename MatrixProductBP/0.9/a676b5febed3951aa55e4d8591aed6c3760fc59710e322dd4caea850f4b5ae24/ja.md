@@ -1,0 +1,1 @@
+`InfiniteBipartiteRegularGraph` は、無限の二部ランダム正則グラフのデータ型であり、対称性によりメッセージと信念のタイプは2つだけであるため、2つのメッセージと2つの信念を保存するだけで十分です。BP関数は、通常のグラフと同様に `InfiniteBipartiteRegularGraph` に対して呼び出すことができます。

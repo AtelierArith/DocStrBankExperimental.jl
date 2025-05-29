@@ -1,0 +1,5 @@
+```
+arrow()
+
+`arrow() = arrow(true)`
+```

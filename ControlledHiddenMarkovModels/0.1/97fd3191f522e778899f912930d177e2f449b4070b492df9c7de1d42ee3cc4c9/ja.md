@@ -1,0 +1,5 @@
+```
+CHMMs
+```
+
+[`ControlledHiddenMarkovModels`](@ref)のエイリアスです。

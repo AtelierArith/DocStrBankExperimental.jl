@@ -1,0 +1,1 @@
+This method returns the jacobian of the functional G encoded in PeriodicOrbitTrapProblem using an inplace update. In case where the passed matrix J0 is a sparse one, it updates J0 inplace assuming that the sparsity pattern of J0 and dG(orbitguess0) are the same.

@@ -1,0 +1,3 @@
+```
+HypothesisTests.MultinomialLRTest(contab::ConTab)
+```

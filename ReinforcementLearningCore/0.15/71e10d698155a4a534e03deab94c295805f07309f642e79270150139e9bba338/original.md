@@ -1,0 +1,3 @@
+```
+BatchExplorer(explorer::AbstractExplorer)
+```

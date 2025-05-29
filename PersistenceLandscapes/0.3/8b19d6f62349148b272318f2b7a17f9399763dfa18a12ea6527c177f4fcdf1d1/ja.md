@@ -1,0 +1,1 @@
+新しいPersistenceBarcodes構造体を返し、'pers_barcode'から'minimalDiameterOfBarcode'よりも長さが小さいすべてのバーコードが削除されます。

@@ -1,0 +1,1 @@
+Symbolic Hermitian operator

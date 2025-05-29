@@ -1,0 +1,5 @@
+```
+IdentityOperator()
+```
+
+Identity operator.

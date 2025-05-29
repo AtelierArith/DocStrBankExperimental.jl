@@ -1,0 +1,1 @@
+新しいPersistenceBarcodes構造体を返し、midpointを0に設定し、バーコードの平均長を1にします。

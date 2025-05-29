@@ -1,0 +1,1 @@
+⩵, `\Equal[tab]` or `Eq`

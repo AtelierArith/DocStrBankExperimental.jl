@@ -1,0 +1,1 @@
+This is a route-1 approach to Chi-square reweighting. The iterative main method should produce identical results when method=chi_square. This is kept here mainly for testing. Note the weights can be negative. See the Creedy Papers.

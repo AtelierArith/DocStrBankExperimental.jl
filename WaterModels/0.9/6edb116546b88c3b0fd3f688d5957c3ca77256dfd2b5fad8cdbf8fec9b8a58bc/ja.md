@@ -1,0 +1,21 @@
+```
+constraint_sink_directionality(
+    wm::AbstractNCDModel,
+    n::Int,
+    i::Int,
+    pipe_fr::Array{Int,1},
+    pipe_to::Array{Int,1},
+    des_pipe_fr::Array{Int,1},
+    des_pipe_to::Array{Int,1},
+    pump_fr::Array{Int,1},
+    pump_to::Array{Int,1},
+    regulator_fr::Array{Int,1},
+    regulator_to::Array{Int,1},
+    short_pipe_fr::Array{Int,1},
+    short_pipe_to::Array{Int,1},
+    valve_fr::Array{Int,1},
+    valve_to::Array{Int,1}
+)
+```
+
+水の輸送を*ノードに*（すなわち、流量需要のあるノード、例えば正の固定需要を持つノード）を示す少なくとも1つの流れ方向変数を保証する制約を追加します。ここで、`n`はサブネットワーク（時間）インデックスであり、`i`はノードのインデックスであり、`pipe_fr`、`pipe_to`などは、それぞれノード`i`から*または*ノード`i`への接続コンポーネントのインデックスです。

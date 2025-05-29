@@ -1,0 +1,1 @@
+CitableCollectionTraitのデフォルト値をNotCitableCollectionとして定義します。

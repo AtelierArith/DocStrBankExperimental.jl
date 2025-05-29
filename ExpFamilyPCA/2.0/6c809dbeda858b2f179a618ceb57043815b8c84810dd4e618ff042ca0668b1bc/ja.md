@@ -1,0 +1,1 @@
+[`NormalEPCA`](@ref)のエイリアス。

@@ -1,0 +1,1 @@
+Generic `optimize` for VecModel

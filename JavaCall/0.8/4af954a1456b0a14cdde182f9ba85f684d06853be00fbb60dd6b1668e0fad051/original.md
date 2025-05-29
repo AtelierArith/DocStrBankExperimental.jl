@@ -1,0 +1,1 @@
+Given a `JavaObject{T}` narrows down `T` to a real class of the underlying object. For example, `JavaObject{:java.lang.Object}` pointing to `java.lang.String` will be narrowed down to `JavaObject{:java.lang.String}`

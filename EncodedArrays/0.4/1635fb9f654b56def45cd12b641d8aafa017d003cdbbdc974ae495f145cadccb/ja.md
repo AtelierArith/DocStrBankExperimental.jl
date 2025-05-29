@@ -1,0 +1,3 @@
+```
+VarlenDiffArrayCodec <: AbstractArrayCodec
+```

@@ -1,0 +1,3 @@
+Función que genera los vértices de un arreglo cuasiperiódico asociados a la vecindad de un sitio arbitrario.
+
+`β` - es el margen de error asociado a los números enteros generados por la proyección del punto sobre los vectores estrella. `IntegersA` - es el conjunto de números enteros candidatos a ser los que generan el polígono que contiene al punto. `StarVecs` - son los vectores estrella del GDM. `AlphasA` - son los valores de la separación respecto al origen del conjunto de rectas ortogonales a los vectores estrella. `Precision` - indica si trabajaremos con precisión BigFloat o precisión Float64

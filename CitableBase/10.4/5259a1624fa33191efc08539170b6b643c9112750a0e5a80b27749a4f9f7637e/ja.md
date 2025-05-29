@@ -1,0 +1,1 @@
+URNロジックを使用して比較できないすべてのものに対するUrnComparisonTraitの値。

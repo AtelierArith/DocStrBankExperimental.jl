@@ -1,0 +1,7 @@
+LeastSquaresProblem(residuals::VectorObjective)
+
+LeastSquaresProblemは、残差関数の要素の二乗値の合計を最小限に抑える数学的問題を表すために使用されます。この問題は、`VectorObjective`である`residual`によって定義されます。
+
+オプションは`options`に格納され、`NLsqOptions`型です。オプションに関する詳細情報は`?NLsqOptions`を参照してください。
+
+パッケージNLSolversAD.jlは、ユーザーが提供するよりも高次の導関数を必要とするアルゴリズムに合わせて問題を自動的に変換する機能を追加します。また、ターゲットの導関数の数に対するADコンストラクタも追加します。

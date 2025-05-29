@@ -1,0 +1,1 @@
+This type represents a (*nondeterministic*) *finite automaton*, defined as a tuple $A=(N,T,transitions,q0,F)$     Automaton(N::Iterable, T::Iterable, transitions::Iterable, q0::AbstractString, F::Iterable) Builds an [`Automaton`](@ref) obtained from the given components.

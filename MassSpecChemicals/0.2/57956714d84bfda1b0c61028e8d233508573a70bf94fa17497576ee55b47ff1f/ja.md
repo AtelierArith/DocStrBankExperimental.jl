@@ -1,0 +1,5 @@
+```
+Chloridation <: AbstractNegAdduct
+```
+
+[M+Cl]-

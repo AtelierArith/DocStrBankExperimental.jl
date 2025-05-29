@@ -1,0 +1,1 @@
+`ImGuiMultiSelectState`のデストラクタ

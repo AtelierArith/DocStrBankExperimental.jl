@@ -1,0 +1,1 @@
+Hackernewsユーザー合成型

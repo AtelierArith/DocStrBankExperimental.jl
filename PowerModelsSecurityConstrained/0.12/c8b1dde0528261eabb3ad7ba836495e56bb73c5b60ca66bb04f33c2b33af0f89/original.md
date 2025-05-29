@@ -1,0 +1,1 @@
+A power flow solver conforming to the ARPA-e GOC Challenge 1 contingency-stage specification.  The solver conducts multiple rounds of PV/PQ bus switching to heuristically enforce the disjunctive constraints.

@@ -1,0 +1,1 @@
+`ImGuiSelectionBasicStorage`のデストラクタ

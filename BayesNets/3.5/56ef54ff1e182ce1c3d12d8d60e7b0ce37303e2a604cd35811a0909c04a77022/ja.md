@@ -1,0 +1,3 @@
+`DiscreteBayesNet`は、すべての変数が1:Nᵢの範囲内の整数であり、すべての分布がカテゴリカルであるベイジアンネットワークです。
+
+この表現は非常に一般的であり、たとえばKollerとFriedmanによる*Probabilistic Graphical Models*でファクターを使用することを可能にします。

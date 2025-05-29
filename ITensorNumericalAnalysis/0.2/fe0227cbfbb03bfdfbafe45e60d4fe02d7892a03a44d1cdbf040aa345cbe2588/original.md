@@ -1,0 +1,1 @@
+Construct the bond dim 2 representation of the sin(kx+a) function for x ∈ [0,1] as an ITensorNetwork, using an IndsNetwork which  defines the network geometry. Vertex map provides the ordering of the sites as bits

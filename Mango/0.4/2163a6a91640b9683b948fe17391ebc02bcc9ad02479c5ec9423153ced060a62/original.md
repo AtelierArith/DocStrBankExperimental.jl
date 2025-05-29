@@ -1,0 +1,1 @@
+The default container struct, representing the container as actor. The container is implemented by composition. This means the container consists of different implementations of base types, which define the behavior of the container itself. That being said, the same container generally able to send messages via different protocols using different codecs.

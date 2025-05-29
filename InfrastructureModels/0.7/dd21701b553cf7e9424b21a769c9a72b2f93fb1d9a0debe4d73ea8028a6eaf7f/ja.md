@@ -1,0 +1,1 @@
+標準のInfrastructureModelsフィールドを型定義に追加するためのマクロ

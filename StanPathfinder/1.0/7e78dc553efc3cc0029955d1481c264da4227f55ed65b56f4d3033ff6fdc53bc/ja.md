@@ -1,0 +1,39 @@
+# PathfinderModel
+
+  * `name`
+  * `model`
+  * `num_chains`
+  * `init_alpha`
+  * `tol_obj`
+  * `tol_rel_obj`
+  * `tol_grad`
+  * `tol_rel_grad`
+  * `tol_param`
+  * `history_size`
+  * `num_psis_draws`
+  * `num_paths`
+  * `psis_resample`
+  * `calculate_lp`
+  * `save_single_paths`
+  * `max_lbfgs_iters`
+  * `num_draws`
+  * `num_elbo_draws`
+  * `init`
+  * `seed`
+  * `refresh`
+  * `sig_figs`
+  * `num_threads`
+  * `save_cmdstan_config`
+  * `output_base`
+  * `tmpdir`
+  * `exec_path`
+  * `data_file`
+  * `init_file`
+  * `cmds`
+  * `file`
+  * `log_file`
+  * `diagnostic_file`
+  * `profile_file`
+  * `cmdstan_home`
+
+Exported.

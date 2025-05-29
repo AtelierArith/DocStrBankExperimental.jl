@@ -1,0 +1,1 @@
+Forward pass of the SPO+ loss with given target `θ_true` and `y_true`. The third argument `y_true` is optional, as it can be computed from `θ_true`. However, providing it directly can save computation time.

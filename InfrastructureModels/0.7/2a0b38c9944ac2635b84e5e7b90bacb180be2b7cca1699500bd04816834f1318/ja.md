@@ -1,0 +1,1 @@
+AbstractInfrastructureModelを初期化する必要なく、データがマルチインフラストラクチャ形式であると仮定して、refオブジェクトを構築します。

@@ -1,0 +1,5 @@
+```
+M4(A::T) where T<:AbstractArray
+```
+
+Count the occurence of motif M4 (Σ_{i≠j≠k} a⭠(i,j) a̲(j,k) a⭢(k,i) ) from the adjacency matrix.

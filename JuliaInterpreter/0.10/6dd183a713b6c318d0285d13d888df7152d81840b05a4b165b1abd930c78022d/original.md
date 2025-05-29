@@ -1,0 +1,5 @@
+```
+enable()
+```
+
+Enable all breakpoints.

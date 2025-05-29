@@ -1,0 +1,1 @@
+EM: Nonstiff Method The Euler-Maruyama method. Strong Order 0.5 in the Ito sense. Has an optional argument split=true for controlling step splitting. When splitting is enabled, the stability with large diffusion eigenvalues is improved. Can handle all forms of noise, including non-diagonal, scalar, and colored noise. Fixed time step only.

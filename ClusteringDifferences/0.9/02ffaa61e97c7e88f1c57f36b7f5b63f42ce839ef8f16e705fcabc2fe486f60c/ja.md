@@ -1,0 +1,5 @@
+```
+parameters(c::PartitionalClustering)
+```
+
+パラメータにアクセスします。

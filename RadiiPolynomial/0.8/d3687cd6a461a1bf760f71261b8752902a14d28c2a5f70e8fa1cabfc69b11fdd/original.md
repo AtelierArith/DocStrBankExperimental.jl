@@ -1,0 +1,7 @@
+```
+banach_rounding_pow(a::Sequence{<:SequenceSpace}, n::Int, X::Ell1)
+```
+
+Compute the discrete convolution (associated with `space(a)`) of `a` with itself `n` times. A cut-off order is estimated such that the coefficients of the output beyond this order are rigorously enclosed.
+
+See also: [`banach_rounding_mul`](@ref), [`banach_rounding_mul!`](@ref), [`*(::Sequence{<:SequenceSpace}, ::Sequence{<:SequenceSpace})`](@ref), [`mul!(::Sequence{<:SequenceSpace}, ::Sequence{<:SequenceSpace}, ::Sequence{<:SequenceSpace}, ::Number, ::Number)`](@ref) and [`^(::Sequence{<:SequenceSpace}, ::Int)`](@ref).

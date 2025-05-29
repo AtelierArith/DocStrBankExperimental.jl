@@ -1,0 +1,1 @@
+DFGからVariableSkeletonを取得します。

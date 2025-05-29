@@ -1,0 +1,10 @@
+Only a restricted set of scalar, matrix and vector types is stored by `Daf`.
+
+The set of scalar types is restricted because we need to be able to store them in disk files. This rules out compound types such as `Dict`. This isn't an issue for vector and matrix elements but is sometimes bothersome for "scalar" data (not associated with any axis). If you find yourself needed to store such data, you'll have to serialize it to a string. By convention, we use `JSON` blobs for such data to maximize portability between different systems.
+
+Julia supports a potentially infinite variety of ways to represent matrices and vectors. `Daf` is intentionally restricted to specific representations. This has several advantages:
+
+  * `Daf` storage formats need only implement storing these restricted representations, which lend themselves to simple storage in consecutive bytes (in memory and/or on disk). These representations also allow for memory-mapping the data from disk files, which allows `Daf` to deal with data sets larger than the available memory.
+  * Client code need only worry about dealing with these restricted representations, which limits the amount of code paths required for efficient algorithm implementations. However, you (mostly) need not worry about this when invoking library functions, which have code paths covering all common matrix types. You **do** need to consider the layout of the data, though (see below).
+
+This has the downside that `Daf` doesn't support efficient storage of specialized matrices (to pick a random example, upper triangular matrices). This isn't a great loss, since `Daf` targets storing arbitrary scientific data (especially biological data), which in general is not of any such special shape. The upside is that all matrices stored and returned by `Daf` have a clear [`MatrixLayouts`](@ref DataAxesFormats.MatrixLayouts) (regardless of whether they are dense or sparse). This allows user code to ensure it is working "with the grain" of the data, which is **much** more efficient.

@@ -1,0 +1,1 @@
+Distribute a shift applied to a whole expression or equation.  Shift(t, 1)(x + y) will become Shift(t, 1)(x) + Shift(t, 1)(y). Only shifts variables whose independent variable is the same t that appears in the Shift (i.e. constants, time-independent parameters, etc. do not get shifted).

@@ -1,0 +1,1 @@
+`function ikinePOE(xi,T,q0; maxiter=100, λ = 1e0, tol = 1e-12, verbose = false, adaptive = true)` 反復逆運動学 `λ`は正則化パラメータの初期値を設定します（逆ステップサイズのようなものです）。大きな値は収束が遅くなりますが、より堅牢な収束を意味します。adaptiveがtrueに設定されている場合、λは収束を速めるために適応されます。

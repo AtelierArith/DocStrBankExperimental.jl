@@ -1,0 +1,1 @@
+Invoked when an [`aws_event_stream_message`](@ref) is encountered. If the message parsed successfully, message will be non-null and error_code will be AWS_ERROR_SUCCESS. Otherwise message will be null and error_code will represent the error that was encountered. Note that any case that error_code was not AWS_OP_SUCCESS, the channel also shuts down.

@@ -1,0 +1,5 @@
+```
+resample_elwise(uvd::UncertainIndexDataset, n::Int)
+```
+
+`uvals`の各要素を`n`回再サンプリングします。返されるベクトルのi番目のエントリは、`uvals[i]`の`n`個のユニークなサンプルからなる`n`要素のベクトルです。

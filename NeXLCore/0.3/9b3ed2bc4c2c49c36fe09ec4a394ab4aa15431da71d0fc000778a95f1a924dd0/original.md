@@ -1,0 +1,1 @@
+@article{small1987modeling,   title={Modeling of the bremsstrahlung radiation produced in pure-element targets by 10–40 keV electrons},   author={Small, John A and Leigh, Stefan D and Newbury, Dale E and Myklebust, Robert L},   journal={Journal of applied physics},   volume={61},   number={2},   pages={459–469},   year={1987},   publisher={American Institute of Physics} }

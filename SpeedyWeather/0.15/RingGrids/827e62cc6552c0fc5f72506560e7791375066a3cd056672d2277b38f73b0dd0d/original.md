@@ -1,0 +1,3 @@
+Abstract supertype for all arrays of ring grids, representing `N`-dimensional data on the sphere in two dimensions (but unravelled into a vector in the first dimension, the actual "ring grid") plus additional `N-1` dimensions for the vertical and/or time etc. Parameter `T` is the `eltype` of the underlying data, held as in the array type `ArrayType` (Julia's `Array` for CPU or others for GPU).
+
+Ring grids have several consecuitive grid points share the same latitude (= a ring), grid points on a given ring are equidistant. Grid points are ordered 0 to 360˚E, starting around the north pole, ring by ring to the south pole. 

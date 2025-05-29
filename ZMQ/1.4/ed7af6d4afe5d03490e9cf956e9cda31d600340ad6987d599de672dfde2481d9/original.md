@@ -1,0 +1,3 @@
+```
+Base.close(socket::Socket)
+```

@@ -1,0 +1,1 @@
+[`TableauKutta`](@ref)のエイリアス

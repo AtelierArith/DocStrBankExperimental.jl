@@ -1,0 +1,1 @@
+A `MappedDict` has a dictionary and a map. The domain of the dictionary is mapped to a different one. Evaluating the `MappedDict` in a point uses the inverse map to evaluate the underlying dictionary element in the corresponding point.

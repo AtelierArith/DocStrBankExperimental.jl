@@ -1,0 +1,5 @@
+```
+PureAction
+```
+
+Alias for `Integer`.

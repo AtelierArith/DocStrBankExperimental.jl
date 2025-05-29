@@ -1,0 +1,1 @@
+Return data for confidence plot of test. Return value is a 2-tuple with named entries `X` and `p` holding the confidence sampling locations and p values respectively. `X` is in turn a 1- or 2-tuple of vectors of sampling coordinates for each  dimension of the tested hypothesis.

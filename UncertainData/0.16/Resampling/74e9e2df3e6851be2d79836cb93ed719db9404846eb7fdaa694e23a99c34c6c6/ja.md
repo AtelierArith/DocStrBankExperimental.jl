@@ -1,0 +1,12 @@
+```
+resample(udata::UncertainIndexValueDataset, 
+	constraint_idxs::Union{SamplingConstraint, Vector{SamplingConstraint}}, 
+	constraint_vals::Union{SamplingConstraint, Vector{SamplingConstraint}},
+	n::Int) -> Vector{Tuple{Vector{Float64}, Vector{Float64}}}
+```
+
+不確実なインデックス値データセットの `n` 実現を要素ごとに再サンプリングします。
+
+インデックスとデータ値に対して別々のサンプリング制約を強制します。
+
+単一の制約が提供された場合、その制約はすべての値に適用されます。制約のベクトル（値の数と同じ数）が提供された場合、制約は要素ごとに適用されます。

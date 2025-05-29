@@ -1,0 +1,1 @@
+Invoked to report progress of a meta-request. For PutObject, progress refers to bytes uploaded. For CopyObject, progress refers to bytes copied. For GetObject, progress refers to bytes downloaded. For anything else, progress refers to response body bytes received.

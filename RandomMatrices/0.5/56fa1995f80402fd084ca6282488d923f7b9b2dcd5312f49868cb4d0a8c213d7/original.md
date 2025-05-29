@@ -1,0 +1,1 @@
+Synonym for GaussianHermite{β}

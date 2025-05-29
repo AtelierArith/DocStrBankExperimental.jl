@@ -1,0 +1,5 @@
+```
+domain()
+```
+
+Construct an `EmptyDomain`.

@@ -1,0 +1,3 @@
+GPUTsit5()
+
+EnsembleGPUKernelを使用したカーネル生成のために特化した5次`Tsit5`メソッドの実装です。類似のCPU実装については、SimpleDiffEq.jlのSimpleATsit5を参照してください。

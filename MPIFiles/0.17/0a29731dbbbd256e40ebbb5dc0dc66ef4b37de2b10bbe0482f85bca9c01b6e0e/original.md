@@ -1,0 +1,1 @@
+This function returns the multiplicator `k` corresponding to the frequency given by the mixing factors `mx`, `my`, and `mz`. I.e. the integer value, for which k*F = mx*fx + my*fy* + mz*fz, where F is the measurement cycle frequency and fx, fy, and fz are the excitation frequencies for the x,y, and z channel.

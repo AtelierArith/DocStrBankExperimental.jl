@@ -1,0 +1,1 @@
+A Distribution containing the parameters $b > 0$ and $c$ for a Pólya-Gamma distribution $PG(b, c)$. Note that while in general $b$ can be real, samplers implemented here only work for the integral case.

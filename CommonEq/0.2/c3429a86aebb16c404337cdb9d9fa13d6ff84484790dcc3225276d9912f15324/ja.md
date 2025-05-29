@@ -1,0 +1,1 @@
+≶ `\lessgtr[tab]` または `Ne`

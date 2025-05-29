@@ -1,0 +1,5 @@
+`FunctionPotential(f)`
+
+$$
++ f(r)
+$$

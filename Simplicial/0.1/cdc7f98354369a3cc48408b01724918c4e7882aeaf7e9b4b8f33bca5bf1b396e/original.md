@@ -1,0 +1,1 @@
+function PersistenceIntervals(FD::Simplicial.FiltrationOfDirectedComplexes)::Simplicial.PersistenceIntervalsType  Example usage:  max*simplices = [ Int16[1,2],Int16[2,3],Int16[3,4],Int16[1,4] ]  births = [0,1,2,3]  facet*complex = FiltrationOfDirectedComplexes(max*simplices, births)  P=PersistenceIntervals(facet*complex );  show(P)

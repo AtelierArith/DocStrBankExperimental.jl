@@ -1,0 +1,5 @@
+```
+AddElectron <: AbstractNegAdduct
+```
+
+[M]-

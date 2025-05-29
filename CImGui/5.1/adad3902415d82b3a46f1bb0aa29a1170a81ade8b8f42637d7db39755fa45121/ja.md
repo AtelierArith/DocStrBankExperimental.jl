@@ -1,0 +1,1 @@
+`ImGuiTableColumn`のデストラクタ

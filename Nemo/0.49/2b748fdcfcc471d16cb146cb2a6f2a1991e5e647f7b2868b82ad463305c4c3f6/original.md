@@ -1,0 +1,5 @@
+```
+iszero(a::ZZLaurentSeriesRingElem)
+```
+
+Return `true` if the given power series is arithmetically equal to zero to its current precision, otherwise return `false`.

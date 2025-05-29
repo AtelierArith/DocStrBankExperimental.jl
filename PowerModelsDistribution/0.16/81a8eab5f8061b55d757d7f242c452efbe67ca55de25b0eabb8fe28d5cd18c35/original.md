@@ -1,0 +1,1 @@
+Concrete type for AbstractQuadraticExplicitNeutralIVRModel which is branch-reduced (implemented through inclusion in ReducedExplicitNeutralIVRModels)

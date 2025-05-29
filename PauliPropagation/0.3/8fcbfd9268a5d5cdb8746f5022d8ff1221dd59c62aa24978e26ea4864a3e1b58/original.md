@@ -1,0 +1,5 @@
+```
+propagate!(circ, psum::PauliSum, thetas=nothing; max_weight=Inf, min_abs_coeff=1e-10, max_freq=Inf, max_sins=Inf, customtruncfunc=nothing, kwargs...)
+```
+
+Propagate a Pauli sum  through the circuit `circ` in the Heisenberg picture.  This means that the circuit is applied to the Pauli sum in reverse order, and the action of each gate is its conjugate action. The input `psum` will be modified. Parameters for the parametrized gates in `circ` are given by `thetas`, and need to be passed as if the circuit was applied as written in the Schrödinger picture. If thetas are not passed, the circuit must contain only non-parametrized `StaticGates`. Default truncations are `max_weight`, `min_abs_coeff`, `max_freq`, and `max_sins`. `max_freq`, and `max_sins` can only be used with `PauliFreqTracker` coefficients. A custom truncation function can be passed as `customtruncfunc` with the signature customtruncfunc(pstr::PauliStringType, coefficient)::Bool. Further `kwargs` are passed to the lower-level functions `applymergetruncate!`, `applytoall!`, `applyandadd!`, and `apply`.

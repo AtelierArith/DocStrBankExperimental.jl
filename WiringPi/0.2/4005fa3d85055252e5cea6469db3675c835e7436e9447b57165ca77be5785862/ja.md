@@ -1,0 +1,3 @@
+```
+softToneCreate(pin)
+```

@@ -1,0 +1,5 @@
+```
+AbstractClustering
+```
+
+Supertype for clusterings.

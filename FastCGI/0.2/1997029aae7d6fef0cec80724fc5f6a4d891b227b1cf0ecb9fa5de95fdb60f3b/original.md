@@ -1,0 +1,1 @@
+The FCGIServer sets up a listening socket on which it accepts incoming client connections. For each incoming connection, creates a new ServerConnection instance and starts a separate processing task for messages from that connection. Maintains a list of such connections.

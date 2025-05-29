@@ -1,0 +1,5 @@
+Get the citation for a given species assessment. 
+
+Use scientific name or ID. 
+If region not provided, it will return a global assesment 
+You have to use the correct region identifier, check regions() for that 

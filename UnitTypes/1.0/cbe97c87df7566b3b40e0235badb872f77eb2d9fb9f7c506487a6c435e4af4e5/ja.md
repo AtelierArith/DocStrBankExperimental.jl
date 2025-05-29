@@ -1,0 +1,1 @@
+このUnitTypeは、単位m/s^2を持つUnitTypes.MeterPerSecond2の基本的な測定を表します。

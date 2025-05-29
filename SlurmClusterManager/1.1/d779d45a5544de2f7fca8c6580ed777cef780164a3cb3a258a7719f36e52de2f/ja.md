@@ -1,0 +1,3 @@
+SlurmアロケーションのためのClusterManager
+
+salloc/sbatchによって作成されたslurmアロケーション内で利用可能なリソースを表します。 このオブジェクトを構築するには、環境変数`SLURM_JOB_ID`または`SLURM_JOBID`および`SLURM_NTASKS`が定義されている必要があります。

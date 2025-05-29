@@ -1,0 +1,1 @@
+FractionalCalculus.jlにおける分数積分の基本型は、すべての分数積分の感覚が`FracIntAlg`に属します。

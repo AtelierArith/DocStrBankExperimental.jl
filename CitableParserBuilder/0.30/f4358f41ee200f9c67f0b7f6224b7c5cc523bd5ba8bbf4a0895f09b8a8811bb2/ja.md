@@ -1,0 +1,1 @@
+`AbbreviatedUrn`から`Cite2Urn`を構築し、バージョン管理されたコレクションのための`AbbreviatedUrns`内のコレクション識別子をフル`Cite2Urn`にマッピングする辞書を使用します。

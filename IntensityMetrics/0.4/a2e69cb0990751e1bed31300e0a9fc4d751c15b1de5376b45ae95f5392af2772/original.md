@@ -1,0 +1,1 @@
+struct Excitation                 f0: Center frequency [Hz]     pulse*duration: On-time / duration of the excitation pulse [s]         duty*cycle: [0, 1]     total_duration: Total duration of waveform [s]                 fs: Sampling frequency of the received signal [Hz] end

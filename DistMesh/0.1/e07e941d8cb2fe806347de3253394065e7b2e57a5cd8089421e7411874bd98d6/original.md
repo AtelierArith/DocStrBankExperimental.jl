@@ -1,0 +1,1 @@
+Uniform edge length function.

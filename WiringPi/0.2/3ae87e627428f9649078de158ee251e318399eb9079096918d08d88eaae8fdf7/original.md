@@ -1,0 +1,3 @@
+```
+digitalWrite(pin, value)
+```

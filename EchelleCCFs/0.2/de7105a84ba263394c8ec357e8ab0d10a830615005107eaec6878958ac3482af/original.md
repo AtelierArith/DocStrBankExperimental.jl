@@ -1,0 +1,15 @@
+```
+`ccf_1D!(ccf_out, λs, fluxes; ccf_plan )`
+```
+
+Compute the cross correlation function of a spectrum with a mask.     Generalized version that should work with different mask shapes.
+
+# Inputs:
+
+  * `ccf_out`: 1-d array of size length(calc*ccf*v_grid(plan)) to store output
+  * `λs`: 1-d array of wavelengths
+  * `fluxes`:  1-d array of fluxes
+
+# Optional Arguments:
+
+  * `plan`:  parameters for computing ccf (BasicCCFPlan())

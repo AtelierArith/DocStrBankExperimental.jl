@@ -1,0 +1,1 @@
+function  push!(F, AddedFace, AssignedBirth)   この関数は FaceBirthpush! の強化版です。   入力は次のとおりです:   F::FiltrationOfDirectedComplexes   AddedFace::DirectedCodeword   AssignedBirth::Int   出力は、新しい面を追加したかどうかを示すブール値です。

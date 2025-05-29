@@ -1,0 +1,1 @@
+新しいPersistenceBarcodes構造体を返し、'pers_barcode'からの平均バーコード長が1になります。

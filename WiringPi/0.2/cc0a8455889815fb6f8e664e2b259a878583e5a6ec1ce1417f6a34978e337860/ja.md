@@ -1,0 +1,3 @@
+```
+wiringPiNewNode(pinBase, numPins)
+```

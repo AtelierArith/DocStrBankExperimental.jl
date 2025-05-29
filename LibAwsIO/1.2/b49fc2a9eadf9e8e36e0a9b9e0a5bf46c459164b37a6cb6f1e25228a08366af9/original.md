@@ -1,0 +1,1 @@
+A struct containing all of the data needed for a private key operation when making a mutual TLS connection. This struct contains the data that needs to be operated on, like performing a sign operation or a decrypt operation.

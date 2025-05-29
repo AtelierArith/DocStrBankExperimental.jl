@@ -1,0 +1,59 @@
+Fetches an StatisticalModel object from the mPulse repository
+
+At least one of `statModelID` or `statModelName` must be passed in to identify the statistical model.
+
+The statistical model will be cached in memory for 1 hour, so subsequent calls using a matching `statModelID` return quickly without calling out to the API.  This can be a problem if the statistical model changes in the repository. You can clear the cache for this tenant using [`mPulseAPI.clearStatModelCache`](@ref) and passing in `statModelID`.
+
+### Arguments
+
+`token::AbstractString` :    The Repository authentication token fetched by calling [`getRepositoryToken`](@ref)
+
+### Keyword Arguments
+
+`statModelID::Int64` :    The ID of the statistical model to update.
+
+`statModelName::AbstractString` :    The statistical model name in mPulse. This is available from the mPulse domain configuration dialog.
+
+### Returns
+
+`{Dict}` The `statisticalmodel` object with the following fields:
+
+`hidden::Bool` :    Flag indicating whether the statistical model is visible to the user
+
+`parentID::Int64` :    The ID of the parent folder that this statistical model is in
+
+`path::AbstractString` :    The folder path that this statistical model is in
+
+`readOnly::Bool` :    Flag indicating whether the statistical model is able to be edited
+
+`name::AbstractString` :    The statistical model's name
+
+`tenantID::Int64` :    The ID of the tenant that the statistical model is in
+
+`created::DateTime` :    The timestamp when this object was created
+
+`id::Int64` :    The ID of the statistical model.
+
+`description::AbstractString` :    The description of this statistical model entered into mPulse
+
+`lastCached::DateTime` :    The timestamp when this object was last cached
+
+`body::XMLElement` :    An XML object representing the statistical model's XML definition or an empty node if you do not have permission to see the full statistical model
+
+`references::Dict` :    An array of `Dict`s with reference information such as `name`, `id`, `type`, and `path`.
+
+`uid::AbstractString` :    The encrypted uid associated with the statistical model
+
+`deleted::Bool` :    Flag indicating whether the statistical model has been deleted
+
+`ownerID::Int64` :    The ID of the statistical model's owner
+
+`attributes::Dict` :    A `Dict` containing whether the statistical model is active, version number, and the time(s) that the statistical model was last cleared, triggered, and updated.
+
+`lastModified::DateTime` :    The timestamp when this object was created
+
+### Throws
+
+`ArgumentError` :    if token is empty or statModelID is empty
+
+`mPulseAPIException` :    if API access failed for some reason

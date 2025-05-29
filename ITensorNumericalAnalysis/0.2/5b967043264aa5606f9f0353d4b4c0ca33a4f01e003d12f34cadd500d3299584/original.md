@@ -1,0 +1,1 @@
+Indices that reflect real valued digits should have the "Real" tag in IndsNetwork, whilst imaginary valued digits should have the "Imag" tag. The complex*continuous*siteinds(...) constructor will do this by default

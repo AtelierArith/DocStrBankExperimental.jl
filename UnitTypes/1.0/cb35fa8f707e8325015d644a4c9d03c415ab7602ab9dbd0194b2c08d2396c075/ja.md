@@ -1,0 +1,1 @@
+このUnitTypeは、単位mを持つUnitTypes.Meterの基本的な測定を表します。

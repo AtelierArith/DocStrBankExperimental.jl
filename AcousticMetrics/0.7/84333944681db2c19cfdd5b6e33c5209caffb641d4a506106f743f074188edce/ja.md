@@ -1,0 +1,5 @@
+```
+MSPSpectrumPhase
+```
+
+`PressureSpectrumPhase`のエイリアス。

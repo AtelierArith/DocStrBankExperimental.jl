@@ -1,0 +1,1 @@
+境界に近い形状のフィールドのベクトルのタプル。フィールドはsim::FrequencySimulationから計算されますが、形状の内側と外側のPhysicalMediumはinside*mediumおよびoutside*mediumによって与えられていると仮定されます。

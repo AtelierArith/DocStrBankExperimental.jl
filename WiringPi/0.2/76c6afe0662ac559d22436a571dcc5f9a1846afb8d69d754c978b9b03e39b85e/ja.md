@@ -1,0 +1,3 @@
+```
+loadWPiExtension(progName, extensionData, verbose)
+```

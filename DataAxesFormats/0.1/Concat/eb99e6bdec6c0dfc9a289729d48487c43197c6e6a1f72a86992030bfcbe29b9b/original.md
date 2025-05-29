@@ -1,0 +1,3 @@
+A pair where the key is a [`PropertyKey`](@ref) and the value is [`MergeAction`](@ref). We also allow specifying tuples instead of pairs to make it easy to invoke the API from other languages such as Python which do not have the concept of a `Pair`.
+
+Similarly to [`ViewData`](@ref), the order of the entries matters (last one wins), and a key containing `"*"` is expanded to all the relevant properties. For matrices, merge is done separately for each layout. That is, the order of the key `(rows_axis, columns_axis, matrix_name)` key *does* matter in the `MergeData`, which is different from how [`ViewData`](@ref) works.

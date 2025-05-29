@@ -1,0 +1,1 @@
+extract_userhandles: 指定されたテキストからすべての日付を抽出する

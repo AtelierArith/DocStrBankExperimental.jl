@@ -1,0 +1,1 @@
+If `fn == randn` no frequency or phase can be specified. Instead there is a single keyword argument, `rng`, which allows you to specify the random number generator; `rng` defaults to `Random.GLOBAL_RNG`.

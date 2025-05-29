@@ -1,0 +1,11 @@
+```
+constraint_on_off_des_pipe_flow(
+    wm::AbstractNCDModel,
+    n::Int,
+    a::Int,
+    q_max_reverse::Float64,
+    q_min_forward::Float64
+)
+```
+
+Adds constraints that limit the amount of flow along a design pipe based on the construction status of the design pipe (i.e., there is unrestricted flow if the pipe is constructed and zero flow if the pipe is not constructed). Here, `wm` is the WaterModels object, `n` is the subnetwork (or time) index that is considered, `a` is the index of the design pipe, `q_max_reverse` is the *maximum* (negative) amount of flow when flow is traveling in the negative direction (which corresponds to the *minimum* magnitude of flow when traveling in the negative direction), and `q_min_forward` is the *minimum* (positive) amount of flow when flow is traveling in the positive (forward) direction. Note these direction-based limits are currently unused in these constraints.

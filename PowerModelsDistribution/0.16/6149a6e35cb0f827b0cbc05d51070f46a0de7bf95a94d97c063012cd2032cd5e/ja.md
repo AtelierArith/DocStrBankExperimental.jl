@@ -1,0 +1,1 @@
+AbstractUnbalancedPowerModel構造体の`con`にアクセスするためのヘルパー関数で、JuMP制約を返します。

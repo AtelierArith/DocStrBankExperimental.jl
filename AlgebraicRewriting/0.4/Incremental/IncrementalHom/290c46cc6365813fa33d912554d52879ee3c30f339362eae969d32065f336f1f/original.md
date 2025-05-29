@@ -1,0 +1,3 @@
+There are currently two types of IncHomSets. Common to both is a separation of  the data required to specify which hom-set is being maintained (`static`) and  the data structure required to be maintained as some target `X` is changing  (`runtime`). We also distinguish between general static data for maintaining  an incremental hom-set from further static data about various constraints on  that process (`constraints`). 
+
+These are all currently designed to work with `DenseParts` ACSets but could be  straightforwardly modified to work with `MarkAsDeleted` ACSets (which would be  even more efficient.)

@@ -1,0 +1,1 @@
+Return a read-only handle to a HDF5 file that contains example datasets from the main paper. You must remember to close the file once you are done reading from it. This function is provided for reproducibility purposes only; it is recommended to read the datasets via the convenience function [`example_dataset`](@ref).

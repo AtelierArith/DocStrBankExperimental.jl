@@ -1,0 +1,1 @@
+given a 2^n vector of probably values, prints each value and its associated state vector. `limit` is used to limit the total number of states that are printed. `sort` is used to re-order the states by most likely instead of the default which is numerical order from 0-to-(2^n-1)

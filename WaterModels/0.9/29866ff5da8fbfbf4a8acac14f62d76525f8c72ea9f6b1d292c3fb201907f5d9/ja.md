@@ -1,0 +1,21 @@
+```
+constraint_intermediate_directionality(
+    wm::AbstractNCDModel,
+    n::Int,
+    i::Int,
+    pipe_fr::Array{Int,1},
+    pipe_to::Array{Int,1},
+    des_pipe_fr::Array{Int,1},
+    des_pipe_to::Array{Int,1},
+    pump_fr::Array{Int,1},
+    pump_to::Array{Int,1},
+    regulator_fr::Array{Int,1},
+    regulator_to::Array{Int,1},
+    short_pipe_fr::Array{Int,1},
+    short_pipe_to::Array{Int,1},
+    valve_fr::Array{Int,1},
+    valve_to::Array{Int,1}
+)
+```
+
+ノードでの流入の方向が流出の方向と等しくなることを保証する制約を追加します。この制約は、ノードの次数が2で供給または需要がゼロである場合（すなわち、ノードが「接続点」または通過ノードである場合）にのみ適用されるべきです。ここで、`n`はサブネットワーク（時間）インデックス、`i`はノードのインデックス、`pipe_fr`、`pipe_to`などは、それぞれノード`i`からまたはノード`i`へ向かうノード接続コンポーネントのインデックスです。

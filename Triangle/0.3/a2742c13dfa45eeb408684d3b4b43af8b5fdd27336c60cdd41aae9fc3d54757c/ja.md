@@ -1,0 +1,51 @@
+```
+constrained_triangulation_vertices(vertices::Array{Float64,2}, vertices_map::Array{Int64,1}, edges_list::Array{Int64,2})
+```
+
+`vertices`のリストに対して制約付きデローニ三角形分割を計算します。`vertices`は`[x1 y1; x2 y2; ... ; xn yn]`の形式で、保持されるエッジのリストがあります。
+
+各頂点にカスタム整数識別子を持たせるために、`vertices_map`にインデックスのリストが提供されます。
+
+最終的な三角形分割に含めるエッジのリストは、`edges_list`に`[ vertex-identifier-1 vertex-identifier-2; vertex-identifier-1 vertex-identifier-3; ... ; vertex-identifier-N vertex-identifier-M ]`の形式で渡されます。
+
+この関数は、各三角形の定義における頂点座標を使用して、3つの頂点のリストの配列（正しい頂点の順序を持つ三角形）を返します。
+
+# 例
+
+```jldoctest
+julia> using Triangle
+
+julia> points = [0. 0.; 0. 3.; 1. 3.; 1. 1.; 2. 1.; 2. 0.]
+6×2 Array{Float64,2}:
+ 0.0  0.0
+ 0.0  3.0
+ 1.0  3.0
+ 1.0  1.0
+ 2.0  1.0
+ 2.0  0.0
+
+julia> points_map = Array{Int64,1}(collect(1:1:size(points)[1]))
+6-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+
+julia> edges_list = Array{Int64,2}([1 2; 2 3; 3 4; 4 5; 5 6; 6 1])
+6×2 Array{Int64,2}:
+ 1  2
+ 2  3
+ 3  4
+ 4  5
+ 5  6
+ 6  1
+
+julia> Triangle.constrained_triangulation_vertices(points,points_map,edges_list)
+4-element Array{Array{Float64,2},1}:
+ [0.0 0.0; 1.0 1.0; 0.0 3.0]
+ [1.0 1.0; 0.0 0.0; 2.0 0.0]
+ [0.0 3.0; 1.0 1.0; 1.0 3.0]
+ [2.0 1.0; 1.0 1.0; 2.0 0.0]
+```

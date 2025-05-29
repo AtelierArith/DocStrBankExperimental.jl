@@ -1,0 +1,1 @@
+`check_contingencies_branch_flow_remote`のバリアントで、ARPA-e GOC Challenge 1仕様から参加係数に基づく発電機応答モデルを無視し、代わりにネットワーク内のすべてのバスに均等に有効電力を注入します。

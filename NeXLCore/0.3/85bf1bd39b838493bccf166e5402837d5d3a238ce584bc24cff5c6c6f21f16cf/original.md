@@ -1,0 +1,3 @@
+@article{Tomlin_1963, 	doi = {10.1088/0370-1328/82/3/118}, 	url = {https://doi.org/10.1088%2F0370-1328%2F82%2F3%2F118}, 	year = 1963, 	month = {sep}, 	publisher = {{IOP} Publishing}, 	volume = {82}, 	number = {3}, 	pages = {465–466}, 	author = {S G Tomlin}, 	title = {The Back-scattering of Electrons from Solids}, 	journal = {Proceedings of the Physical Society}, 	abstract = {Archard's diffusion model of electron back-scattering is discussed on the basis of a 	result obtained by Tomlin and Metchnik in 1963 in their treatment of x-ray emission intensities. 	The resulting simple formula for the back-scattering coefficient is in reasonably good agreement 	with measured values.} }
+
+The implementation adapted to not return negative numbers for z<5.

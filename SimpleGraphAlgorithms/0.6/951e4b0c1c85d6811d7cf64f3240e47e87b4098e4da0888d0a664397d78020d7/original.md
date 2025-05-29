@@ -1,0 +1,1 @@
+`uhash(G)` creates an `UInt64` hash of the graph such that isomorphic graphs will produce the same value. We hope that nonisomorphic graphs will create different values, but, alas, that need not be the case.

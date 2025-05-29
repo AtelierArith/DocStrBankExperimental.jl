@@ -1,0 +1,1 @@
+`InPlaceQ(gt)` is similar to `InPlace(gt)`, but is exact when the values being interpolated arise from an underlying quadratic. It is primarily useful for testing purposes, allowing near-exact (to machine precision) comparisons against ground truth.

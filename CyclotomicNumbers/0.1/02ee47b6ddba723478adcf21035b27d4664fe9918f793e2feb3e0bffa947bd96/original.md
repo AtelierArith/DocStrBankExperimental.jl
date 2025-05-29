@@ -1,0 +1,1 @@
+`Root1`  is a type representing roots of unity. The internal representation is  by a `Rational{Int}` of the form  `y//x` where the integers `y` and `x` satisfy  `0≤y<x`, representing the  root of unity  `ζₓʸ` (where `ζₓ` is the root  of  unity  whose  approximate  value  is  `exp(2im*π/x)`).  Efficient constructors are `Root1(;r=y//x)` and `E`.

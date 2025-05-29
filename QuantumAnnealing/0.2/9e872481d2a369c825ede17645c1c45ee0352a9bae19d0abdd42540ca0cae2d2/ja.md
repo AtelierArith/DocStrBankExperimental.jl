@@ -1,0 +1,1 @@
+単純な二次形式を実装したAnnealingSchedule

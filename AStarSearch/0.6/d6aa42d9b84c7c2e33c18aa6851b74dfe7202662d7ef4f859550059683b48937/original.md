@@ -1,0 +1,1 @@
+Execute a depth-first search given the neighbours function, a start and a goal. It takes the same parameters as astar, but it ignores those about cost and heuristic. Use the `maxdepth` parameter to limit the search to a certain depth.

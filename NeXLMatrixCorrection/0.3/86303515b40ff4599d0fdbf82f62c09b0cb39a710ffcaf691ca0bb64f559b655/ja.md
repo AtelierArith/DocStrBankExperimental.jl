@@ -1,0 +1,1 @@
+ElementByStoichiometryは、標準的な化学量論的ルールを使用して酸素の質量分率を計算します。

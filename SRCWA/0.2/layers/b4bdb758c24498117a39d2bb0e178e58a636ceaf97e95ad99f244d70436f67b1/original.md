@@ -1,0 +1,1 @@
+layer_patterned(Kx,Ky,k0,thi,epsilon) Computes the eigenmodes of propagation through a patterned layer in a Layer object Kx: x-axis component of the propagation vector Ky: y-axis component of the propagation vector k0: is 2pi/lambda, to normalize the thickness thi: layer thickness epsilon: Permittivity of layer in reciprocal space returns patterned layer object

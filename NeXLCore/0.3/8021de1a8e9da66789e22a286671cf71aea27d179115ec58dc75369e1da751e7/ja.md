@@ -1,0 +1,1 @@
+@article{jensen1937eigenschwingungen,   title={Eigenschwingungen eines fermi-gases und anwendung auf die blochsche bremsformel f{"u}r schnelle teilchen},   author={Jensen, Hans},   journal={Zeitschrift f{"u}r Physik},   volume={106},   number={9-10},   pages={620–632},   year={1937},   publisher={Springer} }

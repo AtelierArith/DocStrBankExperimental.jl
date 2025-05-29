@@ -1,0 +1,5 @@
+```
+UnboundedUpper
+```
+
+Unsigned infinity.

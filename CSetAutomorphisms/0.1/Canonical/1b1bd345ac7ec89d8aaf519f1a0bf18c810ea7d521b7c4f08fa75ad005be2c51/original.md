@@ -1,0 +1,1 @@
+Hash of canonical isomorphism.

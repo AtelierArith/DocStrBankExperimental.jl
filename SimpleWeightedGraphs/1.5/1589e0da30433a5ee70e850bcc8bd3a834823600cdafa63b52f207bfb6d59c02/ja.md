@@ -1,0 +1,5 @@
+```
+SimpleWeightedDiGraphEdge
+```
+
+`SimpleWeightedEdge`のエイリアスです。

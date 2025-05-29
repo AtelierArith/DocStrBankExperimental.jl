@@ -1,0 +1,1 @@
+The standard L1 loss function takes the absolute value of the residual, and is convex but non-smooth. It is not a real L1 loss but a Huber loss with very small tuning constant. ψ(r) = sign(r) Use $QuantileRegression$ for a correct implementation of the L1 loss.

@@ -1,0 +1,1 @@
+Can be used to either gain information about synonyms via an accepted species name, or vice versa i.e.  this call tells you if there are synonyms for the species name, or whether it's a synonym of an accepted name

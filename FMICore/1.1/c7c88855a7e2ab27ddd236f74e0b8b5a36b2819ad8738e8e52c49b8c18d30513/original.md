@@ -1,0 +1,5 @@
+Source: FMISpec2.0.2[p.48]: 2.2.7 Definition of Model Variables (ModelVariables)
+
+Enumeration that defines how the variable is initialized. It is not allowed to provide a value for initial if causality = "input" or "independent":
+
+"exact": The variable is initialized with the start value (provided under Real, Integer, Boolean, String or Enumeration). "approx": The variable is an iteration variable of an algebraic loop and the iteration at initialization starts with the start value. "calculated": The variable is calculated from other variables during initialization. It is not allowed to provide a “start” value. If initial is not present, it is defined by the table below based on causality and variability. If initial = exact or approx, or causality = ″input″, a start value must be provided. If initial = calculated, or causality = ″independent″, it is not allowed to provide a start value. If fmiSetXXX is not called on a variable with causality = ″input″, then the FMU must use the start value as value of this input. Added prefix "fmi2" to help with redefinition of constans in enums.

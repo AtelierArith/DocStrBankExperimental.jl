@@ -1,0 +1,3 @@
+The only exported functions from this module are [`escape_value`](@ref) and [`unescape_value`](@ref) which are useful when embedding values into query strings. The rest of the module is documented to give insight into how a query string is broken into [`Token`](@ref)s.
+
+Ideally `Daf` should have used some established parser generator module for parsing queries, making all this unnecessary. However, As of writing this code, Julia doesn't seem to have such a parser generator solution. Therefore, this module provides a simple [`tokenize`](@ref) function with rudimentary pattern matching which is all we need to parse queries (whose structure is "trivial").

@@ -1,0 +1,1 @@
+Default Speed Limits in Kilometers Per Hour in rural areas

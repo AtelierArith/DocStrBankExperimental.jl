@@ -1,0 +1,25 @@
+```
+SimpleWeightedGraph{T, U}
+```
+
+A type representing an undirected weighted graph with vertices of type `T` and edge weights of type `U`.
+
+# Fields
+
+  * `weights::SparseMatrixCSC{U,T}`: weighted adjacency matrix, indexed by `(dst, src)`
+
+!!! tip "Performance"
+    Iteratively adding/removing vertices or edges is not very efficient for this type of graph: better construct the graph in one shot if possible.
+
+
+# Basic constructors
+
+```
+SimpleWeightedGraph()  # empty
+SimpleWeightedGraph(n)  # n vertices, no edges
+SimpleWeightedGraph(graph)  # from graph
+SimpleWeightedGraph(adjmx)  # from adjacency matrix
+SimpleWeightedGraph(sources, destinations, weights)  # from list of edges
+```
+
+Use `methods(SimpleWeightedGraph)` for the full list of constructors. When building a new graph from a list of edges, be aware that repeating `(src, dst)` pairs may lead to undefined behavior (e.g. due to floating point errors during weight addition).

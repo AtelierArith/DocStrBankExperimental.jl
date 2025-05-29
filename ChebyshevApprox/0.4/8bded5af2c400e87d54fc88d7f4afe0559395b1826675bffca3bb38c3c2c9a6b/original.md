@@ -1,0 +1,13 @@
+Computes the first derivative of the Chebyshev polynomial of `order` at each point in the vector `x`.  The elements of `x` must lie in [1.0,-1.0].  Returns a 2d array.  The element-type of the polynomial is given by  the element-type of `x`.
+
+# Signature
+
+P = chebyshev*polynomial*deriv(order,x)
+
+# Example
+
+```
+julia> P = chebyshev_polynomial_deriv(3,[0.6,0.4])
+[0.0  1.0  2.4   1.32
+ 0.0  1.0  1.6  -1.08]
+```

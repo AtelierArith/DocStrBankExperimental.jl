@@ -1,0 +1,3 @@
+```
+shiftIn(dPin, cPin, order)
+```

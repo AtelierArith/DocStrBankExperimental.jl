@@ -1,0 +1,5 @@
+```
+unconditional()
+```
+
+[`Unconditional()`](@ref) のエイリアスです。

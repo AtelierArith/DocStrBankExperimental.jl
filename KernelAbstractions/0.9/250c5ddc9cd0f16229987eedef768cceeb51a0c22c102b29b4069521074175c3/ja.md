@@ -1,0 +1,1 @@
+すべてのKernelAbstractionsバックエンドのための抽象型。

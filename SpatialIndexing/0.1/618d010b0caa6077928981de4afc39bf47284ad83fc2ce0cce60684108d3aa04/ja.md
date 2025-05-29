@@ -1,0 +1,1 @@
+`SpatialIndex`に関連する例外がJulia内で発生しました

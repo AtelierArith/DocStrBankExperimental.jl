@@ -1,0 +1,3 @@
+EvolutionParams
+
+QCDNUMパラメータを保持するための構造体。

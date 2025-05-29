@@ -1,0 +1,1 @@
+`run_c1_scopf_cuts_dc_soft`の異なる発電機応答関数を持つバリアント

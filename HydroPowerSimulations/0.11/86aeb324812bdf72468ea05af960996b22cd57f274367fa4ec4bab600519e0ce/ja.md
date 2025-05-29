@@ -1,0 +1,1 @@
+最大注入時間系列によって制約された注入変数を追加するための定式化タイプ [`PowerSystems.HydroGen`](@extref)

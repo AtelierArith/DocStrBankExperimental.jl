@@ -1,0 +1,1 @@
+`MinimalActionSet()`のエイリアス

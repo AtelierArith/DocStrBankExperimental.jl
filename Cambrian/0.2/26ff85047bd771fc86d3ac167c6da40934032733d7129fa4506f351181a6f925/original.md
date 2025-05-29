@@ -1,0 +1,1 @@
+mutate(parent::BoolIndividual, m*rate::Float64). To use, define     mutate(parent::BoolIndividual) = mutate(parent, m*rate) with configured m_rate for a Boolean individual, this random flips the bits of the parent

@@ -1,0 +1,12 @@
+引数:
+
+  * `command_buffer::CommandBuffer` (externsync)
+  * `event::Event`
+  * `stage_mask::PipelineStageFlag`: デフォルトは `0`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/vkCmdSetEvent.html)
+
+```julia
+_cmd_set_event(command_buffer, event; stage_mask)
+
+```

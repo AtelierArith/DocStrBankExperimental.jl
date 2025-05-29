@@ -1,0 +1,1 @@
+Base.Docs.DocStr(svec("    @lag(expr[, n=1])\n\n与えられた式にラグ演算子を適用します。\n"), nothing, Dict{Symbol, Any}(:typesig => Tuple{Any, Vararg{Any}}, :module => ModelBaseEcon, :linenumber => 18, :binding => ModelBaseEcon.@lag, :path => "/home/terasaki/.julia/packages/ModelBaseEcon/aCyhO/src/metafuncs.jl"))

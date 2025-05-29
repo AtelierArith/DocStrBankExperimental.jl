@@ -1,0 +1,5 @@
+```
+ポタシエーション <: AbstractPosAdduct
+```
+
+[M+K]+

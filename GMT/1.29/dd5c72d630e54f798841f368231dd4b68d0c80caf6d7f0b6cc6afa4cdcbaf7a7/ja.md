@@ -1,0 +1,11 @@
+```
+velo(cmd0::String="", arg1=nothing; kwargs...)
+```
+
+速度ベクトル、クロス、ウェッジをプロットします。
+
+完全なGMT（`GMT.jl`ではない）ドキュメントは[`velo`](http://docs.generic-mapping-tools.org/latest/supplements/seis/velo.html)を参照してください。
+
+```julia
+    velo(mat2ds([0. -8 0 0 4 6 0.5; -8 5 3 3 0 0 0.5], ["4x6", "3x3"]), pen=(0.6,:red), fill_wedges=:green, outlines=true, Se="0.2/0.39/18", arrow="0.3c+p1p+e+gred", region=(-15,10,-10,10), show=1)
+```

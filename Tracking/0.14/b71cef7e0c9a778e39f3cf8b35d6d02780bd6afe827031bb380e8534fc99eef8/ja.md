@@ -1,0 +1,1 @@
+EarlyPromptLateCorrelatorは、ユーザー定義の相関値の数を保持します。

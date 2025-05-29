@@ -1,0 +1,1 @@
+Invert a theory iso

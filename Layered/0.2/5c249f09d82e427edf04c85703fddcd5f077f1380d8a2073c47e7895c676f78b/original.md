@@ -1,0 +1,3 @@
+point(f::Function, args...)
+
+Creates a shape containing a `GeometricObject` of type `Layered.Point`, storing any trailing arguments as dependencies, later to be passed as arguments to the given `Function` `f` that should return a `GeometricObject` of type `Layered.Point` and will be evaluated when `solve!` is called on the shape during the drawing process.

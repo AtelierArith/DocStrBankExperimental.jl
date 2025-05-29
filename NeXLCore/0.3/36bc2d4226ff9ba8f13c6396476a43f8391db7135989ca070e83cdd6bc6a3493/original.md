@@ -1,0 +1,1 @@
+@article{trincavelli1998model,   title={Model for the bremsstrahlung spectrum in EPMA. Application to standardless quantification},   author={Trincavelli, Jorge and Castellano, Gustavo and Riveros, J Alberto},   journal={X-Ray Spectrometry: An International Journal},   volume={27},   number={2},   pages={81–86},   year={1998},   publisher={Wiley Online Library} }

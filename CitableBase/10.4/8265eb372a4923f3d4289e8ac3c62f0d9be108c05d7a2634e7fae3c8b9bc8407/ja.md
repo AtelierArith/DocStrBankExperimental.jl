@@ -1,0 +1,1 @@
+CitableCollectionTraitが、引用可能なライブラリコレクションでないすべてのものに対しての値。

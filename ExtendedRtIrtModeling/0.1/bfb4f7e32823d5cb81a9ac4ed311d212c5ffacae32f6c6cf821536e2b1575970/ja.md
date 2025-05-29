@@ -1,0 +1,3 @@
+```
+sample!(MCMC::GibbsRtIrtQuantile)
+```

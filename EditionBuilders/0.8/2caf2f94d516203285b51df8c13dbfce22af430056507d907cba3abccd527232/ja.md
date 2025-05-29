@@ -1,0 +1,1 @@
+EditionBuildersは基本的なMIDプロジェクトの編集規約を共有しています。

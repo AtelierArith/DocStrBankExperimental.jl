@@ -1,0 +1,1 @@
+Estimate the entropy of an array using a naive (frequencies-based), Chao-Shen, or shrinkage estimator. Chao-Shen and shrinkage estimators reduce the bias for small samples and a large number of classes.

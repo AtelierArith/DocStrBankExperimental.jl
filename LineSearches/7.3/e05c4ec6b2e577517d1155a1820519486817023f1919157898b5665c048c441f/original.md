@@ -1,0 +1,1 @@
+The line search implementation from:   Moré, Jorge J., and David J. Thuente     Line search algorithms with guaranteed sufficient decrease.     ACM Transactions on Mathematical Software (TOMS) 20.3 (1994): 286-307.

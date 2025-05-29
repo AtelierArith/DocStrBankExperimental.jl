@@ -1,0 +1,1 @@
+[`aws_event_stream_message`](@ref) が IO インターフェースにフラッシュされたときに呼び出されます。error*code が AWS*ERROR*SUCCESS の場合、書き込みは成功しました。いずれにせよ、メッセージは [`aws*event*stream*channel*handler*write*message`](@ref)() 呼び出しから保持されており、このコールバック内で解放されるべきです。error*code がゼロ以外の場合、このコールバックが返された後にチャンネルは直ちにシャットダウンされます。

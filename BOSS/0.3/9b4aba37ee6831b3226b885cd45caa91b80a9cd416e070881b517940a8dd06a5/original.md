@@ -1,0 +1,5 @@
+```
+NoLimit()
+```
+
+Never terminates.

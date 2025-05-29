@@ -1,0 +1,3 @@
+```
+analogRead(pin)
+```

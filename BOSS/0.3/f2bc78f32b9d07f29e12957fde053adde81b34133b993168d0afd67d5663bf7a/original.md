@@ -1,0 +1,5 @@
+```
+NoCallback()
+```
+
+Does nothing.

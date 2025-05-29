@@ -1,0 +1,1 @@
+PARAFAC2 model

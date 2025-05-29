@@ -1,0 +1,1 @@
+すべてのラインストリングのためのAbstractLineString型。

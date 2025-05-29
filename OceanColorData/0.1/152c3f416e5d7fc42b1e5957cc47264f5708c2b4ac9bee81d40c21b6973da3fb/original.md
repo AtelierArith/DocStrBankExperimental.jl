@@ -1,0 +1,15 @@
+```
+RrsToChla(Rrs; Eqn="OC4")
+```
+
+Satellite `Chl_a` estimates typicaly derive from remotely sensed reflectances using the blue/green reflectance ratio method and a polynomial formulation.
+
+```
+wvbd_out=Float64.([412, 443, 490, 510, 555, 670])
+wvbd_in=Float64.([400,425,450,475,500,525,550,575,600,625,650,675,700])
+rirr_in=1e-3*[23.7641,26.5037,27.9743,30.4914,28.1356,
+    21.9385,18.6545,13.5100,5.6338,3.9272,2.9621,2.1865,1.8015]
+
+rrs_out=RemotelySensedReflectance(rirr_in,wvbd_in,wvbd_out)
+chla_out=RrsToChla(rrs_out)
+```

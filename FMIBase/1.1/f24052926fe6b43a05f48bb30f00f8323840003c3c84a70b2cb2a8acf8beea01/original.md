@@ -1,0 +1,1 @@
+The mutable struct representing a FMU (and a container for all its instances) in the FMI 2.0.2 Standard. Also contains the paths to the FMU and ZIP folder as well als all the FMI 2.0.2 function pointers.

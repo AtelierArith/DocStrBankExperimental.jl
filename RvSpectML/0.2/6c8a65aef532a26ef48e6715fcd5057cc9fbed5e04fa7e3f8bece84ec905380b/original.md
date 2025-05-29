@@ -1,0 +1,1 @@
+`calc_depth_and_expected_rv_precission(spectrum, pixels_index, order_index; smooth_factor)` Calculate expected RV uncertainty for one portion of spectrum given by pixels and order indicies. Assumes only photon noise with given variances. Returns (depth, `exp_σ_rv`)

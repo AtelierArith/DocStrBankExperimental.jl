@@ -1,0 +1,1 @@
+@article{von1933bremsvermogen,   title={Bremsverm{"o}gen von Atomen mit mehreren Elektronen (Braking capabilities of multi-electron atoms)},   author={von Bloch, F},   journal={Z. Phys},   volume={81},   pages={363},   year={1933} }

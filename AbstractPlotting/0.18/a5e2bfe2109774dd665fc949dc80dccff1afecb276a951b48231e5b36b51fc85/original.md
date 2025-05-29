@@ -1,0 +1,25 @@
+spy(x::Range, y::Range, z::AbstractSparseArray)
+
+Visualizes big sparse matrices. Usage:
+
+```julia
+N = 200_000
+x = sprand(Float64, N, N, (3(10^6)) / (N*N));
+spy(x)
+# or if you want to specify the range of x and y:
+spy(0..1, 0..1, x)
+```
+
+## Attributes
+
+Available attributes and their defaults for `AbstractPlotting.Spy` are: 
+
+```
+  colormap     :viridis
+  colorrange   AbstractPlotting.Automatic()
+  framecolor   :black
+  framesize    1
+  inspectable  true
+  marker       AbstractPlotting.Automatic()
+  markersize   AbstractPlotting.Automatic()
+```

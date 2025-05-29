@@ -1,0 +1,1 @@
+history*forest(history*id::Int) 	history_forest retrieves a tree of ValidityIntervals see:[BitemporalPostgres Theory](https://actuarial-sciences-for-africa-asa.github.io/BitemporalPostgres.jl/stable/api/theory/)

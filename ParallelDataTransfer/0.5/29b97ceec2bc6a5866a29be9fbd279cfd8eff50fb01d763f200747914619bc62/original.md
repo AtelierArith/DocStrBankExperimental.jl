@@ -1,0 +1,1 @@
+include_remote(path, [workers=workers()]; module=Main) Includes a file which is not available on a remote worker by reading the file at the main node, parsing the text and evaluating the code on the remote workers listed in `workers`

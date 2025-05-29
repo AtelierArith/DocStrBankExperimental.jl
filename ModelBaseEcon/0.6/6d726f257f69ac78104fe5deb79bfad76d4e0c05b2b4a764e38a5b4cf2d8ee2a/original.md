@@ -1,0 +1,1 @@
+Base.Docs.DocStr(svec("    @lead(expr[, n=1])\n\nApply the lead operator to the given expression. Equivalent to\n`@lag(expr, -n)`.\n"), nothing, Dict{Symbol, Any}(:typesig => Union{Tuple{Expr}, Tuple{Expr, Int64}}, :module => ModelBaseEcon, :linenumber => 48, :binding => ModelBaseEcon.@lead, :path => "/home/terasaki/.julia/packages/ModelBaseEcon/aCyhO/src/metafuncs.jl"))

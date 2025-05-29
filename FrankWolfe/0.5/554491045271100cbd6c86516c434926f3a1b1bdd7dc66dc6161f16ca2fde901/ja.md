@@ -1,0 +1,1 @@
+MathOptInterface LMOですが、ブロック構造を尊重する頂点を返します。

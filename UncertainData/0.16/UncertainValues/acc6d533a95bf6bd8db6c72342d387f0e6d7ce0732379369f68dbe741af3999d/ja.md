@@ -1,0 +1,3 @@
+AbstractScalarPopulation
+
+人口ベースの不確実なスカラー値のための抽象型です。

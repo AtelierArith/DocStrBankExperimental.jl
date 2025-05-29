@@ -1,0 +1,1 @@
+DualComposedWithDynamicの置き換え。

@@ -1,0 +1,3 @@
+**PUBLICSHARE_DIR** (`XDG_PUBLICSHARE_DIR`)
+
+ユーザーの公開ディレクトリ。

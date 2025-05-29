@@ -1,0 +1,1 @@
+extract_currencies: 与えられたテキストからすべての通貨を抽出する

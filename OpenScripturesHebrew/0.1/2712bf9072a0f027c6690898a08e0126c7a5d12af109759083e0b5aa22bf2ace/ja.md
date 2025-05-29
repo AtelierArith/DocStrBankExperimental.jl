@@ -1,0 +1,4 @@
+```julia
+verbtype(lang, codestring)
+
+```

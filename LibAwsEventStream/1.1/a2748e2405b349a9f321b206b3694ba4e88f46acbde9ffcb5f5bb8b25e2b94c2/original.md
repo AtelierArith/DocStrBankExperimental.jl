@@ -1,0 +1,1 @@
+Called by aws_aws_event_stream_streaming_decoder when a new message has arrived. The prelude will contain metadata about the message. At this point no headers or payload have been received. prelude is copyable.

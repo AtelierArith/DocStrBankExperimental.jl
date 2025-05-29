@@ -1,0 +1,1 @@
+`ImGuiBoxSelectState`のデストラクタ

@@ -1,0 +1,3 @@
+```
+WVelocity <: DimensionalPhysicalQuantity
+```

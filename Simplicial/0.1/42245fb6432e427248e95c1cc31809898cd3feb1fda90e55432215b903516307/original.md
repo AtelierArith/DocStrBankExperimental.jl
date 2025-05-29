@@ -1,0 +1,1 @@
+function  Matrix2Permutations(A::Matrix)::Matrix   This utility function takes a matrix A of real numbers and returns the matrix RowOrdering of integers, so that   RowOrdering[i,j] = the order of the element A[i,j] in the i-th row of A   Usage: RowOrdering=Matrix2Permutations(A);

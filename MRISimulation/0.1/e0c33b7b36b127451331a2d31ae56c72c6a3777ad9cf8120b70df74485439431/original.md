@@ -1,0 +1,1 @@
+Computes a polaroid fieldmap.

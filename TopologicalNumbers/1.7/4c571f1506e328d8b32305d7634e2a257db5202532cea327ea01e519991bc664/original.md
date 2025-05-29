@@ -1,0 +1,1 @@
+calcPhaseDiagram(H::Function, param_range::T1, alg::T2; N::T3=51, parallel::T4=UseSingleThread(), gapless::Real=0.0, rounds::Bool=true, plot::Bool=false, progress::Bool=false) where {T1<:AbstractVector,T2<:Union{String,TopologicalNumbersAlgorithms},T3<:Union{Int,Tuple,AbstractVector},T4<:TopologicalNumbersParallel}

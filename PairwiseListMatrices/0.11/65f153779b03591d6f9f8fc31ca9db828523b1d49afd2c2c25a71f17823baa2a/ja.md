@@ -1,0 +1,1 @@
+`PairwiseListMatrix{T, diagonal, VT}` は、`nelements` のペアワイズ比較/評価のために、型 `T` の値を持つ型 `VT` の `list` を格納する（正方形の）対称行列です。`diagonal` が `true` の場合、リストの最初の要素は `1, 1` ですが、そうでない場合は `1, 2` です。`diagonal` が `false` の場合、対角値は `diag` フィールドのベクターに格納されます。

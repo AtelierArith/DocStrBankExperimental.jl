@@ -1,0 +1,1 @@
+PowerSimulations.jlの例のカテゴリ。

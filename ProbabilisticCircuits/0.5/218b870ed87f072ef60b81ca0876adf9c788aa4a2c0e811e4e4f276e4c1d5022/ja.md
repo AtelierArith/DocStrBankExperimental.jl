@@ -1,0 +1,1 @@
+BitsPCからそれが作成されたProbCircuitにパラメータをマップします。

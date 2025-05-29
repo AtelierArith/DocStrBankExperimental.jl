@@ -1,0 +1,5 @@
+```
+SimpleObservableSet
+
+`MCObservableSet{SimpleObservable}`のエイリアス。
+```

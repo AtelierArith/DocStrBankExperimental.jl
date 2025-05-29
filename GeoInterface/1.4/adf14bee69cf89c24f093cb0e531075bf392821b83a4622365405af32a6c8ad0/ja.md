@@ -1,0 +1,1 @@
+すべての曲線ポリゴンのためのAbstractCurvePolygonTrait型。

@@ -1,0 +1,3 @@
+```
+pwmToneWrite(pin, freq)
+```

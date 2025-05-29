@@ -1,0 +1,1 @@
+RegularizedModelは、RegularizationPathから選択されたセグメントを表します。

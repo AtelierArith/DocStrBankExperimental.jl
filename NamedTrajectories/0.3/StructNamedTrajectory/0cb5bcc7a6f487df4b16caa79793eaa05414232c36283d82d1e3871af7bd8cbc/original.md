@@ -1,0 +1,3 @@
+```
+NamedTrajectory(datavec, T, components)
+```

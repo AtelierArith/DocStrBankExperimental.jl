@@ -1,0 +1,5 @@
+```
+first(sc)
+```
+
+Argument `sc` is a SortedDict, SortedMultiDict or SortedSet. This function returns the first item (a `k=>v` pair for SortedDict and SortedMultiDict or a key for SortedSet) according to the sorted order in the container. Thus, `first(sc)` is equivalent to `deref((sc,startof(sc)))`. It is an error to call this function on an empty container. Time: O(log *n*)

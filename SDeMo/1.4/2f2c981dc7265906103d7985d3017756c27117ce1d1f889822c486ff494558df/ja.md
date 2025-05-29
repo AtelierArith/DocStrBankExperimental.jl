@@ -1,0 +1,5 @@
+```
+κ(M::ConfusionMatrix)
+```
+
+コーエンのκ

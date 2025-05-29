@@ -1,0 +1,1 @@
+`assign_taxonomy`によって返される結果。個々の列には、例えば`my_result.Genus`でアクセスでき、列名のリストには`names(my_result)`でアクセスできます。結果は`DataFrame`に変換することができ、`using DataFrames; DataFrame(my_result)`またはヘッダー付きでCSVに書き込むことができます。`using CSV; CSV.write("my_result.csv",my_result)`。

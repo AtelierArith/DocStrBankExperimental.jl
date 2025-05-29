@@ -1,0 +1,1 @@
+このタイプは、タプル $A=(N,T,transitions,q0,F)$ として定義される (*非決定論的*) *有限オートマトン* を表します。 Automaton(N::Iterable, T::Iterable, transitions::Iterable, q0::AbstractString, F::Iterable) は、与えられたコンポーネントから得られた [`Automaton`](@ref) を構築します。

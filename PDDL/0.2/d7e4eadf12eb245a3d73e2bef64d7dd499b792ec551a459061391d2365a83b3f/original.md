@@ -1,0 +1,1 @@
+Abstractly interpreted PDDL domain.

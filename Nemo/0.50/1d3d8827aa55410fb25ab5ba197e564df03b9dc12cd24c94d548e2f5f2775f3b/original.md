@@ -1,0 +1,5 @@
+```
+precision(a::PadicFieldElem)
+```
+
+Return the precision of the given $p$-adic field element, i.e. if the element is known to $O(p^n)$ this function will return $n$.

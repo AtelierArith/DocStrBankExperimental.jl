@@ -1,0 +1,1 @@
+Always drop the span.

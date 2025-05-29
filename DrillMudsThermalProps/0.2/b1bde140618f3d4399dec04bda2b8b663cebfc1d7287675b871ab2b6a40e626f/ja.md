@@ -1,0 +1,5 @@
+```
+TestSolid()
+```
+
+TestSolid型のコンストラクタです。

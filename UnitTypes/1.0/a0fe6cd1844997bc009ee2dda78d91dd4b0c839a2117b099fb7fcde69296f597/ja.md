@@ -1,0 +1,1 @@
+このUnitTypeは、単位%を持つUnitTypes.Percentの基本的な測定を表します。

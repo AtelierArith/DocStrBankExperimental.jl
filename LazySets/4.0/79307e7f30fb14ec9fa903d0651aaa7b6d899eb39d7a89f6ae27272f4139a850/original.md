@@ -1,0 +1,5 @@
+```
+CH
+```
+
+Alias for `ConvexHull`.

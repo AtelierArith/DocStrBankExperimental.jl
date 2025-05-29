@@ -1,0 +1,1 @@
+A collection of labeled `IsotropicGMM`s, to each be considered separately during an alignment procedure. That is, only alignment scores between `IsotropicGMM`s with the same key are considered when aligning two `MultiGMM`s.

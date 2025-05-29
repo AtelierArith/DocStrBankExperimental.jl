@@ -1,0 +1,3 @@
+```
+pseudoPinsSetup(pinBase)
+```

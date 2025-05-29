@@ -1,0 +1,1 @@
+Retuns the `list` vector.

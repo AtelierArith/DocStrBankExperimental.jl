@@ -1,0 +1,1 @@
+A `LengthStepRange` is a range which is parameterized by its zeroth element, step and length (as oppsed to first, step, and last). The type of each of the parameters is part of the range type, and hence it is possible to use this type of range efficiently with `Static` parameters.

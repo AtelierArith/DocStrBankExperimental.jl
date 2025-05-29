@@ -1,0 +1,3 @@
+```
+Cuboid <: AbstractShape{3}
+```

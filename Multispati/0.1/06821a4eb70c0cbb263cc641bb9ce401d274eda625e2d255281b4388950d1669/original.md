@@ -1,0 +1,3 @@
+```
+SpatialPCA <: AbstractMultispati
+```

@@ -1,0 +1,1 @@
+Initialize an Incremental hom set from a rule, using it's pattern `L` as the  domain of the hom set. Any additions other than the map `I->R` can be passed in by `additions`, and the schema Presentation can be passed as `S`.

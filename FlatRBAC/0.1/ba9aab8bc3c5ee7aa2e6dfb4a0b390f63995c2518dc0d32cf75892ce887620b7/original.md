@@ -1,0 +1,1 @@
+Revoke `permission` from `role`

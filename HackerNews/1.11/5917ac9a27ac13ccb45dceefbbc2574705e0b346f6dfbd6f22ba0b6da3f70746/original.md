@@ -1,0 +1,1 @@
+Hackernews user composite type

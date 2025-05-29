@@ -1,0 +1,3 @@
+```
+AbstractScalarShape{T} <: AbstractValueShape
+```

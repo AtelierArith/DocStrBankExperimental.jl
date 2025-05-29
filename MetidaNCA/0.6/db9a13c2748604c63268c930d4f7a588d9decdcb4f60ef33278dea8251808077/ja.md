@@ -1,0 +1,3 @@
+```
+pkplot(data::NCAResult; kwargs...)
+```

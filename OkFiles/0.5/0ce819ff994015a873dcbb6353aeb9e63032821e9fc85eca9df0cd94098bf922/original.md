@@ -1,0 +1,1 @@
+`pathnorepeat(filepath; suffix_fun = serial_number_4d)` returns non-repeated file path, by increasing the `serial_number_4d` by default. `suffix_fun` can be assigned as an arbitrary function that `suffix_fun(n)` returns a string updated by integer `n`.

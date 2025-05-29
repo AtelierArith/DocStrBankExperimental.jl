@@ -1,0 +1,5 @@
+```
+ExtendableSparseMatrix
+```
+
+[`ExtendableSparseMatrixCSC`](@ref) にエイリアスされています。

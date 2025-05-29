@@ -1,0 +1,1 @@
+GeometryCollectionは`Geometry`のコレクションです。

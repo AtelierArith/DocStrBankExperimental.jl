@@ -1,0 +1,3 @@
+```
+serialDataAvail(fd)
+```

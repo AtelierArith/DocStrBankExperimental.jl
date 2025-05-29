@@ -1,0 +1,5 @@
+```
+GaussianKernel()
+```
+
+[`SqExponentialKernel`](@ref) のエイリアスです。

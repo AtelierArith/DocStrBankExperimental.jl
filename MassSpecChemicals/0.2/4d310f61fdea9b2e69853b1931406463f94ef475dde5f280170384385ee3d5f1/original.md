@@ -1,0 +1,5 @@
+```
+Protonation <: AbstractPosAdduct
+```
+
+[M+H]+

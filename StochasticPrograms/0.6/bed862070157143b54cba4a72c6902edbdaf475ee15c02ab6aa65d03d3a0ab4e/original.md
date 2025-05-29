@@ -1,0 +1,13 @@
+```
+VSS(stochasticmodel::StochasticModel{2}, sampler::AbstractSampler)
+```
+
+Approximately calculate the **value of the stochastic solution** (`VSS`) of the two-stage `stochasticmodel` to the current confidence level, over the scenario distribution induced by `sampler`.
+
+In other words, calculate confidence intervals around `EEV` and `VRP`. If they do not overlap, the VSS is statistically significant, and a confidence interval is calculated and returned. `Ñ` is the number of samples in the out-of-sample evaluation of EEV.
+
+The attribute [`NumSamples`](@ref) is the size of the sampled models used to generate the interval and generally governs how tight it is. The same size is used to generate the expected value decision. The attribute [`NumLowerTrials`](@ref) is the number of sampled models used in the lower bound calculation and the attribute [`NumUpperTrials`](@ref) is the number of sampled models used in the upper bound calculation. The attribute [`NumEvalSamples`](@ref) is the size of the sampled models used in the upper bound calculation and the attribute [`NumEEVSamples`] is the size of the sampled models used in the `EEV` calculation. The confidence level can be set through the [`Confidence`](@ref) attribute.
+
+If a sample-based optimizer has not been set yet (see [`set_optimizer`](@ref)), a `NoOptimizer` error is thrown.
+
+See also: [`VRP`](@ref), [`EEV`](@ref), [`EVPI`](@ref)

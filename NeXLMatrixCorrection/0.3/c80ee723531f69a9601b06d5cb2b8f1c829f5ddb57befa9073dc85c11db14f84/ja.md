@@ -1,0 +1,1 @@
+`ReedFluorescence`構造体は、Reed蛍光モデルのための`FluorescenceCorrection`を実装しています。

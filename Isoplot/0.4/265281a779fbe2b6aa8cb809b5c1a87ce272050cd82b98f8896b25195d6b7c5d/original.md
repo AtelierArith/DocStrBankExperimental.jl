@@ -1,0 +1,26 @@
+```julia
+mswd(μ, σ)
+mswd(μ ± σ)
+```
+
+Return the Mean Square of Weighted Deviates (AKA the reduced chi-squared statistic) of a dataset with values `x` and one-sigma uncertainties `σ`
+
+### Examples
+
+```julia
+julia> x = randn(10)
+10-element Vector{Float64}:
+ -0.977227094347237
+  2.605603343967434
+ -0.6869683962845955
+ -1.0435377148872693
+ -1.0171093080088411
+  0.12776158554629713
+ -0.7298235147864734
+ -0.3164914095249262
+ -1.44052961622873
+  0.5515207382660242
+
+julia> mswd(x, ones(10))
+1.3901517474017941
+```

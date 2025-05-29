@@ -1,0 +1,1 @@
+The DiscretizedGrid struct represents a grid for discretized continuous data. This is used for data that is originally continuous, but has been discretized for computational purposes. The grid contains values at specific, equally spaced points, which represent discrete approximations of the original continuous data.

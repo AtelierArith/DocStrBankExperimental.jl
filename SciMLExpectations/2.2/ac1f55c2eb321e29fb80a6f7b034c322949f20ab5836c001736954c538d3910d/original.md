@@ -1,0 +1,3 @@
+```julia
+MonteCarlo(trajectories::Int)
+```

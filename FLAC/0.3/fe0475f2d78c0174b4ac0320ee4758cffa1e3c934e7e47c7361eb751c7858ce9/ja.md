@@ -1,0 +1,1 @@
+`SeekPoint`の配列

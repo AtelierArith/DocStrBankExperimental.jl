@@ -1,0 +1,1 @@
+This typedef holds virtual functions for the geometry handler. We need it so that we can use [`t8_geometry_handler_c`](@ref) pointers in .c files without them seeing the actual C++ code (and then not compiling) TODO: Delete this when the cmesh is a proper cpp class.

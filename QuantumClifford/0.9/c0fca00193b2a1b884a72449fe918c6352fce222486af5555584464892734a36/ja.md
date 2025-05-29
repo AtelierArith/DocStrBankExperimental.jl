@@ -1,0 +1,1 @@
+すべての記号演算子のスーパタイプ。`AbstractCliffordOperator`のサブタイプ

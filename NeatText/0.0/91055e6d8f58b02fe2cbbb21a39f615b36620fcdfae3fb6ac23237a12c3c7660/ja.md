@@ -1,0 +1,1 @@
+fix_contractions: 与えられたテキストの短縮形を修正する

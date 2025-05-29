@@ -1,0 +1,1 @@
+A `PairwiseListMatrix` can be created from a `list`. The `diagonal` (default to `false`) could be declared as `true` to indicate that the list has the diagonal elements. If `diagonal` is `false`, the diagonal values are stored in a vector on the `diag` field instead of being on the list. The `diag` vector can be filled with the optional `diagonalvalue` argument (default to `0`).

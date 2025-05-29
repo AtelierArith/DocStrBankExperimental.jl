@@ -1,0 +1,1 @@
+`monic(p::SimplePolynomial)` returns a new polynomial formed by dividing all coefficients by the leading coefficient, thereby yielding a monic polynomial. If `p` is zero, a zero polynomial is returned.

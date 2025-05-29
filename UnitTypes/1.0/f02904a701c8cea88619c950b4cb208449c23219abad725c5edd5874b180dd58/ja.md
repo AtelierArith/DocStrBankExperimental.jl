@@ -1,0 +1,1 @@
+このUnitTypeは、単位lmで表される基本的なUnitTypes.Lumenの測定を表します。

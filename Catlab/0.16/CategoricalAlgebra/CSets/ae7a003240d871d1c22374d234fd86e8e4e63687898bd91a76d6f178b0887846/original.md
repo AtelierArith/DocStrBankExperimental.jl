@@ -1,0 +1,1 @@
+Variables are used for the attributes in the apex of limit of CSetTransformations when there happen to be attributes. However, a commutative monoid on the  attribute type may be provided in order to avoid introducing variables.

@@ -1,0 +1,3 @@
+```
+LineAnnotation{D} <: TrivialGate{D}
+```

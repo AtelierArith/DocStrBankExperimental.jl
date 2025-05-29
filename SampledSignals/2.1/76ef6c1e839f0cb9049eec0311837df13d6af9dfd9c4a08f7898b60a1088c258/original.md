@@ -1,0 +1,1 @@
+Mix the channels of the source array into the channels of the dest array, using coefficients from the `mix` matrix. To mix an M-channel buffer to a N-channel buffer, `mix` should be MxN. `src` and `dest` should not share memory.

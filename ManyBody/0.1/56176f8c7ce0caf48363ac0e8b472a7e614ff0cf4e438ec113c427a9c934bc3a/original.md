@@ -1,0 +1,1 @@
+Constant term (energy shift)

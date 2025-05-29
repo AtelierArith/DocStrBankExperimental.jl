@@ -1,0 +1,18 @@
+```
+updateSamplingRate!(pluto, value; doLog)
+```
+
+Changes the sampling rate. Prints the new effective sampling rate.
+
+# Arguments
+
+  * `pluto::PlutoSDR` : the radio to modify.
+  * `value::Int64` : the new sampling rate.
+
+# Keywords
+
+  * `doLog::Bool` : toggles the display of the new carrier frequency
+
+# Returns
+
+  * `errno::Int` : 0 or a negative error code.

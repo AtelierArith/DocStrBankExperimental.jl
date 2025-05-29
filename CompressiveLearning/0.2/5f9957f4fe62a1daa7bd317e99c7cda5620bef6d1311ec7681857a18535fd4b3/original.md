@@ -1,0 +1,1 @@
+Main wrapper for compressive Gaussian mixture modeling with diagonal covariances. The parameters `m_factor` and `m_factor_eq_reals` are computed with  respect to the total number of parameters `2kd`. See also: [CKM](@CKM)

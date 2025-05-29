@@ -1,0 +1,3 @@
+```
+pwmSetMode(mode)
+```

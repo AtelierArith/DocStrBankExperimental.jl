@@ -1,0 +1,1 @@
+A `SparseSubdict` is a subset of a dictionary with a small number of indices. The difference with a regular function subset is that operators on a small set are implemented by iterating explicitly over the indices, and not in terms of an operator on the full underlying set.

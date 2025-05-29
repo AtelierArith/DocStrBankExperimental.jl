@@ -1,0 +1,1 @@
+An input-output curve, directly relating the production quantity to the cost: `y = f(x)`. Can be used, for instance, in the representation of a [`CostCurve`](@ref) where `x` is MW and `y` is currency/hr, or in the representation of a [`FuelCurve`](@ref) where `x` is MW and `y` is fuel/hr.

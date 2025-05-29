@@ -1,0 +1,186 @@
+function ptcsoli( F!, x0, FS, FPS, Jvec = dirder; rtol = 1.e-6, atol = 1.e-12,     maxit = 20, lmaxit = -1, lsolver = "gmres", eta = 0.1, fixedeta = true,     Pvec = nothing, PvecKnowsdelta = false, pside = "right", delta0 = 1.e-6,     dx = 1.e-7, pdata = nothing, printerr = true, keepsolhist = false, )
+
+C. T. Kelley, 2022
+
+Julia versions of the nonlinear solvers from my SIAM books.  New for this book ==> ptcsoli
+
+PTC finds the steady-state solution of u' = -F(u), u(0) = u_0. The - sign is a convention.
+
+You must allocate storage for the function and Krylov basis in advance –> in the calling program <– ie. in FS and FPS
+
+Inputs:
+
+  * F!: function evaluation, the ! indicates that F! overwrites FS, your   preallocated storage for the function.
+
+    So, FS=F!(FS,x) or FS=F!(FS,x,pdata) returns FS=F(x)
+
+    Your function MUST have –> return FS <– at the end.   See the example in TestProblems/Systems/FBeam!.jl
+  * x0: initial iterate
+
+  * FS: Preallocated storage for function. It is a vector of size N
+
+    You should store it as (N) and design F! to use vectors of size (N). If you use (N,1) consistently instead, the solvers may work, but I make no guarantees.
+  * FPS: preallocated storage for the Krylov basis. It is an N x m matrix where      you plan to take at most m-1 GMRES iterations before a restart.
+
+  * Jvec: Jacobian vector product, If you leave this out the   default is a finite difference directional derivative.
+
+    So, FP=Jvec(v,FS,x) or FP=Jvec(v,FS,x,pdata) returns FP=F'(x) v. 
+
+    (v, FS, x) or (v, FS, x, pdata) must be the argument list,   even if FP does not need FS.   One reason for this is that the finite-difference derivative   does and that is the default in the solver.
+  * Precision: Lemme tell ya 'bout precision. I designed this code for    full precision functions and linear algebra in any precision you want.    You can declare FPS as Float64 or Float32 and ptcsoli    will do the right thing. Float16 support is there, but not working well.
+
+    If the Jacobian is reasonably well conditioned, you can cut the cost   of orthogonalization and storage (for GMRES) in half with no loss.   There is no benefit if your linear solver is not GMRES or if   orthogonalization and storage of the Krylov vectors is only a   small part of the cost of the computation. So if your preconditioner   is good and you only need a few Krylovs/Newton, reduced precision won't   help you much.
+
+    BiCGSTAB does not benefit from reduced precision.
+
+---
+
+Keyword Arguments (kwargs):
+
+rtol and atol: relative and absolute error tolerances
+
+delta0: initial pseudo time step. The default value of 1.e-3 is a bit conservative and is one option you really should play with. Look at the example where I set it to 1.0!
+
+maxit: limit on nonlinear iterations, default=100. 
+
+This is coupled to delta0. If your choice of delta0 is too small (conservative) then you'll need many iterations to converge and will need a larger value of maxit
+
+For PTC you'll need more iterations than for a straight-up nonlinear solve. This is part of the price for finding the  stable solution. 
+
+lmaxit: limit on linear iterations. If lmaxit > m-1, where FPS has m columns, and you need more than m-1 linear iterations, then GMRES will restart.
+
+The default is -1. For GMRES this means that you'll take m-1 iterations, where size(V) = (n,m), and get no restarts. For BiCGSTAB you'll then get the default of 10 iterations.
+
+lsolver: the linear solver, default = "gmres"
+
+Your choices will be "gmres" or "bicgstab". However, gmres is the only option for now. 
+
+eta and fixed eta: eta > 0 or there's an error.
+
+The linear solver terminates when ||F'(x)s + F(x) || <= etag || F(x) ||
+
+where
+
+etag = eta if fixedeta=true
+
+etag = Eisenstat-Walker as implemented in book if fixedeta=false
+
+The default, which may change, is eta=.1, fixedeta=true 
+
+Pvec: Preconditioner-vector product. The rules are similar to Jvec     So, Pv=Pvec(v,x) or Pv=Pvec(v,x,pdata) returns P(x) v where     P(x) is the preconditioner. You must use x as an input even     if your preconditioner does not depend on x.
+
+PvecKnowsdelta: If you want your preconditioner-vector product to depend on      the pseudo-timestep delta, put an array deltaval in your precomputed     data. Initialize it as     deltaval = zeros(1,)     and let ptcsoli know about it by setting the kwarg     PvecKnowsdelta = true     ptcsoli will update the value in deltaval with every change     to delta with pdata.deltaval[1]=delta     so your preconditioner-vector product can get to it.
+
+pside: apply preconditioner on pside, default = "right". I do not       recommend "left". The problem with "left" for ptcsoli is       that it can fail to satisfy the inexact Newton condition for        the unpreconditioned equation, especially early in the iteration       and lead to an incorrect result (unstable solution or wrong        branch of steady state).       See Chapter 3 for the story on this. 
+
+dx: default = 1.e-7
+
+difference increment in finite-difference derivatives       h=dx*norm(x)+1.e-8 
+
+pdata:
+
+precomputed data for the function, Jacobian-vector, and Preconditioner-vector products.  Things will go better if you use this rather than hide the data in global variables within the module for your function/Jacobian
+
+If you use pdata in any of F!, Jvec, or Pvec, you must use in in all of them. precomputed data for the function/Jacobian.  Things will go better if you use this rather than hide the data  in global variables within the module for your function/Jacobian. 
+
+printerr: default = true
+
+I print a helpful message when the solver fails. To suppress that message set printerr to false. 
+
+keepsolhist: default = false
+
+Set this to true to get the history of the iteration in the output tuple. This is on by default for scalar equations and off for systems. Only turn it on if you have use for the data, which can get REALLY LARGE.
+
+Output:
+
+A named tuple (solution, functionval, history, stats, idid,                errcode, solhist) where
+
+solution = converged result functionval = F(solution) history = the vector of residual norms (||F(x)||) for the iteration stats = named tuple of the history of (ifun, ijac, ikfail), the number of functions/jacobian-vector products/linear solver failures at each iteration.
+
+I do not count the function values for a finite-difference derivative because they count toward a Jacobian-vector product.
+
+Linear solver failures need not cause the nonlinear iteration to fail.  You get a warning and that is all. 
+
+idid=true if the iteration succeeded and false if not. 
+
+errcode = 0 if the iteration succeeded 
+
+```
+    = -1 if the initial iterate satisfies the termination criteria
+    = 10 if no convergence after maxit iterations
+```
+
+solhist:
+
+This is the entire history of the iteration if you've set keepsolhist=true
+
+solhist is an N x K array where N is the length of x and K is the number of iteration + 1. So, for scalar equations, it's a row vector.
+
+### Example for ptcsol
+
+#### The buckling beam problem.
+
+You'll need to use TestProblems for this to work. The preconditioner is a solver for the high order term.
+
+```jldoctest
+julia> using SIAMFANLEquations.TestProblems
+
+julia> function PreCondBeam(v, x, bdata)
+          J = bdata.D2
+          ptv = J\v
+       end
+PreCondBeam (generic function with 1 method)
+
+julia> n=63; maxit=1000; delta0 = 0.01; lambda = 20.0;
+
+julia> # Set up the precomputed data
+
+julia> bdata = beaminit(n, 0.0, lambda);
+
+julia> x = bdata.x; u0 = x .* (1.0 .- x) .* (2.0 .- x); 
+
+julia> u0 .*= exp.(-10.0 * u0); FS = copy(u0); FPJV=zeros(n,20);
+
+julia> pout = ptcsoli( FBeam!, u0, FS, FPJV; 
+       delta0 = delta0, pdata = bdata, eta = 1.e-2, 
+       rtol = 1.e-10, maxit = maxit, Pvec = PreCondBeam);
+
+julia> # It takes a few iterations to get there.
+       length(pout.history)
+25
+
+julia> [pout.history[1:5] pout.history[21:25]]
+5×2 Matrix{Float64}:
+ 6.31230e+01  1.79574e+00
+ 7.45927e+00  2.65956e-01
+ 8.73595e+00  6.58220e-03
+ 2.91937e+01  8.34114e-06
+ 3.47970e+01  5.06847e-09
+
+julia> # We get the nonnegative stedy state.
+julia> maximum(pout.solution)
+2.19086e+00
+
+julia> # Now use BiCGSTAB for the linear solver
+
+julia> FPJV=zeros(n);
+
+julia> pout = ptcsoli( FBeam!, u0, FS, FPJV; 
+       delta0 = delta0, pdata = bdata,
+       eta = 1.e-2, rtol = 1.e-10, maxit = maxit, 
+       Pvec = PreCondBeam, lsolver="bicgstab");
+
+julia> # Same number of iterations as GMRES, but each one costs double 
+
+julia> # the Jacobian-vector products and much less storage
+
+julia> length(pout.history)
+25
+
+julia> [pout.history[1:5] pout.history[21:25]]
+5×2 Matrix{Float64}:
+ 6.31230e+01  1.68032e+00
+ 7.47081e+00  2.35073e-01
+ 8.62095e+00  5.18260e-03
+ 2.96495e+01  3.23803e-06
+```

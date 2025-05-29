@@ -1,0 +1,1 @@
+Secure TunnelがSTOPPED状態に達したときに呼び出すコールバックの署名

@@ -1,0 +1,1 @@
+ContractPartnerReference は、契約およびパートナーセクションからの参照の属性を保持します。

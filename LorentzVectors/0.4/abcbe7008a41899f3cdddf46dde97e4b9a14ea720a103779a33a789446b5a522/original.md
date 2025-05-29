@@ -1,0 +1,1 @@
+Alias of SpatialVector

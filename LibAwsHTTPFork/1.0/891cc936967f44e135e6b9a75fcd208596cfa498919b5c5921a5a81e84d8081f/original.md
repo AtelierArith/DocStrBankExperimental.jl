@@ -1,0 +1,1 @@
+Invoked when the connection has finished shutting down. Never invoked if on_setup failed. This is always invoked on connection's event-loop thread. Note that the connection is not completely done until on_shutdown has been invoked AND [`aws_http_connection_release`](@ref)() has been called.

@@ -1,0 +1,1 @@
+A whitening transform representation.

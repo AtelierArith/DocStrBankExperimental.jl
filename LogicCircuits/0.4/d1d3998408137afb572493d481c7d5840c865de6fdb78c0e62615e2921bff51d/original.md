@@ -1,0 +1,1 @@
+Does the circuit respect the given vtree? This function allows for constants in conjunctions, but only when a vtree node can be found where the left and right conjunct can be assigned to the left and right vtree.

@@ -1,0 +1,1 @@
+Depreciated:     NeXLUncertainties.asa(::Type{DataFrame}, uvss::UncertainValues, withCovars = true) (depreciated) use DataFrames.DataFrame(uvss::UncertainValues, withCovars = true)     NeXLUncertainties.asa(::Type{DataFrame}, lv::LabeledValues) use DataFrames.DataFrame(lv::LabeledValues)

@@ -1,0 +1,1 @@
+TariffItemSectionは、TariffItemコンポーネントのセクションです（上記参照）。

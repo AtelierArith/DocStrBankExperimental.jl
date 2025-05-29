@@ -1,0 +1,5 @@
+```
+scannerName(mdfPart)
+```
+
+スキャナー名

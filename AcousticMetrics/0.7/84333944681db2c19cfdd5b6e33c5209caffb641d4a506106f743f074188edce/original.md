@@ -1,0 +1,5 @@
+```
+MSPSpectrumPhase
+```
+
+Alias for `PressureSpectrumPhase`.

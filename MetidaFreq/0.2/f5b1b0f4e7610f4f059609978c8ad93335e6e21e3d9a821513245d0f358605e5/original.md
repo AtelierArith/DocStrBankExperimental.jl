@@ -1,0 +1,1 @@
+HypothesisTests.FisherExactTest(contab::ConTab)

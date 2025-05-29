@@ -1,0 +1,4 @@
+```julia
+voice(finite, codestring)
+
+```

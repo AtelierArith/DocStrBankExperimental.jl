@@ -1,0 +1,3 @@
+```
+AcbSeries <: Number
+```

@@ -1,0 +1,1 @@
+The non-convex (and bounded) optimal Yohai-Zamar loss function that minimizes the estimator bias. It was originally introduced in Optimal locally robust M-estimates of regression (1997) by Yohai and Zamar with a slightly different formula.

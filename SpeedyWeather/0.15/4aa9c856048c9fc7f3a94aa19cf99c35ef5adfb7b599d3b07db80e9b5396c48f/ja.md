@@ -1,0 +1,22 @@
+```julia
+struct EarthAtmosphere <: AbstractAtmosphere
+    mol_mass_dry_air::AbstractFloat
+    mol_mass_vapour::AbstractFloat
+    heat_capacity::AbstractFloat
+    R_gas::AbstractFloat
+    R_dry::AbstractFloat
+    R_vapour::AbstractFloat
+    mol_ratio::AbstractFloat
+    μ_virt_temp::AbstractFloat
+    κ::AbstractFloat
+    water_density::AbstractFloat
+    latent_heat_condensation::AbstractFloat
+    latent_heat_sublimation::AbstractFloat
+    stefan_boltzmann::AbstractFloat
+    pres_ref::AbstractFloat
+    temp_ref::AbstractFloat
+    moist_lapse_rate::AbstractFloat
+    dry_lapse_rate::AbstractFloat
+    layer_thickness::AbstractFloat
+end
+```

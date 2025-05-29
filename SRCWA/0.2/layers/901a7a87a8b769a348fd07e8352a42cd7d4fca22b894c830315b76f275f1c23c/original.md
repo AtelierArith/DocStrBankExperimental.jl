@@ -1,0 +1,1 @@
+modes_freespace(Kx,Ky) Computes the eigenmodes of propagation through free space, for normalization Kx: x-axis component of the propagation vector Ky: y-axis component of the propagation vector returns V0: coordinate transform between free space eigenmode amplitude and magnetic field Kz0: z-axis component of the propagation vector in free space

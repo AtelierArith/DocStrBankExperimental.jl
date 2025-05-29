@@ -1,0 +1,5 @@
+```
+getevaluatedconstraintvalues(mdbm::MDBM_Problem{fcT,N,Nf,Nc,t01T,t11T,IT,FT,aT})
+```
+
+Provide the constraints values for all the coordinates where the function is evaluated. (see: `getevaluatedconstraintvalues`)

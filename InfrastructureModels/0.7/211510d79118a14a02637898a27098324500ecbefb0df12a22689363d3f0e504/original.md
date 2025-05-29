@@ -1,0 +1,1 @@
+Given a data dictionary following the InfrastructureModels multi-infrastructure conventions, build and return an initial "ref" dictionary, converting strings to symbols and component keys to integers. The global keys argument specifies which keys should remain in the root of the dictionary when building the multi-infrastructure dataset.

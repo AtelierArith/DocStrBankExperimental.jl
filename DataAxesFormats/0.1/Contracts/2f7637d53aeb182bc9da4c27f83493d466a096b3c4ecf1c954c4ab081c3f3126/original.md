@@ -1,0 +1,1 @@
+Specify all the axes for a contract. We would have liked to specify this as `AbstractVector{<:ContractAxis}` but Julia in its infinite wisdom considers `["a" => "b", ("c", "d")]` to be a `Vector{Any}`, which would require literals to be annotated with the type.

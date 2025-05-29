@@ -1,0 +1,1 @@
+`vertex_split(G)` converts the directed graph `G` into an undirected bipartite graph. For each vertex `v` in `G`, the output graph has two vertices `(v,1)` and `(v,2)`. Each edge `(v,w)` of `G` is rendered as an edge between `(v,1)` and `(w,2)` in the output graph.

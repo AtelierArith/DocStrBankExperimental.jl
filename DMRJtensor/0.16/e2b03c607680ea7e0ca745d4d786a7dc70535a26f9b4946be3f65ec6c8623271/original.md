@@ -1,0 +1,1 @@
+infovals: stores current energy (skips initialization for it), truncation error,                          entanglement entropy on requested bond (default center),                          largest m value, noise parameter  <–-switch to second slot

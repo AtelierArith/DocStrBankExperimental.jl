@@ -1,0 +1,1 @@
+Abstract type for sampling with Base.rand(ProbabilisticGraphicalModel, Sampler, nsamples)                                 Base.rand!(Assignment, ProbabilisticGraphicalModel, Sampler)                                 Base.rand(ProbabilisticGraphicalModel, Sampler)

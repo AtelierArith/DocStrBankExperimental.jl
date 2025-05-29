@@ -1,0 +1,1 @@
+Draw simultaneously separate time synchronized frames from each of the desired state machines.  These images can be produced into synchronous side-by-side videos which allows for easier debugging and comparison of concurrently running state machines.

@@ -1,0 +1,1 @@
+Defines how to align a given sequence onto a reference sequence. The alignment is represented as a sequence of elementary operations (match, insertion, deletion etc) anchored to specific positions of the input and reference sequence.

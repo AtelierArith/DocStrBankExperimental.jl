@@ -1,0 +1,20 @@
+拡張: VK*NV*fragment*shading*rate_enums
+
+引数:
+
+  * `shading_rate_type::FragmentShadingRateTypeNV`
+  * `shading_rate::FragmentShadingRateNV`
+  * `combiner_ops::NTuple{2, FragmentShadingRateCombinerOpKHR}`
+  * `next::Ptr{Cvoid}`: デフォルトは `C_NULL`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkPipelineFragmentShadingRateEnumStateCreateInfoNV.html)
+
+```julia
+_PipelineFragmentShadingRateEnumStateCreateInfoNV(
+    shading_rate_type::Vulkan.FragmentShadingRateTypeNV,
+    shading_rate::Vulkan.FragmentShadingRateNV,
+    combiner_ops::Tuple{Vulkan.FragmentShadingRateCombinerOpKHR, Vulkan.FragmentShadingRateCombinerOpKHR};
+    next
+)
+
+```

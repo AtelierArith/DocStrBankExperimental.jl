@@ -1,0 +1,5 @@
+Data structure for (directed) wiring diagrams, aka string diagrams.
+
+A (directed) wiring diagram consists of a collection of boxes with input and output ports connected by wires. A box can be atomic (possessing no internal structure) or can itself be a wiring diagram. Thus, wiring diagrams can be nested recursively. Wiring diagrams are closely related to what the CS literature calls "directed graphs with ports" or more simply "port graphs". The main difference is that a wiring diagram has an "outer box": a wiring diagram has its own ports that can be connected to the ports of its boxes.
+
+This module provides a generic data structure for wiring diagrams. Arbitrary data can be attached to the boxes, ports, and wires of a wiring diagram. The diagrams are "abstract" in the sense that they cannot be directly rendered as raster or vector graphics. However, they form a useful intermediate representation that can be serialized to and from GraphML or translated into Graphviz or other declarative diagram languages.

@@ -1,0 +1,1 @@
+The Relative Efficiency of Alternative Defect Control Schemes for High-Order Continuous Runge-Kutta Formulas  W. H. Enright SIAM Journal on Numerical Analysis, Vol. 30, No. 5. (Oct., 1993), pp. 1419-1445.

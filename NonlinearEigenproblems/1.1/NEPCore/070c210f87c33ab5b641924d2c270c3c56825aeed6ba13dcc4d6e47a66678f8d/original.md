@@ -1,0 +1,5 @@
+```
+struct LostOrthogonalityException
+```
+
+`msg`

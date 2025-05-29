@@ -1,0 +1,1 @@
+Get data from a stream `from` rather than a vector of data in memory.     NB: if offset is not 0, the IO must be seekable or will likely error.     The `displayadjust` keeps the offset display even though we only read     the needed bytes from the file in the position specified.

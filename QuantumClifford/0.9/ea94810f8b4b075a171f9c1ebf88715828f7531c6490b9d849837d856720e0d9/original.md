@@ -1,0 +1,1 @@
+In `QuantumClifford` the `apply!` function is used to apply any quantum operation to a stabilizer state, including unitary Clifford operations, Pauli measurements, and noise. Thus, this function may result in a random/stochastic result (e.g. with measurements or noise).

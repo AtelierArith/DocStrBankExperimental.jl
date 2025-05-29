@@ -1,0 +1,3 @@
+```
+simplexify(grid::Grid;kwargs...)
+```

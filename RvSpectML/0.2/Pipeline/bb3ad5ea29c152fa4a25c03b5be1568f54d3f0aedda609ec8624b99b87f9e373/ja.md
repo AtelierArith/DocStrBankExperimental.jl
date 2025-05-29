@@ -1,0 +1,1 @@
+prepare*line*list( linelist*fn, all*spectra, pipeline; recalc, convert*air*to*vacuum, orders*to*use, Δv*to*avoid*tellurics, v*center*to*avoid*tellurics ) linelist*fn はラインリストファイルへのフルパスです。linelist*fn は、"VALD"というサブストリングを含む場合はVALDマスクとしてロードされ、"espresso.mas"というサブストリングを含む場合はESPRESSOマスクとしてロードされます。convert*air*to*vacuum はブール値（デフォルト値はtrue）で、VALDおよびESPRESSOマスクをロードする際に真空波長に変換するかどうかを決定します。

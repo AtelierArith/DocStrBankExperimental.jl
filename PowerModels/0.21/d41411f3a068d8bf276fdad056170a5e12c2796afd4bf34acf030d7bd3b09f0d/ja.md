@@ -1,0 +1,1 @@
+AbstractPowerModelを初期化する必要なく、refを構築するために使用されます。

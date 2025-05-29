@@ -1,0 +1,5 @@
+```
+CHArray
+```
+
+`ConvexHullArray`のエイリアスです。

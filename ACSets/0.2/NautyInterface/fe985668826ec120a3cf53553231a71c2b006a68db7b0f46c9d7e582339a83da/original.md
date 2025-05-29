@@ -1,0 +1,1 @@
+Take advantage of the very special structure of automorphism generators given by nauty to efficiently enumerate the automorphism group. We iteratively expand our automorphism group with each generator. A `while` loop  explores the possible words that we can built (starting with gₙ₊₁)

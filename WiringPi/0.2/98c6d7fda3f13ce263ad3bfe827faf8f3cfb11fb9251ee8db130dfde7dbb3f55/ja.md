@@ -1,0 +1,3 @@
+```
+digitalWriteByte(value)
+```

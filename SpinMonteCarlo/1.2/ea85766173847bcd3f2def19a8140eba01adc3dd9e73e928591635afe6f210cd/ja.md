@@ -1,0 +1,1 @@
+AshkinTellerモデルのエネルギーは次のように表されます：$E = -\sum_{ij} J^\sigma_{ij} \sigma_i \sigma_j + J^\tau_{ij} \tau_i \tau_j + K_{ij} \sigma_i \sigma_j \tau_i \tau_j$。ここで、$\sigma_i$と$\tau_i$は1（アップスピン）または-1（ダウンスピン）の値を取ります。

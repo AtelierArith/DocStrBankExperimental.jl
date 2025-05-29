@@ -1,0 +1,1 @@
+concrete product graph types

@@ -1,0 +1,4 @@
+```
+struct LifeContingency
+    life::Life
+```

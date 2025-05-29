@@ -1,0 +1,1 @@
+すべての表面のためのAbstractSurfaceTrait型。

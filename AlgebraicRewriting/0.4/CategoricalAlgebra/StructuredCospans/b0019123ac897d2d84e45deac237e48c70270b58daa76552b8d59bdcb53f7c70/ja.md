@@ -1,0 +1,1 @@
+StructuredMulticospanHomsのスパン、DPO書き換えルールとして解釈される

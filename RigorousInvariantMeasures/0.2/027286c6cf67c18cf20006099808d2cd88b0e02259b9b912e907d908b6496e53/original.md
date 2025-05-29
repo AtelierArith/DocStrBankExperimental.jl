@@ -1,0 +1,1 @@
+Function call, and Taylor expansion, of a PwMap. Note that this ignores discontinuities; users are free to shoot themselves in the foot and call this on a non-smooth piecewise map. No better solutions for now.

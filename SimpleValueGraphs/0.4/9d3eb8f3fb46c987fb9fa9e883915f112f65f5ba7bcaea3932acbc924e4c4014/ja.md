@@ -1,0 +1,8 @@
+```
+ValDiGraph{V = Int32}(n; vertexval_types=(), edgeval_types=(), vertexval_init=nothing, graphvals=())
+ValDiGraph{V, E_VALS}(n, vertexval_init=nothing; graphvals=())
+```
+
+`n` 頂点、ゼロエッジ、グラフ値 `graphvals` を持つ `ValDiGraph` を構築します。 頂点値の型は `V_VALS` または `vertexval_types` のいずれかであり、エッジ値の型は `edgeval_types` です。
+
+省略された場合、要素型 `V` は Int32 です。

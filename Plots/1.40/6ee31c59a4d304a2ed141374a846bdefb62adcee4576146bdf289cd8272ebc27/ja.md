@@ -1,0 +1,236 @@
+メインプロットコマンド。`plot`を使用して新しいプロットオブジェクトを作成し、`plot!`を使用して既存のものに追加します：
+
+```
+    plot(args...; kw...)                  # 新しいプロットウィンドウを作成し、現在のものに設定します
+    plot!(args...; kw...)                 # `current`に追加します
+    plot!(plotobj, args...; kw...)        # プロット`plotobj`に追加します
+```
+
+データを渡す方法はたくさんあり、キーワード引数もたくさんあります...試してみれば、期待通りに動作するでしょう。行列を渡すと、列ごとに分割されます。利用可能な属性のリストを表示するには、`plotattr(attr)`関数を使用します。ここで、`attr`はシンボル`:Series`、`:Subplot`、`:Plot`、または`:Axis`です。任意の属性を文字列として`plotattr`に渡すと、そのドキュメント文字列を調べることができます。例えば、`plotattr("seriestype")`。
+
+# 拡張ヘルプ
+
+## シリーズ属性
+
+  * arrow
+  * bar_edges
+  * bar_position
+  * bar_width
+  * bins
+  * colorbar_entry
+  * connections
+  * contour_labels
+  * contours
+  * extra_kwargs
+  * fill
+  * fill_z
+  * fillalpha
+  * fillcolor
+  * fillrange
+  * fillstyle
+  * group
+  * hover
+  * label
+  * levels
+  * line
+  * line_z
+  * linealpha
+  * linecolor
+  * linestyle
+  * linewidth
+  * marker
+  * marker_z
+  * markeralpha
+  * markercolor
+  * markershape
+  * markersize
+  * markerstrokealpha
+  * markerstrokecolor
+  * markerstrokestyle
+  * markerstrokewidth
+  * normalize
+  * orientation
+  * permute
+  * primary
+  * quiver
+  * ribbon
+  * series_annotations
+  * seriesalpha
+  * seriescolor
+  * seriestype
+  * show*empty*bins
+  * smooth
+  * stride
+  * subplot
+  * weights
+  * x
+  * xerror
+  * y
+  * yerror
+  * z
+  * z_order
+  * zerror
+
+## 軸属性
+
+これらは軸の文字（x、y、またはz）で前置します
+
+  * axis
+  * discrete_values
+  * draw_arrow
+  * flip
+  * foreground*color*axis
+  * foreground*color*border
+  * foreground*color*grid
+  * foreground*color*guide
+  * foreground*color*minor_grid
+  * foreground*color*text
+  * formatter
+  * grid
+  * gridalpha
+  * gridlinewidth
+  * gridstyle
+  * guide
+  * guide_position
+  * guidefont
+  * guidefontcolor
+  * guidefontfamily
+  * guidefonthalign
+  * guidefontrotation
+  * guidefontsize
+  * guidefontvalign
+  * lims
+  * link
+  * minorgrid
+  * minorgridalpha
+  * minorgridlinewidth
+  * minorgridstyle
+  * minorticks
+  * mirror
+  * rotation
+  * scale
+  * showaxis
+  * tick_direction
+  * tickfont
+  * tickfontcolor
+  * tickfontfamily
+  * tickfonthalign
+  * tickfontrotation
+  * tickfontsize
+  * tickfontvalign
+  * ticks
+  * unitformat
+  * widen
+
+## サブプロット属性
+
+  * annotationcolor
+  * annotationfontfamily
+  * annotationfontsize
+  * annotationhalign
+  * annotationrotation
+  * annotations
+  * annotationvalign
+  * aspect_ratio
+  * background*color*inside
+  * background*color*subplot
+  * bottom_margin
+  * camera
+  * clims
+  * color_palette
+  * colorbar
+  * colorbar*continuous*values
+  * colorbar*discrete*values
+  * colorbar_fontfamily
+  * colorbar_formatter
+  * colorbar_scale
+  * colorbar_tickfontcolor
+  * colorbar_tickfontfamily
+  * colorbar_tickfonthalign
+  * colorbar_tickfontrotation
+  * colorbar_tickfontsize
+  * colorbar_tickfontvalign
+  * colorbar_ticks
+  * colorbar_title
+  * colorbar*title*location
+  * colorbar_titlefont
+  * colorbar_titlefontcolor
+  * colorbar_titlefontfamily
+  * colorbar_titlefonthalign
+  * colorbar_titlefontrotation
+  * colorbar_titlefontsize
+  * colorbar_titlefontvalign
+  * extra_kwargs
+  * fontfamily_subplot
+  * foreground*color*subplot
+  * foreground*color*title
+  * framestyle
+  * left_margin
+  * legend*background*color
+  * legend_column
+  * legend_font
+  * legend*font*color
+  * legend*font*family
+  * legend*font*halign
+  * legend*font*pointsize
+  * legend*font*rotation
+  * legend*font*valign
+  * legend*foreground*color
+  * legend_position
+  * legend_title
+  * legend*title*font
+  * legend*title*font_color
+  * legend*title*font_family
+  * legend*title*font_halign
+  * legend*title*font_pointsize
+  * legend*title*font_rotation
+  * legend*title*font_valign
+  * margin
+  * plot*title*font
+  * projection
+  * projection_type
+  * right_margin
+  * subplot_index
+  * title
+  * title_font
+  * titlefontcolor
+  * titlefontfamily
+  * titlefonthalign
+  * titlefontrotation
+  * titlefontsize
+  * titlefontvalign
+  * titlelocation
+  * top_margin
+
+## プロット属性
+
+  * background_color
+  * background*color*outside
+  * display_type
+  * dpi
+  * extra_kwargs
+  * extra*plot*kwargs
+  * fontfamily
+  * foreground_color
+  * html*output*format
+  * inset_subplots
+  * layout
+  * link
+  * overwrite_figure
+  * plot_title
+  * plot_titlefontcolor
+  * plot_titlefontfamily
+  * plot_titlefonthalign
+  * plot_titlefontrotation
+  * plot_titlefontsize
+  * plot_titlefontvalign
+  * plot_titleindex
+  * plot_titlelocation
+  * plot_titlevspan
+  * pos
+  * show
+  * size
+  * tex*output*standalone
+  * thickness_scaling
+  * warn*on*unsupported
+  * window_title

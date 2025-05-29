@@ -1,0 +1,3 @@
+```
+wiringPiISRStop(pin)
+```

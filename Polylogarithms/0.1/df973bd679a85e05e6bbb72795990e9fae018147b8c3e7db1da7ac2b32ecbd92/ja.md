@@ -1,0 +1,20 @@
+```
+harmonic(n::Integer)
+```
+
+調和数を計算します。例として、[http://mathworld.wolfram.com/HarmonicNumber.html](http://mathworld.wolfram.com/HarmonicNumber.html)を参照してください。
+
+## 引数
+
+  * $$
+    n
+    $$
+
+    `::Integer`: 計算する調和数の非負インデックス
+
+## 例
+
+```jldoctest; setup = :(using Polylogarithms)
+julia> harmonic(2)
+1.5
+```

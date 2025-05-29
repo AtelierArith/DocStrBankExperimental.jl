@@ -1,0 +1,12 @@
+```julia
+OpenPopup(id::Integer)
+OpenPopup(
+    id::Integer,
+    popup_flags::Union{CImGui.lib.ImGuiPopupFlags_, Integer}
+)
+
+```
+
+Id overload to facilitate calling from nested stacks.
+
+[Upstream link](https://github.com/ocornut/imgui/blob/v1.91.8-docking/imgui.h#L784).

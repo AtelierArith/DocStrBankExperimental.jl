@@ -1,0 +1,5 @@
+```
+leftz(f, ω, I)
+```
+
+"left side" of a field (`[1:end-1]`) in z direction, masked with `ω`.

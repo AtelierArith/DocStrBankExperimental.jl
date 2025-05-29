@@ -1,0 +1,1 @@
+[`sc_array`](@ref) オブジェクトは、同じサイズの要素の動的配列を提供します。要素は0ベースのインデックスでアクセスされます。要素のアドレスは変更される可能性があります。配列の要素数 (== elem*count) は、sc*array*resize と sc*array*rewind によって変更できます。要素は sc*array*sort でソートできます。配列がソートされている場合、sc*array*bsearch で検索できます。優先度キューは pqueue*add と pqueue_pop (未テスト) で実装されています。

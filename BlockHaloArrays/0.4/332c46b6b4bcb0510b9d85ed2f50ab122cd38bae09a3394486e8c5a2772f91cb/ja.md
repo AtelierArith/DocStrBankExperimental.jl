@@ -1,0 +1,1 @@
+通常の配列からBlockHaloArrayを構築する

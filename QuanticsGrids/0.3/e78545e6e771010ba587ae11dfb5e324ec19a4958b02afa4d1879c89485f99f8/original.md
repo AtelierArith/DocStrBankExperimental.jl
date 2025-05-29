@@ -1,0 +1,1 @@
+The InherentDiscreteGrid struct represents a grid for inherently discrete data. The grid contains values at specific, equally spaced points, but these values do not represent discretized versions of continuous data. Instead, they represent individual data points that are inherently discrete. The linear size of the mesh is $base^R$, where $base$ defaults to 2.

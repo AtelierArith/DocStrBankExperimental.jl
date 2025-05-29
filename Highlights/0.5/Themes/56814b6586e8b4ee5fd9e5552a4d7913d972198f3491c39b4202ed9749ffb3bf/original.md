@@ -1,0 +1,16 @@
+A submodule that provides a selection of themes that can be used to colourise source code.
+
+  * [`AbstractTheme`](@ref)
+  * [`DefaultTheme`](@ref)
+  * [`EmacsTheme`](@ref)
+  * [`GitHubTheme`](@ref)
+  * [`MonokaiMiniTheme`](@ref)
+  * [`MonokaiTheme`](@ref)
+  * [`PygmentsTheme`](@ref)
+  * [`@S_str`](@ref)
+  * [`TangoTheme`](@ref)
+  * [`TracTheme`](@ref)
+  * [`VimTheme`](@ref)
+  * [`VisualStudioTheme`](@ref)
+  * [`XcodeTheme`](@ref)
+  * [`@theme`](@ref)

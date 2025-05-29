@@ -1,0 +1,1 @@
+Typedef for quadrant coordinates.

@@ -1,0 +1,1 @@
+Store for the messages of a GRIB file. Keeps track of the offset of the GRIB messages so they can be easily `seeked`. The `unique_headers` property gives all the different values for the keys in the GRIB file. 

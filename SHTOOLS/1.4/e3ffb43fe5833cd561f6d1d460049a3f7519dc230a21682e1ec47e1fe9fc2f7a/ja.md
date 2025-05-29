@@ -1,0 +1,5 @@
+```
+SHExpandGLQC(...)
+```
+
+[`SHExpandGLQ`](@ref) のエイリアス

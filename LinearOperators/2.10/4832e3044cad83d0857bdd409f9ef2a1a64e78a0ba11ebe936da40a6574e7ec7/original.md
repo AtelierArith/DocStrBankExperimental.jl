@@ -1,0 +1,1 @@
+Base type to represent a linear operator. The usual arithmetic operations may be applied to operators to combine or otherwise alter them. They can be combined with other operators, with matrices and with scalars. Operators may be transposed and conjugate-transposed using the usual Julia syntax.

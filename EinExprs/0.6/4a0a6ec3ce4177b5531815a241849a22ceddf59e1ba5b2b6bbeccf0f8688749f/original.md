@@ -1,0 +1,7 @@
+```
+FlopsScorer
+```
+
+# Keyword Arguments
+
+  * `weight`

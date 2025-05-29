@@ -1,0 +1,1 @@
+ChebExtended is an immutable struct that contains two fields: the extended oints of the Chebyshev polynomial and the domain over which they are located.  The extended points are the Chebyshev roots scaled so that the first and last points equal -1.0 and 1.0, respectively.

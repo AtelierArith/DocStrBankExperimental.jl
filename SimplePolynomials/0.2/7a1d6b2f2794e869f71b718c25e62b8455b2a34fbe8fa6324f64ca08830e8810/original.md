@@ -1,0 +1,1 @@
+`integerize(p::SimplePolynomial)` is useful when `p` has `Rational` coefficients all of whose denominators are `1`. In that case, `integerize(p)` returns a polynomial equal to the original, but with coefficients that are integers (or Gaussian integers). However, if any denominators are not `1`, the original polynomial is returned.

@@ -1,0 +1,11 @@
+```
+vtfindmin(f, A::AbstractArray, dims=:) -> (f(x), index)
+```
+
+Return the value and the index of the argument which minimizes `f` over the dimensions `dims`, which may be `::Int`, `::NTuple{M, Int} where {M}` or `::Colon`. Threaded.
+
+See also: [`vfindmin`](@ref)
+
+# Warning
+
+`NaN` values are not handled!

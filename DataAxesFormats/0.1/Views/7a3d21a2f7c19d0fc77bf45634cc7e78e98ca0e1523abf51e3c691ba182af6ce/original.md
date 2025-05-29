@@ -1,0 +1,1 @@
+Specify all the axes to expose from a view. We would have liked to specify this as `AbstractVector{<:ViewAxis}` but Julia in its infinite wisdom considers `["a", "b" => "c"]` to be a `Vector{Any}`, which would require literals to be annotated with the type.

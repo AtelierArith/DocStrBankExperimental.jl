@@ -1,0 +1,1 @@
+`calc_bus_injection`のアクティブパワーのみのバリアント

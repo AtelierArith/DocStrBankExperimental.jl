@@ -1,0 +1,1 @@
+Juliaの組み込みLinearAlgebra.schurソルバーを使用します。これはスパース行列をサポートしていません。

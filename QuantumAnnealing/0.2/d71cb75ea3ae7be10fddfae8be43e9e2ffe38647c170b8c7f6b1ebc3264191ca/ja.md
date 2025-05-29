@@ -1,0 +1,1 @@
+この関数はbqpjsonファイルを読み込み、イジングモデル辞書を生成します。   入力:   bqpjson::String - D-Waveハードウェアで実行可能なbqpjsonファイル（v1.0.0）   出力:   n - キュービットの数   ising_model::Dict{Tuple => Float64} - キュービットと結合の重みをマッピングする辞書   mapping:Dict{Int => Int} - bqpjsonファイル内のキュービットをシミュレーションキュービットにマッピング

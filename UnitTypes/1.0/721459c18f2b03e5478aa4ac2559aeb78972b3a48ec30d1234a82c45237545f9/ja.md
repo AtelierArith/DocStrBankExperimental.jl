@@ -1,0 +1,1 @@
+このUnitTypeは、単位sを持つUnitTypes.Secondの基本的な測定を表します。

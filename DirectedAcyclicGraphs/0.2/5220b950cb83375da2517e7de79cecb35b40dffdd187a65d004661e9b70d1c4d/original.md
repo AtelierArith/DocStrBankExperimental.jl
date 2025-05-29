@@ -1,0 +1,1 @@
+A trait hierarchy denoting types of `DAG` nodes `NodeType` defines an orthogonal type hierarchy of node types, so we can dispatch on node type regardless of the graph type. See @ref{https://docs.julialang.org/en/v1/manual/methods/#Trait-based-dispatch-1}

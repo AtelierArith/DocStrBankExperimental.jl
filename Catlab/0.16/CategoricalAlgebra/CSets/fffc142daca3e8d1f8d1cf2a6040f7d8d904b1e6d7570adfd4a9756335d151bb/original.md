@@ -1,0 +1,7 @@
+Transformation between attributed C-sets.
+
+Homomorphisms of attributed C-sets generalize homomorphisms of C-sets ([`CSetTransformation`](@ref)), which you should understand before reading this.
+
+A *homomorphism* of attributed C-sets with schema S: C ↛ A (a profunctor) is a natural transformation between the corresponding functors col(S) → Set, where col(S) is the collage of S. When the components on attribute types, indexed by objects of A, are all identity functions, the morphism is called *tight*; in general, it is called *loose*. With this terminology, acsets on a fixed schema are the objects of an ℳ-category (see `Catlab.Theories.MCategory`). Calling `ACSetTransformation` will construct a tight or loose morphism as appropriate, depending on which components are specified.
+
+Since every tight morphism can be considered a loose one, the distinction between tight and loose may seem a minor technicality, but it has important consequences because limits and colimits in a category depend as much on the morphisms as on the objects. In particular, limits and colimits of acsets differ greatly depending on whether they are taken in the category of acsets with tight morphisms or with loose morphisms. Tight morphisms suffice for many purposes, including most applications of colimits. However, when computing limits of acsets, loose morphisms are usually preferable. For more information about limits and colimits in these categories, see [`TightACSetTransformation`](@ref) and [`LooseACSetTransformation`](@ref).

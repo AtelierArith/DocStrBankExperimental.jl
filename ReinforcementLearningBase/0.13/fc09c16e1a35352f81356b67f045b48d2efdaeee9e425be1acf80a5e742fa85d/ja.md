@@ -1,0 +1,1 @@
+`FullActionSet()`のエイリアス

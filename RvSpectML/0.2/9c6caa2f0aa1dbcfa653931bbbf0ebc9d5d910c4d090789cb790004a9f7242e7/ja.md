@@ -1,0 +1,1 @@
+`calc_formal_rv_precission(spectrum, chunklist; smooth_factor)` 1つのスペクトルと対応するチャンクリストの期待されるRV不確実性を計算します。与えられた分散を持つ光子ノイズのみを仮定します。

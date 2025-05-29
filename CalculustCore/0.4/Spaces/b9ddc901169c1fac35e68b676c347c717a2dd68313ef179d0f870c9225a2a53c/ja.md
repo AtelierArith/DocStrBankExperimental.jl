@@ -1,0 +1,5 @@
+```
+transform(V::AbstractSpace)
+```
+
+物理空間とモーダル空間の間を遅延変換します。

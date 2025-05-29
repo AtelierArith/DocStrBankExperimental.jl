@@ -1,0 +1,5 @@
+```
+AddOFo <: AbstractNegAdduct
+```
+
+[M+OFo]-

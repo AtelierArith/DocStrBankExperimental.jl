@@ -1,0 +1,1 @@
+Displays text on right hand side of Pluto notebook. Optional `v_offset` allows shifting down (positive) or up (negative). Optional integer parameter `width` defaults to 300px. Often combined with `tip(md"text")`.

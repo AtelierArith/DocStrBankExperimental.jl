@@ -1,0 +1,3 @@
+```
+summarize(data) -> summary::String
+```

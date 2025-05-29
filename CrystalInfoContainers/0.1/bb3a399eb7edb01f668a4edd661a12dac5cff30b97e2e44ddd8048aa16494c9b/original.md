@@ -1,0 +1,1 @@
+A `DataSource`, when provided with a string referring to a data name from a namespace known to the data source, returns an array of values that are either `Native` (already Julia types) or `Text` (requiring interpretation to create Julia types).

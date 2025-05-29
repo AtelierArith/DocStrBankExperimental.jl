@@ -1,0 +1,5 @@
+```
+LinearMonotonicInterpolation
+```
+
+Simple linear interpolation.

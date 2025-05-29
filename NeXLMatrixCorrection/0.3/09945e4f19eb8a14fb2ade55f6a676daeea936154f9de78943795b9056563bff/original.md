@@ -1,0 +1,3 @@
+The `MultiZAF` structure optimizes the calculation of the matrix correction  for mutliple lines measured simultaneously from a single contiguous peak as represented by a single k-ratio (as is often the case with energy dispersive measurements.)  For example, when the potassium K line is measured by EDS,  one k-ratio is measured that corresponds to the K K-L2, K K-L3, K K-M2 &  K K-M3 transitions.  Most of the matrix correction calculation depends upon the shell the "K K" shell and only a small part depends on the exact  characteristic X-ray.  To optimize the calculation, the `ZAFCorrection`  object is calculated once for each `AtomicSubShell` and reused to calculated all the `CharXRay`s.
+
+DOn't construct MultiZAF objects directly; instead use `zafcorrection(...)`.

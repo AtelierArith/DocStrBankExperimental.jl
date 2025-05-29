@@ -1,0 +1,1 @@
+ACSetTransformation（sによって与えられる）の一部（推定されたiso）コンポーネントを反転します。

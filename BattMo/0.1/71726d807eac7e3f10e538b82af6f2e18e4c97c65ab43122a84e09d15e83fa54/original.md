@@ -1,0 +1,1 @@
+Standard CC-CV policy

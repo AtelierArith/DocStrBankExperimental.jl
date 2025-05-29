@@ -1,0 +1,1 @@
+DFGからVector{FactorSkeleton}としてスケルトンファクターを取得します。

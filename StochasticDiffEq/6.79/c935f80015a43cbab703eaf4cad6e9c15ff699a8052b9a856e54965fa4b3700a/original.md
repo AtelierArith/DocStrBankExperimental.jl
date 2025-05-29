@@ -1,0 +1,1 @@
+SOSRA: Nonstiff Method A stability-optimized adaptive SRA. Strong order 1.5 for additive Ito and Stratonovich SDEs with weak order 2. Can handle diagonal, non-diagonal, and scalar additive noise. Stable at high tolerances and robust to stiffness.

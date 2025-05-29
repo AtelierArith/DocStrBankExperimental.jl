@@ -1,0 +1,1 @@
+`BGR` is a variant of `RGB` with the opposite storage order.  Note that the constructor is still called in the order `BGR(r, g, b)`. This storage order is noteworthy because on little-endian machines, `BGRA` (with transparency) can be `reinterpret`ed to the `UInt32` color format used by libraries such as Cairo and OpenGL.

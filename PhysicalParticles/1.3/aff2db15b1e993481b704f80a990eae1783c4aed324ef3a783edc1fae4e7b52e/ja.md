@@ -1,0 +1,3 @@
+AbstractPoint
+
+PhysicalParticles.jlで定義された最上位の数学的ベクトル型です。組み込み型`AbstractVector`と区別するために名付けられました。

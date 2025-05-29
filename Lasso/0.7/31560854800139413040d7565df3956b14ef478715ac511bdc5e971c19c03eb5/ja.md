@@ -1,0 +1,1 @@
+RegularizationPath セグメントセレクタスーパタイプ

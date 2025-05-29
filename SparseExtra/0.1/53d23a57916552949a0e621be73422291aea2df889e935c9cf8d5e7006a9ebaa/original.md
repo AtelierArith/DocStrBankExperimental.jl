@@ -1,0 +1,3 @@
+```
+Work structure for `dijkstra`
+```

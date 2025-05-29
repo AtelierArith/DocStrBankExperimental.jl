@@ -1,0 +1,1 @@
+すべての多角形のためのAbstractPolygonTrait型。

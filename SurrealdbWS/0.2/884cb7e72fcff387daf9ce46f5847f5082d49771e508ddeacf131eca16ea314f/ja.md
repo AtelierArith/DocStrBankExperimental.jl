@@ -1,0 +1,3 @@
+```jldoctest
+julia> invalidate(db)
+```

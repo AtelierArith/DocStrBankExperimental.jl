@@ -1,0 +1,1 @@
+Meet (intersection) of subobjects.

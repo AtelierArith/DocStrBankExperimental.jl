@@ -1,0 +1,1 @@
+`ImGuiSettingsHandler`のデストラクタ

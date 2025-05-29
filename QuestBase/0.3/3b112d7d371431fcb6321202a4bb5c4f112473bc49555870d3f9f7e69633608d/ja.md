@@ -1,0 +1,1 @@
+`HarmonicVariable`のシンボルを返します。

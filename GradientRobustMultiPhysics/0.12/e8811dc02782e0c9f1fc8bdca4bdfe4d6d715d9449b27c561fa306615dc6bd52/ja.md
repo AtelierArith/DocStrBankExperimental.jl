@@ -1,0 +1,1 @@
+DifferentialEquations.jlで使用するための質量行列を取得します。

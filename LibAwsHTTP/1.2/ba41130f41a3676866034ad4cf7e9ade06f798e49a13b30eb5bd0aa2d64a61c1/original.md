@@ -1,0 +1,1 @@
+Function to invoke when a message transformation completes. This function MUST be invoked or the application will soft-lock. `message` and `complete_ctx` must be the same pointers provided to the [`aws_http_message_transform_fn`](@ref). `error_code` should should be AWS_ERROR_SUCCESS if transformation was successful, otherwise pass a different AWS_ERROR_X value.

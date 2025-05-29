@@ -1,0 +1,1 @@
+A ComparisonDomain is a domain that is implicitly defined by two Fourier series. Example: if binop is (x,y) -> x > y, then the Fourier domain is the domain where the first given Fourier series is greater than the second.

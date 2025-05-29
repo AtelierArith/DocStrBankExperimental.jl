@@ -1,0 +1,1 @@
+Builds the design matrix X for predicting covar in direction projdir   dmr version   inz=[1] and testrank=false always for dmr, so variables are ignored and only here for convinence     of unified calling function

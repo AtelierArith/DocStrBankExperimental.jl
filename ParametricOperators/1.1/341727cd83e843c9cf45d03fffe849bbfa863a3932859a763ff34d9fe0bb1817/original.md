@@ -1,0 +1,1 @@
+Computes "axes" of ranges which, if `Iterators.product` was applied, would give the N-dimensional range corresponding to each subarray in a cartesian topology. Store as axes to avoid allocating a lot of memory in high processor count scenarios (e.g. O(3*10^3) vs O(10^9) space)

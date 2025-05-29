@@ -1,0 +1,5 @@
+```
+AbstractParticle
+```
+
+Particle supertype.

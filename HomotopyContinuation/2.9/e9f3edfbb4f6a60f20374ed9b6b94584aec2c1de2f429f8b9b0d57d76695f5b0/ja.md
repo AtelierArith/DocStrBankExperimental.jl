@@ -1,0 +1,5 @@
+```
+AbstractPathTracker
+```
+
+パストラッカーのスーパタイプ。

@@ -1,0 +1,1 @@
+given a basic network data dict, returns a sparse integer valued incidence matrix with one row for each branch and one column for each bus in the network. In each branch row a +1 is used to indicate the *from* bus and -1 is used to indicate *to* bus.

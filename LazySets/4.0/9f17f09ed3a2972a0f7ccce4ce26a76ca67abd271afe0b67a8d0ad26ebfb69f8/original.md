@@ -1,0 +1,5 @@
+```
+⊡
+```
+
+Alias for `SymmetricIntervalHull`.

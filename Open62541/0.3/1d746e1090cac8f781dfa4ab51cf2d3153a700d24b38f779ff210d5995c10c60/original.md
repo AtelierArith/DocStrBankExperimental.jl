@@ -1,0 +1,6 @@
+```
+JUA_Client_connectUsername(client::JUA_Client, endpointurl::AbstractString, 
+    username::AbstractString, password::AbstractString)::UA_StatusCode
+```
+
+connects the `client` to the server with endpoint URL `endpointurl` and supplies `username` and `password` as login credentials.

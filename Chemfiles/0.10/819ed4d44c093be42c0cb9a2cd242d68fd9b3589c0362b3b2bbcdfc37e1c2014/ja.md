@@ -1,0 +1,1 @@
+ChemfilesのフレームからAtomsBase `AbstractSystem`を構築します。

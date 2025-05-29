@@ -1,0 +1,10 @@
+```
+hom(
+  T::TorQuadModule,
+  S::TorQuadModule,
+  M::ZZMatrix;
+  check::Bool=true,
+) -> TorQuadModuleMap
+```
+
+2つのトーション二次モジュール `T` と `S`、および `T` と `S` の基礎となる群の間のアーベル群準同型を定義する行列 `M` が与えられたとき、`T` と `S` の間の対応するアーベル群準同型を返します。`check` が `true` に設定されている場合、関数は `M` が `T` と `S` の間の有限アーベル群の準同型を定義しているかどうかをチェックします。

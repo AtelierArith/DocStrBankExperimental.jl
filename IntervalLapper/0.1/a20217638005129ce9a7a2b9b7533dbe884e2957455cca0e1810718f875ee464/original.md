@@ -1,0 +1,1 @@
+Find the union and the intersect of two lapper objects. Union: The set of positions found in both lappers Intersect: The number of positions where both lappers intersect. Note that a position only ounts one time, multiple Intervals covering the same position don't add up. TODO: make this and other funcitons more generic an not depend on T if they don't have to 

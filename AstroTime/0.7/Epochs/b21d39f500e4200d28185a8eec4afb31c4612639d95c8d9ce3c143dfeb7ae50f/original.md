@@ -1,0 +1,19 @@
+```
+TCGEpoch(jd1::T, jd2::T=zero(T); origin=:j2000) where T<:AstroPeriod
+```
+
+Construct a TCGEpoch from a Julian date (optionally split into `jd1` and `jd2`). `origin` determines the variant of Julian date that is used. Possible values are:
+
+  * `:j2000`: J2000 Julian date, starts at `2000-01-01T12:00`
+  * `:julian`: Julian date, starts at `-4712-01-01T12:00`
+  * `:modified_julian`: Modified Julian date, starts at `1858-11-17T00:00`
+
+### Examples
+
+```jldoctest; setup = :(using AstroTime)
+julia> TCGEpoch(0.0days, 0.5days)
+2000-01-02T00:00:00.000 TCG
+
+julia> TCGEpoch(2.451545e6days, origin=:julian)
+2000-01-01T12:00:00.000 TCG
+```

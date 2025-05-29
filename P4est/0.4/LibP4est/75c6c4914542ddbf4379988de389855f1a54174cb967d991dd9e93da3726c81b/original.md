@@ -1,0 +1,15 @@
+```
+p4est_find_lower_bound(array, q, guess)
+```
+
+Find the lowest position tq in a quadrant array such that tq >= q.
+
+### Returns
+
+Returns the id of the matching quadrant or -1 if array < q or the array is empty.
+
+### Prototype
+
+```c
+ssize_t p4est_find_lower_bound (sc_array_t * array, const p4est_quadrant_t * q, size_t guess);
+```

@@ -1,0 +1,53 @@
+```
+get_insider_holders(quoteSummary::JSON3.Object)
+```
+
+引用概要からインサイダーの保有株を取得します。
+
+## 引数
+
+`get_quoteSummary(symbol::String; item=nothing,throw_error=false)`から返された`JSON3.Object`または`AbstractString`型のティッカーシンボルのいずれかである必要があります。ティッカーシンボルが提供された場合、最初に`get_quoteSummary(symbol::String)`が呼び出されます。
+
+# 例
+
+```julia-repl
+julia> get_quoteSummary("AAPL") |> get_insider_holders
+OrderedDict{String, Vector} with 8 entries:
+    "name"                 => ["ADAMS KATHERINE L", "BELL JAMES A", "JUNG ANDREA", "KONDO C…
+    "relation"             => Union{Missing, String}["General Counsel", "Director", "Direct…  
+    "description"          => Union{Missing, String}["Sale", "Stock Gift", "Conversion of E…  
+    "lastestTransDate"     => Union{Missing, DateTime}[DateTime("2022-10-03T00:00:00"), Dat…  
+    "positionDirect"       => Union{Missing, Int64}[427334, 34990, 139594, 31505, 4588720, …  
+    "positionDirectDate"   => Union{Missing, DateTime}[DateTime("2022-10-03T00:00:00"), Dat…  
+    "positionIndirect"     => Union{Missing, Int64}[missing, missing, missing, missing, mis…  
+    "positionIndirectDate" => Union{Missing, DateTime}[missing, missing, missing, missing, …
+
+julia> get_insider_holders("AAPL")
+OrderedDict{String, Vector} with 8 entries:
+    "name"                 => ["ADAMS KATHERINE L", "BELL JAMES A", "JUNG ANDREA", "KONDO C…
+    "relation"             => Union{Missing, String}["General Counsel", "Director", "Direct…  
+    "description"          => Union{Missing, String}["Sale", "Stock Gift", "Conversion of E…  
+    "lastestTransDate"     => Union{Missing, DateTime}[DateTime("2022-10-03T00:00:00"), Dat…  
+    "positionDirect"       => Union{Missing, Int64}[427334, 34990, 139594, 31505, 4588720, …  
+    "positionDirectDate"   => Union{Missing, DateTime}[DateTime("2022-10-03T00:00:00"), Dat…  
+    "positionIndirect"     => Union{Missing, Int64}[missing, missing, missing, missing, mis…  
+    "positionIndirectDate" => Union{Missing, DateTime}[missing, missing, missing, missing, …
+
+julia> using DataFrames
+julia> get_insider_holders("AAPL") |> DataFrame
+10×8 DataFrame
+ Row │ name                relation                 description                        l ⋯
+     │ String              String?                  String?                            D ⋯
+─────┼────────────────────────────────────────────────────────────────────────────────────
+   1 │ ADAMS KATHERINE L   General Counsel          Sale                               2 ⋯
+   2 │ BELL JAMES A        Director                 Stock Gift                         2  
+   3 │ JUNG ANDREA         Director                 Conversion of Exercise of deriva…  2  
+   4 │ KONDO CHRISTOPHER   Officer                  Sale                               2  
+   5 │ LEVINSON ARTHUR D   Director                 Sale                               2 ⋯
+   6 │ MAESTRI LUCA        Chief Financial Officer  Sale                               2  
+   7 │ O'BRIEN DEIRDRE     Officer                  Sale                               2  
+   8 │ SUGAR RONALD D      Director                 Conversion of Exercise of deriva…  2  
+   9 │ WAGNER SUSAN L      Director                 Conversion of Exercise of deriva…  2 ⋯
+  10 │ WILLIAMS JEFFREY E  Chief Operating Officer  Conversion of Exercise of deriva…  2  
+                                                                         5 columns omitted
+```

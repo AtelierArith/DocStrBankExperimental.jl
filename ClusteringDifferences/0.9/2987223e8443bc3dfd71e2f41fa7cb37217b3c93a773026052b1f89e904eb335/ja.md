@@ -1,0 +1,5 @@
+```
+AbstractClustering
+```
+
+クラスタリングのスーパークラス。

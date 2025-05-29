@@ -1,0 +1,1 @@
+予測モデルとして、Chain、Dense、またはカスタムPredictiveModelオブジェクトを設定します。

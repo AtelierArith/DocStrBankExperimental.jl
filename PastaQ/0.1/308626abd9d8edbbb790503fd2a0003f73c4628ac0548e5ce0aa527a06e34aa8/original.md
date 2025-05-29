@@ -1,0 +1,20 @@
+```
+randomcircuit(n::Int; kwargs...)
+```
+
+One-dimensional random quantum circuit:
+
+```julia
+randomcircuit(4; depth = 2, twoqubitgates = "CX", onequbitgates = "Ry")
+# [("CX", (1, 2)),
+#  ("CX", (3, 4)),
+#  ("Ry", 1, (θ = 0.52446,)),
+#  ("Ry", 2, (θ = 3.01059,)),
+#  ("Ry", 3, (θ = 0.25144,)),
+#  ("Ry", 4, (θ = 1.93356,))]
+# [("CX", (2, 3)),
+#  ("Ry", 1, (θ = 2.15460,)),
+#  ("Ry", 2, (θ = 2.52480,)),
+#  ("Ry", 3, (θ = 1.85756,)),
+#  ("Ry", 4, (θ = 0.02405,))]
+```

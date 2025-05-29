@@ -1,0 +1,1 @@
+given a basic network data dict, returns a sparse real valued susceptance matrix with one row and column for each bus in the network. This susceptance matrix reflects the imaginary part of an admittance matrix that only considers the branch series impedance.

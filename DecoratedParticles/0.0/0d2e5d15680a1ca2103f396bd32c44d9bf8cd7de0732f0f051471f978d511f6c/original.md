@@ -1,0 +1,1 @@
+`struct State` the main type for states of input variables (particles).  This type is intended only for storing of information but no arithmetic  should be performed on it. For the latter, we have the DState.

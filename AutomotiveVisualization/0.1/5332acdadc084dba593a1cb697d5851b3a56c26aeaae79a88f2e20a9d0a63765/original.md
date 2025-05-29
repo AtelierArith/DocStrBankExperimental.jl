@@ -1,0 +1,1 @@
+A drawable 'fancy' svg image of a race car. The car is placed at the position of `entity` and the width and length are scaled accordingly. The color of the car can be specified using the `color` keyword.

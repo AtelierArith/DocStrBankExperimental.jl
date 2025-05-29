@@ -1,0 +1,3 @@
+```
+SoundSpeed <: DimensionalPhysicalQuantity
+```

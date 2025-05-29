@@ -1,0 +1,1 @@
+`AbstractUtilityStyle`は、すべてのプレイヤーが同じ報酬を得る環境のためのものです。

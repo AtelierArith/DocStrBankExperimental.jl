@@ -1,0 +1,1 @@
+takes a list of observations of assignments represented as a DataFrame or a set of data samples (without :potential), takes the unique assignments, and estimates the associated probability of each assignment based on its frequency of occurrence.

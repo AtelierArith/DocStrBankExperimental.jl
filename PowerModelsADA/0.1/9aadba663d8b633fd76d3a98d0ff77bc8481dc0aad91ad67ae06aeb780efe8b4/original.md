@@ -1,0 +1,1 @@
+initialize shared variable dictionary

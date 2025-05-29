@@ -1,0 +1,1 @@
+Single layer pouch cell utility function Find the face boundary of the grid in a given Cartesian direction (dim) and direction (true of false correpondings to "left" and "right"). It is used to obtain the external coupling for the grid

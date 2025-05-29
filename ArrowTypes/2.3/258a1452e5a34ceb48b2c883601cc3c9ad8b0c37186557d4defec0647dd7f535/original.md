@@ -1,0 +1,1 @@
+ListKind data are stored in two separate buffers; one buffer contains all the original data elements flattened into one long buffer; the 2nd buffer contains an offset into the 1st buffer for how many elements make up the original array element

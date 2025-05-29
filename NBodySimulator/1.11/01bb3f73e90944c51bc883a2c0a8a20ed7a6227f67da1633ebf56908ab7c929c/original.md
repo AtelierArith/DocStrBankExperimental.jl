@@ -1,0 +1,1 @@
+Structure that represents systems with a custom set of potentials. In other words, the user determines the ways in which the particles are allowed to interact. One can pass the bodies and parameters of interaction potentials into that system. IF the potential parameters are not set, the particles will move at constant velocities without acceleration during the simulation.

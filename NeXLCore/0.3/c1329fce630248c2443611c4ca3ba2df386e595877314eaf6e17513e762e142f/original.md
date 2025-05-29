@@ -1,0 +1,1 @@
+@article{castellano2004analytical,   title={Analytical model for the bremsstrahlung spectrum in the 0.25–20 keV photon energy range},   author={Castellano, Gustavo and Osan, Janos and Trincavelli, Jorge},   journal={Spectrochimica Acta Part B: Atomic Spectroscopy},   volume={59},   number={3},   pages={313–319},   year={2004},   publisher={Elsevier} }

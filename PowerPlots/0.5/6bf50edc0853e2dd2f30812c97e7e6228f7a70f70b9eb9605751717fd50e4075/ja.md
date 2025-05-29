@@ -1,0 +1,3 @@
+PowerModelsDataFrame
+
+各コンポーネントタイプのデータフレームを含む構造体。

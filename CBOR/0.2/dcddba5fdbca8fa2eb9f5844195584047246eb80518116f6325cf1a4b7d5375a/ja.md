@@ -1,0 +1,1 @@
+Any Julia type get's serialized as Tag 27 Tag             27 Data Item       array [typename, constructargs...] Semantics       Serialised language-independent object with type name and constructor arguments Reference       http://cbor.schmorp.de/generic-object Contact         Marc A. Lehmann <cbor@schmorp.de>

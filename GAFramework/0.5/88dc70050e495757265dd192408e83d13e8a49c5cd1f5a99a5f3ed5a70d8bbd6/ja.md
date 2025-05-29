@@ -1,0 +1,1 @@
+GAを特定のGAModelで作成するには、このモジュールをインポートし、次のインターフェース関数を持つGAModelを作成します：     fitness（デフォルトあり）     genauxga（デフォルトあり）     crossover!（デフォルトなし）     mutation!（デフォルトとして恒等関数あり）     selection（デフォルトあり）     randcreature（デフォルトなし）     printfitness（デフォルトあり）     savecreature（デフォルトあり）     stopcondition（デフォルトあり）

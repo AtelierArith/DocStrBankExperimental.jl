@@ -1,0 +1,1 @@
+`ImGuiMenuColumns`のデストラクタ

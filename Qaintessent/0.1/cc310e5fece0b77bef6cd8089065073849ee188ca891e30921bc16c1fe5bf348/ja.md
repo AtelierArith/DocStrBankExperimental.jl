@@ -1,0 +1,1 @@
+EntanglementYYGateによる密度行列の調整された共役

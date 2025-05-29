@@ -1,0 +1,5 @@
+```
+WDiGraph
+```
+
+Alias for `SimpleWeightedDiGraph`.

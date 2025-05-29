@@ -1,0 +1,1 @@
+`ImGuiMultiSelectTempData`のデストラクタ

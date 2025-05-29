@@ -1,0 +1,3 @@
+```
+digitalRead8(pin)
+```

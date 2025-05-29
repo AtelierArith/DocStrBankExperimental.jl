@@ -1,0 +1,1 @@
+Supertype of score model.

@@ -1,0 +1,1 @@
+Outer constructor for `CartesianStateWithSTM`.

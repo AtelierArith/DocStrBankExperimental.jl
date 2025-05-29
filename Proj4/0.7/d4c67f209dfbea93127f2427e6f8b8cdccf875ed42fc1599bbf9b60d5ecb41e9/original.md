@@ -1,0 +1,1 @@
+Cartographic projection type

@@ -1,0 +1,3 @@
+ソース: FMISpec2.0.2[p.19-22]: 2.1.5 FMUインスタンスの作成、破棄およびロギング
+
+この構造体は、FMUによって使用される環境が提供する関数へのポインタを含んでいます。fmi2Instantiate(..)とfmi2Terminate(..)の呼び出しの間にこれらの関数を変更することは許可されていません。さらに、環境へのポインタ（componentEnvironment）が提供されており、ロガー関数に渡す必要があります。これにより、ロガー関数は環境からのデータを利用できるようになります。たとえば、valueReferenceを文字列にマッピングすることができます。fmi2Componentがロガーで必要な場合は、引数componentEnvironmentを介して渡す必要があります。引数componentEnvironmentはヌルポインタである可能性があります。componentEnvironmentポインタは、stepFinished(..)関数にも渡され、環境がstepFinished(..)を呼び出したスレーブを特定するための効率的な方法を提供できるようにします。

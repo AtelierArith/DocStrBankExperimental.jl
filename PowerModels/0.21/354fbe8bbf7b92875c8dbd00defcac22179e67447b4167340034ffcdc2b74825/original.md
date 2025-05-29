@@ -1,0 +1,1 @@
+enforces static switch constraints

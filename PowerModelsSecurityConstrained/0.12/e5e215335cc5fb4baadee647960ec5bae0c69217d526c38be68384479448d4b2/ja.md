@@ -1,0 +1,1 @@
+2つのネットワークの電圧 voltage_magnitude をリンクします。

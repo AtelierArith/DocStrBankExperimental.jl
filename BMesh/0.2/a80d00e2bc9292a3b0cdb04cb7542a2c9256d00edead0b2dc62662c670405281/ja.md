@@ -1,0 +1,3 @@
+回転
+
+Rotation2DおよびRotation3Dのスーパタイプ

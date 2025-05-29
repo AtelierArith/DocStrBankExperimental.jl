@@ -1,0 +1,5 @@
+```
+SequentialAggregator(aggfun)
+```
+
+Sequential aggregation.

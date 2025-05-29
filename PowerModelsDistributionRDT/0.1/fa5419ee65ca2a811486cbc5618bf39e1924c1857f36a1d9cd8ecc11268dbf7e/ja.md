@@ -1,0 +1,1 @@
+"     constraint*mc*power*balance*shed(pm::AbstractUnbalancedPowerModel, i::Int; nw::Int=nw*id*default)::Nothing KCL制約のテンプレート関数で、負荷シェッド問題に使用されます。これはPowerModelsDistribution.constraint*mc*power*balance*shedに基づいており、インラインスイッチ、branch*ne、およびswitch*neのバランスを追加します。"

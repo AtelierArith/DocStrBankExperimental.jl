@@ -1,0 +1,1 @@
+すべてのマルチラインストリングのためのAbstractMultiLineStringTrait型。

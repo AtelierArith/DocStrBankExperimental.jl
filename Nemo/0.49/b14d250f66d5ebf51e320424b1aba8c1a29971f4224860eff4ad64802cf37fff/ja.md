@@ -1,0 +1,16 @@
+```
+root(x::ZZRingElem, n::Int; check::Bool=true)
+```
+
+$$
+x
+$$
+
+の$n$乗根を返します。$n > 0$であり、$n$が偶数の場合は$x \geq 0$である必要があります。デフォルトでは、関数は入力が完全な$n$乗であるかどうかをテストし、そうでない場合は例外を発生させます。`check=false`の場合、このチェックは省略されます。
+
+# 例
+
+```jldoctest
+julia> root(ZZ(27), 3; check=true)
+3
+```

@@ -1,0 +1,1 @@
+最大流関数にBoykov-Kolmogorovアルゴリズムを使用させます。

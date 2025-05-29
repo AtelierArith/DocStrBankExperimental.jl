@@ -1,0 +1,3 @@
+TestDummyComponentRevision <: ComponentRevision
+
+バイテンポラルエンティティの契約コンポーネントのリビジョン

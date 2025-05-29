@@ -1,0 +1,1 @@
+≧, \geqq[tab]`or`Ge`

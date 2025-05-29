@@ -1,0 +1,1 @@
+Approximates unnormalised posterior with Gaussian distribution

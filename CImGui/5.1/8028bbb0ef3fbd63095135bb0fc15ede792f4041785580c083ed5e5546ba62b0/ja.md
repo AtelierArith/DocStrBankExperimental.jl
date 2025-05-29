@@ -1,0 +1,1 @@
+`ImGuiTextFilter`のデストラクタ

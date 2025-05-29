@@ -1,0 +1,3 @@
+```
+symmetric_gradient(f)
+```

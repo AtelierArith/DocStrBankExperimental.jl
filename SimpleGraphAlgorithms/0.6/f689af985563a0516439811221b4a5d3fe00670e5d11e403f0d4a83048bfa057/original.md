@@ -1,0 +1,1 @@
+`connectivity(G)` returns the (vertex) connectivity of `G`, i.e., the minimum size of a vertex cut set. If `G` is a complete graph with `n` vertices, the connectivity is `n-1` (or `0` for the empty graph).

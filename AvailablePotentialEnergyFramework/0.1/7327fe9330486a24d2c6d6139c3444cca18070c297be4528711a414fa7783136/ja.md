@@ -1,0 +1,1 @@
+get*buoyancy(temperature*anomaly,mean_temperature)  温度異常と温度プロファイルから浮力を計算します。これはRamirezReyesとYang 2021に従っています。

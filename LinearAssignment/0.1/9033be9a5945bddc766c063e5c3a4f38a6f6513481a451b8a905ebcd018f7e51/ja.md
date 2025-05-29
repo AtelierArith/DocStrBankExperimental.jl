@@ -1,0 +1,5 @@
+```
+isfeasible(L::LAWorkspaceCSC) -> Bool
+```
+
+割り当ての実現可能性を返します。

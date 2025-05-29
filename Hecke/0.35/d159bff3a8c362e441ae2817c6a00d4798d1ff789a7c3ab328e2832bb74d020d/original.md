@@ -1,0 +1,5 @@
+```
+trace
+```
+
+Alias for `tr`.

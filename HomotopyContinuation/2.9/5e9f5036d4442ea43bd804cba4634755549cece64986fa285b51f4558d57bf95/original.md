@@ -1,0 +1,5 @@
+```
+distinct_certificates(R::CertificationResult)
+```
+
+Obtain the certificates corresponding to the determined distinct solution intervals.

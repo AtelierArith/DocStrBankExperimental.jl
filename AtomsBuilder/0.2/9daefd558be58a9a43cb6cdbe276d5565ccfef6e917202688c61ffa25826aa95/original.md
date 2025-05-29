@@ -1,0 +1,1 @@
+`bulk(sym)` : generates a `FlexibleSystem` unit cell for a bulk  crystal structure. If `sym` is a chemical symbol then the phase and   lattice constant are taken from a database that is consistent with ASE.  If `sym` is one of `[:fcc, :bcc, :diamond, :hcp]` then one needs to  specify the kwargs `a` or `c` to determine the lattice constants. 

@@ -1,0 +1,1 @@
+`StructACSet`は、スキーマとattrtypesに割り当てられた型が型内で利用可能なSimpleACSetです。

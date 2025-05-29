@@ -1,0 +1,1 @@
+Inversion recovery - CPMG pulse sequence for 2D relaxation experiments (T1-T2). The direct dimension is the T2, and the indirect dimension is the T1 acquisition times. It can be used wherever the `seq` argument is required.

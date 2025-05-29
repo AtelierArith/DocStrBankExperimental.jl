@@ -1,0 +1,1 @@
+Vertices in a graph.

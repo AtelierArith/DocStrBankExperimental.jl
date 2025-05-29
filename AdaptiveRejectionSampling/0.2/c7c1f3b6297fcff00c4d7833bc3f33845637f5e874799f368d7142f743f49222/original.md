@@ -1,0 +1,1 @@
+A log conconcave function is majorized with a piecewise envelop, which on the original scale is piecewise exponential. As the resulting extremely precise envelop adapts, the rejection rate dramatically decreases.

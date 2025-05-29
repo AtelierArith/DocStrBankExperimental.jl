@@ -1,0 +1,5 @@
+```
+All()
+```
+
+Select all columns.

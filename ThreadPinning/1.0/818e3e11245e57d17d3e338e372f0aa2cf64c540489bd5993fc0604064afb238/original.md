@@ -1,0 +1,1 @@
+On rank 0, this function returns a `Dict{Int, String}` where the keys are the MPI rank ids and the values are the hostnames of the nodes that are currently hosting the respective MPI ranks. Returns `nothing` on all other ranks.

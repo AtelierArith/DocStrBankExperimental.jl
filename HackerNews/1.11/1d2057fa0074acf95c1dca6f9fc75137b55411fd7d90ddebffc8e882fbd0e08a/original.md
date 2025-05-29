@@ -1,0 +1,1 @@
+HackerNews initializer composite type

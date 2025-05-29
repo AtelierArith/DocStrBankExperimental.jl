@@ -1,0 +1,5 @@
+Control the position of Sun in the environment
+
+Sun's position is computed using the coordinates specified in `OriginGeopoint` in settings for the date-time specified in the argument, else if the string is empty, current date & time is used
+
+Args:     is*enabled (bool) True to enable time-of-day effect, false to reset the position to original     start*datetime (str, optional) Date & Time in %Y-%m-%d %H:%M:%S format, e.g. `2018-02-12 15:20:00`     is*start*datetime*dst (bool, optional) True to adjust for Daylight Savings Time     celestial*clock*speed (float, optional) Run celestial clock faster || slower than simulation clock                                             E.g. Value 100 means for every 1 second of simulation clock, Sun's position is advanced by 100 seconds                                             so Sun will move in sky much faster     update*interval*secs (float, optional) Interval to update the Sun's position     move*sun (bool, optional) Whether || not to move the Sun

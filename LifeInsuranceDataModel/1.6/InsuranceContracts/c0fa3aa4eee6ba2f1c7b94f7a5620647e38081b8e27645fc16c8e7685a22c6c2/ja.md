@@ -1,0 +1,3 @@
+ContractPartnerRefRevision
+
+契約のパートナー参照の改訂

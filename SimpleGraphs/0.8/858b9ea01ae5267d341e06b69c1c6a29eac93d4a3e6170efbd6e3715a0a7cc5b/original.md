@@ -1,0 +1,1 @@
+`deg_hist(G)` gives a tally of how many vertices of each degree are present in the graph. Because Julia arrays are 1-based, the indexing is a bit off. Specifically, entry `k` in the returned array is the number of vertices of degree `k-1`.

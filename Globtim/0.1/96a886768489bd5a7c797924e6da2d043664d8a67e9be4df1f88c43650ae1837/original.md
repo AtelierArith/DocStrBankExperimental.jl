@@ -1,0 +1,1 @@
+Constructor(T, degree) takes a test input and a starting degree and computes the polynomial approximant satisfying that tolerance.  If GN, the number of samples (per dimension), is specified in the test input `T`, then we only compute the polynomial approximant for that number of samples per coordinate axis.

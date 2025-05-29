@@ -1,0 +1,5 @@
+```
+sharp()
+```
+
+[`SharpDesign()`](@ref) のエイリアスです。

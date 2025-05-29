@@ -1,0 +1,1 @@
+Create energy history plot.

@@ -1,0 +1,1 @@
+`UserMessageWithImages`を1つ以上の画像で構築します。画像はURLまたはローカルパスのいずれかです。

@@ -1,0 +1,1 @@
+HackerNews 初期化子合成型

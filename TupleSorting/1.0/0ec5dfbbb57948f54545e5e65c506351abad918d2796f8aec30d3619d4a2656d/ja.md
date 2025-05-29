@@ -1,0 +1,1 @@
+`sorted(col, alg::Base.Sort.Algorithm, ord::Base.Order.Ordering)` は、アルゴリズム `alg` と順序 `ord` に従ってソートされたコレクション `col` のコピーを返します。`alg` と `ord` はオプションであり、`alg` のデフォルトは `StaticLengthSortStable()`（安定したマージソート）で、`ord` のデフォルトは `Base.Order.Forward`（`isless` に基づくデフォルトの順序）です。

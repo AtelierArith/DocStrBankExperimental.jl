@@ -1,0 +1,1 @@
+Type `SafeFlat` indicates that *flat* boundary conditions hold.  These conditions as similar to the ones assumed by `Flat` conditions but are safer because they account for possible integer overflows when converting coordinates to indices.  As a consequence, applying `SafeFlat` boundary conditions is slower than applying `Safe` boundary conditions.

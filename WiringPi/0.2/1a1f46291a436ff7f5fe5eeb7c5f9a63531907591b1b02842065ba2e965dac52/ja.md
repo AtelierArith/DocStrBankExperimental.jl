@@ -1,0 +1,3 @@
+```
+waitForInterrupt(pin, mS)
+```

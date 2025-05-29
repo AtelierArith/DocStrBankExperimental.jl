@@ -1,0 +1,1 @@
+CausalLoopPolは、エッジeの極性を返します。

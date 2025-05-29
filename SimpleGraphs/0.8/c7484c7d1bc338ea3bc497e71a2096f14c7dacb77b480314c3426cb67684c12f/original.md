@@ -1,0 +1,1 @@
+`laplace(G)` returns the Laplacian matrix of `G`. This is the adjacency matrix minus the (diagonal) degree matrix. See `adjacency` to understand how vertices correspond to rows/columns of the resulting matrix.

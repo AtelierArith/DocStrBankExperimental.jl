@@ -1,0 +1,1 @@
+`ImDrawListSharedData`のデストラクタ

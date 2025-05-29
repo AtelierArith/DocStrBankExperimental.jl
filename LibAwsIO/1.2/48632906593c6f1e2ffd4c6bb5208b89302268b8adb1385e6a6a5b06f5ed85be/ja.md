@@ -1,0 +1,1 @@
+ホストのアドレスが解決された後に呼び出されます。host*addressesの型は構造体[`aws*host*address`](@ref)（値渡し）です。呼び出し元はこのメモリを所有しておらず、後で使用する予定がある場合は、この関数から戻る前にホストアドレスをコピーする必要があります。便利のために、[`aws*host*address*copy`](@ref)()および[`aws*host*address*clean*up`](@ref)()関数を提供しています。

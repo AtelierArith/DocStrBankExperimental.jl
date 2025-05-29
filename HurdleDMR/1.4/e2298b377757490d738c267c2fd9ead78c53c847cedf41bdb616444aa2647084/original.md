@@ -1,0 +1,1 @@
+srproj for hurdle dmr takes two coefficent matrices coefspos, coefszero, and a two specific directions and returns an n-by-4 matrix Z = [zpos zzero m l]. dirpos = 0 omits positive counts projections and dirzero = 0 omits zero counts projections. Setting any of these to nothing will return projections in all directions.

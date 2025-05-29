@@ -1,0 +1,1 @@
+LasHeaderからNamedTupleとしてバウンディングボックスを取得する

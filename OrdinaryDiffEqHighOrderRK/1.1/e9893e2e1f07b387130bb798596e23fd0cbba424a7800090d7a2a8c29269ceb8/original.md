@@ -1,0 +1,17 @@
+```julia
+DP8(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
+      step_limiter! = OrdinaryDiffEq.trivial_limiter!,
+      thread = OrdinaryDiffEq.False())
+```
+
+Explicit Runge-Kutta Method.  Hairer's 8/5/3 adaption of the Dormand-Prince Runge-Kutta method. (7th order interpolant).
+
+### Keyword Arguments
+
+  * `stage_limiter!`: function of the form `limiter!(u, integrator, p, t)`
+  * `step_limiter!`: function of the form `limiter!(u, integrator, p, t)`
+  * `thread`: determines whether internal broadcasting on appropriate CPU arrays should be serial (`thread = OrdinaryDiffEq.False()`) or use multiple threads (`thread = OrdinaryDiffEq.True()`) when Julia is started with multiple threads.
+
+## References
+
+E. Hairer, S.P. Norsett, G. Wanner, (1993) Solving Ordinary Differential Equations I.     Nonstiff Problems. 2nd Edition. Springer Series in Computational Mathematics,     Springer-Verlag.

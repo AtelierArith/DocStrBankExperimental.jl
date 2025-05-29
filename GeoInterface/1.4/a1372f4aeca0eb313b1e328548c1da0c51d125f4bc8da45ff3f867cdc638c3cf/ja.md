@@ -1,0 +1,1 @@
+すべてのマルチポイントのためのAbstractMultiPointTrait型。

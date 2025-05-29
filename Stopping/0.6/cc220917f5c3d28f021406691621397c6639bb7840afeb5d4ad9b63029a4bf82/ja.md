@@ -1,0 +1,3 @@
+AbstractStopping
+
+抽象型。特化された停止が実装される場合、それらはAbstractStoppingのサブタイプである必要があります。

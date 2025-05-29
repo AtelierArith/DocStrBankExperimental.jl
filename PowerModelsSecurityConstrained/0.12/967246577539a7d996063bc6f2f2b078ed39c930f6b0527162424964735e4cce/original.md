@@ -1,0 +1,1 @@
+An OPF formulation conforming to the ARPA-e GOC Challenge 1 specification. Power balance are strictly enforced and the branch flow violations are penalized based on a conservative linear approximation of the formulation's flow violation penalty specification.

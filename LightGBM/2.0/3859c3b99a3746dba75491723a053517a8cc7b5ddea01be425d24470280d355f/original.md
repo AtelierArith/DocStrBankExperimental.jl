@@ -1,0 +1,16 @@
+```
+cv(estimator, X, y, splits; [verbosity = 1])
+```
+
+Cross-validate the `estimator` with features data `X` and label `y`. The iterable `splits` provides vectors of indices for the training dataset. The remaining indices are used to create the validation dataset. Alternatively, cv can be called with an input Dataset class
+
+Return a dictionary with an entry for the validation dataset and, if the parameter `is_provide_training_metric` is set in the `estimator`, an entry for the training dataset. Each entry of the dictionary is another dictionary with an entry for each validation metric in the `estimator`. Each of these entries is an array that holds the validation metric's value for each dataset, at the last valid iteration.
+
+# Arguments
+
+  * `estimator::LGBMEstimator`: the estimator to be fit.
+  * `X::Matrix{TX<:Real}`: the features data.
+  * `y::Vector{Ty<:Real}`: the labels.
+  * `dataset::Dataset`: prepared dataset (either (X, y), or dataset needs to be specified as input)
+  * `splits`: the iterable providing arrays of indices for the training dataset.
+  * `verbosity::Integer`: keyword argument that controls LightGBM's verbosity. `< 0` for fatal logs   only, `0` includes warning logs, `1` includes info logs, and `> 1` includes debug logs.

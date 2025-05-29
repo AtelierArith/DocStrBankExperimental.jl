@@ -1,0 +1,1 @@
+SparseAxisArrayに対するユーザーu_nameに関連する変数を取得します。

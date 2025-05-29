@@ -1,0 +1,1 @@
+A power flow solver inspired by the ARPA-e GOC Challenge 1 contingency-stage specification but designed to be faster on large network cases. Instead conducting PV/PQ bus switching address disjunctive constraints, this solver simply adds extra reactive capability on buses where the voltage bounds cannot be enforced and takes an associated power balance penalty.

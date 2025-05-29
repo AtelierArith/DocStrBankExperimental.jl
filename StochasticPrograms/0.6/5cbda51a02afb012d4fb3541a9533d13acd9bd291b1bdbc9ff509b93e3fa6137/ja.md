@@ -1,0 +1,3 @@
+subproblem_optimizer(optimizer::AbstractStructuredOptimizer)
+
+サブプロブレムを解決するためのMOIオプティマイザコンストラクタを返します。

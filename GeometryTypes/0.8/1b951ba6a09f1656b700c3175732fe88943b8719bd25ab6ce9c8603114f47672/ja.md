@@ -1,0 +1,3 @@
+AbstractFlexibleGeometry{T}
+
+AbstractFlexibleGeometryは、やや可変な形状を指します。

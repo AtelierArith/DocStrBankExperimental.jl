@@ -1,0 +1,1 @@
+抽象のAbstractParallelTopology型で、CartesianTopologyまたはGraphTopology（将来）によって拡張されます。

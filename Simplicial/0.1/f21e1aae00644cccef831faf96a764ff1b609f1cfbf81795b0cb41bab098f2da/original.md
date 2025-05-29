@@ -1,0 +1,1 @@
+iszero(p) determines if the psudomonomial is in fact equal to zero, in other words,  p.x and p.y have a non-empty intersection Note that this implementation is somewhat faster then the obvious naive implementation= !isempty(intersect(p.x,p.y))

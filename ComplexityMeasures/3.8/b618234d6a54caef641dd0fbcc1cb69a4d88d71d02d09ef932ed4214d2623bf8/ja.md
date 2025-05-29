@@ -1,0 +1,5 @@
+```
+ValueHistogram
+```
+
+[`ValueBinning`](@ref) のエイリアスです。

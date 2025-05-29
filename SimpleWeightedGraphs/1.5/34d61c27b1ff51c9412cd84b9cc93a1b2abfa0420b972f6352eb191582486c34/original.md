@@ -1,0 +1,5 @@
+```
+SimpleWeightedGraphEdge
+```
+
+Alias for `SimpleWeightedEdge`.

@@ -1,0 +1,1 @@
+Serialize this message to send over the network     protocol version is 4 bytes little-endian     number of hashes is a varint     start block is in little-endian     end block is also in little-endian

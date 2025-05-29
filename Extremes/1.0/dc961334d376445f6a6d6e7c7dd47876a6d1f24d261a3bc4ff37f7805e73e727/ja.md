@@ -1,0 +1,5 @@
+```
+histplot(fm::AbstractFittedExtremeValueModel)
+```
+
+ヒストグラムプロット

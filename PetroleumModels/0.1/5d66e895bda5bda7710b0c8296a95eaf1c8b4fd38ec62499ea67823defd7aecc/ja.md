@@ -1,0 +1,1 @@
+経済目的関数は、石油モデルに対して次の形を取ります：$min \sum_{i \in producer} c_i - \sum_{i \in consumer} c_i + \frac{\rho * g}{1000} * \sum_{ij \in pump} c_{ij} * q_{ij} * \frac{(h_i - h_j)}{\eta_{ij} * \eta_{em} * \eta{et}}$ ここで、1000はkw秒をジュール（kg * m^2）/sに変換するための係数です。

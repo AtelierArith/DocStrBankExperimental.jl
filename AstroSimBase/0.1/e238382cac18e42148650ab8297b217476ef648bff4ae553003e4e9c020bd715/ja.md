@@ -1,0 +1,1 @@
+Milgrom 1983のMONDの公式

@@ -1,0 +1,1 @@
+Baseclass for all penalties.

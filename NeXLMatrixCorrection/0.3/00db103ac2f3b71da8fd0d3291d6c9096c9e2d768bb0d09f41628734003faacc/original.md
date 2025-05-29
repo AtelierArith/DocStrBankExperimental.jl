@@ -1,0 +1,1 @@
+The `MultiZAF` structure holds the information necessary to perform matrix correction on a collection of characteristic X-rays that were measured simultaneously from the same element. Use `zafcorrection(...)` to construct these rather than the internal constructor.

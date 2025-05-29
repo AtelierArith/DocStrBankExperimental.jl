@@ -1,0 +1,1 @@
+nn_estimate(         dmri::MRI,         mask::MRI,         mlp::Chain{T},         netarg::NetworkArg,         ntest::Int,         savedir::String,         savename::String,     )  Apply a trained mlp model to data and save estimated parameter maps as nifti

@@ -1,0 +1,61 @@
+```
+(x, stats) = gmres(A, b::AbstractVector{FC};
+                   memory::Int=20, M=I, N=I, ldiv::Bool=false,
+                   restart::Bool=false, reorthogonalization::Bool=false,
+                   atol::T=√eps(T), rtol::T=√eps(T), itmax::Int=0,
+                   timemax::Float64=Inf, verbose::Int=0, history::Bool=false,
+                   callback=workspace->false, iostream::IO=kstdout)
+```
+
+`T` は `Float32`、`Float64` または `BigFloat` のような `AbstractFloat` です。`FC` は `T` または `Complex{T}` です。
+
+```
+(x, stats) = gmres(A, b, x0::AbstractVector; kwargs...)
+```
+
+GMRES は初期推定値 `x0` からウォームスタートすることができ、`kwargs` は上記と同じキーワード引数です。
+
+サイズ n の線形システム Ax = b を GMRES を使用して解きます。
+
+GMRES アルゴリズムはアーノルディプロセスに基づいており、最小残差を持つ近似解のシーケンスを計算します。
+
+#### インターフェース
+
+Krylov メソッド間で簡単に切り替えるには、`method = :gmres` を使用して一般的なインターフェース [`krylov_solve`](@ref) を使用します。
+
+解の間でメモリを再利用するインプレースバリアントについては、[`gmres!`](@ref) を参照してください。
+
+#### 入力引数
+
+  * `A`: 次元 `n` の行列をモデル化する線形演算子;
+  * `b`: 長さ `n` のベクトル。
+
+#### オプション引数
+
+  * `x0`: 解 `x` の初期推定値を表す長さ `n` のベクトル。
+
+#### キーワード引数
+
+  * `memory`: `restart = true` の場合、再起動されたバージョン GMRES(k) が `k = memory` で使用されます。`restart = false` の場合、パラメータ `memory` は動的メモリ割り当てを制限するための反復回数のヒントとして使用されるべきです。反復回数が `memory` を超えると、追加のストレージが割り当てられます;
+  * `M`: 左前処理に使用されるサイズ `n` の非特異行列をモデル化する線形演算子;
+  * `N`: 右前処理に使用されるサイズ `n` の非特異行列をモデル化する線形演算子;
+  * `ldiv`: 前処理器が `ldiv!` または `mul!` を使用するかどうかを定義します;
+  * `restart`: `memory` 回の反復後にメソッドを再起動します;
+  * `reorthogonalization`: Krylov 基底の新しいベクトルをすべての以前のベクトルに対して再直交化します;
+  * `atol`: 残差ノルムに基づく絶対停止許容誤差;
+  * `rtol`: 残差ノルムに基づく相対停止許容誤差;
+  * `itmax`: 最大反復回数。`itmax=0` の場合、デフォルトの反復回数は `2n` に設定されます;
+  * `timemax`: 秒単位の時間制限;
+  * `verbose`: 詳細モードが有効な場合（verbose > 0）、追加の詳細が表示されます。情報は `verbose` 回の反復ごとに表示されます;
+  * `history`: 残差ノルムや Aᴴ 残差ノルムなど、実行中の追加統計を収集します;
+  * `callback`: `callback(workspace)` として呼び出される関数またはファンクタで、Krylov メソッドを終了すべき場合は `true` を返し、そうでない場合は `false` を返します;
+  * `iostream`: 出力がログされるストリーム。
+
+#### 出力引数
+
+  * `x`: 長さ `n` の密なベクトル;
+  * `stats`: [`SimpleStats`](@ref) 構造体で実行中に収集された統計。
+
+#### 参考文献
+
+  * Y. Saad と M. H. Schultz, [*GMRES: A Generalized Minimal Residual Algorithm for Solving Nonsymmetric Linear Systems*](https://doi.org/10.1137/0907058), SIAM Journal on Scientific and Statistical Computing, Vol. 7(3), pp. 856–869, 1986.

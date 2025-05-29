@@ -1,0 +1,1 @@
+A collection of labeled point sets, to each be considered separately during an alignment procedure. That is,  only alignment scores between point sets with the same key are considered when aligning two `MultiPointSet`s. 

@@ -1,0 +1,1 @@
+`w::U` の場合、`U<:RecursiveBPFactor` では、出力メッセージを再帰的に計算できます。`<:RecursiveBPFactor` は次のメソッドを実装する必要があります: `nstates`、`prob_y`、`prob_xy` および `prob_yy`。オプションで、`prob_y_partial` および `(w::U)(xᵢᵗ⁺¹, xₙᵢᵗ, xᵢᵗ)` を実装することもできます。

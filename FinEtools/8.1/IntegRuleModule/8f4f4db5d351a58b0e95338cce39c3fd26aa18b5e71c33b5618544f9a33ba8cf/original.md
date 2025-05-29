@@ -1,0 +1,5 @@
+```
+PointRule()
+```
+
+POINT integration rule.

@@ -1,0 +1,11 @@
+```julia
+struct UA_ReadResponse
+```
+
+Fields:
+
+  * `responseHeader::Open62541.UA_ResponseHeader`
+  * `resultsSize::UInt64`
+  * `results::Ptr{Open62541.UA_DataValue}`
+  * `diagnosticInfosSize::UInt64`
+  * `diagnosticInfos::Ptr{Open62541.UA_DiagnosticInfo}`

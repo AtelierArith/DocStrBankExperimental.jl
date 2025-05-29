@@ -1,0 +1,13 @@
+```
+t8_ctree
+```
+
+This structure holds the data of a local tree including the information about face neighbors. For those the tree_to_face index is computed as follows. Let F be the maximal number of faces of any eclass of the cmesh's dimension, then ttf % F is the face number and ttf / F is the orientation. (t8*eclass*max*num*faces) The orientation is determined as follows. Let my_face and other_face be the two face numbers of the connecting trees. We chose a main_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the main_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle < square, hex < tet < prism < pyramid, is the main_face. Then face corner 0 of the main_face connects to a face corner k in the other face. The face orientation is defined as the number k. If the classes are equal and my_face == other_face, treating either of both faces as the main_face leads to the same result. See https://arxiv.org/pdf/1611.02929.pdf for more details.
+
+| Field          | Note                                                                                     |
+|:-------------- |:---------------------------------------------------------------------------------------- |
+| treeid         | The local number of this tree.                                                           |
+| eclass         | The eclass of this tree.                                                                 |
+| neigh_offset   | Adding this offset to the address of the tree yields the array of face_neighbor entries  |
+| att_offset     | Adding this offset to the address of the tree yields the array of attribute_info entries |
+| num_attributes | The number of attributes at this tree                                                    |

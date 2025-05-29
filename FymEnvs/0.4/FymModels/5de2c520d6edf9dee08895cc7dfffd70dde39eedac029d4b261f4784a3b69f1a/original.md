@@ -1,0 +1,1 @@
+Reference:     B. L. Stevens et al. "Aircraft Control and Simulation", 3/e, 2016     Example 5.3-1: LQR Design for F-16 Lateral Regulator Dynamics:     x*dot = Ax + Bu State:     x = [beta, phi, p, r, del*a, del*r, x*w]     beta, phi: [rad], p, r: [rad/s], del*a, del*r: [deg] Control input:     u = [u*a, u*r](aileron and rudder servo inputs, [deg])

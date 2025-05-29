@@ -1,0 +1,5 @@
+```
+Dataset object which stores an `OrderedDict` of YAXArrays with Symbol keys. 
+a dictionary of CubeAxes and a Dictionary of general properties. 
+A dictionary can hold cubes with differing axes. But it will share the common axes between the subcubes.
+```

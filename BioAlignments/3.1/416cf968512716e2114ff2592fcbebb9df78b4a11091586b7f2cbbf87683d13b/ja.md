@@ -1,0 +1,1 @@
+基本的な20のアミノ酸のための置換行列で、3つの化学的特性に基づいています：組成、極性、分子体積。 [R. Granthamの1974年の論文](https://www.science.org/doi/10.1126/science.185.4154.862?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)からの引用です。

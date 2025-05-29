@@ -1,0 +1,1 @@
+Constraint for computing the relationship between volumetric flow and head difference at either end of a pipe.  For a pipe $(i,j)$, this constraint is computed as $(h_i - h_j) = (z_j - z_i) + \frac{\beta * \nu^m}{D_{ij}^{5.0-m}} * L_{ij} * 1.02 * q_{ij}^{2.0-m}$. The constraint adopts the Leibenzon model

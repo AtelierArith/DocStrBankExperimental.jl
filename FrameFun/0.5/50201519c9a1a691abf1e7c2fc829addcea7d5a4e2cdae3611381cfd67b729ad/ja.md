@@ -1,0 +1,3 @@
+```
+hasparam_inbetween(platform::Platform, param1, param2, stoptolerance)
+```

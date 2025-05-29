@@ -1,0 +1,1 @@
+An amino acid type.

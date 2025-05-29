@@ -1,0 +1,4 @@
+```julia
+rmaccents(s, ortho)
+
+```

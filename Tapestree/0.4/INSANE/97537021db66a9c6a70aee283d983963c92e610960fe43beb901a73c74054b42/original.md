@@ -1,0 +1,35 @@
+```
+insane_gbmfbd(tree    ::sTf_label;
+              λ0_prior::NTuple{2,Float64}     = (0.1, 148.41),
+              μ0_prior::NTuple{2,Float64}     = (0.1, 148.41),
+              αλ_prior::NTuple{2,Float64}     = (0.0, 1.0),
+              αμ_prior::NTuple{2,Float64}     = (0.0, 1.0),
+              σλ_prior::NTuple{2,Float64}     = (0.05, 0.05),
+              σμ_prior::NTuple{2,Float64}     = (3.0, 0.1),
+              ψ_prior ::NTuple{2,Float64}     = (1.0, 1.0),
+              ψ_epoch ::Vector{Float64}       = Float64[],
+              f_epoch ::Vector{Int64}         = Int64[0],
+              niter   ::Int64                 = 1_000,
+              nthin   ::Int64                 = 10,
+              nburn   ::Int64                 = 200,
+              nflush  ::Int64                 = nthin,
+              ofile   ::String                = string(homedir(), "/fbdd"),
+              ϵi      ::Float64               = 0.2,
+              λi      ::Float64               = NaN,
+              μi      ::Float64               = NaN,
+              ψi      ::Float64               = NaN,
+              αλi     ::Float64               = 0.0,
+              αμi     ::Float64               = 0.0,
+              σλi     ::Float64               = 1e-3,
+              σμi     ::Float64               = 1e-3,
+              pupdp   ::NTuple{7,Float64}     = (1e-3, 1e-3, 1e-3, 1e-4, 1e-4, 0.1, 0.2),
+              δt      ::Float64               = 1e-3,
+              survival::Bool                  = true,
+              mxthf   ::Float64               = 0.1,
+              prints  ::Int64                 = 5,
+              stnλ    ::Float64               = 0.5,
+              stnμ    ::Float64               = 0.5,
+              tρ      ::Dict{String, Float64} = Dict("" => 1.0))
+```
+
+Run insane for fossilized birth-death diffusion `fbdd`.

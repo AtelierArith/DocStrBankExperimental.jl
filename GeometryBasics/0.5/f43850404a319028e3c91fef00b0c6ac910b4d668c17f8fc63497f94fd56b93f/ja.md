@@ -1,0 +1,5 @@
+```
+MultiPolygon(polygons::AbstractPolygon)
+```
+
+ポリゴンのコレクション

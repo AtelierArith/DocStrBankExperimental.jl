@@ -1,0 +1,1 @@
+ACSetからCSetNautyResを計算します。

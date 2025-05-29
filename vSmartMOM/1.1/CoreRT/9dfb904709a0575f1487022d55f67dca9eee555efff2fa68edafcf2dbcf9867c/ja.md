@@ -1,0 +1,1 @@
+vSmartMOM*Parameters構造体で指定されたパラメータを取得し、派生属性をvSmartMOM*Modelに計算します。

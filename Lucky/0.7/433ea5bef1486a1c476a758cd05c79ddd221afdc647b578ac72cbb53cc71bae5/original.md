@@ -1,0 +1,5 @@
+```
+AbstractQuote
+```
+
+Abstract Quote type.

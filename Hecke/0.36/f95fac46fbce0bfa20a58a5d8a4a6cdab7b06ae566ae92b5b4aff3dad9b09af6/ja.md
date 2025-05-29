@@ -1,0 +1,5 @@
+```
+det(V::AbstractSpace) -> FieldElem
+```
+
+空間 `V` の行列式をその固定体の要素として返します。

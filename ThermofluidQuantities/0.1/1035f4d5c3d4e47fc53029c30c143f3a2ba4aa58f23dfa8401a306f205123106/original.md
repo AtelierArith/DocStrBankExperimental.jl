@@ -1,0 +1,3 @@
+```
+MassFlowRate <: DimensionalPhysicalQuantity
+```

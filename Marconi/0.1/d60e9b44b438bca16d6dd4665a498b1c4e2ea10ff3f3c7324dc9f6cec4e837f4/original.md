@@ -1,0 +1,1 @@
+The base Network type for representing n-port linear networks with characteristic impedance Z0.   The S-Parameters for an EquationNetwork are defined by a function that returns a `ports`-square matrix   and accepts kwargs `Z0` and `freq`. Please provide default arguments for any input parameters.

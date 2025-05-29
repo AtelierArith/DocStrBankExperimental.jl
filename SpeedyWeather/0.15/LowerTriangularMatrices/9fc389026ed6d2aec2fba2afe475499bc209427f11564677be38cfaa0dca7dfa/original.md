@@ -1,0 +1,1 @@
+Abstract type to dispatch for 1-based indexing of the spherical harmonic degree l and order m, i.e. l=m=1 is the mean, the zonal modes are m=1 etc. This indexing matches Julia's 1-based indexing for arrays.

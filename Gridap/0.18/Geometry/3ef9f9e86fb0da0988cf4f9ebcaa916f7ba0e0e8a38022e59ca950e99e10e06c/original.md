@@ -1,0 +1,3 @@
+```
+simplexify(model::DiscreteModel)
+```

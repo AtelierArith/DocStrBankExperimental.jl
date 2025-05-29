@@ -1,0 +1,1 @@
+LinearDiscretizerをデコードするためのいくつかの方法があります。デフォルトはSampleUniformで、これはビンから均等にサンプリングします。SampleBinCenterはビンの中心値を返します。

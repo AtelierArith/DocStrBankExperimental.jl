@@ -1,0 +1,1 @@
+Collect all version requirements from .gnu.version_r.  This section is structurally similar to the version definition section, but the primary "verneed" struct corresponds to one shared library, and the auxiliary struct corresponds to a version.

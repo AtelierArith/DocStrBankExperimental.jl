@@ -1,0 +1,1 @@
+Base.Docs.DocStr(svec("    @lead(expr[, n=1])\n\n与えられた式にリード演算子を適用します。`@lag(expr, -n)`と同等です。\n"), nothing, Dict{Symbol, Any}(:typesig => Union{Tuple{Expr}, Tuple{Expr, Int64}}, :module => ModelBaseEcon, :linenumber => 48, :binding => ModelBaseEcon.@lead, :path => "/home/terasaki/.julia/packages/ModelBaseEcon/aCyhO/src/metafuncs.jl"))

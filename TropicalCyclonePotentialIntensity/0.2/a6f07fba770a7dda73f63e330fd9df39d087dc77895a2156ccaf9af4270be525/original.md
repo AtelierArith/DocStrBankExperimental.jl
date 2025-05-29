@@ -1,0 +1,5 @@
+```
+get_virtual_temperature(temperature, specific_humidity)
+```
+
+Compute virtual temperature from temperature and specific humidity. Receive temperature (K) and specific humidity (unitless kg/kg) and compute the virtual temperature

@@ -1,0 +1,1 @@
+このタイプの引数は、Greenの関数計算ルーチンに`Distributed.@distributed`を使用して計算を高速化するよう指示します。

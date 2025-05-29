@@ -1,0 +1,4 @@
+```julia
+speechpart(lang, codestring)
+
+```

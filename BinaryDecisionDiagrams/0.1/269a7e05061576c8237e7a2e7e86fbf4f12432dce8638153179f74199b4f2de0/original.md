@@ -1,0 +1,1 @@
+Negates this boolean function.

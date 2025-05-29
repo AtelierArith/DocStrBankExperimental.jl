@@ -1,0 +1,3 @@
+`FrankWolfe.is_decomposition_invariant_oracle`を実装します。
+
+必要なDICG特有のオラクルが実装されているか確認します。

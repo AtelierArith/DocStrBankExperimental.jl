@@ -1,0 +1,3 @@
+```
+isrunning(j::Job) :: Bool
+```

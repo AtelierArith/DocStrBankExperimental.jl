@@ -1,0 +1,5 @@
+```
+AmbiguitySet
+```
+
+CenteredAmbiguitySetとContinuousMultivariateSampleableのUnionのエイリアス

@@ -1,0 +1,45 @@
+```
+modelcols(ts::NTuple{N, AbstractTerm}, data) where N
+```
+
+When a tuple of terms is provided, `modelcols` broadcasts over the individual terms.  To create a single matrix, wrap the tuple in a [`MatrixTerm`](@ref).
+
+# Example
+
+```jldoctest
+julia> using StableRNGs; rng = StableRNG(1);
+
+julia> d = (a = [1:9;], b = rand(rng, 9), c = repeat(["d","e","f"], 3));
+
+julia> ts = apply_schema(term.((:a, :b, :c)), schema(d))
+a(continuous)
+b(continuous)
+c(DummyCoding:3→2)
+
+julia> cols = modelcols(ts, d)
+([1, 2, 3, 4, 5, 6, 7, 8, 9], [0.5851946422124186, 0.07733793456911231, 0.7166282400543453, 0.3203570514066232, 0.6530930076222579, 0.2366391513734556, 0.7096838914472361, 0.5577872440804086, 0.05079002172175784], [0.0 0.0; 1.0 0.0; … ; 1.0 0.0; 0.0 1.0])
+
+julia> reduce(hcat, cols)
+9×4 Array{Float64,2}:
+ 1.0  0.585195   0.0  0.0
+ 2.0  0.0773379  1.0  0.0
+ 3.0  0.716628   0.0  1.0
+ 4.0  0.320357   0.0  0.0
+ 5.0  0.653093   1.0  0.0
+ 6.0  0.236639   0.0  1.0
+ 7.0  0.709684   0.0  0.0
+ 8.0  0.557787   1.0  0.0
+ 9.0  0.05079    0.0  1.0
+
+julia> modelcols(MatrixTerm(ts), d)
+9×4 Array{Float64,2}:
+ 1.0  0.585195   0.0  0.0
+ 2.0  0.0773379  1.0  0.0
+ 3.0  0.716628   0.0  1.0
+ 4.0  0.320357   0.0  0.0
+ 5.0  0.653093   1.0  0.0
+ 6.0  0.236639   0.0  1.0
+ 7.0  0.709684   0.0  0.0
+ 8.0  0.557787   1.0  0.0
+ 9.0  0.05079    0.0  1.0
+```

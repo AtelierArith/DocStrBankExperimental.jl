@@ -1,0 +1,1 @@
+AbstractEmbeddedGraphsで動作するように基本的なGraphs.jl関数を拡張します。

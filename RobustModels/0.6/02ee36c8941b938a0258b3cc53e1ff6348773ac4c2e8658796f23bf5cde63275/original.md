@@ -1,0 +1,1 @@
+The non-convex Cauchy loss function switches from between quadratic behaviour to logarithmic tails. This rejects outliers but may result in multiple minima. For scale estimate, r.ψ(r) is used as a loss, which is the same as for Geman loss. ψ(r) = r / (1 + r^2)

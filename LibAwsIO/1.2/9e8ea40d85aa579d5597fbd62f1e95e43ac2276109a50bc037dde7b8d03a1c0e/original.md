@@ -1,0 +1,1 @@
+Only used if the TLS handler is the last handler in the channel. This allows you to read any data that was read and decrypted by the handler. If you have application protocol channel handlers, this function is not necessary and certainly not recommended.

@@ -1,0 +1,1 @@
+Run the algorithm from "Maximum Quadratic Assignment Problem: Reduction from Maximum Label Cover and LP-based Approximation Algorithm" by Makarychev, Manokaran, and Sviridenko (MMS) to approximately solve the QAP.

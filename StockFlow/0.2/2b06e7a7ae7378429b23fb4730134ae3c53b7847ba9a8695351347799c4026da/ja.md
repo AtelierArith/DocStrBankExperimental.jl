@@ -1,0 +1,1 @@
+新しい StockAndFlowStructureF を、AbstractStockAndFlowF からフラット化された名前、演算子、および位置を持つ形で返します。

@@ -1,0 +1,3 @@
+```
+pullUpDnControl(pin, pud)
+```

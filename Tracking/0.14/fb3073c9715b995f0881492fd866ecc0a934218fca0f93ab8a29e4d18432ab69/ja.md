@@ -1,0 +1,1 @@
+TrackingStateはトラッキング状態を保持します。

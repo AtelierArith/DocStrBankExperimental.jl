@@ -1,0 +1,5 @@
+```
+witt_invariant(L::AbstractLat, p::Union{InfPlc, AbsNumFieldOrderIdeal{AbsSimpleNumField, AbsSimpleNumFieldElem}}) -> Int
+```
+
+ラティス `L` の有理スパンのウィット不変量を場所 `p` で返します。ラティスは二次元でなければなりません。

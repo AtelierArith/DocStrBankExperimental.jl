@@ -1,0 +1,3 @@
+```
+Strand(strand::Char)
+```

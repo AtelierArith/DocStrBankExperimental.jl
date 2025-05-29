@@ -1,0 +1,5 @@
+```
+split_intersections(points::AbstractVector{<: Point})
+```
+
+ポリゴン `points` を自己交差部分に分割します。現在は1つの交差点のみ処理されます。

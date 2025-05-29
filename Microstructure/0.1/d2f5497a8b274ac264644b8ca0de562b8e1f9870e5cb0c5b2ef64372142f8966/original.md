@@ -1,0 +1,1 @@
+After testing and optimizing sampler parameters for a model, add default sampler for the model for convenience here. Examples given here are ExCaliber with two-stage MCMC and MTE_SMT; these sampling parameters are not optimised yet.

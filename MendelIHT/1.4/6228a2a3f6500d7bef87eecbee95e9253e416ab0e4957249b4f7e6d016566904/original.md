@@ -1,0 +1,1 @@
+Runs IHT across many different model sizes specifed in `path` using the full design matrix. Same as `cv_iht` but **DOES NOT** validate in a holdout set, meaning that this will definitely induce overfitting as we increase model size. Use this if you want to quickly estimate a range of feasible model sizes before  engaging in full cross validation. 

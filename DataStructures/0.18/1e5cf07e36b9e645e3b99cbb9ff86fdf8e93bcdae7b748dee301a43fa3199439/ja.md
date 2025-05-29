@@ -1,0 +1,5 @@
+```
+empty!(cb::CircularBuffer)
+```
+
+バッファをリセットします。

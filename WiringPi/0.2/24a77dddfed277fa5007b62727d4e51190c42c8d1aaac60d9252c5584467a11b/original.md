@@ -1,0 +1,3 @@
+```
+pwmSetRange(range)
+```

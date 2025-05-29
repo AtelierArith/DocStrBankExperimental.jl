@@ -1,0 +1,47 @@
+```
+ユニタリロールアウトフィデリティ(
+    Ũ⃗_init::AbstractVector{<:Real},
+    Ũ⃗_goal::AbstractVector{<:Real},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+ユニタリロールアウトフィデリティ(
+    Ũ⃗_goal::AbstractVector{<:Real},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+ユニタリロールアウトフィデリティ(
+    U_init::AbstractMatrix{<:Complex},
+    U_goal::AbstractMatrix{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+ユニタリロールアウトフィデリティ(
+    U_goal::AbstractMatrix{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    kwargs...
+)
+ユニタリロールアウトフィデリティ(
+    U_goal::EmbeddedOperator,
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::AbstractQuantumSystem;
+    subspace::AbstractVector{Int}=U_goal.subspace,
+    kwargs...
+)
+ユニタリロールアウトフィデリティ(
+    traj::NamedTrajectory,
+    sys::AbstractQuantumSystem;
+    kwargs...
+)
+```
+
+ユニタリロールアウトの最終状態と目標状態との間のフィデリティを計算します。初期ユニタリが提供されていない場合、単位演算子が仮定されます。`phases`および`phase_operators`が提供されている場合、自由位相ユニタリフィデリティが計算されます。

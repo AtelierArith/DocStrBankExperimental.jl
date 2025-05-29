@@ -1,0 +1,1 @@
+Calculates the DEIM interpolation matrix as desribed in Algorithm 1 in doi.org/10.1137/090766498 to cheaply evaluate f(x) The input matrix Ψ holds the eigenvectors of the snapshot matrix fᵢ(xⱼ), 1 ≤ i ≤ N, 1 ≤ j ≤ k. 

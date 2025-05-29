@@ -1,0 +1,1 @@
+Compute a function bottom-up on the circuit.  `f_leaf` is called on leaf nodes, and `f_inner` is called on inner nodes. Values of type `T` are passed up the circuit and given to `f_inner` in aggregate  as a vector from the children.

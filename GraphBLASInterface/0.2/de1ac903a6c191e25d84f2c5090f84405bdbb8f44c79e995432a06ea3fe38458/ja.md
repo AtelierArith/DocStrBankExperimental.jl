@@ -1,0 +1,57 @@
+```
+GrB_eWiseMult_Vector_Monoid(w, mask, accum, monoid, u, v, desc)
+```
+
+モノイドを使用して要素ごとのベクトル乗算を計算します。 `w<mask> = accum (w, u .* v)`
+
+# 例
+
+```jldoctest
+julia> using GraphBLASInterface, SuiteSparseGraphBLAS
+
+julia> GrB_init(GrB_NONBLOCKING)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> u = GrB_Vector{Int64}()
+GrB_Vector{Int64}
+
+julia> GrB_Vector_new(u, GrB_INT64, 5)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> I1 = ZeroBasedIndex[0, 2, 4]; X1 = [10, 20, 3]; n1 = 3;
+
+julia> GrB_Vector_build(u, I1, X1, n1, GrB_FIRST_INT64)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> v = GrB_Vector{Float64}()
+GrB_Vector{Float64}
+
+julia> GrB_Vector_new(v, GrB_FP64, 5)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> I2 = ZeroBasedIndex[0, 1, 4]; X2 = [1.1, 2.2, 3.3]; n2 = 3;
+
+julia> GrB_Vector_build(v, I2, X2, n2, GrB_FIRST_FP64)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> w = GrB_Vector{Float64}()
+GrB_Vector{Float64}
+
+julia> GrB_Vector_new(w, GrB_FP64, 5)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> GrB_eWiseMult_Vector_Monoid(w, GrB_NULL, GrB_NULL, GxB_MAX_FP64_MONOID, u, v, GrB_NULL)
+GrB_SUCCESS::GrB_Info = 0
+
+julia> @GxB_fprint(w, GxB_COMPLETE)
+
+GraphBLAS ベクトル: w 
+nrows: 5 ncols: 1 最大エントリ数: 2
+フォーマット: 標準 CSC vlen: 5 nvec_nonempty: 1 nvec: 1 plen: 1 vdim: 1
+hyper_ratio 0.0625
+GraphBLAS 型:  double サイズ: 8
+エントリ数: 2 
+列: 0 : 2 エントリ [0:1]
+    行 0: double 10
+    行 4: double 3.3
+```

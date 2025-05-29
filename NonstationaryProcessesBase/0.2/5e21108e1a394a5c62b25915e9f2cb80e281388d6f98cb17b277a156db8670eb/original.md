@@ -1,0 +1,1 @@
+Retrieve the solution of a [`Process`](@ref) as a [`ToolsArray`](https://rafaqz.github.io/DimensionalData.jl/stable/api/#DimensionalData.ToolsArray), starting from `:t0`, at a sampling period of `:save_dt`. This function will solve the [`Process`](@ref) and populate the `:solution` only if the [`Process`](@ref) has not yet been simulated.

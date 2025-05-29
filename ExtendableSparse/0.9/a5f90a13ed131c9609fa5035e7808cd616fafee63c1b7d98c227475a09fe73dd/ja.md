@@ -1,0 +1,6 @@
+```julia
+SparseMatrixLNK(csc)
+
+```
+
+SparseMatrixCSCからのコンストラクタ。

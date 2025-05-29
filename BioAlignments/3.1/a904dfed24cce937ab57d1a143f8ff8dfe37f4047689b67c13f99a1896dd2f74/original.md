@@ -1,0 +1,1 @@
+BLOSUM62 substitution matrix

@@ -1,0 +1,1 @@
+BLOSUM90 substitution matrix

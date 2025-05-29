@@ -1,0 +1,3 @@
+```
+/(N::Gaussian, M::Gaussian)
+```

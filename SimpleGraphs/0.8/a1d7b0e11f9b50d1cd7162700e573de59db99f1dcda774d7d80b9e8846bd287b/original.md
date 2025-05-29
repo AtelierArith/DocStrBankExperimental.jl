@@ -1,0 +1,1 @@
+`Cube(n)` creates the `n`-dimensional cube graph. This graph has `2^n` vertices named by all possible length-`n` strings of 0s and 1s. Two vertices are adjacent iff they differ in exactly one position.

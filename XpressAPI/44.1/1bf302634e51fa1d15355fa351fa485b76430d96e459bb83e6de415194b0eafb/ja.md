@@ -1,0 +1,1 @@
+XPRS*ge*getsafemodeをラップします:

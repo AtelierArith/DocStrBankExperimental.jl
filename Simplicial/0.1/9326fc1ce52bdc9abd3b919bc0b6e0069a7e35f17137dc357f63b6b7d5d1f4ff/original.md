@@ -1,0 +1,1 @@
+function  push!(F, AddedFace, AssignedBirth)   This function is an enhanced version of FaceBirthpush!   Its input are:   F::FiltrationOfDirectedComplexes   AddedFace::DirectedCodeword   AssignedBirth::Int   Its output is a boolean that indicates if we ended up adding a new face

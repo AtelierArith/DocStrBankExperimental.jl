@@ -1,0 +1,1 @@
+`info_map(G)`: We create a dictionary mapping the vertices of `G` to 128-bit integer values in such a way that twin vertices *will* have the same value but, we hope, nontwin vertices will have different values. (By *twin* we mean a pair of vertices such that there is an automorphism of the graph mapping one to the other.)

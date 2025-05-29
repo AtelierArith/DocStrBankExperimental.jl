@@ -1,0 +1,1 @@
+A macromolecular structural element.

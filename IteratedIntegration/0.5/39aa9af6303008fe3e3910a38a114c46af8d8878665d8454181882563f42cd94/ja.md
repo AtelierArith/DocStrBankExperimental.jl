@@ -1,0 +1,1 @@
+[`QuadGK.jl`](https://github.com/JuliaMath/QuadGK.jl)に基づく反復適応積分（IAI）のためのパッケージです。その主なエクスポートは、ネストされた`quadgk`呼び出しを使用して多次元適応積分を実行するルーチン[`nested_quad`](@ref)と、積分の限界のパラメータ化を評価するための[`AbstractIteratedLimits`](@ref)抽象です。

@@ -1,0 +1,1 @@
+Base type for Naive Bayes models. Inherited classes should have at least following fields:  c*counts::Dict{C, Int64} - count of ocurrences of each class  n*obs::Int64             - total number of observations

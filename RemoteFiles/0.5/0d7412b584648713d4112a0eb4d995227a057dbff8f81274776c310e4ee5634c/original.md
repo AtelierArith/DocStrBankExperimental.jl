@@ -1,0 +1,9 @@
+```
+@RemoteFileSet name description begin
+    file1 = @RemoteFile ...
+    file2 = @RemoteFile ...
+    ...
+end
+```
+
+Collect several `RemoteFile`s in the `RemoteFileSet` saved under `name` with a `description`.

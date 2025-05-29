@@ -1,0 +1,5 @@
+```
+function eval_dt(UD::AbstractUserDataType) -> Function
+```
+
+UDに依存するDataFunctionの勾配をx（およびUDが時間に依存する場合はt）で評価して返す関数を提供します。導関数はForwardDiffによって計算されます。

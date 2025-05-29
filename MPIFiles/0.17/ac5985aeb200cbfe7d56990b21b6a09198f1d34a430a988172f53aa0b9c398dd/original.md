@@ -1,0 +1,1 @@
+This function returns the time data `timeData` Array(Float32,numPos,samplingPoints,channels,1,numFrames) of an FF-measurement with `numPos` as number of FF-positions. The function splits the entire FF-measurement in measurement per FF-position. As a second return argument the corresponding positions vector `pos` Array(Float64,3,1,numPos) is returned.

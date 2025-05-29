@@ -1,0 +1,3 @@
+```
+ArbSeries <: Number
+```

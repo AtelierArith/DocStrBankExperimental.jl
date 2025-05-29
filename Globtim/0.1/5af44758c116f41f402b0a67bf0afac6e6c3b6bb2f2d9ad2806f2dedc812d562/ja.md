@@ -1,0 +1,1 @@
+多項式系を解くための関数で、HomotopyContinuation.jlおよびDynamicPolynomials.jl環境を使用します。

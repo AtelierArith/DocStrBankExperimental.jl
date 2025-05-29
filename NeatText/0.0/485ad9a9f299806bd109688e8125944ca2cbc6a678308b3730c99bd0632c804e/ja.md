@@ -1,0 +1,1 @@
+extract_mastercards: 指定されたテキストからすべてのMasterCardアドレス/値を抽出します

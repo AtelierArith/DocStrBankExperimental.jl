@@ -1,0 +1,1 @@
+Same as the `solve` for `CHV(::DiffEqBase.DEAlgorithm)` but for `CHV(::Symbol)`. This is an old implementation of the CHV algorithm which can be used with `:lsoda`. For all other solvers, use the the new solver.

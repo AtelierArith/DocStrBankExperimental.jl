@@ -1,0 +1,13 @@
+```
+HEOMSuperOp(op, opParity, refHEOMLS; Id_cache=I(refHEOMLS.N))
+```
+
+Construct the HEOM superoperator matrix corresponding to the given system SuperOperator which acts on all `ADOs`.  
+
+During the multiplication on all the `ADOs`, the parity of the output `ADOs` might change depend on the parity of this HEOM superoperator.
+
+# Parameters
+
+  * `op` : The system SuperOperator which will act on all `ADOs`.
+  * `opParity::AbstractParity` : the parity label of the given operator (`op`), should be `EVEN` or `ODD`.
+  * `refHEOMLS::AbstractHEOMLSMatrix` : copy the system `dimensions` and number of `ADOs` (`N`) from this reference HEOMLS matrix

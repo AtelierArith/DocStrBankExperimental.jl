@@ -1,0 +1,1 @@
+non-AD Cauchy stress

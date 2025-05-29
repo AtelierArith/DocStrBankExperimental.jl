@@ -1,0 +1,1 @@
+A diagram in a C-Set category can be given a canonical form induced by the canonical forms of the underlying C-Sets. For example, we can get a canonical form for spans by considering diagrams of shape • ⟵ • ⟶ •

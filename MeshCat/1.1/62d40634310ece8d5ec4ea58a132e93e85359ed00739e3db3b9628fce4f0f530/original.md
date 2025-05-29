@@ -1,0 +1,1 @@
+Extract a single HTML document containing the entire MeshCat scene, including all geometries, properties, and animations, as well as all required javascript assets. The resulting HTML document should render correctly after you've exited Julia, and even if you have no internet access.

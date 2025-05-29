@@ -1,0 +1,1 @@
+単純な線形形式を実装したAnnealingSchedule

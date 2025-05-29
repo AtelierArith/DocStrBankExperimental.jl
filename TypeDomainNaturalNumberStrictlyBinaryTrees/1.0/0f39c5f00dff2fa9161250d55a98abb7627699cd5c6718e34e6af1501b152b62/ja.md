@@ -1,0 +1,5 @@
+```
+naturals_strictly_binary_tree_with_refined_type(::NonnegativeIntegerStrictlyBinaryTree)
+```
+
+引数は変更せずに返します。無効または不正な引数の場合はエラーをスローします。返される値は引数と同じですが、Juliaの型推論は返される値の型について引数よりも正確な知識を持っている可能性があります。

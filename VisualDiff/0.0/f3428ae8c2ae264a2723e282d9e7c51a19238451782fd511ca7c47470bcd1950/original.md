@@ -1,0 +1,1 @@
+This defines a widget, a scrolling list of items of type `T`. The functions `showentry` and `on_scroll` are provided by the parent (which, in the Julia object model is a struct having a `Scroll_list` as a field).

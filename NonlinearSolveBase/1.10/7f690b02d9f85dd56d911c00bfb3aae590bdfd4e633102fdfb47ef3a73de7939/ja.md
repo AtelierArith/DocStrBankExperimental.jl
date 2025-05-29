@@ -1,0 +1,11 @@
+```
+NonlinearSolveBase.AbsTerminationMode <: AbstractNonlinearTerminationMode
+```
+
+すべての $| \Delta u | \leq abstol$ の場合に終了します。
+
+$$
+\Delta u
+$$
+
+は非線形ソルバーによって計算された増分を示し、$u$ は解を示します。

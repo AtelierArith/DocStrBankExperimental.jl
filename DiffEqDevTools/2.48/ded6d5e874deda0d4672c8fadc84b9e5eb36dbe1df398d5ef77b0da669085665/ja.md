@@ -1,0 +1,1 @@
+Feagin10をTableau形式で

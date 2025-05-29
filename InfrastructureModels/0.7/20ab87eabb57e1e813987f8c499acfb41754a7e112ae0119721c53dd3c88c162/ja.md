@@ -1,0 +1,1 @@
+AbstractInfrastructureModelを初期化する必要なく、`it`がインフラストラクチャタイプを指定するrefオブジェクトを構築します。

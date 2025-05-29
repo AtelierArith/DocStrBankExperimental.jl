@@ -1,0 +1,3 @@
+```
+analogWrite(pin, value)
+```

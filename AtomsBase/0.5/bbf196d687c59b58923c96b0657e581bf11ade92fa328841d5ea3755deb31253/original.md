@@ -1,0 +1,1 @@
+Implementation of a computational cell for particle systems within AtomsBase.jl. `PeriodicCell` specifies a parallepiped shaped cell with choice of open or periodic boundary condition in each cell vector direction.

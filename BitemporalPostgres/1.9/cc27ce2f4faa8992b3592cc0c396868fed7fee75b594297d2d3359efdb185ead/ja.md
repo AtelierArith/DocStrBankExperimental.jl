@@ -1,0 +1,3 @@
+TestDummyComponent <: Component
+
+バイテンポラルエンティティのコンポーネント

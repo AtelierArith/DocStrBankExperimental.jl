@@ -1,0 +1,1 @@
+A alias to `GershgorinDisc`.

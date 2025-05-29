@@ -1,0 +1,1 @@
+This method is a more accurate variant of the method   leastSquaresListOfEquations_quick.   It uses the Mean Distance (HomotopyContinuation) for determining the   best-approximating polynomial. Also, it uses a threshold of tau=2.o and   400 gradient descent steps.

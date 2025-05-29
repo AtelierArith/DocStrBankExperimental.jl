@@ -1,0 +1,1 @@
+最小BICを持つRegularizationPathセグメントを選択します。

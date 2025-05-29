@@ -1,0 +1,1 @@
+initialise a bitboard

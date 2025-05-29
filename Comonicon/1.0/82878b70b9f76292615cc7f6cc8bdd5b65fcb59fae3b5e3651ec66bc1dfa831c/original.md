@@ -1,0 +1,1 @@
+All the terminals are under my command. `Comonicon` is a CLI (Command Line Interface) generator that features light-weight dependency (optional to have zero dependency), fast start-up time and easy to use. See the [website](https://comonicon.org) for more info.

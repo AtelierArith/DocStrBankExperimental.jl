@@ -1,0 +1,1 @@
+" For a `w::U` where `U<:RecursiveBPFactor`, outgoing messages can be computed recursively A `<:RecursiveBPFactor` must implement: `nstates`, `prob_y`, `prob_xy` and `prob_yy` Optionally, it can also implement `prob_y_partial` and `(w::U)(xᵢᵗ⁺¹, xₙᵢᵗ, xᵢᵗ)`

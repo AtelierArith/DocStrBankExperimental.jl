@@ -1,0 +1,1 @@
+[`Process`](@ref) の解を [`ToolsArray`](https://rafaqz.github.io/DimensionalData.jl/stable/api/#DimensionalData.ToolsArray) として取得します。`:t0` から始まり、サンプリング周期は `:save_dt` です。この関数は [`Process`](@ref) を解き、[`Process`](@ref) がまだシミュレーションされていない場合にのみ `:solution` を populate します。

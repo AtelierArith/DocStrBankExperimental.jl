@@ -1,0 +1,1 @@
+インクリメンタルホムセットが正しく形成されていることを、 brute computational effort を用いて確認してください。

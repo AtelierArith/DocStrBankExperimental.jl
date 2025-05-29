@@ -1,0 +1,1 @@
+≦, `\leqq[tab]` or `Le`

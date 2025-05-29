@@ -1,0 +1,1 @@
+Pseudospectraセッションデータのラッパー構造

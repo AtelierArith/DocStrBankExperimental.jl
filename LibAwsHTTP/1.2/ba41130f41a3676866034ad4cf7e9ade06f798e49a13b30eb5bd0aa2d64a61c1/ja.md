@@ -1,0 +1,1 @@
+メッセージ変換が完了したときに呼び出される関数。この関数は必ず呼び出さなければならず、さもなければアプリケーションはソフトロックします。`message` と `complete_ctx` は [`aws_http_message_transform_fn`](@ref) に提供されたのと同じポインタでなければなりません。`error_code` は変換が成功した場合は AWS*ERROR*SUCCESS を指定し、それ以外の場合は別の AWS*ERROR*X 値を渡してください。

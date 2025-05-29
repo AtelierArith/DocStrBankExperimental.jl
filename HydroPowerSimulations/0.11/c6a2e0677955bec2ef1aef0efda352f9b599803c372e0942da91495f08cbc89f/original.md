@@ -1,0 +1,1 @@
+Formulation type to constrain energy production from pumped storage with a representation of the energy storage capacity of upper and lower reservoirs and water inflow time series of upper reservoir and outflow time series of lower reservoir for [`PowerSystems.HydroPumpedStorage`](@extref)

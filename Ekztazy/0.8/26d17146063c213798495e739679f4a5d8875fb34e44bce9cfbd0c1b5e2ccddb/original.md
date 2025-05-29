@@ -1,0 +1,12 @@
+```
+on_webhooks_update!(
+    f::Function
+    c::Client
+)
+```
+
+Adds a handler for the WEBHOOKS_UPDATE gateway event. The `f` parameter's signature should be:
+
+```
+    (ctx::Context) -> Any 
+```

@@ -1,0 +1,1 @@
+Provides a number of low-level 'basic' constraints for different types of values, e.g. 'must be at least', 'must be less than', 'must have this format', etc. and accompanying logic, such as the definition of user-friendly error messages.

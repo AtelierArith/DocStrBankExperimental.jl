@@ -1,0 +1,1 @@
+send(pluto,buffer;repeat=false) Plutoデバイスでバッファ`buffer`を送信します。フラグがtrueに設定されている場合、送信を無限に繰り返します。use*internal*bufferがtrueに設定されている場合、使用されるバッファはPlutoデバイスに既に保存されているものです（バッファの再割り当てを保存します）。

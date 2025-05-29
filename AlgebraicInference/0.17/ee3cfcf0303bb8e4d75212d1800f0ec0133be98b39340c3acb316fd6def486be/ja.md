@@ -1,0 +1,5 @@
+```
+HUGIN <: ArchitectureType
+```
+
+HUGINアーキテクチャ。

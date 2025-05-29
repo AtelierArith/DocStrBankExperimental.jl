@@ -1,0 +1,6 @@
+```
+rand32([::AbstractRNG=Utils.default_rng()], size...;
+    kwargs...) -> AbstractArray{Float32, length(size)}
+```
+
+与えられた `size` の `AbstractArray{Float32}` を返し、均一分布からのランダムな数値を含みます。

@@ -1,0 +1,25 @@
+```
+open_rollout_fidelity(
+    ρ⃗₁::AbstractVector{<:Complex},
+    ρ⃗₂::AbstractVector{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::OpenQuantumSystem
+)
+open_rollout_fidelity(
+    ρ₁::AbstractMatrix{<:Complex},
+    ρ₂::AbstractMatrix{<:Complex},
+    controls::AbstractMatrix{<:Real},
+    Δt::AbstractVector,
+    system::OpenQuantumSystem
+)
+open_rollout_fidelity(
+    traj::NamedTrajectory,
+    system::OpenQuantumSystem;
+    state_name::Symbol=:ρ⃗̃,
+    control_name::Symbol=:a,
+    kwargs...
+)
+```
+
+オープン量子システムのロールアウトの最終状態と目標状態との間のフィデリティを計算します。

@@ -1,0 +1,1 @@
+Create matrix for applying boundary conditions to velocity fields `u`. This matrix only applies the boundary conditions depending on `u` itself (e.g. [`PeriodicBC`](@ref)). It does not apply constant boundary conditions (e.g. non-zero [`DirichletBC`](@ref)).

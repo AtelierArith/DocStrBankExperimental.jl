@@ -1,0 +1,1 @@
+`IterationResult` contains the results of the iteration process including a Label identifying the source of the k-ratios, the resulting Material, the initial and final k-ratios, whether the iteration converged and the number of steps.  The results can be output using `asa(DataFrame, ir::IterationResult)`.

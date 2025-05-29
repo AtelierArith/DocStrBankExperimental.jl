@@ -1,0 +1,1 @@
+Loss of effectiveness (LoE).

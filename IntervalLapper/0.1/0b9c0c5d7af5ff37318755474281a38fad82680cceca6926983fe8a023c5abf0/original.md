@@ -1,0 +1,1 @@
+A data structure for counting all intervals that overlap start .. stop. It is very fast. Two binary searches are performed to fina all the excluded elements, then the intersections can be deduced from there. See [BITS](https://arxiv.org/pdf/1208.3407.pdf) for more info.

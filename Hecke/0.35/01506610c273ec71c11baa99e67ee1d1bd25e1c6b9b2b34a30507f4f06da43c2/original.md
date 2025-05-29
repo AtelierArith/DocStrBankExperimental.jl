@@ -1,0 +1,5 @@
+```
+hasse_invariant(L::AbstractLat, p::Union{InfPlc, AbsNumFieldOrderIdeal{AbsSimpleNumField, AbsSimpleNumFieldElem}}) -> Int
+```
+
+Return the Hasse invariant of the rational span of the lattice `L` at the place `p`. The lattice must be quadratic.

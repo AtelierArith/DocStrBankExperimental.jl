@@ -1,0 +1,5 @@
+```
+AbstractDifference
+```
+
+Supertype for differences.

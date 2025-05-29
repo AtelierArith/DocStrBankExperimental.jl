@@ -1,0 +1,1 @@
+新しいHTTP/2設定がピアから適用されたときに呼び出されます。Settings*arrayは、適用した順序（設定が到着した順序）で変更したすべての設定を含むaws*http2*settingsの配列です。Num*settingsは、その配列の要素数です。

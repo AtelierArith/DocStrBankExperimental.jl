@@ -1,0 +1,1 @@
+returns an array of intersection points. Each element in the array is (`[x,y,...],alpha,theta)` where `[x,y,...]` is the n-dimensional intersection point, alpha is the line parameter value at the intersection point, and theta is the curve parameter value at the intersection point

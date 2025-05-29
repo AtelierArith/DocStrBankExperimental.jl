@@ -1,0 +1,5 @@
+```
+VisitationFrequency
+```
+
+[`ValueBinning`](@ref) のエイリアスです。

@@ -1,0 +1,1 @@
+Returns true if the given CPU-thread lies inside of a CPU-core that has the highest power efficiency of all the CPU-cores (i.e. an efficiency value of 1). If there is only a single CPU-core kind, the return value is false for all CPU IDs.

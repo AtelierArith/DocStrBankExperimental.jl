@@ -1,0 +1,143 @@
+```
+r_ecef_to_eci([T, ]ECEF, ECI, jd_utc::Number[, eop]) -> T
+```
+
+Compute the rotation from an Earth-Centered, Earth-Fixed (`ECEF`) reference frame to an Earth-Centered Inertial (`ECI`) reference frame at the Julian Day `jd_utc` [UTC]. The rotation description that will be used is given by `T`, which can be `DCM` or `Quaternion`. The algorithm might also require the Earth Orientation Parameters (EOP) `eop` depending on the source and destination frames.
+
+!!! note
+    For more information, including how to specify the origin and destination reference frames, see the **Extended Help**.
+
+
+# Returns
+
+  * `T`: Rotation entity that aligns the ECEF reference frame with the ECI reference frame.
+
+# Extended Help
+
+## Rotation Description
+
+The rotation can be described by Direction Cosine Matrices (DCMs) or Quaternions. This is selected by the parameter `T`. The possible values are:
+
+  * `DCM`: The rotation will be described by a Direction Cosine Matrix.
+  * `Quaternion`: The rotation will be described by a Quaternion.
+
+If no value is specified, it falls back to `DCM`.
+
+## Conversion Model
+
+The model that will be used to compute the rotation is automatically inferred given the selection of the origin and destination frames. **Notice that mixing IAU-76/FK5 and IAU-2006/2010 frames is not supported.**
+
+## Supported ECEF Reference Frames
+
+The ECEF frame is selected by the parameter `ECEF`. The possible values are:
+
+  * `ITRF()`: ECEF will be selected as the International Terrestrial Reference Frame (ITRF).
+  * `PEF()`: ECEF will be selected as the Pseudo-Earth Fixed (PEF) reference frame.
+  * `TIRS()`: ECEF will be selected as the Terrestrial Intermediate Reference System (TIRS).
+
+## Supported ECI Reference Frames
+
+The ECI frame is selected by the parameter `ECI`. The possible values are:
+
+  * `TEME()`: ECI will be selected as the True Equator Mean Equinox (TEME) reference frame.
+  * `TOD()`: ECI will be selected as the True of Date (TOD).
+  * `MOD()`: ECI will be selected as the Mean of Date (MOD).
+  * `J2000()`: ECI will be selected as the J2000 reference frame.
+  * `GCRF()`: ECI will be selected as the Geocentric Celestial Reference Frame (GCRF).
+  * `CIRS()`: ECI will be selected as the Celestial Intermediate Reference System (CIRS).
+  * `ERS()`: ECI will be selected as the Earth Reference System (ERS).
+  * `MOD06()`: ECI will be selected as the Mean of Date (MOD) according to the definition in   IAU-2006/2010 theory.
+  * `MJ2000()`: ECI will be selected as the J2000 mean equatorial frame (MJ2000).
+
+!!! note
+    The frames `MOD()` and `MOD06()` are virtually the same. However, we selected different names to make clear which theory are being used since mixing transformation between frames from IAU-76/FK5 and IAU-2006/2010 must be performed with caution.
+
+
+# Earth Orientation Parameters (EOP)
+
+The conversion between the frames might depend on EOP (see [`fetch_iers_eop`](@ref) and [`read_iers_eop`](@ref)). If IAU-76/FK5 model is used, the type of `eop` must be [`EopIau1980`](@ref). Otherwise, if IAU-2006/2010 model is used, the type of `eop` must be [`EopIau2000A`](@ref). The following table shows the requirements for EOP data given the selected frames.
+
+| Model                       | ECEF   | ECI      | EOP Data        |
+|:--------------------------- |:------ |:-------- |:--------------- |
+| IAU-76/FK5                  | `ITRF` | `GCRF`   | EOP IAU1980     |
+| IAU-76/FK5                  | `ITRF` | `J2000`  | EOP IAU1980     |
+| IAU-76/FK5                  | `ITRF` | `MOD`    | EOP IAU1980     |
+| IAU-76/FK5                  | `ITRF` | `TOD`    | EOP IAU1980     |
+| IAU-76/FK5                  | `ITRF` | `TEME`   | EOP IAU1980     |
+| IAU-76/FK5                  | `PEF`  | `GCRF`   | EOP IAU1980     |
+| IAU-76/FK5                  | `PEF`  | `J2000`  | Not required¹   |
+| IAU-76/FK5                  | `PEF`  | `MOD`    | Not required¹   |
+| IAU-76/FK5                  | `PEF`  | `TOD`    | Not required¹   |
+| IAU-76/FK5                  | `PEF`  | `TEME`   | Not required¹   |
+| IAU-2006/2010 CIO-based     | `ITRF` | `CIRS`   | EOP IAU2000A    |
+| IAU-2006/2010 CIO-based     | `ITRF` | `GCRF`   | EOP IAU2000A    |
+| IAU-2006/2010 CIO-based     | `TIRS` | `CIRS`   | Not required¹   |
+| IAU-2006/2010 CIO-based     | `TIRS` | `GCRF`   | Not required¹ ² |
+| IAU-2006/2010 Equinox-based | `ITRF` | `ERS`    | EOP IAU2000A    |
+| IAU-2006/2010 Equinox-based | `ITRF` | `MOD06`  | EOP IAU2000A    |
+| IAU-2006/2010 Equinox-based | `ITRF` | `MJ2000` | EOP IAU2000A    |
+| IAU-2006/2010 Equinox-based | `TIRS` | `ERS`    | Not required¹ ³ |
+| IAU-2006/2010 Equinox-based | `TIRS` | `MOD06`  | Not required¹ ³ |
+| IAU-2006/2010 Equinox-based | `TIRS` | `MJ2000` | Not required¹ ³ |
+
+`¹`: In this case, UTC will be assumed equal to UT1 to compute the Greenwich Mean Sidereal Time. This is an approximation, but should be sufficiently accurate for some applications. Notice that, if EOP Data is provided, UT1 will be accurately computed.
+
+`²`: In this case, the terms that account for the free core nutation and time dependent effects of the Celestial Intermediate Pole (CIP) position with respect to the GCRF will not be available, reducing the precision.
+
+`³`: In this case, the terms that corrects the nutation in obliquity and in longitude due to the free core nutation will not be available, reducing the precision.
+
+!!! info
+    In this function, if EOP corrections are not provided, MOD and TOD frames will be computed considering the original IAU-76/FK5 theory. Otherwise, the corrected frame will be used.
+
+
+# Examples
+
+```julia-repl
+julia> eop_iau1980 = fetch_iers_eop(Val(:IAU1980));
+
+julia> r_ecef_to_eci(DCM, ITRF(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau1980)
+DCM{Float64}:
+ -0.619267      0.78518     -0.00132979
+ -0.78518      -0.619267     3.33509e-5
+ -0.000797312   0.00106478   0.999999
+
+julia> r_ecef_to_eci(ITRF(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau1980)
+DCM{Float64}:
+ -0.619267      0.78518     -0.00132979
+ -0.78518      -0.619267     3.33509e-5
+ -0.000797312   0.00106478   0.999999
+
+julia> r_ecef_to_eci(PEF(), J2000(), date_to_jd(1986, 06, 19, 21, 35, 0))
+DCM{Float64}:
+ -0.619271      0.785176    -0.00133066
+ -0.785177     -0.619272     3.45854e-5
+ -0.000796885   0.00106622   0.999999
+
+julia> r_ecef_to_eci(PEF(), J2000(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau1980)
+DCM{Float64}:
+ -0.619267      0.78518     -0.00133066
+ -0.78518      -0.619267     3.45854e-5
+ -0.000796879   0.00106623   0.999999
+
+julia> r_ecef_to_eci(Quaternion, ITRF(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau1980)
+Quaternion{Float64}:
+  + 0.43631 - 0.000590997⋅i + 0.000305106⋅j + 0.899796⋅k
+
+julia> eop_iau2000a = fetch_iers_eop(Val(:IAU2000A));
+
+julia> r_ecef_to_eci(ITRF(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau2000a)
+DCM{Float64}:
+ -0.619267      0.78518     -0.00132979
+ -0.78518      -0.619267     3.33516e-5
+ -0.000797311   0.00106478   0.999999
+
+julia> r_ecef_to_eci(TIRS(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0))
+DCM{Float64}:
+ -0.619271      0.785176    -0.00133066
+ -0.785177     -0.619272     3.45884e-5
+ -0.000796885   0.00106623   0.999999
+
+julia> r_ecef_to_eci(Quaternion, ITRF(), GCRF(), date_to_jd(1986, 06, 19, 21, 35, 0), eop_iau2000a)
+Quaternion{Float64}:
+  + 0.43631 - 0.000590997⋅i + 0.000305106⋅j + 0.899796⋅k
+```

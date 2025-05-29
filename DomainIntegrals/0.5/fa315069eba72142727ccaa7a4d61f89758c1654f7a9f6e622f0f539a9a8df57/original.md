@@ -1,0 +1,1 @@
+Is the measure discrete?

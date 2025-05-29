@@ -1,0 +1,1 @@
+A trait hierarchy denoting types of nodes `GateType` defines an orthogonal type hierarchy of node types, not circuit types, so we can dispatch on node type regardless of circuit type. See @ref{https://docs.julialang.org/en/v1/manual/methods/#Trait-based-dispatch-1}

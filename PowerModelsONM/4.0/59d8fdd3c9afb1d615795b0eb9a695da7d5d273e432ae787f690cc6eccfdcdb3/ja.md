@@ -1,0 +1,7 @@
+```
+constraint_mc_inverter_theta_ref(pm::PMD.AbstractUnbalancedACRModel, nw::Int, i::Int, va_ref::Vector{<:Real})
+```
+
+ACR定式の参照バスにおける位相角制約を作成します
+
+math`\begin{align} \Im(V) = \tan(V_a^{ref}) \Re(V) \end{align}`

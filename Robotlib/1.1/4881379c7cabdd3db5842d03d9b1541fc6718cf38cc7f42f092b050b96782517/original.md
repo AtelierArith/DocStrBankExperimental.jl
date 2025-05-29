@@ -1,0 +1,1 @@
+`function ikinePOE(xi,T,q0; maxiter=100, λ = 1e0, tol = 1e-12, verbose = false, adaptive = true)` Iterative inverse kinematics `λ`sets the start value of the regularizing parameter (kind of like inverse step size). Bigger value means slower but more robust convergence, if adaptive is set to true, λ is adapted to speed up convergence.

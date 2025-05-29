@@ -1,0 +1,1 @@
+`ImGuiPopupData`のデストラクタ

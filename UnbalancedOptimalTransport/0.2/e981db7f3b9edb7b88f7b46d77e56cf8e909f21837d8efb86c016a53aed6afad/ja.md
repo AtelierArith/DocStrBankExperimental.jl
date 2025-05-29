@@ -1,0 +1,1 @@
+このパッケージは、「Sinkhorn Divergences for Unbalanced Optimal Transport」[SFVTP19 (http://arxiv.org/abs/1910.12958)]のアルゴリズム1のMITライセンス、依存関係のない実装を提供しており、異なる総質量を持つ2つの正の測度間の最適輸送とSinkhornダイバージェンスの計算を可能にします。質量の創造と破壊は、いくつかの可能なφ-ダイバージェンスの1つによってペナルティが課されます。

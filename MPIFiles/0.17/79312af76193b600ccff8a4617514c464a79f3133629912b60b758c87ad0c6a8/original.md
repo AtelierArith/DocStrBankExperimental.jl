@@ -1,0 +1,5 @@
+```
+scannerManufacturer(mdfPart)
+```
+
+Scanner manufacturer

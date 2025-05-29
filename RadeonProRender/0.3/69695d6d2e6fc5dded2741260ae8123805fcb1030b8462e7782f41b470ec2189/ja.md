@@ -1,0 +1,1 @@
+EnvironmentLightの画像を設定します。

@@ -1,0 +1,1 @@
+Basis state of σᶻ

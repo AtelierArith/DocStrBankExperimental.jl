@@ -1,0 +1,1 @@
+AbstractExplicitNeutralACRModelの具体的な型

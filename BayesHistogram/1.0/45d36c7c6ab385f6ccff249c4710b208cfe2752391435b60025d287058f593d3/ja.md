@@ -1,0 +1,1 @@
+BayesHistogram.jl     メイン手続き:      function bayesian*blocks(         t::AbstractVector{T};         weights::AbstractVector{W} = one.(t),         sumw2::AbstractVector{W} = abs2.(weights),         prior = BIC(),         resolution = Inf,         min*counts::Real = 0,     ) where {T<:Real,W<:Real}

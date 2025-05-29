@@ -1,0 +1,5 @@
+```
+WDiGraph
+```
+
+`SimpleWeightedDiGraph`のエイリアスです。

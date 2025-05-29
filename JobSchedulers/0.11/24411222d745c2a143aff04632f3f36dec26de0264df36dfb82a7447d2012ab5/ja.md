@@ -1,0 +1,3 @@
+```
+isqueuing(j::Job) :: Bool
+```

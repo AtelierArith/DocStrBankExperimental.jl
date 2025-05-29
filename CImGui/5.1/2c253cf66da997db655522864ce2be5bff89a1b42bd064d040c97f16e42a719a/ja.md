@@ -1,0 +1,1 @@
+`ImGuiPlatformMonitor`のデストラクタ

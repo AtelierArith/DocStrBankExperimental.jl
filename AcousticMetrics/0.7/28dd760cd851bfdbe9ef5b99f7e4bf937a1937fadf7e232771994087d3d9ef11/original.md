@@ -1,0 +1,5 @@
+```
+PowerSpectralDensityPhase
+```
+
+Alias for `PressureSpectrumPhase`.

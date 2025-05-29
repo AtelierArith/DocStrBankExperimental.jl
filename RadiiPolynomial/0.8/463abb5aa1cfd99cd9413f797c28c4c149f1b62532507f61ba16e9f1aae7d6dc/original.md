@@ -1,0 +1,5 @@
+```
+Laplacian <: SpecialOperator
+```
+
+Laplacian operator.

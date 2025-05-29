@@ -1,0 +1,1 @@
+Distributions.jlのproduct_distributionの拡張により、単変量だけでなく任意の分布間での積を取ることができるようになります。

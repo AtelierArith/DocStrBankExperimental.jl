@@ -1,0 +1,5 @@
+```
+modecutoff
+```
+
+Returns `mode.N`

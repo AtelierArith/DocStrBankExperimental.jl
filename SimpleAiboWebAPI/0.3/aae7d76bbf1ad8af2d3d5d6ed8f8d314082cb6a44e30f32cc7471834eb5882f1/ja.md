@@ -1,0 +1,5 @@
+```
+getDefaultDeviceNickname()
+```
+
+はデフォルトデバイスのニックネームを返します。

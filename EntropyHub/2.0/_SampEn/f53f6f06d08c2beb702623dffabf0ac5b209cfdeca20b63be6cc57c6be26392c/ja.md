@@ -1,0 +1,45 @@
+```
+Samp, A, B = SampEn(Sig)
+```
+
+データ系列 `Sig` から推定されたサンプルエントロピー推定値 `Samp` と一致した状態ベクトルの数 (`m`:B, `m+1`:A) を返します。デフォルトのパラメータを使用して、`m` = [0,1,2] です：埋め込み次元 = 2、時間遅延 = 1、半径閾値 = 0.2*SD(`Sig`)、対数 = 自然対数
+
+```
+Samp, A, B, (Vcp, Ka, Kb) = SampEn(Sig, ..., Vcp = true)
+```
+
+`Vcp == true` の場合、サンプルエントロピー推定値 (`Samp`) と一致した状態ベクトルの数 (`m: B`, `m+1: A`) に加えて、追加のタプル `(Vcp, Ka, Kb)` が返されます。`(Vcp, Ka, Kb)` には条件付き確率の分散 (`Vcp`)、すなわち CP = A/B、及び長さ m+1 の **重複する** 一致ベクトルペアの数 (`Ka`) と長さ m の (`Kb`) が含まれます。注意：`Vcp` はゼロ次元の埋め込み次元 (m = 0) では未定義であり、計算の要求により、**関数の出力を返すのにかなりの時間がかかります。** 詳細については [2] の付録 B を参照してください。
+
+```
+Samp, A, B = SampEn(Sig::AbstractArray{T,1} where T<:Real; m::Int=2, tau::Int=1, r::Real=0.2*std(Sig,corrected=false), Logx::Real=exp(1), Vcp::Bool=false)
+```
+
+指定されたキーワード引数を使用して、データ系列 `Sig` から推定された次元 = [0,1,...,`m`] のサンプルエントロピー推定値 `Samp` を返します：
+
+# 引数：
+
+`m`     - 埋め込み次元、正の整数
+
+`tau`   - 時間遅延、正の整数
+
+`r`     - 半径距離閾値、正のスカラー  
+
+`Logx`  - 対数の底、正のスカラー 
+
+`Vcp`   - 条件付き確率の分散と重複する一致ベクトルペアの数を返すオプション
+
+# 参照： `ApEn`, `FuzzEn`, `PermEn`, `CondEn`, `XSampEn`, `SampEn2D`, `MSEn`
+
+# 参考文献：
+
+```
+[1] Joshua S Richman and J. Randall Moorman. 
+    "Physiological time-series analysis using approximate entropy
+    and sample entropy." 
+    American Journal of Physiology-Heart and Circulatory Physiology (2000).
+
+[2] Douglas E Lake, Joshua S Richman, M.P. Griffin, J. Randall Moorman
+    "Sample entropy analysis of neonatal heart rate variability."
+    American Journal of Physiology-Regulatory, Integrative and Comparative Physiology
+    283, no. 3 (2002): R789-R797.
+```

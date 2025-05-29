@@ -1,0 +1,1 @@
+bootstrap(statistic, data, sampling)

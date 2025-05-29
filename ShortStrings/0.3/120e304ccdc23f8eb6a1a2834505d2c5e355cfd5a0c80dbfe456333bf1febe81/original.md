@@ -1,0 +1,1 @@
+Create a ShortString, using the smallest ShortString that can fit the string, unless it is optionally followed by a single ASCII character and a maximum length. `ss"foo"b255` indicates that a ShortString that can contain 255 bytes should be used.

@@ -1,0 +1,1 @@
+get*moments*normalizing_factors(NProgMoms::Vector{Int}, n::FT, θ::FT)   `NProgMoms` - vector containing number of prognostic moments for each distribution   `norms` - vector containing scale of number and mass/volume of particles Returns normalizing factors of the vector of moments based on given scales of number and mass/volume of particles

@@ -1,0 +1,1 @@
+このUnitTypeは、単位Hzを持つUnitTypes.Hertzの基本的な測定を表します。

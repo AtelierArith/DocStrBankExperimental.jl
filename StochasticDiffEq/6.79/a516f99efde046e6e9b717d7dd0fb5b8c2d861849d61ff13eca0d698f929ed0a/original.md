@@ -1,0 +1,1 @@
+TangXiaoSROCK2: S-ROCK Method Is a fixed step size stabilized expicit method for stiff problems. Only for Ito problems. Weak order of 2 and strog order of 1. Has 5 versions with different stability domains which can be used as TangXiaoSROCK2(version_num=i) where i is 1-5. Under Development.

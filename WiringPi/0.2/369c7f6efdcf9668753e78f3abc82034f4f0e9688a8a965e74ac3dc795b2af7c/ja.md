@@ -1,0 +1,3 @@
+```
+softToneStop(pin)
+```

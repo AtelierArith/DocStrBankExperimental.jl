@@ -1,0 +1,5 @@
+```
+update!(diag)
+```
+
+Update `diag`.

@@ -1,0 +1,3 @@
+```
+Ellipse <: AbstractShape{2}
+```

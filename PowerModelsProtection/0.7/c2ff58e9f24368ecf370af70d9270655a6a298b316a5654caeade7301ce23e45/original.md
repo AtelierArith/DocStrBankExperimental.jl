@@ -1,0 +1,5 @@
+```
+constraint_mc_pq_inverter(pm::_PMD.AbstractUnbalancedPowerModel, i::Int; nw::Int=nw_id_default)
+```
+
+Constraints for fault current contribution of multiconductor inverter in grid-following mode

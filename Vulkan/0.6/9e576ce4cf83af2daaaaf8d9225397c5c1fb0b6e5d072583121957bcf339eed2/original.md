@@ -1,0 +1,9 @@
+High-level wrapper for VkClearColorValue.
+
+[API documentation](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkClearColorValue.html)
+
+```julia
+struct ClearColorValue <: Vulkan.HighLevelStruct
+```
+
+  * `vks::VulkanCore.LibVulkan.VkClearColorValue`

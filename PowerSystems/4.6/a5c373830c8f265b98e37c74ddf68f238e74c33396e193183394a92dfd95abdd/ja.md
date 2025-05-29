@@ -1,0 +1,7 @@
+複数のStaticInjectionのインスタンスを含むサブシステムのための抽象型
+
+サブタイプは以下を実装しなければなりません：
+
+  * get_subcomponents(subsystem::StaticInjectionSubsystem)
+
+サブタイプのサブコンポーネントは、マスクされたコンポーネントとしてシステムに接続されている必要があります。

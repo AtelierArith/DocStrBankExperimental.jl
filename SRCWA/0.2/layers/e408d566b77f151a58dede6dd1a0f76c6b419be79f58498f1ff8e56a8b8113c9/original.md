@@ -1,0 +1,1 @@
+halfspace(Kx,Ky,epsilon) Computes the eigenmodes of an infinitely thin halfspace in a Halfspace object Kx: x-axis component of the propagation vector Ky: y-axis component of the propagation vector epsilon: bulk permittivity of the halfspace returns halfspace object

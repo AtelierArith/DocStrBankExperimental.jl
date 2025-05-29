@@ -1,0 +1,14 @@
+引数:
+
+  * `memory_requirements::SparseImageMemoryRequirements`
+  * `next::Any`: デフォルトは `C_NULL`
+
+[API ドキュメント](https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VkSparseImageMemoryRequirements2.html)
+
+```julia
+SparseImageMemoryRequirements2(
+    memory_requirements::Vulkan.SparseImageMemoryRequirements;
+    next
+) -> Vulkan.SparseImageMemoryRequirements2
+
+```

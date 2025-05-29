@@ -1,0 +1,1 @@
+Finds the mapping of the atoms in the first list to those in the second. Returns an array of length the same as the second list where the number is the atom index in the first list. Atoms missing from the first list are given 0.

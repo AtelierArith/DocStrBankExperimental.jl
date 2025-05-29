@@ -1,0 +1,1 @@
+InfrastructureModelsの`sol_component_value_edge`関数のためのPowerModelsラッパー。

@@ -1,0 +1,1 @@
+Turns in given single network data in multinetwork data with a `count` replicate of the given network.  Note that this function performs a deepcopy of the network data.  Significant multinetwork space savings can often be achieved by building application specific methods of building multinetwork with minimal data replication.

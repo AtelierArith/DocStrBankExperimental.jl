@@ -1,0 +1,1 @@
+この定義は、Base.getpropertyをオーバーライドして、ドット構文、すなわちSpecies.massまたはSpecies.chargeを介してSpeciesフィールド:massaおよび:chargeへのアクセスを禁止します。

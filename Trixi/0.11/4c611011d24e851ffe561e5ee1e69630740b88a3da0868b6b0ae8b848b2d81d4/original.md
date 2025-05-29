@@ -1,0 +1,23 @@
+```
+LiftCoefficientShearStress2D(aoa, rho_inf, u_inf, l_inf)
+```
+
+Compute the lift coefficient
+
+$$
+C_{L,f} \coloneqq \frac{\oint_{\partial \Omega} \boldsymbol \tau_w \cdot \psi_L \, \mathrm{d} S}
+                        {0.5 \rho_{\infty} U_{\infty}^2 L_{\infty}}
+$$
+
+based on the wall shear stress vector $\tau_w$ along a boundary. In 2D, the freestream-normal unit vector $\psi_L$ is given by
+
+$$
+\psi_L \coloneqq \begin{pmatrix} -\sin(\alpha) \\ \cos(\alpha) \end{pmatrix}
+$$
+
+where $\alpha$ is the angle of attack. Supposed to be used in conjunction with [`AnalysisSurfaceIntegral`](@ref) which stores the boundary information and semidiscretization.
+
+  * `aoa::Real`: Angle of attack in radians (for airfoils etc.)
+  * `rho_inf::Real`: Free-stream density
+  * `u_inf::Real`: Free-stream velocity
+  * `l_inf::Real`: Reference length of geometry (e.g. airfoil chord length)

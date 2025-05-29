@@ -1,0 +1,46 @@
+```julia
+fetch_vectors(
+    COMMAND;
+    file,
+    AIRMASS,
+    ANG_FORMAT,
+    ANG_RATE_CUTOFF,
+    APPARENT,
+    CAL_FORMAT,
+    CAL_TYPE,
+    CENTER,
+    COORD_TYPE,
+    CSV_FORMAT,
+    ELEV_CUT,
+    ELM_LABELS,
+    EMAIL_ADDR,
+    EXTRA_PREC,
+    LHA_CUTOFF,
+    OUT_UNITS,
+    QUANTITIES,
+    RANGE_UNITS,
+    REF_PLANE,
+    REF_SYSTEM,
+    R_T_S_ONLY,
+    SITE_COORD,
+    SKIP_DAYLT,
+    SOLAR_ELONG,
+    START_TIME,
+    STEP_SIZE,
+    STOP_TIME,
+    SUPPRESS_RANGE_RATE,
+    TIME_DIGITS,
+    TIME_ZONE,
+    TLIST,
+    TLIST_TYPE,
+    TP_TYPE,
+    VEC_CORR,
+    VEC_DELTA_T,
+    VEC_LABELS,
+    VEC_TABLE,
+    format
+)
+
+```
+
+Fetch planetary ephemeris for the body specified by `COMMAND`, in the `EPHEM_TYPE="VECTORS"` format.

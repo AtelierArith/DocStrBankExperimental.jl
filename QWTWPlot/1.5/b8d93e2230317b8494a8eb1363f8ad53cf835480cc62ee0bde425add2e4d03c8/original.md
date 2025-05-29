@@ -1,0 +1,5 @@
+```
+stopUdpThread()
+```
+
+stops UDP thread.	

@@ -1,0 +1,5 @@
+```
+Cash
+```
+
+Instrument representing Cash.

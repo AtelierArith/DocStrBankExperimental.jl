@@ -1,0 +1,1 @@
+Compute better and/or more estimates of power norms using the fact that $||Q^{k+h}|| ≤ ||Q^k|| \cdot ||Q^h||$. This uses multiplicativity, so it will not work for mixed norms, e.g., $||Q^k||_{s → w}$, or $||M^k|_{U^0}||$ (unless M preserves $U^0$, which is the case for $Q|_{U^0}$).

@@ -1,0 +1,1 @@
+MutableListの現在のバックセル、delstを返します。

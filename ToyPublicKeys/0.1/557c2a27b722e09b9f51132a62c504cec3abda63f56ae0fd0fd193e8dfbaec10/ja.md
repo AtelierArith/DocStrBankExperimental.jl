@@ -1,0 +1,6 @@
+```
+decrypt(msg::Vector{UInt8},
+        key::RSAPrivateKey)
+```
+
+RSA復号化関数で、[PKCS#1 v2.2](https://www.rfc-editor.org/rfc/rfc8017.html#page-19)を期待します。

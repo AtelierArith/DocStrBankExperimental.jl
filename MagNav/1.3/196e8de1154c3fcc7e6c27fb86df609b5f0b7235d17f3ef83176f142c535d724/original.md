@@ -1,0 +1,15 @@
+```
+denorm_sets(train_bias, train_scale, train)
+```
+
+Denormalize (or destandardize) features (columns) of training data.
+
+**Arguments:**
+
+  * `train_bias`:  `1` x `Nf` training data biases (means, mins, or zeros)
+  * `train_scale`: `1` x `Nf` training data scaling factors (std devs, maxs-mins, or ones)
+  * `train`:       `N_train` x `Nf` training data, normalized
+
+**Returns:**
+
+  * `train`: `N_train` x `Nf` training data, denormalized

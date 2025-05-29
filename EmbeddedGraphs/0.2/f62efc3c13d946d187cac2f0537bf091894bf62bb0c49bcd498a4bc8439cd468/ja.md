@@ -1,0 +1,1 @@
+SimpleEdgeIterで動作するようにBase.rand関数を拡張します。

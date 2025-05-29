@@ -1,0 +1,1 @@
+Julia式からすべてのLineNumberNodeを削除します。

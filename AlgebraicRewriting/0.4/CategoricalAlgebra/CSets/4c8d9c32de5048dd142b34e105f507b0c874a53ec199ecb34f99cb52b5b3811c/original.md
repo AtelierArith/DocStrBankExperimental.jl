@@ -1,0 +1,1 @@
+Invert a morphism which may not be monic nor epic. When the morphism is not  monic, an arbitrary element of the preimage is mapped to. When it is not epic, a completely arbitrary element is mapped to.

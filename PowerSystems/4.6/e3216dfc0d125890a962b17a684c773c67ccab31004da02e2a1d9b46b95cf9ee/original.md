@@ -1,0 +1,1 @@
+Supertype for all PowerSystems components. All subtypes must include a InfrastructureSystemsInternal member. Subtypes should call InfrastructureSystemsInternal() by default, but also must provide a constructor that allows existing values to be deserialized.

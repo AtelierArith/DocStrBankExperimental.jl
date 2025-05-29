@@ -1,0 +1,1 @@
+history*forest(history*id::Int) 	history_forestはValidityIntervalsのツリーを取得します。詳細は:[BitemporalPostgres Theory](https://actuarial-sciences-for-africa-asa.github.io/BitemporalPostgres.jl/stable/api/theory/)を参照してください。

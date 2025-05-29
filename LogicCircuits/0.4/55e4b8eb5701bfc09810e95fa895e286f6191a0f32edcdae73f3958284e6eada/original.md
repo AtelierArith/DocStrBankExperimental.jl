@@ -1,0 +1,1 @@
+Compute the lowest common ancestor of two vtree nodes Warning: this method uses an incomplete `varsubset` check for `descends_from` and is only correct when `v` and `w` are part of the same larger vtree.

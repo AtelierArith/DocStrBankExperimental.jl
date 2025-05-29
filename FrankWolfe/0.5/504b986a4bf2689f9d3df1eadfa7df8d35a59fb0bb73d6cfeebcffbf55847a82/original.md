@@ -1,0 +1,1 @@
+Compute the extreme point with a multi-vertex cache. `store_cache` indicates whether the newly-computed point should be stored in cache. `greedy` determines if we should return the first point with dot-product below `threshold` or look for the best one.

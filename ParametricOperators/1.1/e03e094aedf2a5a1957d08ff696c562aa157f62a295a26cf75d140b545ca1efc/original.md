@@ -1,0 +1,1 @@
+Diagonal matrix (elementwise) operator.

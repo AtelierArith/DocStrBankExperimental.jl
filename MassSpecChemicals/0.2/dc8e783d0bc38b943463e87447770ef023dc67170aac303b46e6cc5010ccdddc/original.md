@@ -1,0 +1,5 @@
+```
+Lithiation <: AbstractPosAdduct
+```
+
+[M+Li]+

@@ -1,0 +1,3 @@
+GPURosenbrock23()
+
+EnsembleGPUKernelを使用したカーネル生成のために特化したW法`Rosenbrock23`メソッドの実装です。

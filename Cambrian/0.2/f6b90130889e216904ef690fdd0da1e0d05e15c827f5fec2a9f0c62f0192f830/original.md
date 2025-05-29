@@ -1,0 +1,1 @@
+The generic iteration of an evolution. Calls populate, evaluate, and generation. Also calls log*gen and save*gen based on the provided config values. Subclasses of AbstractEvolution should override the populate, evaluate, or generation functions rather than overriding this function.

@@ -1,0 +1,13 @@
+```
+function constraint_boundary_voltage_magnitude(
+    pm::_PM.ACPPowerModel,
+    pmd::_PMD.FOTPUPowerModel,
+    i::Int,
+    f_idx::Tuple{Int,Int,Int},
+    f_connections::Vector{Int},
+    t_connections::Vector{Int};
+    nw::Int=nw_id_default
+)
+```
+
+ACP-FOTPU境界バス電圧の大きさ制約。

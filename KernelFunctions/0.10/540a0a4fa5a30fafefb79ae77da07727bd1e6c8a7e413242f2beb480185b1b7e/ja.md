@@ -1,0 +1,5 @@
+```
+RBFKernel()
+```
+
+[`SqExponentialKernel`](@ref) のエイリアスです。

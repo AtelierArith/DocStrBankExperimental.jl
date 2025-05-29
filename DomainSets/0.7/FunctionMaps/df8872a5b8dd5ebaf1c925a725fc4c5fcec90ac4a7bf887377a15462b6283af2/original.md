@@ -1,0 +1,1 @@
+Supertype of identity maps.

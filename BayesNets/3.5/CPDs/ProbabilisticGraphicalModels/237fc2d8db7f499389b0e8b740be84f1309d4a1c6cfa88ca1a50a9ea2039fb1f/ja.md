@@ -1,0 +1,1 @@
+抽象型は、Base.rand(ProbabilisticGraphicalModel, Sampler, nsamples)を使用してサンプリングを行います。                                 Base.rand!(Assignment, ProbabilisticGraphicalModel, Sampler)                                 Base.rand(ProbabilisticGraphicalModel, Sampler)

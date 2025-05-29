@@ -1,0 +1,1 @@
+`ImGuiTableSortSpecs`のデストラクタ

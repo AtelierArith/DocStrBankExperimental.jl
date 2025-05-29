@@ -1,0 +1,1 @@
+`eigvals(G)` for a `UndirectedGraph` returns the eigenvalues of `G`'s adjacency matrix. More generally, `eigvals(G,mat)` returns the eigenvalues of `mat(G)` where `mat` is a matrix-valued function of `G`. In particular, one can use `mat(G,laplace)` to find the eigenvalues of `G`'s Laplacian.

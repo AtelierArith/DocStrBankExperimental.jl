@@ -1,0 +1,1 @@
+AbstractUnbalancedPowerModel構造体からマルチネットワークデータにアクセスするためのヘルパー関数で、(id,data)ペアを返します。

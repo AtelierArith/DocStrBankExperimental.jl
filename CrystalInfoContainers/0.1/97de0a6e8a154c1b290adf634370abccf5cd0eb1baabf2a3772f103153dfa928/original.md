@@ -1,0 +1,1 @@
+get_value(CifCategory, n::Int, colname::Symbol) returns the actual value for the item in the nth position of colname. Usually for internal use only, as the order in which items appear is not guaranteed

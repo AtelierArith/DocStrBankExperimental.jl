@@ -1,0 +1,1 @@
+Loads an x11 style color list. Lines are of the form `r g b name which may have spaces` the `r`, `g` and `b` terms are numbers between 0 and 256 in decimal Lines starting with `!` are comments and are skipped

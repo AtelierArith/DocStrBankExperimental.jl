@@ -1,0 +1,1 @@
+A `Daf` query can use operations to process the data: [`EltwiseOperation`](@ref)s that preserve the shape of the data, and [`ReductionOperation`](@ref)s that reduce a matrix to a vector, or a vector to a scalar.

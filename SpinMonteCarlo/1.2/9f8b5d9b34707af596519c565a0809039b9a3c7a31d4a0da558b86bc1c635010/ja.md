@@ -1,0 +1,5 @@
+```
+ジャックナイフセット
+
+`MCObservableSet{Jackknife}`のエイリアス。
+```

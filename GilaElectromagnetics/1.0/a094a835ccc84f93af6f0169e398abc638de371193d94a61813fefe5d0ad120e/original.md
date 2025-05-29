@@ -1,0 +1,3 @@
+GlaOprMem
+
+Storage structure for a Green function operator. .cmpInf–-computation information see GlaKerOpt .trgVol–-target volume of Green function .srcVol–-source volume of Green function .mixInf–-information for matching source and target grids, see GlaExtInf .dimInfC–-dimension information for Green function volumes, host side .dimInfD–-dimension information for Green function volumes, device side .egoFur–-unique Fourier transform data for circulant Green function .fftPlnFwd–-forward Fourier transform plans .fftPlnRev–-reverse Fourier transform plans .phzInf–-phase vector for splitting Fourier transforms

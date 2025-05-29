@@ -1,0 +1,1 @@
+BoolIndividual : バイナリ文字列遺伝子型を使用した例のIndividualクラス

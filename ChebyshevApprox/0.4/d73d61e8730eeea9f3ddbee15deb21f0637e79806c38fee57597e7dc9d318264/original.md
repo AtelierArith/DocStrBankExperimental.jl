@@ -1,0 +1,1 @@
+CApproxPoly is an immutable struct that contains the information used to approximate a multi-dimensional function. CApproxPlan has three fileds: A Tuple that contains the univariate Chebyshev polynomials, the degree of the  approximating polynomials, and the approximation domain.

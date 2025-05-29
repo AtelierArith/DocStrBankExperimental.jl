@@ -1,0 +1,1 @@
+`ImGuiPayload`のデストラクタ

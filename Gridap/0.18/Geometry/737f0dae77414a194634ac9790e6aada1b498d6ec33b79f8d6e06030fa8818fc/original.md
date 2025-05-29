@@ -1,0 +1,3 @@
+```
+DiscreteModelFromFile(filename::AbstractString)
+```

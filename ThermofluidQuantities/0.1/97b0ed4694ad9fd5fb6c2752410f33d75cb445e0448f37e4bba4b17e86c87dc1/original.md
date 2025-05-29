@@ -1,0 +1,3 @@
+```
+SpecificHeatRatio <: DimensionlessPhysicalQuantity
+```

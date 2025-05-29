@@ -1,0 +1,18 @@
+```
+sampleSATE(g, doT)
+sampleSATE(g, doT; samplesPerPosterior=10)
+```
+
+Estimate Sample Average Treatment Effect with CausalGPSLC model
+
+Using [`sampleITE`](@ref), samples can be drawn for the sample average treatment effect
+
+Params:
+
+  * `g::`[`GPSLCObject`](@ref): Contains data and hyperparameters
+  * `doT`: The requested intervention (e.g. set all treatments to 1.0)
+  * `samplesPerPosterior`: How many samples to draw per posterior sample in `g`.
+
+Returns:
+
+`SATEsamples`: `n x m` matrix where `n` is the number of individuals, and `m` is the number of samples.

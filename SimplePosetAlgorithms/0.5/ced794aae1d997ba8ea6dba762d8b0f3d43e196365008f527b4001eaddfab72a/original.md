@@ -1,0 +1,1 @@
+`realizer(P::SimplePoset,d::Int)` creates a realizer of `P` using `d` linear extensions or throws an error if none exists. The output is an `n`-by-`d` matrix whose columns give the linear extensions. The first element in each column is the bottom element of that linear extension.

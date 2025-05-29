@@ -1,0 +1,3 @@
+Concatenate multiple `Daf` data sets along some axis. This copies the data from the concatenated data sets into some target data set.
+
+The exact behavior of concatenation is surprisingly complex when accounting for sparse vs. dense matrices, different matrix layouts, and properties which are not along the concatenation axis. The implementation is further complicated by minimizing the allocation of intermediate memory buffers for the data; that is, in principle, concatenating from and into memory-mapped data sets should not allocate "any" memory buffers - the data should be copied directly from one memory-mapped region to another.

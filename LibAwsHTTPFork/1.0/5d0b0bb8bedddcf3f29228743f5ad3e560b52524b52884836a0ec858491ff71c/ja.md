@@ -1,0 +1,1 @@
+HTTP/2 PING が完了したときに呼び出されます。ピアがそれを承認したかどうかにかかわらず。error*code が AWS*ERROR*SUCCESS (0) の場合、ピアは PING を承認しており、round*trip*time*ns は接続の往復時間をナノ秒単位で示します。error*code がゼロ以外の場合、PING が承認される前に接続エラーが発生し、この場合は round*trip*time*ns は無意味になります。

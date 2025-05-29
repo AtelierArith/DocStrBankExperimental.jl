@@ -1,0 +1,1 @@
+Called when a [`aws_websocket_send_frame`](@ref)() operation completes. error_code will be zero if the operation was successful. "Success" does not guarantee that the peer actually received or processed the frame. Invoked exactly once per sent frame on the websocket's event-loop thread.

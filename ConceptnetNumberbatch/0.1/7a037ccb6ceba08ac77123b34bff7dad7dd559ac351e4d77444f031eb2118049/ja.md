@@ -1,0 +1,1 @@
+`url`からConceptNetNumberbatch埋め込みをダウンロードし、`localfile`で指し示されるファイルに保存します。

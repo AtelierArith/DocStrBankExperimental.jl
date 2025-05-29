@@ -1,0 +1,1 @@
+Secure Tunnel Serviceに完全に確立された接続で呼び出すコールバックのシグネチャ

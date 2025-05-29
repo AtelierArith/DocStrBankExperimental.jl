@@ -1,0 +1,1 @@
+Returns the pdf of the provided characteristic function Φ as the result of performing an inverse Fourier transform using fft and a discretized grid. The function returned is a linear interpolation of the resulting grid.

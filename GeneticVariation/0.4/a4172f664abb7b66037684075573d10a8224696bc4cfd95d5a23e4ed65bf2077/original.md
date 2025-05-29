@@ -1,0 +1,1 @@
+A `Mutated` site describes a site where two aligned nucleotides are definately mutated. By definately mutated this means that the symbols of the site are non-ambiguity symbols, and they are not the same symbol.

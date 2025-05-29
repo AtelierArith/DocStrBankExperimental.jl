@@ -1,0 +1,1 @@
+`unique_refls(W::ComplexReflectionGroup)` A  sublist of `1:length(roots(W))` such  that the distinguished reflections around  the  corresponding  roots  reach  one  time only each distinguished reflection of `W`.

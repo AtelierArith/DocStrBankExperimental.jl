@@ -1,0 +1,3 @@
+```
+boptimize!(o::BOpt)
+```

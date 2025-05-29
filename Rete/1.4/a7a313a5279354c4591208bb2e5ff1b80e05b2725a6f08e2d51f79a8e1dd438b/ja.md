@@ -1,0 +1,1 @@
+AbstractReteNodeはすべてのReteノードの抽象スーパタイプです。

@@ -1,0 +1,1 @@
+A special type of a message, for which the actual message is not computed immediately, but is computed later on demand (potentially never). To compute and get the actual message, one needs to call the `as_message` method.

@@ -1,0 +1,3 @@
+```
+softServoWrite(pin, value)
+```

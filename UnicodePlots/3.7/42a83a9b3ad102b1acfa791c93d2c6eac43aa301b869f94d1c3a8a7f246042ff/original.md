@@ -1,0 +1,1 @@
+The `BlockCanvas` is also Unicode-based. It has half the resolution of the `BrailleCanvas`. In contrast to BrailleCanvas, the pixels don't have visible spacing between them. This canvas effectively turns every character into four pixels that can individually be manipulated using binary operations.

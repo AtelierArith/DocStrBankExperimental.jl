@@ -1,0 +1,5 @@
+```
+ShenoyShafer <: ArchitectureType
+```
+
+シェノイ・シェイファーアーキテクチャ。

@@ -1,0 +1,1 @@
+A data structure containing two uni-variate functions defined in the domain of 0.0-to-1.0. The `A` function drives the evolution of the X basis and the `B` function drives the evolution of the Z basis. `init_default` is a uni-variate function that given an integer n builds a initial state vector for an n qubit system.

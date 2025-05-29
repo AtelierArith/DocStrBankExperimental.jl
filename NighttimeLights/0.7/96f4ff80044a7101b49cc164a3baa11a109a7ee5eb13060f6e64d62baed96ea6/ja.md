@@ -1,0 +1,5 @@
+ピクセルの時系列は数個の外れ値を示すことがありますが、全体としてそのピクセルは経済活動を測定する上で重要である可能性があります。outlier_hampel関数は、外れ値の観測値を補間された値で置き換えます。これは、Rのforecastパッケージのtsclean関数を使用して行われます。
+
+```julia
+outlier_hampel(radiance_pixel_ts)
+```

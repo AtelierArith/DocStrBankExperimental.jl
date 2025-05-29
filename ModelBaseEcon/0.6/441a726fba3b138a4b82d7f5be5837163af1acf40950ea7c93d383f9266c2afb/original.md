@@ -1,0 +1,1 @@
+mexp(x) = -exp(x)

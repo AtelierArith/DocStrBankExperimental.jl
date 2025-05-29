@@ -1,0 +1,5 @@
+```
+dagger(x)
+```
+
+Hermitian conjugate.

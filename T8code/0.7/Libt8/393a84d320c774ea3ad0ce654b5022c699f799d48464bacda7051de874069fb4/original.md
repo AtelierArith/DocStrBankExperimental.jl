@@ -1,0 +1,9 @@
+```
+t8_forest_compute_profile(forest)
+```
+
+### Prototype
+
+```c
+void t8_forest_compute_profile (t8_forest_t forest);
+```

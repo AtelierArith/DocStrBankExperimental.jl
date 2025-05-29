@@ -1,0 +1,1 @@
+Setup a standard test system using some random data and supply the data to the caller. Extra atomic or system properties can be specified using `extra_atprop` and `extra_sysprop` and specific standard keys can be ignored using `drop_atprop` and `drop_sysprop`.

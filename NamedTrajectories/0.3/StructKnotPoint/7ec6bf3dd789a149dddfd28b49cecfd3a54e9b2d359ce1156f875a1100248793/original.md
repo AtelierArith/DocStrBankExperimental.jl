@@ -1,0 +1,3 @@
+```
+KnotPoint constructor
+```

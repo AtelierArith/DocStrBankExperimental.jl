@@ -1,0 +1,5 @@
+```
+SimpleWeightedDiGraphEdge
+```
+
+Alias for `SimpleWeightedEdge`.

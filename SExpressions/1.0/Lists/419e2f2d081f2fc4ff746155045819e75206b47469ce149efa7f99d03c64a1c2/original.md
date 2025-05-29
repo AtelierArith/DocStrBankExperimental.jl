@@ -1,0 +1,1 @@
+Provides a dynamically typed singly-linked list implementation, `List` similar to that available in most lisp dialects. This module provides basic Julia functionality to manipulate such lists, exported under both the Julia and Scheme names where they differ (such as `Base.first` vs. `car`.

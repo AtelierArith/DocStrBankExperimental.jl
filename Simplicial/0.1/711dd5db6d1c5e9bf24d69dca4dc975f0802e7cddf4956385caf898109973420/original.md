@@ -1,0 +1,1 @@
+The function function IntersectionsOfSequences(seqs:: Array{DirectedCodeword,1})::Array{DirectedCodeword,1} computes the maximal sequences of a directed complex obtained as all the subsequences of a given array seqs of sequences

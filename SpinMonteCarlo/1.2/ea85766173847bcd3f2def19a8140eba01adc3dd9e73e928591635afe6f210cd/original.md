@@ -1,0 +1,1 @@
+AshkinTeller model with energy $E = -\sum_{ij} J^\sigma_{ij} \sigma_i \sigma_j + J^\tau_{ij} \tau_i \tau_j + K_{ij} \sigma_i \sigma_j \tau_i \tau_j$, where $\sigma_i$ and $\tau_i$ takes value of 1 (up spin) or -1 (down spin).

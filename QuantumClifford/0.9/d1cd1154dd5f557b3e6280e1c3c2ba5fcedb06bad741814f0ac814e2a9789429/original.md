@@ -1,0 +1,1 @@
+A tableau representation of a pure stabilizer state. The tableau tracks the destabilizers as well, for efficient projections. On initialization there are no checks that the provided state is indeed pure. This enables the use of this data structure for mixed stabilizer state, but a better choice would be to use [`MixedDestabilizer`](@ref).

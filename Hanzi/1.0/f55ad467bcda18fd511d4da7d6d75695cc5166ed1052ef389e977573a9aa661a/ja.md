@@ -1,0 +1,1 @@
+Hanzi参照文字列のピンインを見つけます。引数:     `reference::String`: Hanzi文字列。     オプション:     `multiple::Bool=false`: 複数の発音を持つ文字に対して複数の発音を返すかどうか。 戻り値:     `::Vector{Vector{String}}`: `multiple`が`false`の場合、Hanziの発音を含む単一アイテムベクターのベクター。         `multiple`が`true`の場合、可能な発音を含む可変長ベクターのベクター。

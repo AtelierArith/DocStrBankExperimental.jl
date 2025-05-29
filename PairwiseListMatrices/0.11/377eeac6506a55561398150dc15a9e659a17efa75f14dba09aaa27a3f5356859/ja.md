@@ -1,0 +1,1 @@
+`PairwiseListMatrix` は `list` から作成できます。`diagonal`（デフォルトは `false`）は、リストに対角要素があることを示すために `true` として宣言できます。`diagonal` が `false` の場合、対角値はリストではなく `diag` フィールドのベクターに格納されます。`diag` ベクターは、オプションの `diagonalvalue` 引数（デフォルトは `0`）で埋めることができます。

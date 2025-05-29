@@ -1,0 +1,3 @@
+ELFInternal
+
+Internal datastructure used within the ELF file format to convey fundamental information such as the endianness of the file, whether it's a 32-bit or 64-bit ELF file, etc...

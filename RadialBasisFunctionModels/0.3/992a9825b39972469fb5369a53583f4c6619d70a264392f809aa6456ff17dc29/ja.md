@@ -1,0 +1,1 @@
+トレーニングデータに `mach :: RBFMachineWithKernel` をフィットさせます。

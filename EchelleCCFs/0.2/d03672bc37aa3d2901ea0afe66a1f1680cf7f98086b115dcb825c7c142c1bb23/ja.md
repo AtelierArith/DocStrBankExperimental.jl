@@ -1,0 +1,1 @@
+特定のマスク形状を実装する構造体は、AbstractCCFMaskShapeのサブタイプであるべきです。

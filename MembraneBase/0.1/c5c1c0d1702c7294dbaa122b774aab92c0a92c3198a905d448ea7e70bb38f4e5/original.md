@@ -1,0 +1,1 @@
+Return the base value of the measurement, regardless of what kind of measurement it is. If it isn't a measurement, return the object passed. If it's an array or struct containing measurements, return an equivalent array or struct of values.

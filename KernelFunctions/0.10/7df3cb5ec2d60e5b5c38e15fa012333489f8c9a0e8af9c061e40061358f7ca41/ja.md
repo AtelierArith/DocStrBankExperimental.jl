@@ -1,0 +1,5 @@
+```
+SEKernel()
+```
+
+[`SqExponentialKernel`](@ref) のエイリアスです。

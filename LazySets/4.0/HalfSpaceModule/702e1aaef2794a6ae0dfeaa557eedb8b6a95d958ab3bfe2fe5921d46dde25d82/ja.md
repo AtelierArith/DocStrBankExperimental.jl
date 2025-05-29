@@ -1,0 +1,5 @@
+```
+LinearConstraint
+```
+
+`HalfSpace` のエイリアス

@@ -1,0 +1,1 @@
+A drawable 'fancy' svg image of a pedestrian. The pedestrian is placed at the position of `entity` and the width and length of the original image are scaled accordingly. The color of the pedestrian can be specified using the `color` keyword.

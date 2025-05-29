@@ -1,0 +1,1 @@
+Computes the lagged cohen coefficient κ describing how much the different categories are correlated to each others at different lag values in the time-series. K is a measure of agreement. input:     -Serie : a categorical time series     -lag: an integer lag value output:     -κ : cohen's coefficient
