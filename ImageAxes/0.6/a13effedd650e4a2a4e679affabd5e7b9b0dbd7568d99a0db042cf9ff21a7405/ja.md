@@ -8,4 +8,4 @@ TimeAxis{Ax}
 @traitimpl TimeAxis{Axis{:time}}
 ```
 
-この定義はすでに ImageAxes で作成されていますが、新しい名前を追加することもできます。
+この定義はすでにImageAxesで作成されていますが、新しい名前を追加することもできます。

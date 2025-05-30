@@ -19,5 +19,5 @@
 
 ## ヒーププロファイリング
 
-  * `Profile.take_heap_snapshot()` でヒープの `.heapsnapshot` レコードを記録します。
-  * `JULIA_PROFILE_PEEK_HEAP_SNAPSHOT=true` を設定して、SIGUSR1信号が送信されたときにヒープスナップショットをキャプチャします。
+  * `Profile.take_heap_snapshot()` でヒープの`.heapsnapshot`レコードを記録します。
+  * `JULIA_PROFILE_PEEK_HEAP_SNAPSHOT=true`を設定して、SIGUSR1信号が送信されたときにヒープスナップショットをキャプチャします。

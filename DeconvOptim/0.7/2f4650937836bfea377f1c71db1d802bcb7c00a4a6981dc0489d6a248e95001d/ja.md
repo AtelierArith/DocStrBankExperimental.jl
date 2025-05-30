@@ -1,5 +1,5 @@
 ```
-richardson_lucy_iterative(measured, psf; <keyword arguments>)
+richardson_lucy_iterative(measured, psf; <キーワード引数>)
 ```
 
 古典的な反復リチャードソン-ルーシー反復スキームによるデコンボリューション。`measured`は測定された配列で、`psf`は点拡散関数です。最適化アプローチの`deconvolution`よりも収束が遅いです。
@@ -7,7 +7,7 @@ richardson_lucy_iterative(measured, psf; <keyword arguments>)
 # キーワード引数
 
   * `regularizer=GR()`: 正則化関数。交換可能です。
-  * `λ=0.05`: 正則化器の全体的な損失関数に対する重み付けを示す浮動小数点数。
+  * `λ=0.05`: グローバル損失関数に対する正則化の総重みを示す浮動小数点数。
   * `iterations=100`: 反復回数を指定します。
   * `progress`: `nothing`でない場合、進行状況はDeconvOptim.options*trace*deconv()によって得られる要約辞書で監視されます。
 

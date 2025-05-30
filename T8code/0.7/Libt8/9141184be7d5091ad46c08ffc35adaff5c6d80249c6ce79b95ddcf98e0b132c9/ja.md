@@ -6,8 +6,8 @@ t8_geom_get_scaling_factor_of_edge_on_face_prism(edge_index, face_index, ref_coo
 
 # 引数
 
-  * `edge_index`:[in] スケーリングされるべきエッジのインデックス。
-  * `face_index`:[in] 変位がスケーリングされるべき面のインデックス。
+  * `edge_index`:[in] スケーリングすべきエッジのインデックス。
+  * `face_index`:[in] 変位をスケーリングすべき面のインデックス。
   * `ref_coords`:[in] 参照点の座標を含む配列。
 
 # 戻り値

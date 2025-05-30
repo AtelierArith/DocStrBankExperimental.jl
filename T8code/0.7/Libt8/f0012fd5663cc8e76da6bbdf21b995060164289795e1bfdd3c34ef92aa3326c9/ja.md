@@ -20,4 +20,4 @@ t8_cprofile
 
 # 参照
 
-[`t8_cmesh_set_profiling`](@ref)および[`t8_cmesh_print_profile`](@ref)
+[`t8_cmesh_set_profiling`](@ref) および [`t8_cmesh_print_profile`](@ref)

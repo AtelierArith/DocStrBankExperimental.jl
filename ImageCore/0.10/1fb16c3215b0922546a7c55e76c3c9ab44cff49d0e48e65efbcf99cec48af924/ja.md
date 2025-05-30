@@ -38,4 +38,4 @@ julia> f(c)
 RGB{Float64}(1.0,0.5019607843137255,0.0)
 ```
 
-参照： [`takemap`](@ref).
+参照: [`takemap`](@ref).

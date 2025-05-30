@@ -4,11 +4,11 @@ svd(A; full::Bool = false, alg::Algorithm = default_svd_alg(A)) -> SVD
 
 行列 `A` の特異値分解 (SVD) を計算し、`SVD` オブジェクトを返します。
 
-因子分解 `F` から `U`、`S`、`V` および `Vt` は `F.U`、`F.S`、`F.V` および `F.Vt` を使用して取得でき、`A = U * Diagonal(S) * Vt` となります。このアルゴリズムは `Vt` を生成するため、`Vt` を抽出する方が `V` よりも効率的です。`S` の特異値は降順にソートされています。
+因子分解 `F` から `U`、`S`、`V` および `Vt` を取得することができ、`F.U`、`F.S`、`F.V` および `F.Vt` を使用します。これにより、`A = U * Diagonal(S) * Vt` となります。アルゴリズムは `Vt` を生成するため、`Vt` を抽出する方が `V` よりも効率的です。`S` の特異値は降順にソートされています。
 
 分解を繰り返すことで、成分 `U`、`S`、および `V` を得ることができます。
 
-`full = false`（デフォルト）の場合、"薄い" SVD が返されます。$M \times N$ 行列 `A` の場合、完全な因子分解では `U` は $M \times M$ であり、`V` は $N \times N$ ですが、薄い因子分解では `U` は $M \times K$ であり、`V` は $N \times K$ で、$K = \min(M,N)$ は特異値の数です。
+`full = false`（デフォルト）の場合、"薄い" SVD が返されます。$M \times N$ 行列 `A` の場合、完全な因子分解では `U` は $M \times M$ であり、`V` は $N \times N$ ですが、薄い因子分解では `U` は $M \times K$ であり、`V` は $N \times K$ です。ここで、$K = \min(M,N)$ は特異値の数です。
 
 `alg = DivideAndConquer()` の場合、分割統治アルゴリズムが SVD の計算に使用されます。別の（通常は遅いがより正確な）オプションは `alg = QRIteration()` です。
 

@@ -1,8 +1,8 @@
 `partitions(set::AbstractVector[,k])`, `npartitions(set::AbstractVector[,k])`
 
-集合 `set` のすべての順序なしの分割の集合（`k` が指定されている場合は `k` 個の集合）を返します。`npartitions` は順序なしの分割の数を返します。
+集合 `set` のすべての順序なしの分割の集合（`k` が指定されている場合は `k` 個の集合）を返します（重複のないコレクション）。`npartitions` は順序なしの分割の数を返します。
 
-集合 `set` の*順序なしの分割*は、互いに素な集合の集合であり、その和集合が `set` に等しく、ベクトルのベクトルとして表されます。
+集合 `set` の*順序なしの分割*は、互いに素な集合の集合であり、その和が `set` に等しく、ベクトルのベクトルとして表されます。
 
 ```julia-repl
 julia> npartitions(1:3)
@@ -30,4 +30,4 @@ julia> partitions(1:4,2)
  [[1], [2, 3, 4]]
 ```
 
-`unique(sort.(partitions(mset[,k])))` は、重複集合 `mset` に対して機能するバージョンであることに注意してください。
+`unique(sort.(partitions(mset[,k])))` は、マルチセット `mset` に対して機能するバージョンであることに注意してください。

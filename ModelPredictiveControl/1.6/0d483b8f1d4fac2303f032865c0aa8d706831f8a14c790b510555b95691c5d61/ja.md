@@ -4,10 +4,10 @@ linearize(model::SimModel; x=model.x0+model.xop, u=model.uop, d=model.dop) -> li
 
 モデル `model` を動作点 `x`、`u`、`d` で線形化し、[`LinModel`](@ref) を返します。
 
-引数 `x`、`u`、`d` は、それぞれ状態 $\mathbf{x}$、操作された入力 $\mathbf{u}$、および測定された外乱 $\mathbf{d}$ の線形化点です（必ずしも平衡点ではなく、詳細は拡張ヘルプを参照）。デフォルトでは、[`ForwardDiff`](@extref ForwardDiff) が自動的に $\mathbf{f}$ および $\mathbf{h}$ 関数のヤコビアンを計算します。バックエンドを入れ替えるには、`model` の構築時に `jacobian` キーワード引数を変更してください。
+引数 `x`、`u`、`d` は、それぞれ状態 $\mathbf{x}$、操作された入力 $\mathbf{u}$、および測定された外乱 $\mathbf{d}$ の線形化点です（必ずしも平衡点ではなく、詳細は拡張ヘルプを参照）。デフォルトでは、[`ForwardDiff`](@extref ForwardDiff) が自動的に $\mathbf{f}$ および $\mathbf{h}$ 関数のヤコビアンを計算します。モデルの構築時に `jacobian` キーワード引数を変更してバックエンドを切り替えてください。
 
 !!! warning
-    `MethodError: no method matching (::var"##")(::Vector{ForwardDiff.Dual})` のようなエラーが発生した場合は、拡張ヘルプを参照してください。
+    次のようなエラーが発生した場合は、拡張ヘルプを参照してください: `MethodError: no method matching (::var"##")(::Vector{ForwardDiff.Dual})`。
 
 
 # 例
@@ -25,7 +25,7 @@ julia> linmodel.A
 # 拡張ヘルプ
 
 !!! details "拡張ヘルプ"
-    非線形状態空間モデルにおいて：
+    非線形状態空間モデルにおいて:
 
     $$
     \begin{aligned}
@@ -34,7 +34,7 @@ julia> linmodel.A
     \end{aligned}
     $$
 
-    動作点 $\mathbf{x_{op}, u_{op}, d_{op}}$ での線形化は次のようになります：
+    動作点 $\mathbf{x_{op}, u_{op}, d_{op}}$ での線形化は次のようになります:
 
     $$
     \begin{aligned}
@@ -44,7 +44,7 @@ julia> linmodel.A
     \end{aligned}
     $$
 
-    [`setop!`](@ref) ドキュメントで導入された偏差ベクトル $\mathbf{x_0, u_0, d_0, y_0}$ に基づき、ヤコビアン行列は次のようになります：
+    [`setop!`](@ref) ドキュメントで導入された偏差ベクトル $\mathbf{x_0, u_0, d_0, y_0}$ に基づき、ヤコビアン行列は次のようになります:
 
     $$
     \begin{aligned}
@@ -56,7 +56,7 @@ julia> linmodel.A
     \end{aligned}
     $$
 
-    [`setop!`](@ref) の表記法に従い、次のように求めます：
+    [`setop!`](@ref) の表記に従い、次のように求めます:
 
     $$
     \begin{aligned}

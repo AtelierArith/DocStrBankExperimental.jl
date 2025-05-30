@@ -6,7 +6,7 @@ t8_geom_get_ref_intersection(edge_index, ref_coords, ref_intersection)
 
 # 引数
 
-  * `edge_index`:[in] 交点がある辺のインデックス。
+  * `edge_index`:[in] 交点が存在する辺のインデックス。
   * `ref_coords`:[in] 参照点の座標を含む配列。
   * `ref_intersection`:[out] 交点の座標。
 

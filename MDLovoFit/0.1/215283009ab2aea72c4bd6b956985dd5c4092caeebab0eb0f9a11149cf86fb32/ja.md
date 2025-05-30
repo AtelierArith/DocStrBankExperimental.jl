@@ -2,7 +2,7 @@
 MDLovoFitResult
 ```
 
-MDLovoFitの出力を含む構造。
+MDLovoFitの出力を含む構造体です。
 
 `iframe`はフレームインデックスです。
 

@@ -4,13 +4,13 @@ CKLLSRK75_4M_5R(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
                   thread = OrdinaryDiffEq.False())
 ```
 
-明示的ルンゲ・クッタ法。 CKLLSRK75*4M*5R: 7段階の低ストレージ法、5次の低ストレージスキームで、圧縮可能なナビエ–ストークス方程式に最適化されています。
+明示的ルンゲ・クッタ法。 CKLLSRK75*4M*5R: 低ストレージ法 7段階、5次の低ストレージスキーム、圧縮性ナビエ–ストークス方程式に最適化されています。
 
 ### キーワード引数
 
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
-  * `thread`: 内部ブロードキャストが適切なCPU配列で直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
+  * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用すべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
 
 ## 参考文献
 

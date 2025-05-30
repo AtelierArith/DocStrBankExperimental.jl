@@ -6,7 +6,7 @@ tracedist(register1, register2)
 
 # 定義
 
-トレース距離は次のように定義されます：
+トレース距離は以下のように定義されます：
 
 $$
 \frac{1}{2} || A - B ||_{\rm tr}

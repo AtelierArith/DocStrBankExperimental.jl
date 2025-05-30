@@ -20,7 +20,7 @@ is_solved_and_feasible(
 
 この関数が `false` を返した場合は、[`termination_status`](@ref)、[`result_count`](@ref)、[`primal_status`](@ref)、および [`dual_status`](@ref) を使用して、利用可能な解が何かを理解してください（もしあれば）。
 
-関連情報: [`assert_is_solved_and_feasible`](@ref)。
+また、[`assert_is_solved_and_feasible`](@ref) も参照してください。
 
 ## キーワード引数
 
@@ -30,7 +30,7 @@ is_solved_and_feasible(
 
 ### `allow_almost`
 
-`allow_almost = true` の場合、[`termination_status`](@ref) は追加で [`ALMOST_OPTIMAL`](@ref) または [`ALMOST_LOCALLY_SOLVED`](@ref) (もし `allow_local` が真であれば) である可能性があり、[`primal_status`](@ref) および [`dual_status`](@ref) は追加で [`NEARLY_FEASIBLE_POINT`](@ref) である可能性があります。
+`allow_almost = true` の場合、[`termination_status`](@ref) は追加で [`ALMOST_OPTIMAL`](@ref) または [`ALMOST_LOCALLY_SOLVED`](@ref) (もし `allow_local` が真の場合) である可能性があり、[`primal_status`](@ref) および [`dual_status`](@ref) は追加で [`NEARLY_FEASIBLE_POINT`](@ref) である可能性があります。
 
 ### `dual`
 

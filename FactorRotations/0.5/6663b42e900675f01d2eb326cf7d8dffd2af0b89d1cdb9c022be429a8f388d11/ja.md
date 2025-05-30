@@ -2,7 +2,7 @@
 ComponentLoss(loss::Function; orthogonal = false)
 ```
 
-ユーザー定義の `loss` 関数を使用して、ロード行列の各要素に適用される [コンポーネント損失](@ref AbstractComponentLoss)因子回転メソッドの一般的な実装です。
+ユーザー定義の `loss` 関数を使用して、ロード行列の各要素に適用される [コンポーネント損失](@ref AbstractComponentLoss) の因子回転メソッドの一般的な実装です。
 
 ## キーワード引数
 

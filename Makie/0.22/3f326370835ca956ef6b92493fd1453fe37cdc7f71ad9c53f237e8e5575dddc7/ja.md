@@ -14,7 +14,7 @@ hist(values)
 
 **`bins`** =  `15`  — `values`の範囲にわたってその数の等幅ビンを作成するための`Int`であることができます。あるいは、ビンのエッジのソートされた反復可能なオブジェクトであることもできます。
 
-**`color`** =  `@inherit patchcolor`  — 色は次のいずれかです：
+**`color`** =  `@inherit patchcolor`  — 色は次のいずれかであることができます：
 
   * `bins`の色のベクトル
   * 単一の色
@@ -59,4 +59,4 @@ hist(values)
 
 **`strokewidth`** =  `@inherit patchstrokewidth`  — *ドキュメントは利用できません。*
 
-**`weights`** =  `automatic`  — 観測値に統計的に重みを付けることを許可します。
+**`weights`** =  `automatic`  — 観測値に統計的な重みを付けることを許可します。

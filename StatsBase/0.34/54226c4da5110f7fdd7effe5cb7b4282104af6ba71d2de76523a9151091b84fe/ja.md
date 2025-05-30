@@ -6,5 +6,5 @@ cov(X, w::AbstractWeights, vardim=1; mean=nothing, corrected=false)
 
   * `AnalyticWeights`: $\frac{1}{\sum w - \sum {w^2} / \sum w}$
   * `FrequencyWeights`: $\frac{1}{\sum{w} - 1}$
-  * `ProbabilityWeights`: $\frac{n}{(n - 1) \sum w}$ ただし、$n$は`count(!iszero, w)`に等しい
+  * `ProbabilityWeights`: $\frac{n}{(n - 1) \sum w}$ ここで、$n$は`count(!iszero, w)`に等しい
   * `Weights`: `ArgumentError`（バイアス補正はサポートされていません）

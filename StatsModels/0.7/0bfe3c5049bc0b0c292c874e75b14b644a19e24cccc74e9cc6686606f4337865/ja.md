@@ -3,11 +3,11 @@ EffectsCoding([base[, levels]])
 EffectsCoding(; base=nothing, levels=nothing)
 ```
 
-エフェクトコーディングは、各非ベースレベルをベースレベルからの偏差としてコーディングする列を生成します。変数の各非ベースレベル `x` に対して、`variable .== x` の場合は1、`variable .== base` の場合は-1の列が生成されます。
+Effects codingは、各非ベースレベルをベースレベルからの偏差としてコーディングする列を生成します。変数`variable`の各非ベースレベル`x`に対して、`variable .== x`のときに1、`variable .== base`のときに-1の列が生成されます。
 
-`EffectsCoding` は `DummyCoding` に似ていますが、ベースレベルには0の代わりに-1を使用します。
+`EffectsCoding`は`DummyCoding`に似ていますが、ベースレベルには0の代わりに-1を使用します。
 
-`levels` が省略されるか `nothing` の場合、`ContrastsMatrix` を構築する際に `levels` 関数を呼び出すことでデータから決定されます。`base` が省略されるか `nothing` の場合、最初のレベルがベースとして使用されます。
+`levels`が省略されるか`nothing`の場合、`ContrastsMatrix`を構築する際に`levels`関数を呼び出すことでデータから決定されます。`base`が省略されるか`nothing`の場合、最初のレベルがベースとして使用されます。
 
 すべてのレベルが同じ頻度である場合、エフェクトコーディングは平均中心のモデル行列列を生成します（平均が0）。2つ以上のレベルの場合、生成された列は直交していません。エフェクトコーディングされた変数を持つ回帰モデルでは、切片は全体の平均に対応します。
 

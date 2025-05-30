@@ -6,7 +6,7 @@ check_allocs!(system,true_or_false)
 
 行列のパターンが変わらない限り、このループでアロケーションが発生することはないはずです。チェックメソッドは行列パターンの変化を認識しています。その結果、アセンブリループでのアロケーションは主に物理コールバックにおける型の不安定性によるものです。詳細については、[こちら](../runexamples/#Performance-with-closures)の議論を参照してください。型の不安定性は、物理コールバック内の式に適用された `@time` マクロを使用してデバッグできます。
 
-以下のケースは、問題の理由や可能な対策を探るためのアイデアを提供します。
+以下のケースは、問題の理由や可能な解決策を探るためのアイデアを提供します。
 
 ケース 1: パラメータが値を変更し、Juliaが型について確信が持てない。
 
@@ -21,7 +21,7 @@ end
 eps=2.0
 ```
 
-対策: 型アノテーション `eps::Float64=...` を使用して、Juliaに意図を示します。この動作については、[Juliaのドキュメント](https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-captured)で説明されています。
+解決策: 型アノテーション `eps::Float64=...` を使用して、Juliaに意図を示します。この動作については、[Juliaのドキュメント](https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-captured)で説明されています。
 
 ケース 2: クロージャ内の変数がコールバックで導入された変数と同じ名前を持つ。
 
@@ -36,4 +36,4 @@ end
 u=solve(...)
 ```
 
-対策: 例えば `u=solve()` を `sol=solve()` に名前を変更します。
+解決策: 例えば `u=solve()` を `sol=solve()` に名前を変更します。

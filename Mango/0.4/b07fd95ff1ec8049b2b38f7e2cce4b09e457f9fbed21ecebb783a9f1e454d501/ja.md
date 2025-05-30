@@ -2,7 +2,7 @@
 create_topology(create_runnable)::Topology
 ```
 
-`create_runnable`関数を使用してトポロジーを作成します。この関数は、最初は空のトポロジーを引数として受け取る1引数関数です。
+`create_runnable`関数を使用してトポロジーを作成します。この関数は、最初は空のトポロジーを引数として受け取る1引数の関数です。
 
 # 例
 

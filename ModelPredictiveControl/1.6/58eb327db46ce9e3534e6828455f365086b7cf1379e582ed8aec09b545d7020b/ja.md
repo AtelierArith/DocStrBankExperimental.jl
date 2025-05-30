@@ -4,7 +4,7 @@ setmodel!(mpc::PredictiveController, model=mpc.estim.model; <keyword arguments>)
 
 `mpc` [`PredictiveController`](@ref) の `model` と目的関数の重みを設定します。
 
-ランタイムでの [`LinModel`](@ref) に基づくコントローラのモデル適応を可能にします。 [`NonLinModel`](@ref) の状態空間関数の変更はサポートされていません。目的関数の新しい重み行列はキーワード引数で指定できます（命名法については [`LinMPC`](@ref) を参照）。もし `Cwt ≠ Inf` であれば、拡張移動抑制重みは $\mathbf{Ñ}_{H_c} = \mathrm{diag}(\mathbf{N}_{H_c}, C)$ となり、そうでなければ $\mathbf{Ñ}_{H_c} = \mathbf{N}_{H_c}$ となります。 [`StateEstimator`](@ref) `mpc.estim` は [`Luenberger`](@ref) オブザーバーまたは [`SteadyKalmanFilter`](@ref)（デフォルトの推定器）であってはなりません。代わりに時間変化する [`KalmanFilter`](@ref) で `mpc` オブジェクトを構築してください。モデルは予測ホライズン $H_p$ の間は一定であることに注意してください。
+ランタイムでの [`LinModel`](@ref) に基づくコントローラのモデル適応を可能にします。 [`NonLinModel`](@ref) の状態空間関数の変更はサポートされていません。目的関数内の新しい重み行列はキーワード引数で指定できます（命名法については [`LinMPC`](@ref) を参照）。もし `Cwt ≠ Inf` であれば、拡張移動抑制重みは $\mathbf{Ñ}_{H_c} = \mathrm{diag}(\mathbf{N}_{H_c}, C)$ となり、そうでなければ $\mathbf{Ñ}_{H_c} = \mathbf{N}_{H_c}$ となります。 [`StateEstimator`](@ref) `mpc.estim` は [`Luenberger`](@ref) オブザーバーまたは [`SteadyKalmanFilter`](@ref)（デフォルトの推定器）であってはなりません。代わりに時間変化する [`KalmanFilter`](@ref) で `mpc` オブジェクトを構築してください。モデルは予測ホライズン $H_p$ の間は一定であることに注意してください。
 
 # 引数
 

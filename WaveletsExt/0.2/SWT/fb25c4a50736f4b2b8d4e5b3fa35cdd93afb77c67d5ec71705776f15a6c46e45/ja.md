@@ -33,4 +33,4 @@ x̂ = iswpt(xw, wt, 5)
 x̃ = iswpt(xw, wt)
 ```
 
-**関連項目:** [`isdwt_step`](@ref), [`isdwt`](@ref), [`swpt`](@ref)
+**参照:** [`isdwt_step`](@ref), [`isdwt`](@ref), [`swpt`](@ref)

@@ -7,12 +7,12 @@ intersect(s, itrs...)
 
 最初の引数は、返されるコンテナの種類を制御します。これが配列である場合、要素が最初に出現する順序を維持します。
 
-Unicode `∩` は、Julia REPL で `\cap` と入力してタブを押すことで入力できます。また、多くのエディタでも同様です。これは中置演算子であり、`s ∩ itr` のように使用できます。
+Unicode `∩` は、Julia REPLで `\cap` と入力してタブを押すことで入力できます。また、多くのエディタでも同様です。これは中置演算子であり、`s ∩ itr` のように使用できます。
 
 他にも [`setdiff`](@ref)、[`isdisjoint`](@ref)、[`issubset`](@ref Base.issubset)、[`issetequal`](@ref) を参照してください。
 
 !!! compat "Julia 1.8"
-    Julia 1.8 以降、intersect は2つの入力の型昇格された eltype の eltype を持つ結果を返します。
+    Julia 1.8以降、intersectは2つの入力の型昇格されたeltypeのeltypeを持つ結果を返します。
 
 
 # 例

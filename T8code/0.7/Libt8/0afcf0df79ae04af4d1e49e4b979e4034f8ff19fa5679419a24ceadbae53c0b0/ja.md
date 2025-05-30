@@ -5,7 +5,7 @@ t8_forest_leaf_face_neighbors_ext(forest, ltreeid, leaf, pneighbor_leaves, face,
 t8*forest*leaf*face*neighborsと同様ですが、グローバルな隣接情報と向きも提供します。
 
 !!! note
-    隣接する面がない場合、*neighbor*leaves = NULL、num*neighbors = 0、および*pelement_indices = NULLが出力されます。
+    隣接する面がない場合、*neighbor*leaves = NULL、num*neighbors = 0、*pelement_indices = NULLが出力されます。
 
 
 !!! note
@@ -31,7 +31,7 @@ if (num*neighbors > 0) { eclass*scheme->[`t8_element_destroy`](@ref) (num*neighb
   * `face`:[in] 隣接する面が検索される面のインデックス。
   * `dual_faces`:[out] 出力時に隣接する要素の面のIDが格納されます。
   * `num_neighbors`:[out] 出力時に隣接する葉の数。
-  * `pelement_indices`:[out] 入力時は未割り当て。出力時に隣接する葉の要素インデックスがここに格納されます。ローカル葉の場合は0, 1, ... num*local*el - 1、ゴーストの場合はnum*local*el, ... , num*local*el + num_ghosts - 1。
+  * `pelement_indices`:[out] 入力時は未割り当て。出力時に隣接する葉の要素インデックスがここに格納されます。ローカル葉には0, 1, ... num*local*el - 1、ゴーストにはnum*local*el, ... , num*local*el + num_ghosts - 1が割り当てられます。
   * `pneigh_scheme`:[out] 出力時に隣接する要素のeclassスキーム。
   * `forest_is_balanced`:[in] *forest*がバランスが取れている場合はtrue、そうでない場合はfalse。
   * `gneigh_tree`:[out] 隣接するツリーのグローバルツリーID。

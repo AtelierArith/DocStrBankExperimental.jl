@@ -4,7 +4,7 @@ findmin(itr) -> (x, index)
 
 コレクション `itr` の最小要素とそのインデックスまたはキーを返します。複数の最小要素がある場合は、最初のものが返されます。`NaN` は `missing` を除くすべての値よりも小さいと見なされます。
 
-インデックスは [`keys(itr)`](@ref) および [`pairs(itr)`](@ref) によって返されるものと同じ型です。
+インデックスは [`keys(itr)`](@ref) および [`pairs(itr)`](@ref) によって返されるのと同じ型です。
 
 関連情報: [`findmax`](@ref), [`argmin`](@ref), [`minimum`](@ref).
 

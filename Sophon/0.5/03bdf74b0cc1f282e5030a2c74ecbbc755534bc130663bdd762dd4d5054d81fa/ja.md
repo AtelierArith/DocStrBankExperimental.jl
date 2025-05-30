@@ -4,7 +4,7 @@ PINNAttention(in_dims::Int, out_dims::Int, activation::Function=sin;
               hidden_dims::Int, num_layers::Int)
 ```
 
-`H_net`の出力次元と`fusion_layers`の入力次元は同じでなければなりません。第二および第三のコンストラクタでは、`H_net`、`U_net`、および`V_net`に`Dense`レイヤーが使用されます。最初のコンストラクタには出力レイヤーが**含まれていない**ことに注意してくださいが、二番目のものには含まれています。
+`H_net`の出力次元と`fusion_layers`の入力次元は同じでなければなりません。2番目と3番目のコンストラクタでは、`H_net`、`U_net`、および`V_net`に`Dense`レイヤーが使用されます。最初のコンストラクタには出力レイヤーが**含まれていない**ことに注意してくださいが、2番目のものには含まれています。
 
 ```
                  x → U_net → u                           u

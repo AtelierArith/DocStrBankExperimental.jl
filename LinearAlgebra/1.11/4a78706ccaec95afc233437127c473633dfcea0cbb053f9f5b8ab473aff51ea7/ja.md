@@ -2,7 +2,7 @@
 UnitLowerTriangular(A::AbstractMatrix)
 ```
 
-行列 `A` の `UnitLowerTriangular` ビューを構築します。このようなビューは、`A` の [`eltype`](@ref) の [`oneunit`](@ref) を対角に持ちます。
+行列 `A` の `UnitLowerTriangular` ビューを構築します。このようなビューは、`A` の [`eltype`](@ref) の [`oneunit`](@ref) を対角線上に持ちます。
 
 # 例
 

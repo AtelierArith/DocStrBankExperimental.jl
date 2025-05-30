@@ -2,4 +2,4 @@
 abstract type AbstractGridIntegerArray1D <: ExtendableGrids.AbstractGridComponent
 ```
 
-整数データの1D配列
+1D 整数データの配列

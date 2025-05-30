@@ -2,4 +2,4 @@
 Base.Order.Forward
 ```
 
-[`isless`](@ref) によるデフォルトの順序付け。
+デフォルトの順序は[`isless`](@ref)に従います。

@@ -2,7 +2,7 @@
 get_adjacency_list(connectivity::AbstractConnectivity)::Dict{Int,Vector{Int}}
 ```
 
-`AbstractConnectivity`型のオブジェクトを与えると、`get_adjacency_list`は各キーがキュービットインデックスである`Dict`を返します。すべての辞書の値は、接続性においてキーのキュービットに隣接するすべてのキュービットをリストする`Vector`です。`connectivity.excluded_positions`の位置は、キーや値として含まれません。
+`AbstractConnectivity`型のオブジェクトを与えると、`get_adjacency_list`は各キーがキュービットインデックスである`Dict`を返します。辞書の各値は、接続性においてキーのキュービットに隣接するすべてのキュービットをリストした`Vector`です。`connectivity.excluded_positions`の位置は、キーや値として含まれません。
 
 # 例
 
@@ -51,5 +51,5 @@ Dict{Int64, Vector{Int64}} with 12 entries:
 ```
 
 !!! note
-    `get_adjacency_list`関数は`AllToAllConnectivity`には使用できません。このタイプの接続性は、キュービットの数に上限を設けず、すべてのキュービットが定義上互いに接続されるため、隣接するキュービットの有限リストを構築することはできません。
+    `get_adjacency_list`関数は`AllToAllConnectivity`には使用できません。このタイプの接続性は、キュービットの数に上限を設けず、すべてのキュービットが定義上互いに接続されるためです。したがって、隣接するキュービットの有限リストを構築することはできません。
 

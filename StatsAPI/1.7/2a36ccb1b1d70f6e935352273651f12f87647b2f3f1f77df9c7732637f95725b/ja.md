@@ -2,7 +2,7 @@
 gvif(m::RegressionModel; scale=false)
 ```
 
-一般化分散膨張係数（GVIF）を計算します。
+一般化分散膨張係数 (GVIF) を計算します。
 
 `scale=true` の場合、各 GVIF は予測子に関連する係数の自由度でスケーリングされます: $GVIF^(1 / (2*df))$。
 
@@ -12,4 +12,4 @@ gvif(m::RegressionModel; scale=false)
 
 ## 参考文献
 
-Fox, J., & Monette, G. (1992). Generalized Collinearity Diagnostics. Journal of the American Statistical Association, 87(417), 178. doi:10.2307/2290467
+Fox, J., & Monette, G. (1992). 一般化コリニアリティ診断. アメリカ統計協会誌, 87(417), 178. doi:10.2307/2290467

@@ -12,9 +12,9 @@ permute!(A::AbstractSparseMatrixCSC{Tv,Ti}, p::AbstractVector{<:Integer},
          [workcolptr::Vector{Ti}]]) where {Tv,Ti}
 ```
 
-`X` の次元は `A` の次元と一致しなければなりません（`size(X, 1) == size(A, 1)` および `size(X, 2) == size(A, 2)`）、また `X` は `A` のすべての割り当てられたエントリを収容できるだけのストレージを持っていなければなりません（`length(rowvals(X)) >= nnz(A)` および `length(nonzeros(X)) >= nnz(A)`）。列置換 `q` の長さは `A` の列数と一致しなければなりません（`length(q) == size(A, 2)`）。行置換 `p` の長さは `A` の行数と一致しなければなりません（`length(p) == size(A, 1)`）。
+`X` の次元は `A` の次元と一致しなければなりません（`size(X, 1) == size(A, 1)` および `size(X, 2) == size(A, 2)`）、また `X` は `A` のすべての割り当てられたエントリを収容するのに十分なストレージを持っていなければなりません（`length(rowvals(X)) >= nnz(A)` および `length(nonzeros(X)) >= nnz(A)`）。列置換 `q` の長さは `A` の列数と一致しなければなりません（`length(q) == size(A, 2)`）。行置換 `p` の長さは `A` の行数と一致しなければなりません（`length(p) == size(A, 1)`）。
 
-`C` の次元は `transpose(A)` の次元と一致しなければなりません（`size(C, 1) == size(A, 2)` および `size(C, 2) == size(A, 1)`）、また `C` は `A` のすべての割り当てられたエントリを収容できるだけのストレージを持っていなければなりません（`length(rowvals(C)) >= nnz(A)` および `length(nonzeros(C)) >= nnz(A)`）。
+`C` の次元は `transpose(A)` の次元と一致しなければなりません（`size(C, 1) == size(A, 2)` および `size(C, 2) == size(A, 1)`）、また `C` は `A` のすべての割り当てられたエントリを収容するのに十分なストレージを持っていなければなりません（`length(rowvals(C)) >= nnz(A)` および `length(nonzeros(C)) >= nnz(A)`）。
 
 追加の（アルゴリズム的な）情報や、引数チェックを省略したこれらのメソッドのバージョンについては、（エクスポートされていない）親メソッド `unchecked_noalias_permute!` および `unchecked_aliasing_permute!` を参照してください。
 

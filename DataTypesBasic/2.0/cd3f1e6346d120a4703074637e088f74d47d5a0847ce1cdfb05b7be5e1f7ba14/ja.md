@@ -2,7 +2,7 @@
 iffalse(bool_condition, value)
 iffalse(func, bool_condition)
 iffalse(bool_condition) do
-  # bool_conditionがtrueの場合のみ実行されます
+  # bool_conditionがtrueの場合のみ実行される
 end
 ```
 

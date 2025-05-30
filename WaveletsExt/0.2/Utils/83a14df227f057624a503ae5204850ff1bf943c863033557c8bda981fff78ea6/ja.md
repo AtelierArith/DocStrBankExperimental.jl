@@ -23,4 +23,4 @@ tree = maketree(x, 3, :full)
 getrowrange(8,3)            # 1:4
 ```
 
-**関連項目:** [`Wavelets.Util.maketree`](@ref), [`getcolrange`](@ref)
+**関連情報:** [`Wavelets.Util.maketree`](@ref), [`getcolrange`](@ref)

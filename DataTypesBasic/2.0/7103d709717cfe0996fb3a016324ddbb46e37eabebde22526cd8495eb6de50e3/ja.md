@@ -2,7 +2,7 @@
 either(:left, bool_condition, "right")
 ```
 
-`bool_condition`が真であれば、右側の値を[Identity](@ref)でラップして返します。そうでなければ、左側を[Const](@ref)でラップして返します。
+`bool_condition`が真であれば、右側の値を返し、[Identity](@ref)でラップします。そうでなければ、左側を返し、[Const](@ref)でラップします。
 
 ## 例
 

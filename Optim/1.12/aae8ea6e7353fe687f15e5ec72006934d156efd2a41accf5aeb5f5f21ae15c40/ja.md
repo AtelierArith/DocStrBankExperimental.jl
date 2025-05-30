@@ -3,13 +3,13 @@
 ## コンストラクタ
 
 ```julia
-SAMIN(; nt::Int = 5     # nt*ns*dim(x_init) 評価ごとに温度を下げる
+SAMIN(; nt::Int = 5     # nt*ns*dim(x_init) 評価ごとに温度を減少させる
         ns::Int = 5     # ns*dim(x_init) 評価ごとに境界を調整する
         t0::T = 2.0     # 初期温度
         rt::T = 0.9     # 幾何学的温度減少係数: 温度が変化するとき、新しい温度は t=rt*t
-        r_expand::T = 10.0 # 低カバレッジの状況での幾何学的温度促進係数: 温度が変化するとき、新しい温度は t=r_expand*t
+        r_expand::T = 10.0 # 低カバレッジの状況における幾何学的温度促進係数: 温度が変化するとき、新しい温度は t=r_expand*t
         bounds_ratio::T = 0.6 # 境界増加のカットオフ (1-bounds_ratio は減少のため)
-        neps::Int = 5   # 最終結果が比較される以前の最良値の数
+        neps::Int = 5   # 最終結果が比較される過去の最良値の数
         coverage_ok::Bool = false, # false の場合、初期パラメータ空間がカバーされるまで温度を上げる
         verbosity::Int = 1) # スカラー: 0, 1, 2 または 3 (デフォルト = 1).
 ```

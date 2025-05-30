@@ -2,6 +2,6 @@
 EigsSolver()
 ```
 
-**eigs**を使用した固有値分解。
+固有値分解は**eigs**を使用します。
 
 関連: [`EigenSolver`](@ref)

@@ -2,4 +2,4 @@
 function fdotv_action(data::AbstractUserDataType) -> Action
 ```
 
-入力とベクトル積を行うDataFunction fを評価するアクションを作成します。
+データ関数 f を評価し、入力とのベクトル積を実行するアクションを作成します。

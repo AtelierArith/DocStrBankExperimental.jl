@@ -2,6 +2,6 @@
 getlogpartition([ space = NaturalParametersSpace() ], ::Type{T}, [ conditioner ]) where { T <: Distribution }
 ```
 
-`getlogpartition`の特定のバージョンは、`Distributions.jl`パッケージの分布タイプに特に定義されています。`ExponentialFamilyDistribution`のインスタンスを必要とせず、特定の分布タイプで直接呼び出すことができます。オプションで、パラメータ空間を定義する`space`パラメータを受け入れます。条件付き指数族分布には、追加の`conditioner`引数が必要です。
+`Distributions.jl` パッケージの分布型に特に定義された `getlogpartition` の特定のバージョンです。`ExponentialFamilyDistribution` のインスタンスを必要とせず、特定の分布型で直接呼び出すことができます。オプションで、パラメータ空間を定義する `space` パラメータを受け入れます。条件付き指数族分布には、追加の `conditioner` 引数が必要です。
 
 参照: [`NaturalParametersSpace`](@ref), [`MeanParametersSpace`](@ref)

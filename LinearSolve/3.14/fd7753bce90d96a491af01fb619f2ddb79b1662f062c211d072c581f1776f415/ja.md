@@ -1,5 +1,5 @@
 `SparspakFactorization(reuse_symbolic = true)`
 
-これは、広く知られているスパース行列ソフトウェアSparspak（ウォータールー・スパース行列パッケージ）の翻訳であり、大規模なスパース線形代数方程式系を解決します。Sparspakは、Alan GeorgeとJoseph Liuによる「Computer Solution of Large Sparse Positive Definite Systems」という本からのサブルーチンで構成されています。元々はFortran 77で書かれ、その後Fortran 90に書き直されました。ここに、Juliaに翻訳されたソフトウェアがあります。
+これは、広く知られているスパース行列ソフトウェアSparspak（ウォータールー・スパース行列パッケージ）の翻訳であり、大規模なスパース線形代数方程式系を解決します。Sparspakは、アラン・ジョージとジョセフ・リウによる「Computer Solution of Large Sparse Positive Definite Systems」という本からのサブルーチンで構成されています。元々はFortran 77で書かれ、その後Fortran 90に書き直されました。ここに、Juliaに翻訳されたソフトウェアがあります。
 
 Juliaの書き直しは、Fortranパッケージの著者からの明示的な許可を得て、MITライセンスの下でリリースされています。このパッケージは、任意精度浮動小数点数やForwardDiff.Dualの場合など、標準BLASルーチンを回避するためにマルチディスパッチを使用します。これにより、スパース行列の解法の自動微分（AD）が可能になります。

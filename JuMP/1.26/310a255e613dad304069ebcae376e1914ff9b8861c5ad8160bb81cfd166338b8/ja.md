@@ -7,9 +7,9 @@ VariableInSetRef(
 
 `x`が作成時に制約されている場合に関連付けられた制約参照を返します。
 
-変数は、[`@variable`](@ref) マクロで `x in S` または `x, set = S` 構文を使用する場合に作成時に制約されます。
+変数は、[`@variable`](@ref) マクロ内で `x in S` または `x, set = S` 構文を使用する場合に作成時に制約されます。
 
-この関数は、`x` が作成時に制約されていなかった場合にエラーを返します。変数が作成時に制約されているかどうかを確認するには、[`is_variable_in_set`](@ref) を使用してください。
+この関数は、`x`が作成時に制約されていなかった場合にエラーを返します。変数が作成時に制約されていたかどうかを確認するには、[`is_variable_in_set`](@ref) を使用してください。
 
 ## 例外
 
@@ -25,7 +25,7 @@ julia> is_variable_in_set(x)
 false
 ```
 
-代わりに [`IntegerRef`](@ref)、[`BinaryRef`](@ref)、[`LowerBoundRef`](@ref)、[`UpperBoundRef`](@ref)、および [`FixRef`](@ref) を使用してください。
+代わりに、[`IntegerRef`](@ref)、[`BinaryRef`](@ref)、[`LowerBoundRef`](@ref)、[`UpperBoundRef`](@ref)、および [`FixRef`](@ref) を使用してください。
 
 ```jldoctest variable_in_set_ref_docstring
 julia> model = Model();

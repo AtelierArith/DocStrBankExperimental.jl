@@ -12,7 +12,7 @@ ROS3PRL(; - `standardtag`: パッケージ固有のタグを使用するかど�
               代替として`Val{:central}()`と`Val{:complex}()`があります。
           - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
               `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-              たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
+              たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
           - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
             たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
             `ROS3PRL(linsolve = KLUFactorization())`を指定します。
@@ -50,7 +50,7 @@ ROS3PRL(; - `standardtag`: パッケージ固有のタグを使用するかど�
             ```)
 ```
 
-ロゼンブロック-ワナー法。  4つの内部ステージを持つ3次の剛性精度ロゼンブロック法で、Rinf=0の2次のB_PR一貫性があります。中程度の剛性の問題を考慮すると収束の順序が低下しますが、非常に剛性のあるケースでは良好な結果が得られます。
+ロゼンブロック-ワナー法。  4つの内部ステージを持つ3次の剛性精度ロゼンブロック法で、Rinf=0の2次のB_PR一貫性があります。 中程度の剛性問題を考慮すると収束の順序が低下しますが、非常に剛性のあるケースでは良好な結果が得られます。
 
 ### キーワード引数
 
@@ -59,8 +59,8 @@ ROS3PRL(; - `standardtag`: パッケージ固有のタグを使用するかど�
   * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
   * `concrete_jac`: 形式`jac!(J, u, p, t)`の関数
   * `diff_type`: TBD
-  * `linsolve`: 内部線形システムのカスタムソルバー
-  * `precs`: 内部線形ソルバーのカスタム前処理器
+  * `linsolve`: 内部線形システム用のカスタムソルバー
+  * `precs`: 内部線形ソルバー用のカスタム前処理器
 
 ## 参考文献
 

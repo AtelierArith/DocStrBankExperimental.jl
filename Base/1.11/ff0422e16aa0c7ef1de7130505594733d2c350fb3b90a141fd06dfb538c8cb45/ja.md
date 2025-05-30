@@ -4,7 +4,7 @@ isdisjoint(a, b) -> Bool
 
 コレクション `a` と `b` が互いに素であるかどうかを判断します。`isempty(a ∩ b)` と同等ですが、可能な場合はより効率的です。
 
-関連情報: [`intersect`](@ref), [`isempty`](@ref), [`issetequal`](@ref).
+関連情報: [`intersect`](@ref), [`isempty`](@ref), [`issetequal`](@ref)。
 
 !!! compat "Julia 1.5"
     この関数は少なくとも Julia 1.5 を必要とします。

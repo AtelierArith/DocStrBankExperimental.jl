@@ -8,4 +8,4 @@ SofSpa10()
 
 ## 参考文献
 
-@article{sofroniou2005derivation, title={対称的な積分器のための対称的合成定数の導出}, author={Sofroniou, Mark and Spaletta, Giulia}, journal={Optimization Methods and Software}, volume={20}, number={4-5}, pages={597–613}, year={2005}, publisher={Taylor \& Francis}}
+@article{sofroniou2005derivation, title={Derivation of symmetric composition constants for symmetric integrators}, author={Sofroniou, Mark and Spaletta, Giulia}, journal={Optimization Methods and Software}, volume={20}, number={4-5}, pages={597–613}, year={2005}, publisher={Taylor \& Francis}}

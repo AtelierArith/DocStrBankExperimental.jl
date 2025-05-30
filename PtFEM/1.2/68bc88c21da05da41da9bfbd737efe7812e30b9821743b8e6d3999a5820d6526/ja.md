@@ -37,8 +37,8 @@ p43(data)
 ### 戻り値
 
 ```julia
-* (jfem, dis_df, fm_df)        : jfem、dis_df、および fm_df のタプル
-                                 ここで:
+* (jfem, dis_df, fm_df)        : jfem、dis_df、およびfm_dfのタプル
+                                 ここで：
                                     jfem::jFem    : 計算結果のタイプ
                                     dis_df        : 変位データテーブル
                                     fm_df         : 力とモーメントのデータテーブル

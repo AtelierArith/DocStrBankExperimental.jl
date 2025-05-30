@@ -2,7 +2,7 @@
 logabsbinomial(n, k)
 ```
 
-大きな `n` と `k` が `n/2` に近い場合の `binomial` 係数 `binomial(n, k)` の絶対値の自然対数を正確に計算します。
+大きな `n` と `k` が `n/2` に近い場合の `binomial` 係数 `binomial(n, k)` の絶対値の正確な自然対数。
 
 タプル `(log(abs(binomial(n,k))), sign(binomial(n,k)))` を返します。
 

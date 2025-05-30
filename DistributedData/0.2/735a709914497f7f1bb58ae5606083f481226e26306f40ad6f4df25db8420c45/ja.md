@@ -2,4 +2,4 @@
 remove_from(worker,sym)
 ```
 
-シンボル `sym` を `worker` に設定し、実質的にデータを解放します。
+`worker`のシンボル`sym`を`nothing`に設定し、データを実質的に解放します。

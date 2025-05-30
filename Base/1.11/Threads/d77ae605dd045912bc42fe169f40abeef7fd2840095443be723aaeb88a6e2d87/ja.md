@@ -19,6 +19,4 @@ julia> Threads.@threads for i in 1:4
 4
 ```
 
-!!! note
-    タスクが実行されるスレッドは、タスクがyieldすると変更される可能性があり、これを [`Task Migration`](@ref man-task-migration) と呼びます。このため、ほとんどの場合、`threadid()` を使用してバッファや状態を持つオブジェクトのベクターにインデックスを付けることは安全ではありません。
-
+!!! 注     タスクが実行されるスレッドは、タスクがYieldすると変更される可能性があり、これを [`Task Migration`](@ref man-task-migration) と呼びます。このため、ほとんどの場合、`threadid()` を使用してバッファや状態を持つオブジェクトのベクターにインデックスを付けることは安全ではありません。

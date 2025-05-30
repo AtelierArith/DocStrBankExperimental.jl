@@ -15,7 +15,7 @@ t8_forest_is_equal(forest_a, forest_b)
 
 # 戻り値
 
-*forest_a* と *forest_b* が同じ数のローカルツリーを持ち、各ローカルツリーが同じ要素を持っている場合、すなわち *forest_a* と *forest_b* の各要素のペアに対して t8*element*equal が true を返す場合に真を返します。
+*forest_a* と *forest_b* が同じ数のローカルツリーを持ち、各ローカルツリーが同じ要素を持っている場合、つまり *forest_a* と *forest_b* の各要素のペアに対して t8*element*equal が true を返す場合に真を返します。
 
 ### プロトタイプ
 

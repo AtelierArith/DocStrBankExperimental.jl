@@ -13,6 +13,6 @@ MatDeforElastOrtho(
 ) where {MR<:AbstractDeforModelRed,N<:Number}
 ```
 
-弾性異方性材料を作成します。
+弾性直交材料を作成します。
 
 弾性特性の指定のみの便利なバージョンです。

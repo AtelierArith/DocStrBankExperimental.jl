@@ -12,6 +12,6 @@ createregisteredmodel(instance::MLFlow, name::String;
   * `tags`: [`Tag`](@ref) のコレクション。
   * `description`: [`RegisteredModel`](@ref) のオプションの説明。
 
-# 戻り値
+# 返り値
 
 タイプ [`RegisteredModel`](@ref) のインスタンス。

@@ -6,7 +6,7 @@ read_from_file(
 )
 ```
 
-`filename` から `format` の形式で JuMP モデルを読み込みます。
+`filename` から `format` 形式の JuMP モデルを読み込みます。
 
 サポートされている形式のリストについては、[`MOI.FileFormats.FileFormat`](@ref) を参照してください。
 

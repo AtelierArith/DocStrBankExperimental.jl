@@ -2,7 +2,7 @@
 JointNormal{D, S}
 ```
 
-`JointNormal`は、正規分布変数の共同周辺のために使用される補助構造です。`JointNormal`は元の次元（ds）を持つベクトルを格納するため、統計は後で再分離できます。
+`JointNormal`は、正規分布変数の共同周辺に対して使用される補助構造体です。`JointNormal`は元の次元（ds）を持つベクトルを格納するため、統計を後で再分離することができます。
 
 特定の共同分布の成分を取得するには、`ExponentialFamily.getcomponent(joint, index)`を使用します。
 

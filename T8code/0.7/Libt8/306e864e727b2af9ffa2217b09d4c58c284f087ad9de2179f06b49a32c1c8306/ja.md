@@ -11,7 +11,7 @@ t8_geometry_get_type(cmesh, gtreeid)
 
 # 戻り値
 
-id gtreeidを持つツリーのジオメトリタイプ
+id gtreeidのツリーのジオメトリタイプ
 
 ### プロトタイプ
 

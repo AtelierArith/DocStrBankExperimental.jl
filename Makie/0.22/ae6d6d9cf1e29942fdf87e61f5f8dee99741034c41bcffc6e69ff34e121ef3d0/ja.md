@@ -9,6 +9,4 @@ RectLightは、光の調整を簡素化するために`translate!`、`rotate!`�
 
 利用可能性：
 
-  * GLMakieは`Shading = MultiLightShading`で使用できます
-
-```
+  * GLMakieは`Shading = MultiLightShading`で使用できます。

@@ -3,7 +3,7 @@ fidelity(register1, register2) -> Real/Vector{<:Real}
 fidelity'(pair_or_reg1, pair_or_reg2) -> (g1, g2)
 ```
 
-2つの状態間のフィデリティを返します。`r1`と`r2`の間のフィデリティを計算します。もし`r1`または`r2`が純粋状態でない場合（`nactive(r) != nqudits(r)`）、フィデリティは浄化によって計算されます。詳細は、http://iopscience.iop.org/article/10.1088/1367-2630/aa6a4b/metaを参照してください。
+2つの状態間のフィデリティを返します。`r1`と`r2`の間のフィデリティを計算します。もし`r1`または`r2`が純粋状態でない場合（`nactive(r) != nqudits(r)`）、フィデリティは浄化によって計算されます。詳細は次を参照してください: http://iopscience.iop.org/article/10.1088/1367-2630/aa6a4b/meta
 
 レジスタと回路パラメータに関する勾配を取得します。ペア入力`ψ=>circuit`の場合、返される勾配は`gψ=>gparams`のペアであり、`gψ`は入力状態の勾配、`gparams`は回路パラメータの勾配です。レジスタ入力の場合、返される値はレジスタです。
 

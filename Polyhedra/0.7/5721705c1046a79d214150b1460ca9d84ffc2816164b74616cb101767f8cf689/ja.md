@@ -2,7 +2,7 @@
 doubledescription(h::HRepresentation)
 ```
 
-`h`によって表される多面体のV-表現をDouble-Descriptionアルゴリズム[MRTT53, FP96]を使用して計算します。結果の表現に含まれる点、光線、線のリストを維持し、各半空間に対応するハイパープレーン内でそれらの交差を追加し、[`Polyhedra.add_intersection!`](@ref)を使用します。結果のV-表現には冗長性がありません。
+`h`によって表される多面体のV-表現をDouble-Descriptionアルゴリズム[MRTT53, FP96]を使用して計算します。これは、結果の表現に含まれる点、光線、線のリストを維持し、各半空間に対応するハイパープレーン内でそれらの交差を追加し、[`Polyhedra.add_intersection!`](@ref)を使用します。結果のV-表現には冗長性がありません。
 
 ```
 doubledescription(V::VRepresentation)

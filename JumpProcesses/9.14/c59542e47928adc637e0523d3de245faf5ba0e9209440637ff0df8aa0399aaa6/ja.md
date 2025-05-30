@@ -4,7 +4,7 @@ struct ConstantRateJump{F1, F2} <: JumpProcesses.AbstractJump
 
 時間に*明示的に*依存しないレート（すなわちハザード、強度、または傾向）を持つジャンププロセスを定義します。より正確には、ジャンプの発生の間にレート関数が一定であるものです。詳細な例と使用情報については、以下を参照してください。
 
-  * [Tutorial](https://docs.sciml.ai/JumpProcesses/stable/tutorials/discrete_stochastic_example/)
+  * [チュートリアル](https://docs.sciml.ai/JumpProcesses/stable/tutorials/discrete_stochastic_example/)
 
 ## フィールド
 
@@ -13,7 +13,7 @@ struct ConstantRateJump{F1, F2} <: JumpProcesses.AbstractJump
 
 ## 例
 
-`u[1]` が粒子の数を、`p[1]` が各粒子が消失する確率を与えるとします。このジャンププロセスに対応する `ConstantRateJump` は次のようになります。
+`u[1]` が粒子の数を示し、`p[1]` が各粒子が時間あたりに崩壊する確率を示すとします。このジャンププロセスに対応する `ConstantRateJump` は次のようになります。
 
 ```julia
 rate(u,p,t) = p[1]*u[1]

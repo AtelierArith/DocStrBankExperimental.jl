@@ -4,7 +4,7 @@ findprev(predicate::Function, A, i)
 
 `predicate` が `true` を返す `A` の要素の、`i` の前または `i` を含む前のインデックスを見つけます。見つからない場合は `nothing` を返します。これは、[`getindex`](@ref)、[`keys(A)`](@ref)、および [`nextind`](@ref) をサポートする配列、文字列、およびほとんどの他のコレクションで機能します。
 
-インデックスは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
+インデックスは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるのと同じ型です。
 
 # 例
 

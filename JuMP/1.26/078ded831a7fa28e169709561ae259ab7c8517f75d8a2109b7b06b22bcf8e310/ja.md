@@ -2,7 +2,7 @@
 GenericVariableRef{T}(c::ConstraintRef)
 ```
 
-`ConstraintRef`に関連付けられた変数を取得します。`c`が単一の変数に対する制約である場合です。
+`ConstraintRef` に関連付けられた変数を取得します。`c` が単一の変数に対する制約である場合です。
 
 ## 例
 

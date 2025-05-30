@@ -8,7 +8,7 @@ quantile(itr, p; sorted=false, alpha::Real=1.0, beta::Real=alpha)
 
 デフォルトでは（`alpha = beta = 1`）、分位数は点 `((k-1)/(n-1), x[k])` の間の線形補間を介して計算されます。ここで `k = 1:n` であり、`n = length(itr)` です。これは Hyndman と Fan (1996) の定義 7 に対応し、R および NumPy のデフォルトと同じです。
 
-キーワード引数 `alpha` と `beta` は Hyndman と Fan の同じパラメータに対応しており、異なる値に設定することで、この論文で定義された方法 4-9 のいずれかを使用して分位数を計算できます：
+キーワード引数 `alpha` と `beta` は Hyndman と Fan の同じパラメータに対応し、異なる値に設定することで、この論文で定義された方法 4-9 のいずれかを使用して分位数を計算できます：
 
   * 定義 4: `alpha=0`, `beta=1`
   * 定義 5: `alpha=0.5`, `beta=0.5` (MATLAB デフォルト)
@@ -18,7 +18,7 @@ quantile(itr, p; sorted=false, alpha::Real=1.0, beta::Real=alpha)
   * 定義 9: `alpha=3/8`, `beta=3/8`
 
 !!! note
-    `v` に `NaN` または [`missing`](@ref) 値が含まれている場合、`ArgumentError` がスローされます。[`skipmissing`](@ref) 関数を使用して `missing` エントリを省略し、非欠損値の分位数を計算してください。
+    `v` に `NaN` または [`missing`](@ref) 値が含まれている場合、`ArgumentError` がスローされます。[`skipmissing`](@ref) 関数を使用して `missing` エントリを省略し、非欠損値の分位数を計算します。
 
 
 # 参考文献

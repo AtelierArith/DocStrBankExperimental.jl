@@ -7,7 +7,7 @@ image(image)
 
 ## 属性
 
-`AbstractPlotting.Combined{AbstractPlotting.image!}` の利用可能な属性とそのデフォルトは次のとおりです：
+`AbstractPlotting.Combined{AbstractPlotting.image!}` の利用可能な属性とそのデフォルトは次のとおりです: 
 
 ```
 

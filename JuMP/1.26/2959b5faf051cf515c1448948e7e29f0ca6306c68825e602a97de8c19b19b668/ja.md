@@ -2,7 +2,7 @@
 @objective(model::GenericModel, sense, func)
 ```
 
-目的の感覚を`sense`に、目的関数を`func`に設定します。
+目的の感覚を`sense`に設定し、目的関数を`func`に設定します。
 
 ## `sense`
 

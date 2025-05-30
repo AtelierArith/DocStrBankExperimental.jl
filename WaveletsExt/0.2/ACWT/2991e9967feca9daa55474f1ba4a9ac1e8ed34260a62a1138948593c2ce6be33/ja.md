@@ -31,4 +31,4 @@ x̂ = similar(x)
 iacwpt!(x̂, xw)
 ```
 
-**参照:** [`iacwpt`](@ref)
+**関連情報:** [`iacwpt`](@ref) ```

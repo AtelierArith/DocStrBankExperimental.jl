@@ -2,7 +2,7 @@
 struct OptimizeNotCalled <: Exception end
 ```
 
-[`optimize!`](@ref) が呼び出される前に結果属性をクエリできない場合にスローされるエラーです。
+[`optimize!`](@ref) が呼び出される前に結果属性を照会できない場合にスローされるエラーです。
 
 ## 例
 

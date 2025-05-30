@@ -10,7 +10,7 @@ Julia はエンディアンを自動的に変換しないことに注意して�
 read(io::IO, String)
 ```
 
-`io` の全体を `String` として読み込みます（[`readchomp`](@ref) も参照してください）。
+`io` の全体を `String` として読み込みます（[`readchomp`](@ref) も参照）。
 
 # 例
 

@@ -4,7 +4,7 @@ getchild(node)
 getchildren(node)
 ```
 
-子ノード **node** を取得します。
+子ノードを取得します。
 
   * `getchild`: `edge` の単一の子ノード、または `node` が単一の子を持つことを確認した後の `node` の子ノード。
   * `getchildren`: `node` のすべての子ノードのベクトル。
@@ -13,7 +13,7 @@ getchildren(node)
 getchildedge(node)
 ```
 
-`node` の単一の子 **edge**。単一の子であることを確認します。
+`node` の単一の子エッジ。単一の子であることを確認します。
 
 *警告*: これらの関数は、`ischild1` フィールドを介して正しいエッジの方向に依存しています。
 

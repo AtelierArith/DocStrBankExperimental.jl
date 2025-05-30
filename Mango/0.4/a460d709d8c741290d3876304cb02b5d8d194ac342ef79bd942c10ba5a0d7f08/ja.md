@@ -2,4 +2,4 @@
 address(agent)
 ```
 
-エージェントのアドレスを[`AgentAddress`](@ref)または[`MQTTAddress`](@ref)として、プロトコルに応じて返します。
+エージェントのアドレスを、プロトコルに応じて [`AgentAddress`](@ref) または [`MQTTAddress`](@ref) として返します。

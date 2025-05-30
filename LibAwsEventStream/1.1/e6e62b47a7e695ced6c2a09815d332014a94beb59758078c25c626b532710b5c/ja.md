@@ -4,7 +4,7 @@ aws_event_stream_rpc_client_continuation_activate(continuation, operation_name, 
 
 実際に初期ストリームをピアに送信します。この関数が AWS*OP*SUCCESS を返すと、[`aws_event_stream_rpc_client_connection_new_stream`](@ref)() からのコールバックが実際に呼び出されます。そうでない場合、ストリームはキューに追加されておらず、コールバックは呼び出されません。
 
-operation*name は、ピアとの間で開始したい論理 RPC 呼び出しを識別するための名前です。空であってはなりません。flush*fn は、メッセージがワイヤに書き込まれるか、失敗した場合に呼び出されます。
+operation*name は、ピアとの間で開始したい論理 RPC 呼び出しを識別するための名前です。空であってはなりません。flush*fn は、メッセージがワイヤに書き込まれるか、失敗した場合に一度呼び出されます。
 
 ### プロトタイプ
 

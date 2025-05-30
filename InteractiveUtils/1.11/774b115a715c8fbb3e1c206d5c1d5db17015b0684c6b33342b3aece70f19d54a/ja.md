@@ -2,7 +2,7 @@
 @code_llvm
 ```
 
-関数またはマクロ呼び出しの引数を評価し、それらの型を決定し、結果の式に対して[`code_llvm`](@ref)を呼び出します。オプションのキーワード引数`raw`、`dump_module`、`debuginfo`、`optimize`を関数呼び出しの前に配置して設定します。例えば、次のようにします。
+関数またはマクロ呼び出しの引数を評価し、その型を決定し、結果の式に対して[`code_llvm`](@ref)を呼び出します。オプションのキーワード引数`raw`、`dump_module`、`debuginfo`、`optimize`を関数呼び出しの前に配置して設定します。例えば、次のようにします：
 
 ```
 @code_llvm raw=true dump_module=true debuginfo=:default f(x)

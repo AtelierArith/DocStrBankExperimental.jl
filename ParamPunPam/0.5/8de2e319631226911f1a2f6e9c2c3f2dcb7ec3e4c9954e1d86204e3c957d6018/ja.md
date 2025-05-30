@@ -10,7 +10,7 @@ paramgb(polys; options...) -> basis
 
 サポートされているキーワード引数：
 
-  * `ordering`: モノミアルの順序。**Groebner.jl**と同様で、例えば`Lex()`や`DegRevLex()`など。
+  * `ordering`: モノミオ ordering。**Groebner.jl**と同様で、例えば`Lex()`や`DegRevLex()`など。
   * `up_to_degree`: 分子と分母の合計次数が固定の値までのパラメータを計算します。例：`up_to_degree=(2, 2)`。**注意:** `up_to_degree`が指定されている場合、基底の係数はその合計次数が`up_to_degree`以下である場合にのみ正しいことが保証されます。それ以外の場合、基底の係数は`1`に設定されます。
   * `rational_interpolator`: 有理関数補間アルゴリズム。可能なオプションは`:CuytLee`と`:VanDerHoevenLecerf`（デフォルト）です。
   * `estimate_degrees`: `true`の場合、補間を開始する前にパラメータの合計次数を推定します。デフォルトは`true`です。

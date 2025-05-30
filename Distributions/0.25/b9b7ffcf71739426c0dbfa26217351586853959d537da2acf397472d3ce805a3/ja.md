@@ -5,7 +5,7 @@ f(\mathbf{x}; \boldsymbol{\mu}, \boldsymbol{\Sigma}) = \frac{1}{(2 \pi)^{d/2} |\
 \exp \left( - \frac{1}{2} (\mathbf{x} - \boldsymbol{\mu})^T \Sigma^{-1} (\mathbf{x} - \boldsymbol{\mu}) \right)
 $$
 
-実際には、平均ベクトルと共分散が特別な形を持つことが多く、これを利用して計算を簡素化することができます。例えば、平均ベクトルは時にはゼロベクトルであることがあり、共分散行列は対角行列であったり、$\sigma^2 \mathbf{I}$ の形を持つこともあります。このような特別なケースを利用するために、平均と共分散の特別な構造を指定できるパラメトリック型 `MvNormal` を以下のように定義します。
+実際には、平均ベクトルと共分散が特別な形を持つことが多く、これを利用して計算を簡素化することができます。例えば、平均ベクトルは時にはゼロベクトルであることがあり、共分散行列は対角行列であったり、$\sigma^2 \mathbf{I}$ の形であったりします。このような特別なケースを利用するために、平均と共分散の特別な構造を指定できるパラメトリック型 `MvNormal` を以下のように定義します。
 
 ```julia
 struct MvNormal{T<:Real,Cov<:AbstractPDMat,Mean<:AbstractVector} <: AbstractMvNormal
@@ -14,7 +14,7 @@ struct MvNormal{T<:Real,Cov<:AbstractPDMat,Mean<:AbstractVector} <: AbstractMvNo
 end
 ```
 
-ここで、平均ベクトルは任意の `AbstractVector` のインスタンスであることができます。共分散は `AbstractPDMat` の任意のサブタイプであることができます。特に、完全共分散には `PDMat` を、対角共分散には `PDiagMat` を、等方的共分散には $\sigma^2 \mathbf{I}$ の形を持つ `ScalMat` を使用できます。（詳細については、Julia パッケージ [PDMats](https://github.com/JuliaStats/PDMats.jl/) を参照してください）。
+ここで、平均ベクトルは任意の `AbstractVector` のインスタンスであることができます。共分散は `AbstractPDMat` の任意のサブタイプであることができます。特に、完全共分散には `PDMat`、対角共分散には `PDiagMat`、等方的共分散には $\sigma^2 \mathbf{I}$ の形の `ScalMat` を使用できます。（詳細については、Julia パッケージ [PDMats](https://github.com/JuliaStats/PDMats.jl/) を参照してください）。
 
 また、異なる平均ベクトルと共分散の組み合わせを使用して型のエイリアスのセットを定義します：
 

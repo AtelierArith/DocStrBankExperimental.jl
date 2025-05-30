@@ -10,4 +10,4 @@ create_dispatch_methodlists(model::Model, modeldata::AbstractModelData, arrays_i
 # キーワード引数
 
   * `verbose=false`: 追加のログ出力のために `true`
-  * `generated_dispatch=true`: `ReactionMethodDispatchList` を作成するために `true`（生成されたコードを使用した高速ディスパッチ、コンパイル時間は遅い）、`false` は `ReactionMethodDispatchListNoGen` を作成します（遅い動的ディスパッチ、コンパイル時間は速い）
+  * `generated_dispatch=true`: `ReactionMethodDispatchList` を作成するために `true`（生成されたコードを使用した高速ディスパッチ、遅いコンパイル時間）、`false` は `ReactionMethodDispatchListNoGen` を作成します（遅い動的ディスパッチ、高速コンパイル時間）

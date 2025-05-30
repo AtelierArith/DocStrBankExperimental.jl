@@ -46,7 +46,7 @@
       year = {2015},
   }
   ```
-  欠陥制御の実装に関する参考文献、MATLABの`bvp5c`ソルバーに基づく：
+  MATLABの`bvp5c`ソルバーに基づく欠陥制御の実装に関する参考文献：
   ```bibtex
   @article{shampine_solving_nodate,
   title = {Solving {Boundary} {Value} {Problems} for {Ordinary} {Diﬀerential} {Equations} in {Matlab} with bvp4c

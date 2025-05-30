@@ -5,9 +5,9 @@ metadata!(dfc::DataFrameColumns, key::AbstractString, value; style::Symbol=:defa
 metadata!(dfr::DataFrameRows, key::AbstractString, value; style::Symbol=:default)
 ```
 
-オブジェクト `df` のテーブルレベルのメタデータをキー `key` に対して値 `value` とスタイル `style`（デフォルトは `:default`）に設定し、`df` を返します。
+オブジェクト `df` のテーブルレベルのメタデータをキー `key` に対して値 `value` とスタイル `style`（デフォルトは `:default`）を持つように設定し、`df` を返します。
 
-`SubDataFrame` と `DataFrameRow` では、`:note` スタイルのみが許可されています。異なるスタイルで親データフレームに既に存在するキー-値ペアを設定しようとするとエラーが発生します。
+`SubDataFrame` と `DataFrameRow` では、`:note` スタイルのみが許可されています。異なるスタイルで親データフレームに既に存在するキー-バリューペアを設定しようとするとエラーが発生します。
 
 参照: [`metadata`](@ref), [`metadatakeys`](@ref), [`deletemetadata!`](@ref), [`emptymetadata!`](@ref), [`colmetadata`](@ref), [`colmetadatakeys`](@ref), [`colmetadata!`](@ref), [`deletecolmetadata!`](@ref), [`emptycolmetadata!`](@ref).
 

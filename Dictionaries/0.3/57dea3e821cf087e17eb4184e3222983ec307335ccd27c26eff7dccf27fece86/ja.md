@@ -10,4 +10,4 @@ unset!(dict::AbstractDictionary, i)
 
 インデックス `i` が `dict` に存在する場合は削除し、そうでなければ何もしません。
 
-関連: `delete!`, `set!`.
+関連情報として `delete!`、`set!` を参照してください。

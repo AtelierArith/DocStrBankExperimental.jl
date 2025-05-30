@@ -2,7 +2,7 @@
 map_exponents(f, m1::AbstractMonomialLike, m2::AbstractMonomialLike)
 ```
 
-もし $m_1 = \prod x^{\alpha_i}$ かつ $m_2 = \prod x^{\beta_i}$ であれば、モノミアル $m = \prod x^{f(\alpha_i, \beta_i)}$ を返します。
+もし $m_1 = \prod x^{\alpha_i}$ かつ $m_2 = \prod x^{\beta_i}$ ならば、モノミアル $m = \prod x^{f(\alpha_i, \beta_i)}$ を返します。
 
 ### 例
 

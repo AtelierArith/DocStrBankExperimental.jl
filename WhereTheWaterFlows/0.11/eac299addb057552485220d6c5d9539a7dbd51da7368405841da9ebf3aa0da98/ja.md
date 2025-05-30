@@ -8,20 +8,20 @@ waterflows(dem, cellarea=fill!(similar(dem),1), flowdir_fn=d8dir_feature;
 args:
 
   * dem – DEM（または水文学的ポテンシャル）；配列
-  * cellarea=cellarea=fill!(similar(dem),1) – セルごとのソース、デフォルトは1。
+  * cellarea=cellarea=fill!(similar(dem),1) – セルごとの供給源、デフォルトは1。
 
-      * もしcellareaが場所によって負であれば、フラックスはゼロに達することはあってもそれ以下にはなりません。
+      * もしcellareaが負の場所があれば、フラックスはゼロに達することはありますが、それ以下にはなりません。
       * ルーティングが行われない領域、通常はdemのNaNにおいて、cellareaは無視されます。これは質量保存に影響を与える可能性があります。
       * 物理単位を使用する場合は、セルごとの体積フラックスを使用してください。例：m3/s。
-      * あるいは、`cellarea`は配列のタプルであることもできます。その場合、それらは別々に処理/ルーティングされます。例えば、`(water, tracer)`。すべての量は広がりのあるものである必要があります（すなわち加算可能で、内部エネルギーを使用し温度ではない）。
+      * あるいは、`cellarea`は配列のタプルであることもできます。その場合、それらは別々に処理/ルーティングされます。例えば、`(water, tracer)`。すべての量は広がりのあるものである必要があります（すなわち、加算可能で、内部エネルギーを使用し、温度ではない）。
   * flowdir*fn=d8dir*feature – ルーティング関数。デフォルトは組み込みの`d8dir_feature`関数ですが、カスタマイズ可能です。
 
 kwargs:
 
-  * feedback*fn – 各セルの水がすべて蓄積された後、しかし水がさらに下流にルーティングされる前に、各セルの面積値に適用される関数。シグネチャ`(uparea, ij, dir) -> new*uparea`--> 例えば、`(uparea, ij, dir) -> max(uparea, 0)`はすべての上流面積が非負であることを保証します。
+  * feedback*fn – 各セルの水がすべて蓄積された後、さらに下流にルーティングされる前に、各セルの面積値に適用される関数。シグネチャ`(uparea, ij, dir) -> new*uparea`--> 例えば、`(uparea, ij, dir) -> max(uparea, 0)`は、すべての上流面積が非負であることを保証します。
   * drain_pits – ピットを通してルーティングするかどうか（true）
-  * bnd*as*sink (true) – ドメイン境界がシンクであるべきか、すなわち隣接するセルがそれに排水できるか、または無視するか。
-  * nan*as*sink (true) – DEMのNaNセルが隣接するセルをシンクにするべきか。
+  * bnd*as*sink (true) – ドメイン境界がシンクであるべきか、すなわち隣接するセルがそれに排水できるか、無視するかどうか。
+  * nan*as*sink (true) – DEMのNaNセルが隣接するセルをシンクにするべきかどうか。
   * stacksize (2^13 * 2^10) – *flowrouting*catchments!におけるコールスタックのサイズで、StackOverflowErrorが発生しやすいです。ただし、増加させるとOutOfMemoryエラーが発生する可能性が高いことに注意してください。
 
 Returns
@@ -31,8 +31,8 @@ Returns
   * dir – 各位置での流れの方向
   * nout – ポイントに流出があるかどうか。すなわち、nout[I]==0 –> Iはピット
   * nin – 流入セルの数
-  * sinks – シンクの位置を示すVector{CartesianIndex{2}}
-  * pits – ピットの位置を示すVector{CartesianIndex{2}}
+  * sinks – シンクの位置をVector{CartesianIndex{2}}として
+  * pits – ピットの位置をVector{CartesianIndex{2}}として
   * c – 集水域マップ（色番号∈ 1:length(sinks)はシンク用、他はピット用）
   * bnds – 集水域間の境界。外部/NaNsへの境界はここには含まれません。
   * flowdir*extra*output – flowdir_fnの追加出力で、デフォルトでは`nothing`です。

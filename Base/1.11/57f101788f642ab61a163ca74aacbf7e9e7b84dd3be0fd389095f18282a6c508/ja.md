@@ -2,7 +2,7 @@
 parent(A)
 ```
 
-ビューの基になる親オブジェクトを返します。`SubArray`、`SubString`、`ReshapedArray`、または`LinearAlgebra.Transpose`の型のオブジェクトの親は、オブジェクト作成時に`view`、`reshape`、`transpose`などに引数として渡されたものです。入力がラップされたオブジェクトでない場合は、入力自体を返します。入力が複数回ラップされている場合は、最外層のラッパーのみが削除されます。
+ビューの基になる親オブジェクトを返します。`SubArray`、`SubString`、`ReshapedArray`、または`LinearAlgebra.Transpose`のタイプのオブジェクトの親は、オブジェクト作成時に`view`、`reshape`、`transpose`などに引数として渡されたものです。入力がラップされたオブジェクトでない場合は、入力自体を返します。入力が複数回ラップされている場合は、最も外側のラッパーのみが削除されます。
 
 # 例
 

@@ -9,7 +9,7 @@ struct ExponentsIterator{M}(
 
 モノミアル順序 `M` のためのモノミアル指数を生成するイテレータです。指数のベクトルの型は `object` の型であり、長さ（すなわち変数の数）は `length(object)` です。
 
-`object` はゼロである必要はなく、`copy` および `setindex!` メソッドを実装している必要があります（特別なケースとして `Tuple` を除く）。
+`object` はゼロである必要はなく、`copy` および `setindex!` メソッドを実装している必要があります（特別なケースとして `Tuple` は除きます）。
 
 詳細は [`monomials`](@ref) を参照してください。
 

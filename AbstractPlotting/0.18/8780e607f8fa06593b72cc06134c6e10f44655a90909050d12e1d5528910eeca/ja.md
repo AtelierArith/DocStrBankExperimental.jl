@@ -6,7 +6,7 @@ scatterlines(xs, ys, [zs]; kwargs...)
 
 ## 属性
 
-`AbstractPlotting.Combined{AbstractPlotting.scatterlines!}` の利用可能な属性とそのデフォルトは次のとおりです：
+`AbstractPlotting.Combined{AbstractPlotting.scatterlines!}` の利用可能な属性とそのデフォルトは次のとおりです: 
 
 ```
 

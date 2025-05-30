@@ -7,7 +7,7 @@ RandomForestClassifier(; n_subfeatures::Int=-1,
                        impurity_importance::Bool=true)
 ```
 
-ランダムフォレスト分類。詳細は [DecisionTree.jlのドキュメント](https://github.com/bensadeghi/DecisionTree.jl) を参照してください。
+ランダムフォレスト分類。詳細は[DecisionTree.jlのドキュメント](https://github.com/bensadeghi/DecisionTree.jl)を参照してください。
 
 ハイパーパラメータ:
 
@@ -19,6 +19,6 @@ RandomForestClassifier(; n_subfeatures::Int=-1,
   * `min_samples_split`: スプリットに必要な最小サンプル数
   * `min_purity_increase`: スプリットに必要な最小純度
   * `rng`: 使用する乱数生成器。`Int`を指定すると、新しい乱数生成器のシードとして使用されます。マルチスレッドのフォレストは`Int`でシードを設定する必要があります。
-  * `impurity_importance`: `Mean Decrease in Impurity (MDI)`を使用して特徴の重要度を計算するかどうか。詳細は [`DecisionTree.impurity_importance`](@ref) を参照してください。
+  * `impurity_importance`: `Mean Decrease in Impurity (MDI)`を使用して特徴の重要度を計算するかどうか。詳細は[`DecisionTree.impurity_importance`](@ref)を参照してください。
 
-`fit!`、`predict`、`predict_proba`、`get_classes` を実装しています。
+`fit!`、`predict`、`predict_proba`、`get_classes`を実装しています。

@@ -2,7 +2,7 @@
 HellingerDistance <: ProbabilityDensityDM
 ```
 
-確率密度エネルギーマップのためのヘリンガー距離識別測度。
+Hellinger距離は確率密度エネルギーマップのための識別測度です。
 
 方程式:
 

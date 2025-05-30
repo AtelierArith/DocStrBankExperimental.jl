@@ -2,7 +2,7 @@
 Array(A::MatrixElem{T}) where T <: NCRingElement
 ```
 
-`A`を同じ次元で同じ要素を持つJuliaの`Matrix`に変換します。
+同じ要素を持つ同じ次元のJulia `Matrix` に `A` を変換します。
 
 # 例
 

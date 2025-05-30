@@ -4,7 +4,7 @@ aws_event_stream_rpc_client_continuation_send_message(continuation, message_args
 
 継続にメッセージを送信します。[`aws_event_stream_rpc_client_continuation_activate`](@ref)()は、この関数を呼び出す前に正常に呼び出される必要があります。
 
-この関数がAWS*OP*SUCCESSを返すと、メッセージがワイヤに書き込まれるか、失敗した場合にflush_fnが呼び出されます。
+この関数がAWS*OP*SUCCESSを返すと、メッセージがワイヤに書き込まれるか失敗した後にflush_fnが呼び出されます。
 
 ### プロトタイプ
 

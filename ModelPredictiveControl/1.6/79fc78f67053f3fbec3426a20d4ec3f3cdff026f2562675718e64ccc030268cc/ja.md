@@ -1,5 +1,5 @@
 ```
-MovingHorizonEstimator(model::SimModel; <キーワード引数>)
+MovingHorizonEstimator(model::SimModel; <keyword arguments>)
 ```
 
 `model`（[`LinModel`](@ref) または [`NonLinModel`](@ref)）に基づいて移動ホライズン推定器（MHE）を構築します。
@@ -43,11 +43,15 @@ $$
 
 拡張プロセスモデルおよび $\mathbf{R̂}, \mathbf{Q̂}$ の共分散の詳細については、[`UnscentedKalmanFilter`](@ref) を参照してください。この推定器は、最適化のために各時間ステップでかなりの量のメモリを割り当てますが、現在は単一のシューティング転写としてハードコーディングされています。
 
-!!! 警告     `MethodError: no method matching (::var"##")(::Vector{ForwardDiff.Dual})` のようなエラーが発生した場合は、拡張ヘルプを参照してください。
+!!! warning
+    `MethodError: no method matching (::var"##")(::Vector{ForwardDiff.Dual})` のようなエラーが発生した場合は、拡張ヘルプを参照してください。
+
 
 # 引数
 
-!!! 情報     *`強調`* されたキーワード引数は非Unicodeの代替です。
+!!! info
+    *`強調`* されたキーワード引数は非Unicodeの代替です。
+
 
   * `model::SimModel` : （決定論的）推定のためのモデル。
   * `He=nothing` : 推定ホライズン $H_e$、指定する必要があります。
@@ -85,9 +89,10 @@ MovingHorizonEstimator estimator with a sample time Ts = 10.0 s, Ipopt optimizer
 
 # 拡張ヘルプ
 
-!!! 詳細 "拡張ヘルプ"     推定されたプロセスおよびセンサーノイズは次のように定義されます：
+!!! details "拡張ヘルプ"
+    推定されたプロセスおよびセンサーノイズは次のように定義されます：
 
-$$
+    $$
     \mathbf{Ŵ} = 
     \begin{bmatrix}
         \mathbf{ŵ}(k-N_k+p+0)     \\
@@ -102,29 +107,31 @@ $$
         \vdots                  \\
         \mathbf{v̂}(k)
     \end{bmatrix}
-    ```
+    $$
 
     拡張モデル関数 $\mathbf{f̂, ĥ^m}$ に基づいて：
 
-    ```math
+    $$
     \begin{aligned}
         \mathbf{v̂}(k-j)     &= \mathbf{y^m}(k-j) - \mathbf{ĥ^m}\Big(\mathbf{x̂}_k(k-j), \mathbf{d}(k-j)\Big) \\
         \mathbf{x̂}_k(k-j+1) &= \mathbf{f̂}\Big(\mathbf{x̂}_k(k-j), \mathbf{u}(k-j), \mathbf{d}(k-j)\Big) + \mathbf{ŵ}(k-j)
     \end{aligned}
-    ```
+    $$
 
-    定数 $p$ は `!direct` に等しい。言い換えれば、`direct==true` の場合、$\mathbf{Ŵ}$ と $\mathbf{V̂}$ は1つの時間ステップだけシフトされます。非デフォルトの予測形式で $p=1$ は、MHE にとって特に有用であり、MPC 最適化の後に高価な計算を移動させます。つまり、[`preparestate!`](@ref) はデフォルトで最適化を解決しますが、`direct=false` で [`updatestate!`](@ref) に延期することができます。
+    定数 $p$ は `!direct` に等しい。言い換えれば、`direct==true` の場合、$\mathbf{Ŵ}$ と $\mathbf{V̂}$ は1つの時間ステップだけシフトされます。非デフォルトの予測形式で $p=1$ は、MHE にとって特に有用です。なぜなら、MHE はその高価な計算を MPC 最適化の後に移動させるからです。つまり、[`preparestate!`](@ref) はデフォルトで最適化を解決しますが、`direct=false` で [`updatestate!`](@ref) に延期することができます。
 
-    [`SteadyKalmanFilter`](@ref) の拡張ヘルプでは、共分散の調整と `nint_ym` および `nint_u` 引数による拡張について詳述しています。デフォルトの拡張スキームは同じで、すなわち `nint_u=0` で、`nint_ym` は [`default_nint`](@ref) によって計算されます。コンストラクタは、結果として得られる拡張された [`NonLinModel`](@ref) の可観測性を検証しません。そのため、可観測性が維持されることを確認するのはユーザーの責任です。
+    [`SteadyKalmanFilter`](@ref) の拡張ヘルプでは、共分散の調整と `nint_ym` および `nint_u` 引数による拡張について詳述しています。デフォルトの拡張スキームは同じで、すなわち `nint_u=0` であり、`nint_ym` は [`default_nint`](@ref) によって計算されます。コンストラクタは、結果として得られる拡張された [`NonLinModel`](@ref) の可観測性を検証しません。そのため、そのような場合は、ユーザーがそれが依然として可観測であることを確認する責任があります。
 
-    到着時の推定共分散 $\mathbf{P̂}_{k-N_k}(k-N_k+p)$ は、ウィンドウの開始時点 $k-N_k+p$ における状態推定の不確実性を示します。これは、現在の推定共分散 $\mathbf{P̂}_k(k)$ とは異なり、MHE によって計算されない値です（例えば、[`KalmanFilter`](@ref) とは対照的です）。3つのキーワード引数がその初期値を指定します：$\mathbf{P̂_i} =  \mathrm{diag}\{ \mathbf{P}(0), \mathbf{P_{int_{u}}}(0), \mathbf{P_{int_{ym}}}(0) \}$。初期状態推定 $\mathbf{x̂_i}$ は [`setstate!`](@ref) で手動で指定することも、[`LinModel`](@ref) のために [`initstate!`](@ref) で自動的に指定することもできます。$p=0$ の MHE は、ここにある他のすべての推定器とわずかに不一致です。これは、初期値を $\mathbf{x̂_i} = \mathbf{x̂}_{-1}(-1)$ および $\mathbf{P̂_i} = \mathbf{P̂}_{-1}(-1)$ と解釈し、前の時間ステップからの *a posteriori* 推定[^2] となります。$p=1$ の MHE は一貫性があり、これらを $\mathbf{x̂_i} = \mathbf{x̂}_{-1}(0)$ および $\mathbf{P̂_i} = \mathbf{P̂}_{-1}(0)$ と解釈します。
+    到着時の推定共分散 $\mathbf{P̂}_{k-N_k}(k-N_k+p)$ は、ウィンドウの開始時点 $k-N_k+p$ における状態推定の不確実性を示します。これは、現在の推定共分散 $\mathbf{P̂}_k(k)$ とは異なり、MHE によって計算されない値です（例えば、[`KalmanFilter`](@ref) とは対照的です）。3つのキーワード引数がその初期値を指定します：$\mathbf{P̂_i} =  \mathrm{diag}\{ \mathbf{P}(0), \mathbf{P_{int_{u}}}(0), \mathbf{P_{int_{ym}}}(0) \}$。初期状態推定 $\mathbf{x̂_i}$ は [`setstate!`](@ref) で手動で指定することも、[`LinModel`](@ref) のために [`initstate!`](@ref) で自動的に指定することもできます。$p=0$ の MHE は、ここにある他のすべての推定器とわずかに矛盾しています。これは、初期値を $\mathbf{x̂_i} = \mathbf{x̂}_{-1}(-1)$ および $\mathbf{P̂_i} = \mathbf{P̂}_{-1}(-1)$ と解釈します。これは、前の時間ステップからの *a posteriori* 推定です[^2]。$p=1$ の MHE は一貫しており、これらを $\mathbf{x̂_i} = \mathbf{x̂}_{-1}(0)$ および $\mathbf{P̂_i} = \mathbf{P̂}_{-1}(0)$ と解釈します。
 
     [^2]: M. Hovd (2012), "A Note On The Smoothing Formulation Of Moving Horizon Estimation",   *Facta Universitatis*, Vol. 11 №2.
 
     最適化と到着共分散の更新は `model` に依存します：
 
-      * `model` が [`LinModel`](@ref) の場合、最適化は時間変化するヘッセ行列を持つ二次プログラムとして扱われ、一般的に非線形プログラミングよりも安価です。デフォルトでは、[`KalmanFilter`](@ref) が到着共分散を推定します（カスタマイズ可能）。
-      * それ以外の場合、非線形プログラムが密な [`ForwardDiff`](@extref ForwardDiff) 自動微分（AD）を使用して目的関数と制約の導関数をデフォルトで計算します（カスタマイズ可能）。最適化器は一般的に AD のような正確な導関数から利益を得ます。ただし、`f` および `h` 関数はこの機能と互換性がある必要があります。これらの関数を書く際の一般的な間違いについては、[`JuMP` ドキュメント](@extref JuMP Common-mistakes-when-writing-a-user-defined-operator) を参照してください。また、[`UnscentedKalmanFilter`](@ref) がデフォルトで到着共分散を推定します。
+      * `model` が [`LinModel`](@ref) の場合、最適化は時間変化するヘッセ行列を持つ二次計画として扱われ、一般的に非線形プログラミングよりも安価です。デフォルトでは、[`KalmanFilter`](@ref) が到着共分散を推定します（カスタマイズ可能）。
+      * それ以外の場合、非線形プログラムが密な [`ForwardDiff`](@extref ForwardDiff) 自動微分（AD）を使用して目的関数と制約の導関数をデフォルトで計算します（カスタマイズ可能）。最適化器は一般的に AD のような正確な導関数から利益を得ます。ただし、`f` および `h` 関数はこの機能と互換性がある必要があります。これらの関数を書く際の一般的な間違いについては、[`JuMP` documentation](@extref JuMP Common-mistakes-when-writing-a-user-defined-operator) を参照してください。また、[`UnscentedKalmanFilter`](@ref) がデフォルトで到着共分散を推定します。
 
-    スラック変数 $ϵ$ は、[`setconstraint!`](@ref) を参照して有効にすると制約を緩和します。デフォルトでは MHE では無効（`Cwt=Inf` から）ですが、2つ以上のタイプの境界がある問題に対しては有効にする必要があります（例えば、推定状態 $\mathbf{x̂}$ とセンサーノイズ $\mathbf{v̂}$ に対して）。`Cwt≠Inf` の場合、`Ipopt` の属性 `nlp_scaling_max_gradient` は `10/Cwt` に設定されます（すでに設定されていない場合）、$ϵ$ の小さい値をスケールするためです。到着共分散推定方法を指定するには、2番目のコンストラクタを使用してください。
-$$
+    スラック変数 $ϵ$ は、[`setconstraint!`](@ref) を参照して有効にすると制約を緩和します。デフォルトでは MHE では無効（`Cwt=Inf` から）ですが、2つ以上のタイプの境界がある問題に対しては有効にする必要があります。推定された状態 $\mathbf{x̂}$ およびセンサーノイズ $\mathbf{v̂}$ に対して実現可能性を確保するためです。`Cwt≠Inf` の場合、`Ipopt` の属性 `nlp_scaling_max_gradient` は `10/Cwt` に設定されます（すでに設定されていない場合）、$ϵ$ の小さな値をスケールするためです。到着共分散推定方法を指定するには、2番目のコンストラクタを使用してください。
+
+
+```

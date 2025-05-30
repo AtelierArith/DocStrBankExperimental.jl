@@ -2,7 +2,7 @@
 IVFADCIndex{U<:Unsigned, I<:Unsigned, Dc<:Distances.PreMetric, Dr<:Distances.PreMetric, T<:AbstractFloat, Q<:AbstractCoarseQuantizer{Dc,T}}
 ```
 
-逆ファイルシステムオブジェクトです。含まれているベクトルへの近似最近傍検索を可能にします。
+逆ファイルシステムオブジェクトです。含まれるベクトルへの近似最近傍検索を可能にします。
 
 # フィールド
 

@@ -11,7 +11,7 @@ mutable struct TransientSolution{T, N, A, B} <: VoronoiFVM.AbstractTransientSolu
 
 ## インターフェース
 
-このタイプのオブジェクトは `AbstractDiffEqArray` インターフェースに準拠しています。インデックス付けと補間については、[https://diffeq.sciml.ai/stable/basics/solution/](https://diffeq.sciml.ai/stable/basics/solution/)を参照してください。
+このタイプのオブジェクトは `AbstractDiffEqArray` インターフェースに従います。インデックス付けと補間については、[https://diffeq.sciml.ai/stable/basics/solution/](https://diffeq.sciml.ai/stable/basics/solution/)を参照してください。
 
 特に、一時的な解 `sol` は次のようにアクセスできます：
 

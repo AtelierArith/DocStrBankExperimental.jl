@@ -5,15 +5,15 @@ t8_forest_leaf_face_neighbors(forest, ltreeid, leaf, pneighbor_leaves, face, dua
 森林の葉の面の隣接葉を計算します。
 
 !!! note
-    隣接面がない場合、*neighbor*leaves = NULL、num*neighbors = 0、および*pelement_indices = NULLが出力されます。
+    隣接面がない場合、出力時に *neighbor*leaves = NULL, num*neighbors = 0, および *pelement_indices = NULL になります。
 
 
 !!! note
-    現在、*forest*はバランスが取れている必要があります。
+    現在、*forest* はバランスが取れている必要があります。
 
 
 !!! note
-    この関数を呼び出す前に*forest*をコミットする必要があります。
+    この関数を呼び出す前に *forest* をコミットする必要があります。
 
 
 !!! note
@@ -24,16 +24,16 @@ if (num*neighbors > 0) { eclass*scheme->[`t8_element_destroy`](@ref) (num*neighb
 
 # 引数
 
-  * `forest`:[in] 森。 有効なゴーストレイヤーを持っている必要があります。
+  * `forest`:[in] 森。有効なゴーストレイヤーを持っている必要があります。
   * `ltreeid`:[in] ローカルツリーID。
-  * `leaf`:[in] *forest*の*ltreeid*のツリー内の葉。
-  * `pneighbor_leaves`:[out] 入力時に未割り当て。 出力時に隣接葉がここに格納されます。
+  * `leaf`:[in] *forest* の *ltreeid* のツリー内の葉。
+  * `pneighbor_leaves`:[out] 入力時は未割り当て。出力時に隣接葉がここに格納されます。
   * `face`:[in] 隣接面が検索される面のインデックス。
-  * `dual_faces`:[out] 出力時に隣接要素の面のID。
+  * `dual_faces`:[out] 出力時に隣接要素の面のIDが格納されます。
   * `num_neighbors`:[out] 出力時に隣接葉の数。
-  * `pelement_indices`:[out] 入力時に未割り当て。 出力時に隣接葉の要素インデックスがここに格納されます。ローカル葉の場合は0、1、... num*local*el - 1、ゴーストの場合はnum*local*el、...、num*local*el + num_ghosts - 1。
+  * `pelement_indices`:[out] 入力時は未割り当て。出力時に隣接葉の要素インデックスがここに格納されます。ローカル葉の場合は 0, 1, ... num*local*el - 1、ゴーストの場合は num*local*el , ... , num*local*el + num_ghosts - 1。
   * `pneigh_scheme`:[out] 出力時に隣接要素のeclassスキーム。
-  * `forest_is_balanced`:[in] *forest*がバランスが取れていることがわかっている場合はtrue、そうでない場合はfalse。
+  * `forest_is_balanced`:[in] *forest* がバランスが取れている場合は真、そうでない場合は偽。
 
 ### プロトタイプ
 

@@ -12,9 +12,9 @@ scatterlines(xs, ys, [zs]; kwargs...)
 
 **`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)` のように複数のアルファは掛け算されます。
 
-**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの `Plane3f` 平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトではクリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]` を渡すことで親の `clip_planes` を削除できます。
+**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの `Plane3f` 平面のベクターを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトではクリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]` を渡すことで親の `clip_planes` を削除できます。
 
-**`color`** =  `@inherit linecolor`  — 線の色、デフォルトでは散布マーカーの色でもあります。
+**`color`** =  `@inherit linecolor`  — 線の色、デフォルトでは散布マーカーの色も含まれます。
 
 **`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()` を呼び出します。
 
@@ -36,7 +36,7 @@ scatterlines(xs, ys, [zs]; kwargs...)
 
 **`inspector_hover`** =  `automatic`  — デフォルトの `show_data` メソッドを置き換えるコールバック関数 `(inspector, plot, index) -> ...` を設定します。
 
-**`inspector_label`** =  `automatic`  — DataInspector によって生成されるデフォルトラベルを置き換えるコールバック関数 `(plot, index, position) -> string` を設定します。
+**`inspector_label`** =  `automatic`  — DataInspector によって生成されるデフォルトのラベルを置き換えるコールバック関数 `(plot, index, position) -> string` を設定します。
 
 **`joinstyle`** =  `@inherit joinstyle`  — *ドキュメントは利用できません。*
 
@@ -60,7 +60,7 @@ scatterlines(xs, ys, [zs]; kwargs...)
 
 **`miter_limit`** =  `@inherit miter_limit`  — *ドキュメントは利用できません。*
 
-**`model`** =  `automatic`  — プロットのためのモデル行列を設定します。これは `translate!`、`rotate!` および `scale!` で行った調整を上書きします。
+**`model`** =  `automatic`  — プロットのためのモデル行列を設定します。これは `translate!`、 `rotate!` および `scale!` で行われた調整を上書きします。
 
 **`nan_color`** =  `:transparent`  — NaN 値の色。
 

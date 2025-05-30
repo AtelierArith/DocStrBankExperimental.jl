@@ -2,7 +2,7 @@
 @NLparameter(model, param == value)
 ```
 
-モデル `model` に添付された非線形パラメータ `param` を作成し、初期値を `value` に設定して返します。非線形パラメータは非線形式のみに使用できます。
+モデル `model` に初期値 `value` を設定した非線形パラメータ `param` を作成して返します。非線形パラメータは非線形式のみに使用できます。
 
 ## 例
 
@@ -20,7 +20,7 @@ julia> value(x)
 @NLparameter(model, value = param_value)
 ```
 
-モデル `model` に添付された匿名の非線形パラメータ `param` を作成し、初期値を `param_value` に設定して返します。非線形パラメータは非線形式のみに使用できます。
+モデル `model` に初期値 `param_value` を設定した匿名の非線形パラメータ `param` を作成して返します。非線形パラメータは非線形式のみに使用できます。
 
 ## 例
 
@@ -38,7 +38,7 @@ julia> value(x)
 @NLparameter(model, param_collection[...] == value_expr)
 ```
 
-モデル `model` に添付された非線形パラメータのコレクション `param_collection` を作成し、初期値を `value_expr` に設定して返します（インデックスセットに依存する場合があります）。インデックスセットを指定するための構文は [`@variable`](@ref) と同じです。
+モデル `model` に初期値 `value_expr` を設定した非線形パラメータのコレクション `param_collection` を作成して返します（インデックスセットに依存する場合があります）。インデックスセットを指定するための構文は [`@variable`](@ref) と同じです。
 
 ## 例
 
@@ -59,10 +59,10 @@ julia> value(y[2])
 @NLparameter(model, [...] == value_expr)
 ```
 
-モデル `model` に添付された匿名の非線形パラメータのコレクションを作成し、初期値を `value_expr` に設定して返します（インデックスセットに依存する場合があります）。インデックスセットを指定するための構文は [`@variable`](@ref) と同じです。
+モデル `model` に初期値 `value_expr` を設定した匿名の非線形パラメータのコレクションを作成して返します（インデックスセットに依存する場合があります）。インデックスセットを指定するための構文は [`@variable`](@ref) と同じです。
 
 !!! compat
-    このマクロはレガシー非線形インターフェースの一部です。 [非線形モデリング](@ref) に文書化されている新しい非線形インターフェースの使用を検討してください。ほとんどの場合、`@NLparameter(model, p == value)` のような呼び出しを `@variable(model, p in Parameter(value))` に置き換えることができます。
+    このマクロはレガシー非線形インターフェースの一部です。[非線形モデリング](@ref) に記載されている新しい非線形インターフェースの使用を検討してください。ほとんどの場合、`@NLparameter(model, p == value)` のような呼び出しを `@variable(model, p in Parameter(value))` に置き換えることができます。
 
 
 ## 例

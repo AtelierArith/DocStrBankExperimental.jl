@@ -37,4 +37,4 @@ GEOS-Chem classicで使用するためにアーカイブされたGEOS-FPデー�
 
 `stream`は、データを必要に応じてストリーミングするか、一度にすべて読み込むかを指定します。
 
-現在のデータドメインオプションについてはhttp://geoschemdata.wustl.edu/ExtData/を参照してください。
+現在のデータドメインオプションについては、http://geoschemdata.wustl.edu/ExtData/を参照してください。

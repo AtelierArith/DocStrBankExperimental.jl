@@ -18,6 +18,6 @@ succprob(d)          # 成功率のベクトルを取得、すなわち p
 failprob(d)          # 失敗率のベクトルを取得、すなわち 1-p
 ```
 
-外部リンク:
+外部リンク：
 
   * [ポアソン-バイノミアル分布 - Wikipedia](http://en.wikipedia.org/wiki/Poisson_binomial_distribution)

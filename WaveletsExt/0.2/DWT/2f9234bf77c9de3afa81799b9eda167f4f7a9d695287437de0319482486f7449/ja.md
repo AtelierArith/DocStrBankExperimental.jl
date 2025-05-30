@@ -11,7 +11,7 @@ iwpd(x̂, xw, wt, tree)
   * `xw::AbstractArray{T,2} where T<:Number` または `xw::AbstractArray{T,3} where T<:Number`: 入力配列。2D入力は1Dウェーブレット再構成を受け、3D入力は2Dウェーブレット再構成を受けます。
   * `wt::OrthoFilter`: ウェーブレットフィルター。
   * `L::Integer`: (デフォルト: `maxtransformlevels(x)`) ウェーブレット分解のレベル数。
-  * `tree::BitVector`: 変換するためのバイナリツリーまたはクアッドツリー。
+  * `tree::BitVector`: 変換するために計算されるバイナリツリーまたはクアッドツリー。
 
 # 戻り値
 
@@ -41,4 +41,4 @@ y = similar(x)
 iwpd!(y, xw, wt)
 ```
 
-**参照:** [`iwpd`](@ref), [`iwpt`](@ref)
+**関連情報:** [`iwpd`](@ref), [`iwpt`](@ref)

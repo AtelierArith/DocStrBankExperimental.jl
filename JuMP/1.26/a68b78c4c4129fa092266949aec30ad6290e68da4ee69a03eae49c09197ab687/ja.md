@@ -4,7 +4,7 @@ struct VectorConstraint
 
 ベクトル制約のデータ。
 
-JuMPの制約の表現に関する[ドキュメント](@ref)も参照してください。
+JuMPの制約の表現に関する[ドキュメント](@ref Constraints)も参照してください。
 
 ## フィールド
 

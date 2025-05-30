@@ -9,7 +9,7 @@ k_vec::AbstractVector = 0.025:0.05:20) :: Interpolations.GriddedInterpolation
 
   * `dim::Int`: システムの次元数。
   * `ρ::Real`: システムの粒子密度（単位体積あたりの粒子数）。
-  * `g2::Function`: $r$ の関数としての対相関関数 $g_2(r)$。
+  * `g2::Function`: $r$ の関数としてのペア相関関数 $g_2(r)$。
   * `s::Function`: $k$ の関数としての構造因子 $S(k)$。
   * `closure::String`: オーンスタイン-ゼルニケ方程式で使用される閉じる関係。可能な値は次のとおりです：
 
@@ -27,13 +27,13 @@ k_vec::AbstractVector = 0.025:0.05:20) :: Interpolations.GriddedInterpolation
 
   * OZポテンシャル $βv(r)$ を表す `Interpolations.GriddedInterpolation` のインスタンスで、通常の関数として使用できます。
 
-注意: `g2` および `s` 関数は、それぞれ r および k の関数として対相関関数と構造因子を返す有効な関数として提供する必要があります。
+注意: `g2` および `s` 関数は、それぞれ r および k の関数としてペア相関関数と構造因子を返す有効な関数として提供する必要があります。
 
 ## 例：
 
 ```
 function pair_correlation_function(r)
-    # ここで対相関関数を定義します
+    # ここでペア相関関数を定義します
 
     # ...
 end

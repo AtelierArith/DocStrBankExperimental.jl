@@ -1,5 +1,5 @@
 ```
-ポタシエーション <: AbstractPosAdduct
+Potassiation <: AbstractPosAdduct
 ```
 
 [M+K]+

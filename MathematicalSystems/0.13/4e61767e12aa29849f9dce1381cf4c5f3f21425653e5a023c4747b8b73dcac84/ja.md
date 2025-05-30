@@ -1,5 +1,5 @@
 ```
-LinearDescriptorContinuousSystem
+線形記述子連続システム
 ```
 
 次の形式の連続時間線形記述子システム：

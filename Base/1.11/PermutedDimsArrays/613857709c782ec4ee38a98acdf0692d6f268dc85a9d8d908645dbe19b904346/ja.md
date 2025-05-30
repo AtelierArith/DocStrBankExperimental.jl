@@ -2,7 +2,7 @@
 permutedims(v::AbstractVector)
 ```
 
-ベクトル `v` を `1 × length(v)` 行行列に変形します。操作が再帰的でないため、[`transpose`](@ref) とは異なり、特に非数値の値の配列に対して便利です（再帰的な `transpose` はエラーを引き起こす可能性があります）。
+ベクトル `v` を `1 × length(v)` の行行列に変形します。操作が再帰的でないため、[`transpose`](@ref) とは異なり、非数値の値の配列に特に便利です（再帰的な `transpose` はエラーを引き起こす可能性があります）。
 
 # 例
 
@@ -14,7 +14,7 @@ julia> permutedims(["a", "b", "c"])
  "a"  "b"  "c"
 ```
 
-数値のベクトルに対しては、`permutedims(v)` は `transpose(v)` とほぼ同様に機能しますが、戻り値の型が異なります（`LinearAlgebra.Transpose` ビューではなく、[`reshape`](@ref) を使用しますが、どちらも元の配列 `v` とメモリを共有します）：
+数値のベクトルの場合、`permutedims(v)` は `transpose(v)` とほぼ同様に機能しますが、戻り値の型が異なります（`LinearAlgebra.Transpose` ビューではなく、[`reshape`](@ref) を使用しますが、どちらも元の配列 `v` とメモリを共有します）：
 
 ```jldoctest; setup = :(using LinearAlgebra)
 julia> v = [1, 2, 3, 4]

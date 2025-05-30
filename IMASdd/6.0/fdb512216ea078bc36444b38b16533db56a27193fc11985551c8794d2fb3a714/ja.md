@@ -17,7 +17,7 @@ h5merge(output_file::AbstractString, keys_files::Union{AbstractDict{<:AbstractSt
 
       * `0`はルート（`"/"`）を使用することを意味します。
       * `1`はルートの直下の子を収集することを意味します。
-      * より高い値は階層の深いところにあるグループを収集します。
+      * 高い値は階層の深いところにあるグループを収集します。
   * `h5_strip_group_prefix`: `true`の場合、ターゲットグループ名（`keys_files`からのキー）は出力HDF5パスから省略されます。例えば、入力ファイルにグループパス`"/level1/level2"`が含まれ、キーが`"parent"`の場合：
 
       * `h5_strip_group_prefix = false`の場合、出力パスは`"/parent/level1/level2"`になります。

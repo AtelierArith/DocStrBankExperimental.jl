@@ -4,7 +4,7 @@ TopologyResult
 
 異なる [`Clustering`](@ref) オプションを持つ構造に対するトポロジー計算の結果です。
 
-その表現には、クラスタリングオプションの名前とそれに対応するゲノムが含まれます。クラスタリングオプションが1つだけである場合は、[`Auto`](@ref Clustering) であるため省略されます。
+その表現には、クラスタリングオプションの名前とそれに対応するゲノムが含まれます。クラスタリングオプションが一つだけである場合は、[`Auto`](@ref Clustering) は省略されます。
 
 [`TopologicalGenome`](@ref) （または `PeriodicGraph`）と同様に、`TopologyResult` のテキスト表現は `TopologyResult` に再解析できます：
 

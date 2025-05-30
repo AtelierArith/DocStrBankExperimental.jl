@@ -5,10 +5,10 @@ filter(f, a)
 コレクション `a` のコピーを返し、`f` が `false` の要素を削除します。関数 `f` には1つの引数が渡されます。
 
 !!! compat "Julia 1.4"
-    `a` をタプルとしてサポートするには、少なくとも Julia 1.4 が必要です。
+    `a` をタプルとしてサポートするには、少なくともJulia 1.4が必要です。
 
 
-関連情報: [`filter!`](@ref), [`Iterators.filter`](@ref).
+参照: [`filter!`](@ref), [`Iterators.filter`](@ref).
 
 # 例
 

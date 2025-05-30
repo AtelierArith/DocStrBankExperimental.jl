@@ -6,4 +6,4 @@ function evaluate(
 
 ```
 
-与えられた FEVectorBlock または FEVector FEB に対する ItemIntegrator アセンブリパターンの評価は、すべてのアイテムに対する累積のみを返します。
+アイテムインテグレーターアセンブリパターンの評価は、与えられたFEVectorBlockまたはFEVector FEBに対して行われ、すべてのアイテムに対する累積のみを返します。

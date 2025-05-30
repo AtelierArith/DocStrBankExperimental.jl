@@ -2,7 +2,7 @@
 BlackBoxDiscreteSystem <: AbstractDiscreteSystem
 ```
 
-右辺が次の形で定義された離散時間システム：
+右辺が次の形式で定義された離散時間システム:
 
 $$
     x_{k+1} = f(x_k) \; \forall k.

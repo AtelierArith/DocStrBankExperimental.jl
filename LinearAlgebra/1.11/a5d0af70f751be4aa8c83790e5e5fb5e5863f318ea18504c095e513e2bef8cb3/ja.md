@@ -3,7 +3,7 @@ nullspace(M; atol::Real=0, rtol::Real=atol>0 ? 0 : n*ϵ)
 nullspace(M, rtol::Real) = nullspace(M; rtol=rtol) # to be deprecated in Julia 2.0
 ```
 
-`M`のヌル空間の基底を計算します。これは、`M`の特異値のうち、絶対値が`max(atol, rtol*σ₁)`より小さい特異ベクトルを含みます。ここで、`σ₁`は`M`の最大特異値です。
+`M`のヌル空間の基底を計算します。これは、`M`の特異値のうち、絶対値が`max(atol, rtol*σ₁)`より小さい特異ベクトルを含むもので、ここで`σ₁`は`M`の最大特異値です。
 
 デフォルトでは、相対許容誤差`rtol`は`n*ϵ`であり、`n`は`M`の最小次元のサイズ、`ϵ`は`M`の要素型の[`eps`](@ref)です。
 

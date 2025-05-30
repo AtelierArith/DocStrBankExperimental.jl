@@ -13,7 +13,7 @@ StaticMatrix{N,M,T} = StaticArray{Tuple{N,M}, T, 2}
 
   * フラットなタプルのデータを受け取るコンストラクタ。
   * 整数（線形インデックス）を使った`getindex()`（可能であれば`@inline`と`@boundscheck`を使用）。
-  * フラットなタプルのデータを返す`Tuple()`。
+  * フラットなタプルでデータを返す`Tuple()`。
 
 以下を実装することが有用かもしれません：
 

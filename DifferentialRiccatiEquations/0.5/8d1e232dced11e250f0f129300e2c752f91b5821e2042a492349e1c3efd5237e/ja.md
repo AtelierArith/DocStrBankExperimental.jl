@@ -2,7 +2,7 @@
 lowrank(L, D)::LDLᵀ
 ```
 
-`alpha * L * D * L'` の遅延表現で、`alpha::Real` は最初は1であり、以下の関数をサポートします：
+`alpha * L * D * L'` の遅延表現で、`alpha::Real` は初めは1であり、以下の関数をサポートします：
 
   * `+(::LDLᵀ, ::LDLᵀ)`
   * `*(::Real, ::LDLᵀ)`

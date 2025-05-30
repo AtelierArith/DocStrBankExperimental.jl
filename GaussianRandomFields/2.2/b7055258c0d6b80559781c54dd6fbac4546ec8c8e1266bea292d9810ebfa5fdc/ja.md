@@ -21,4 +21,4 @@ Matérn (λ=1.0, ν=1.0, σ=2.0, p=2.0)
 
 ```
 
-関連情報: [`Exponential`](@ref), [`Linear`](@ref), [`Spherical`](@ref), [`Whittle`](@ref), [`Gaussian`](@ref), [`SquaredExponential`](@ref)
+参照: [`Exponential`](@ref), [`Linear`](@ref), [`Spherical`](@ref), [`Whittle`](@ref), [`Gaussian`](@ref), [`SquaredExponential`](@ref)

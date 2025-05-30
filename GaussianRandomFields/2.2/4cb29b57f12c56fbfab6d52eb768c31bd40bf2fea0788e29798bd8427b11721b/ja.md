@@ -21,4 +21,4 @@ Gaussian (λ=1.0, σ=2.0, p=2.0)
 
 ```
 
-参照: [`Exponential`](@ref), [`Linear`](@ref), [`Spherical`](@ref), [`Whittle`](@ref), [`SquaredExponential`](@ref), [`Matern`](@ref)
+関連項目: [`Exponential`](@ref), [`Linear`](@ref), [`Spherical`](@ref), [`Whittle`](@ref), [`SquaredExponential`](@ref), [`Matern`](@ref)

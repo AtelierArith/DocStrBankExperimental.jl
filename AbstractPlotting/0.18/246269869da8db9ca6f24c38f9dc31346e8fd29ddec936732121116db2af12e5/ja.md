@@ -30,6 +30,6 @@ end
     参照: [`ispressed`](@ref)。
   * `keyboardstate::Set{AbstractPlotting.Keyboard.Button}`: 現在押されているすべてのキーを含みます。
   * `unicode_input::AbstractPlotting.PriorityObservable{Char}`: 最後に入力された文字を含みます。
-  * `dropped_files::AbstractPlotting.PriorityObservable{Vector{String}}`: シーンにドラッグされたファイルのファイルパスのリストを含みます。
+  * `dropped_files::AbstractPlotting.PriorityObservable{Vector{String}}`: シーンにドラッグされたファイルのパスのリストを含みます。
   * `hasfocus::AbstractPlotting.PriorityObservable{Bool}`: シーンウィンドウがフォーカスされているかどうか。
   * `entered_window::AbstractPlotting.PriorityObservable{Bool}`: マウスがウィンドウ内にいるかどうか。

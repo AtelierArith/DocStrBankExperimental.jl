@@ -7,4 +7,4 @@ visualize(
 
 ```
 
-1本のlwc_lineを使用してDEMAを視覚化します。
+DEMAを1つのlwc_lineを使用して視覚化します。

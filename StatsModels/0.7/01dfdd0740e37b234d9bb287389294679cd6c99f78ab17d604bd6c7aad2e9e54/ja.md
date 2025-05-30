@@ -5,7 +5,7 @@ termnames(t::FormulaTerm)
 式の左辺と右辺に適用された `termnames` の二重タプルを返します。
 
 !!! note
-    `apply_schema` が呼び出されるまで、式中のリテラル `1` は `ConstantTerm(1)` と解釈され、返される項名では `"1"` として表示されます。
+    `apply_schema` が呼び出されるまで、式中のリテラル `1` は `ConstantTerm(1)` と解釈され、返される項名には `"1"` として表示されます。
 
 
 ```jldoctest

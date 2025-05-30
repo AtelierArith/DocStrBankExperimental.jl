@@ -8,9 +8,9 @@ RosShamp4(; - `standardtag`: パッケージ固有のタグを使用するかど
                 自動微分の場合、デフォルトは`AutoForwardDiff()`で、デフォルトでは
                 `chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。
                 `FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、
-                これはデフォルト値`Val{:forward}()`を持つキーワード引数`fdtype`と、
-                代替として`Val{:central}()`および`Val{:complex}()`を持ちます。
-            - `concrete_jac`: ヤコビアンを構築するかどうかを指定します。デフォルトは
+                これはデフォルト値`Val{:forward}()`を持つキーワード引数`fdtype`を持ち、
+                代替として`Val{:central}()`と`Val{:complex}()`があります。
+            - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
                 `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
                 たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
             - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
@@ -21,7 +21,7 @@ RosShamp4(; - `standardtag`: パッケージ固有のタグを使用するかど
               を左または右の前処理器として使用できます。
               前処理器は、`Pl,Pr = precs(W,du,u,p,t,newW,Plprev,Prprev,solverdata)`
               関数によって指定され、引数は次のように定義されます：
-                - `W`: 非線形システムの現在のヤコビアン。アルゴリズムに応じて
+                - `W`: 非線形システムの現在のヤコビ行列。アルゴリズムに応じて
                     ``I - \gamma J``または``I/\gamma - J``として指定されます。これは
                     通常、OrdinaryDiffEq.jlによって定義された`WOperator`型です。これはオペレーターの遅延
                     表現です。ユーザーは`convert(AbstractMatrix,W)`を呼び出すことで
@@ -34,7 +34,7 @@ RosShamp4(; - `standardtag`: パッケージ固有のタグを使用するかど
                     `newW == true`のときのみ前処理器を更新することを推奨します。
                 - `Plprev`: 前の`Pl`。
                 - `Prprev`: 前の`Pr`。
-                - `solverdata`: ソルバーが`precs`関数に提供できるオプションの追加データ。
+                - `solverdata`: ソルバーが`precs`関数に渡すことができるオプションの追加データ。
                     ソルバー依存であり、変更される可能性があります。
               戻り値は、LinearSolve.jl互換の前処理器のタプル`(Pl,Pr)`です。
               一方の前処理を指定するには、使用されない前処理器に対して`nothing`を返すだけです。
@@ -42,26 +42,26 @@ RosShamp4(; - `standardtag`: パッケージ固有のタグを使用するかど
               ```julia
               Pl, Pr = precs(W, du, u, p, t, ::Nothing, ::Nothing, ::Nothing, solverdata)
               ```
-              これはソルバーセットアップフェーズで、前処理器`(Pl,Pr)`を持つ
-              積分器タイプを構築するために使用されます。
+              これはソルバーのセットアップフェーズで使用され、前処理器`(Pl,Pr)`を持つ
+              積分器タイプを構築します。
               デフォルトは`precs=DEFAULT_PRECS`で、デフォルトの前処理器関数は次のように定義されています：
               ```julia
               DEFAULT_PRECS(W, du, u, p, t, newW, Plprev, Prprev, solverdata) = nothing, nothing
               ```)
 ```
 
-ロゼンブロック・ワナー法。A安定な4次ロゼンブロック法。
+Rosenbrock-Wanner法。A安定な4次のRosenbrock法。
 
 ### キーワード引数
 
   * `chunk_size`: TBD
   * `standardtag`: TBD
-  * `autodiff`: ヤコビアンをADを介して計算するかどうかを制御するブール値
-  * `concrete_jac`: `jac!(J, u, p, t)`の形式の関数
+  * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
+  * `concrete_jac`: 形式`jac!(J, u, p, t)`の関数
   * `diff_type`: TBD
   * `linsolve`: 内部線形システム用のカスタムソルバー
   * `precs`: 内部線形ソルバー用のカスタム前処理器
 
 ## 参考文献
 
-  * L. F. Shampine, ロゼンブロック法の実装, ACM Transactions on Mathematical Software (TOMS), 8: 2, 93-113. doi:10.1145/355993.355994
+  * L. F. Shampine, Rosenbrockメソッドの実装, ACM Transactions on Mathematical Software (TOMS), 8: 2, 93-113. doi:10.1145/355993.355994

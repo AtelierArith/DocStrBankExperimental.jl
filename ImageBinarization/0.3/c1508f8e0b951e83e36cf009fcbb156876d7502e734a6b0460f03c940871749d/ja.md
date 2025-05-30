@@ -34,7 +34,7 @@ binarize!([out,] img, f::AbstractThresholdAlgorithm; nbins=256)
   * `HistogramThresholding.UnimodalRosin`
   * `HistogramThresholding.Yen`
 
-詳細な説明や構築については、各具体的なアルゴリズムを参照してください。たとえば、REPLで `?Otsu` と入力すると、`Otsu` メソッドの使用方法についての詳細が得られます。
+詳細な説明と構築については、各具体的なアルゴリズムを参照してください。たとえば、REPLで `?Otsu` と入力すると、`Otsu` メソッドの使用方法についての詳細が得られます。
 
 ## `nbins::Integer`
 
@@ -51,7 +51,7 @@ img = testimage("cameraman")
 img_binary = binarize(img, Otsu())
 ```
 
-便利さは劣りますが、`SingleHistogramThreshold` を自分で構築することもできます：
+便利さは劣りますが、自分で `SingleHistogramThreshold` を構築することもできます：
 
 ```julia
 using TestImages, ImageBinarization

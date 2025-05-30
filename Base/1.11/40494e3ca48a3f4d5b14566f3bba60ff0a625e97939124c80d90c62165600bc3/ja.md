@@ -2,7 +2,7 @@
 occursin(haystack)
 ```
 
-引数が `haystack` に存在するかどうかをチェックする関数を作成します。すなわち、`needle -> occursin(needle, haystack)` に相当する関数です。
+引数が `haystack` に存在するかどうかをチェックする関数を作成します。すなわち、`needle -> occursin(needle, haystack)` と同等の関数です。
 
 返される関数の型は `Base.Fix2{typeof(occursin)}` です。
 

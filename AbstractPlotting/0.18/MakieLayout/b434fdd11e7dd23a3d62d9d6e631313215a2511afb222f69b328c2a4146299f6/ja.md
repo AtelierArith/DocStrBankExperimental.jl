@@ -22,7 +22,7 @@ Axisには以下の属性があります：
 
 `leftspinevisible`   デフォルト: `true`   左側軸スパインが表示されるかどうかを制御します。
 
-`limits`   デフォルト: `(nothing, nothing)`   ユーザーが手動で設定した制限。`reset_limits!`を呼び出すと再設定され、`autolimits!`によってnothingに設定されます。タプル（xlow, xhigh, ylow, high）またはタプル（nothing*or*xlims, nothing*or*ylims）であることができます。`xlims!`、`ylims!`、および`limits!`によって設定されます。
+`limits`   デフォルト: `(nothing, nothing)`   ユーザーが手動で設定した制限。`reset_limits!`を呼び出すと再設定され、`autolimits!`によってnothingに設定されます。タプル（xlow, xhigh, ylow, high）またはタプル（nothing*or*xlims, nothing*or*ylims）である必要があります。`xlims!`、`ylims!`、および`limits!`によって設定されます。
 
 `palette`   デフォルト: `if scene !== nothing && haskey(scene.attributes, :palette)     deepcopy(scene.palette) else     Attributes() end`   キーごとに1つのパレットを持つ属性、例えば`color = [:red, :green, :blue]`
 

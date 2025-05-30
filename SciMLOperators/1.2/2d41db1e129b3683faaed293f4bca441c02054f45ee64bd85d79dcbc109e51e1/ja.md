@@ -68,7 +68,7 @@ v_kron = rand(N^3)
 w_kron = L3(v_kron, u, p, t) # == L3 * v_kron
 ```
 
-変異演算子評価のために、`cache_operator` を呼び出してインプレースキャッシュを生成し、操作が非割り当てになるようにします。
+変異演算子評価のためには、`cache_operator` を呼び出してインプレースキャッシュを生成し、操作が非割り当てになるようにします。
 
 ```@example operator_algebra
 α, β = rand(2)

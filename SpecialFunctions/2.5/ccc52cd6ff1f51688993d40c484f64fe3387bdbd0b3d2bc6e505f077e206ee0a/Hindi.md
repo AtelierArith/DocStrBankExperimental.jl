@@ -1,0 +1,26 @@
+```
+sinint(x)
+```
+
+$$
+x
+$$
+
+के लिए परिभाषित साइन इंटीग्रल फ़ंक्शन की गणना करें,
+
+$$
+\operatorname{Si}(x)
+:= \int_0^x \frac{\sin t}{t} \, \mathrm{d}t
+\quad \text{के लिए} \quad
+x \in \mathbb{R} \,.
+$$
+
+बाहरी लिंक: [DLMF 6.2.9](https://dlmf.nist.gov/6.2.9), [Wikipedia](https://en.wikipedia.org/wiki/Trigonometric_integral#Sine_integral).
+
+देखें: [`cosint(x)`](@ref SpecialFunctions.cosint).
+
+# कार्यान्वयन
+
+[MacLeod (1996)](@cite macleod_1996) में तालिका में दिए गए रैशनल अप्रॉक्सिमेंट्स का उपयोग करना।
+
+नोट: $\text{Ci}(x)$ का दूसरा शून्य एक टाइपो है जिसे ठीक किया गया है: लेख में $r_1 = 3.38418 0422\mathbf{8} 51186 42639 78511 46402$ है, लेकिन वास्तव में: $r_1 = 3.38418 0422\mathbf{5} 51186 42639 78511 46402$ है।

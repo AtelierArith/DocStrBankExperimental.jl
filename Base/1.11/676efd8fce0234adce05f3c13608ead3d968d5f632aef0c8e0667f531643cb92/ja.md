@@ -6,7 +6,7 @@ stack(iter; [dims])
 
 デフォルトでは、要素の軸が最初に配置され、`size(result) = (size(first(iter))..., size(iter)...)` となります。これは [`Iterators.flatten`](@ref)`(iter)` と同じ順序の要素を持ちます。
 
-キーワード `dims::Integer` を指定すると、`iter` の `i` 番目の要素がスライス [`selectdim`](@ref)`(result, dims, i)` となり、`size(result, dims) == length(iter)` になります。この場合、`stack` は同じ `dims` を持つ [`eachslice`](@ref) の動作を逆にします。
+キーワード `dims::Integer` を使用すると、`iter` の `i` 番目の要素がスライス [`selectdim`](@ref)`(result, dims, i)` となり、`size(result, dims) == length(iter)` になります。この場合、`stack` は同じ `dims` を持つ [`eachslice`](@ref) の動作を逆にします。
 
 さまざまな [`cat`](@ref) 関数も配列を結合します。ただし、これらはすべて配列の既存の（おそらく自明な）次元を拡張するのではなく、新しい次元に沿って配列を配置します。また、配列を単一のコレクションではなく、別々の引数として受け取ります。
 
@@ -30,7 +30,7 @@ true
 julia> vec(mat) == vcat(vecs...) == reduce(vcat, collect(vecs))
 true
 
-julia> stack(zip(1:4, 10:99))  # 任意の反復可能なオブジェクトの反復可能なオブジェクトを受け入れます
+julia> stack(zip(1:4, 10:99))  # 反復可能なオブジェクトの反復可能なコレクションを受け入れます
 2×4 Matrix{Int64}:
   1   2   3   4
  10  11  12  13

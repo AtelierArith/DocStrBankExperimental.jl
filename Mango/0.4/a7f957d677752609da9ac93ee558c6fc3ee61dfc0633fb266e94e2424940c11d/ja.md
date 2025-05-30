@@ -10,6 +10,6 @@
 end
 @role struct MyRole
     @shared
-    my_model::Model # エージェントごとに全てのエージェントで正確に同じ。
+    my_model::Model # エージェントごとにすべてのエージェントで正確に同じ。
 end
 ```

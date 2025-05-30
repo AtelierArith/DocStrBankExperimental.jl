@@ -2,7 +2,7 @@
 AbstractGateSymbol
 ```
 
-`GateSymbol`は`AbstractGateSymbol`のインスタンス化です。これは`Gate` [コンストラクタ](https://docs.julialang.org/en/v1/manual/constructors/)に引数として渡すことができ、`Gate`は`target`量子ビットにも関連付けられています。`QuantumCircuit`に追加されると、`Gate`はその`target_qubits`に配置されます。`AbstractGateSymbol`は、[`get_connected_qubits()`](@ref)のような関数のデフォルト実装にすべての`GateSymbols`をディスパッチするのに役立ちます。これらの関数は、異なる実装を必要とする`GateSymbols`に特化することができます。
+`GateSymbol`は`AbstractGateSymbol`のインスタンス化です。これは`Gate` [constuctor](https://docs.julialang.org/en/v1/manual/constructors/)に引数として渡すことができ、`Gate`は`target`量子ビットにも関連付けられています。`QuantumCircuit`に追加されると、`Gate`はその`target_qubits`に配置されます。`AbstractGateSymbol`は、すべての`GateSymbols`を[`get_connected_qubits()`](@ref)のような関数のデフォルト実装にディスパッチするのに役立ちます。これらの関数は、異なる実装を必要とする`GateSymbols`に特化することができます。
 
 `AbstractGateSymbol`は抽象型であり、インスタンス化することはできません。各具体的な`GateSymbols`の型は、`AbstractGateSymbol`のサブタイプである構造体です。`AbstractGateSymbol`の各子孫は、少なくとも以下のメソッドを実装する必要があります：
 
@@ -31,7 +31,7 @@ julia> Snowflurry.get_num_connected_qubits(::X45) = 1
 julia> x_45(target::Integer) = Gate(X45(), [target]);
 ```
 
-デフォルト精度`ComplexF64`の`Operator`コンストラクタも定義されており、次のように定義されます：
+デフォルト精度`ComplexF64`の`Operator`コンストラクタも定義する必要があります：
 
 ```jldoctest gate_struct
 julia> x_45(T::Type{<:Complex} = ComplexF64) = rotation_x(π/4, T);

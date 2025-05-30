@@ -4,7 +4,7 @@ struct EstimationResult{S<:AbstractFloat, T<:Integer, U<:MomentMatching.Auxiliar
 
 # 説明
 
-モーメント推定手続きの出力を格納するための構造体。
+モーメント推定手続きの出力を格納する構造体です。
 
 # フィールド
 

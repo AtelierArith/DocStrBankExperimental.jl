@@ -4,17 +4,17 @@ ShowCase(o, props=propertynames(o);
          max_params=3, show_params=true, kw...)
 ```
 
-`AbstractShow`オブジェクトを作成し、デフォルトの`show`メソッドで使用されるすべての要素を組み合わせます。これは[`ShowTypeOf`](@ref)と[`ShowProps`](@ref)を連結します。
+`show` メソッドで使用されるすべての要素を組み合わせた `AbstractShow` オブジェクトを作成します。これは [`ShowTypeOf`](@ref) と [`ShowProps`](@ref) を連結します。
 
 ## 引数
 
   * `o`: ラップされるオブジェクト。
   * `props`: 表示されるオブジェクトのプロパティ。
   * `type_style`: 型に使用されるスタイル。
-  * `show_module::Symbol`: 型と型パラメータのモジュールを表示するかどうか、[`ShowType`](@ref)を参照してください。
+  * `show_module::Symbol`: 型と型パラメータのモジュールを表示するかどうか、[`ShowType`](@ref) を参照してください。
   * `max_params::Integer`: 表示する型パラメータの最大数。
-  * `show_params::Bool`: パラメータを表示するかどうか。`max_params=0`かつ`show_params=true`の場合、継続文字列を含む括弧が表示されることに注意してください。
-  * `kw`: [`ShowProps`](@ref)に渡される他のキーワード引数。
+  * `show_params::Bool`: パラメータを表示するかどうか。`max_params=0` かつ `show_params=true` の場合、続きの文字列を含む括弧が表示されることに注意してください。
+  * `kw`: [`ShowProps`](@ref) に渡される他のキーワード引数。
 
 ## 例
 

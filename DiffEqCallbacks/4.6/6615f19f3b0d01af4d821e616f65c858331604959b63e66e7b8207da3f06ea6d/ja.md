@@ -3,7 +3,7 @@ IterativeCallback(time_choice, user_affect!, tType = Float64;
     initial_affect = false, kwargs...)
 ```
 
-いくつかの影響を反復的に適用するために使用されるコールバックです。たとえば、`t₁`で最初の効果が与えられた場合、次の効果を適用するために`t₂`を定義できます。
+いくつかの影響を反復的に適用するために使用されるコールバックです。たとえば、最初の効果を`t₁`で与えられた場合、次の効果を適用するために`t₂`を定義できます。
 
 ## 引数
 
@@ -12,4 +12,4 @@ IterativeCallback(time_choice, user_affect!, tType = Float64;
 
 ## キーワード引数
 
-  * `initial_affect`は`t=0`で効果を適用するかどうかで、デフォルトは`false`です。
+  * `initial_affect`は`t=0`で影響を適用するかどうかで、デフォルトは`false`です。

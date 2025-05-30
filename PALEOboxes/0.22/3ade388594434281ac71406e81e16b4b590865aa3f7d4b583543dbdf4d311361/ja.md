@@ -3,7 +3,7 @@ show_variables(model::Model; [attributes], [filter], showlinks=false, modeldata=
 show_variables(model::Model, domainname; [attributes], [filter], showlinks=false, modeldata=nothing) -> DataFrame
 ```
 
-ドメイン変数のテーブルを表示します。オプションで変数リンクやデータを取得します。
+ドメイン変数のテーブルを表示します。オプションで変数リンクやデータを取得できます。
 
 # キーワード:
 

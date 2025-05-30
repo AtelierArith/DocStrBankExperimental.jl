@@ -2,7 +2,7 @@
 Date(d::AbstractString, format::AbstractString; locale="english") -> Date
 ```
 
-`format` 文字列で指定されたパターンに従って `d` 日付文字列を解析することによって `Date` を構築します（構文については [`DateFormat`](@ref) を参照してください）。
+`format` 文字列に従って `d` 日付文字列を解析することによって `Date` を構築します（構文については [`DateFormat`](@ref) を参照してください）。
 
 !!! note
     このメソッドは呼び出されるたびに `DateFormat` オブジェクトを作成します。同じフォーマットを繰り返し使用する際のパフォーマンス低下を避けるために、代わりに [`DateFormat`](@ref) オブジェクトを作成し、それを第二引数として使用することをお勧めします。

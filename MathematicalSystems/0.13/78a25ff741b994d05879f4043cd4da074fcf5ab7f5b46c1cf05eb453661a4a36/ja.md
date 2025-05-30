@@ -1,8 +1,8 @@
 ```
-制約付き線形制御離散システム
+ConstrainedLinearControlDiscreteSystem
 ```
 
-離散時間線形制御システムで、次の形式のドメイン制約があります：
+ドメイン制約を持つ離散時間線形制御システムの形式：
 
 $$
     x_{k+1} = A x_k + B u_k, \; x_k ∈ \mathcal{X}, \; u_k ∈ \mathcal{U} \; \forall k.

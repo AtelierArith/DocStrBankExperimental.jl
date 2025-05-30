@@ -2,11 +2,11 @@
 Quartimax()
 ```
 
-*Quartimax*回転基準。
+*Quartimax* 回転基準。
 
 ## 詳細
 
-*Quartimax*基準は、パラメータ`gamma = 0`を持つ[`Oblimin`](@ref)回転基準の特別なケースです。
+*Quartimax* 基準は、パラメータ `gamma = 0` の [`Oblimin`](@ref) 回転基準の特別なケースです。
 
 ## 例
 
@@ -17,7 +17,7 @@ julia> Quartimax()
 Quartimax()
 ```
 
-### QuartimaxとObliminの同等性のテスト
+### Quartimax と Oblimin の同等性のテスト
 
 ```jldoctest; filter = r"(\d*)\.(\d{4})\d+" => s"\1.\2"
 julia> L = [

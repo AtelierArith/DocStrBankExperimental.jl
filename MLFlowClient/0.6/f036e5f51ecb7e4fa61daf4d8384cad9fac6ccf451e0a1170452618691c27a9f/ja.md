@@ -4,7 +4,7 @@ getexperimentbyname(instance::MLFlow, experiment_name::String)
 
 [`Experiment`](@ref)のメタデータを取得します。
 
-このエンドポイントは削除された実験を返しますが、アクティブな[`Experiment`](@ref)と削除された[`Experiment`](@ref)が同じ名前を持つ場合は、アクティブな[`Experiment`](@ref)を優先します。複数の削除された実験が同じ名前を持つ場合、APIはそのうちの1つを返します。
+このエンドポイントは削除された実験を返しますが、アクティブな[`Experiment`](@ref)と削除された[`Experiment`](@ref)が同じ名前を共有する場合は、アクティブな[`Experiment`](@ref)を優先します。複数の削除された実験が同じ名前を共有する場合、APIはそのうちの1つを返します。
 
 # 引数
 

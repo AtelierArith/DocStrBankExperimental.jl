@@ -20,7 +20,7 @@ julia> pts = range(0, stop=1, length=51)
 0.0:0.02:1.0
 
 julia> grf = GaussianRandomField(cov, KarhunenLoeve(300), pts, pts)
-2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を用いた51×51の構造化グリッド上のガウスランダムフィールドで、300項のKL展開を使用
+300項のKL展開を使用した51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を持つガウス乱数場
 
 julia> plot_eigenvalues(grf); # 固有値の減衰をプロット
 
@@ -58,11 +58,11 @@ julia> for n in [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
 
 ```jldoctest label1
 julia> grf = GaussianRandomField(cov, KarhunenLoeve(300), pts, pts, quad=GaussLegendre())
-2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を用いた51×51の構造化グリッド上のガウスランダムフィールドで、300項のKL展開を使用
+300項のKL展開を使用した51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を持つガウス乱数場
 
 julia> grf = GaussianRandomField(cov, KarhunenLoeve(300), pts, pts, nq=40)
-2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を用いた51×51の構造化グリッド上のガウスランダムフィールドで、300項のKL展開を使用
+300項のKL展開を使用した51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0)を持つガウス乱数場
 
 ```
 
-参照: [`Cholesky`](@ref), [`Spectral`](@ref), [`CirculantEmbedding`](@ref)
+関連情報: [`Cholesky`](@ref), [`Spectral`](@ref), [`CirculantEmbedding`](@ref)

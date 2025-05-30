@@ -8,8 +8,8 @@ get_matrix(op::AbstractOperator)
 
 ```jldoctest
 julia> z = sparse(sigma_z())
-(2, 2)-要素 Snowflurry.SparseOperator:
-基になるデータ ComplexF64:
+(2, 2)-element Snowflurry.SparseOperator:
+Underlying data ComplexF64:
  1.0 + 0.0im        ⋅     
       ⋅       -1.0 + 0.0im
 

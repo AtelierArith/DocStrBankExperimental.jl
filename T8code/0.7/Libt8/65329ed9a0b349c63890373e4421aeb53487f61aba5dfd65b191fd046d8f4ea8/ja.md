@@ -2,7 +2,7 @@
 t8_netcdf_create_integer_var(var_name, var_long_name, var_unit, var_data)
 ```
 
-外部整数変数を作成します。この変数はNetCDFファイルに出力される必要があります（NC*INTまたはNC*INT64変数になるかどうかは、与えられた[`sc_array_t`](@ref)の要素サイズに基づきます）。
+外部整数変数を作成します。この変数はNetCDFファイルにも出力される必要があります（NC*INTまたはNC*INT64変数になるかどうかは、与えられた[`sc_array_t`](@ref)の要素サイズに基づきます）。
 
 # 引数
 

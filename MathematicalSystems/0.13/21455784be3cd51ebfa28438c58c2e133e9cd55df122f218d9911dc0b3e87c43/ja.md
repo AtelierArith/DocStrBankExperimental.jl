@@ -16,7 +16,7 @@ ivp(expr...)
 
 このマクロは `@system` マクロのように動作しますが、唯一の違いは `@ivp` では初期状態のセットに対する制約が必須であることです。技術的な詳細については、[`@system`](@ref) のドキュメントを参照してください。
 
-このマクロは、`AbstractSystem` 型の `system` 引数を `@ivp(system, state(0) ∈ initial_set)` の形式で呼び出すこともできます。
+このマクロは、`AbstractSystem` 型の `system` 引数を持つ形で `@ivp(system, state(0) ∈ initial_set)` としても呼び出すことができます。
 
 ### 例
 

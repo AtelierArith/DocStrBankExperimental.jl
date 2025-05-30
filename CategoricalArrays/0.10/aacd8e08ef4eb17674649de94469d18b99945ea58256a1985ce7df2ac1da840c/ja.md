@@ -14,7 +14,7 @@ CategoricalMatrix{T, R}(undef, m::Int, n::Int; levels=nothing, ordered=false)
 CategoricalMatrix(A::AbstractMatrix; levels=nothing, ordered=false)
 ```
 
-`A` から値を持ち、同じ要素型の `CategoricalMatrix` を構築します。
+`A` から値を取得し、同じ要素型の `CategoricalMatrix` を構築します。
 
 `levels` キーワード引数は、データの可能な値を指定するベクトルであることができます（これは、結果の配列に対して [`levels!`](@ref) を呼び出すよりも効率的です）。`levels` が省略され、要素型がそれをサポートしている場合、レベルは昇順にソートされます。そうでない場合、`A` に現れた順序が保持されます。`ordered` キーワード引数は、配列の値がレベルの順序に従って比較できるかどうかを決定します（[`isordered`](@ref) を参照）。
 

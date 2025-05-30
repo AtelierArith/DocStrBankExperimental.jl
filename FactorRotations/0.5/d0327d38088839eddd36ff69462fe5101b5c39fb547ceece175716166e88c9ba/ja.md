@@ -2,7 +2,7 @@
 PatternSimplicity(; orthogonal = false)
 ```
 
-*パターンの単純性*因子回転基準。
+*パターンの単純さ*因子回転基準。
 
 ## 詳細
 

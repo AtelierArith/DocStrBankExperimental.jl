@@ -2,9 +2,9 @@
 bunchkaufman(A, rook::Bool=false; check = true) -> S::BunchKaufman
 ```
 
-対称行列またはエルミート行列 `A` のバンチ-カウフマン [^Bunch1977] 因子分解を `P'*U*D*U'*P` または `P'*L*D*L'*P` として計算し、`A` に格納されている三角形に応じて [`BunchKaufman`](@ref) オブジェクトを返します。`A` が複素対称の場合、`U'` と `L'` は共役でない転置を示します。すなわち、`transpose(U)` と `transpose(L)` です。
+対称行列またはエルミート行列 `A` のバンチ-カウフマン [^Bunch1977] 分解を `P'*U*D*U'*P` または `P'*L*D*L'*P` として計算し、`A` に格納されている三角形に応じて [`BunchKaufman`](@ref) オブジェクトを返します。`A` が複素対称の場合、`U'` と `L'` は共役でない転置を示します。すなわち、`transpose(U)` と `transpose(L)` です。
 
-分解を反復することで、`S.uplo` に応じて適切な `S.D`、`S.U` または `S.L` の成分と `S.p` を得ることができます。
+分解を繰り返すことで、`S.uplo` に応じて適切なコンポーネント `S.D`、`S.U` または `S.L`、および `S.p` を生成します。
 
 `rook` が `true` の場合、ルークピボッティングが使用されます。`rook` が false の場合、ルークピボッティングは使用されません。
 
@@ -12,7 +12,7 @@ bunchkaufman(A, rook::Bool=false; check = true) -> S::BunchKaufman
 
 `BunchKaufman` オブジェクトに対して利用可能な関数は次のとおりです: [`size`](@ref), `\`, [`inv`](@ref), [`issymmetric`](@ref), [`ishermitian`](@ref), [`getindex`](@ref).
 
-[^Bunch1977]: J R Bunch と L Kaufman, 一部の安定した慣性計算および対称線形システムの解法, Mathematics of Computation 31:137 (1977), 163-179. [url](https://www.ams.org/journals/mcom/1977-31-137/S0025-5718-1977-0428694-0/).
+[^Bunch1977]: J R Bunch と L Kaufman, 一部の安定した方法による慣性の計算と対称線形システムの解法, Mathematics of Computation 31:137 (1977), 163-179. [url](https://www.ams.org/journals/mcom/1977-31-137/S0025-5718-1977-0428694-0/).
 
 # 例
 
@@ -37,7 +37,7 @@ U 因子:
  1
  2
 
-julia> d, u, p = S; # 反復による分解
+julia> d, u, p = S; # 繰り返しによる分解
 
 julia> d == S.D && u == S.U && p == S.p
 true

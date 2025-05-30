@@ -2,7 +2,7 @@
 Eigen <: Factorization
 ```
 
-正方行列 `A` の固有値/スペクトル分解の行列因子化タイプです。これは、対応する行列因子化関数 [`eigen`](@ref) の戻り値の型です。
+行列 `A` の固有値/スペクトル分解の行列因子化タイプです。これは、対応する行列因子化関数 [`eigen`](@ref) の戻り値の型です。
 
 `F::Eigen` が因子化オブジェクトである場合、固有値は `F.values` を介して取得でき、固有ベクトルは行列 `F.vectors` の列として取得できます。（`k` 番目の固有ベクトルはスライス `F.vectors[:, k]` から取得できます。）
 
@@ -36,7 +36,7 @@ julia> F.vectors
  0.0  1.0  0.0
  0.0  0.0  1.0
 
-julia> vals, vecs = F; # destructuring via iteration
+julia> vals, vecs = F; # 反復による分解
 
 julia> vals == F.values && vecs == F.vectors
 true

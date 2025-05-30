@@ -8,8 +8,8 @@ t8_element_array_init_copy(element_array, scheme, data, num_elements)
 
   * `element_array`:[in,out] 初期化される配列構造。
   * `scheme`:[in] 要素が格納されるべきeclassスキーム。
-  * `data`:[in] *element_array*にコピーされる[`t8_element_t`](@ref)の配列。*data*の要素は*scheme*に属し、t8*element*newまたはt8*element*initで適切に初期化されている必要があります。
-  * `num_elements`:[in] *data*からコピーされる要素の数。
+  * `data`:[in] *element_array*にコピーされる[`t8_element_t`](@ref)の配列。*data*内の要素は*scheme*に属し、t8*element*newまたはt8*element*initで適切に初期化されている必要があります。
+  * `num_elements`:[in] *data*内でコピーされる要素の数。
 
 ### プロトタイプ
 

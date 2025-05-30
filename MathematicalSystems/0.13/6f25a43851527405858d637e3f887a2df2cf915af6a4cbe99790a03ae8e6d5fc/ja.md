@@ -2,7 +2,7 @@
 ConstantInput{UT} <: AbstractInput
 ```
 
-時間的に一定の入力を表す型。
+時間的に一定の入力を表す型です。
 
 ### フィールド
 
@@ -10,7 +10,7 @@ ConstantInput{UT} <: AbstractInput
 
 ### 例
 
-定数入力は単一の要素を保持し、その長さは無限です。フィールド `U` にアクセスするには、状態を与えてBaseの `iterate` を使用するか、希望する入力要素の数を与えて `nextinput` メソッドを使用します：
+定数入力は単一の要素を保持し、その長さは無限です。フィールド `U` にアクセスするには、状態を与えて Base の `iterate` を使用するか、希望する入力要素の数を与えてメソッド `nextinput` を使用します：
 
 ```jldoctest constant_input
 julia> c = ConstantInput(-1//2)

@@ -5,7 +5,7 @@ Cbase = base_colorant_type(c::Colorant)
 
 指定された数値要素型なしでColorant型を返します。
 
-例えば、次を比較します。
+例えば、次を比較してください。
 
 ```
 base_colorant_type(ARGB{N0f8}) === ARGB
@@ -18,7 +18,7 @@ base_color_type(ARGB{N0f8})    === RGB
 color_type(ARGB{N0f8})         === RGB{N0f8}
 ```
 
-可能な場合、`base_colorant_type`はパラメトリックな`UnionAll`を返すので、`Cbase{T}`を使用して要素型`T`を持つ色素を指定できます。しかし、`base_colorant_type`がパラメトリックな結果を返すことは保証されていません。例えば、
+可能な場合、`base_colorant_type`はパラメトリックな`UnionAll`を返すので、`Cbase{T}`を使用して要素型`T`を持つ色素を指定できます。ただし、`base_colorant_type`がパラメトリックな結果を返すことは保証されていません。例えば、
 
 ```jldoctest; setup = :(using ColorTypes)
 julia> base_colorant_type(RGB24)

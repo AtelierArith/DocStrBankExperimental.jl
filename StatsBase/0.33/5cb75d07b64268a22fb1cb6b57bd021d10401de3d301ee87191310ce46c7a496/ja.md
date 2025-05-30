@@ -8,7 +8,7 @@ $$
 \frac{1}{\sum{w}} \sum_{i=1}^n {w_i\left({x_i - μ}\right)^2 }
 $$
 
-ここで、$n$ は入力の長さで、$μ$ は平均です。母集団分散の無偏推定（`corrected=true` の場合）は、使用される重みのタイプに依存する係数で $\frac{1}{\sum{w}}$ を置き換えることによって計算されます：
+ここで、$n$ は入力の長さで、$μ$ は平均です。母集団分散の無偏推定（`corrected=true` の場合）は、使用される重みのタイプに依存する因子で $\frac{1}{\sum{w}}$ を置き換えることによって計算されます：
 
   * `AnalyticWeights`: $\frac{1}{\sum w - \sum {w^2} / \sum w}$
   * `FrequencyWeights`: $\frac{1}{\sum{w} - 1}$

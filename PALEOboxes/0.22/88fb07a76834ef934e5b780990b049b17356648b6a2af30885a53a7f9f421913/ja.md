@@ -16,7 +16,7 @@ RateStoich(
   * `ratevartemplate::Union{VarPropT, VarDepT}`: 反応速度変数のローカル名とリンク名を定義するために使用されます。
   * `stoich_statevarname`: タプルのコレクション（化学量論、名前）例 ((-2.0, "O2"), (-1.0,"H2S::Isotope"), (1.0, "SO4::Isotope"))
   * `deltavarname_eta`: 変数デルタ + η のオプションタプル ("SO4*delta", -30.0) または ("SO4*delta", rj.pars.delta)。パラメータが供給されると、これは `do_react_ratestoich` で読み込まれ、修正を可能にします。
-  * `processname::String`: モデル出力内の反応のタイプを識別するためのオプションタグ
+  * `processname::String`: モデル出力内の反応の種類を識別するためのオプションタグ
   * `add_rate_stoichiometry=true`: `true` の場合、`ratevartemplate` にメタデータを追加するために [`add_rate_stoichiometry!`](@ref) を呼び出します。
 
 # 例:

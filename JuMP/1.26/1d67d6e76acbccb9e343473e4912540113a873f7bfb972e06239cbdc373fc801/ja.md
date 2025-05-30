@@ -4,11 +4,11 @@ solution_summary(model::GenericModel; result::Int = 1, verbose::Bool = false)
 
 結果 `result` の解の要約を印刷するために使用できる構造体を返します。
 
-`verbose=true` の場合、空の名前を持つものを除いて、すべての変数のプライマル解とすべての制約のデュアル解を出力します。
+`verbose=true` の場合、空の名前を持つものを除いて、すべての変数の原始解とすべての制約の双対解を出力します。
 
 ## 例
 
-REPL で呼び出すと、要約が自動的に印刷されます：
+REPL で呼び出されると、要約が自動的に印刷されます：
 
 ```jldoctest
 julia> model = Model();

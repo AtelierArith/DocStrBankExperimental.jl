@@ -6,4 +6,4 @@ TensorMarketファイルをFinchテンソルに読み込みます。テンソル
 
 この関数を利用するには、[TensorMarket](https://github.com/willow-ahrens/TensorMarket.jl)をロードする必要があります。
 
-参照: [ttread](http://willowahrens.io/TensorMarket.jl/stable/#TensorMarket.ttread)
+関連情報: [ttread](http://willowahrens.io/TensorMarket.jl/stable/#TensorMarket.ttread)

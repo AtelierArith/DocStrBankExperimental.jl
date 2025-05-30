@@ -4,7 +4,7 @@
 
 基になる線形代数オブジェクト、通常は `AbstractVector`/`AbstractMatrix` の随伴ビューのための遅延ラッパー型です。通常、`Adjoint` コンストラクタは直接呼び出すべきではなく、代わりに [`adjoint`](@ref) を使用してください。ビューを具現化するには [`copy`](@ref) を使用します。
 
-この型は線形代数の使用を意図しています - 一般的なデータ操作については [`permutedims`](@ref Base.permutedims) を参照してください。
+この型は線形代数の使用を目的としています - 一般的なデータ操作については [`permutedims`](@ref Base.permutedims) を参照してください。
 
 # 例
 

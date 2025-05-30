@@ -22,7 +22,7 @@ f(u, p, t) = exp(t)
 W = NoiseFunction(0.0, f)
 ```
 
-多次元でインプレース関数が使用される場合、`noise_prototype` を指定する必要があります。例えば：
+もしそれが多次元でインプレース関数が使用される場合、`noise_prototype` を指定する必要があります。例えば：
 
 ```julia
 f(out, u, p, t) = (out .= exp(t))

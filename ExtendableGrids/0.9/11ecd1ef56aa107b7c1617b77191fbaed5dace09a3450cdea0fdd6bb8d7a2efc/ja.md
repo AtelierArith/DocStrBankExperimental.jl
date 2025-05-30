@@ -2,4 +2,4 @@
 abstract type CellGeometries <: ExtendableGrids.AbstractElementGeometries
 ```
 
-セルジオメトリの説明
+セル幾何学の説明

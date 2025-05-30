@@ -14,4 +14,4 @@ RDPK3Sp35(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
 
 ## 参考文献
 
-Ranocha, Dalcin, Parsani, Ketcheson (2021)     自動ステップサイズ制御を持つ最適化されたルンゲ-クッタ法     圧縮性計算流体力学のための     [arXiv:2104.06836](https://arxiv.org/abs/2104.06836)
+Ranocha, Dalcin, Parsani, Ketcheson (2021)     自動ステップサイズ制御を持つ最適化されたルンゲ-クッタ法     [arXiv:2104.06836](https://arxiv.org/abs/2104.06836)

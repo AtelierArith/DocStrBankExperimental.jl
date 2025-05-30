@@ -14,5 +14,3 @@ Point と Vec は厳密な数学的定義に従っていないことに注意し
 | `N` | `Vec{N,T}` | `Vecd{N}` | `Vecf{N}` | `Veci{N}` | `Vecui{N}` |
 | `2` |  `Vec2{T}` |   `Vec2d` |   `Vec2f` |   `Vec2i` |   `Vec2ui` |
 | `3` |  `Vec3{T}` |   `Vec3d` |   `Vec3f` |   `Vec3i` |   `Vec3ui` |
-
-```

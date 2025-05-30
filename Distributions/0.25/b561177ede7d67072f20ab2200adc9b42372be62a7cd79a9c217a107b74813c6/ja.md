@@ -7,7 +7,7 @@ InverseWishart(ν, Ψ)
 Ψ::AbstractPDMat  p x p スケール行列
 ```
 
-[inverse Wishart distribution](http://en.wikipedia.org/wiki/Inverse-Wishart_distribution) は、逆ガンマ分布を $p\times p$ の実数、正定値行列 $\boldsymbol{\Sigma}$ に一般化します。もし $\boldsymbol{\Sigma}\sim \textrm{IW}_p(\nu,\boldsymbol{\Psi})$ であれば、その確率密度関数は次のようになります。
+[逆ウィシャート分布](http://en.wikipedia.org/wiki/Inverse-Wishart_distribution)は、逆ガンマ分布を$p\times p$の実数、正定値行列$\boldsymbol{\Sigma}$に一般化します。もし$\boldsymbol{\Sigma}\sim \textrm{IW}_p(\nu,\boldsymbol{\Psi})$であれば、その確率密度関数は次のようになります。
 
 $$
 f(\boldsymbol{\Sigma}; \nu,\boldsymbol{\Psi}) =

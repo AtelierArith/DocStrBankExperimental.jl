@@ -10,8 +10,7 @@
 julia> function f(n)
             r = sincos(n)
             # `println` はランタイムディスパッチが多いですが、
-            # `target_modules` 設定を使うことで
-            # `Base` からの対応するレポートを無視できます
+            # `target_modules` 設定を使って `Base` からの対応するレポートを無視できます
             println(r)
             return r
        end;

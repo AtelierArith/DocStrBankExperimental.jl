@@ -14,4 +14,4 @@ SSPRK22(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
 
 ## 参考文献
 
-Shu, Chi-Wang, and Stanley Osher.     効率的な本質的非振動性衝撃捕捉スキームの実装。     Computational Physicsジャーナル 77.2 (1988): 439-471。     https://doi.org/10.1016/0021-9991(88)90177-5
+Shu, Chi-Wang, and Stanley Osher.     効率的な本質的非振動衝撃捕捉スキームの実装。     Computational Physicsジャーナル 77.2 (1988): 439-471.     https://doi.org/10.1016/0021-9991(88)90177-5

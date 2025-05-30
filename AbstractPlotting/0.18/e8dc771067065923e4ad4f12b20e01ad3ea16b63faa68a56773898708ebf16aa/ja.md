@@ -34,7 +34,7 @@ plottype(::MyType) = Surface
 end
 ```
 
-このマクロは、いくつかのものに展開されます。まず、型定義：
+このマクロは複数のものに展開されます。まず、型定義：
 
 ```
 const MyPlot{ArgTypes} = Combined{myplot, ArgTypes}
@@ -52,7 +52,7 @@ myplot!(scene, kw_args::Dict, args...) = ...
 # など（どのシグネチャがあるかは100%確定していない）
 ```
 
-レシピマクロに引数リスト `(x,y,z)` が提供されている場合、`argument_names`の特化が発生します：
+レシピマクロに引数リスト `(x,y,z)` が提供されている場合、`argument_names`の特殊化が発生します：
 
 ```
 argument_names(::Type{<: MyPlot}) = (:x, :y, :z)
@@ -60,7 +60,7 @@ argument_names(::Type{<: MyPlot}) = (:x, :y, :z)
 
 これはオプションですが、例えば`plot_object = myplot(rand(10), rand(10), rand(10))`の呼び出しから最初の引数を取得するために`plot_object[:x]`を使用できるようになります。あるいは、常に`plot_object[i]`を使用して`i`番目の引数を取得できます。また、`(x,y,z)`を省略すると、`argument_names`のデフォルトバージョンが`plot_object[:arg1]`などを提供します。
 
-`@recipe`呼び出しの本体で与えられたテーマは、`MyPlot`をプロットする任意のシーンにテーマを挿入する`default_theme`の特化に挿入されます：
+`@recipe`呼び出しの本体で与えられたテーマは、`MyPlot`をプロットする任意のシーンにテーマを挿入する`default_theme`の特殊化に挿入されます：
 
 ```
 function default_theme(scene, ::MyPlot)
@@ -70,7 +70,7 @@ function default_theme(scene, ::MyPlot)
 end
 ```
 
-`MyPlot`を定義するための2番目の部分として、`plot!`を特化させて`MyPlot`オブジェクトの実際のプロットを実装する必要があります：
+`MyPlot`を定義するための2番目の部分として、`plot!`を特殊化することによって`MyPlot`オブジェクトの実際のプロットを実装する必要があります：
 
 ```
 function plot!(plot::MyPlot)
@@ -81,7 +81,7 @@ function plot!(plot::MyPlot)
 end
 ```
 
-ここで、`myplot`に供給される引数*タイプ*に応じて特化を追加することが可能です。例えば、`a`が浮動小数点数の3D配列であるときの`myplot(a)`の動作を特化させるために：
+ここで、`myplot`に供給される引数*タイプ*に応じて特殊化を追加することが可能です。例えば、`a`が浮動小数点数の3D配列であるときの`myplot(a)`の動作を特殊化するために：
 
 ```
 const MyVolume = MyPlot{Tuple{<:AbstractArray{<: AbstractFloat, 3}}}

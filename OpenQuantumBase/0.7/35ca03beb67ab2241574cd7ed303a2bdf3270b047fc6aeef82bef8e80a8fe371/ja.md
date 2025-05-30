@@ -9,4 +9,4 @@ mutable struct Annealing{constant_hamiltonian} <: OpenQuantumBase.AbstractAnneal
   * `H`: アニーリングのためのハミルトニアン。
   * `u0`: アニーリングのための初期状態。
   * `annealing_parameter`: tに対するアニーリングパラメータsの関数
-  * `interactions`: システムバス相互作用のセット。
+  * `interactions`: システムバス相互作用セット。

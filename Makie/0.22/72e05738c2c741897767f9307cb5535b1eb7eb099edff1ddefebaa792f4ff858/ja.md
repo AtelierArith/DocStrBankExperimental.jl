@@ -2,7 +2,7 @@
 vlines(xs; ymin = 0.0, ymax = 1.0, attrs...)
 ```
 
-2Dプロジェクションを持つ`Scene`に垂直線を作成します。線はデータ座標の`xs`に、シーン座標の`ymin`から`ymax`（0から1）に配置されます。これらの3つはすべて単一または複数の値を持つことができ、最終的な線分を計算するためにブロードキャストされます。
+`Scene`に垂直線を作成します。線はデータ座標の`xs`に、シーン座標の`ymin`から`ymax`（0から1）に配置されます。これらのすべては、最終的な線分を計算するためにブロードキャストされるため、単一または複数の値を持つことができます。
 
 ## プロットタイプ
 
@@ -12,11 +12,11 @@ vlines(xs; ymin = 0.0, ymax = 1.0, attrs...)
 
 **`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)`のように複数のアルファは掛け算されます。
 
-**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクターを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
+**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろのプロットはクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
 **`color`** =  `@inherit linecolor`  — 線の色。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出します。
 
 **`colorrange`** =  `automatic`  — `colormap`の開始点と終了点を表す値。
 
@@ -26,11 +26,11 @@ vlines(xs; ymin = 0.0, ymax = 1.0, attrs...)
 
 **`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。すなわち、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
-**`fxaa`** =  `false`  — プロットがfxaa（アンチエイリアス、GLMakieのみ）でレンダリングされるかどうかを調整します。
+**`fxaa`** =  `false`  — プロットがfxaa（アンチエイリアス）でレンダリングされるかどうかを調整します（GLMakieのみ）。
 
 **`highclip`** =  `automatic`  — カラーレンジを超える任意の値の色。
 
-**`inspectable`** =  `@inherit inspectable`  — このプロットが`DataInspector`によって表示されるべきかどうかを設定します。デフォルトは親シーンのテーマに依存します。
+**`inspectable`** =  `@inherit inspectable`  — このプロットが`DataInspector`で表示されるべきかどうかを設定します。デフォルトは親シーンのテーマに依存します。
 
 **`inspector_clear`** =  `automatic`  — DataInspector内のカスタムインジケーターをクリーンアップするためのコールバック関数`(inspector, plot) -> ...`を設定します。
 
@@ -38,11 +38,11 @@ vlines(xs; ymin = 0.0, ymax = 1.0, attrs...)
 
 **`inspector_label`** =  `automatic`  — DataInspectorによって生成されるデフォルトのラベルを置き換えるコールバック関数`(plot, index, position) -> string`を設定します。
 
-**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。すなわち、:butt（押し出しのないフラット）、:square（1ライン幅の押し出しのあるフラット）または:round。
+**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。すなわち、:butt（押し出しのない平坦）、:square（1ライン幅の押し出しのある平坦）または:round。
 
-**`linestyle`** =  `nothing`  — 線のダッシュパターンを設定します。オプションは`:solid`（`nothing`に相当）、`:dot`、`:dash`、`:dashdot`および`:dashdotdot`です。これらはギャップスタイル修飾子とともにタプルで指定することもできます。修飾子は`:normal`、`:dense`または`:loose`です。例えば、`(:dot, :loose)`または`(:dashdot, :dense)`。
+**`linestyle`** =  `nothing`  — 線のダッシュパターンを設定します。オプションは`:solid`（`nothing`に相当）、`:dot`、`:dash`、`:dashdot`および`:dashdotdot`です。これらは、ギャップスタイル修飾子`(:normal, :dense, :loose)`を持つタプルでも指定できます。例えば、`(:dot, :loose)`または`(:dashdot, :dense)`。
 
-カスタムパターンについては、[`Makie.Linestyle`](@ref)を参照してください。
+カスタムパターンについては[`Makie.Linestyle`](@ref)を参照してください。
 
 **`linewidth`** =  `@inherit linewidth`  — ピクセル単位での線の幅を設定します。
 
@@ -66,4 +66,4 @@ vlines(xs; ymin = 0.0, ymax = 1.0, attrs...)
 
 **`ymax`** =  `1`  — y次元に沿った相対軸単位（0から1）での線の開始点。
 
-**`ymin`** =  `0`  — y次元に沿った相対軸単位（0から1）での線の開始点。 ```
+**`ymin`** =  `0`  — y次元に沿った相対軸単位（0から1）での線の開始点。

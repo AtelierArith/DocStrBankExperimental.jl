@@ -6,7 +6,7 @@ SavingCallback(save_func, saved_values::SavedValues;
     tdir = 1)
 ```
 
-保存コールバックを使用すると、保存する量を返す関数 `save_func(u, t, integrator)` を定義できます。
+保存コールバックを使用すると、保存する興味のある量を返す関数 `save_func(u, t, integrator)` を定義できます。
 
 ## 引数
 

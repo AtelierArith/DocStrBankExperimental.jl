@@ -6,7 +6,7 @@ FixRef(v::GenericVariableRef)
 
 存在しない場合はエラーになります。
 
-関連情報としては [`is_fixed`](@ref), [`fix_value`](@ref), [`fix`](@ref), [`unfix`](@ref) があります。
+関連項目としては [`is_fixed`](@ref), [`fix_value`](@ref), [`fix`](@ref), [`unfix`](@ref) があります。
 
 ## 例
 

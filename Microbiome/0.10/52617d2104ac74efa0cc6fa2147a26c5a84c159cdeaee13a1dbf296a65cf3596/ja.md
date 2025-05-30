@@ -2,4 +2,4 @@
 retentiontime(m::Metabolite)
 ```
 
-[`Metabolite`](@ref)の`rt`フィールドに対するアクセサ関数です。
+[`Metabolite`](@ref)の`rt`フィールドのアクセサ関数です。

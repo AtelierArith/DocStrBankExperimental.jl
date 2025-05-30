@@ -2,7 +2,7 @@
 t8_geom_triangular_interpolation(coefficients, corner_values, corner_value_dim, interpolation_dim, evaluated_function)
 ```
 
-3点（三角形）または4点（四面体）間の三角補間を直交座標を使用して行います。入力係数は、参照三角形（interpolation*dim = 2）の座標として、点 (0,0) (1,0) (1,1) または参照四面体（interpolation*dim = 3）の座標として、点 (0,0,0) (1,0,0) (1,1,0) (1,1,1) で与える必要があります。
+3点（三角形）または4点（四面体）間の三角補間を直交座標を使用して行います。入力係数は、参照三角形（interpolation*dim = 2）の座標として、点 (0,0) (1,0) (1,1) または参照四面体（interpolation*dim = 3）の座標として、点 (0,0,0) (1,0,0) (1,1,0) (1,1,1) として与える必要があります。
 
 # 引数
 

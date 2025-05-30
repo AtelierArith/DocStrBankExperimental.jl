@@ -2,7 +2,7 @@
 ArrayShape{N}(dims::NTuple{N,Int}) where {N}
 ```
 
-[`AbstractShape`](@ref) は、配列値の制約を表します。
+配列値制約を表す[`AbstractShape`](@ref)。
 
 ## 例
 

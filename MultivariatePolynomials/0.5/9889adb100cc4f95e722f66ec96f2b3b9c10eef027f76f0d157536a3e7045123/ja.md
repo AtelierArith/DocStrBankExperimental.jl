@@ -8,7 +8,7 @@ coefficient(t::AbstractTermLike)
 coefficient(p::AbstractPolynomialLike, m::AbstractMonomialLike)
 ```
 
-`p`の中の単項式`m`の係数を返します。
+多項式`p`の中の単項式`m`の係数を返します。
 
 ### 例
 

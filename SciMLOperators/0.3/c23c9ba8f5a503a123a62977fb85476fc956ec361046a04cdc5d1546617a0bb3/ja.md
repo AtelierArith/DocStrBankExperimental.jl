@@ -3,7 +3,7 @@ ScalarOperator(val; update_func, accepted_kwargs)
 
 ```
 
-`Number` または `AbstractArray` サブタイプに適用できる線形スケーリング演算子を表します。その状態は、演算子評価中 (`L([v,] u, p, t)`) にユーザー提供の `update_func` によって、または `update_coefficients[!]` への呼び出しによって更新されます。どちらも再帰的に更新関数 `update_func` を呼び出し、次のシグネチャを持つと仮定されます。
+`Number` または `AbstractArray` サブタイプに適用できる線形スケーリング演算子を表します。その状態は、演算子評価中 (`L([v,] u, p, t)`) にユーザー提供の `update_func` によって更新されるか、`update_coefficients[!]` への呼び出しによって更新されます。どちらも再帰的に更新関数 `update_func` を呼び出し、次のシグネチャを持つと仮定されます。
 
 ```
 update_func(oldval::Number, u, p, t; <accepted kwargs>) -> newval

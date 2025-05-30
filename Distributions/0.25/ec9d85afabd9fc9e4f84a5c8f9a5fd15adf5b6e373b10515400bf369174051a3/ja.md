@@ -8,7 +8,7 @@ $$
 f(x; \sigma) = \frac{x}{\sigma^2} e^{-\frac{x^2}{2 \sigma^2}}, \quad x > 0
 $$
 
-これは、$X, Y \sim \operatorname{Normal}(0,\sigma)$が独立であるとき、$\sqrt{X^2 + Y^2} \sim \operatorname{Rayleigh}(\sigma)$という性質を通じて[`Normal`](@ref)分布に関連しています。
+これは、$X, Y \sim \operatorname{Normal}(0,\sigma)$が独立である場合、$\sqrt{X^2 + Y^2} \sim \operatorname{Rayleigh}(\sigma)$という性質を通じて[`Normal`](@ref)分布に関連しています。
 
 ```julia
 Rayleigh()       # 単位スケールのレイリー分布、すなわち Rayleigh(1)

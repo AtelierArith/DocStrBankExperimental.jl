@@ -32,7 +32,7 @@ julia> typeof(objective_function(model, QuadExpr))
 QuadExpr (alias for GenericQuadExpr{Float64, GenericVariableRef{Float64}})
 ```
 
-最後の2つのコマンドから、目的関数がアフィンであっても、二次関数に変換可能であれば、二次関数として照会でき、その結果が二次的であることがわかります。
+最後の2つのコマンドから、目的関数がアフィンであっても、二次関数に変換できるため、二次関数として照会でき、その結果が二次的であることがわかります。
 
 しかし、変数には変換できません：
 

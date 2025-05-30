@@ -3,4 +3,4 @@ log2mexp(x)
 
 ```
 
-`log(2 - exp(x))` を `log1p(-expm1(x))` として評価します。
+Return `log(2 - exp(x))` evaluated as `log1p(-expm1(x))`

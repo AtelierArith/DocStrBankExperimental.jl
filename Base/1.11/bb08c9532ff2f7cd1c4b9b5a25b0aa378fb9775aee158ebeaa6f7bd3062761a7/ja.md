@@ -3,7 +3,7 @@ zeros([T=Float64,] dims::Tuple)
 zeros([T=Float64,] dims...)
 ```
 
-指定されたサイズ `dims` のすべての要素がゼロの `Array` を作成します。要素の型は `T` です。 [`fill`](@ref)、[`ones`](@ref)、[`zero`](@ref) も参照してください。
+指定されたサイズ `dims` のすべての要素がゼロの型 `T` の `Array` を作成します。詳細は [`fill`](@ref)、[`ones`](@ref)、[`zero`](@ref) を参照してください。
 
 # 例
 

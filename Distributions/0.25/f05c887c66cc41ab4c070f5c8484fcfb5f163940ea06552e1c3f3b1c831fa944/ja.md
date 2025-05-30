@@ -31,8 +31,4 @@ $$
 \end{aligned}
 $$
 
-$$
-\mathbf{X}
-$$
-
-の周辺分布は $\textrm{MT}_{n,p}(\nu,\mathbf{M},\boldsymbol{\Sigma},\boldsymbol{\Omega})$ です。
+その場合、$\mathbf{X}$ の周辺分布は $\textrm{MT}_{n,p}(\nu,\mathbf{M},\boldsymbol{\Sigma},\boldsymbol{\Omega})$ です。

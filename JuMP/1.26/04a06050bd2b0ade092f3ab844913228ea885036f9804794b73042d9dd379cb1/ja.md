@@ -2,7 +2,7 @@
 is_valid(model::GenericModel, con_ref::ConstraintRef{<:AbstractModel})
 ```
 
-`model`内の有効な制約を参照している場合、`true`を返します。
+`con_ref`が`model`内の有効な制約を参照している場合は`true`を返します。
 
 ## 例
 

@@ -12,11 +12,11 @@ MDN = @load MDN pkg=MixtureDensityNetworks
 
 `model = MDN()`を実行して、デフォルトのハイパーパラメータでインスタンスを構築します。ハイパーパラメータのデフォルトを上書きするには、`MDN(mixtures=...)`のようにキーワード引数を提供します。
 
-ターゲット変数`y`に条件付けられた特徴`X`に対して、ガウス混合モデル（GMM）をパラメータ化するニューラルネットワークです。
+ターゲット変数`y`に条件付けられたガウス混合モデル（GMM）をパラメータ化するニューラルネットワークです。
 
 # トレーニングデータ
 
-MLJまたはMLJBaseでは、`mach = machine(model, X, y)`を使用して、`MDN`インスタンス`model`をデータにバインドします。
+MLJまたはMLJBaseでは、`MDN`インスタンス`model`をデータにバインドします。`mach = machine(model, X, y)`の形式で行います。
 
   * `X`: `Continuous`スカイタイプに属する列を持つ任意の入力特徴のテーブル（例：`DataFrame`）。
   * `y`: 要素のスカイタイプが`Continuous`である任意の`AbstractVector`。
@@ -45,7 +45,7 @@ MLJまたはMLJBaseでは、`mach = machine(model, X, y)`を使用して、`MDN`
 # レポート
 
   * `learning_curve`: 各エポックの平均トレーニング損失。
-  * `best_epoch`: 最低トレーニング損失を持つエポック（1から始まる）。
+  * `best_epoch`: 最も低いトレーニング損失を持つエポック（1から始まる）。
   * `best_loss`: トレーニング中に遭遇した最良（最低）損失。最良エポックの平均損失に対応します。
 
 # アクセサ関数

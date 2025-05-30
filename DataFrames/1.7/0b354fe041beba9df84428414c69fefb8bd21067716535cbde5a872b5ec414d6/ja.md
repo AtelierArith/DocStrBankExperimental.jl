@@ -4,13 +4,13 @@ dropmissing!(df::AbstractDataFrame, cols=:; disallowmissing::Bool=true)
 
 データフレーム `df` から欠損値を含む行を削除し、返します。
 
-`cols` が指定されている場合、対応する列の欠損値のみが考慮されます。`cols` は任意の列セレクタ（`Symbol`、文字列または整数； `:`, `Cols`, `All`, `Between`, `Not`、正規表現、または `Symbol`、文字列または整数のベクター）を指定できます。
+`cols` が指定されている場合、対応する列の欠損値のみが考慮されます。`cols` は任意の列セレクタ（`Symbol`、文字列または整数; `:`, `Cols`, `All`, `Between`, `Not`、正規表現、または `Symbol`、文字列または整数のベクター）で指定できます。
 
 `disallowmissing` が `true`（デフォルト）である場合、`cols` 列は [`disallowmissing!`](@ref) を使用して変換されます。
 
-メタデータ：この関数は、テーブルレベルおよび列レベルの `:note` スタイルのメタデータを保持します。
+メタデータ: この関数はテーブルレベルおよび列レベルの `:note` スタイルのメタデータを保持します。
 
-関連情報： [`dropmissing`](@ref) および [`completecases`](@ref)。
+関連情報: [`dropmissing`](@ref) および [`completecases`](@ref)。
 
 ```jldoctest
 julia> df = DataFrame(i=1:5,

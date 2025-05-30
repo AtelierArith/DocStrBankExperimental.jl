@@ -2,7 +2,7 @@
 arc(origin, radius, start_angle, stop_angle; kwargs...)
 ```
 
-この関数は、`origin`を中心とし、半径`radius`の円弧を、`start_angle`から`stop_angle`までプロットします。`origin`は2次元の座標（すなわち`Point2`）でなければならず、他の引数はすべて`<: Number`でなければなりません。
+この関数は、`origin`を中心とし、半径`radius`の円弧を、`start_angle`から`stop_angle`までプロットします。`origin`は2次元の座標（つまり`Point2`）でなければならず、他の引数はすべて`<: Number`でなければなりません。
 
 例:
 
@@ -16,11 +16,11 @@ arc(origin, radius, start_angle, stop_angle; kwargs...)
 
 **`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)`のように複数のアルファがある場合、掛け算されます。
 
-**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（すなわち、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
+**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
 **`color`** =  `@inherit linecolor`  — 線の色。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()`を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出すことができます。
 
 **`colorrange`** =  `automatic`  — `colormap`の開始点と終了点を表す値。
 
@@ -28,7 +28,7 @@ arc(origin, radius, start_angle, stop_angle; kwargs...)
 
 **`cycle`** =  `[:color]`  — 複数のプロットを作成する際にサイクルする属性を設定します。
 
-**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深さ値を調整します。すなわち、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`fxaa`** =  `false`  — プロットがfxaa（アンチエイリアス）でレンダリングされるかどうかを調整します（GLMakieのみ）。
 
@@ -42,7 +42,7 @@ arc(origin, radius, start_angle, stop_angle; kwargs...)
 
 **`inspector_label`** =  `automatic`  — DataInspectorによって生成されるデフォルトのラベルを置き換えるコールバック関数`(plot, index, position) -> string`を設定します。
 
-**`joinstyle`** =  `@inherit joinstyle`  — コーナーでのレンダリングを制御します。オプションは、鋭いコーナーのための`:miter`、"切り取られた"コーナーのための`:bevel`、および丸みを帯びたコーナーのための`:round`です。コーナー角が`miter_limit`未満の場合、`:miter`は長いスパイクを避けるために`:bevel`と同等です。
+**`joinstyle`** =  `@inherit joinstyle`  — コーナーでのレンダリングを制御します。オプションは、鋭いコーナーのための`:miter`、"切り取られた"コーナーのための`:bevel`、丸みを帯びたコーナーのための`:round`です。コーナー角が`miter_limit`未満の場合、`:miter`は長いスパイクを避けるために`:bevel`と同等です。
 
 **`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。オプションは、`:butt`（押し出しなしの平坦）、`:square`（半分のライン幅の押し出しを持つ平坦）、または`:round`です。
 
@@ -60,7 +60,7 @@ arc(origin, radius, start_angle, stop_angle; kwargs...)
 
 **`nan_color`** =  `:transparent`  — NaN値の色。
 
-**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特にGLバックエンドで深さチェックを無視することを意味します。
+**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特にGLバックエンドで深度チェックを無視することを意味します。
 
 **`resolution`** =  `361`  — 円弧を近似する線のポイント数。
 

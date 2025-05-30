@@ -6,7 +6,7 @@
 
 この演算子は浮動小数点数に対してIEEEのセマンティクスに従います：`0.0 == -0.0`および`NaN != NaN`。
 
-結果の型は`Bool`ですが、オペランドのいずれかが[`missing`](@ref)である場合は`missing`が返されます（[三値論理](https://en.wikipedia.org/wiki/Three-valued_logic)）。コレクションは一般的に[`all`](@ref)に似た三値論理を実装し、いずれかのオペランドにmissing値が含まれている場合はmissingを返し、他のすべてのペアが等しい場合にのみ等しいとします。常に`Bool`の結果を得るには、[`isequal`](@ref)または[`===`](@ref)を使用してください。
+結果は`Bool`型ですが、オペランドの一方が[`missing`](@ref)である場合は`missing`が返されます（[三値論理](https://en.wikipedia.org/wiki/Three-valued_logic)）。コレクションは一般的に[`all`](@ref)に似た三値論理を実装し、いずれかのオペランドにmissing値が含まれている場合はmissingを返し、他のすべてのペアが等しい場合にのみ等しいと見なします。常に`Bool`型の結果を得るには、[`isequal`](@ref)または[`===`](@ref)を使用してください。
 
 # 実装
 

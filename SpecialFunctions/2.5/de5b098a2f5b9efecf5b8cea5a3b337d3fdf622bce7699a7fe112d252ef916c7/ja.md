@@ -13,7 +13,7 @@ $$
 
 外部リンク: [DLMF 19.2.8](https://dlmf.nist.gov/19.2.8), [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_integral#Complete_elliptic_integral_of_the_second_kind).
 
-参照: [`ellipk(m)`](@ref SpecialFunctions.ellipk).
+関連項目: [`ellipk(m)`](@ref SpecialFunctions.ellipk).
 
 # 引数
 

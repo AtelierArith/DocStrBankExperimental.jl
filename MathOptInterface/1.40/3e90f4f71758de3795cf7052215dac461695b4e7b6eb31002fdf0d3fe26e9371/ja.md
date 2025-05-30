@@ -8,6 +8,6 @@ NEARLY_INFEASIBILITY_CERTIFICATE::ResultStatusCode
 
 結果は、不可能性の証明書に対する緩和基準を満たしています。
 
-もし [`PrimalStatus`](@ref) が [`NEARLY_INFEASIBILITY_CERTIFICATE`](@ref) であれば、プライマル結果ベクトルはデュアル不可能性の証明書です。
+[`PrimalStatus`](@ref) が [`NEARLY_INFEASIBILITY_CERTIFICATE`](@ref) の場合、プライマル結果ベクトルはデュアル不可能性の証明書です。
 
-もし [`DualStatus`](@ref) が [`NEARLY_INFEASIBILITY_CERTIFICATE`](@ref) であれば、デュアル結果ベクトルはプライマル不可能性の証明です。
+[`DualStatus`](@ref) が [`NEARLY_INFEASIBILITY_CERTIFICATE`](@ref) の場合、デュアル結果ベクトルはプライマル不可能性の証明です。

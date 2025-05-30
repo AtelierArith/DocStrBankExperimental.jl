@@ -14,16 +14,16 @@ KalmanFilter(model::LinModel; <キーワード引数>)
 
   * `model::LinModel` : （決定論的）推定のためのモデル。
   * `i_ym=1:model.ny` : 測定される`model`の出力インデックス$\mathbf{y^m}$、残りは未測定の$\mathbf{y^u}$です。
-  * `σP_0=fill(1/model.nx,model.nx)`または*`sigmaP_0`* : 初期推定共分散$\mathbf{P}(0)$の主対角線、標準偏差ベクトルとして指定。
-  * `σQ=fill(1/model.nx,model.nx)`または*`sigmaQ`* : `model`のプロセスノイズ共分散$\mathbf{Q}$の主対角線、標準偏差ベクトルとして指定。
-  * `σR=fill(1,length(i_ym))`または*`sigmaR`* : 測定出力のセンサーノイズ共分散$\mathbf{R}$の主対角線、標準偏差ベクトルとして指定。
-  * `nint_u=0`: 操作入力の未測定の擾乱に対する確率モデルのための積分器の量（ベクトル）、積分器なしの場合は`nint_u=0`を使用。
-  * `nint_ym=default_nint(model,i_ym,nint_u)` : 測定出力の未測定の擾乱に対する`nint_u`と同様、積分器なしの場合は`nint_ym=0`を使用。
-  * `σQint_u=fill(1,sum(nint_u))`または*`sigmaQint_u`* : 操作入力の未測定の擾乱に対する$\mathbf{Q_{int_u}}$（積分器で構成）。
-  * `σPint_u_0=fill(1,sum(nint_u))`または*`sigmaPint_u_0`* : 操作入力の未測定の擾乱に対する$\mathbf{P_{int_u}}(0)$（積分器で構成）。
-  * `σQint_ym=fill(1,sum(nint_ym))`または*`sigmaQint_u`* : 測定出力の未測定の擾乱に対する$\mathbf{Q_{int_{ym}}}$（積分器で構成）。
-  * `σPint_ym_0=fill(1,sum(nint_ym))`または*`sigmaPint_ym_0`* : 測定出力の未測定の擾乱に対する$\mathbf{P_{int_{ym}}}(0)$（積分器で構成）。
-  * `direct=true`: $\mathbf{y^m}$からの直接伝送で構築（現在の推定器、遅延/予測形式に対して）。
+  * `σP_0=fill(1/model.nx,model.nx)`または*`sigmaP_0`* : 初期推定共分散$\mathbf{P}(0)$の主対角線を、標準偏差ベクトルとして指定します。
+  * `σQ=fill(1/model.nx,model.nx)`または*`sigmaQ`* : `model`のプロセスノイズ共分散$\mathbf{Q}$の主対角線を、標準偏差ベクトルとして指定します。
+  * `σR=fill(1,length(i_ym))`または*`sigmaR`* : 測定出力のセンサーノイズ共分散$\mathbf{R}$の主対角線を、標準偏差ベクトルとして指定します。
+  * `nint_u=0`: 操作入力の未測定の擾乱に対する確率モデルのための積分器量（ベクトル）、積分器なしの場合は`nint_u=0`を使用します。
+  * `nint_ym=default_nint(model,i_ym,nint_u)` : 測定出力の未測定の擾乱に対する`nint_u`と同様ですが、積分器なしの場合は`nint_ym=0`を使用します。
+  * `σQint_u=fill(1,sum(nint_u))`または*`sigmaQint_u`* : 操作入力の未測定の擾乱に対する$\mathbf{Q_{int_u}}$（積分器で構成）について、`σQ`と同様です。
+  * `σPint_u_0=fill(1,sum(nint_u))`または*`sigmaPint_u_0`* : 操作入力の未測定の擾乱に対する$\mathbf{P_{int_u}}(0)$（積分器で構成）について、`σP_0`と同様です。
+  * `σQint_ym=fill(1,sum(nint_ym))`または*`sigmaQint_u`* : 測定出力の未測定の擾乱に対する$\mathbf{Q_{int_{ym}}}$（積分器で構成）について、`σQ`と同様です。
+  * `σPint_ym_0=fill(1,sum(nint_ym))`または*`sigmaPint_ym_0`* : 測定出力の未測定の擾乱に対する$\mathbf{P_{int_{ym}}}(0)$（積分器で構成）について、`σP_0`と同様です。
+  * `direct=true`: $\mathbf{y^m}$からの直接伝送で構築します（遅延/予測形式に対する現在の推定器）。
 
 # 例
 

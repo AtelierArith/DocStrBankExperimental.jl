@@ -6,7 +6,7 @@ RejectGatesOnExcludedConnectionsTranspiler
 
 # フィールド
 
-  * connectivity::AbstractConnectivity – `excluded_connections`が指定される接続性。
+  * connectivity::AbstractConnectivity – `excluded_connections`が指定されている接続性。
 
 # 例
 

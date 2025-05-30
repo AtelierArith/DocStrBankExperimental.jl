@@ -52,7 +52,7 @@ MovingHorizonEstimator estimator with a sample time Ts = 1.0 s, OSQP optimizer, 
 # 拡張ヘルプ
 
 !!! details "拡張ヘルプ"
-    定数 $p=0$ は `estim.direct==true` の場合（現在の形式）、それ以外の場合は $p=1$（予測形式）です。状態 $\mathbf{x̂}$ とプロセスノイズ $\mathbf{ŵ}$ の制約は、[`SteadyKalmanFilter`](@ref) 拡張ヘルプで詳述されている拡張モデルに適用されます。変数制約については、[`updatestate!`](@ref) を呼び出した後に境界を変更できます。つまり、実行時に、`±Inf` の境界を除いて変更可能です。推定ホライズン $H_e$ にわたる時間変動制約も可能であり、数学的には次のように定義されます：
+    定数 $p=0$ は `estim.direct==true` の場合（現在の形式）、それ以外の場合は $p=1$（予測形式）です。状態 $\mathbf{x̂}$ とプロセスノイズ $\mathbf{ŵ}$ の制約は、[`SteadyKalmanFilter`](@ref) 拡張ヘルプで詳述されている拡張モデルに適用されます。変数制約の場合、境界は [`updatestate!`](@ref) を呼び出した後、すなわち実行時に変更できます。ただし、`±Inf` の境界は除きます。推定ホライズン $H_e$ にわたる時間変動制約も可能であり、数学的には次のように定義されます：
 
     $$
     \begin{alignat*}{3}

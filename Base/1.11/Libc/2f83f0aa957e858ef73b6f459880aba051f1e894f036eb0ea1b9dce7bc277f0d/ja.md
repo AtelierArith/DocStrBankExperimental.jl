@@ -5,7 +5,7 @@ FILE(::IO)
 
 libcの`FILE*`で、開かれたファイルを表します。
 
-これは[`ccall`](@ref)への`Ptr{FILE}`引数として渡すことができ、また[`seek`](@ref)、[`position`](@ref)、および[`close`](@ref)もサポートしています。
+これは`Ptr{FILE}`引数として[`ccall`](@ref)に渡すことができ、また[`seek`](@ref)、[`position`](@ref)、[`close`](@ref)もサポートしています。
 
 `FILE`は、通常の`IO`オブジェクトから構築することができ、開かれたファイルである必要があります。その後、閉じる必要があります。
 

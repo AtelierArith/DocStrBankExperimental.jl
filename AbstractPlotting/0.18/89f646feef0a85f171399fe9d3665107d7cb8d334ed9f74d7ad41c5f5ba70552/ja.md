@@ -4,7 +4,7 @@ rangebars(val, low_high; kwargs...)
 rangebars(val_low_high; kwargs...)
 ```
 
-`val`で1次元の範囲バーをプロットし、選択した`direction`に応じて他の次元で`low`から`high`まで延長します。
+`val`で1次元の範囲バーをプロットし、選択した`direction`に応じて他の次元で`low`から`high`まで拡張します。
 
 参照値に対するエラーをプロットしたい場合は、`errorbars`を使用してください。
 

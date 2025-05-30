@@ -12,4 +12,4 @@ createregisteredmodelpermission(instance::MLFlow, name::String, username::String
 
 # 戻り値
 
-タイプ [`RegisteredModelPermission`](@ref) のインスタンス。
+[`RegisteredModelPermission`](@ref) 型のインスタンス。

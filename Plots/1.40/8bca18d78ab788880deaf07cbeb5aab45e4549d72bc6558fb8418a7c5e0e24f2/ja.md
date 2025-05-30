@@ -4,7 +4,7 @@ annotate!(anns::Tuple...)
 annotate!(x, y, txt)
 ```
 
-既存のプロットに注釈を追加します。注釈は、各 `(x,y,txt)` の形式のタプルのベクターとして指定するか、3つのベクター `x, y, txt` として指定します。各 `txt` は `String`、`PlotText`（`text(args...)` で作成）、または `text` への引数のタプル（例: `("Label", 8, :red, :top)`）であることができます。
+既存のプロットに注釈を追加します。注釈は、各 `(x,y,txt)` 形式のタプルのベクトル、または三つのベクトル `x, y, txt` として指定されます。各 `txt` は `String`、`PlotText`（`text(args...)` で作成された）、または `text` への引数のタプル（例: `("Label", 8, :red, :top)`）であることができます。
 
 # 例
 

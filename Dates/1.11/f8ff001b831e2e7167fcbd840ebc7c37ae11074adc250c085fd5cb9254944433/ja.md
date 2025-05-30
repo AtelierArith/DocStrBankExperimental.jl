@@ -1,8 +1,8 @@
 ```
-Feb
+2月
 ```
 
-[`February`](@ref)の略語です。
+[`February`](@ref)の略称です。
 
 # 例
 

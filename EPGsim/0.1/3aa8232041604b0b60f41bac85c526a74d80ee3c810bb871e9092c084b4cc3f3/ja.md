@@ -2,7 +2,7 @@
 EPGStates{T <: Real}
 ```
 
-3つのベクトル Fp、Fn、Z に EPG 状態を格納します。
+EPG状態を3つのベクトルFp、Fn、Zに格納します。
 
 # コンストラクタ :
 
@@ -19,4 +19,4 @@ EPGStates(Fp::T=0,Fn::T=0,Z::T=1) where T <: Number
 
 # 関連関数
 
-  * `getStates(E::EPGStates)` : EPG 状態を行列 3xN として抽出します。
+  * `getStates(E::EPGStates)` : EPG状態を3xNの行列として抽出します。

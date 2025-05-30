@@ -6,7 +6,7 @@ set_objective_coefficient(
 )
 ```
 
-`variables` に関連付けられた複数の線形目的係数を `coefficients` に設定します。単一の呼び出しで行います。
+`variables` に関連付けられた複数の線形目的係数を `coefficients` に設定します。1 回の呼び出しで行います。
 
 注意: この関数は、非線形目的が設定されている場合にエラーをスローします。
 

@@ -2,7 +2,7 @@
 termination_status(model::GenericModel)
 ```
 
-ソルバーが停止した理由を説明する [`MOI.TerminationStatusCode`](@ref) を返します（すなわち、[`MOI.TerminationStatus`](@ref) 属性）。
+ソルバーが停止した理由を説明する [`MOI.TerminationStatusCode`](@ref) を返します（つまり、[`MOI.TerminationStatus`](@ref) 属性）。
 
 ## 例
 

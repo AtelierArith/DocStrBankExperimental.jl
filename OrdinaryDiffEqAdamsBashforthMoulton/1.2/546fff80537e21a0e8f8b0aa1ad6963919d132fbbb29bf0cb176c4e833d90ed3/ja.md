@@ -2,11 +2,11 @@
 VCABM4(; thread = OrdinaryDiffEq.False())
 ```
 
-アダムス明示法 4次アダムス・モールトン法。初期値を計算するためにルンゲ・クッタ法4を使用します。
+アダムス明示法 4次アダムス・モールトン法。初期値を計算するためにルンゲ・クッタ法4が使用されます。
 
 ### キーワード引数
 
-  * `thread`: Juliaが複数のスレッドで起動されたときに、適切なCPU配列での内部ブロードキャストを直列（`thread = OrdinaryDiffEq.False()`）にするか、複数のスレッドを使用するかを決定します（`thread = OrdinaryDiffEq.True()`）。
+  * `thread`: Juliaが複数のスレッドで起動されたときに、適切なCPU配列での内部ブロードキャストを直列（`thread = OrdinaryDiffEq.False()`）にするか、複数のスレッドを使用するか（`thread = OrdinaryDiffEq.True()`）を決定します。
 
 ## 参考文献
 

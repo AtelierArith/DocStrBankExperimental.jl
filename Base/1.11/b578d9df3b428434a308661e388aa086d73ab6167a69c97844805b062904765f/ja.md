@@ -4,7 +4,7 @@ promote(xs...)
 
 すべての引数を共通の型に変換し、それらをすべて（タプルとして）返します。引数を変換できない場合は、エラーが発生します。
 
-参照: [`promote_type`](@ref), [`promote_rule`](@ref).
+関連情報: [`promote_type`](@ref), [`promote_rule`](@ref).
 
 # 例
 

@@ -20,15 +20,15 @@ lines(x, y, z)
 
 **`color`** =  `@inherit linecolor`  — 線の色。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()` を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()` を呼び出します。
 
 **`colorrange`** =  `automatic`  — `colormap` の開始点と終了点を表す値。
 
-**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar` と一緒に使用する場合は `identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10` および `Makie.Symlog10` と一緒にうまく機能します。
+**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar` と一緒に使用する場合は `identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10` および `Makie.Symlog10` の場合にのみうまく機能します。
 
 **`cycle`** =  `[:color]`  — 複数のプロットを作成する際にサイクルする属性を設定します。
 
-**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深さ値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダリング順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`fxaa`** =  `false`  — プロットが fxaa（アンチエイリアス）でレンダリングされるかどうかを調整します（GLMakie のみ）。
 
@@ -44,7 +44,7 @@ lines(x, y, z)
 
 **`joinstyle`** =  `@inherit joinstyle`  — コーナーでのレンダリングを制御します。オプションは、鋭いコーナーのための `:miter`、"切り取られた" コーナーのための `:bevel`、および丸みを帯びたコーナーのための `:round` です。コーナー角度が `miter_limit` 未満の場合、`:miter` は長いスパイクを避けるために `:bevel` と同等です。
 
-**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。オプションは、押し出しなしのフラットな `:butt`、半分のライン幅の押し出しを持つフラットな `:square` または `:round` です。
+**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。オプションは、押し出しなしのフラットな `:butt`、半分のライン幅の押し出しを持つフラットな `:square`、または `:round` です。
 
 **`linestyle`** =  `nothing`  — 線のダッシュパターンを設定します。オプションは、`nothing` と同等の `:solid`、`:dot`、`:dash`、`:dashdot` および `:dashdotdot` です。これらは、ギャップスタイル修飾子 `:normal`、`:dense` または `:loose` を持つタプルでも指定できます。例えば、`(:dot, :loose)` または `(:dashdot, :dense)` のように。
 
@@ -68,6 +68,6 @@ lines(x, y, z)
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakie では `transparency = true` は順序に依存しない透明性を使用します。
+**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakie では `transparency = true` は順序に依存しない透明性を使用する結果になります。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。

@@ -21,6 +21,6 @@ end
 
 **属性**
 
-(type `?Makie.Toggle.x` in the REPL for more information about attribute `x`)
+(REPLで`?Makie.Toggle.x`と入力すると属性`x`に関する詳細情報が得られます)
 
 `active`, `alignmode`, `buttoncolor`, `cornersegments`, `framecolor_active`, `framecolor_inactive`, `halign`, `height`, `length`, `markersize`, `orientation`, `rimfraction`, `tellheight`, `tellwidth`, `toggleduration`, `valign`, `width`

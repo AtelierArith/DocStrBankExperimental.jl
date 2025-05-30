@@ -2,7 +2,7 @@
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://tkf.github.io/Run.jl/stable) [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://tkf.github.io/Run.jl/dev) [![Build Status](https://travis-ci.com/tkf/Run.jl.svg?branch=master)](https://travis-ci.com/tkf/Run.jl) [![Codecov](https://codecov.io/gh/tkf/Run.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/tkf/Run.jl) [![Coveralls](https://coveralls.io/repos/github/tkf/Run.jl/badge.svg?branch=master)](https://coveralls.io/github/tkf/Run.jl?branch=master) [![GitHub last commit](https://img.shields.io/github/last-commit/tkf/Run.jl.svg?style=social&logo=github)](https://github.com/tkf/Run.jl)
 
-Run.jlは、隔離された環境でテストを実行したり、ドキュメントをビルドするための関数を提供します。詳細は[ドキュメント](https://tkf.github.io/Run.jl/dev)を参照してください。
+Run.jlは、テストを実行したり、ドキュメントをビルドしたりするための関数を、隔離された環境で提供します。詳細は[ドキュメント](https://tkf.github.io/Run.jl/dev)を参照してください。
 
 ## 機能
 
@@ -15,7 +15,7 @@ Run.jlは、隔離された環境でテストを実行したり、ドキュメ�
 
 ### `.github/workflow/*.yml`
 
-以下は、GitHub ActionsでRun.jlを使用するための例です。例えば、`.github/workflow/test.yml`というファイルを作成し、次の内容を記述します。
+以下は、GitHub ActionsでRun.jlを使用するための例です。ファイルを作成します。例：`.github/workflow/test.yml`：
 
 ```yaml
 name: Run tests
@@ -54,7 +54,7 @@ jobs:
 
 ### `.travis.yml`
 
-Travis CIでテストを実行するために`Run.test`を使用するには、`.travis.yml`に次のスニペットを追加します。
+Travis CIでテストを実行するために`Run.test`を使用するには、`.travis.yml`に以下のスニペットを追加します。
 
 ```yaml
 before_install:
@@ -76,9 +76,9 @@ jobs:
       after_success: skip
 ```
 
-補足:
+補足：
 
-  * `Run.prepare_test()`および`Run.prepare_docs()`は必須ではありませんが、インストールとテストを分けるのは良い考えです。
+  * `Run.prepare_test()`と`Run.prepare_docs()`は必須ではありませんが、インストールとテストを分けるのは良い考えです。
   * テストログは、`Run.test`に`prepare=false`を渡すことで最小限に抑えることができます。
 
 ### `.gitlab-ci.yml`

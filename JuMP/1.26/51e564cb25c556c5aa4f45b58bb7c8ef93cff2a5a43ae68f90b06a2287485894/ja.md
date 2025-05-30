@@ -4,7 +4,7 @@ struct ConstraintNotOwned{C<:ConstraintRef} <: Exception
 end
 ```
 
-`constraint_ref`が`owner_model(constraint_ref)`とは異なるモデルで使用されたときにスローされるエラーです。
+異なるモデルで `constraint_ref` が使用されたときにスローされるエラー `owner_model(constraint_ref)`。
 
 ## 例
 

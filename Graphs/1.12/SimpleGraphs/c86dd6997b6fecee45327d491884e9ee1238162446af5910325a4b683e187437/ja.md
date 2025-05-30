@@ -12,10 +12,10 @@ julia> using Graphs
 julia> A1 = [false true; true false];
 
 julia> SimpleGraph(A1)
-{2, 1} undirected simple Int64 graph
+{2, 1} 無向単純 Int64 グラフ
 
 julia> A2 = [2 7; 7 0];
 
 julia> SimpleGraph{Int16}(A2)
-{2, 2} undirected simple Int16 graph
+{2, 2} 無向単純 Int16 グラフ
 ```

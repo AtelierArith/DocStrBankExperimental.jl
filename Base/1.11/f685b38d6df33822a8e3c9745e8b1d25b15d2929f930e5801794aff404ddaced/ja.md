@@ -4,7 +4,7 @@ acquire(f, s::Semaphore)
 
 Semaphore `s` から取得した後に `f` を実行し、完了またはエラー時に `release` します。
 
-例えば、同時に `foo` の呼び出しが2回だけアクティブになることを保証する do-block 形式の例：
+例えば、同時に `foo` の呼び出しが2回だけアクティブになることを保証する do-block 形式は次の通りです：
 
 ```julia
 s = Base.Semaphore(2)

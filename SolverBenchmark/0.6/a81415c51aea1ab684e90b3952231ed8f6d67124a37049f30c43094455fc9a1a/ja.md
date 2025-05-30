@@ -8,7 +8,7 @@ solve_problems(solver, solver_name, problems; kwargs...)
 
   * `solver`: ソルバーの関数名;
   * `solver_name`: ソルバーの名前;
-  * `problems`: ソルバーに渡す問題のセットで、`AbstractNLPModel`のイテラブルです。ジェネレーター式を使用することを推奨します（CUTEst問題には必要です）。
+  * `problems`: ソルバーに渡す問題のセットで、`AbstractNLPModel`のイテラブルとして。ジェネレーター式を使用することを推奨します（CUTEst問題には必要です）。
 
 #### キーワード引数
 

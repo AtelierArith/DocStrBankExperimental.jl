@@ -20,4 +20,4 @@ AbstractMesh
 
 # 内部および直交表現
 
-サブタイプが外部（直交）表現とは異なる内部表現を使用している場合は、[`PB.has_internal_cartesian`](@ref) を `true` と定義し、[`cartesian_to_internal`](@ref)、[`internal_to_cartesian`](@ref)、および [`PB.cartesian_size`](@ref) を実装する必要があります。
+サブタイプが外部（直交）表現とは異なる内部表現を使用している場合は、[`PB.has_internal_cartesian`](@ref) を `true` に設定し、[`cartesian_to_internal`](@ref)、[`internal_to_cartesian`](@ref)、および [`PB.cartesian_size`](@ref) を実装する必要があります。

@@ -7,14 +7,14 @@ JETは、Juliaの型推論システムを利用して、潜在的なバグや型
 ```
 [!NOTE]
 現在の開発は[`release-0.10`](https://github.com/aviatesk/JET.jl/tree/release-0.10)ブランチに基づいています。
-このブランチは、Julia v1.12のためにJET v0.10を安定化させることに焦点を当てており、
+このブランチは、Julia v1.12のためにJET v0.10を安定させることに焦点を当てており、
 [新しい言語サーバープロジェクト](https://github.com/aviatesk/JETLS.jl)との統合の準備をしています。
 ```
 
 !!! warning
     JETはJuliaコンパイラと密接に統合されているため、JETが提示する結果は、使用しているJuliaのバージョンによって大きく異なる可能性があることに注意してください。さらに、Juliaにバンドルされている`Base`モジュールや標準ライブラリの実装も結果に影響を与える可能性があります。
 
-    さらに、Juliaコンパイラのプラグインシステムはまだ不安定であり、そのインターフェースは頻繁に変更されるため、各バージョンのJETは限られたバージョンのJuliaとしか互換性がありません。Juliaパッケージマネージャーは、自動的にあなたのJuliaバージョンと互換性のある最新のJETバージョンを選択してインストールします。ただし、夜間ビルド版のJuliaを使用している場合、互換性のあるJETバージョンがまだリリースされていない可能性があり、Juliaパッケージマネージャーを介してインストールされたJETが正しく機能しない場合があります。
+    さらに、Juliaコンパイラのプラグインシステムはまだ不安定であり、そのインターフェースは頻繁に変更されるため、各バージョンのJETは限られたバージョンのJuliaとしか互換性がありません。Juliaパッケージマネージャーは、自動的にあなたのJuliaバージョンと互換性のある最新のJETバージョンを選択してインストールします。ただし、夜間ビルドのJuliaを使用している場合、互換性のあるJETバージョンがまだリリースされていない可能性があり、Juliaパッケージマネージャーを介してインストールされたJETが正しく機能しない場合があります。
 
 
 ## クイックスタート
@@ -34,7 +34,7 @@ julia> using JET
 
 ### `@report_opt`で型の不安定性を検出
 
-型の不安定性は、`@report_opt`マクロを使用して関数呼び出しで検出できます。これは、`@code_warntype`マクロと似たように機能します。JETはJuliaの型推論に依存しているため、動的ディスパッチによって推論のチェーンが壊れると、すべての下流の関数呼び出しはコンパイラにとって不明となり、JETはそれらを分析できません。
+型の不安定性は、`@report_opt`マクロを使用して関数呼び出しで検出できます。このマクロは、`@code_warntype`マクロと似たように機能します。JETはJuliaの型推論に依存しているため、動的ディスパッチによって推論のチェーンが壊れると、すべての下流の関数呼び出しはコンパイラにとって不明となり、JETはそれらを分析できません。
 
 ```julia-repl
 julia> @report_opt foldl(+, Any[]; init=0)
@@ -57,7 +57,7 @@ julia> @report_opt foldl(+, Any[]; init=0)
 
 ### `@report_call`で型エラーを検出
 
-これは型安定なコードで最も効果的に機能するため、`@report_call`を使用する前に`@report_opt`を自由に使用してください。
+これは型が安定したコードで最も効果的に機能するため、`@report_call`を使用する前に`@report_opt`を自由に使用してください。
 
 ```julia-repl
 julia> @report_call foldl(+, Char[])
@@ -83,7 +83,7 @@ julia> @report_call foldl(+, Char[])
 
 ### `report_package`でパッケージを分析
 
-これはすべてのメソッド定義を探し、関数呼び出しをそのシグネチャに基づいて分析します。これは、実際の入力型が一般的なメソッドに対して知られないため、`@report_call`よりも正確性が低いことに注意してください。
+これはすべてのメソッド定義を探し、関数呼び出しをそのシグネチャに基づいて分析します。これは、実際の入力型が一般的なメソッドに対しては知られないため、`@report_call`よりも正確性が低いことに注意してください。
 
 ```julia-repl
 julia> using Pkg; Pkg.activate(; temp=true, io=devnull); Pkg.add("AbstractTrees"; io=devnull);
@@ -122,10 +122,10 @@ julia> report_package("AbstractTrees")
 
 JETは、あなたが直接呼び出す関数とその*推論可能な*呼び出し先を探索します。ただし、呼び出しの引数型が推論できない場合、JETは呼び出し先を分析しません。したがって、`No errors detected`という報告は、あなたのコードベース全体がエラーがないことを意味するわけではありません。JETの結果に対する信頼性を高めるために、`@report_opt`を使用してコードが推論可能であることを確認してください。
 
-JETは[SnoopCompile](https://github.com/timholy/SnoopCompile.jl)と統合されており、時にはSnoopCompileを使用して、より包括的な分析を行うためのデータを収集できます。SnoopCompileの制限は、以前に推論されていない呼び出しのデータのみを収集するため、この種の分析は新しいセッションで実行する必要があります。
+JETは[SnoopCompile](https://github.com/timholy/SnoopCompile.jl)と統合されており、時にはSnoopCompileを使用して、より包括的な分析を行うためのデータを収集できます。SnoopCompileの制限は、以前に推論されていない呼び出しのデータのみを収集するため、この種の分析を新しいセッションで実行する必要があることです。
 
 詳細については、[SnoopCompileのJET統合ドキュメント](https://timholy.github.io/SnoopCompile.jl/stable/jet/)を参照してください。
 
 ## 謝辞
 
-このプロジェクトは、京都大学での学部論文プロジェクトとして始まり、桜川隆教授の指導を受けました。私たちは、Rubyのための実験的な型理解/チェックツールである[ruby/typeprof](https://github.com/ruby/typeprof)から大きなインスピレーションを受けました。このプロジェクトに関する学位論文は[https://github.com/aviatesk/grad-thesis](https://github.com/aviatesk/grad-thesis)に公開されていますが、現在は日本語のみで利用可能です。
+このプロジェクトは、京都大学での私の学部論文プロジェクトとして始まり、桜川隆教授の指導を受けました。私たちは、Rubyのための実験的な型理解/チェックツールである[ruby/typeprof](https://github.com/ruby/typeprof)から大きなインスピレーションを受けました。このプロジェクトに関する大学院論文は[https://github.com/aviatesk/grad-thesis](https://github.com/aviatesk/grad-thesis)に公開されていますが、現在は日本語のみで利用可能です。

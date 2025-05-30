@@ -2,7 +2,7 @@
 mutable struct LazyBufferedTIFF{T<:Union{ColorTypes.Colorant, TiffImages.WidePixel}, O<:Unsigned, AA<:AbstractArray} <: TiffImages.AbstractDenseTIFF{T<:Union{ColorTypes.Colorant, TiffImages.WidePixel}, 3}
 ```
 
-遅延読み込みTIFFデータを表す型で、`TiffImages.load(filepath; lazyio=true)`によって返されます。メモリに保存するには大きすぎる画像を開いて操作するのに便利で、新しいTIFFファイルを段階的に書き込むためにも使用されます。
+遅延読み込みTIFFデータを表す型で、`TiffImages.load(filepath; lazyio=true)`によって返されます。メモリに保存するには大きすぎる画像を開いたり操作したりするのに便利で、新しいTIFFファイルを段階的に書き込むためにも使用されます。
 
 これは個々のスライスをバッファリングすることによって機能します。これにより、圧縮TIFFを含む幅広いフォーマットのサポートが可能ですが、特定のアクセス（インデックス）パターンに応じてパフォーマンスが異なります。パッケージのドキュメントでの議論や、異なる強みと弱みを持つ代替手段として[`MmappedTIFF`](@ref)を参照してください。
 

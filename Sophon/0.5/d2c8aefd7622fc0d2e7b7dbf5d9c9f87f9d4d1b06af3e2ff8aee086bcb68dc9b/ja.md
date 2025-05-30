@@ -1,5 +1,5 @@
 ```
-スカラー層(connection::Function)
+ScalarLayer(connection::Function)
 ```
 
-接続を返す(scalar, x)
+Return connection(scalar, x)

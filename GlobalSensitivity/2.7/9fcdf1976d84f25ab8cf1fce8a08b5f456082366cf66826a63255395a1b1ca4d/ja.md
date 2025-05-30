@@ -8,7 +8,7 @@ Sobol(; order = [0, 1], nboot = 1, conf_level = 0.95)
 
 ## メソッドの詳細
 
-Sobol は分散ベースの手法であり、モデルまたはシステムの出力の分散を、入力または入力のセットに帰属できる部分に分解します。これにより、個々のパラメータの感度だけでなく、パラメータ間の相互作用からの影響と感度を定量化する方法も得られます。
+Sobol は分散ベースの手法であり、モデルまたはシステムの出力の分散を、入力または入力のセットに帰属させることができる部分に分解します。これにより、個々のパラメータの感度だけでなく、パラメータ間の相互作用からの影響と感度を定量化する方法も得られます。
 
 $$
  Y = f_0+ \sum_{i=1}^d f_i(X_i)+ \sum_{i < j}^d f_{ij}(X_i,X_j) ... + f_{1,2...d}(X_1,X_2,..X_d)
@@ -30,7 +30,7 @@ gsa(f, method::Sobol, A::AbstractMatrix{TA}, B::AbstractMatrix;
          kwargs...) where {TA, SHARED_ARRAY}
 ```
 
-`Ei_estimator` は `:Homma1996`, `:Sobol2007` および `:Jansen1999` を取ることができ、これにより `Ei` 項のモンテカルロ推定器が使用されます。デフォルトは `:Jansen1999` です。これらの詳細は、対応する論文に記載されています：
+`Ei_estimator` は `:Homma1996`, `:Sobol2007` および `:Jansen1999` を取ることができ、これに対してモンテカルロ推定器が `Ei` 項に使用されます。デフォルトは `:Jansen1999` です。これらの詳細は、対応する論文に記載されています：
 
   * `:Homma1996` - [Homma, T. and Saltelli, A., 1996. Importance measures in global sensitivity analysis of nonlinear models. Reliability Engineering & System Safety, 52(1), pp.1-17.](https://www.sciencedirect.com/science/article/abs/pii/0951832096000026)
   * `:Sobol2007` - [I.M. Sobol, S. Tarantola, D. Gatelli, S.S. Kucherenko and W. Mauntz, 2007, Estimating the approx- imation errors when fixing unessential factors in global sensitivity analysis, Reliability Engineering and System Safety, 92, 957–960.](https://www.sciencedirect.com/science/article/abs/pii/S0951832006001499) および [A. Saltelli, P. Annoni, I. Azzini, F. Campolongo, M. Ratto and S. Tarantola, 2010, Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index, Computer Physics Communications 181, 259–270.](https://www.sciencedirect.com/science/article/abs/pii/S0010465509003087)

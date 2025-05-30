@@ -24,7 +24,7 @@ getinfo(estim::MovingHorizonEstimator) -> info
   * `:Ym`  : $N_k$ における測定出力、$\mathbf{Y^m}$
   * `:U`   : $N_k$ における操作入力、$\mathbf{U}$
   * `:D`   : $N_k$ における測定外乱、$\mathbf{D}$
-  * `:sol` : 印刷用の最適化者の解の概要
+  * `:sol` : 印刷用の最適化者の解の要約
 
 # 例
 

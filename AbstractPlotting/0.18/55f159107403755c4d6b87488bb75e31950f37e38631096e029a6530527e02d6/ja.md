@@ -2,7 +2,7 @@
 pie(fractions; kwargs...)
 ```
 
-与えられた `fractions` で円グラフを作成します。
+指定された `fractions` を使用して円グラフを作成します。
 
 ## 属性
 

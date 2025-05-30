@@ -2,7 +2,7 @@
 LocalDiscriminantBasis
 ```
 
-ローカル判別基底 (LDB) のクラスタイプで、N. Saito と R. Coifman によって「Local Discriminant Bases and Their Applications」で開発された特徴選択アルゴリズムです。これは、Journal of Mathematical Imaging and Vision, Vol 5, 337-358 (1995) に掲載されています。この構造体には以下のフィールド値が含まれています：
+ローカル判別基底 (LDB) のクラスタイプで、N. Saito と R. Coifman によって「Local Discriminant Bases and Their Applications」というタイトルで発表された、Journal of Mathematical Imaging and Vision, Vol 5, 337-358 (1995) における特徴選択アルゴリズムです。この構造体には以下のフィールド値が含まれています：
 
 # パラメータと属性：
 

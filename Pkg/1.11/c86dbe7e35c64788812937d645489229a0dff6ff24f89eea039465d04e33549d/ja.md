@@ -18,10 +18,10 @@ Pkg.add(pkg::Union{PackageSpec, Vector{PackageSpec}}; preserve=PRESERVE_TIERED, 
 | `PRESERVE_ALL_INSTALLED`    | `PRESERVE_ALL`のように、すでにインストールされているものだけを追加します                |
 | `PRESERVE_ALL`              | すべての既存の依存関係の状態を保持します（再帰的依存関係を含む）                           |
 | `PRESERVE_DIRECT`           | すべての既存の直接依存関係の状態を保持します                                     |
-| `PRESERVE_SEMVER`           | 直接依存関係のセマンティックバージョニング互換バージョンを保持します                         |
+| `PRESERVE_SEMVER`           | 直接依存関係のセマンティックバージョン互換のバージョンを保持します                          |
 | `PRESERVE_NONE`             | バージョン情報を保持しようとしません                                         |
 | `PRESERVE_TIERED_INSTALLED` | `PRESERVE_TIERED`のように、ただし最初に`PRESERVE_ALL_INSTALLED`が試されます |
-| `PRESERVE_TIERED`           | 最も多くのバージョン情報を保持しつつ、バージョン解決が成功するティアを使用します（これがデフォルトです）       |
+| `PRESERVE_TIERED`           | 最も多くのバージョン情報を保持しながら、バージョン解決が成功するティアを使用します（これがデフォルトです）      |
 
 !!! note
     デフォルトの戦略を`PRESERVE_TIERED_INSTALLED`に変更するには、環境変数`JULIA_PKG_PRESERVE_TIERED_INSTALLED`をtrueに設定します。
@@ -48,8 +48,8 @@ Pkg.add("Example", target=:extras) # `[extras]`リストにパッケージを追
 Pkg.add("Example"; preserve=Pkg.PRESERVE_ALL) # `Example`パッケージを追加し、既存の依存関係を厳密に保持
 Pkg.add(name="Example", version="0.3") # バージョンを指定；0.3シリーズの最新リリース
 Pkg.add(name="Example", version="0.3.1") # バージョンを指定；正確なリリース
-Pkg.add(url="https://github.com/JuliaLang/Example.jl", rev="master") # URLからリモートgitリポジトリへ
-Pkg.add(url="/remote/mycompany/juliapackages/OurPackage") # パスからローカルgitリポジトリへ
+Pkg.add(url="https://github.com/JuliaLang/Example.jl", rev="master") # リモートgitリポジトリからのURL
+Pkg.add(url="/remote/mycompany/juliapackages/OurPackage") # ローカルgitリポジトリへのパス
 Pkg.add(url="https://github.com/Company/MonoRepo", subdir="juliapkgs/Package.jl)") # サブディレクトリ付き
 ```
 

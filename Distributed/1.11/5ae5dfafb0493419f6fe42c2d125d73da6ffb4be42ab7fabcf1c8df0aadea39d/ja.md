@@ -2,7 +2,7 @@
 default_worker_pool()
 ```
 
-[`AbstractWorkerPool`](@ref) にはアイドル状態の [`workers`](@ref) が含まれており、`remote(f)` およびデフォルトで [`pmap`](@ref) に使用されます。`default_worker_pool!(pool)` を介して明示的に設定されない限り、デフォルトのワーカープールは [`WorkerPool`](@ref) に初期化されます。
+[`AbstractWorkerPool`](@ref) にはアイドル状態の [`workers`](@ref) が含まれており、`remote(f)` および [`pmap`](@ref)（デフォルトで）によって使用されます。`default_worker_pool!(pool)` を介して明示的に設定されない限り、デフォルトのワーカープールは [`WorkerPool`](@ref) に初期化されます。
 
 # 例
 

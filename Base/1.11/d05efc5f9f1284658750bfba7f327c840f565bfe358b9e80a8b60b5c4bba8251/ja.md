@@ -8,9 +8,9 @@ argmin(itr)
 
 インデックスは、[`keys(itr)`](@ref) および [`pairs(itr)`](@ref) によって返されるものと同じ型です。
 
-`NaN` は `missing` を除くすべての値よりも小さいと見なされます。
+`NaN` は、`missing` を除くすべての値よりも小さいと見なされます。
 
-関連項目: [`argmax`](@ref), [`findmin`](@ref).
+関連情報: [`argmax`](@ref), [`findmin`](@ref).
 
 # 例
 

@@ -7,7 +7,7 @@ JuMPは[`model_convert`](@ref)を使用して、[`MOI.AbstractScalarSet`](@ref)�
 これが望ましくない場合は、セットを`SkipModelConvertScalarSetWrapper`でラップして、セットを変更せずにソルバーに渡します。
 
 !!! warning
-    この構造体はJuMP拡張によって内部で使用することを意図しています。通常のJuMPコードで使用する必要はありません。
+    この構造体はJuMP拡張によって内部的に使用することを意図しています。通常のJuMPコードで使用する必要はありません。
 
 
 ## 例

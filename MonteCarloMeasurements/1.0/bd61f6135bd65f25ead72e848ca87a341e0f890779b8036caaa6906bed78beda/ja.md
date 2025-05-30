@@ -4,7 +4,7 @@ sigmapoints(d::Normal)
 sigmapoints(d::MvNormal)
 ```
 
-[無香変換](https://en.wikipedia.org/wiki/Unscented_transform#Sigma_points)は、確率密度の第一および第二モーメントを伝播させるために少数の点を使用します。これらの点を*シグマポイント*と呼びます。`sigmapoints(μ, Σ)`という関数を提供しており、これは`2n+1`のシグマポイントの`Matrix`を作成します。ここで、`n`は次元です。これは、任意の種類の`AbstractParticles`を初期化するために使用できます。例えば：
+[無香変換](https://en.wikipedia.org/wiki/Unscented_transform#Sigma_points)は、確率密度の第一および第二モーメントを伝播させるために少数の点を使用します。これらの点は*シグマポイント*と呼ばれます。`sigmapoints(μ, Σ)`という関数を提供しており、これは`2n+1`のシグマポイントの`Matrix`を作成します。ここで、`n`は次元です。これは、任意の種類の`AbstractParticles`を初期化するために使用できます。例えば：
 
 ```julia
 julia> m = [1,2]
@@ -27,7 +27,7 @@ true
 
 # 注意
 
-sigmapointsを独立して使用して複数の一次元の不確実な値を作成する場合、それらは強く相関します。多次元コンストラクタを使用してください！例：
+シグマポイントを独立して使用して複数の一次元の不確実な値を作成する場合、それらは強く相関します。多次元コンストラクタを使用してください！例：
 
 ```julia
 p = StaticParticles(sigmapoints(1, 0.1^2))               # 誤り！

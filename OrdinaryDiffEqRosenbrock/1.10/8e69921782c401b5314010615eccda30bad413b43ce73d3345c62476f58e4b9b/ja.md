@@ -12,7 +12,7 @@ ROS2PR(; - `standardtag`: パッケージ固有のタグを使用するかどう
              `fdtype`を持ち、デフォルト値は`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`があります。
          - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
              `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-             たとえば、`linsolve`にKrylov部分空間法が使用されているかどうかなどです。
+             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
          - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
            たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
            `ROS2PR(linsolve = KLUFactorization())`を指定します。

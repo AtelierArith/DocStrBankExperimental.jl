@@ -2,17 +2,17 @@
 aws_mqtt5_client_publish(client, publish_options, completion_options)
 ```
 
-mqtt5クライアントでPublish操作をキューに追加します
+mqtt5 クライアントで Publish 操作をキューに追加します
 
 # 引数
 
-  * `client`: Publishのためにキューに追加するmqtt5クライアント
-  * `publish_options`: Publish操作のための設定オプション
-  * `completion_options`: 完了コールバックの設定。成功したQoS 0のPublishは、データがソケットに書き込まれたときにコールバックを呼び出します。成功したQoS1+のPublishは、対応するackが受信されたときにコールバックを呼び出します。失敗したPublishは、失敗条件に達した時点でコールバックを呼び出します。
+  * `client`: Publish のためにキューに追加する mqtt5 クライアント
+  * `publish_options`: Publish 操作のための設定オプション
+  * `completion_options`: 完了コールバックの設定。成功した QoS 0 の Publish は、データがソケットに書き込まれたときにコールバックを呼び出します。成功した QoS1+ の Publish は、対応する ack が受信されたときにコールバックを呼び出します。失敗した Publish は、失敗条件に達した時点でコールバックを呼び出します。
 
 # 戻り値
 
-Publish操作を開始する同期ロジックにおける成功/失敗
+Publish 操作を開始する同期ロジックにおける成功/失敗
 
 ### プロトタイプ
 

@@ -2,7 +2,7 @@
 UnitarySamplingProblem(systemns, operator, T, Δt; kwargs...)
 ```
 
-`UnitarySamplingProblem`は、量子制御問題であり、目標は一連の量子システムに対してターゲットユニタリ演算子を生成する制御パルスを見つけることです。制御はすべてのシステムで共有され、最適化は各システムに対して演算子を達成する制御パルスを見つけることを目指します。このアイデアは、問題の不確実性を反映する複数のシステムを含めることで堅牢な解を強制することです。
+`UnitarySamplingProblem`は、量子制御問題であり、目標は一連の量子システムに対してターゲットユニタリ演算子を生成する制御パルスを見つけることです。制御はすべてのシステムで共有され、最適化は各システムの演算子を達成する制御パルスを見つけることを目指します。このアイデアは、問題の不確実性を反映する複数のシステムを含めることで堅牢な解を強制することです。
 
 # 引数
 
@@ -18,7 +18,7 @@ UnitarySamplingProblem(systemns, operator, T, Δt; kwargs...)
   * `init_trajectory::Union{NamedTrajectory, Nothing} = nothing`: 初期軌道。
   * `state_name::Symbol = :Ũ⃗`: 状態変数の名前。
   * `control_name::Symbol = :a`: 制御変数の名前。
-  * `timestep_name::Symbol = :Δt`: 時間ステップ変数の名前。
+  * `timestep_name::Symbol = :Δt`: タイムステップ変数の名前。
   * `constraints::Vector{<:AbstractConstraint} = AbstractConstraint[]`: 制約。
   * `a_bound::Float64 = 1.0`: 制御振幅の境界。
   * `a_bounds::Vector{Float64} = fill(a_bound, length(systems[1].G_drives))`: 制御振幅の境界。
@@ -35,5 +35,3 @@ UnitarySamplingProblem(systemns, operator, T, Δt; kwargs...)
   * `R_da::Union{Float64, Vector{Float64}} = R`: 制御の一次導関数の正則化重み。
   * `R_dda::Union{Float64, Vector{Float64}} = R`: 制御の二次導関数の正則化重み。
   * `piccolo_options::PiccoloOptions = PiccoloOptions()`: Piccoloオプション。
-
-```

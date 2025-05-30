@@ -34,7 +34,7 @@ ODE問題のためのMCMCを実行します。`DynamicHMC.mcmc_with_warmup`に�
   * `algorithm`はODEアルゴリズムです
   * `t`は解が`data`と比較される時間値です
   * `data`はデータの行列で、`t`の各要素に対して1列があります
-  * `parameter_priors`はパラメータの数と同じ長さの反復可能なもので、それに対する事前分布として使用され、比較可能な構造を持つ必要があります。
+  * `parameter_priors`はパラメータの数の長さを持つ反復可能なもので、それに対する事前分布として使用され、比較可能な構造を持つ必要があります。
   * `parameter_transformations`: `ℝⁿ`を有効なパラメータのベクトルにマッピングするための`TransformVariables`変換です。
 
 # キーワード引数

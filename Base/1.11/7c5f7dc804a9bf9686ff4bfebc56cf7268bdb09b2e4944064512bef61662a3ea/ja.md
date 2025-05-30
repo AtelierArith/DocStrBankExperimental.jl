@@ -4,7 +4,7 @@ cispi(x)
 
 `cis(pi*x)` のより正確な方法（特に大きな `x` に対して）。
 
-関連項目としては [`cis`](@ref), [`sincospi`](@ref), [`exp`](@ref), [`angle`](@ref) があります。
+他に [`cis`](@ref)、[`sincospi`](@ref)、[`exp`](@ref)、[`angle`](@ref) も参照してください。
 
 # 例
 

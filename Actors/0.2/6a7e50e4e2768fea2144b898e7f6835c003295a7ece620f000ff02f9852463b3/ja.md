@@ -11,7 +11,7 @@
       * スーパーバイザー：[`supervisor`](@ref)、[`supervise`](@ref)、[`unsupervise`](@ref)、[`start_actor`](@ref)、[`start_task`](@ref)、[`count_children`](@ref)、[`which_children`](@ref)、[`terminate_child`](@ref)、
   * アクター登録：[`register`](@ref)、[`unregister`](@ref)、[`whereis`](@ref)、[`registered`](@ref)
 
-およびその他の機能。
+その他多数。
 
 現在の安定した登録バージョンは以下のコマンドでインストールできます。
 

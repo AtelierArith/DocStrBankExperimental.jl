@@ -4,7 +4,7 @@ discretize(system::AbstractContinuousSystem, ΔT::Real,
            constructor=_default_complementary_constructor(system))
 ```
 
-`isaffine` `AbstractContinuousSystem`をサンプリング時間`ΔT`で`AbstractDiscreteSystem`に離散化し、離散化手法`algorithm`を使用します。
+`isaffine` `AbstractContinuousSystem`の離散化を、離散化手法`algorithm`を用いてサンプリング時間`ΔT`で`AbstractDiscreteSystem`に変換します。
 
 ### 入力
 

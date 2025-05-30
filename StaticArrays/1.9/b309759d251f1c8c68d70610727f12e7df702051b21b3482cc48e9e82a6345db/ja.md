@@ -2,7 +2,7 @@
 insert(vec::StaticVector, index::Integer, item)
 ```
 
-指定された `index` に `item` を `vec` に挿入した新しいベクターを返します。
+指定された `index` に `item` を挿入した新しいベクターを返します。
 
 # 例
 

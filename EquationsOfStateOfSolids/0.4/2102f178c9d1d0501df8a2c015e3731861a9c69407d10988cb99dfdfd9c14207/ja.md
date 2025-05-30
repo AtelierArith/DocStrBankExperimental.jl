@@ -2,7 +2,7 @@
 Vinet(v0, b0, b′0, e0=zero(v0 * b0))
 ```
 
-ビネット状態方程式を作成します。
+Vinet状態方程式を作成します。
 
 この状態方程式は単位を持つことができます。単位は[`Unitful.jl`](https://github.com/PainterQubits/Unitful.jl)の`@u_str`スタイルで指定されます。
 

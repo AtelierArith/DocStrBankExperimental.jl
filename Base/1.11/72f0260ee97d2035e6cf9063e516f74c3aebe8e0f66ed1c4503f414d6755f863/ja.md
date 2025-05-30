@@ -2,11 +2,11 @@
 vcat(A...)
 ```
 
-配列または数値を垂直に連結します。`cat`(@ref)`(A...; dims=1)`と同等であり、構文`[a; b; c]`とも同じです。
+配列または数値を垂直に連結します。 [`cat`](@ref)`(A...; dims=1)` と同等であり、構文 `[a; b; c]` とも同じです。
 
-大きな配列のベクトルを連結するには、`reduce(vcat, A)`が`A isa AbstractVector{<:AbstractVecOrMat}`の場合に効率的な方法を呼び出し、ペアワイズで処理するのではなくなります。
+大きな配列のベクトルを連結する場合、`reduce(vcat, A)` は `A isa AbstractVector{<:AbstractVecOrMat}` のときに効率的な方法を呼び出し、ペアワイズで処理するのではありません。
 
-他にも[`hcat`](@ref)、[`Iterators.flatten`](@ref)、[`stack`](@ref)を参照してください。
+他にも [`hcat`](@ref)、[`Iterators.flatten`](@ref)、[`stack`](@ref) を参照してください。
 
 # 例
 
@@ -44,7 +44,7 @@ julia> vcat(two...)
 
 julia> vs = [[1, 2], [3, 4], [5, 6]];
 
-julia> reduce(vcat, vs)  # vcat(vs...)よりも効率的です
+julia> reduce(vcat, vs)  # vcat(vs...) よりも効率的です
 6-element Vector{Int64}:
  1
  2

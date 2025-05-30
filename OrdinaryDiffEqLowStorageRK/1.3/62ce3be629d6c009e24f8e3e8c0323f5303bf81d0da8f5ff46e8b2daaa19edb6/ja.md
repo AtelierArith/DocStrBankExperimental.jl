@@ -5,14 +5,14 @@ NDBLSRK144(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
              williamson_condition = true)
 ```
 
-明示的ルンゲ-クッタ法。 14段階、4次低ストレージ法で、輸送支配問題のために最適化された安定領域を持っています。 固定タイムステップのみ。
+明示的ルンゲ-クッタ法。 14段階、4次の低ストレージ法で、輸送支配問題のために最適化された安定領域を持っています。 固定タイムステップのみ。
 
 ### キーワード引数
 
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
-  * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
-  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を可能にします。ただし、これは `Array` 型にのみ機能します。
+  * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されたとき。
+  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を可能にします。ただし、`Array` 型にのみ機能します。
 
 ## 参考文献
 

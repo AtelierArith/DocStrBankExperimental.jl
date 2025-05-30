@@ -14,7 +14,7 @@ MITgcm_config()
     ID :: UUID = UUIDs.uuid4()
 ```
 
-そして、以下のようにキーワードを使用して構築できます。
+および、以下のようにキーワードを使用して構築できます。
 
 ```
 unknown_config=MITgcm_config(configuration="unknown")

@@ -6,7 +6,7 @@ basis_covering_monomials(B::Type{<:AbstractPolynomialBasis}, monos::AbstractVect
 
 ## 例
 
-たとえば、モノミアル `x^4` と `x^2` の係数が非ゼロのすべての多項式を生成するには、3つの多項式が必要です。そうしないと、非ゼロの定数項を持つ多項式が生成されます。
+たとえば、モノミアル `x^4` と `x^2` の係数がゼロでないすべての多項式を生成するには、ゼロでない定数項を持つ多項式を生成しないために、3つの多項式が必要です。
 
 ```jldoctest
 julia> using DynamicPolynomials

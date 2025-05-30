@@ -2,6 +2,6 @@
 isnan(f) -> Bool
 ```
 
-数値がNaN（無定義値）であるかどうかをテストします。NaNは無限大でも有限の数でもない値です（「数ではない」）。
+数値がNaN（無限大でも有限数でもない不確定値）であるかどうかをテストします。
 
-関連項目: [`iszero`](@ref), [`isone`](@ref), [`isinf`](@ref), [`ismissing`](@ref).
+関連情報: [`iszero`](@ref), [`isone`](@ref), [`isinf`](@ref), [`ismissing`](@ref).

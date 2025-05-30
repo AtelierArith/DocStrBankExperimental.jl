@@ -2,7 +2,7 @@
 plot_tfbdry2!([plt], tree, [n, m; line_color, background_color])
 ```
 
-クワッドツリーを与えると、現在のプロットオブジェクト `plt` の上に葉ノードの視覚的表現を出力します。
+与えられたクアッドツリーに基づいて、現在のプロットオブジェクト `plt` の上に葉ノードの視覚的表現を出力します。
 
 # 引数
 
@@ -25,7 +25,7 @@ plot_tfbdry2!([plt], tree, [n, m; line_color, background_color])
 ```julia
 using Wavelets, WaveletsExt
 
-# Wavelets `maketree` を使用してクワッドツリーを構築
+# Wavelets `maketree` を使用してクアッドツリーを構築
 tree = maketree(128, 128, 7, :dwt)
 
 # 葉ノードをプロット

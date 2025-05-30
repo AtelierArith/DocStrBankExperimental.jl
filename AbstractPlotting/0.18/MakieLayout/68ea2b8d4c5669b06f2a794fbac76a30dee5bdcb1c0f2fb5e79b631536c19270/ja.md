@@ -12,6 +12,6 @@ addmouseevents!(scene, elements...)
 mouseevents = addmouseevents!(scene, scatterplot)
 
 onmouseleftclick(mouseevents) do event
-    # マウスイベントで何かをする
+    # mouseeventを使って何かをする
 end
 ```

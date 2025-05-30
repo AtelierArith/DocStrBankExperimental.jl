@@ -20,7 +20,7 @@ $$
 # 引数
 
 !!! info
-    キーワード引数`Δumin`、`Δumax`、`c_Δumin`、`c_Δumax`、`x̂min`、`x̂max`、`c_x̂min`、`c_x̂max`およびそれらの大文字バージョンには、非Unicodeの代替があります。例えば、*`Deltaumin`*、*`xhatmax`*、*`C_Deltaumin`*です。
+    キーワード引数 `Δumin`, `Δumax`, `c_Δumin`, `c_Δumax`, `x̂min`, `x̂max`, `c_x̂min`, `c_x̂max` およびそれらの大文字バージョンには、非Unicodeの代替があります。例えば、*`Deltaumin`*, *`xhatmax`* および *`C_Deltaumin`*。
 
     デフォルトの制約は明確にするためにここに記載されていますが、キーワード引数を省略してもデフォルト値に再割り当てされることはありません（デフォルトは構築時にのみ設定されます）。
 
@@ -30,11 +30,11 @@ $$
   * `Δumin=fill(-Inf,nu)` / `Δumax=fill(+Inf,nu)` : 操作入力の増分境界 $\mathbf{Δu_{min/max}}$
   * `ymin=fill(-Inf,ny)` / `ymax=fill(+Inf,ny)` : 予測出力の境界 $\mathbf{y_{min/max}}$
   * `x̂min=fill(-Inf,nx̂)` / `x̂max=fill(+Inf,nx̂)` : 端末制約の境界 $\mathbf{x̂_{min/max}}$
-  * `c_umin=fill(0.0,nu)` / `c_umax=fill(0.0,nu)` : `umin` / `umax`のソフトネス重み $\mathbf{c_{u_{min/max}}}$
-  * `c_Δumin=fill(0.0,nu)` / `c_Δumax=fill(0.0,nu)` : `Δumin` / `Δumax`のソフトネス重み $\mathbf{c_{Δu_{min/max}}}$
-  * `c_ymin=fill(1.0,ny)` / `c_ymax=fill(1.0,ny)` : `ymin` / `ymax`のソフトネス重み $\mathbf{c_{y_{min/max}}}$
-  * `c_x̂min=fill(1.0,nx̂)` / `c_x̂max=fill(1.0,nx̂)` : `x̂min` / `x̂max`のソフトネス重み $\mathbf{c_{x̂_{min/max}}}$
-  * 上記のすべてのキーワード引数の最初の文字が大文字のもの（端末制約を除く）、例：`Ymax`または`C_Δumin`：時間変化する制約用（拡張ヘルプを参照）
+  * `c_umin=fill(0.0,nu)` / `c_umax=fill(0.0,nu)` : `umin` / `umax` のソフトネス重み $\mathbf{c_{u_{min/max}}}$
+  * `c_Δumin=fill(0.0,nu)` / `c_Δumax=fill(0.0,nu)` : `Δumin` / `Δumax` のソフトネス重み $\mathbf{c_{Δu_{min/max}}}$
+  * `c_ymin=fill(1.0,ny)` / `c_ymax=fill(1.0,ny)` : `ymin` / `ymax` のソフトネス重み $\mathbf{c_{y_{min/max}}}$
+  * `c_x̂min=fill(1.0,nx̂)` / `c_x̂max=fill(1.0,nx̂)` : `x̂min` / `x̂max` のソフトネス重み $\mathbf{c_{x̂_{min/max}}}$
+  * 上記のすべてのキーワード引数の最初の文字を大文字にしたもの（端末制約を除く）、例えば `Ymax` または `C_Δumin`：時間変化する制約用（拡張ヘルプを参照）
 
 # 例
 
@@ -42,29 +42,29 @@ $$
 julia> mpc = LinMPC(setop!(LinModel(tf(3, [30, 1]), 4), uop=[50], yop=[25]));
 
 julia> mpc = setconstraint!(mpc, umin=[0], umax=[100], Δumin=[-10], Δumax=[+10])
-LinMPCコントローラ、サンプル時間 Ts = 4.0 s、OSQPオプティマイザ、SteadyKalmanFilter推定器、次のように設定されています：
+LinMPCコントローラ、サンプル時間 Ts = 4.0 s、OSQPオプティマイザ、SteadyKalmanFilter推定器、次の通り：
   10予測ステップ Hp
   2制御ステップ Hc
   1スラック変数 ϵ（制御制約）
-  1操作入力 u（0統合状態）
+  1操作入力 u（0の積分状態）
   2推定状態 x̂
-  1測定出力 ym（1統合状態）
+  1測定出力 ym（1の積分状態）
   0未測定出力 yu
-  0測定外乱 d
+  0測定された外乱 d
 ```
 
 # 拡張ヘルプ
 
 !!! details "拡張ヘルプ"
-    端末制約は、名目プラントモデルに対する閉ループ安定性保証を提供します。ただし、実際には実現不可能な問題を引き起こす可能性があります。実際には、端末制約なしで十分に大きな予測ホライズン$H_p$があれば、通常は安定性に十分です。`mpc.estim.direct==true`の場合、推定器は$i = k$（現在の時間ステップ）で状態を計算しますが、そうでない場合は$i = k - 1$で計算します。端末制約は拡張状態ベクトル$\mathbf{x̂}$に適用されることに注意してください（詳細は[`SteadyKalmanFilter`](@ref)の拡張を参照）。
+    端末制約は、名目プラントモデルに対する閉ループ安定性保証を提供します。ただし、実際には実現不可能な問題を引き起こす可能性があります。実際には、端末制約なしで十分に大きな予測ホライズン $H_p$ があれば、通常は安定性に十分です。`mpc.estim.direct==true` の場合、推定器は $i = k$（現在の時間ステップ）で状態を計算します。そうでない場合は $i = k - 1$ で計算します。端末制約は拡張状態ベクトル $\mathbf{x̂}$ に適用されることに注意してください（詳細は[`SteadyKalmanFilter`](@ref)の拡張を参照）。
 
-    変数制約については、[`moveinput!`](@ref)を呼び出した後、すなわち実行時に境界を変更できますが、ソフトネスパラメータ$\mathbf{c}$は変更できません。実行時に`±Inf`の境界を変更することはできません。
+    変数制約については、[`moveinput!`](@ref)を呼び出した後、すなわち実行時に境界を変更できますが、ソフトネスパラメータ $\mathbf{c}$ は変更できません。実行時に `±Inf` の境界を変更することはできません。
 
     !!! tip
-        変数を制約なしに保ちながら、実行時に後で制約を追加できるようにするには、コントローラを作成する際に境界を十分に大きな絶対値に設定します（ただし`±Inf`とは異なる値にしてください）。
+        変数を無制約のままにし、実行時に後で制約を追加できるようにするには、コントローラを作成する際に境界を十分に大きな絶対値に設定します（ただし `±Inf` とは異なる値にします）。
 
 
-    また、$H_p$および$H_c$ホライズンにわたる時間変化する制約を指定することも可能です。この場合、次のように定義されます：
+    また、$H_p$ および $H_c$ ホライズンにわたる時間変化する制約を指定することも可能です。この場合、次のように定義されます：
 
     $$
     \begin{alignat*}{3}
@@ -76,9 +76,9 @@ LinMPCコントローラ、サンプル時間 Ts = 4.0 s、OSQPオプティマ�
 
     このためには、上記と同じキーワード引数を使用しますが、最初の文字を大文字にします：
 
-      * `Umin`  / `Umax`  / `C_umin`  / `C_umax`  : $\mathbf{U}$制約 `(nu*Hp,)`。
-      * `ΔUmin` / `ΔUmax` / `C_Δumin` / `C_Δumax` : $\mathbf{ΔU}$制約 `(nu*Hc,)`。
-      * `Ymin`  / `Ymax`  / `C_ymin`  / `C_ymax`  : $\mathbf{Ŷ}$制約 `(ny*Hp,)`。
+      * `Umin`  / `Umax`  / `C_umin`  / `C_umax`  : $\mathbf{U}$ 制約 `(nu*Hp,)`。
+      * `ΔUmin` / `ΔUmax` / `C_Δumin` / `C_Δumax` : $\mathbf{ΔU}$ 制約 `(nu*Hc,)`。
+      * `Ymin`  / `Ymax`  / `C_ymin`  / `C_ymax`  : $\mathbf{Ŷ}$ 制約 `(ny*Hp,)`。
 
 
 ```

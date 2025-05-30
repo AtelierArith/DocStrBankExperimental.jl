@@ -2,7 +2,7 @@
 predict(M::CCA, Z::AbstractVecOrMat{<:Real}, c::Symbol)
 ```
 
-与えられた [`CCA`](@ref) モデルにより、観測値を共通の空間に変換することができます。次のように表されます。
+与えられた [`CCA`](@ref) モデルにより、観測値を共通の空間に変換することができます。
 
 $$
 \mathbf{z}_x = \mathbf{P}_x^T (\mathbf{x} - \boldsymbol{\mu}_x) \\

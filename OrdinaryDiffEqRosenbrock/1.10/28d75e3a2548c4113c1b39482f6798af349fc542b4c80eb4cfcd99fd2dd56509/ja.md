@@ -9,11 +9,11 @@ Rosenbrock32(; chunk_size = Val{0}(),
                step_limiter! = OrdinaryDiffEq.trivial_limiter!)
 ```
 
-Rosenbrock-Wanner-W(olfbrandt)法。オーダー3/2のA安定なRosenbrock-W法で、低い許容誤差で振動のない軽度剛性方程式に適しています。この方法は振動がある場合に不安定になる可能性があるため、注意して使用してください。2次剛性対応補間。
+Rosenbrock-Wanner-W(olfbrandt)法。オーダー3/2のA安定なRosenbrock-W法で、低い許容誤差で振動のない軽度剛性方程式に適しています。この方法は振動がある場合に不安定になる可能性があるため、注意して使用してください。2次の剛性対応補間。
 
 ### キーワード引数
 
-  * `standardtag`: ForwardDiffのデフォルトの関数固有タグの代わりに、パッケージ固有のタグを使用するかどうかを指定します。詳細については、[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
+  * `standardtag`: ForwardDiffのデフォルトの関数固有のタグの代わりに、パッケージ固有のタグを使用するかどうかを指定します。詳細については、[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
   * `autodiff`: [ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用して、[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)による自動微分または[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)による有限差分を使用するかどうかを指定します。デフォルトは自動微分のための`AutoForwardDiff()`で、デフォルトでは`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、デフォルト値`Val{:forward}()`のキーワード引数`fdtype`があり、代替として`Val{:central}()`と`Val{:complex}()`があります。
   * `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されているかどうかなどです。
   * `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、`Rosenbrock32(linsolve = KLUFactorization())`と指定します。`nothing`が渡されると、`DefaultLinearSolver`が使用されます。

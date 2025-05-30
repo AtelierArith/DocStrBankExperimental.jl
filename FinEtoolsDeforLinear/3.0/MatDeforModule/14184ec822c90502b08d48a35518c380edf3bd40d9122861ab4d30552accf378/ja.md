@@ -2,7 +2,7 @@
 rotstressvec!(::Type{DeforModelRed2DAxisymm},  outstress::Vector{T},  instress::Vector{T},  Rm::_RotationMatrix) where {T}
 ```
 
-与えられた回転行列によって応力ベクトルを回転させます。
+供給された回転行列によって応力ベクトルを回転させます。
 
 回転行列 `Rm` の列によって与えられる「バー」座標系への応力ベクトルの回転を計算します。
 

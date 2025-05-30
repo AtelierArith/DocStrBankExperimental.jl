@@ -10,7 +10,7 @@ fit(ICA, X, k; ...)
 
   * `alg`: アルゴリズムの選択（*デフォルト* `:fastica`）
   * `fun`: 近似負エントロピー関数子（*デフォルト* [`Tanh`](@ref)）
-  * `do_whiten`: 前処理のホワイトニングを行うかどうか（*デフォルト* `true`）
+  * `do_whiten`: 前処理を行うかどうか（*デフォルト* `true`）
   * `maxiter`: 最大反復回数（*デフォルト* `100`）
   * `tol`: 収束時の $W$ の許容変化（*デフォルト* `1.0e-6`）
   * `mean`: 平均ベクトルで、次のいずれかです：
@@ -26,4 +26,4 @@ fit(ICA, X, k; ...)
 
 結果の ICA モデルを返します。これはタイプ [`ICA`](@ref) のインスタンスです。
 
-**注意:** `do_whiten` が `true` の場合、返される `W` は $\mathbf{W}^T \mathbf{C} \mathbf{W} = \mathbf{I}$ を満たし、そうでない場合は $W$ は直交正規です。すなわち、$\mathbf{W}^T \mathbf{W} = \mathbf{I}$ です。
+**注意:** `do_whiten` が `true` の場合、返される `W` は $\mathbf{W}^T \mathbf{C} \mathbf{W} = \mathbf{I}$ を満たし、そうでない場合は $W$ は直交正規です。*すなわち* $\mathbf{W}^T \mathbf{W} = \mathbf{I}$。

@@ -14,4 +14,4 @@ function simplexgrid(Generator;
 
 この変換は、データ型がデフォルトで示されているものであり、2D配列の先頭次元が空間次元に対応している場合には行われません。
 
-利用可能な`kwargs`については[`default_options`](@ref)を参照してください。
+利用可能な`kwargs`については、[`default_options`](@ref)を参照してください。

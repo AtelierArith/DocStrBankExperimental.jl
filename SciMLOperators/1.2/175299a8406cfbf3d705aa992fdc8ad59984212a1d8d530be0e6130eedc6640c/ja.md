@@ -12,7 +12,7 @@ update_func!(b::AbstractVecOrMat, u ,p , t; <accepted kwargs>) -> [modifies b]
 
 `B` と `b` は、`A * v + B * b` が意味を持つように適切なサイズを持つことが期待されます。具体的には、`size(A, 1) == size(B, 1)` および `size(v, 2) == size(b, 2)` です。
 
-`update_func[!]` が受け入れるキーワード引数のセットは、`AffineOperator` に `accepted_kwargs` というキーワード引数を介して `Symbol` のタプルとして提供されなければなりません。`accepted_kwargs` が提供されていない場合、`kwargs` を `update_func[!]` に渡すことはできません。
+`update_func[!]` によって受け入れられるキーワード引数のセットは、`AffineOperator` に `accepted_kwargs` というキーワード引数を介して `Symbol` のタプルとして提供されなければなりません。`accepted_kwargs` が提供されていない場合、`kwargs` を `update_func[!]` に渡すことはできません。
 
 # 例
 

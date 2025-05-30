@@ -2,7 +2,7 @@
 NoisyConstrainedAffineControlContinuousSystem
 ```
 
-加法的な摂動と次の形式の領域制約を持つ連続時間アフィン制御システム：
+加法的な摂動と次の形式のドメイン制約を持つ連続時間アフィン制御システム：
 
 $$
     x(t)' = A x(t) + B u(t) + c + D w(t), \; x(t) ∈ \mathcal{X}, \; u(t) ∈ \mathcal{U}, \; w(t) ∈ \mathcal{W} \; \forall t.

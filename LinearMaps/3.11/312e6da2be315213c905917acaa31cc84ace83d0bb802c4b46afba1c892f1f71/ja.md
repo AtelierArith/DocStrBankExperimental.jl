@@ -14,7 +14,7 @@ kron(A, B, Cs...)::KroneckerMap
 # 例
 
 ```jldoctest; setup=(using LinearAlgebra, SparseArrays, LinearMaps)
-julia> J = LinearMap(I, 2) # 2×2 単位行列写像
+julia> J = LinearMap(I, 2) # 2×2 単位行列
 2×2 LinearMaps.UniformScalingMap{Bool} with scaling factor: true
 
 julia> E = spdiagm(-1 => trues(1)); D = E + E' - 2I;

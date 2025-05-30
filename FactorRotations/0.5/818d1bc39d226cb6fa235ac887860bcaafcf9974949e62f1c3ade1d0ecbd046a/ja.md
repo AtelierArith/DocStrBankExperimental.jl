@@ -2,15 +2,15 @@
 Oblimax(; orthogonal = false)
 ```
 
-*Oblimax*回転法。
+*Oblimax* 回転法。
 
 ## キーワード引数
 
-  * `orthogonal`: `orthogonal = true`の場合は直交回転が行われ、それ以外の場合は斜交回転が行われます。（デフォルト: `false`）
+  * `orthogonal`: `orthogonal = true` の場合は直交回転が行われ、それ以外の場合は斜交回転が行われます。（デフォルト: `false`）
 
 ## 詳細
 
-*Oblimax*回転法は、直交回転に対して[`Quartimax`](@ref)と同等です。
+*Oblimax* 回転法は、直交回転に対して [`Quartimax`](@ref) と同等です。
 
 ## 例
 

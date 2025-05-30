@@ -2,11 +2,11 @@
 MultiCheckBox(options::Vector; [default::Vector], [orientation ∈ [:row, :column]], [select_all::Bool])
 ```
 
-チェックボックスのグループ - ユーザーは返す`options`を選択できます。`@bind`を介して返される値は、現在チェックされているアイテムのリストです。
+チェックボックスのグループ - ユーザーは返す`options`を選択できます。`@bind`を介して返される値は、現在チェックされている項目を含むリストです。
 
-参照: [`MultiSelect`](@ref)。
+関連情報: [`MultiSelect`](@ref)。
 
-`options`は、ペアの配列`key::Any => value::String`でも構いません。`key`は`@bind`を介して返され、`value`が表示されます。
+`options`は、`key::Any => value::String`のペアの配列でも構いません。`key`は`@bind`を介して返され、`value`が表示されます。
 
 # キーワード引数
 

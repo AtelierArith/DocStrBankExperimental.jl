@@ -4,7 +4,7 @@ Grid(searchspace; npartitions)
 
 与えられた検索空間に対するイテレータを返します。
 
-`npartitions`は、`searchspace isa BoxConstrainedSpace`のときに各軸のパーティション数を制御します（デフォルトは3です）。
+`npartitions`は、`searchspace isa BoxConstrainedSpace`の場合に各軸のパーティション数を制御します（デフォルトは3です）。
 
 # 例
 

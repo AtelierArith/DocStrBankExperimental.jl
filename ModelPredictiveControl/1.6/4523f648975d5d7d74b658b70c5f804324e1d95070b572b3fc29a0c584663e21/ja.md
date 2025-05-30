@@ -11,7 +11,7 @@ Luenberger(
 
 [`LinModel`](@ref) `model`を用いてルエンバーガーオブザーバを構築します。
 
-`i_ym`は、測定されたモデル出力インデックス$\mathbf{y^m}$を提供し、残りは未測定の$\mathbf{y^u}$です。`model`の行列は、積分器の数`nint_u`と`nint_ym`によって指定される確率モデルで拡張されます（詳細は[`SteadyKalmanFilter`](@ref)の拡張ヘルプを参照）。引数`poles`は、オブザーバの極/固有値を指定する`model.nx + sum(nint_u) + sum(nint_ym)`要素のベクトルです（デフォルトでは$z=0.5$付近）。`direct=true`の場合、オブザーバは$\mathbf{y^m}$からの直接伝送で構築されます（遅延/予測形式とは対照的に、現在のオブザーバとも呼ばれます）。このメソッドは、[`place`](@extref ControlSystemsBase.place)関数を使用してオブザーバゲイン`K̂`を計算します。この推定器は、アロケーションフリーです。
+`i_ym`は、測定されたモデル出力インデックス$\mathbf{y^m}$を提供し、残りは未測定の$\mathbf{y^u}$です。`model`の行列は、積分器の数`nint_u`と`nint_ym`によって指定される確率モデルで拡張されます（詳細は[`SteadyKalmanFilter`](@ref)の拡張ヘルプを参照）。引数`poles`は、オブザーバの極/固有値を指定する`model.nx + sum(nint_u) + sum(nint_ym)`要素のベクトルです（デフォルトでは$z=0.5$付近）。`direct=true`の場合、オブザーバは$\mathbf{y^m}$からの直接伝送で構築されます（遅延/予測形式とは対照的に、現在のオブザーバとも呼ばれます）。このメソッドは、[`place`](@extref ControlSystemsBase.place)関数を使用してオブザーバゲイン`K̂`を計算します。この推定器は、割り当てなしで動作します。
 
 # 例
 

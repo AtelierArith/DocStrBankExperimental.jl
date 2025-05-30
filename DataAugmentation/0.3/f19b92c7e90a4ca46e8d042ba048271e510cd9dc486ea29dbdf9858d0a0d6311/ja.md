@@ -19,7 +19,7 @@ using DataAugmentation, Images
 image = Image(rand(RGB, 20, 20))
 
 # 画像をテンソルに変換し、次元2と1を並べ替えます
-# HWC（高さ、幅、チャネル）配列をWHC（幅、高さ、チャネル）に変換します
+# HWC（高さ、幅、チャンネル）配列をWHC（幅、高さ、チャンネル）に変換します
 tfms = ImageToTensor() |> PermuteDims(2, 1, 3)
 apply(tfms, image)
 ```

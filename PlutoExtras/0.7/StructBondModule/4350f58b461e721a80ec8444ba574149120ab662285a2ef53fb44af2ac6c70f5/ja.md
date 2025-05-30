@@ -3,7 +3,7 @@
 @popoutasfield T1 T2 ...
 ```
 
-このマクロは、型 `T` のフィールドのデフォルトウィジェットを `StructBond{T}` 型をラップする [`Popout`](@ref) にします。これが機能するためには、`StructBond{T}` の各フィールドに関連付けられたデフォルトウィジェットが必要であり、それは [`@fieldbond`](@ref) または [`@typeasfield`](@ref) を使用することで実現できます。
+このマクロは、型 `T` のフィールドのデフォルトウィジェットを `StructBond{T}` 型をラップした [`Popout`](@ref) にします。これが機能するためには、`StructBond{T}` の各フィールドに関連付けられたデフォルトウィジェットが必要であり、それは [`@fieldbond`](@ref) または [`@typeasfield`](@ref) を使用することで実現できます。
 
 # 例 (Pluto)
 
@@ -22,7 +22,7 @@ begin
 	
 	# これにより、Int のデフォルトウィジェットがスライダーになります
 	@typeasfield Int = Slider(1:10)
-	# これにより、型 ASD のフィールドのデフォルトウィジェットが StructBond{ASD} をラップするポップアウトになります
+	# これにより、型 ASD のフィールドのデフォルトウィジェットが StructBond{ASD} をラップしたポップアウトになります
 	@popoutasfield MAH
 	
 	@bind boh StructBond(BOH)

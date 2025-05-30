@@ -14,15 +14,15 @@ RegressionGSA(; rank::Bool = false)
 
 サンプルサイズ n が十分に大きい場合（少なくとも n > d）、X の値に基づいて Y の挙動を説明する線形モデルを適合させることが可能です。
 
-GlobalSensitivity.jl によって提供されるこの分析のための測定値は次のとおりです。
+GlobalSensitivity.jl によって提供されるこの分析のための測定値は
 
-a) ピアソン相関係数：
+a) ピアソン相関係数:
 
 $$
 r = \frac{\sum_{i=1}^{n} (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \overline{x})^2(y_i - \overline{y})^2}}
 $$
 
-b) 標準回帰係数 (SRC)：
+b) 標準回帰係数 (SRC):
 
 $$
 SRC_j = \beta_{j} \sqrt{\frac{Var(X_j)}{Var(Y)}}
@@ -30,7 +30,7 @@ $$
 
 ここで $\beta_j$ は $X\_j$ に関連する線形回帰係数です。これはシグマ正規化導関数としても知られています。
 
-c) 部分相関係数 (PCC)：
+c) 部分相関係数 (PCC):
 
 $$
 PCC_j = \rho(X_j - \hat{X_{-j}},Y_j - \hat{Y_{-j}})

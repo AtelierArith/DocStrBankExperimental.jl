@@ -4,7 +4,7 @@ LexM <: EliminationAlgorithm
 LexM()
 ```
 
-[lexicographic breadth-first-search algorithm](https://en.wikipedia.org/wiki/Lexicographic_breadth-first_search) の最小バリアントです。
+最小限のバリアントの[辞書式幅優先探索アルゴリズム](https://en.wikipedia.org/wiki/Lexicographic_breadth-first_search)。
 
 ```julia-repl
 julia> using CliqueTrees

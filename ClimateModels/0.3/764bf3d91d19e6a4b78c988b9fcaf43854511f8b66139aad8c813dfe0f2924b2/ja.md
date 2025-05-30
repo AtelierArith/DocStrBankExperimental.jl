@@ -2,7 +2,7 @@
 compile(x)
 ```
 
-デフォルトは `default_ClimateModelBuild(x)` です。ほとんどの具体的な `AbstractModelConfig` の型に対して特化されることが期待されます。
+デフォルトは `default_ClimateModelBuild(x)` です。ほとんどの具体的な `AbstractModelConfig` の型に特化されることが期待されます。
 
 ```jldoctest; output = false
 using ClimateModels, Pkg

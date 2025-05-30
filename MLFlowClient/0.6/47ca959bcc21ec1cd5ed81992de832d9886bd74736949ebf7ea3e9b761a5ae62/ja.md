@@ -2,7 +2,7 @@
 ViewType
 ```
 
-ListExperimentsクエリのビュータイプ。
+ListExperiments クエリのビュータイプ。
 
 # メンバー
 

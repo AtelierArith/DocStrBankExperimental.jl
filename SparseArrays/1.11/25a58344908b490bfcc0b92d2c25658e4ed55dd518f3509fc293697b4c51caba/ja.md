@@ -5,7 +5,7 @@ permute(A::AbstractSparseMatrixCSC{Tv,Ti}, p::AbstractVector{<:Integer},
 
 行列 `A` を双方向に置換し、`PAQ`（`A[p,q]`）を返します。列置換 `q` の長さは `A` の列数と一致する必要があります（`length(q) == size(A, 2)`）。行置換 `p` の長さは `A` の行数と一致する必要があります（`length(p) == size(A, 1)`）。
 
-専門的なドライバーや追加情報については、[`permute!`](@ref)を参照してください。
+詳細情報と専門的なドライバーについては、[`permute!`](@ref)を参照してください。
 
 # 例
 

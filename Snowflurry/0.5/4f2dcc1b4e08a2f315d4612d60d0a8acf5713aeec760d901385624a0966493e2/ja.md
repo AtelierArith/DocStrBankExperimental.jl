@@ -2,7 +2,7 @@
 get_num_bodies(x::AbstractOperator, hilbert_space_size_per_body=2)
 ```
 
-`hilbert_space_size_per_body`に対して与えられた`Operator`に関連付けられたボディの数を返します。
+`Operator` に関連付けられたボディの数を、`hilbert_space_size_per_body` を考慮して返します。
 
 # 例
 

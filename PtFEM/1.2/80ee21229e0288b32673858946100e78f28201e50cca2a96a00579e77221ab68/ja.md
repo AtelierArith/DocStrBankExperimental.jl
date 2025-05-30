@@ -37,7 +37,7 @@ p63_skyline(data)
 ### 戻り値
 
 ```julia
-* (g_coord, g_num, disp)        : ここで：
+* (g_coord, g_num, disp)        : ここで:
                                     g_coord  : 座標
                                     g_num    : ノード番号
                                     disp     : 変位の行列

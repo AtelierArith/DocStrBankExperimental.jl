@@ -11,7 +11,7 @@ t8_forest_ghost_remote_first_tree(forest, remote)
 
 # 戻り値
 
-*remote*のゴースト要素を格納する最初のゴーストツリーのID。
+*remote*のゴースト要素を格納する最初のゴーストツリーのゴーストツリーID。
 
 ### プロトタイプ
 

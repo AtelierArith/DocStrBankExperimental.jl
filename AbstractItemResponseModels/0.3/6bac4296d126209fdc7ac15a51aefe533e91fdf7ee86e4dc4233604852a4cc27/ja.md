@@ -11,7 +11,7 @@ ItemResponseModel
   * [`item_dimensionality`](@ref): アイテムのパラメータの次元数
   * [`estimation_type`](@ref): 有効な [`EstimationType`](@ref)
 
-さらに `T <: ItemResponseModel` は、以下のインターフェースを実装しなければなりません：
+さらに、`T <: ItemResponseModel` は以下のインターフェースを実装しなければなりません：
 
   * [`irf`](@ref): 特定の応答でアイテムに回答する能力推定を持つ人の確率を返すアイテム応答関数。
   * [`iif`](@ref): 能力推定に基づいて特定の応答でアイテムに回答する情報を返すアイテム情報関数。

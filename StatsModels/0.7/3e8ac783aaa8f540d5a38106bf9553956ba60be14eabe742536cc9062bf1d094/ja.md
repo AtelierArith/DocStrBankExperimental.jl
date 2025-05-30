@@ -4,7 +4,7 @@ termnames(model::StatisticalModel)
 
 `model`の式で使用される項の名前を返します。
 
-これは`termnames(formula(model))`の便利なメソッドであり、式の左辺と右辺に適用された`termnames`の2タプルを返します。
+これは`termnames(formula(model))`の便利なメソッドで、式の左辺と右辺に適用された`termnames`の2タプルを返します。
 
 連続的な予測因子のみを持つ`RegressionModel`の場合、これは`(responsename(model), coefnames(model))`および`coefnames(formula(model))`と同じです。
 

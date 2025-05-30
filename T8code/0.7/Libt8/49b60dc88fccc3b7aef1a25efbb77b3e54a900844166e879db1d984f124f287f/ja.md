@@ -2,11 +2,11 @@
 t8_cmesh_trees_get_numproc(trees)
 ```
 
-木構造の部分の数を返します。
+ツリー構造の部分の数を返します。
 
 # 引数
 
-  * `trees`:[in] 木構造。
+  * `trees`:[in] ツリー構造。
 
 # 戻り値
 

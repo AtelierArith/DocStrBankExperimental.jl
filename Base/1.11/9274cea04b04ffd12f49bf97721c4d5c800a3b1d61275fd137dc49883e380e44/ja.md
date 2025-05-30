@@ -15,7 +15,7 @@ AnnotatedString{S <: AbstractString} <: AbstractString
                     B
 ```
 
-上の図は、3つの範囲に注釈が付けられた`AnnotatedString`を表しています（ラベルは`A`、`B`、`C`）。各注釈はラベル（`Symbol`）と値（`Any`）を保持します。これら3つの情報は`@NamedTuple{region::UnitRange{Int64}, label::Symbol, value}`として保持されます。
+上記の図は、3つの範囲に注釈が付けられた`AnnotatedString`を表しています（ラベルは`A`、`B`、`C`）。各注釈は、ラベル（`Symbol`）と値（`Any`）を保持します。これら3つの情報は、`@NamedTuple{region::UnitRange{Int64}, label::Symbol, value}`として保持されます。
 
 ラベルは一意である必要はなく、同じ領域に同じラベルの複数の注釈を持つことができます。
 
@@ -24,7 +24,7 @@ AnnotatedString{S <: AbstractString} <: AbstractString
   * 注釈が適用される文字
   * 各文字に対して注釈が適用される順序
 
-特定の`AnnotatedString`の使用によって追加の意味が導入されることがあります。
+特定の`AnnotatedString`の使用によって追加の意味が導入される場合があります。
 
 これらのルールの帰結は、隣接して連続して配置された、同一のラベルと値を持つ注釈は、結合された範囲を跨ぐ単一の注釈に相当するということです。
 

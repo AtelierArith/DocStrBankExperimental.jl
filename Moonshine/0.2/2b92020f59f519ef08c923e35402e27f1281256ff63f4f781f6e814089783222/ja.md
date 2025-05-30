@@ -2,6 +2,6 @@
 isroot(genealogy, v)
 ```
 
-`v`がルートである場合はTrueです。
+`v`がルートであれば真。
 
-関連情報としては、[`isleaf`](@ref)、[`isivertex`](@ref)があります。
+関連項目としては[`isleaf`](@ref)、[`isivertex`](@ref)があります。

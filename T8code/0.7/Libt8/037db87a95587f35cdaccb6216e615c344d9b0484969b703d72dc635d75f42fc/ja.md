@@ -2,7 +2,7 @@
 t8_geometry_jacobian(cmesh, gtreeid, ref_coords, num_coords, jacobian)
 ```
 
-与えられた参照点での木のヤコビアンを評価します。
+指定された参照点での木のヤコビアンを評価します。
 
 # 引数
 

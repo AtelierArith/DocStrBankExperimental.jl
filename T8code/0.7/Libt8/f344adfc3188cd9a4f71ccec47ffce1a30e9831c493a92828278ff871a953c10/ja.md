@@ -2,14 +2,14 @@
 t8_cmesh_trees_copy_part(trees_dest, part_dest, trees_src, part_src)
 ```
 
-ツリー配列をあるパートから別のパートにコピーします。
+1つのパートから別のパートにツリー配列をコピーします。
 
 # 引数
 
-  * `trees_dest`:[in,out] 目的地パートのツリー構造体。
-  * `part_dest`:[in] 目的地パートのインデックス。t8*cmesh*trees*start*partによって初期化されている必要があり、alloc = 0でなければなりません。
+  * `trees_dest`:[in,out] 目的のパートのツリー構造体。
+  * `part_dest`:[in] 目的のパートのインデックス。alloc = 0でt8*cmesh*trees*start*partによって初期化されている必要があります。
   * `trees_src`:[in] ソースパートのツリー構造体。
-  * `part_src`:[in] 目的地パートのインデックス。これは有効なパートでなければならず、t8*cmesh*trees*finish*partが呼び出されている必要があります。
+  * `part_src`:[in] 目的のパートのインデックス。有効なパートである必要があり、したがってt8*cmesh*trees*finish*partが呼び出されている必要があります。
 
 ### プロトタイプ
 

@@ -8,7 +8,7 @@ CrystalNets.jl
 julia --project=/path/to/CrystalNets/ /path/to/CrystalNets/src/CrystalNets.jl
 ```
 
-そうでない場合、モジュールとして、化学ファイル形式で与えられた結晶の基盤となるネットを認識するために、エントリーポイントは次の実行です：
+そうでない場合、モジュールとして、化学ファイル形式で与えられた結晶の基盤となるネットを認識しようとするには、エントリーポイントは次の実行です：
 
 ```julia
 julia> using CrystalNets

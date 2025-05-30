@@ -7,9 +7,9 @@ set_objective_coefficient(
 ) where {T}
 ```
 
-`variables_1` と `variables_2` に関連付けられた複数の二次目的係数を `coefficients` に設定します。これは単一の呼び出しで行われます。
+`variables_1` と `variables_2` に関連付けられた複数の二次目的係数を `coefficients` に設定します。一度の呼び出しで行います。
 
-注意: この関数は非線形目的が設定されている場合、エラーをスローします。
+注意: この関数は非線形目的が設定されている場合にエラーをスローします。
 
 ## 例
 

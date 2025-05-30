@@ -6,4 +6,4 @@ apply_forest_proba(forest::Ensemble, features, col_labels::AbstractVector)
 
 `col_labels` は、異なるラベルを含むベクトルで、例えば `["versicolor", "virginica", "setosa"]` です。その順序は出力行列の列の順序を決定します。
 
-さらに [`build_forest`](@ref) を参照してください。
+他にも [`build_forest`](@ref) を参照してください。

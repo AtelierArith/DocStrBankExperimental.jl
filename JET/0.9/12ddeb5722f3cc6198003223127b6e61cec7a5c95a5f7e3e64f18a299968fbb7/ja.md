@@ -48,14 +48,14 @@ julia> using JET, Test
 # Julia は型制約 `ref[]::Number` を `sin(ref[])` に伝播できないため、JET は `NoMethodError` を報告します
 julia> f(ref) = isa(ref[], Number) ? sin(ref[]) : nothing;
 
-# `ref[]` をローカル変数 `x` に抽出すれば、型安定にできます
+# `ref[]` をローカル変数 `x` に抽出することで型安定にできます
 julia> g(ref) = (x = ref[]; isa(x, Number) ? sin(x) : nothing);
 
 julia> @testset "check errors" begin
            ref = Ref{Union{Nothing,Int}}(0)
            @test_call f(ref)             # fail
            @test_call g(ref)             # fail
-           @test_call broken=true f(ref) # broken として注釈されるため、依然として "pass"
+           @test_call broken=true f(ref) # broken として注釈され、したがって "pass" となります
        end
 check errors: JET-test failed at REPL[21]:3
   Expression: #= REPL[21]:3 =# JET.@test_call f(ref)
@@ -66,5 +66,5 @@ check errors: JET-test failed at REPL[21]:3
 
 Test Summary: | Pass  Fail  Broken  Total  Time
 check errors  |    1     1       1      3  0.2s
-ERROR: 一部のテストが通過しませんでした: 1 成功, 1 失敗, 0 エラー, 1 壊れた.
+ERROR: 一部のテストが通過しませんでした: 1 通過, 1 失敗, 0 エラー, 1 壊れた.
 ```

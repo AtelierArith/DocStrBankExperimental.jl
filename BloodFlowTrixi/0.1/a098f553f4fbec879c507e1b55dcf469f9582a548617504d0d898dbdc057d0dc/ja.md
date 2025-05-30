@@ -7,7 +7,7 @@ boundary_condition_outflow(u_inner, orientation_or_normal, x, t, surface_flux_fu
 ### パラメータ
 
   * `u_inner`: 境界での内部状態ベクトル。
-  * `orientation_or_normal`: 境界方向を示す方向インデックスまたは法線ベクトル。
+  * `orientation_or_normal`: 境界方向を示すオリエンテーションインデックスまたは法線ベクトル。
   * `x`: 境界での位置ベクトル。
   * `t`: 時間値。
   * `surface_flux_function`: 表面フラックスを計算する関数。

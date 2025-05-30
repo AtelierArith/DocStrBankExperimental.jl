@@ -37,7 +37,7 @@ julia> treewidth(graph, alg)
 
   * `dense_row`: 密な行パラメータ
   * `dense_column`: 密な列パラメータ
-  * `aggressive`: 積極的吸収
+  * `aggressive`: 攻撃的吸収
 
 ### 参考文献
 

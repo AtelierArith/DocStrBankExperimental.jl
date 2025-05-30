@@ -33,4 +33,4 @@ xw = acwpt(x, wt)
 x̃ = iacwpt(xw)
 ```
 
-**関連項目:** [`iacdwt`](@ref), [`acwpt`](@ref)
+**参照:** [`iacdwt`](@ref), [`acwpt`](@ref)

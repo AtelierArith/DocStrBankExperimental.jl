@@ -30,7 +30,7 @@ struct CameraCalibration{R<:Real, N} <: CameraModels.AbstractCameraModel
 
           * `(x,y) [CamXYZ] <==> (j,i) [Images.jl] <==> (u,v) [OpenCV]` – *画像フレーム*における`(u,v) <==> (j,i)`を注意深く見てください。
   * すべてのことに対して右手の法則に従ってください。
-  * `struct`および`mutable struct`型に対して実装を開発するために、抽象型[`AbstractCameraModel`](@ref)が提供されています。
+  * `struct`および`mutable struct`タイプに対して実装を開発するために、抽象型[`AbstractCameraModel`](@ref)が提供されています。
 
 開発ノート
 

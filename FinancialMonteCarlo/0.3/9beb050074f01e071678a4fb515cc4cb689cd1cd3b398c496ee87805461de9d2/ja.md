@@ -1,10 +1,10 @@
-ShiftedLogNormalMixtureのための構造体
+ShiftedLogNormalMixtureの構造体
 
 ```
 	lnmModel=ShiftedLogNormalMixture(η::Array{num1},λ::Array{num2},num3) where {num1,num2,num3<: Number}
 ```
 
-どこで：
+ここで：
 
 ```
 	η  =	ボラティリティの配列。

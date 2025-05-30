@@ -25,6 +25,6 @@ parse_constraint_call(
 この関数は次のものを返さなければなりません：
 
   * `parse_code::Expr`: `build_constraint` の前に呼び出す必要があるセットアップまたは書き換えコードを含む式
-  * `build_code::Expr`: `is_vectorized` に応じて `build_constraint(` または `build_constraint.(` を呼び出す式
+  * `build_code::Expr`: `is_vectorized` に応じて `build_constraint(` または `build_constraint.(` を呼び出す式。
 
 関連情報: [`parse_constraint_head`](@ref), [`build_constraint`](@ref)

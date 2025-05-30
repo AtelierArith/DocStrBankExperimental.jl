@@ -4,7 +4,7 @@ real(z)
 
 複素数 `z` の実部を返します。
 
-関連項目: [`imag`](@ref), [`reim`](@ref), [`complex`](@ref), [`isreal`](@ref), [`Real`](@ref).
+関連項目: [`imag`](@ref), [`reim`](@ref), [`complex`](@ref), [`isreal`](@ref), [`Real`](@ref)。
 
 # 例
 

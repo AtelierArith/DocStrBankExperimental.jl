@@ -1,8 +1,8 @@
 ```
-11月
+Nov
 ```
 
-[`November`](@ref)の略称です。
+[`November`](@ref)の略語です。
 
 # 例
 

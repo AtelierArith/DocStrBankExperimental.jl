@@ -19,7 +19,7 @@ t8_forest_cmesh_ltreeid_to_ltreeid(forest, lctreeid)
 
 # 参照
 
-https://github.com/DLR-AMR/t8code/wiki/Tree-indexing 木のインデックス付けに関する詳細については、こちらをご覧ください。
+https://github.com/DLR-AMR/t8code/wiki/Tree-indexing で木のインデックス付けに関する詳細を確認してください。
 
 ### プロトタイプ
 

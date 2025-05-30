@@ -2,4 +2,4 @@
 error(msg...)
 ```
 
-`ErrorException`を、`string(msg...)`によって構築されたメッセージで発生させます。
+`string(msg...)`で構築されたメッセージを持つ`ErrorException`を発生させます。

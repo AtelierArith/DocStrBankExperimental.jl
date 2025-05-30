@@ -4,7 +4,7 @@ aws_mqtt5_client_outbound_topic_alias_behavior_type
 
 アウトバウンドトピックエイリアスの動作は、このタイプによって制御されます。
 
-トピックエイリアスの動作については、https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901113 を参照してください。
+トピックエイリアスの動作については、https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901113 に記載されています。
 
 サーバーがトピックエイリアスを許可している場合、この設定はクライアントからサーバーに送信されるPUBLISHパケットでトピックエイリアスがどのように使用されるかを制御します。
 

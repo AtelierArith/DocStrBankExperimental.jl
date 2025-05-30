@@ -9,7 +9,7 @@ tanh(x)
 # 例
 
 ```jldoctest
-julia> tanh.(-3:3f0)  # ここで 3f0 は Float32 型です
+julia> tanh.(-3:3f0)  # ここで 3f0 は Float32
 7-element Vector{Float32}:
  -0.9950548
  -0.9640276

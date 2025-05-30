@@ -16,7 +16,7 @@ t8_forest_get_element(forest, lelement_id, ltreeid)
 
 # 戻り値
 
-要素へのポインタ。要素が存在しない場合はNULL。
+要素へのポインタ。この要素が存在しない場合はNULL。
 
 ### プロトタイプ
 

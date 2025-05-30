@@ -26,4 +26,4 @@ y = randn(8)
 snr(x, y)
 ```
 
-**関連項目:** [`relativenorm`](@ref), [`psnr`](@ref), [`ssim`](@ref)
+**関連情報:** [`relativenorm`](@ref), [`psnr`](@ref), [`ssim`](@ref)

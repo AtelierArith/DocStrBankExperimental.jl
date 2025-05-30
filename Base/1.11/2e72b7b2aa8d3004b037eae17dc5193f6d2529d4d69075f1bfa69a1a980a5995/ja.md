@@ -2,9 +2,9 @@
 all(itr) -> Bool
 ```
 
-ブールコレクションのすべての要素が `true` であるかどうかをテストし、`itr` で最初の `false` 値が見つかった時点で `false` を返します（ショートサーキット）。`true` でショートサーキットするには、[`any`](@ref) を使用してください。
+ブールコレクションのすべての要素が `true` であるかどうかをテストし、`itr` で最初の `false` 値が見つかるとすぐに `false` を返します（ショートサーキット）。`true` でショートサーキットするには、[`any`](@ref) を使用してください。
 
-入力に [`missing`](@ref) 値が含まれている場合、すべての非欠損値が `true` である場合（または同等に、入力に `false` 値が含まれていない場合）には `missing` を返します。これは [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) に従います。
+入力に [`missing`](@ref) 値が含まれている場合、すべての非欠損値が `true` である場合（または同等に、入力に `false` 値が含まれていない場合）、[三値論理](https://en.wikipedia.org/wiki/Three-valued_logic)に従って `missing` を返します。
 
 関連項目: [`all!`](@ref), [`any`](@ref), [`count`](@ref), [`&`](@ref), , [`&&`](@ref), [`allunique`](@ref).
 

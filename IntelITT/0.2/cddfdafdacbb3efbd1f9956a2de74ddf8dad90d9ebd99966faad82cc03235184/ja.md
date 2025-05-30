@@ -5,4 +5,4 @@ realloc(h::HeapFunction, ptr::Ptr{Nothing}, new_size::Integer;
 end
 ```
 
-`ptr`を`new_size`に再割り当てするメモリのブロックをマークします。このブロックは新しいメモリへのポインタを返す必要があります。
+`ptr`を`new_size`に再割り当てするコードブロックをマークします。このブロックは新しいメモリへのポインタを返す必要があります。

@@ -4,7 +4,7 @@ checkpoint([prefix], name, data::Pair...)
 checkpoint([prefix], name, data::Dict)
 ```
 
-指定された `label` と値 `data` でデータチェックポイントを定義します。デフォルトでは、チェックポイントは何もしない操作であり、明示的に設定する必要があります。
+指定された `label` と値 `data` を持つデータチェックポイントを定義します。デフォルトでは、チェックポイントは何もしない操作であり、明示的に設定する必要があります。
 
 ```
 checkpoint(session, data)

@@ -2,7 +2,7 @@
 graphemes(s::AbstractString, m:n) -> SubString
 ```
 
-`s`の`m`番目から`n`番目までのグラフェムからなる[`SubString`](@ref)を返します。ここで、2番目の引数`m:n`は整数値の[`AbstractUnitRange`](@ref)です。
+`s`の`m`番目から`n`番目のグラフェムからなる[`SubString`](@ref)を返します。ここで、2番目の引数`m:n`は整数値の[`AbstractUnitRange`](@ref)です。
 
 ざっくり言うと、これは文字列内の`m:n`番目のユーザーが認識する「文字」に対応します。例えば：
 

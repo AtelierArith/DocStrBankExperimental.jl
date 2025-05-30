@@ -16,12 +16,10 @@ Y. Saadによって記述された[ホワイトペーパー](https://www-users.c
   * `nentries::Integer`: 配列の長さ
   * `colptr::Vector{Ti} where Ti<:Integer`: 列エントリのリンクリスト。初期長さはnで、新しいエントリごとに成長します。
 
-    colptr[index]はリスト内の次のインデックスを含むか、ゼロを含み、後者の場合は列jごとに1<=j<=nで始まるリストを終了します。
-  * `rowval::Vector{Ti} where Ti<:Integer`: 行番号。各インデックスはゼロ（初期状態）またはcolptr内の列エントリリストに対応する行番号を含みます。
+    colptr[index]はリスト内の次のインデックスを含むか、ゼロを含み、後者の場合は列jごとにインデックス1<=j<=nで始まるリストを終了します。
+  * `rowval::Vector{Ti} where Ti<:Integer`: 行番号。各インデックスにはゼロ（初期状態）またはcolptr内の列エントリリストに対応する行番号が含まれます。
 
     初期長さはnで、新しいエントリごとに成長します。
-  * `nzval::Vector`: 各ペア(colptr[index], rowval[index])に対応する非ゼロエントリ値
+  * `nzval::Vector`: 各ペア（colptr[index], rowval[index]）に対応する非ゼロエントリ値
 
     初期長さはnで、新しいエントリごとに成長します。
-
-```

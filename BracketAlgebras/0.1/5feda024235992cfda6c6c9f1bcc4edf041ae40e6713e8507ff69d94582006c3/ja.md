@@ -2,7 +2,7 @@
 straighten(b::BracketAlgebraElem)
 ```
 
-ブラケット代数要素 `b` に対して、Sturmfels 2008 のアルゴリズム 3.5.6 に従って直線化アルゴリズムを実行します。直線化アルゴリズムは、ブラケット代数要素 `b` のグレブナー削減を直線化シジゲをグレブナー基底として行います。結果は、すべての項が標準である `b` の標準形です。さらに [`straightening_sizyge`](@ref)、[`standard_violation`](@ref)、[`is_standard`](@ref) も参照してください。
+ブラケット代数要素 `b` に対して、Sturmfels 2008 のアルゴリズム 3.5.6 に従って整列アルゴリズムを実行します。整列アルゴリズムは、ブラケット代数要素 `b` のグレブナー還元を整列シジゲをグレブナー基底として行います。結果は、すべての項が標準である `b` の標準形です。詳細については、[`straightening_sizyge`](@ref)、[`standard_violation`](@ref)、[`is_standard`](@ref) を参照してください。
 
 # 例
 

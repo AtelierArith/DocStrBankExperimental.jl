@@ -15,7 +15,7 @@ julia> q = Edges(Dual,w);
 
 julia> grid_interpolate!(q,w)
 Edges{Dual,8,6,Float64} data
-u (グリッド方向)
+u (in grid orientation)
 6×7 Array{Float64,2}:
  0.0  0.0  0.0  0.0  0.0  0.0  0.0
  0.0  0.0  0.0  0.0  0.0  0.0  0.0
@@ -23,7 +23,7 @@ u (グリッド方向)
  0.0  0.0  0.0  0.0  0.0  0.0  0.0
  0.0  0.0  0.0  0.0  0.0  0.0  0.0
  0.0  0.0  0.0  0.0  0.0  0.0  0.0
-v (グリッド方向)
+v (in grid orientation)
 5×8 Array{Float64,2}:
  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
  0.0  0.0  0.5  0.0  0.0  0.0  0.0  0.0

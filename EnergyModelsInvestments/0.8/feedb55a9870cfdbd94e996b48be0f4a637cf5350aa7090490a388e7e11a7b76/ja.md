@@ -8,5 +8,5 @@ SemiContinuousInvestment <: Investment
 
 # フィールド
 
-  * **`min_add::TimeProfile`** は、投資期間における最小追加能力です。 `SemiContinuousInvestment`の場合、これはモデルが各投資期間においてこの能力に少なくとも投資しなければならないことを意味します。 モデルはまた、全く投資しないことを選択することもできます。
+  * **`min_add::TimeProfile`** は、投資期間における最小追加能力です。 `SemiContinuousInvestment`の場合、これはモデルが各投資期間においてこの能力に少なくとも投資しなければならないことを意味します。モデルは投資を決定する各投資期間においてこの能力に投資する必要があります。モデルは全く投資しないことを選択することもできます。
   * **`max_add::TimeProfile`** は、投資期間における最大追加能力です。

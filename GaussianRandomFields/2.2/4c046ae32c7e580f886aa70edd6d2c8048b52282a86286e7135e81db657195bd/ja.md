@@ -2,7 +2,7 @@
 SeparableCovarianceFunction(cov...)
 ```
 
-`cov`のための`length(cov)`次元の分離可能共分散関数。異方性共分散関数を定義するのに便利で、非分離可能な`KarhunenLoeve`展開が高価すぎる場合に使用します。
+`cov`の次元数`length(cov)`の分離可能共分散関数。異方性共分散関数を定義するのに便利で、非分離可能な`KarhunenLoeve`展開が高価すぎる場合に使用します。
 
 # 例
 
@@ -12,4 +12,4 @@ julia> SeparableCovarianceFunction(Exponential(0.1), Matern(0.01, 1.0))
 
 ```
 
-関連情報: [`CovarianceFunction`](@ref), [`KarhunenLoeve`](@ref)
+関連項目: [`CovarianceFunction`](@ref), [`KarhunenLoeve`](@ref)

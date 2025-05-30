@@ -6,6 +6,7 @@ matrixrandomizer(m [,rng]; method = curveball)
 
 # 例
 
-``` m = rand(0:4, 5, 6) rmg = matrixrandomizer(m)
+```m = rand(0:4, 5, 6) rmg = matrixrandomizer(m)
 
-random1 = rand(rmg) random2 = rand(rmg) ```
+random1 = rand(rmg) random2 = rand(rmg) ``
+```

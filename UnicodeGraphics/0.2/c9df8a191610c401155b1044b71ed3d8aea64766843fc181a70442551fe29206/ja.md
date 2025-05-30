@@ -4,7 +4,7 @@ ustring(f, A, [method])
 
 `A`のバイナリUnicode表現を含む文字列を返し、`f`が`true`を返す値を埋めます。
 
-印刷方法は、`:braille`、`:block`、`:quadrant`、`:sextant`、または`:octant`のいずれかを渡すことで指定できます。デフォルトは`:braille`です。(`:octant`は、Unicode 16をサポートするフォントまたはターミナルエミュレーターが必要です。そうでない場合、出力は奇妙に見えます。)
+印刷方法は、`:braille`、`:block`、`:quadrant`、`:sextant`、または`:octant`のいずれかを渡すことで指定できます。デフォルトは`:braille`です。(`:octant`は、Unicode 16をサポートするフォントまたはターミナルエミュレーターが必要です。そうでない場合、出力は奇妙に見えるでしょう。)
 
 # 例
 

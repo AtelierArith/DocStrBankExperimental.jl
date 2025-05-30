@@ -29,6 +29,6 @@ julia> obj.x
 1
 ```
 
-`getproperty` は必要な場合にのみオーバーロードすべきです。なぜなら、構文 `obj.f` の動作が異常であると混乱を招く可能性があるからです。また、メソッドを使用することがしばしば好ましいことにも注意してください。詳細については、このスタイルガイドのドキュメントを参照してください: [Prefer exported methods over direct field access](@ref)。
+`getproperty` は必要な場合にのみオーバーロードすべきです。なぜなら、構文 `obj.f` の動作が異常であると混乱を招く可能性があるからです。また、メソッドを使用する方がしばしば好ましいことに注意してください。詳細については、このスタイルガイドのドキュメントを参照してください: [直接フィールドアクセスよりもエクスポートされたメソッドを優先する](@ref)。
 
-また、[`getfield`](@ref Core.getfield)、[`propertynames`](@ref Base.propertynames) および [`setproperty!`](@ref Base.setproperty!) も参照してください。
+また、[`getfield`](@ref Core.getfield)、[`propertynames`](@ref Base.propertynames)、および [`setproperty!`](@ref Base.setproperty!) も参照してください。

@@ -7,4 +7,4 @@ mutable struct FEMMDeforLinear{
 } <: AbstractFEMMDeforLinear
 ```
 
-線形変形有限要素モデリングマシンの型。
+線形変形有限要素モデリング機械の型。

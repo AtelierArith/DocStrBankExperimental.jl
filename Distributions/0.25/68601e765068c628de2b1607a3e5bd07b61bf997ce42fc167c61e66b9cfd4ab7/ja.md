@@ -6,4 +6,4 @@ Continuous <: ValueSupport
 
 それは可算無限大です。例えば、実数直線上の区間であることがあります。
 
-関連項目: [`Discrete`](@ref), [`ValueSupport`](@ref)
+参照: [`Discrete`](@ref), [`ValueSupport`](@ref)

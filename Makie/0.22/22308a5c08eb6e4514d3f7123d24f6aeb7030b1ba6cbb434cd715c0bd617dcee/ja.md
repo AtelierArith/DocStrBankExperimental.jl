@@ -5,7 +5,7 @@ ispressed(parent, collection::Union{Set, Vector, Tuple}[, waspressed = nothing])
 ispressed(parent, op::BooleanOperator[, waspressed = nothing])
 ```
 
-この関数は、ボタンまたはボタンの組み合わせが押されているかどうかを確認します。
+この関数は、ボタンまたはボタンの組み合わせが押されているかどうかをチェックします。
 
 真または偽が与えられた場合、`ispressed`はそれぞれ真または偽を返します。これにより、外部からインタラクションを「常にオン」または「常にオフ」にする方法が提供されます。
 

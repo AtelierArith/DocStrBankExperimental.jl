@@ -16,7 +16,7 @@ x::Vector、y::Vector、z::Matrixをスパンする平面の3D等高線プロッ
 
 **`color`** =  `nothing`  — 等高線の色。`nothing`の場合、色は等高線レベルの数値と`colormap`および`colorrange`の組み合わせによって決まります。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()`を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出すことができます。
 
 **`colorrange`** =  `automatic`  — `colormap`の開始点と終了点を表す値。
 
@@ -73,10 +73,10 @@ x::Vector、y::Vector、z::Matrixをスパンする平面の3D等高線プロッ
 
 **`space`** =  `:data`  — プロットを包含するボックスの変換空間を設定します。可能な入力については`Makie.spaces()`を参照してください。
 
-**`ssao`** =  `false`  — プロットがssao（スクリーンスペース環境遮蔽）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`のときにのみ適用されます。
+**`ssao`** =  `false`  — プロットがssao（スクリーンスペース環境光遮蔽）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`のときにのみ適用されます。
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明度をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序に依存しない透明度を使用します。
+**`transparency`** =  `false`  — プロットが透明度をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序独立透明度を使用する結果になります。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。

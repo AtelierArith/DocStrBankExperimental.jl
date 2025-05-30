@@ -1,4 +1,4 @@
-粒子が[`is_boson`](@ref)であり、$y$方向に偏光を持つことを示す具体的な型です。
+粒子が[`is_boson`](@ref)であり、$y$方向に偏光を持つことを示す具体的な型。
 
 ```jldoctest
 julia> using QEDbase

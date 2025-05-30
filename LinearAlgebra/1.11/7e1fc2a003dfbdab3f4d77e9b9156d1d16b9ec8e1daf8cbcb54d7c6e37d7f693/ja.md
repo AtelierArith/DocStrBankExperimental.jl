@@ -2,24 +2,24 @@
 givens(f::T, g::T, i1::Integer, i2::Integer) where {T} -> (G::Givens, r::T)
 ```
 
-`G` とスカラー `r` を計算します。これにより、任意のベクトル `x` に対して
+Givens回転`G`とスカラー`r`を計算します。これは、任意のベクトル`x`に対して次のようになります。
 
 ```
 x[i1] = f
 x[i2] = g
 ```
 
-乗算の結果が
+乗算の結果
 
 ```
 y = G*x
 ```
 
-次の性質を持つようになります。
+は次の性質を持ちます。
 
 ```
 y[i1] = r
 y[i2] = 0
 ```
 
-詳細は [`LinearAlgebra.Givens`](@ref) を参照してください。
+詳細は[`LinearAlgebra.Givens`](@ref)を参照してください。

@@ -11,5 +11,5 @@ struct MaxSizeBranchCount
 
 # コンストラクタ
 
-  * `MaxSizeBranchCount(size::Int)`: 指定されたサイズで `MaxSizeBranchCount` を作成し、カウントを 1 に初期化します。
+  * `MaxSizeBranchCount(size::Int)`: 指定されたサイズで `MaxSizeBranchCount` を作成し、カウントを1に初期化します。
   * `MaxSizeBranchCount(size::Int, count::Int)`: 指定されたサイズとカウントで `MaxSizeBranchCount` を作成します。

@@ -2,7 +2,7 @@
 t8_forest_partition_next_nonempty_rank(forest, rank)
 ```
 
-もし`t8_forest_partition_create_offsets`がすでに呼び出されている場合、与えられたランクに対して次の空でない大きなランクを計算します。
+`t8*forest*partition*create*offsets`がすでに呼び出されている場合、与えられたランクに対して次の空でない大きなランクを計算します。
 
 # 引数
 
@@ -11,7 +11,7 @@ t8_forest_partition_next_nonempty_rank(forest, rank)
 
 # 戻り値
 
-ランクq > *rank* であり、森に*q*の要素がある。もしそのような*q*が存在しない場合、mpisizeを返します。
+ランク q > *rank* であり、森に *q* の要素がある。もしそのような *q* が存在しない場合、mpisizeを返します。
 
 ### プロトタイプ
 

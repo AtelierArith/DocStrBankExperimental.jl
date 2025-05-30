@@ -7,11 +7,11 @@ t8_cmesh_ltreeid_to_ghostid(cmesh, ltreeid)
 # 引数
 
   * `cmesh`:[in] 考慮すべきcmesh。
-  * `ltreeid`:[in] ゴーストのローカルIDで、t8*cmesh*treeid*is*ghostを満たし、したがって num*trees <= *ltreeid* < num*trees + num_ghosts
+  * `ltreeid`:[in] ゴーストのローカルIDで、t8*cmesh*treeid*is*ghostを満たし、したがってnum*trees <= *ltreeid* < num*trees + num_ghosts
 
 # 戻り値
 
-すべてのゴースト内のゴーストのインデックス、したがってインデックス 0 <= index < num_ghosts *cmesh* はこの関数を呼び出す前にコミットされている必要があります。
+すべてのゴースト内のゴーストのインデックス、したがってインデックスは0 <= index < num_ghosts *cmesh*はこの関数を呼び出す前にコミットされている必要があります。
 
 ### プロトタイプ
 

@@ -2,7 +2,7 @@
 istreechild(net::HybridNetwork)
 ```
 
-タプル `(rooted, semi_weakly, semi_strongly)` で、各要素は真または偽であり、`net` が次のいずれかであるかどうかを示します。
+タプル `(rooted, semi_weakly, semi_strongly)` は、各要素が真または偽であり、`net` が次のいずれかであるかどうかを示します。
 
   * 根付きネットワークとしてのツリー子
   * 半指向ネットワークとしての弱いツリー子

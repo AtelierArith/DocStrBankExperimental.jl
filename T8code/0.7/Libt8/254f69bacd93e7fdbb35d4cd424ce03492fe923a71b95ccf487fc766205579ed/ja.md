@@ -5,7 +5,7 @@ t8_shmem_array_end_writing(array)
 共有メモリ配列の書き込みモードを無効にします。
 
 !!! note
-    この関数はMPIの集合的な操作です。
+    この関数はMPIの集合的なものです。
 
 
 # 引数

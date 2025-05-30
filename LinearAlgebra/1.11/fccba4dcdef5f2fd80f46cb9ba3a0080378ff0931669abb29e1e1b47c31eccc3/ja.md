@@ -6,9 +6,9 @@ CholeskyPivoted
 
 三角形のコレスキー因子は、因子分解 `F::CholeskyPivoted` から `F.L` と `F.U` を介して取得でき、置換は `F.p` を介して取得できます。ここで、`A[F.p, F.p] ≈ Ur' * Ur ≈ Lr * Lr'` であり、`Ur = F.U[1:F.rank, :]` および `Lr = F.L[:, 1:F.rank]` です。または、`A ≈ Up' * Up ≈ Lp * Lp'` であり、`Up = F.U[1:F.rank, invperm(F.p)]` および `Lp = F.L[invperm(F.p), 1:F.rank]` です。
 
-`CholeskyPivoted` オブジェクトに対して利用可能な関数は、[`size`](@ref)、[`\`](@ref)、[`inv`](@ref)、[`det`](@ref)、および [`rank`](@ref) です。
+`CholeskyPivoted` オブジェクトに対して利用可能な関数は次のとおりです: [`size`](@ref), [`\`](@ref), [`inv`](@ref), [`det`](@ref), および [`rank`](@ref)。
 
-分解を反復することで、成分 `L` と `U` が得られます。
+分解を反復することで、成分 `L` と `U` が生成されます。
 
 # 例
 

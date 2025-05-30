@@ -16,5 +16,5 @@ DataInspector(figure_axis_or_scene = current_figure(); kwargs...)
   * `indicator_linestyle = nothing`: 選択インジケーターの線のスタイル。
   * `enable_indicators = true`: インジケーターを有効または無効にします。
   * `depth = 9e3`: ツールチップの深さの値。この値は高く設定する必要があり、ツールチップが常に前面に表示されるようにします。
-  * `apply_tooltip_offset = true`: マーカーサイズなどに基づいてツールチップのオフセットを有効または無効にします。
-  * および`Tooltip`からのすべての属性。
+  * `apply_tooltip_offset = true`: 例えば、マーカーサイズに基づいてツールチップのオフセットを有効または無効にします。
+  * そして`Tooltip`からのすべての属性。

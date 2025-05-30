@@ -2,4 +2,4 @@
 get_warm_start(optimizer::BendersAlgorithm)
 ```
 
-`BendersAlgorithm`の`options`フィールドから`warm_start`の値を返します。
+`BendersAlgorithm`の`options`フィールドからwarm_startの値を返します。

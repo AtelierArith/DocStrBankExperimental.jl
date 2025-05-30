@@ -3,7 +3,7 @@ upwind2_stencil(ϕ, U, Δt, Δz; kwargs...)
 
 ```
 
-1次元の2次上流輸送、別名線形上流差分（LUD）：https://en.wikipedia.org/wiki/Upwind_scheme。
+1次元の2次元上流輸送、別名線形上流差分（LUD）：https://en.wikipedia.org/wiki/Upwind_scheme。
 
   * ϕは現在の時間ステップでのスカラー場で、長さ5のベクトルである必要があります（左に2つのセル、中央のセル、右に2つのセル）。
   * Uは中央のグリッドセルの両端での速度で、長さ2のベクトルである必要があります。

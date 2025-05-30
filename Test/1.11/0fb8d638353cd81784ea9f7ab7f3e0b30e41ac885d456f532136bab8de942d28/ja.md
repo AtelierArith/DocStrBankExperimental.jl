@@ -2,9 +2,9 @@
 @test_deprecated [pattern] expression
 ```
 
-`--depwarn=yes` の場合、`expression` が非推奨警告を出力することをテストし、`expression` の値を返します。ログメッセージ文字列は、デフォルトで `r"deprecated"i` に対して `pattern` と一致します。
+`--depwarn=yes` の場合、`expression` が非推奨警告を発することをテストし、`expression` の値を返します。ログメッセージ文字列は、デフォルトで `r"deprecated"i` に対して `pattern` と一致します。
 
-`--depwarn=no` の場合、単に `expression` を実行した結果を返します。`--depwarn=error` の場合、`ErrorException` がスローされることを確認します。
+`--depwarn=no` の場合、単に `expression` を実行した結果を返します。`--depwarn=error` の場合、ErrorException がスローされることを確認します。
 
 # 例
 

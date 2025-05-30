@@ -9,14 +9,14 @@ t8_cmesh_get_attribute_gloidx_array(cmesh, package_id, key, ltree_id, data_count
 
 
 !!! note
-    属性配列のデータエントリの数を保存していないため、実際に *data_count* の数のエントリが保存されているかどうかのチェックは行われません。別の属性を使用してデータカウントを自分で追跡することができます。
+    属性配列に実際に *data_count* のエントリが格納されているかどうかはチェックされません。属性配列のデータエントリの数は保存されていないためです。別の属性を使用してデータカウントを自分で追跡することができます。
 
 
 # 引数
 
   * `cmesh`:[in] cmesh。
   * `package_id`:[in] 有効なソフトウェアパッケージの識別子。
-  * `key`:[in] 同じ *package_id* を持つこの木のすべての属性の下で属性を識別するために使用されるキー。
+  * `key`:[in] この木のすべての属性の中で同じ *package_id* を持つ属性を識別するために使用されるキー。
   * `ltree_id`:[in] 木のローカル番号。
   * `data_count`:[in] 要求される配列のエントリ数。この数は、対応する t8*cmesh*set*attribute*gloidx*array への呼び出しの *data*count* パラメータ以下でなければなりません。
 

@@ -82,7 +82,7 @@ julia> irf(GPCM, 0.0, beta, 1)
 0.27487115408319557
 ```
 
-### 評価スケールモデル
+### 評定スケールモデル
 
 ```jldoctest
 julia> beta = (b = 0.0, t = zeros(2));

@@ -2,7 +2,7 @@
 nameof(t::DataType) -> Symbol
 ```
 
-`DataType`（親モジュールなし）の名前をシンボルとして取得します（`UnionAll`でラップされている可能性があります）。
+`DataType`（潜在的に `UnionAll` でラップされた） の名前を親モジュールなしでシンボルとして取得します。
 
 # 例
 

@@ -3,7 +3,7 @@ matrix_decompose(mat, basis)
 
 ```
 
-行列 `mat` を行列基底 `basis` に分解します
+行列 `mat` を行列基底 `basis` に分解します。
 
 # 例
 

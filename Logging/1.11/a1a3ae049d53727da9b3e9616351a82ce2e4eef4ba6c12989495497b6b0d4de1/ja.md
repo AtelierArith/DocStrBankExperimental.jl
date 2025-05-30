@@ -2,4 +2,4 @@
 エラー
 ```
 
-[`LogLevel(2000)`](@ref LogLevel) のエイリアス。
+[`LogLevel(2000)`](@ref LogLevel) のエイリアスです。

@@ -20,7 +20,7 @@ SlidingWindowConfig(indicators, change_metrics; kwargs...)
 
   * `width_ind::Int=100, stride_ind::Int=1`: 入力時系列から指標を計算するために [`WindowViewer`](@ref) に与えられる幅とストライド。
   * `width_cha::Int=50, stride_cha::Int=1`: 指標の時系列から変化メトリックの時系列を計算するために [`WindowViewer`](@ref) に与えられる幅とストライド。
-  * `whichtime = midpoint`: 指標/変化メトリックの時系列に対応する時間ベクトルは、[`estimate_changes`](@ref) の `t` からキーワード `whichtime` を使用して取得されます。オプションには以下が含まれます：
+  * `whichtime = midpoint`: 指標 / 変化メトリックの時系列に対応する時間ベクトルは、キーワード `whichtime` を使用して [`estimate_changes`](@ref) の `t` から取得されます。オプションには以下が含まれます：
 
       * `last`: 各ウィンドウの最後の時間点を使用
       * `midpoint`: 各時間ウィンドウの中間時間点を使用
@@ -35,5 +35,3 @@ SlidingWindowConfig(indicators, change_metrics; kwargs...)
 
     したがって、`mean` や `median` など、時間ウィンドウの時間点自体を抽出するために他の関数を指定することもできます。
   * `T = Float64`: 一部の計算を初期化するための入力時系列の要素型。
-
-```

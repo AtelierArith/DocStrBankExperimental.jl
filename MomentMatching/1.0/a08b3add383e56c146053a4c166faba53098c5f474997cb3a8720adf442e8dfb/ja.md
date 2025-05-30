@@ -2,8 +2,8 @@
 
 # 必要な引数
 
-  * estset: EstimationSetupのインスタンス。別のドキュメント[`EstimationSetup`](@ref)を参照してください。
-  * mmsolu: EstimationResultのインスタンス。別のドキュメント[`EstimationResult`](@ref)を参照してください。
+  * estset: EstimationSetupのインスタンス。別のドキュメントを参照してください [`EstimationSetup`](@ref)。
+  * mmsolu: EstimationResultのインスタンス。別のドキュメントを参照してください [`EstimationResult`](@ref)。
   * margobj: 最小化点の周りの目的関数値を含む配列。
 
 # オプションの引数

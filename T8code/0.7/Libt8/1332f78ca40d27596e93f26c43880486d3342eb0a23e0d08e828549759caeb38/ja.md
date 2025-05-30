@@ -10,7 +10,7 @@ t8_cmesh_trees_get_attribute(trees, ltree_id, package_id, key, size, is_ghost)
   * `ltree_id`:[in] 属性が問い合わせられるツリーのローカルID。
   * `package_id`:[in] 属性のパッケージ識別子。
   * `key`:[in] 同じパッケージ識別子内のすべての属性の中での属性のキー。
-  * `size`:[out] NULLでない場合、属性のサイズ（バイト単位）がここに格納されます。
+  * `size`:[out] NULLでない場合、属性のサイズ（バイト単位）がここに保存されます。
   * `is_ghost`:[in] trueの場合、*ltree_id*はゴーストのlocal_idとして解釈されます。
 
 # 戻り値

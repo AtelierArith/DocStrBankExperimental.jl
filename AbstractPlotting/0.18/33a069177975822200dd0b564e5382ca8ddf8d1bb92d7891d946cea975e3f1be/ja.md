@@ -2,7 +2,7 @@
 arc(origin, radius, start_angle, stop_angle; kwargs...)
 ```
 
-この関数は、`origin`を中心とし、半径`radius`で、`start_angle`から`stop_angle`までの円弧をプロットします。`origin`は2次元の座標（すなわち`Point2`）でなければなりません; 残りの引数は`<: Number`でなければなりません。
+この関数は、`origin`を中心とし、半径`radius`の円弧を`start_angle`から`stop_angle`までプロットします。`origin`は2次元の座標（すなわち`Point2`）でなければならず、他の引数はすべて`<: Number`でなければなりません。
 
 例:
 

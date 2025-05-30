@@ -2,7 +2,7 @@
 get3DData(eq::BloodFlowEquations2D,curve::F1,tanj::F2,nor::F3,semi,sol,time_index ::Int = 1;vtk ::Bool=false,out ::T="./datas") where {T<:AbstractString,F1<:Function,F2<:Function,F3<:Function}
 ```
 
-2D血流モデルから視覚化のための3D空間データを生成します。この関数はユニークなノード座標を抽出し、関連する流れのパラメータを計算し、円筒座標を使用して動脈領域の3D表現を生成します。オプションで、データをVTK形式でエクスポートすることができます。
+2D血流モデルから視覚化のための3D空間データを生成します。この関数はユニークなノード座標を抽出し、関連する流れのパラメータを計算し、円筒座標を使用して動脈領域の3D表現を生成します。オプションで、VTK形式でデータをエクスポートすることができます。
 
 ### パラメータ
 
@@ -18,7 +18,7 @@ get3DData(eq::BloodFlowEquations2D,curve::F1,tanj::F2,nor::F3,semi,sol,time_inde
 
 ### 戻り値
 
-次の内容を含む名前付きタプル:
+以下を含む名前付きタプル:
 
   * `x`: 生成された3DポイントのX座標。
   * `y`: 生成された3DポイントのY座標。

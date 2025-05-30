@@ -7,11 +7,11 @@ t8_geom_get_scaling_factor_face_through_volume_prism(face, ref_coords)
 # 引数
 
   * `face_index`:[in] 変位した面のインデックス。
-  * `ref_coords`:[in] 参照点の座標を含む配列。
+  * `ref_coords`:[in] 基準点の座標を含む配列。
 
 # 戻り値
 
-プリズム体積内の参照座標の点での面の変位のスケーリングファクター。
+プリズム体積内の基準座標の点での面の変位のスケーリングファクター。
 
 ### プロトタイプ
 

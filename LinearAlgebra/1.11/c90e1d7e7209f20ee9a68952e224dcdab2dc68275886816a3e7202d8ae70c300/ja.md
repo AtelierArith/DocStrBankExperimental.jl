@@ -2,13 +2,13 @@
 cholesky(A, RowMaximum(); tol = 0.0, check = true) -> CholeskyPivoted
 ```
 
-密な対称正定値行列 `A` のピボット付きコレスキー分解を計算し、[`CholeskyPivoted`](@ref) 分解を返します。行列 `A` は、[`Symmetric`](@ref) または [`Hermitian`](@ref) [`AbstractMatrix`](@ref) であるか、*完全に* 対称またはエルミートな `AbstractMatrix` である必要があります。
+密な対称半正定値行列 `A` のピボット付きコレスキー分解を計算し、[`CholeskyPivoted`](@ref) 分解を返します。行列 `A` は、[`Symmetric`](@ref) または [`Hermitian`](@ref) [`AbstractMatrix`](@ref) であるか、*完全に* 対称またはエルミートな `AbstractMatrix` である必要があります。
 
 三角形のコレスキー因子は、分解 `F` から `F.L` と `F.U` を介して取得でき、置換は `F.p` を介して取得できます。ここで、`A[F.p, F.p] ≈ Ur' * Ur ≈ Lr * Lr'` であり、`Ur = F.U[1:F.rank, :]` および `Lr = F.L[:, 1:F.rank]` です。または、`A ≈ Up' * Up ≈ Lp * Lp'` であり、`Up = F.U[1:F.rank, invperm(F.p)]` および `Lp = F.L[invperm(F.p), 1:F.rank]` です。
 
-`CholeskyPivoted` オブジェクトに対して利用可能な関数は、[`size`](@ref)、[`\`](@ref)、[`inv`](@ref)、[`det`](@ref)、および [`rank`](@ref) です。
+`CholeskyPivoted` オブジェクトに対して利用可能な関数は次のとおりです: [`size`](@ref), [`\`](@ref), [`inv`](@ref), [`det`](@ref), および [`rank`](@ref)。
 
-引数 `tol` は、ランクを決定するための許容誤差を決定します。負の値の場合、許容誤差は機械精度になります。
+引数 `tol` は、ランクを決定するための許容誤差を決定します。負の値の場合、許容誤差は機械精度です。
 
 構築時の丸め誤差により、行列 `A` がわずかに非エルミートである場合は、`cholesky` に渡す前に `Hermitian(A)` でラップして、完全にエルミートとして扱います。
 

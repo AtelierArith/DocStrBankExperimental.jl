@@ -1,1 +1,1 @@
-[`getMagnitude`](@ref)の関数エイリアス
+[`getMagnitude`](@ref) の関数エイリアス

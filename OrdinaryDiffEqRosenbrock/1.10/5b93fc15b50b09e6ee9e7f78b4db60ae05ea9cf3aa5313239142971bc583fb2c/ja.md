@@ -24,7 +24,7 @@ Scholz4_7(; - `standardtag`: パッケージ固有のタグを使用するかど
               関数によって指定され、引数は次のように定義されます：
                 - `W`: 非線形システムの現在のヤコビ行列。アルゴリズムに応じて
                     ``I - \gamma J``または``I/\gamma - J``として指定されます。これは
-                    通常、OrdinaryDiffEq.jlによって定義された`WOperator`型です。これはオペレーターの遅延
+                    通常、OrdinaryDiffEq.jlによって定義された`WOperator`型になります。これはオペレーターの遅延
                     表現です。ユーザーは`convert(AbstractMatrix,W)`を呼び出すことで
                     `jac_prototype`に一致する`AbstractMatrix`を受け取るためにW行列を必要に応じて構築できます。
                 - `du`: 現在のODE導関数

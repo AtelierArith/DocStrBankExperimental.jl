@@ -2,7 +2,7 @@
 peek(stream[, T=UInt8])
 ```
 
-ストリームから現在の位置を進めることなく、型 `T` の値を読み取って返します。 [`startswith(stream, char_or_string)`](@ref) も参照してください。
+ストリームから現在の位置を進めることなく、型 `T` の値を読み取って返します。詳細は [`startswith(stream, char_or_string)`](@ref) を参照してください。
 
 # 例
 

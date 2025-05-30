@@ -25,7 +25,7 @@ $$
 \abs{1 - \frac{1}{N} \abs{ \tr \qty(U_{\text{goal}}, U_T)} }
 $$
 
-は *不忠実度* 目的関数であり、$Q$ は重み、$R_a$, $R_{\dot{a}}$, および $R_{\ddot{a}}$ は正則化項の重みであり、$\vb{P}^{(n)}$ は $n$ 次のパデ積分器です。
+は*不忠実度*目的関数であり、$Q$ は重み、$R_a$, $R_{\dot{a}}$, および $R_{\ddot{a}}$ は正則化項の重みであり、$\vb{P}^{(n)}$ は$n$次のパデ積分器です。
 
 # 引数
 
@@ -44,7 +44,7 @@ $$
 
 # キーワード引数
 
-  * `piccolo_options::PiccoloOptions=PiccoloOptions()`: Piccolo ソルバーのオプション
+  * `piccolo_options::PiccoloOptions=PiccoloOptions()`: Piccoloソルバーのオプション
   * `state_name::Symbol = :Ũ⃗`: 状態の名前
   * `control_name::Symbol = :a`: 制御の名前
   * `timestep_name::Symbol = :Δt`: タイムステップの名前

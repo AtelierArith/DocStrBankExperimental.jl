@@ -3,4 +3,4 @@ struct TdvpObserver
 TdvpObserver(sim, measurements, period)
 ```
 
-周期ごとに測定を行うtdvpのオブザーバーです。
+tdvpのオブザーバーで、毎回periodステップごとに測定を行います。

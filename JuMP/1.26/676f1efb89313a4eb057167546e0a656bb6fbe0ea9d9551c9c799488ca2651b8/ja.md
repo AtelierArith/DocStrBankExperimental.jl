@@ -2,7 +2,7 @@
 SkewSymmetricMatrixSpace()
 ```
 
-[`@variable`](@ref) マクロを使用して、変数の行列を反対称に制約します。
+[`@variable`](@ref) マクロを使用して、変数の行列を斜め対称に制約します。
 
 ## 例
 

@@ -7,7 +7,7 @@ LinearizingSavingCallback(ilss::Vector{IndependentlyLinearizedSolution})
 
 アルゴリズムは内部で各時間点の間に3つの等間隔の点をチェックし、線形補間された関数に対するフィットの良さを判断します。これは4次までの補間には十分ですが、より高次の補間には良好なフィットを確保するためにより多くの点が必要になるかもしれません。これはまだ実装されていません。
 
-このコールバックジェネレーターは、出力を保存するために `IndependentlyLinearizedSolution` オブジェクトを受け取ります。`IndependentlyLinearizedSolution` オブジェクト自体は、プライマル状態と共に線形化する導関数の数（ある場合）を制御します。
+このコールバックジェネレーターは、出力を格納するために `IndependentlyLinearizedSolution` オブジェクトを受け取ります。`IndependentlyLinearizedSolution` オブジェクト自体は、プライマル状態と共に線形化する導関数の数（ある場合）を制御します。
 
 使用例:
 

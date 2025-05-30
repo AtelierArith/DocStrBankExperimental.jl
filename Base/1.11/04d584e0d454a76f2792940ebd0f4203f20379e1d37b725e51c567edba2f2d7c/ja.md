@@ -13,7 +13,7 @@ open(filename::AbstractString, [mode::AbstractString]; lock = true) -> IOStream
 | `w+` | 読み取り、書き込み、作成、切り捨て | `truncate = true, read = true` |
 | `a+` | 読み取り、書き込み、作成、追加   | `append = true, read = true`   |
 
-`lock`キーワード引数は、安全なマルチスレッドアクセスのために操作がロックされるかどうかを制御します。
+`lock`キーワード引数は、操作が安全なマルチスレッドアクセスのためにロックされるかどうかを制御します。
 
 # 例
 

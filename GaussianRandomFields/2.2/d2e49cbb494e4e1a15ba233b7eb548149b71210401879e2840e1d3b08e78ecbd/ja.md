@@ -2,6 +2,6 @@
 EigenSolver()
 ```
 
-**eigen**を使用した固有値分解。
+固有値分解を**eigen**を使用して行います。
 
-関連項目: [`EigsSolver`](@ref)
+関連情報: [`EigsSolver`](@ref)

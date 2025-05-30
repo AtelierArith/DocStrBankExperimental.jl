@@ -1,1 +1,1 @@
-[`getTransverseMomentum`](@ref) の関数エイリアス。
+[`getTransverseMomentum`](@ref) の関数エイリアスです。

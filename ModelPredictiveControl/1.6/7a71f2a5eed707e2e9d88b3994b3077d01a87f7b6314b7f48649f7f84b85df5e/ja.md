@@ -4,7 +4,7 @@ LinMPC(model::LinModel; <キーワード引数>)
 
 [`LinModel`](@ref) `model` に基づいて線形予測制御器を構築します。
 
-制御器は、各離散時間 $k$ において以下の目的関数を最小化します：
+制御器は、各離散時間 $k$ において次の目的関数を最小化します：
 
 $$
 \begin{aligned}
@@ -25,7 +25,7 @@ $$
 \end{aligned}
 $$
 
-時間変化する非対角重みもサポートされています。終端重みを指定するには、$\mathbf{M}_{H_p}$ の最後のブロックを修正します。決定ベクトル $\mathbf{Z}$ の内容は、選択した [`TranscriptionMethod`](@ref) に依存します（デフォルトは [`SingleShooting`](@ref) で、したがって $\mathbf{Z = ΔU}$ です）。$\mathbf{ΔU}$ には、入力の増分 $\mathbf{Δu}(k+j) = \mathbf{u}(k+j) - \mathbf{u}(k+j-1)$ が $j=0$ から $H_c-1$ まで含まれ、$\mathbf{Ŷ}$ ベクトル、出力予測 $\mathbf{ŷ}(k+j)$ が $j=1$ から $H_p$ まで、そして $\mathbf{U}$ ベクトル、操作された入力 $\mathbf{u}(k+j)$ が $j=0$ から $H_p-1$ まで含まれます。スラック変数 $ϵ$ は、[`setconstraint!`](@ref) ドキュメントで説明されているように制約を緩和します。詳細な名称については拡張ヘルプを参照してください。
+時間変化する非対角重みもサポートされています。終端重みを指定するには、$\mathbf{M}_{H_p}$ の最後のブロックを修正します。決定ベクトル $\mathbf{Z}$ の内容は、選択した [`TranscriptionMethod`](@ref) に依存します（デフォルトは [`SingleShooting`](@ref) で、したがって $\mathbf{Z = ΔU}$ です）。$\mathbf{ΔU}$ には、入力の増分 $\mathbf{Δu}(k+j) = \mathbf{u}(k+j) - \mathbf{u}(k+j-1)$ が $j=0$ から $H_c-1$ まで含まれ、$\mathbf{Ŷ}$ ベクトル、出力予測 $\mathbf{ŷ}(k+j)$ が $j=1$ から $H_p$ まで、そして $\mathbf{U}$ ベクトル、操作された入力 $\mathbf{u}(k+j)$ が $j=0$ から $H_p-1$ まで含まれます。スラック変数 $ϵ$ は、[`setconstraint!`](@ref) ドキュメントに記載されているように制約を緩和します。詳細な名称については拡張ヘルプを参照してください。
 
 このメソッドは、デフォルトの状態推定器、デフォルト引数を持つ [`SteadyKalmanFilter`](@ref) を使用します。この制御器は、各時間ステップで最適化のためのメモリを割り当てます。
 
@@ -40,7 +40,7 @@ $$
   * `M_Hp=Diagonal(repeat(Mwt,Hp))` : 正半定値対称行列 $\mathbf{M}_{H_p}$。
   * `N_Hc=Diagonal(repeat(Nwt,Hc))` : 正半定値対称行列 $\mathbf{N}_{H_c}$。
   * `L_Hp=Diagonal(repeat(Lwt,Hp))` : 正半定値対称行列 $\mathbf{L}_{H_p}$。
-  * `Cwt=1e5` : スラック変数重み $C$（スカラー）、ハード制約のみの場合は `Cwt=Inf` を使用します。
+  * `Cwt=1e5` : スラック変数の重み $C$（スカラー）、ハード制約のみの場合は `Cwt=Inf` を使用します。
   * `transcription=SingleShooting()` : 最適化のための [`TranscriptionMethod`](@ref)。
   * `optim=JuMP.Model(OSQP.MathOptInterfaceOSQP.Optimizer)` : 予測制御器で使用される二次最適化器、[`JuMP.Model`](@extref) オブジェクトとして提供されます（デフォルトは [`OSQP`](https://osqp.org/docs/parsers/jump.html) 最適化器）。
   * 追加のキーワード引数は [`SteadyKalmanFilter`](@ref) コンストラクタに渡されます。
@@ -65,9 +65,9 @@ LinMPC controller with a sample time Ts = 4.0 s, OSQP optimizer, SteadyKalmanFil
 # 拡張ヘルプ
 
 !!! details "拡張ヘルプ"
-    操作された入力のセットポイント $\mathbf{r_u}$ は一般的ではありませんが、`nu > ny` の場合（例：経済的コストが低い解を優先する）には興味深い場合があります。デフォルトの `Lwt` 値は、この機能がデフォルトで無効であることを意味します。
+    操作された入力のセットポイント $\mathbf{r_u}$ は一般的ではありませんが、`nu > ny` の場合、過剰駆動システムにとって興味深い場合があります（例：経済的コストが低い解を優先する）。デフォルトの `Lwt` 値は、この機能がデフォルトで無効であることを意味します。
 
-    目的関数は次の名称に従います：
+    目的関数は次の名称規則に従います：
 
     | 変数                 | 説明                            | サイズ              |
     |:------------------ |:----------------------------- |:---------------- |
@@ -84,7 +84,7 @@ LinMPC controller with a sample time Ts = 4.0 s, OSQP optimizer, SteadyKalmanFil
     | $\mathbf{M}_{H_p}$ | $H_p$ にわたる出力セットポイント追跡重み       | `(ny*Hp, ny*Hp)` |
     | $\mathbf{N}_{H_c}$ | $H_c$ にわたる操作された入力増分重み         | `(nu*Hc, nu*Hc)` |
     | $\mathbf{L}_{H_p}$ | $H_p$ にわたる操作された入力セットポイント追跡重み  | `(nu*Hp, nu*Hp)` |
-    | $C$                | スラック変数重み                      | `()`             |
+    | $C$                | スラック変数の重み                     | `()`             |
     | $ϵ$                | 制約の緩和のためのスラック変数               | `()`             |
 
 

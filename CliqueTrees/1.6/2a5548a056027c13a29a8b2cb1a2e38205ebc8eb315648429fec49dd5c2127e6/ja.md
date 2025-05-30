@@ -36,5 +36,5 @@ julia> treewidth(graph; alg)
 
 ### 参考文献
 
-  * Cuthill, Elizabeth, and James McKee. "スパース対称行列の帯域幅を減少させる。" *1969年 第24回全国会議の議事録。* 1969年。
+  * Cuthill, Elizabeth, and James McKee. "スパース対称行列の帯域幅を減少させる。" *1969年第24回全国会議の議事録。* 1969年。
   * George, Alan, and Joseph WH Liu. "擬似周辺ノードファインダーの実装。" *ACM Transactions on Mathematical Software (TOMS)* 5.3 (1979): 284-295.

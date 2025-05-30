@@ -1,4 +1,4 @@
-散乱過程の定義のための抽象基本型です。これはプロセスインターフェースのルート型であり、`AbstractProcessDefinition`のすべてのサブタイプが少なくとも以下を実装することを前提としています。
+散乱過程の定義のための抽象基本型です。これはプロセスインターフェースのルート型であり、`AbstractProcessDefinition`のすべてのサブタイプが少なくとも次の関数を実装することを前提としています。
 
 ```Julia
 incoming_particles(proc_def::AbstractProcessDefinition)
@@ -7,7 +7,7 @@ outgoing_particles(proc_def::AbstractProcessDefinition)
 
 これらはそれぞれ、入射粒子と出射粒子のタプルを返します。
 
-`AbstractProcessDefinition`はまた、その粒子のスピンおよび偏光情報を含むことが期待されています。そのために、以下の関数をオーバーロードすることができます。
+`AbstractProcessDefinition`はまた、その粒子のスピンおよび偏光情報を含むことが期待されています。そのために、次の関数をオーバーロードすることができます。
 
 ```Julia
 incoming_spin_pols(proc_def::AbstractProcessDefinition)
@@ -20,7 +20,7 @@ outgoing_spin_pols(proc_def::AbstractProcessDefinition)
     これらの関数がコンパイル時に既知の値を返す場合、派生関数のパフォーマンスに非常に有益です。
 
 
-これらのスピンおよび偏光関数に加えて、以下の関数が自動的に定義されます。
+これらのスピンおよび偏光関数に加えて、次の関数が自動的に定義されます。
 
 ```Julia
 multiplicity(proc_def::AbstractProcessDefinition)
@@ -30,7 +30,7 @@ outgoing_multiplicity(proc_def::AbstractProcessDefinition)
 
 これらは、プロセスに対して考慮すべきスピンおよび偏光の組み合わせの数を返します。詳細については、関数のドキュメントを参照してください。
 
-さらに、散乱確率および微分断面積を計算するために、以下のインターフェース関数を`CustomProcess<:AbstractProcessDefinition`、`CustomModel<:AbstractModelDefinition`、および`CustomPhaseSpaceLayout<:AbstractPhaseSpaceLayout`のすべての組み合わせに対して実装する必要があります。
+さらに、散乱確率および微分断面積を計算するために、次のインターフェース関数を`CustomProcess<:AbstractProcessDefinition`、`CustomModel<:AbstractModelDefinition`、および`CustomPhaseSpaceLayout<:AbstractPhaseSpaceLayout`のすべての組み合わせに対して実装する必要があります。
 
 ```Julia
     _incident_flux(psp::InPhaseSpacePoint{CustomProcess,CustomModel})
@@ -44,7 +44,7 @@ outgoing_multiplicity(proc_def::AbstractProcessDefinition)
     _phase_space_factor(psp::PhaseSpacePoint{CustomProcess,CustomModel,CustomPhaseSpaceLayout})
 ```
 
-総確率および断面積の計算を可能にするために、以下の実装はオプションです。
+総確率および断面積の計算を可能にするために、次の実装はオプションです。
 
 ```Julia
 

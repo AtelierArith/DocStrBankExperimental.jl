@@ -11,7 +11,7 @@ gsa(f, method::GSAMethod, param_range; samples, batch=false)
 
 さらに、
 
-[Delta Moment-Independent Method](@ref)、[EASI Method](@ref)、および [Regression Method](@ref) の入力および出力行列ベースのメソッドは次のように利用可能です：
+[Delta Moment-Independent Method](@ref)、[EASI Method](@ref)、および [Regression Method](@ref) では、次のように入力および出力の行列ベースのメソッドが利用可能です：
 
 ```julia
 res = gsa(X, Y, method)
@@ -23,7 +23,7 @@ res = gsa(X, Y, method)
   * `Y` は出力次元 * サンプル数の行列で、`X` の列で評価されます。
   * `method` は以下の GSA メソッドの1つです。
 
-[Sobol Method](@ref) の場合、前述のパラメータ範囲ベースのメソッドの代わりに、次の設計行列ベースのメソッドを使用できます：
+[Sobol Method](@ref) では、前述のパラメータ範囲ベースのメソッドの代わりに、次の設計行列ベースのメソッドを使用できます：
 
 ```julia
 effects = gsa(f, method, A, B; batch=false)

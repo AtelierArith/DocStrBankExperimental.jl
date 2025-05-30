@@ -8,4 +8,4 @@ RunInputs
 
   * `metrics::Array{Metric}`: 実行メトリクス。
   * `params::Array{Param}`: 実行パラメータ。
-  * `tags::Array{Tag}`: 追加のメタデータのキー-バリューのペア。
+  * `tags::Array{Tag}`: 追加のメタデータキー-バリューのペア。

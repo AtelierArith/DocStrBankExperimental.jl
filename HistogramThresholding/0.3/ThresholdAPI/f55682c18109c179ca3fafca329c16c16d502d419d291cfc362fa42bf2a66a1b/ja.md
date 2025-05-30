@@ -3,7 +3,7 @@ find_threshold(data::AbstractArray, f::AbstractThresholdAlgorithm; nbins)
 find_threshold(histogram::AbstractArray, edges::AbstractArray, f::AbstractThresholdAlgorithm)
 ```
 
-`data`内の適切な閾値を、`nbins`を用いてヒストグラムを構築するアルゴリズム`f`を使用して見つけます。生の`data`を指定する代わりに、ヒストグラムとそれに伴うエッジを直接指定することができます。
+`data`内の適切な閾値を、`nbins`を使用してヒストグラムを構築する際にアルゴリズム`f`を用いて見つけます。生の`data`を指定する代わりに、ヒストグラムとそれに伴うエッジを直接指定することができます。
 
 # 出力
 

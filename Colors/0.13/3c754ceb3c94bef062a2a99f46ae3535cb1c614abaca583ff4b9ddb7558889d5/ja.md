@@ -12,8 +12,8 @@ hex(c::Colorant, style::Symbol)
 
       * `:AUTO`: `c`のタイプに応じて自動的に選択される表記
       * `:RRGGBB`/`:rrggbb`: 6桁の不透明表記
-      * `:AARRGGBB`/`:aarrggbb`: アルファを先頭に持つ8桁の表記
-      * `:RRGGBBAA`/`:rrggbbaa`: アルファを末尾に持つ8桁の表記
+      * `:AARRGGBB`/`:aarrggbb`: アルファが先頭にある8桁の表記
+      * `:RRGGBBAA`/`:rrggbbaa`: アルファが末尾にある8桁の表記
       * `:RGB`/`:rgb`/`:ARGB`/`:argb`/`:RGBA`/`:rgba`: 3桁または4桁の表記
       * `:S`/`:s`: 利用可能な場合の短い表記
 
@@ -40,5 +40,5 @@ julia> hex(ARGB(1,0.533,0,0.267), :S)
 ```
 
 !!! compat "Colors v0.12"
-    `style`は少なくともColors v0.12が必要です。
+    `style` は少なくとも Colors v0.12 が必要です。
 

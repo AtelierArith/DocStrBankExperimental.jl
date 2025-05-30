@@ -10,7 +10,7 @@ fit(HLLE, data; k=12, maxoutdim=2, nntype=BruteForce)
 
 # キーワード引数
 
-  * `k`: ローカル部分空間表現の構築のための最近傍の数
+  * `k`: ローカル部分空間表現の構築のための最近傍数
   * `maxoutdim`: 符号化された空間の次元。
   * `nntype`: 最近傍構築クラス（`AbstractNearestNeighbors`から派生）
 

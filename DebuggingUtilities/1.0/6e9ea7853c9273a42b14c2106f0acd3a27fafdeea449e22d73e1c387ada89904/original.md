@@ -1,0 +1,1 @@
+`test_showline(filename)` is equivalent to `include(filename)`, except that it also displays the expression and file-offset (in characters) for each expression it executes. This can be useful for debugging errors, especially those that cause a segfault.

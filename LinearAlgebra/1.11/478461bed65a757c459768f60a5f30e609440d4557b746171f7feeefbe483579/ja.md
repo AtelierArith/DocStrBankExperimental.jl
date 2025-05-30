@@ -26,7 +26,7 @@ U factor:
  1.0  0.0   0.0  0.0
  0.0  0.0   0.0  1.0
  0.0  0.0  -1.0  0.0
-特異値:
+singular values:
 4-element Vector{Float64}:
  3.0
  2.23606797749979

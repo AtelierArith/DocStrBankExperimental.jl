@@ -7,7 +7,7 @@
 ## 例
 
 ```julia
-# シリーズタイプを定義する
+# 一部のシリーズタイプを定義
 @recipe function f(::Type{Val{:myseriestype}}, x, y)
     # ここに実装を記述
 end

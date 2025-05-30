@@ -8,7 +8,7 @@ getmetrichistory(instance::MLFlow, run_id::String, metric_key::String;
 # 引数
 
   * `instance`: [`MLFlow`](@ref) の設定。
-  * `run_id`: [`Run`](@ref) から取得する [`Metric`](@ref) 値の ID。
+  * `run_id`: [`Metric`](@ref) の値を取得するための [`Run`](@ref) の ID。
   * `metric_key`: 取得する [`Metric`](@ref) の名前。
   * `page_token`: 取得する [`Metric`](@ref) 履歴のページを示すトークン。
   * `max_results`: 呼び出しごとに返す [`Run`](@ref) の [`Metric`](@ref) のログインスタンスの最大数。

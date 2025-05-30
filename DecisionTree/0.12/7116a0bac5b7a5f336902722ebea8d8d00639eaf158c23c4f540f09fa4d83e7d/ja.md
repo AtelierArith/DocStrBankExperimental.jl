@@ -9,7 +9,7 @@ permutation_importances(
                         )
 ```
 
-各特徴量をシャッフルすることで特徴量の重要性を計算します。
+各特徴量をシャッフルすることによって特徴量の重要性を計算します。
 
   * `trees`: `DecisionTree.Leaf` オブジェクト、`DecisionTree.Node` オブジェクト、`DecisionTree.Root` オブジェクト、`DecisionTree.Ensemble` オブジェクト、または `Tuple{DecisionTree.Ensemble, AbstractVector}` オブジェクト（アダブーストモデル用）
   * `score`: `score(model, y, X)` の形式でモデルのパフォーマンスを評価するための関数

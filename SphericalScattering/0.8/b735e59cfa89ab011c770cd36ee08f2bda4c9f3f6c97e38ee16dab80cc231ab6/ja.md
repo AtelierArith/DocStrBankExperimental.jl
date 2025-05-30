@@ -1,7 +1,7 @@
 ```
 LayeredSpherePEC( 
-    radii   = error("引数 `radii` が不足しています"), 
-    filling = error("引数 `filling` が不足しています")
+    radii   = error("Missing argument `radii`"), 
+    filling = error("Missing argument `filling`")
 )
 ```
 

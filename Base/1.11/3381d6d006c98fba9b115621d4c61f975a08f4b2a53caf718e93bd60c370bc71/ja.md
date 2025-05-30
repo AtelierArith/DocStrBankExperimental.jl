@@ -12,17 +12,17 @@ julia> reverse("JuliaLang")
 ```
 
 !!! note
-    以下の例は、異なるシステムで異なる表示になる場合があります。コメントは、どのように表示されるべきかを示しています。
+    以下の例は、異なるシステムで異なる表示になる場合があります。コメントは、どのように表示されるべきかを示しています
 
 
 結合文字は驚くべき結果をもたらすことがあります：
 
 ```jldoctest
-julia> reverse("ax̂e") # 帽子は入力ではxの上、出力ではeの上にあります
+julia> reverse("ax̂e") # 帽子は入力のxの上、出力のeの上にあります
 "êxa"
 
 julia> using Unicode
 
-julia> join(reverse(collect(graphemes("ax̂e")))) # グラフェムを逆にします；帽子は両方の入力と出力でxの上にあります
+julia> join(reverse(collect(graphemes("ax̂e")))) # グラフェムを逆にします；帽子は両方の入力と出力のxの上にあります
 "ex̂a"
 ```

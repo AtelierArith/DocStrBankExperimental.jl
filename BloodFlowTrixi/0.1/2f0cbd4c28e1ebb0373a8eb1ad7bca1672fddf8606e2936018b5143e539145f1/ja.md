@@ -2,7 +2,7 @@
 flux_nonconservative(u_ll, u_rr, orientation::Integer, eq::BloodFlowEquations2D)
 ```
 
-非保守フラックスを計算します。これは、方向に基づく2D血流モデルのためのものです。
+2D血流モデルに基づいて、方向に応じた非保守フラックスを計算します。
 
 ### パラメータ
 

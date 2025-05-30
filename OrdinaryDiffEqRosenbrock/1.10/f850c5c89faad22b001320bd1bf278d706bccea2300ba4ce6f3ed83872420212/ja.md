@@ -10,9 +10,9 @@ Rodas42(; - `standardtag`: パッケージ固有のタグを使用するかど�
               `chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。
               `FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、これはキーワード引数
               `fdtype`を持ち、デフォルト値は`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`があります。
-          - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
+          - `concrete_jac`: ヤコビアンを構築するかどうかを指定します。デフォルトは
               `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-              たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
+              たとえば、`linsolve`にKrylov部分空間法が使用されているかどうかなどです。
           - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
             たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
             `Rodas42(linsolve = KLUFactorization())`を指定します。
@@ -21,7 +21,7 @@ Rodas42(; - `standardtag`: パッケージ固有のタグを使用するかど�
             を左または右の前処理器として使用できます。
             前処理器は、`Pl,Pr = precs(W,du,u,p,t,newW,Plprev,Prprev,solverdata)`
             関数によって指定され、引数は次のように定義されます：
-              - `W`: 非線形システムの現在のヤコビ行列。アルゴリズムに応じて
+              - `W`: 非線形システムの現在のヤコビアン。アルゴリズムに応じて
                   ``I - \gamma J``または``I/\gamma - J``として指定されます。これは
                   通常、OrdinaryDiffEq.jlによって定義された`WOperator`型になります。これはオペレーターの遅延
                   表現です。ユーザーは`convert(AbstractMatrix,W)`を呼び出すことで
@@ -30,7 +30,7 @@ Rodas42(; - `standardtag`: パッケージ固有のタグを使用するかど�
               - `u`: 現在のODE状態
               - `p`: ODEパラメータ
               - `t`: 現在のODE時間
-              - `newW`: `W`行列が前回の`precs`呼び出し以降に更新されたかどうかを指定する`Bool`。
+              - `newW`: `W`行列が最後の`precs`呼び出し以降に更新されたかどうかを指定する`Bool`。
                   `newW == true`のときのみ前処理器を更新することを推奨します。
               - `Plprev`: 前の`Pl`。
               - `Prprev`: 前の`Pr`。
@@ -57,7 +57,7 @@ Rodas42(; - `standardtag`: パッケージ固有のタグを使用するかど�
 
   * `chunk_size`: TBD
   * `standardtag`: TBD
-  * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
+  * `autodiff`: ヤコビアンをADを介して計算するかどうかを制御するブール値
   * `concrete_jac`: `jac!(J, u, p, t)`の形式の関数
   * `diff_type`: TBD
   * `linsolve`: 内部線形システムのカスタムソルバー

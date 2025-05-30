@@ -2,7 +2,7 @@
 AnyonYamaskaQPU <: AbstractQPU
 ```
 
-Yamaska世代のAnyonsシステムQPUを記述するデータ構造です。QPUは2D格子配置で24量子ビットを含んでいます（[`LatticeConnectivity`](@ref)を参照）。
+ヤマスカ世代のアニオンシステムQPUを記述するデータ構造です。QPUは2D格子配置で24量子ビットを含んでいます（[`LatticeConnectivity`](@ref)を参照）。
 
 # フィールド
 

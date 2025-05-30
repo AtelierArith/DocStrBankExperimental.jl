@@ -2,7 +2,7 @@
 allowmissing(df::AbstractDataFrame, cols=:)
 ```
 
-データフレーム `df` のコピーを返し、列 `cols` を要素型 `Union{T, Missing}` に変換して欠損値をサポートできるようにします。
+データフレーム `df` のコピーを返し、列 `cols` を要素型 `Union{T, Missing}` に変換して、欠損値のサポートを可能にします。
 
 `cols` は任意の列セレクタ（`Symbol`、文字列または整数; `:`, `Cols`, `All`, `Between`, `Not`, 正規表現、または `Symbol`、文字列または整数のベクター）を指定できます。
 

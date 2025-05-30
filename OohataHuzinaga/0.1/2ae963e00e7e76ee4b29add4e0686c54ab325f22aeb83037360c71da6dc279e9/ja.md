@@ -1,4 +1,4 @@
-`buildbasis` メソッドは `Molecule` を入力として受け取り、私たちに `GaussianBasis` 型の配列を返します。例えば、同じ `h2.xyz` の例を開いてみましょう。標準基底セットとして、STO-3G データを使用します。
+`buildbasis` メソッドは `Molecule` を入力として受け取り、`GaussianBasis` 型の配列を返します。例えば、同じ `h2.xyz` の例を見てみましょう。標準基底セットとして、STO-3G データを使用します。
 
 ```julia
 2 

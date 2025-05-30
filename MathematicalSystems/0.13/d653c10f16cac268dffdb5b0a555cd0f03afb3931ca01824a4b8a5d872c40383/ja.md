@@ -1,8 +1,8 @@
 ```
-ConstrainedBlackBoxControlMap
+制約付きブラックボックス制御マップ
 ```
 
-制約付きブラックボックス制御マップの形式
+次の形式の制約付きブラックボックス制御マップ
 
 $$
     (x, u) ↦ h(x, u), x ∈ \mathcal{X}, u ∈ \mathcal{U}.

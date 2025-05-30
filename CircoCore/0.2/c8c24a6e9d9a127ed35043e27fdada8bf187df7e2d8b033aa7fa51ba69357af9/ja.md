@@ -2,7 +2,7 @@
 OnBecome(reincarnation::Actor)
 ```
 
-アクターライフサイクルメッセージで、`become()`アクションを示します。
+アクターのライフサイクルメッセージで、`become()`アクションを示します。
 
 `reincarnation`はアクターの新しい化身を指します。`me`はこのメッセージの配信時にスケジュールされ、`reincarnation`はそうではありません。
 

@@ -11,5 +11,5 @@ supervise(sv, child=self(); cb=nothing, restart::Symbol=:transient)
 
 # キーワード引数
 
-  * `cb=nothing`: コールバック（呼び出し可能なオブジェクト）、前のアクターの動作を引数として受け取り、新しいアクターへの [`Link`](@ref) を返さなければなりません；`nothing` の場合、アクターはその [`init!`](@ref) コールバックまたは前の動作で再起動します。
-  * `restart::Symbol=:transient`: [再起動オプション](@ref restart)、`:permanent`、`:temporary`、`:transient` のいずれか。
+  * `cb=nothing`: コールバック（呼び出し可能なオブジェクト）、前のアクターの動作を引数として受け取り、新しいアクターへの [`Link`](@ref) を返さなければなりません。`nothing` の場合、アクターはその [`init!`](@ref) コールバックまたは前の動作で再起動されます。
+  * `restart::Symbol=:transient`: [再起動オプション](@ref restart)、`:permanent`、`:temporary`、`:transient` のいずれか、

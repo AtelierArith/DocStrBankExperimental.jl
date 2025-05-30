@@ -8,6 +8,6 @@
   model_function!(str,state,t,fcache,phys_params)
 ```
 
-ここで `str` は返される強さ、`state` は状態ベクトル、`t` は時間、`fcache` は対応する `PointRegionCache`、`phys_params` はユーザーが提供する物理パラメータです。これらのいずれかを使用して強さを計算できます。
+ここで、`str` は返される強さ、`state` は状態ベクトル、`t` は時間、`fcache` は対応する `PointRegionCache`、`phys_params` はユーザーが提供する物理パラメータです。これらのいずれかを使用して強さを計算できます。
 
 キーワード `ddftype =` を使用して DDF のタイプを指定できます。

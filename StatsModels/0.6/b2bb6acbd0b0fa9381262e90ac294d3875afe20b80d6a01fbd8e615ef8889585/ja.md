@@ -9,4 +9,4 @@ StatsModels.apply_schema(t::FormulaTerm, schema::StatsModels.Schema, Mod::Type{<
     apply_schema(t, StatsModels.FullRank(schema), mod)
 ```
 
-カテゴリカルデータのモデル化に関する詳細は、ドキュメントの [Modeling categorical data](@ref) セクションを参照してください。
+カテゴリカルデータのモデリングに関する詳細は、ドキュメントの [Modeling categorical data](@ref) セクションを参照してください。

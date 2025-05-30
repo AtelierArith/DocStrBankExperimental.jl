@@ -10,4 +10,4 @@ function nodevalues(
     continuous::Bool = false)
 ```
 
-有限要素関数を係数ベクトル source と指定された FunctionOperator で (指定された領域の) グリッドのすべてのノードで評価し、値を持つ配列を返します。非連続 (continuous = false) 量は平均化されます。
+有限要素関数を係数ベクトル source と指定された FunctionOperator でグリッドのすべてのノード（指定された領域の）で評価し、値を持つ配列を返します。非連続（continuous = false）量は平均化されます。

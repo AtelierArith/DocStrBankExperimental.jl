@@ -2,4 +2,4 @@
 value(val, type)
 ```
 
-ホストコード `val` が型 `type` の値に評価されることが期待される Finch AST 表現。
+ホストコード `val` の Finch AST 式は、型 `type` の値に評価されることが期待されます。

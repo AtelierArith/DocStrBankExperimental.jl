@@ -16,4 +16,4 @@ isreadable(path::String)
     この関数は少なくともJulia 1.11を必要とします。
 
 
-関連情報として [`ispath`](@ref)、[`isexecutable`](@ref)、[`iswritable`](@ref) を参照してください。
+関連項目として [`ispath`](@ref), [`isexecutable`](@ref), [`iswritable`](@ref) を参照してください。

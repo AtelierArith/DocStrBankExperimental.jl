@@ -7,7 +7,7 @@ boundary_condition_slip_wall(u_inner, orientation_or_normal, direction, x, t, su
 ### パラメータ
 
   * `u_inner`: 境界での内部状態ベクトル。
-  * `orientation_or_normal`: 境界方向を示す方向インデックスまたは法線ベクトル。
+  * `orientation_or_normal`: 境界方向を示すオリエンテーションインデックスまたは法線ベクトル。
   * `direction`: 空間方向を示すインデックス（( \theta )-方向の場合は1、その他は(s)-方向）。
   * `x`: 境界での位置ベクトル。
   * `t`: 時間値。

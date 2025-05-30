@@ -2,7 +2,7 @@
 MetropolisHastings{D}
 ```
 
-`MetropolisHastings` には1つのフィールド `proposal` があります。 `proposal` は `Proposal`、`NamedTuple` の `Proposal`、またはデータの形状に応じた `Array{Proposal}` です。たとえば、サンプラーが次の形の `NamedTuple` を返すようにしたい場合
+`MetropolisHastings` には 1 つのフィールド `proposal` があります。 `proposal` は `Proposal`、`NamedTuple` の `Proposal`、またはデータの形状に合わせた `Array{Proposal}` です。たとえば、サンプラーが次の形状の `NamedTuple` を返すようにしたい場合
 
 ```julia
 x = (a = 1.0, b=3.8)
@@ -31,6 +31,14 @@ spl = MetropolisHastings(proposal)
 
 `sample` 関数を使用して `MetropolisHastings` を使用する場合、次のキーワード引数が許可されます。
 
-  * `initial_params` はモデルの初期パラメータ化を定義します。指定がない場合、初期パラメータはサンプラーの提案から引き出されます。
-  * `param_names` はパラメータに割り当てられる文字列のベクターです。これは `chain_type=Chains` の場合にのみ使用されます。
-  * `chain_type` は返されるチェーンのタイプです。サポートされているタイプは、`MCMCChains` がインポートされている場合の `chain_type=Chains` または `StructArrays` がインポートされている場合の `chain_type=StructArray` です。
+  * `initial_params` はモデルの初期パラメータ化を定義します。もし
+
+何も指定されていない場合、初期パラメータはサンプラーの提案から引き出されます。
+
+  * `param_names` はパラメータに割り当てられる文字列のベクターです。これは
+
+`chain_type=Chains` の場合にのみ使用されます。
+
+  * `chain_type` は返されるチェーンのタイプです。サポートされている
+
+タイプは、`MCMCChains` がインポートされている場合は `chain_type=Chains`、または `StructArrays` がインポートされている場合は `chain_type=StructArray` です。

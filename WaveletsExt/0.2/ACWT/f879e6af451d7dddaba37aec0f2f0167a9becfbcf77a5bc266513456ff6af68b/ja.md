@@ -30,4 +30,4 @@ xw = acdwtall(x, wt)
 x̂ = iacdwtall(xw)
 ```
 
-**関連情報:** [`iacdwt`](@ref)
+**参照:** [`iacdwt`](@ref)

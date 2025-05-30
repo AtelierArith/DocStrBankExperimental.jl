@@ -10,8 +10,8 @@ copytofield!(
 ) -> num_copied::Int
 ```
 
-`src` 配列のインデックス `soff` から始めて、空間領域 `cellrange` で定義された Field.values `values` にコピーします。
+`src` 配列のインデックス `soff` から `Field.values` `values` にコピーし、`cellrange` で定義された空間領域に対して行います。
 
 全体のドメインにわたる値の数は、[`dof_values`](@ref) によって返される自由度と等しくする必要があります。
 
-この `FieldData` タイプが数値ソルバーに値を提供する必要がある場合は必須です。
+この `FieldData` タイプが数値ソルバーに対して値を提供する必要がある場合は必須です。

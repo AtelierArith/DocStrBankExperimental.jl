@@ -2,4 +2,4 @@
 vredundancy(p::Polyhedron)
 ```
 
-Return the [`Redundancy`](@ref) of [`vrep(p)`](@ref vrep).
+[`vrep(p)`](@ref vrep) の [`Redundancy`](@ref) を返します。

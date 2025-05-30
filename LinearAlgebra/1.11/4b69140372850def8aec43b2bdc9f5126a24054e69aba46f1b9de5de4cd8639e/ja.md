@@ -2,9 +2,9 @@
 det(M)
 ```
 
-行列の行列式。
+行列式。
 
-関連項目: [`logdet`](@ref) と [`logabsdet`](@ref)。
+参照: [`logdet`](@ref) および [`logabsdet`](@ref)。
 
 # 例
 

@@ -4,13 +4,13 @@ deform(domain, mapping; isseparable, isrescaling)
 
 ```
 
-`mapping`を介して`domain`を変形します。この関数のシグネチャは次のようになります。
+`mapping`を介して`domain`を変形します。関数のシグネチャは次のようになります。
 
 ```
 mapping(r1, ..., rD) = x1, ..., xD
 ```
 
-入力と出力は`NTuple{D, <:AbstractArray}`です。
+ここで、入力と出力は`NTuple{D, <:AbstractArray}`です。
 
 # キーワード引数
 

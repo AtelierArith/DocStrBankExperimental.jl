@@ -18,7 +18,7 @@ colors = distinguishable_colors(n, seed=RGB{N0f8}[];
 
 # キーワード引数
 
-  * `dropseed`: true の場合、`seed` 値は削除されます。これは、選択された色がシード値から区別可能であることを保証する簡単なメカニズムを提供します。true の場合、`n` はシード色を含みません。
+  * `dropseed`: true の場合、`seed` 値は削除されます。これは、選択された色がシード値と区別可能であることを保証するための簡単なメカニズムを提供します。true の場合、`n` はシード色を含みません。
   * `transform`: 距離を測定する前に色に適用される変換。デフォルトは `identity` で、他の選択肢には色盲をシミュレートするための `deuteranopic` があります。
   * `lchoices`: 可能な明度の値
   * `cchoices`: 可能な彩度の値

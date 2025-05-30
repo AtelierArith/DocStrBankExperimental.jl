@@ -2,7 +2,7 @@
 findnext(predicate::Function, A, i)
 ```
 
-`predicate` が `true` を返す `A` の要素の、`i` の後または `i` を含む次のインデックスを見つけます。見つからない場合は `nothing` を返します。これは、[`getindex`](@ref)、[`keys(A)`](@ref)、および [`nextind`](@ref) をサポートする配列、文字列、およびほとんどの他のコレクションで機能します。
+`predicate` が `true` を返す `A` の要素の、`i` の後または `i` 自身を含む次のインデックスを見つけます。見つからない場合は `nothing` を返します。これは、[`getindex`](@ref)、[`keys(A)`](@ref)、および [`nextind`](@ref) をサポートする配列、文字列、およびほとんどの他のコレクションで機能します。
 
 インデックスは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
 

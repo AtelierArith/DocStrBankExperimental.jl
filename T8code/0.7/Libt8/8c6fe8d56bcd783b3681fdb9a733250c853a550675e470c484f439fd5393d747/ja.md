@@ -7,11 +7,11 @@ t8_forest_get_eclass(forest, ltreeid)
 # 引数
 
   * `forest`:[in] フォレスト。
-  * `ltreeid`:[in] *forest*内のツリーのローカルID。
+  * `ltreeid`:[in] *forest* 内のツリーのローカルID。
 
 # 戻り値
 
-ツリー*ltreeid*の要素クラス。*forest*はこの関数を呼び出す前にコミットされている必要があります。
+ツリー *ltreeid* の要素クラス。*forest* はこの関数を呼び出す前にコミットされている必要があります。
 
 ### プロトタイプ
 

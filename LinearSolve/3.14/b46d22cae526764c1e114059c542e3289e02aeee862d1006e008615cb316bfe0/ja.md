@@ -1,6 +1,6 @@
 `CHOLMODFactorization(; shift = 0.0, perm = nothing)`
 
-CHOLMODのポリアルゴリズムのラッパーで、コレスキー分解とldltを混合しています。パフォーマンスのためにコレスキーを試み、条件付けが原因でコレスキーが失敗した場合はldltを再試行します。
+CHOLMODのポリアルゴリズムのラッパーで、Cholesky因子分解とldltを混合しています。性能のためにCholeskyを試み、条件付けが原因でCholeskyが失敗した場合はldltを再試行します。
 
 スパース行列のみをサポートしています。
 

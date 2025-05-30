@@ -10,7 +10,7 @@ searchruns(instance::MLFlow; experiment_ids::Array{String}=String[], filter::Str
 
   * `instance`: [`MLFlow`](@ref) 設定。
   * `experiment_ids`: 検索対象の[`Experiment`](@ref) IDのリスト。
-  * `filter`: パラメータ、メトリクス、およびタグに対するフィルタ式で、実行のサブセットを返すことができます。詳細は[MLFlowのドキュメント](https://mlflow.org/docs/latest/rest-api.html#search-runs)を参照してください。
+  * `filter`: パラメータ、メトリクス、およびタグに対するフィルタ式で、実行のサブセットを返すことを可能にします。詳細は[MLFlowのドキュメント](https://mlflow.org/docs/latest/rest-api.html#search-runs)を参照してください。
   * `run_view_type`: アクティブな実行のみ、削除された実行のみ、またはすべての実行を表示するかどうか。デフォルトはアクティブな実行のみです。
   * `max_results`: 希望する最大実行数。
   * `order_by`: 属性、パラメータ、メトリクス、およびタグを含む、順序付ける列のリストで、オプションの「DESC」または「ASC」注釈を付けることができ、「ASC」がデフォルトです。

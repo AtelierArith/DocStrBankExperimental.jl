@@ -12,11 +12,11 @@ $$
 Geometric()    # 成功率0.5の幾何分布
 Geometric(p)   # 成功率pの幾何分布
 
-params(d)      # パラメータを取得します。すなわち(p,)
-succprob(d)    # 成功率を取得します。すなわちp
-failprob(d)    # 失敗率を取得します。すなわち1 - p
+params(d)      # パラメータを取得、すなわち(p,)
+succprob(d)    # 成功率を取得、すなわちp
+failprob(d)    # 失敗率を取得、すなわち1 - p
 ```
 
 外部リンク
 
-  * [ウィキペディアの幾何分布](http://en.wikipedia.org/wiki/Geometric_distribution)
+  * [Geometric distribution on Wikipedia](http://en.wikipedia.org/wiki/Geometric_distribution)

@@ -8,4 +8,4 @@ $$
 R_i = \sum_j (S_{i+j} - T_j)^2
 $$
 
-詳細は[`NormalizedSquareDiff`](@ref)を参照してください。
+詳細は [`NormalizedSquareDiff`](@ref) を参照してください。

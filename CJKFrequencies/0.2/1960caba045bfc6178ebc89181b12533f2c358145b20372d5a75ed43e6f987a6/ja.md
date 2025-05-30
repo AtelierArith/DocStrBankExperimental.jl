@@ -24,4 +24,4 @@ DataStructures.Accumulator{String,Int64} with 9932 entries:
 
 ## ライセンス/著作権
 
-元の著者は文字頻度リストに対する完全な著作権を保持していますが、リストは研究および教育/学習目的のみに提供されており、著者の許可なしに商業利用はできません。完全な免責事項と著作権通知は [こちら](https://lingua.mtsu.edu/chinese-computing/copyright.html) でご覧ください。
+元の著者は文字頻度リストに対する完全な著作権を保持していますが、リストは研究および教育/学習目的のみに提供されており、著者の許可なしに商業利用はできません。完全な免責事項と著作権通知は [こちら](https://lingua.mtsu.edu/chinese-computing/copyright.html) をご覧ください。

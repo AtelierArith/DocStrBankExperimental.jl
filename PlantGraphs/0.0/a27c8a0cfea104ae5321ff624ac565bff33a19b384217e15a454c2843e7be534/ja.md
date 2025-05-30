@@ -7,7 +7,7 @@ draw(g::Graph; resolution = (1920, 1080), nlabels_textsize = 15, arrow_size = 15
 
 ## 引数
 
-  * `g::Graph`: 視覚化するグラフ。
+  * `g::Graph`: 視覚化されるグラフ。
 
 ## キーワード
 
@@ -20,9 +20,9 @@ draw(g::Graph; resolution = (1920, 1080), nlabels_textsize = 15, arrow_size = 15
 
 デフォルトでは、ノードは格納されているデータのタイプとそのユニークIDでラベル付けされます。異なるタイプのデータのラベルをカスタマイズするには、関数 `node_label()` を参照してください。
 
-ネットワーク図をラスタまたはベクター画像としてエクスポートするには、FileIOの `save` を参照してください（バックエンドに応じて）。特定のdpiのエクスポート画像を確保するために、関数 `calculate_resolution()` が役立つ場合があります（物理的なサイズを仮定）。
+ネットワーク図をラスタまたはベクター画像としてエクスポートするには、FileIOの `save` を参照してください（バックエンドに応じて）。特定のdpiのエクスポート画像を確保するために、関数 `calculate_resolution()` が役立つ場合があります（ある物理サイズを仮定）。
 
-グラフィックスバックエンドは、Juliaコードが実行されている環境（すなわち、ターミナル、VS CodeなどのIDE、JupyterやPlutoなどのインタラクティブノートブック）と相互作用します。これらの相互作用はすべて、VPLが依存しているグラフィックスパッケージMakieによって制御されます。`draw()` に特有の期待される動作に関する詳細は、一般的なVPLドキュメントに記載されています。
+グラフィックスバックエンドは、Juliaコードが実行されている環境（すなわち、ターミナル、VS CodeなどのIDE、JupyterやPlutoなどのインタラクティブノートブック）と相互作用します。これらの相互作用はすべて、VPLが依存しているグラフィックスパッケージMakieによって制御されます。`draw()` に特有の期待される動作に関する詳細は、一般的なVPLのドキュメントに記載されています。
 
 ## 戻り値
 
@@ -39,7 +39,7 @@ julia> axiom = A1(1) + (B1(1) + A1(3), B1(4));
 
 julia> g = Graph(axiom = axiom);
 
-julia> import CairoMakie; # または GLMakie、WGLMakie など。
+julia> import CairoMakie; # または GLMakie, WGLMakie など。
 
 julia> draw(g);
 ```

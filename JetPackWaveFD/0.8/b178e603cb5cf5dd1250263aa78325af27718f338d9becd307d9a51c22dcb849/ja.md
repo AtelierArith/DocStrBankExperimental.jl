@@ -4,7 +4,7 @@ g = Ginsu(r0, dr, nr, sour, recr, padr, ndamp; dims=(:z,:y,:x), stencilhalfwidth
 
 与えられたショットのモデルアパーチャを定義するGinsuオブジェクトを作成します。 `g`は、`sub`および`sub!`メソッドを使用して地球モデルをサブセット化するために使用され、`super`、`super!`および`super_accumulate!`メソッドを使用して逆操作を提供します。地球モデルサブセットのパディングは、ソースおよびレシーバーの位置、パディング`padr`およびダンピング領域`ndamp`パラメータから決定されます。
 
-# 必須パラメータ[1,2]
+# 必要なパラメータ[1,2]
 
   * `r0::NTuple{N,Real}` 各モデル次元におけるモデルの原点
   * `dr::NTuple{N,Real}` 各モデル次元におけるモデルセルの幅
@@ -18,9 +18,9 @@ g = Ginsu(r0, dr, nr, sour, recr, padr, ndamp; dims=(:z,:y,:x), stencilhalfwidth
 
   * `dim=(:z,:y,:x)` 軸の順序、デフォルトは`z`が速く、`x`が遅い
   * `stencilhalfwidth=0` 自由表面がある場合、`stencilhalfwidth`、`padr`、および`ndamp`を適切に設定します。これにより、自由表面の上に`stencilhalfwidth`セルが追加され、ミラーリングされたモデルをコピーして自由表面境界条件を実装できるようになります。
-  * `vector_width=8` コードのベクトル化に必要な幅を設定し、各次元に対して`size(ginsu)`を`vector_width`で割った余りがゼロになることを保証します。
+  * `vector_width=8` コードのベクトル化に必要な幅を設定し、各次元のサイズ(ginsu)をvector_widthで割った余りがゼロになることを保証します。
 
-# 型指定
+# 型仕様
 
   * `g.lextrng` はGinsuモデルサブセットの論理（1ベース）インデックスです
   * `g.lintrng` はGinsuモデルサブセット内部の論理（1ベース）インデックスです
@@ -51,3 +51,5 @@ o---------------c----------------------c-------o
   * `c` はGinsuモジュールサブセットを示します
   * `x` はGinsuモデルサブセット内部を示します
   * GinsuモデルサブセットとGinsuモデルサブセット内部の間にある領域は、吸収境界領域です。
+
+```

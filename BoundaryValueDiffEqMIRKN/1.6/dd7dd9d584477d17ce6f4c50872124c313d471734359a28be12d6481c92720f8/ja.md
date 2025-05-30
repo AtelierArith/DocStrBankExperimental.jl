@@ -9,7 +9,7 @@
 
 ```
 - `nlsolve`: 内部非線形ソルバー。SciMLの
-  `NonlinearProblem`インターフェースに準拠した任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
+  `NonlinearProblem`インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
 - `jac_alg`: 非線形ソルバーに使用されるヤコビアンアルゴリズム。デフォルトは
   `BVPJacobianAlgorithm()`で、入力タイプと問題タイプに基づいて最適なアルゴリズムを自動的に決定します。
   - `TwoPointBVProblem`の場合、`diffmode`のみが使用されます（可能であればデフォルトは
@@ -19,7 +19,7 @@
 - `max_num_subintervals`: 最大サブ区間の数、デフォルトは3000です。
 ```
 
-!!! 注     型の安定性のために、`BVPJacobianAlgorithm`のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
+!!! 注     型の安定性のために、`BVPJacobianAlgorithm`内のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
 
 ## 参考文献
 

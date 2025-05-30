@@ -12,8 +12,8 @@ ColorTypes の概要:
 
   * `RGB`, `BGR`, `XRGB`, `RGBX`, `RGB24` はすべて `AbstractRGB` のサブタイプです
   * `HSV`, `HSL`, `HSI`, `XYZ`, `xyY`, `Lab`, `LCHab`, `Luv`, `LCHuv`, `DIN99`, `DIN99d`, `DIN99o`, `LMS`, `YIQ`, `YCbCR`, `Oklab`, および `Oklch` は `Color{T,3}` のサブタイプです
-  * ほとんどのこれらの型に対するアルファチャネルの類似物として `ARGB` と `RGBA` が存在します（`RGB24` のような例外もありますが、これは `ARGB32` を持ちます）
-  * グレースケール型 `Gray` と `Gray24` （`AbstractGray` のサブタイプ）および対応する透明型 `AGray`, `GrayA`, `AGray32`
+  * ほとんどのこれらの型に対するアルファチャネルの類似物として `ARGB` と `RGBA` が存在します（`RGB24` のような例外もありますが、これは `ARGB32` を持っています）
+  * グレースケール型 `Gray` と `Gray24`（`AbstractGray` のサブタイプ）、および対応する透明型 `AGray`, `GrayA`, と `AGray32`
 
 # 特性
 

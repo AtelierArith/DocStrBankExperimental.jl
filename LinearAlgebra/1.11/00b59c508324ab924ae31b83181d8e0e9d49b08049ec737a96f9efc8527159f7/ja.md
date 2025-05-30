@@ -2,7 +2,7 @@
 normalize(a, p::Real=2)
 ```
 
-`a`を正規化してその`p`-ノルムが1になるようにします。すなわち、`norm(a, p) == 1`です。スカラーの場合、これは`sign(a)`に似ていますが、`normalize(0) = NaN`です。詳細は[`normalize!`](@ref)、[`norm`](@ref)、および[`sign`](@ref)を参照してください。
+`a`を正規化してその`p`-ノルムが1になるようにします。すなわち、`norm(a, p) == 1`です。スカラーの場合、これはsign(a)に似ていますが、normalize(0) = NaNです。詳細は[`normalize!`](@ref)、[`norm`](@ref)、および[`sign`](@ref)を参照してください。
 
 # 例
 

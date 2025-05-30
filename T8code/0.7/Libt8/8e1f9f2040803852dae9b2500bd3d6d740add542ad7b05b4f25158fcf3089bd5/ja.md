@@ -2,7 +2,7 @@
 t8_shmem_array_get_gloidx_array_for_writing(array)
 ```
 
-共有メモリ配列のデータへのポインタを、[`t8_gloidx_t`](@ref) 配列として解釈して返します。配列は書き込みが有効でなければならず、t8*shmem*array*end*writing が呼ばれた後にメモリに書き込んではいけません。
+共有メモリ配列のデータへのポインタを、[`t8_gloidx_t`](@ref) 配列として解釈して返します。配列は書き込みが有効でなければならず、t8*shmem*array*start*writing が呼ばれた後はメモリに書き込んではいけません。
 
 # 引数
 

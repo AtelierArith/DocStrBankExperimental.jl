@@ -3,7 +3,7 @@ ones([T=Float64,] dims::Tuple)
 ones([T=Float64,] dims...)
 ```
 
-指定されたサイズ `dims` のすべての要素が1の、要素型 `T` の `Array` を作成します。詳細は [`fill`](@ref)、[`zeros`](@ref) を参照してください。
+指定されたサイズ `dims` のすべての要素が1の `Array` を作成します。詳細は [`fill`](@ref)、[`zeros`](@ref) を参照してください。
 
 # 例
 

@@ -5,7 +5,7 @@ getTransverseMass(lv)
 与えられた `LorentzVectorLike` の横運動量を返します。すなわち、その平方横質量の平方根です。
 
 !!! example
-    `(E,px,py,pz)` が `LorentzVectorLike` の場合、これは `sqrt(E^2 - pz^2)` に相当します。
+    `(E,px,py,pz)` が `LorentzVectorLike` の場合、これは `sqrt(E^2 - pz^2)` と同等です。
 
 
 !!! note

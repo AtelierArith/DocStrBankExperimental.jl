@@ -3,7 +3,7 @@ BoundingBox(points, sz)
 BoundingBox{N, T, M}(points, bounds)
 ```
 
-[`Keypoints`](@ref) の周りのアイテムラッパー。
+[`Keypoints`](@ref) のアイテムラッパー。
 
 ## 例
 

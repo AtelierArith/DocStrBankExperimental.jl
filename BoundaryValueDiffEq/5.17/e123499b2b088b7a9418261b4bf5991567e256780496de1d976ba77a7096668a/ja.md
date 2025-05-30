@@ -10,12 +10,12 @@ BVPM2(max_num_subintervals::Int, method_choice::Int, diagnostic_output::Int,
 ## キーワード引数:
 
 ```
-- `max_num_subintervals`: 最大サブインターバル数、デフォルトは3000。
-- `method_choice`: IVPソルバーの選択、デフォルトは4次のルンゲクッタ法、
+- `max_num_subintervals`: 最大サブインターバルの数、デフォルトは3000。
+- `method_choice`: IVPソルバーの選択、デフォルトは4次のルンゲ・クッタ法、
   利用可能な選択肢:
-    - `2`: 2次のルンゲクッタ法。
-    - `4`: 4次のルンゲクッタ法。
-    - `6`: 6次のルンゲクッタ法。
+    - `2`: 2次のルンゲ・クッタ法。
+    - `4`: 4次のルンゲ・クッタ法。
+    - `6`: 6次のルンゲ・クッタ法。
 - `diagnostic_output`: BVPM2の診断出力、デフォルトは非表示、利用可能な
   選択肢:
     - `-1`: 完全な診断出力。
@@ -25,9 +25,9 @@ BVPM2(max_num_subintervals::Int, method_choice::Int, diagnostic_output::Int,
   欠陥制御、利用可能な選択肢:
     - `1`: 欠陥制御。
     - `2`: グローバル誤差制御。
-    - `3`: 欠陥制御の後にグローバル誤差制御。
+    - `3`: 欠陥制御とその後のグローバル誤差制御。
     - `4`: 欠陥とグローバル誤差制御の線形結合。
-- `singular_term`: ODEが左境界に特異項を持たない場合は何も指定せず、
+- `singular_term`: ODEが左境界で特異項を持たない場合は何も指定せず、
   特異項のための定数(d,d)行列を指定します。
 ```
 

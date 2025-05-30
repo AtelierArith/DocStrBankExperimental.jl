@@ -18,7 +18,7 @@ false
 julia> LinearAlgebra.isbanded(a, -1, 1)
 true
 
-julia> b = [1 0; -im -1] # 下バイディアゴナル
+julia> b = [1 0; -im -1] # 下バイジアゴナル
 2×2 Matrix{Complex{Int64}}:
  1+0im   0+0im
  0-1im  -1+0im

@@ -2,7 +2,7 @@
 fit(LinearDiscriminant, Xp, Xn; covestimator = SimpleCovariance())
 ```
 
-正のサンプルと負のサンプルの両方を考慮してLDAを実行します。この関数は以下のパラメータを受け入れます：
+正のサンプルと負のサンプルの両方を考慮してLDAを実行します。この関数は以下のパラメータを受け入れます。
 
 **パラメータ**
 

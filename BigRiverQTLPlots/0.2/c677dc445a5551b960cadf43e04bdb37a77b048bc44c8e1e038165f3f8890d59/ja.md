@@ -5,11 +5,11 @@ QTL分析のための散布図を生成します。
 
 ## 引数
 
-  * `vLOD` はLODスコアの最大値を含むベクトルです。
+  * `vLOD` はLODスコアの最大値を含むベクターです。
   * `dfgInfo` はローカス、cM距離、染色体名、Mb距離などの遺伝子型情報を含むデータフレームです。
   * `chrColname` は染色体名を含む列の名前で、デフォルト名は "Chr" です。
   * `mbColname` はメガベースDNA長を含む列の名前で、デフォルト名は "Mb" です。
-  * `thresholds` はプロットのためのLODスコアのしきい値を含む <: AbstractFloat 数値ベクトルです。
+  * `thresholds` はプロットのためのLODスコアのしきい値を含む <: AbstractFloat 数値ベクターです。
 
 ---
 
@@ -23,7 +23,7 @@ QTL分析のための散布図を生成します。
   * `dfgInfo` はローカス、cM距離、染色体名、Mb距離などの遺伝子型情報を含むデータフレームです。
   * `chrColname` は染色体名を含む列の名前で、デフォルト名は "Chr" です。
   * `mbColname` はメガベースDNA長を含む列の名前で、デフォルト名は "Mb" です。
-  * `significance` はLODスコアのしきい値を推定するための有意水準を含む <: AbstractFloat 数値ベクトルです。
+  * `significance` はLODスコアのしきい値を推定するための有意水準を含む <: AbstractFloat 数値ベクターです。
 
-`scanresult` に置換行列が含まれていない場合、元の最大LODスコアがプロットされ、`significance` ベクトルの値が比較のためのしきい値として使用されます。
+`scanresult` に置換行列が含まれていない場合、元の最大LODスコアがプロットされ、`significance` ベクターの値が比較のためのしきい値として使用されます。
 ```

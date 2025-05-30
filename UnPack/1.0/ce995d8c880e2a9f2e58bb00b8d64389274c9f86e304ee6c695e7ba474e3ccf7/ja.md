@@ -4,7 +4,7 @@
 
 複合型、`Dict{Symbol}`、`Dict{String}`、またはモジュールから変数にフィールド/プロパティ/キーをアンパックします。
 
-辞書の例：
+辞書を使った例：
 
 ```julia
 d = Dict{Symbol,Any}(:a=>5.0,:b=>2,:c=>"Hi!")
@@ -13,7 +13,7 @@ a == 5.0 #true
 c == "Hi!" #true
 ```
 
-型の例：
+型を使った例：
 
 ```julia
 struct A; a; b; c; end

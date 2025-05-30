@@ -8,6 +8,6 @@ pdf(d::Distribution{ArrayLikeVariate{N}}, x::AbstractArray{<:Real,N}) where {N}
 
 # 実装
 
-`pdf`の代わりに、`x`のサイズをチェックする必要がない`_pdf(d, x)`を実装するべきです。しかし、`pdf(d, x)`のデフォルト定義は通常`logpdf(d, x)`にフォールバックするため、`logpdf`を実装するだけで十分です。
+`pdf`の代わりに、`x`のサイズをチェックする必要のない`_pdf(d, x)`を実装すべきです。しかし、`pdf(d, x)`のデフォルト定義は通常`logpdf(d, x)`にフォールバックするため、`logpdf`を実装するだけで十分です。
 
 参照: [`logpdf`](@ref).

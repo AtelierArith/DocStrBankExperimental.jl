@@ -2,7 +2,7 @@
 pseudo_rem(f::_APL, g::_APL, algo)
 ```
 
-`f`を`g`で割った擬似余りを返します。これは[Knu14, Algorithm R, p. 425]で定義されています。
+`f`を`g`で割った擬似剰余を返します。これは[Knu14, Algorithm R, p. 425]で定義されています。
 
 詳細については[`pseudo_divrem`](@ref)を参照してください。
 

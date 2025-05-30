@@ -12,4 +12,4 @@ $$
 
 リーマンゼータ関数は $\zeta(s) = \zeta(s,1)$ として回復されます。
 
-外部リンク: [Riemann zeta function](https://en.wikipedia.org/wiki/Riemann_zeta_function), [Hurwitz zeta function](https://en.wikipedia.org/wiki/Hurwitz_zeta_function)
+外部リンク: [リーマンゼータ関数](https://en.wikipedia.org/wiki/Riemann_zeta_function), [ハルヴィッツゼータ関数](https://en.wikipedia.org/wiki/Hurwitz_zeta_function)

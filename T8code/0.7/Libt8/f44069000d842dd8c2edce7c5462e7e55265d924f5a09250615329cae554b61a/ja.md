@@ -8,7 +8,7 @@ t8_offset_range_send(start, _end, mpirank, offset_from, offset_to)
 
   * `start`:[in] 送信者として考慮される最初の mpi ランク。
   * `end`:[in] 送信者として考慮される最後の mpi ランク。
-  * `mpirank`:[in] 受信者として考慮される mpi ランク。
+  * `mpirank`:[in] 受信者として考慮される mpirank。
   * `offset_from`:[in] 現在のパーティションのパーティションテーブル。
   * `offset_to`:[in] 次のパーティションのパーティションテーブル。
 

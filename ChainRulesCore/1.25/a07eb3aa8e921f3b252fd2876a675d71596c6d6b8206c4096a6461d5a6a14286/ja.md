@@ -42,6 +42,6 @@ julia> hypot_pullback(1) == (NoTangent(), (x / hypot(x, y)), (y / hypot(x, y)))
 true
 ```
 
-オプションの[`RuleConfig`](@ref)オプションは、指定された機能をサポートするADシステムのためにのみrrulesを指定することを可能にします。必要ない場合は省略でき、`rrule`はフォールバックとしてそれなしで呼び出されます。これはほとんどのルールに当てはまります。
+オプションの[`RuleConfig`](@ref)オプションは、特定の機能をサポートするADシステムのためにのみrrulesを指定することを可能にします。必要ない場合は省略でき、`rrule`はフォールバックとしてそれなしで呼び出されます。これはほとんどのルールに当てはまります。
 
 関連情報：[`frule`](@ref)、[`@scalar_rule`](@ref)、[`RuleConfig`](@ref)

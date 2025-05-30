@@ -10,4 +10,4 @@ FROSTT `.tns` ファイル 'filename' の内容を Finch COO テンソルに読�
     このファイル形式はテンソルのサイズや eltype を記録せず、アーカイブ目的のみに提供されています。
 
 
-関連情報: [tnsread](http://willowahrens.io/TensorMarket.jl/stable/#TensorMarket.tnsread)
+参照: [tnsread](http://willowahrens.io/TensorMarket.jl/stable/#TensorMarket.tnsread)

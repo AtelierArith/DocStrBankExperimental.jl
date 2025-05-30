@@ -14,9 +14,9 @@ DegRevLex(variables...)
 using Groebner, AbstractAlgebra
 R, (x, y) = QQ["x", "y"];
 
-# x > y の場合の次数逆辞書順
+# x > y の次数逆辞書順
 groebner([x*y + x, x + y^2], ordering=DegRevLex())
 
-# y > x の場合の次数逆辞書順
+# y > x の次数逆辞書順
 groebner([x*y + x, x + y^2], ordering=DegRevLex(y, x))
 ```

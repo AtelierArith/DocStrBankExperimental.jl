@@ -19,12 +19,12 @@ Rodas5Pr(; chunk_size = Val{0}(),
   * `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、`Rodas5Pr(linsolve = KLUFactorization())`を指定します。`nothing`が渡されると、`DefaultLinearSolver`が使用されます。
   * `precs`: 任意の[LinearSolve.jl互換の前処理器](https://docs.sciml.ai/LinearSolve/stable/basics/Preconditioners/)を左または右の前処理器として使用できます。前処理器は、`Pl,Pr = precs(W,du,u,p,t,newW,Plprev,Prprev,solverdata)`関数によって指定され、引数は次のように定義されます：
 
-      * `W`: 非線形系の現在のヤコビ行列。アルゴリズムに応じて、$I - \gamma J$または$I/\gamma - J$として指定されます。これは通常、OrdinaryDiffEq.jlによって定義された`WOperator`型です。これは演算子の遅延表現です。ユーザーは、`convert(AbstractMatrix,W)`を呼び出すことで、`jac_prototype`に一致する`AbstractMatrix`を受け取るためにW行列を必要に応じて構築できます。
+      * `W`: 非線形システムの現在のヤコビ行列。アルゴリズムに応じて、$I - \gamma J$または$I/\gamma - J$として指定されます。これは通常、OrdinaryDiffEq.jlによって定義された`WOperator`型です。これは演算子の遅延表現です。ユーザーは、`convert(AbstractMatrix,W)`を呼び出すことで、`jac_prototype`に一致する`AbstractMatrix`を受け取るためにW行列を必要に応じて構築できます。
       * `du`: 現在のODE導関数
       * `u`: 現在のODE状態
       * `p`: ODEパラメータ
       * `t`: 現在のODE時間
-      * `newW`: `W`行列が前回の`precs`呼び出し以来更新されたかどうかを指定する`Bool`。`newW == true`のときのみ前処理器を更新することを推奨します。
+      * `newW`: `W`行列が前回の`precs`呼び出し以降に更新されたかどうかを指定する`Bool`。`newW == true`のときのみ前処理器を更新することを推奨します。
       * `Plprev`: 前の`Pl`。
       * `Prprev`: 前の`Pr`。
       * `solverdata`: ソルバーが`precs`関数に提供できるオプションの追加データ。ソルバー依存であり、変更される可能性があります。
@@ -44,4 +44,4 @@ Rodas5Pr(; chunk_size = Val{0}(),
 
 ## 参考文献
 
-  * Steinebach G. ロゼンブロック法のOrdinaryDiffEq.jl内での概要、最近の開発と応用 - プレプリント2024 https://github.com/hbrs-cse/RosenbrockMethods/blob/main/paper/JuliaPaper.pdf
+  * Steinebach G. ロゼンブロック法のOrdinaryDiffEq.jl内での概要、最近の発展と応用 - プレプリント2024 https://github.com/hbrs-cse/RosenbrockMethods/blob/main/paper/JuliaPaper.pdf

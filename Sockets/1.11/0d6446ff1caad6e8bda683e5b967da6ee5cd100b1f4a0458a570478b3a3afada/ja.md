@@ -8,7 +8,7 @@ getipaddr() -> IPAddr
 getipaddr(addr_type::Type{T}) where T<:IPAddr -> T
 ```
 
-指定されたタイプのローカルマシンのIPアドレスを取得します。指定されたタイプのアドレスが利用可能でない場合は例外をスローします。
+指定されたタイプのローカルマシンのIPアドレスを取得します。指定されたタイプのアドレスが利用できない場合は例外をスローします。
 
 この関数は[`getipaddrs`](@ref)の後方互換性ラッパーです。新しいアプリケーションは代わりに[`getipaddrs`](@ref)を使用するべきです。
 
@@ -22,4 +22,4 @@ julia> getipaddr(IPv6)
 ip"fe80::9731:35af:e1c5:6e49"
 ```
 
-さらに[`getipaddrs`](@ref)を参照してください。
+さらに[`getipaddrs`](@ref)も参照してください。

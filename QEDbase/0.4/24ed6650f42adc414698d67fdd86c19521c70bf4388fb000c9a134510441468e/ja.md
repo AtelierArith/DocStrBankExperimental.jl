@@ -37,14 +37,14 @@ julia> p = SFourMomentum(4,3,2,1)
  2.0
  1.0
 
-julia> trafo(p) # 各成分を2.0で乗算
+julia> trafo(p) # 各成分を2.0倍します
 4-element SFourMomentum with indices SOneTo(4):
  8.0
  6.0
  4.0
  2.0
 
-julia> inv(trafo)(p) # 各成分を2.0で除算
+julia> inv(trafo)(p) # 各成分を2.0で割ります
 4-element SFourMomentum with indices SOneTo(4):
  2.0
  1.5

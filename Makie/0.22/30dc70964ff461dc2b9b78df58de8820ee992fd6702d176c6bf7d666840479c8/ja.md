@@ -10,7 +10,7 @@ WilkinsonTicks(
 )
 ```
 
-`WilkinsonTicks`は`PlotUtils.optimize_ticks`の薄いラッパーであり、そのドキュメント文字列は以下に再現されています：
+`WilkinsonTicks`は`PlotUtils.optimize_ticks`の薄いラッパーであり、そのドキュメントは以下に再現されています：
 
 optimize*ticks(xmin, xmax; extend*ticks::Bool = false,                Q = [(1.0,1.0), (5.0, 0.9), (2.0, 0.7), (2.5, 0.5), (3.0, 0.2)],                k*min = 2, k*max = 10, k*ideal = 5,                granularity*weight = 1/4, simplicity*weight = 1/6,                coverage*weight = 1/3, niceness*weight = 1/4,                strict*span = true, span_buffer = nothing)
 
@@ -31,10 +31,10 @@ optimize*ticks(xmin, xmax; extend*ticks::Bool = false,                Q = [(1.0,
     目盛り計算を拡張するかどうかを決定します。デフォルトはfalseです。
   * `strict_span`:
 
-    [x*min, x*max]の外に目盛りがないべき場合はtrueです。デフォルトはtrueです。
+    [x*min, x*max]の外に目盛りが出ない場合はtrueです。デフォルトはtrueです。
   * `Q`:
 
-    ラベリングがサンプリングされる素敵な数の分布。形式は(number, score)で保存されます。
+    ラベリングがサンプリングされる素敵な数の分布。形式は(number, score)です。
   * `k_min`:
 
     最小目盛りの数。
@@ -46,16 +46,16 @@ optimize*ticks(xmin, xmax; extend*ticks::Bool = false,                Q = [(1.0,
     理想的な目盛りの数。
   * `granularity_weight`:
 
-    要求されたラベルの数におおよそ一致するように促します。
+    要求されたラベルの数に近い数を返すことを奨励します。
   * `simplicity_weight`:
 
-    Qの中で早く現れるステップサイズを好むことによって、より素敵なラベリングシーケンスを促します。また、シーケンスを基礎付ける方法として0を含むラベリングを報酬します。
+    Qの中で早く現れるステップサイズを好むことによって、より素敵なラベリングシーケンスを奨励します。また、シーケンスを基礎付ける方法として0を含むラベリングを報酬します。
   * `coverage_weight`:
 
-    データの範囲を大きく超えないラベリングを促し、不必要なホワイトスペースにペナルティを与えます。
+    データの範囲を大きく超えないラベリングを奨励し、不必要なホワイトスペースにペナルティを課します。
   * `niceness_weight`:
 
-    素敵な範囲を生成するラベリングを促します。
+    素敵な範囲を生成するラベリングを奨励します。
 
 ## 戻り値：
 
@@ -63,7 +63,7 @@ optimize*ticks(xmin, xmax; extend*ticks::Bool = false,                Q = [(1.0,
 
 ## 数学的詳細
 
-ウィルキンソンの最適化関数は、3つのコンポーネントの合計として定義されます。ユーザーがmラベルを要求し、可能なラベリングがkラベルを持つ場合、コンポーネントは`simplicity`、`coverage`、および`granularity`です。
+ウィルキンソンの最適化関数は、3つのコンポーネントの合計として定義されます。ユーザーがmラベルを要求し、可能なラベリングがkラベルを持つ場合、コンポーネントは`simplicity`、`coverage`、`granularity`です。
 
 これらのコンポーネントは次のように定義されます：
 

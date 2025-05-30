@@ -2,7 +2,7 @@
 aws_mqtt_client_connection_set_connection_result_handlers(connection, on_connection_success, on_connection_success_ud, on_connection_failure, on_connection_failure_ud)
 ```
 
-接続が成功または失敗したときに呼び出すコールバックを設定します
+接続が成功したり失敗したりしたときに呼び出すコールバックを設定します
 
 # 引数
 

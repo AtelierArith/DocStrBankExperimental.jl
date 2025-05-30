@@ -28,7 +28,7 @@ UnitaryVariationalProblem(
   * `timestep_name::Symbol`: タイムステップ変数の名前（デフォルト: `:Δt`）。
   * `init_trajectory::Union{NamedTrajectory, Nothing}`: 最適化を開始するためのオプションの初期軌道。
   * `a_bound::Float64`: 制御変数 `a` の境界（デフォルト: `1.0`）。
-  * `a_bounds::Vector`: 各制御変数の境界（デフォルト: `a_bound` で埋められたもの）。
+  * `a_bounds::Vector`: 各制御変数の境界（デフォルト: `a_bound` で埋められる）。
   * `da_bound::Float64`: 制御変数の導関数の境界（デフォルト: `Inf`）。
   * `da_bounds::Vector`: 各制御変数の導関数の境界。
   * `dda_bound::Float64`: 制御変数の二次導関数の境界（デフォルト: `1.0`）。
@@ -44,7 +44,7 @@ UnitaryVariationalProblem(
 
 # 戻り値
 
-軌道、目的、積分器、および制約を含む最適化問題を表す `DirectTrajOptProblem` オブジェクト。
+軌道、目的、積分器、および制約を含む最適化問題を表す `DirectTrajOptProblem` オブジェクト。 
 
 # 注意事項
 

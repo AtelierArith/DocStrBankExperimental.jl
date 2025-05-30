@@ -10,7 +10,7 @@ MMW{3}() # least-c ヒューリスティック
 MMW()
 ```
 
-マイナー・ミン・ウィズス ヒューリスティック。
+マイナー・ミン・ウィズスヒューリスティック。
 
 ```jldoctest
 julia> using CliqueTrees

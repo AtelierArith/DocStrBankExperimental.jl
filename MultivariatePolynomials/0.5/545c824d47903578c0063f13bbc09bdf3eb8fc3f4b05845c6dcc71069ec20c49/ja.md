@@ -2,13 +2,13 @@
 coefficient_type(p::AbstractPolynomialLike)
 ```
 
-`p`の係数型を返します。
+`p`の係数の型を返します。
 
 ```
 coefficient_type(::Type{PT}) where PT
 ```
 
-型`PT`の多項式の係数型を返します。
+型`PT`の多項式の係数の型を返します。
 
 ### 例
 

@@ -7,15 +7,15 @@ t8_forest_ghost_get_ghost_treeid(forest, gtreeid)
 # 引数
 
   * `forest`:[in] フォレスト。ゴーストレイヤーが存在する必要があります。
-  * `gtreeid`:[in] *forest*内のグローバルツリー。
+  * `gtreeid`:[in] *forest* 内のグローバルツリー。
 
 # 戻り値
 
-*gtreeid*がゴーストツリーでもある場合、そのツリーのghost->ghost_trees配列内のインデックスを返します。そうでない場合は負の数を返します。*forest*はこの関数を呼び出す前にコミットされている必要があります。
+*gtreeid* がゴーストツリーでもある場合、そのツリーの ghost->ghost_trees 配列内のインデックスを返します。そうでない場合は負の数を返します。*forest* はこの関数を呼び出す前にコミットされている必要があります。
 
 # 参照
 
-https://github.com/DLR-AMR/t8code/wiki/Tree-indexing でツリーインデクシングの詳細を確認してください。
+https://github.com/DLR-AMR/t8code/wiki/Tree-indexing でツリーインデクシングの詳細をご覧ください。
 
 ### プロトタイプ
 

@@ -7,7 +7,7 @@ findnext(pattern::AbstractPattern, string::String, start::Integer)
 
 返り値は、一致するシーケンスが見つかったインデックスの範囲であり、`s[findnext(x, s, i)] == x`となります：
 
-`findnext("substring", string, i)` == `start:stop` であり、`string[start:stop] == "substring"`かつ`i <= start`、または一致しない場合は`nothing`です。
+`findnext("substring", string, i)` == `start:stop` であり、`string[start:stop] == "substring"` かつ `i <= start`、または一致しない場合は`nothing`です。
 
 # 例
 

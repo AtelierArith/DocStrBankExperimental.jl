@@ -1,6 +1,6 @@
-Labelには以下の属性があります：
+Label には以下の属性があります：
 
-`alignmode`   デフォルト: `Inside()`   親のGridLayout内のテキストの整列モード。
+`alignmode`   デフォルト: `Inside()`   親 GridLayout 内のテキストの整列モード。
 
 `color`   デフォルト: `lift_parent_attribute(scene, :textcolor, :black)`   テキストの色。
 

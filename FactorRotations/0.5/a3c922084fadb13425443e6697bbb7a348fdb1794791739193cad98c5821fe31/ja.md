@@ -6,7 +6,7 @@ TargetRotation(target::AbstractMatrix; orthogonal = false)
 
 ## キーワード引数
 
-  * `orthogonal`: `orthogonal = true`の場合、直交回転が行われ、それ以外の場合は斜め回転が行われます。(デフォルト: `false`)
+  * `orthogonal`: `orthogonal = true`の場合は直交回転が行われ、それ以外の場合は斜め回転が行われます。(デフォルト: `false`)
 
 ## 詳細
 

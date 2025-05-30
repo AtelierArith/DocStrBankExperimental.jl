@@ -2,7 +2,7 @@
 t8_forest_is_committed(forest)
 ```
 
-フォレストがNULLでなく、初期化され、コミットされているかどうかを確認します。さらに、フォレストが可能な限り一貫性があることを主張します。
+フォレストがNULLでなく、初期化され、コミットされているかどうかを確認します。さらに、フォレストが可能な限り一貫していることを主張します。
 
 # 引数
 
@@ -10,7 +10,7 @@ t8_forest_is_committed(forest)
 
 # 戻り値
 
-フォレストがNULLでなく、t8*forest*initが呼び出され、t8*forest*commitが呼び出されている場合はTrue。それ以外の場合はFalse。
+フォレストがNULLでなく、t8*forest*initが呼び出され、t8*forest*commitが呼び出された場合はTrue。それ以外の場合はFalse。
 
 ### プロトタイプ
 

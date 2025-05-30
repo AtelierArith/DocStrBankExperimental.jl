@@ -5,4 +5,4 @@ zlims!(scene, limits::Real...)
 zlims!(scene, limits::NTuple{2, Real})
 ```
 
-指定されたシーンのz制限を設定します（デフォルトは現在のシーン）。
+与えられたシーンのz制限を設定します（デフォルトは現在のシーン）。

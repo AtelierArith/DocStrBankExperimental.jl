@@ -4,7 +4,7 @@ repeat(A::AbstractArray, counts::Integer...)
 
 配列 `A` を各次元で指定された回数だけ繰り返して新しい配列を構築します。
 
-関連項目: [`fill`](@ref), [`Iterators.repeated`](@ref), [`Iterators.cycle`](@ref).
+関連情報: [`fill`](@ref), [`Iterators.repeated`](@ref), [`Iterators.cycle`](@ref).
 
 # 例
 

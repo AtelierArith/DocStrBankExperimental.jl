@@ -29,4 +29,4 @@ param_bootstrap_result(
 # オプションの引数
 
   * saving: 結果を保存する場合は真の論理値。
-  * filename_suffix: 保存時にファイル名に使用されるサフィックスを持つ文字列。
+  * filename_suffix: 保存時にファイル名に使用されるサフィックスを含む文字列。

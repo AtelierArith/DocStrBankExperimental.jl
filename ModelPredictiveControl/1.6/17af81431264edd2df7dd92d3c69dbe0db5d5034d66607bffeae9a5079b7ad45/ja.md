@@ -2,12 +2,12 @@
 getinfo(mpc::PredictiveController) -> info
 ```
 
-`mpc` [`PredictiveController`](@ref) の最適値に関する追加情報を取得します。
+`mpc` [`PredictiveController`](@ref) の最適値に関する追加情報を取得します。トラブルシューティングに役立ちます。
 
 この関数は、[`moveinput!`](@ref) を呼び出した後に呼び出す必要があります。次のフィールドを持つ辞書 `info` を返します：
 
 !!! info
-    *`強調`* で示されたフィールドは、非Unicodeの代替です。
+    *`強調`* 付きのフィールドは非Unicodeの代替です。
 
 
   * `:ΔU` または *`:DeltaU`* : $H_c$ における最適な操作入力の増分、$\mathbf{ΔU}$
@@ -17,14 +17,14 @@ getinfo(mpc::PredictiveController) -> info
   * `:Ŷ` または *`:Yhat`* : $H_p$ における最適な予測出力、$\mathbf{Ŷ}$
   * `:Ŷs` または *`:Yhats`* : [`InternalModel`](@ref) の $H_p$ における予測された確率的出力、$\mathbf{Ŷ_s}$
   * `:R̂y` または *`:Rhaty`* : $H_p$ における予測出力セットポイント、$\mathbf{R̂_y}$
-  * `:R̂u` または *`:Rhatu`* : $H_p$ における予測操作入力セットポイント、$\mathbf{R̂_u}$
+  * `:R̂u` または *`:Rhatu`* : $H_p$ における予測された操作入力セットポイント、$\mathbf{R̂_u}$
   * `:x̂end` または *`:xhatend`* : 最適な終端状態、$\mathbf{x̂}_i(k+H_p)$
-  * `:J`   : 目的値の最適値、$J$
+  * `:J`   : 目的関数の最適値、$J$
   * `:U`   : $H_p$ における最適な操作入力、$\mathbf{U}$
   * `:u`   : 現在の最適な操作入力、$\mathbf{u}(k)$
   * `:d`   : 現在の測定外乱、$\mathbf{d}(k)$
 
-[`LinMPC`](@ref) および [`NonLinMPC`](@ref) の場合、フィールド `:sol` には印刷可能な最適化ソリューションの概要も含まれています。最後に、経済的コスト `:JE` とカスタム非線形制約 `:gc` の値が最適値で利用可能です [`NonLinMPC`](@ref)。
+[`LinMPC`](@ref) および [`NonLinMPC`](@ref) の場合、フィールド `:sol` には印刷可能な最適化ソリューションの概要も含まれています。最後に、経済的コスト `:JE` と最適値でのカスタム非線形制約 `:gc` の値も [`NonLinMPC`](@ref) に対して利用可能です。
 
 # 例
 

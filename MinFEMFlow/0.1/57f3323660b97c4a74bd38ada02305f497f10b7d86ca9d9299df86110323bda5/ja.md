@@ -1,0 +1,3 @@
+MinFEMFlow
+
+MinFEMに基づく、juliaでのミニマリスティックなストークス流れソルバー。

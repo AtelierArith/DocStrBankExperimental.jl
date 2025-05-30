@@ -7,7 +7,7 @@ shinkansen!(loss, model, data...; state, epochs=1, [batchsize, keywords...])
   * 損失関数は残りの引数を受け入れなければなりません：`loss(model, data...)`
   * `setup`からのオプティマイザの状態はキーワード`state`に渡されなければなりません。
 
-デフォルトでは、`gradient(loss, model, data...)`をそのまま呼び出します。引数の順序と同じです。`epochs = 100`を指定すると、これを100回行います。
+デフォルトでは、`gradient(loss, model, data...)`をそのまま呼び出します。引数の順序は同じです。`epochs = 100`を指定すると、これを100回実行します。
 
 しかし、`batchsize = 32`を指定すると、最初に`DataLoader(data...; batchsize)`を作成し、それを使用して`gradient`に供給する小さな配列を生成します。他のすべてのキーワードは`DataLoader`に渡されます。例えば、バッチをシャッフルするために使用されます。
 

@@ -11,5 +11,5 @@ CS-NeuralFMUを構築します。FMUはANN内の任意の位置にあります�
 # キーワード引数
 
 ```
-- `recordValues` FMU変数を追加で記録します
+- `recordValues` 追加でFMU変数を記録します
 ```

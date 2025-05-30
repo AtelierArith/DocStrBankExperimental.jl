@@ -2,7 +2,7 @@
 term(x)
 ```
 
-引数を適切な `AbstractTerm` 型でラップします： `Symbol` と `AbstractString` は `Term` になり、`Number` は `ConstantTerm` になります。 すべての `AbstractTerm` は変更されません。 `AbstractString` はラップする前にシンボルに変換されます。
+引数を適切な `AbstractTerm` 型でラップします： `Symbol` と `AbstractString` は `Term` になり、 `Number` は `ConstantTerm` になります。 すべての `AbstractTerm` は変更されません。 `AbstractString` はラップする前にシンボルに変換されます。
 
 # 例
 

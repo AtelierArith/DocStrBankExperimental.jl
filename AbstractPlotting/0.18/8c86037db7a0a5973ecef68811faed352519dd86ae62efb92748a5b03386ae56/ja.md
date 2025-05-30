@@ -2,7 +2,7 @@
 scatterlines(xs, ys, [zs]; kwargs...)
 ```
 
-プロット `scatter` マーカーとそれらの間の `lines`。
+`scatter` マーカーとそれらの間の `lines` をプロットします。
 
 ## 属性
 

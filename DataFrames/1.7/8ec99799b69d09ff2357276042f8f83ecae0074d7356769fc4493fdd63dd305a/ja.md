@@ -6,7 +6,7 @@ SubDataFrame{<:AbstractDataFrame, <:AbstractIndex, <:AbstractVector{Int}} <: Abs
 
 `SubDataFrame`は`AbstractDataFrame`であるため、ほとんどのDataFrame関数が機能することを期待してください。そのようなメソッドには、`describe`、`summary`、`nrow`、`size`、`by`、`stack`、および`join`が含まれます。
 
-親データフレームの列の選択が`:`（コロン）として渡されると、`SubDataFrame`は常に親からすべての列を持ち、その作成後に追加または削除されても保持されます。
+親データフレームの列の選択が`:`（コロン）として渡されると、`SubDataFrame`は常に親からすべての列を持ち、作成後に追加または削除されてもそのままです。
 
 # 例
 

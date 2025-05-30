@@ -1,0 +1,1 @@
+CategoricalValueまたはCategoricalArrayを整数または整数のベクトルに変換します。

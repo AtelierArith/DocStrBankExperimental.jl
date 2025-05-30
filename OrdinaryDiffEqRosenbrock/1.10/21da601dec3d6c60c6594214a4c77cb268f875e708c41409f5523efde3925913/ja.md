@@ -13,7 +13,7 @@ Rodas3(; - `standardtag`: パッケージ固有のタグを使用するかどう
              代替として`Val{:central}()`と`Val{:complex}()`があります。
          - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
              `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
+             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
          - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
            たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
            `Rodas3(linsolve = KLUFactorization())`を指定します。
@@ -35,7 +35,7 @@ Rodas3(; - `standardtag`: パッケージ固有のタグを使用するかどう
                  `newW == true`のときのみ前処理器を更新することを推奨します。
              - `Plprev`: 前の`Pl`。
              - `Prprev`: 前の`Pr`。
-             - `solverdata`: ソルバーが`precs`関数に提供できるオプションの追加データ。
+             - `solverdata`: ソルバーが`precs`関数に渡すことができるオプションの追加データ。
                  ソルバー依存であり、変更される可能性があります。
            戻り値は、LinearSolve.jl互換の前処理器のタプル`(Pl,Pr)`です。
            一方の前処理を指定するには、使用されない前処理器に対して`nothing`を返すだけです。
@@ -61,8 +61,8 @@ Rodas3(; - `standardtag`: パッケージ固有のタグを使用するかどう
   * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
   * `concrete_jac`: 形式`jac!(J, u, p, t)`の関数
   * `diff_type`: TBD
-  * `linsolve`: 内部線形システムのカスタムソルバー
-  * `precs`: 内部線形ソルバーのカスタム前処理器
+  * `linsolve`: 内部線形システム用のカスタムソルバー
+  * `precs`: 内部線形ソルバー用のカスタム前処理器
   * `step_limiter!`: 形式`limiter!(u, integrator, p, t)`の関数
 
 ## 参考文献

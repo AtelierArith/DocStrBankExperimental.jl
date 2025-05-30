@@ -2,7 +2,7 @@
 DiffEqArray(u::AbstractVector, t::AbstractVector)
 ```
 
-これは `VectorOfArray` であり、`A.u` に一致する `A.t` を格納します。これは `(A.t[i],A[i,:])` をプロットします。関数 `tuples(diffeq_arr)` は `(t,u)` のタプルを返します。
+これは `VectorOfArray` で、`A.u` に一致する `A.t` を格納します。これは `(A.t[i],A[i,:])` をプロットします。関数 `tuples(diffeq_arr)` は `(t,u)` のタプルを返します。
 
 DiffEqArray を構築するには
 

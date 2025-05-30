@@ -39,7 +39,7 @@ OptimizationFunction{iip}(f, adtype::AbstractADType = NoAD();
   * `grad(G,u,p)` または `G=grad(u,p)`: `u` に関する `f` の勾配。
   * `hess(H,u,p)` または `H=hess(u,p)`: `u` に関する `f` のヘッセ行列。
   * `hv(Hv,u,v,p)` または `Hv=hv(u,v,p)`: ヘッセ行列-ベクトル積 $(d^2 f / du^2) v$。
-  * `cons(res,u,p)` または `res=cons(u,p)` : 制約関数で、渡された `res` 配列を現在の変数の値で評価した `i` 番目の制約の値で変更する必要があります。この関数は単に関数評価を行い、等式または不等式の主張は、`lcons` および `ucons` として [`OptimizationProblem`](@ref) に渡された制約境界に基づいてソルバーによって適用されます。等式制約の場合、`lcons` と `ucons` は同じ値を渡す必要があります。
+  * `cons(res,u,p)` または `res=cons(u,p)` : 制約関数で、渡された `res` 配列を現在の変数の値で評価された `i` 番目の制約の値で変更する必要があります。この関数は単に関数評価を行い、等式または不等式の主張は、`lcons` および `ucons` として [`OptimizationProblem`](@ref) に渡された制約境界に基づいてソルバーによって適用されます。等式制約の場合、`lcons` と `ucons` は同じ値を渡す必要があります。
   * `cons_j(J,u,p)` または `J=cons_j(u,p)`: 制約のヤコビ行列。
   * `cons_jvp(Jv,u,v,p)` または `Jv=cons_jvp(u,v,p)`: 制約のヤコビ行列-ベクトル積。
   * `cons_vjp(Jv,u,v,p)` または `Jv=cons_vjp(u,v,p)`: 制約のヤコビ行列-ベクトル積。
@@ -48,9 +48,9 @@ OptimizationFunction{iip}(f, adtype::AbstractADType = NoAD();
   * `cons_jac_prototype`: 制約ヤコビ行列に一致する型のプロトタイプ行列。デフォルトは `nothing` で、これは密な制約ヤコビ行列を意味します。
   * `cons_hess_prototype`: 制約ヘッセ行列に一致する型のプロトタイプ行列。これは行列の配列として定義され、`hess[i]` が `i` 番目の出力に関するヘッセ行列です。例えば、ヘッセ行列がスパースである場合、`hess` は `Vector{SparseMatrixCSC}` です。デフォルトは `nothing` で、これは密な制約ヘッセ行列を意味します。
   * `lag_h(res,u,sigma,mu,p)` または `res=lag_h(u,sigma,mu,p)`: ラグランジアンのヘッセ行列で、`sigma` はコスト関数の乗数で、`mu` は制約を乗算するラグランジュ乗数です。これは、ラグランジアンのヘッセ行列を直接使用するソルバーに対して `hess` および `cons_h` の代わりに提供できます。
-  * `hess_colorvec`: `hess_prototype` のスパースパターンに対する SparseDiffTools.jl 定義に従った色ベクトル。これは、有限差分および自動微分を使用してヘッセ行列の構築を特化させ、スパースパターンに基づいて加速された方法で計算されるようにします。デフォルトは `nothing` で、これは必要に応じて内部で色ベクトルが計算されることを意味します。この操作のコストはスパースパターンに大きく依存します。
-  * `cons_jac_colorvec`: `cons_jac_prototype` のスパースパターンに対する SparseDiffTools.jl 定義に従った色ベクトル。
-  * `cons_hess_colorvec`: `cons_hess_prototype` のスパースパターンに対する SparseDiffTools.jl 定義に従った色ベクトルの配列。
+  * `hess_colorvec`: `hess_prototype` のスパースパターンに従った色ベクトル。これは、有限差分および自動微分を使用してヘッセ行列の構築を特化させ、スパースパターンに基づいて加速された方法で計算されます。デフォルトは `nothing` で、これは必要に応じて内部で色ベクトルが計算されることを意味します。この操作のコストはスパースパターンに大きく依存します。
+  * `cons_jac_colorvec`: `cons_jac_prototype` のスパースパターンに従った色ベクトル。
+  * `cons_hess_colorvec`: `cons_hess_prototype` のスパースパターンに従った色ベクトルの配列。
 
 [Symbolic Problem Building with ModelingToolkit](https://docs.sciml.ai/Optimization/stable/tutorials/symbolic/) インターフェースを使用する場合、次の引数も関連します：
 
@@ -65,7 +65,7 @@ OptimizationFunction{iip}(f, adtype::AbstractADType = NoAD();
 OptimizationFunction(f,AutoForwardDiff())
 ```
 
-は、必要なすべての関数を定義するために [ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl) を使用します。直接定義された関数がある場合、自動AD定義はユーザーの選択を上書きしないことに注意してください。
+は、必要なすべての関数を定義するために [ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl) を使用します。直接定義された関数がある場合、自動AD定義はユーザーの選択を上書きしません。
 
 ADベースの各コンストラクタは、以下の [Automatic Differentiation Construction Choice Recommendations](@ref ad) セクションでそれぞれのディスパッチを介して別々に文書化されています。
 

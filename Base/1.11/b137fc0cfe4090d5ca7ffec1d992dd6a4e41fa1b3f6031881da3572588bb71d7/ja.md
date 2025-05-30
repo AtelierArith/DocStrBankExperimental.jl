@@ -2,7 +2,7 @@
 findprev(pattern::AbstractString, string::AbstractString, start::Integer)
 ```
 
-`string`内の`start`位置から始めて`pattern`の前の出現を見つけます。
+`string`内の位置`start`から始まる`pattern`の前の出現を見つけます。
 
 返り値は、マッチするシーケンスが見つかったインデックスの範囲であり、`s[findprev(x, s, i)] == x`となります：
 

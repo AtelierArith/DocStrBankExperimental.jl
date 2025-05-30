@@ -12,7 +12,7 @@ t8_element_compare(ts, elem1, elem2)
 
 # 戻り値
 
-elem1 < elem2 の場合は負、elem1 が elem2 と等しい場合はゼロ、elem1 > elem2 の場合は正。elem2 が elem1 のコピーである場合、要素は等しいと見なされます。
+elem1 < elem2 の場合は負、elem1 が elem2 と等しい場合はゼロ、elem1 > elem2 の場合は正を返します。elem2 が elem1 のコピーである場合、要素は等しいと見なされます。
 
 ### プロトタイプ
 

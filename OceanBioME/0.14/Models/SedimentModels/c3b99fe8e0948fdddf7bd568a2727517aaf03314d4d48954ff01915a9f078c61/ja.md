@@ -8,7 +8,7 @@ InstantRemineralisationSediment(grid;
                                 kwargs...)
 ```
 
-`すぐに再鉱化される堆積物モデル`を返します。ここで、`sinking_tracers`は即座に再鉱化され、`remineralisation_reciever`に戻されますが、効率的に少量が永久に埋められます：
+`すぐに再鉱化される堆積物モデル`を返します。ここで、`sinking_tracers`は即座に再鉱化され、`remineralisation_reciever`に戻されますが、効率的に小さな割合が永久に埋められます：
 
 e = a + b * f / (k + f)²
 

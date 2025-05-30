@@ -2,7 +2,7 @@
 sort(A; dims::Integer, alg::Algorithm=defalg(A), lt=isless, by=identity, rev::Bool=false, order::Ordering=Forward)
 ```
 
-与えられた次元に沿って多次元配列 `A` をソートします。可能なキーワード引数の説明については、[`sort!`](@ref) を参照してください。
+与えられた次元に沿って多次元配列 `A` をソートします。可能なキーワード引数の説明については [`sort!`](@ref) を参照してください。
 
 配列のスライスをソートするには、[`sortslices`](@ref) を参照してください。
 

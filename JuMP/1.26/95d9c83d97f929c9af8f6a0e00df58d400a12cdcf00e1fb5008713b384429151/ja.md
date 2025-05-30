@@ -8,7 +8,7 @@ BridgeableConstraint(
 
 [`AbstractConstraint`](@ref) は、`bridge_type{coefficient_type}` のブリッジによってブリッジ可能な `constraint` を表します。
 
-モデルに `BridgeableConstraint` を追加することは、次のことと同等です：
+モデルに `BridgeableConstraint` を追加することは、次の操作と同等です：
 
 ```julia
 add_bridge(model, bridge_type; coefficient_type = coefficient_type)

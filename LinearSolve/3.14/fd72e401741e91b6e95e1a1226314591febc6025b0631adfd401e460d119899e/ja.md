@@ -5,4 +5,4 @@ KrylovJL(args...; KrylovAlg = Krylov.gmres!,
     kwargs...)
 ```
 
-Krylov.jlのクリロフ部分空間反復ソルバーの一般的なラッパーです。
+Krylov.jlのクライロフ部分空間反復ソルバーの一般的なラッパーです。

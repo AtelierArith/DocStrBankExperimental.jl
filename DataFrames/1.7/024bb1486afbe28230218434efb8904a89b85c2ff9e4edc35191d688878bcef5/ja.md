@@ -6,14 +6,14 @@ subset(gdf::GroupedDataFrame, args...;
        ungroup::Bool=true, threads::Bool=true)
 ```
 
-データフレーム `df` または `gdf` の親のコピーを返し、与えられた行に対して変換 `args` によって生成されたすべての値が `true` である行のみを含みます。すべての変換は `true` または `false` を含むベクターを生成する必要があります。最初の引数が `GroupedDataFrame` の場合、変換は単一の `true` または `false` 値を返すことも許可されており、これによりグループ全体を含めるか除外することができます。
+データフレーム `df` または `gdf` の親のコピーを返し、与えられた行に対して変換 `args` によって生成されたすべての値が `true` である行のみを含みます。すべての変換は `true` または `false` を含むベクトルを生成する必要があります。最初の引数が `GroupedDataFrame` の場合、変換は単一の `true` または `false` 値を返すことも許可されており、これによりグループ全体を含めるか除外することができます。
 
 `skipmissing=false`（デフォルト）の場合、`args` は `Bool` 値のみを含む結果を生成する必要があります。`skipmissing=true` の場合、さらに `missing` が許可され、これは `false` として扱われます（つまり、条件のいずれかが `missing` を返す行はスキップされます）。
 
 `args` に渡される各引数は、[`select`](@ref) に記載されたルールに従う任意の指定子であることができますが、次の制限があります：
 
   * 対象の列名を指定することはできません。`subset` は新しい列を作成しないためです。
-  * 渡されたすべての変換はスカラーまたはベクターを返す必要があります（`AbstractDataFrame`、`NamedTuple`、`DataFrameRow` または `AbstractMatrix` を返すことはサポートされていません）。
+  * 渡されたすべての変換はスカラーまたはベクトルを返す必要があります（`AbstractDataFrame`、`NamedTuple`、`DataFrameRow` または `AbstractMatrix` を返すことはサポートされていません）。
 
 `view=true` の場合、`DataFrame` の代わりに `SubDataFrame` ビューが返されます。
 
@@ -29,7 +29,7 @@ subset(gdf::GroupedDataFrame, args...;
 
 メタデータ：この関数はテーブルレベルおよび列レベルの `:note` スタイルのメタデータを保持します。
 
-参照： [`subset!`](@ref)、[`filter`](@ref)、[`select`](@ref)
+参照： [`subset!`](@ref), [`filter`](@ref), [`select`](@ref)
 
 # 例
 

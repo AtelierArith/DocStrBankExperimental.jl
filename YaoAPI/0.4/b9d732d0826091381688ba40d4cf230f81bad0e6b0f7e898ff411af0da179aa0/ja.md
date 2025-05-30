@@ -2,7 +2,7 @@
 density_matrix(register_or_rho[, locations])
 ```
 
-`locations`（デフォルト：すべてのキュービット）のキュービットに対する縮退密度行列を返します。
+指定された`locations`の量子ビットに対する縮退密度行列を返します（デフォルト：すべての量子ビット）。
 
 ### 例
 

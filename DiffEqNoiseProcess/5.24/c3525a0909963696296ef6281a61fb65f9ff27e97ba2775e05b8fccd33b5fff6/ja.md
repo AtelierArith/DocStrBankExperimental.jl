@@ -14,7 +14,7 @@ NoiseApproximation(source1::DEIntegrator,
 
 この例では、`NoiseApproximation`を使用して、確率微分方程式の定義から独自の幾何ブラウン運動を構築する方法を示します。通常の使用では、`GeometricBrownianMotionProcess`を使用するべきです。なぜなら、それがより効率的で分布的に正確だからです。
 
-まず、`SDEProblem`を定義しましょう。ここでは、ノイズを無限の積分で使用できるように、時間範囲を`(0.0,Inf)`とします。
+まず、`SDEProblem`を定義しましょう。ここでは、ノイズが無限の積分で使用できるように、時間範囲を`(0.0,Inf)`とします。
 
 ```julia
 const μ = 1.5

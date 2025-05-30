@@ -2,4 +2,4 @@
 ScalarSpace <: AbstractSpace
 ```
 
-ドメイン位置に依存しない量
+位置に依存しない量のドメイン

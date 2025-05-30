@@ -30,4 +30,4 @@ polynomial(f::Function, mv::AbstractVector{<:AbstractMonomialLike})
 
 ### 例
 
-`polynomial([2, 4, 1], [x, x^2*y, x*y])`を呼び出すと、$4x^2y + xy + 2x$を返すべきです。
+`polynomial([2, 4, 1], [x, x^2*y, x*y])`を呼び出すと、$4x^2y + xy + 2x$が返されるべきです。

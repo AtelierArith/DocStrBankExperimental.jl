@@ -4,7 +4,7 @@ Base.resize!(@nospecialize(ids::IDSvector{T}), condition::Pair{String}, conditio
 
 条件が満たされていない場合にサイズを変更します。
 
-`wipe=true` の場合、条件に一致するエントリが見つかった場合、対応する IDS の内容は空になります。
+wipe=true の場合、条件に一致するエントリが見つかった場合、一致する IDS の内容は空になります。
 
 いずれにせよ、IDS は条件で満たされます。
 

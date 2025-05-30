@@ -8,7 +8,7 @@
 
 出力タイプは `Matrix{RGB{N0f8}}` のタイプです。これを分解してみましょう：
 
-  * `Matrix`: これは2D **配列**で、`img[10,20]` のようにインデックスを付けて、`RGB{N0f8}` タイプのエントリを取得できます。
+  * `Matrix`: これは 2D **配列**で、`img[10,20]` のようにインデックスを付けて、`RGB{N0f8}` タイプのエントリを取得できます。
   * `RGB` ([ColorTypes.jl](https://github.com/JuliaGraphics/ColorTypes.jl) から): `r`（赤）、`g`（緑）、`b`（青）のフィールドを持つ `struct` で、各フィールドは `N0f8` タイプです。これらは色を構成するデジタル「チャネル」値です。
   * `N0f8` ([FixedPointNumbers.jl](https://github.com/JuliaMath/FixedPointNumbers.jl) から): 8ビットのみを使用する特別なタイプの浮動小数点数です。通常の `Float64` ではなく、`Float8` と考えてください。`Float64(x)` を使用して通常の `Float64` に変換できます。
 

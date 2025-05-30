@@ -4,7 +4,7 @@ Alshina6(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
            thread = OrdinaryDiffEq.False())
 ```
 
-明示的ルンゲ-クッタ法。 6次、7段階の方法で最適なパラメータを持つ。
+明示的ルンゲ-クッタ法。6次、7段階の方法で最適なパラメータを持つ。
 
 ### キーワード引数
 

@@ -17,7 +17,7 @@ ord = ProductOrdering(DegRevLex(x, y), DegRevLex(w, z))
 groebner([x*y + w, y*z - w], ordering=ord)
 ```
 
-`*`演算子を使うことも可能です：
+`*`演算子を使用することも可能です：
 
 ```@example
 using Groebner, AbstractAlgebra

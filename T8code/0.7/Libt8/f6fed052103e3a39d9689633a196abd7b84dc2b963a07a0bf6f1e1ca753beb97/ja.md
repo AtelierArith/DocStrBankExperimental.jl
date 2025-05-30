@@ -7,7 +7,7 @@ t8_forest_element_face_neighbor(forest, ltreeid, elem, neigh, neigh_scheme, face
 # 引数
 
   * `elem`:[in] 考慮される要素。
-  * `neigh`:[in,out] 入力時には、面隣接のeclassのスキームの割り当てられた要素。出力時には、この要素のデータが面隣接のデータで埋められます。隣接が存在しない場合、データは任意に変更される可能性があります。
+  * `neigh`:[in,out] 入力時には面隣接のeclassのスキームの割り当てられた要素。出力時には、この要素のデータが面隣接のデータで埋められます。隣接が存在しない場合、データは任意に変更される可能性があります。
   * `neigh_scheme`:[in] *neigh* のeclassスキーム。
   * `face`:[in] 隣接が構築されるべき面の番号。
   * `neigh_face`:[out] *neigh* の視点から見た面の番号。

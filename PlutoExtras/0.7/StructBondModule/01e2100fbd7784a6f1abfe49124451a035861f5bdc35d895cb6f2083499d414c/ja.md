@@ -23,8 +23,8 @@ end
 	c = TextField()
 end
 @fielddescription ASD begin
-	a = md"マジカルフィールドのマークダウン説明"
-	b = @htl "<span>HTML説明のフィールド</span>"
+	a = md"マークダウン説明のある魔法のフィールド"
+	b = @htl "<span>HTML説明のあるフィールド</span>"
 	c = "通常の文字列説明"
 end
 @bind asd StructBond(ASD)

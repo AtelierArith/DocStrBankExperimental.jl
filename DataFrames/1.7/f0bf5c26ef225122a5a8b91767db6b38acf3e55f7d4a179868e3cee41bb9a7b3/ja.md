@@ -4,7 +4,7 @@ fillcombinations(df::AbstractDataFrame, indexcols;
                      fill=missing)
 ```
 
-データフレーム `df` の列 `indexcols` のレベルのすべての組み合わせを生成します。レベルとその順序は `levels` 関数によって決定されます（すなわち、デフォルトでは辞書式にソートされたユニークな値、または例えば `CategoricalArray` 列のためのカスタムレベルのセット）、さらに `missing` が存在する場合はそれも含まれます。
+データフレーム `df` の列 `indexcols` のレベルのすべての組み合わせを生成します。レベルとその順序は `levels` 関数によって決定されます（すなわち、デフォルトでは辞書順にソートされたユニークな値、または例えば `CategoricalArray` 列のためのカスタムレベルのセット）、さらに `missing` が存在する場合はそれも含まれます。
 
 `df` に存在しない `indexcols` の組み合わせについては、これらの列は `fill` 値（デフォルトでは `missing`）で埋められます。
 

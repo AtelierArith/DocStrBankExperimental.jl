@@ -2,4 +2,4 @@
 dexec(dInfo::Dinfo, fn)
 ```
 
-`Dinfo`で動作する`dexec`のバリアントです。
+`Dinfo`と連携する`dexec`のバリアントです。

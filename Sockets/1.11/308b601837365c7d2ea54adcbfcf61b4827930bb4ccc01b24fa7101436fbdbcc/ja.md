@@ -2,7 +2,7 @@
 IPv4(host::Integer) -> IPv4
 ```
 
-IPアドレス `host` を [`Integer`](@ref) 形式で受け取り、IPv4オブジェクトを返します。
+IPアドレス `host` を [`Integer`](@ref) 形式で指定して、IPv4オブジェクトを返します。
 
 # 例
 

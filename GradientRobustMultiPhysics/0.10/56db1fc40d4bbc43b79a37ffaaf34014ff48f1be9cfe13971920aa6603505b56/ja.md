@@ -9,4 +9,4 @@ addblock_matmul!(
 
 ```
 
-FEMatrixBlock A に行列の積 B と C を加えます。
+行列の積 B と C を FEMatrixBlock A に追加します。

@@ -5,7 +5,7 @@ A time input (`<input type="time">`) - ユーザーは時間を選択でき、�
 [Mozilla の `<input type="time">` に関するドキュメント](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)を参照してください。
 
 !!! warning "古い情報"
-    これは `TimeField` ですが、私たちの新しい関数 [`TimePicker`](@ref) を使用するべきです。こちらの方がはるかに優れています！ これは `String` の代わりに Julia の `Time` を直接返します。
+    これは `TimeField` ですが、私たちの新しい関数 [`TimePicker`](@ref) を使用するべきです。これははるかに優れています！ `String` ではなく、Julia の `Time` を直接返します。
 
 
 # 例

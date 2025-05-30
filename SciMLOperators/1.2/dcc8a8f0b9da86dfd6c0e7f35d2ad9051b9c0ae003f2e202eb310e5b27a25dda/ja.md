@@ -4,4 +4,4 @@ concretize(L) -> AbstractMatrix
 concretize(L) -> Number
 ```
 
-`SciMLOperator`をイーガーフュージョンを介して具体的な型に変換します。このメソッドは、すでに具体的な型であるタイプには何もしません。
+`SciMLOperator`を具体的な型に変換するには、イager fusionを使用します。このメソッドは、すでに具体的な型であるタイプには何もしません。

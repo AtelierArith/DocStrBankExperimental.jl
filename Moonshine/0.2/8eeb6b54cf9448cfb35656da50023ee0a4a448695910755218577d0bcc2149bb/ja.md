@@ -15,7 +15,7 @@ struct CheapStack{T}
   * `pop!`
   * `push!`
 
-便利のために、`CheapStack`は[イテレーションインターフェース](https://docs.julialang.org/en/v1/manual/interfaces/#man-interface-iteration)を実装しています。
+便利のために、`CheapStack` は [反復インターフェース](https://docs.julialang.org/en/v1/manual/interfaces/#man-interface-iteration) を実装しています。
 
 # フィールド
 

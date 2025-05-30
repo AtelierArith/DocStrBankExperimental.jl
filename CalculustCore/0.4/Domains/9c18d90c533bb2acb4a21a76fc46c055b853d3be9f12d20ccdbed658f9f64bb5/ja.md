@@ -3,4 +3,4 @@ boundary_tags(dom)
 
 ```
 
-`boundaries(dom)`に対応するタグのタプルを返します。
+`boundaries(dom)` に対応するタグのタプルを返します。

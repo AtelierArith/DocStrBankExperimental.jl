@@ -2,7 +2,7 @@
 lmul!(A, B)
 ```
 
-行列の積 $AB$ を計算し、`B` を上書きして結果を返します。ここで、`A` は特別な行列タイプでなければなりません。例えば、[`Diagonal`](@ref)、[`UpperTriangular`](@ref)、または [`LowerTriangular`](@ref) のようなもの、または [`QR`](@ref) のような何らかの直交タイプです。
+行列の積 $AB$ を計算し、`B` を上書きして結果を返します。ここで、`A` は特別な行列タイプでなければなりません。例えば、[`Diagonal`](@ref)、[`UpperTriangular`](@ref)、または [`LowerTriangular`](@ref) のような、あるいは [`QR`](@ref) を参照してください。
 
 # 例
 

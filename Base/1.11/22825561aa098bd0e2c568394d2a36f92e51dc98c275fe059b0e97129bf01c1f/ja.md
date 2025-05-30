@@ -2,7 +2,7 @@
 x | y
 ```
 
-ビット単位の論理和。片方のオペランドが `missing` で、もう片方が `false` の場合は [`missing`](@ref) を返す [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) を実装しています。
+ビット単位の論理和。 [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic)を実装しており、片方のオペランドが`missing`で、もう片方が`false`の場合は[`missing`](@ref)を返します。
 
 関連: [`&`](@ref), [`xor`](@ref), [`||`](@ref).
 

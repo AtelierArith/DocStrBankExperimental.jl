@@ -9,7 +9,7 @@ ShowList
 ## コンストラクタ
 
   * `ShowList(o; brackets="()", left_bracket=Print("("), right_bracket=Print(")"),           new_lines=false, indent="    ", delim=Print(", "), max=8,           continuation=Print("…"), entry_style=nothing)`
-  * `ShowList(o...; kw...)`（上記と同じキーワード引数）
+  * `ShowList(o...; kw...)` （上記と同じキーワード引数）
 
 ## 引数
 

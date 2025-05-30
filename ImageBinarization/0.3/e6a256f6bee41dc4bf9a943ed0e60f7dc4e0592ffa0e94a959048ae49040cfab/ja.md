@@ -16,7 +16,7 @@ binarize!([out,] img, f::Polysegment)
 
 # 詳細
 
-このアプローチは、2つのクラスタ中心（すなわち前景と背景）の灰色レベルを表す多項式の2つの根を持つ一変数の2次多項式を構築することを含みます。ピクセルは、どのクラスタ中心が最も近いかに応じて前景または背景に割り当てられます。
+このアプローチは、2つのクラスタ中心（すなわち前景と背景）の灰色レベルを表す2つの根を持つ単変数の2次多項式を構築することを含みます。ピクセルは、どのクラスタ中心が最も近いかに応じて前景または背景に割り当てられます。
 
 # 引数
 
@@ -40,3 +40,5 @@ img_binary = binarize(img, Polysegment())
 ## 参考文献
 
 1. R. E. Vidal, "Generalized Principal Component Analysis (GPCA): An Algebraic Geometric Approach to Subspace Clustering and Motion Segmentation." Order No. 3121739, University of California, Berkeley, Ann Arbor, 2003.
+
+```

@@ -5,11 +5,11 @@ metadata(dfc::DataFrameColumns, key::AbstractString, [default]; style::Bool=fals
 metadata(dfr::DataFrameRows, key::AbstractString, [default]; style::Bool=false)
 ```
 
-`df` に関連付けられたキー `key` のテーブルレベルのメタデータ値を返します。`style=true` の場合、メタデータ値とメタデータスタイルのタプルを返します。
+`df` に関連付けられたテーブルレベルのメタデータ値を `key` のために返します。`style=true` の場合、メタデータ値とメタデータスタイルのタプルを返します。
 
 `SubDataFrame` と `DataFrameRow` は親の `:note` スタイルのメタデータのみを公開します。
 
-`default` が渡された場合、`key` が存在しないときにそれを返します。`style=true` の場合は `(default, :default)` を返します。
+`default` が渡された場合、`key` が存在しない場合はそれを返します; `style=true` の場合は `(default, :default)` を返します。
 
 参照: [`metadatakeys`](@ref), [`metadata!`](@ref), [`deletemetadata!`](@ref), [`emptymetadata!`](@ref), [`colmetadata`](@ref), [`colmetadatakeys`](@ref), [`colmetadata!`](@ref), [`deletecolmetadata!`](@ref), [`emptycolmetadata!`](@ref).
 

@@ -8,7 +8,7 @@ Replace(f; with)
 ## 例
 
 ```
-Replace(x -> x isa String, "A string was here")
+Replace(x -> x isa String, "文字列がここにありました")
 Replace(x -> x isa String, uppercase)
-Replace(x -> x isa Int && iseven(x), "An even Int was here")
+Replace(x -> x isa Int && iseven(x), "偶数のIntがここにありました")
 ```

@@ -4,6 +4,6 @@
 
 **属性**
 
-(`?Makie.Label.x` を REPL で入力して属性 `x` についての詳細を確認してください)
+(`?Makie.Label.x` をREPLで入力して属性 `x` についての詳細情報を取得してください)
 
 `alignmode`, `color`, `font`, `fontsize`, `halign`, `height`, `justification`, `lineheight`, `padding`, `rotation`, `tellheight`, `tellwidth`, `text`, `valign`, `visible`, `width`, `word_wrap`

@@ -8,7 +8,7 @@ JuMPモデル`model`に関連付けられた最も内側のオプティマイザ
 
 参照: [`backend`](@ref)。
 
-unsafe backend内の変数または制約のインデックスを取得するには、[`optimizer_index`](@ref)を使用してください。
+unsafe backend内の変数または制約のインデックスを取得するには、[`optimizer_index`](@ref)を使用します。
 
 ## 安全でない動作
 
@@ -41,7 +41,7 @@ A HiGHS model with 0 columns and 0 rows.
 
 ## 代替手段
 
-`unsafe_backend`の代わりに、[`direct_model`](@ref)を使用してモデルを作成し、代わりに[`backend`](@ref)を呼び出してください。
+`unsafe_backend`の代わりに、[`direct_model`](@ref)を使用してモデルを作成し、代わりに[`backend`](@ref)を呼び出します。
 
 たとえば、次のようにする代わりに:
 

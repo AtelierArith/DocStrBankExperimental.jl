@@ -9,7 +9,7 @@ MultiBandPhotosyntheticallyActiveRadiation(; grid::AbstractGrid{FT},
                                              surface_PAR = default_surface_PAR)
 ```
 
-`surface_PAR`を`surface_PAR_division`によって`bands`に分割した`MultiBandPhotosyntheticallyActiveRadiation`減衰モデルを返します。
+`surface_PAR`を`surface_PAR_division`で`bands`に分割した`MultiBandPhotosyntheticallyActiveRadiation`減衰モデルを返します。
 
 減衰morel*coefficientsは、`base*water*attenuation*coefficient`、`base*chlorophyll*exponent`、および`base*chlorophyll*attenuation*coefficient`から計算され、これらは`base*bands`の波長での係数の配列である必要があります。
 

@@ -2,11 +2,11 @@
 run_job(qpu::AnyonYukonQPU, circuit::QuantumCircuit, shot_count::Integer)
 ```
 
-`QPU` サービスに回路を送信して実行します。この関数は、[`transpile_and_run_job`](@ref) のように標準的なトランスパイルを行いません。回路の実行回数は `shot_count` で指定されます。
+`QPU` サービスに回路を実行するために提出します。この関数は [`transpile_and_run_job`](@ref) のような標準的なトランスパイルを行いません。回路の実行回数は `shot_count` で指定されます。
 
 回路の測定結果のヒストグラムとシミュレーションの実行時間（ミリ秒単位）またはエラーメッセージを返します。
 
-`circuit` が無効な場合、それはホストに送信されず、エラーがスローされます。`circuit` が無効である理由は以下の通りです：
+`circuit` が無効な場合、ホストに送信されず、エラーがスローされます。`circuit` が無効である理由は以下の通りです：
 
   * `circuit` に `Readout` 命令が含まれていない（[`CircuitContainsAReadoutTranspiler`](@ref) を参照）。
   * 複数の `Readout` 命令が同じ宛先ビットを持っている（[`ReadoutsDoNotConflictTranspiler`](@ref) を参照）。

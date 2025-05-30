@@ -2,4 +2,4 @@
 Minute(dt::Time) -> Minute
 ```
 
-Timeの分の部分を`Minute`として返します。
+Timeの分部分を`Minute`として返します。

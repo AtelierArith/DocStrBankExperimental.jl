@@ -2,7 +2,7 @@
 CastUniversalToRzRxRzTranspiler
 ```
 
-入力回路内の `Universal` ゲートを見つけ、それを新しい回路内の `PhaseShift` (P)、`RotationX` (Rx)、および `PhaseShift` (P) ゲートのシーケンスに変換するトランスパイラステージ。入力回路と出力回路は、任意の状態 `Ket` に対して同じ操作を実行します（グローバル位相を除く）。
+入力回路内の `Universal` ゲートを見つけ、それを新しい回路内の `PhaseShift` (P)、`RotationX` (Rx)、および `PhaseShift` (P) ゲートのシーケンスにキャストするトランスパイラーステージ。入力回路と出力回路は、任意の状態 `Ket` に対して同じ操作を実行します（グローバル位相を除く）。
 
 # 例
 

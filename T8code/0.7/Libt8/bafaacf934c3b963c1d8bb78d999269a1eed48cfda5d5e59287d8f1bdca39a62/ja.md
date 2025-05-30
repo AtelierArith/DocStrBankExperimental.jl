@@ -11,7 +11,7 @@ t8_element_array_resize(element_array, new_count)
 # 引数
 
   * `element_array`:[in,out] 修正される要素配列。
-  * `new_count`:[in] 配列の新しい要素数。ゼロの場合、効果は t8*element*array_reset と同じです。
+  * `new_count`:[in] 配列の新しい要素数。ゼロの場合、効果は t8*element*array_reset と等しくなります。
 
 ### プロトタイプ
 

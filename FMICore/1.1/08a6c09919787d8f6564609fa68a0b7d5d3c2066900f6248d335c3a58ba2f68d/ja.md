@@ -2,4 +2,4 @@
 
 この関数は連続状態の数を返します。この関数はモデル交換でのみ呼び出すことができます。
 
-fmi3GetNumberOfContinuousStatesは、構造パラメータが変更された後に呼び出す必要があります。構造パラメータが変更されない限り、状態の数はmodelDescription.xmlに記載されており、この関数を呼び出す必要はありません。
+fmi3GetNumberOfContinuousStatesは、構造パラメータが変更された後に呼び出す必要があります。構造パラメータが変更されていない限り、状態の数はmodelDescription.xmlに記載されており、この関数を呼び出す必要はありません。

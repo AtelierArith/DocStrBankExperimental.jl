@@ -31,9 +31,9 @@ val_update = (a, u, p, t; scale = 0.0) -> copy(scale)
 α = ScalarOperator(0.0; update_func = val_update; accepted_kwargs = (:scale,))
 β = 2 * α + 3 / α
 
-# Lをアウトオブプレースで更新し、評価
+# L をアウトオブプレースで更新し、評価
 β(u, p, t; scale = 1.0)
 
-# Lをインプレースで更新し、評価
+# L をインプレースで更新し、評価
 β(v, u, p, t; scale = 1.0)
 ```

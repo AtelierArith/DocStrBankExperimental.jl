@@ -6,7 +6,7 @@ GeneralizedEigen <: Factorization
 
 `F::GeneralizedEigen` が因子化オブジェクトである場合、固有値は `F.values` を介して取得でき、固有ベクトルは行列 `F.vectors` の列として取得できます。（`k` 番目の固有ベクトルはスライス `F.vectors[:, k]` から取得できます。）
 
-分解を反復すると、成分 `F.values` と `F.vectors` が得られます。
+分解を反復すると、コンポーネント `F.values` と `F.vectors` が生成されます。
 
 # 例
 

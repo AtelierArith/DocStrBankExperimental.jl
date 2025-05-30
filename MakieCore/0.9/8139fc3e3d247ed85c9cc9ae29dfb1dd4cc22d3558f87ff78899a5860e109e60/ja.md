@@ -19,7 +19,7 @@ size(screen) # ピクセル単位のサイズ
 empty!(screen) # スクリーンの状態を空にして再利用するか、閉じる
 
 # オプション
-wait(screen) # ウィンドウが開いている間待機する
+wait(screen) # ウィンドウが開いている限り待機する
 
 # Makieによって提供される：
 push_screen!(scene, screen)

@@ -43,21 +43,21 @@ v → branch_net → flatten_layer → linear_layer → b
 julia> deeponet = DeepONet((3, 5, 4), relu, (2, 6, 4, 4), tanh)
 DeepONet(
     branch_net = Chain(
-        layer_1 = Dense(3 => 5, relu),  # 20パラメータ
-        layer_2 = Dense(5 => 4),        # 24パラメータ
+        layer_1 = Dense(3 => 5, relu),  # 20 parameters
+        layer_2 = Dense(5 => 4),        # 24 parameters
     ),
     trunk_net = Chain(
-        layer_1 = Dense(2 => 6, tanh_fast),  # 18パラメータ
-        layer_2 = Dense(6 => 4, tanh_fast),  # 28パラメータ
-        layer_3 = Dense(4 => 4, tanh_fast),  # 20パラメータ
+        layer_1 = Dense(2 => 6, tanh_fast),  # 18 parameters
+        layer_2 = Dense(6 => 4, tanh_fast),  # 28 parameters
+        layer_3 = Dense(4 => 4, tanh_fast),  # 20 parameters
     ),
     flatten_layer = FlattenLayer(),
     linear_layer = NoOpLayer(),
-    bias = ScalarLayer(),                    # 1パラメータ
-)         # 合計: 111パラメータ,
-          #        0状態、サマリーサイズ80バイト。
+    bias = ScalarLayer(),                    # 1 parameters
+)         # Total: 111 parameters,
+          #        plus 0 states, summarysize 80 bytes.
 ```
 
-## 参考文献
+## 参考
 
 [lu2019deeponet](@cite)

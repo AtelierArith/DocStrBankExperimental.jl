@@ -6,7 +6,7 @@ VCABM(; thread = OrdinaryDiffEq.False())
 
 ### キーワード引数
 
-  * `thread`: 内部ブロードキャスティングが適切なCPU配列で直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
+  * `thread`: 内部ブロードキャスティングが適切なCPU配列で直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用すべきか（`thread = OrdinaryDiffEq.True()`）を決定します。これは、Juliaが複数のスレッドで起動されたときに適用されます。
 
 ## 参考文献
 

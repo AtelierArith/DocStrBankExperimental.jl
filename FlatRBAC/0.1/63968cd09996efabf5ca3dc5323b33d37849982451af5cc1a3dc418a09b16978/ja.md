@@ -9,7 +9,7 @@ grant!(role, permissions::Permission...)
 grant!(role, roles::Role...)
 ```
 
-# 権限と役割の削除
+# 権限とロールの削除
 
 ```julia
 revoke!(role, permissions::Permission...)

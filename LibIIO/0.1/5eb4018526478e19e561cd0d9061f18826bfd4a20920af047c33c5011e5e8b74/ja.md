@@ -8,4 +8,4 @@ IIOライブラリのローカルまたはネットワークバックエンド�
 
 # パラメータ
 
-  * `ptr_uri_or_nothing` : `Ptr{iio_context}`、URI文字列（推奨）または`nothing`のいずれかで、デフォルトコンテキストを構築します（Linuxのみ）。
+  * `ptr_uri_or_nothing` : `Ptr{iio_context}`、URI文字列（推奨）または`nothing`のいずれかで、デフォルトのコンテキストを構築します（Linuxのみ）。

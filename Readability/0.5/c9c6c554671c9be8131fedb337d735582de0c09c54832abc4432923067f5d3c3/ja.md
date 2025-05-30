@@ -8,7 +8,7 @@ ari(text::String)
 
   * `text::String`: 分析するテキスト。
 
-## 戻り値
+## 返り値
 
   * `Int`: ARIスコア。
 

@@ -12,7 +12,7 @@ Scene TODO document this
   * `clear`: シーンをクリアする必要があるかどうか。
   * `camera`: シーンに関連付けられた`Camera`。
   * `camera_controls`: シーンのカメラのためのコントロール。
-  * `data_limits`: このシーンにプロットされたデータの限界。ユーザーによって設定できず、計算されたデータの境界を保存するためだけに使用される。
+  * `data_limits`: このシーンにプロットされたデータの制限。ユーザーによって設定できず、計算されたデータの境界を保存するためだけに使用される。
   * `transformation`: シーンの[`Transformation`](@ref)。
   * `plots`: シーンに含まれるプロット。
   * `theme`

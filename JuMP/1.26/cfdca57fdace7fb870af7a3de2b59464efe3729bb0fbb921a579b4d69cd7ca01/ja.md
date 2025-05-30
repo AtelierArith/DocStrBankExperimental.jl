@@ -2,7 +2,7 @@
 has_values(model::GenericModel; result::Int = 1)
 ```
 
-結果インデックス `result` に利用可能なプライマルソリューションがソルバーにある場合は `true` を返し、そうでない場合は `false` を返します。
+結果インデックス `result` でクエリ可能なプライマリ解がソルバーに存在する場合は `true` を返し、そうでない場合は `false` を返します。
 
 [`value`](@ref) と [`result_count`](@ref) も参照してください。
 

@@ -4,7 +4,7 @@ typemin(T)
 
 与えられた（実数の）数値データ型 `T` によって表現可能な最小値。
 
-関連情報: [`floatmin`](@ref), [`typemax`](@ref), [`eps`](@ref)。
+参照: [`floatmin`](@ref), [`typemax`](@ref), [`eps`](@ref)。
 
 # 例
 

@@ -26,9 +26,9 @@ JuMP 拡張は、ここにリストされていない制約式のサポートを
 
 ## キーワード引数
 
-  * `base_name`: 制約名を生成するために使用される名前プレフィックスを設定します。スカラー制約の制約名に対応し、そうでない場合、制約名は各インデックス `...` に対して `base_name[...]` に設定されます。
+  * `base_name`: 制約名を生成するために使用される名前プレフィックスを設定します。スカラー制約の制約名に対応し、それ以外の場合、制約名は各インデックス `...` に対して `base_name[...]` に設定されます。
   * `container = :Auto`: `container = Array`、`container = DenseAxisArray`、`container = SparseAxisArray`、または JuMP 拡張によってサポートされている他の任意のコンテナタイプを渡すことで、コンテナタイプを強制します。
-  * `set_string_name::Bool = true`: [`MOI.ConstraintName`](@ref) 属性を設定するかどうかを制御します。`set_string_name = false` を渡すことでパフォーマンスが向上する可能性があります。
+  * `set_string_name::Bool = true`: [`MOI.ConstraintName`](@ref) 属性を設定するかどうかを制御します。`set_string_name = false` を渡すことでパフォーマンスを向上させることができます。
 
 他のキーワード引数は JuMP 拡張によってサポートされる場合があります。
 

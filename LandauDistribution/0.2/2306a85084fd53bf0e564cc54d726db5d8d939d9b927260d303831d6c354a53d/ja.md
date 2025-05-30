@@ -20,4 +20,4 @@ scale(d)        # スケールパラメータを取得、すなわち b
 
 外部リンク
 
-  * [ランドー分布のウィキペディア](http://en.wikipedia.org/wiki/Landau_distribution)
+  * [ランドー分布 - Wikipedia](http://en.wikipedia.org/wiki/Landau_distribution)

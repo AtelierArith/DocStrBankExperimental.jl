@@ -2,7 +2,7 @@
 @NLobjective(model, sense, expression)
 ```
 
-`model`に非線形目的を追加し、最適化の感覚`sense`を指定します。`sense`は`Max`または`Min`でなければなりません。
+`model`に非線形目的を追加し、最適化の感覚を`sense`に設定します。`sense`は`Max`または`Min`でなければなりません。
 
 !!! compat
     このマクロはレガシー非線形インターフェースの一部です。[非線形モデリング](@ref)に文書化されている新しい非線形インターフェースの使用を検討してください。ほとんどの場合、`@NLobjective`を[`@objective`](@ref)に置き換えることができます。

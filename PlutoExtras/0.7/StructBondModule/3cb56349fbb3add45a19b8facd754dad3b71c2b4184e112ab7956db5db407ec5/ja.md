@@ -2,7 +2,7 @@
 popoutwrap(T)
 ```
 
-`T`型の`StructBond`をラップする`Popout`を構築するための便利な関数です。これは、ネストされた`StructBond`型を作成したいときに便利です。
+`T`型の`StructBond`をラップする`Popout`を構築するための便利な関数です。これは、ネストされた`StructBond`型を作成したい場合に便利です。
 
 例えば、以下の2つの構造体があるとします。
 
@@ -45,6 +45,6 @@ end
 @bind lol StructBond(LOL)
 ```
 
-ここで、`lol`は、指定されたウィジェットによって対話的に制御可能な各フィールドを持ち、各ウィジェットの隣にフィールド説明を表示する`LOL`型のインスタンスになります。
+ここで、`lol`は、指定されたウィジェットによって対話的に制御可能な各フィールドを持ち、各ウィジェットの隣にフィールドの説明を表示する`LOL`型のインスタンスになります。
 
 参照: [`BondTable`](@ref), [`StructBond`](@ref), [`Popout`](@ref), [`@fieldbond`](@ref), [`@fielddescription`](@ref), [`@fieldhtml`](@ref), [`@typeasfield`](@ref), [`@popoutasfield`](@ref)

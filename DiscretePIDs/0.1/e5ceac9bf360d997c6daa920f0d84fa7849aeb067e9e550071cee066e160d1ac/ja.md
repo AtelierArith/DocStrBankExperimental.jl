@@ -2,4 +2,4 @@
 set_Ti!(pid::DiscretePID, Ti)
 ```
 
-PIDコントローラーの`Ti`を更新します。
+PIDコントローラの`Ti`を更新します。

@@ -2,4 +2,4 @@
 insert!(tree, key)
 ```
 
-`key`が`tree`に存在しない場合、`tree`に`key`を挿入します。
+`tree`に`key`が存在しない場合、`key`を挿入します。

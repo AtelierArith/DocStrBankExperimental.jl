@@ -6,7 +6,7 @@ ParameterRef(x::GenericVariableRef)
 
 存在しない場合はエラーになります。
 
-関連情報としては、[`is_parameter`](@ref)、[`set_parameter_value`](@ref)、[`parameter_value`](@ref)があります。
+[`is_parameter`](@ref)、[`set_parameter_value`](@ref)、[`parameter_value`](@ref)も参照してください。
 
 ## 例
 

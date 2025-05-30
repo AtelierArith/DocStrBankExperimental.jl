@@ -14,5 +14,3 @@ julia> rpad("March", 20)
 !!! compat "Julia 1.7"
     Julia 1.7では、この関数は生の文字（コードポイント）カウントではなく`textwidth`を使用するように変更されました。
 
-
-```

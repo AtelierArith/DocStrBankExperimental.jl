@@ -4,7 +4,7 @@ cumprod(itr)
 
 イテレータの累積積。
 
-関連項目としては [`cumprod!`](@ref)、[`accumulate`](@ref)、[`cumsum`](@ref) を参照してください。
+関連項目としては [`cumprod!`](@ref)、[`accumulate`](@ref)、[`cumsum`](@ref) があります。
 
 !!! compat "Julia 1.5"
     非配列イテレータに対する `cumprod` は、少なくとも Julia 1.5 が必要です。

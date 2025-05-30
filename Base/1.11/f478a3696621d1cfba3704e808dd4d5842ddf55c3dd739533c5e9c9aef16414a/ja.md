@@ -4,9 +4,9 @@ getindex(A, inds...)
 
 インデックス `inds` によって選択された配列 `A` のサブセットを返します。
 
-各インデックスは、[`Integer`](@ref)、[`CartesianIndex`](@ref)、[範囲](@ref Base.AbstractRange)、またはサポートされているインデックスの[配列](@ref man-multi-dim-arrays)など、任意の[サポートされているインデックスタイプ](@ref man-supported-index-types)である可能性があります。特定の次元に沿ってすべての要素を選択するために、[: ](@ref Base.Colon)を使用することができ、対応するインデックスが`true`である要素をフィルタリングするために、ブール配列（例：`Array{Bool}`または[`BitArray`](@ref)）を使用することができます。
+各インデックスは、[`Integer`](@ref)、[`CartesianIndex`](@ref)、[range](@ref Base.AbstractRange)、またはサポートされているインデックスの[配列](@ref man-multi-dim-arrays)など、任意の[サポートされているインデックスタイプ](@ref man-supported-index-types)である可能性があります。特定の次元に沿ってすべての要素を選択するために、[: ](@ref Base.Colon)を使用することができ、対応するインデックスが `true` である要素をフィルタリングするために、ブール配列（例：`Array{Bool}` または [`BitArray`](@ref)）を使用することができます。
 
-`inds` が複数の要素を選択する場合、この関数は新しく割り当てられた配列を返します。コピーを作成せずに複数の要素にインデックスを付けるには、代わりに[`view`](@ref)を使用してください。
+`inds` が複数の要素を選択する場合、この関数は新しく割り当てられた配列を返します。コピーを作成せずに複数の要素にインデックスを付けるには、代わりに [`view`](@ref) を使用してください。
 
 詳細については、[配列インデックス](@ref man-array-indexing)に関するマニュアルセクションを参照してください。
 

@@ -2,13 +2,13 @@
 AbstractData
 ```
 
-[`AbstractSpace`](@ref)と組み合わせてフィールドを形成できるデータ型を定義します。
+データ型を定義し、[`AbstractSpace`](@ref)と組み合わせてフィールドを形成できます。
 
 具体的なサブタイプは以下を実装する必要があります：
 
 [`allocate_values`](@ref)、[`check_values`](@ref)、[`zero_values!`](@ref)、[`dof_values`](@ref)
 
-サブタイプが数値ソルバーに対して値を提供する必要がある場合（例えば、状態変数として）、以下も実装する必要があります：
+サブタイプが数値ソルバーに値を提供する必要がある場合（例えば、状態変数として）、以下も実装する必要があります：
 
 [`init_values!`](@ref)、[`copyfieldto!`](@ref)、[`copytofield!`](@ref)、[`add_field!`](@ref)、[`add_field_vec!`](@ref)
 

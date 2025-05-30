@@ -12,8 +12,8 @@ DiagonalOperator(
 
 ```
 
-は、指定された *regions* 内のセルの自由度の対角エントリに *value* を配置します。
+*value*を指定された*regions*内のセルdofの対角エントリに配置します。
 
-*onlyz* が true の場合、ゼロの値のみが変更されます。
+*onlyz*がtrueの場合、ゼロの値のみが変更されます。
 
-PDE LHS にのみ適用できます。
+PDE LHSでのみ適用可能です。

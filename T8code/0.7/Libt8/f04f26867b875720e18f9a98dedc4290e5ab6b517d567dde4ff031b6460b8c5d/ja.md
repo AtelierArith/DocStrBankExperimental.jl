@@ -7,7 +7,7 @@ t8_element_root(ts, elem)
 # 引数
 
   * `ts`:[in] クラススキームの実装。
-  * `elem`:[in,out] ルートで埋める要素。
+  * `elem`:[in,out] ルートで埋められる要素。
 
 ### プロトタイプ
 

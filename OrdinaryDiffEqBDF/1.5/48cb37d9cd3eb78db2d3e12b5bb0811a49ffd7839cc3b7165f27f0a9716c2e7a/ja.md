@@ -14,13 +14,13 @@ FBDF(; chunk_size = Val{0}(),
        max_order::Val{MO} = Val{5}())
 ```
 
-マルチステップ法。適応的なオーダーの準定常時間ステップNDF法。固定された先頭係数BDF。デフォルトとしてShampineの精度最適なカッパ値を利用します（カッパ係数のタプルのためのキーワード引数があります）。
+マルチステップ法。適応順序準定常時間ステップNDF法。固定先頭係数BDF。デフォルトとしてShampineの精度最適κ値を利用します（κ係数のタプルのためのキーワード引数があります）。
 
 ### キーワード引数
 
-  * `autodiff`: 自動微分を使用するかどうかを指定するために[ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用します。自動微分には[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)を、有限差分には[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)を使用します。デフォルトは自動微分のために`AutoForwardDiff()`で、デフォルトでは`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、デフォルト値`Val{:forward}()`のキーワード引数`fdtype`があり、代替として`Val{:central}()`と`Val{:complex}()`があります。
-  * `standardtag`: ForwardDiffのデフォルトの関数固有のタグの代わりにパッケージ固有のタグを使用するかどうかを指定します。詳細については[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
-  * `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
+  * `autodiff`: [ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用して、[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)による自動微分を使用するか、[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)による有限差分を使用するかを指定します。デフォルトは自動微分のための`AutoForwardDiff()`で、デフォルトでは`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、デフォルト値`Val{:forward}()`のキーワード引数`fdtype`があり、代替として`Val{:central}()`と`Val{:complex}()`があります。
+  * `standardtag`: ForwardDiffのデフォルトの関数固有のタグの代わりに、パッケージ固有のタグを使用するかどうかを指定します。詳細については、[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
+  * `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されているかどうかなどです。
   * `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、`FBDF(linsolve = KLUFactorization())`を指定します。`nothing`が渡されると、`DefaultLinearSolver`が使用されます。
   * `precs`: 任意の[LinearSolve.jl互換の前処理器](https://docs.sciml.ai/LinearSolve/stable/basics/Preconditioners/)を左または右の前処理器として使用できます。前処理器は、`Pl,Pr = precs(W,du,u,p,t,newW,Plprev,Prprev,solverdata)`関数によって指定され、引数は次のように定義されます：
 

@@ -16,4 +16,4 @@ branch_and_reduce(problem::AbstractProblem, config::BranchingStrategy; reducer::
 
 ### 戻り値
 
-`result_type` に応じて異なる型を持つ可能性のある結果の値。
+`result_type` に応じて異なる型を持つ可能性がある結果の値。

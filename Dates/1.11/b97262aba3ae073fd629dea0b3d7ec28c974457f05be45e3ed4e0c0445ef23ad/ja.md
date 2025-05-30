@@ -2,4 +2,4 @@
 Year(dt::DateTime) -> Year
 ```
 
-DateTimeの年部分を`Year`として返します。
+DateTimeの年の部分を`Year`として返します。

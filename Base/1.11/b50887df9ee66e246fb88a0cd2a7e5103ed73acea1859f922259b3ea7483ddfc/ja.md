@@ -2,9 +2,9 @@
 findlast(A)
 ```
 
-`A`の最後の`true`値のインデックスまたはキーを返します。`A`に`true`値がない場合は`nothing`を返します。
+配列 `A` の最後の `true` 値のインデックスまたはキーを返します。`A` に `true` 値がない場合は `nothing` を返します。
 
-インデックスまたはキーは、[`keys(A)`](@ref)および[`pairs(A)`](@ref)によって返されるものと同じ型です。
+インデックスまたはキーは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
 
 関連情報: [`findfirst`](@ref), [`findprev`](@ref), [`findall`](@ref).
 
@@ -23,7 +23,7 @@ julia> findlast(A)
 
 julia> A = falses(2,2);
 
-julia> findlast(A) # 何も返さないが、REPLには表示されない
+julia> findlast(A) # 何も返さないが、REPL には表示されない
 
 julia> A = [true false; true false]
 2×2 Matrix{Bool}:

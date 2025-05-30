@@ -2,7 +2,7 @@
 @ContextManager function(cont); ...; end
 ```
 
-単純な `@ContextManager` があり、括弧を少なく書くことができます。
+単純な `@ContextManager` があり、より少ない括弧で書くことができます。
 
 ```julia
 mycontextmanager(value) = @ContextManager function(cont)

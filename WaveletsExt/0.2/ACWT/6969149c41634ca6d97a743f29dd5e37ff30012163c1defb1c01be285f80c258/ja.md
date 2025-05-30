@@ -24,8 +24,8 @@ x = randn(32, 5)
 # ウェーブレットを作成
 wt = wavelet(WT.db4)
 
-# xのすべての信号に対してACWPTを実行
+# x のすべての信号に対して ACWPT
 xw = acwptall(x, wt)
 ```
 
-**関連情報:** [`acwpt`](@ref)
+**関連項目:** [`acwpt`](@ref)

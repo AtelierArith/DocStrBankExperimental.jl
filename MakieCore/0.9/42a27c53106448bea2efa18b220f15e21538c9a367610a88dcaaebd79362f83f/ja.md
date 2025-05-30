@@ -18,7 +18,7 @@ wireframe(mesh)
 
 **`color`** =  `@inherit linecolor`  — 線の色。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()` を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()` を呼び出すことができます。
 
 **`colorrange`** =  `automatic`  — `colormap` の開始点と終了点を表す値。
 
@@ -26,7 +26,7 @@ wireframe(mesh)
 
 **`cycle`** =  `[:color]`  — 複数のプロットを作成する際にサイクルする属性を設定します。
 
-**`depth_shift`** =  `-1.0e-5`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `-1.0e-5`  — すべての他の変換の後にプロットの深度値を調整します。すなわち、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`fxaa`** =  `false`  — プロットが fxaa（アンチエイリアス）でレンダリングされるかどうかを調整します（GLMakie のみ）。
 
@@ -38,9 +38,9 @@ wireframe(mesh)
 
 **`inspector_hover`** =  `automatic`  — デフォルトの `show_data` メソッドを置き換えるコールバック関数 `(inspector, plot, index) -> ...` を設定します。
 
-**`inspector_label`** =  `automatic`  — DataInspector によって生成されるデフォルトラベルを置き換えるコールバック関数 `(plot, index, position) -> string` を設定します。
+**`inspector_label`** =  `automatic`  — DataInspector によって生成されるデフォルトのラベルを置き換えるコールバック関数 `(plot, index, position) -> string` を設定します。
 
-**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。つまり、:butt（押し出しのないフラット）、:square（1ライン幅の押し出しのあるフラット）または :round。
+**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。すなわち、:butt（押し出しのないフラット）、:square（1ライン幅の押し出しのあるフラット）または :round。
 
 **`linestyle`** =  `nothing`  — 線のダッシュパターンを設定します。オプションは `:solid`（`nothing` に相当）、`:dot`、`:dash`、`:dashdot` および `:dashdotdot` です。これらは、ギャップスタイル修飾子 `:normal`、`:dense` または `:loose` を持つタプルでも指定できます。例えば、`(:dot, :loose)` または `(:dashdot, :dense)`。
 
@@ -62,6 +62,6 @@ wireframe(mesh)
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakie では `transparency = true` は順序に依存しない透明性を使用します。
+**`transparency`** =  `false`  — プロットが透明度をどのように扱うかを調整します。GLMakie では `transparency = true` は順序独立透明度を使用する結果になります。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。

@@ -6,6 +6,6 @@ abstract type H1MINI{ncomponents,edim} <: AbstractH1FiniteElement where {ncompon
 
 許可される要素の幾何学:
 
-  * Triangle2D (線形多項式 + 三次セルバブル)
+  * Triangle2D (線形多項式 + 立方体セルバブル)
   * Quadrilateral2D (Q1空間 + 四次セルバブル)
-  * Tetrahedron3D (線形多項式 + 三次セルバブル)
+  * Tetrahedron3D (線形多項式 + 立方体セルバブル)

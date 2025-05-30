@@ -2,7 +2,7 @@
 t8_element_last_descendant_face(ts, elem, face, last_desc, level)
 ```
 
-与えられたレベルで、指定された面に接触する要素の最後の子孫を構築します。
+指定されたレベルで、特定の面に接触する要素の最後の子孫を構築します。
 
 # 引数
 

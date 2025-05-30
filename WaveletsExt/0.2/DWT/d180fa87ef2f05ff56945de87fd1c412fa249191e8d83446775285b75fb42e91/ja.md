@@ -33,4 +33,4 @@ wt = wavelet(WT.haar)
 wpd!(xw, x, wt)
 ```
 
-**参照:** [`wpd`](@ref), [`iwpd`](@ref)
+**関連情報:** [`wpd`](@ref), [`iwpd`](@ref)

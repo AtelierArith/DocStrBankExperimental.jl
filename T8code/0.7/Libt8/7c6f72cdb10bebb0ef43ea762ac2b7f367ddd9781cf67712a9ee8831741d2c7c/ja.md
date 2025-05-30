@@ -10,7 +10,7 @@ t8_forest_no_overlap(forest)
 
 # 引数
 
-  * `forest`:[in] 考慮するフォレスト。
+  * `forest`:[in] 考慮すべきフォレスト。
 
 # 戻り値
 

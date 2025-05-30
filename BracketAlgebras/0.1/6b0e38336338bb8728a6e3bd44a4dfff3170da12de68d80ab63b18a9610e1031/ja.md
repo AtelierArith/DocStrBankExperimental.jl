@@ -5,7 +5,7 @@ BracketAlgebra(n::Integer, d::Integer, point_ordering::AbstractVector{<:Integer}
 BracketAlgebra(n::Integer, d::Integer, point_ordering::AbstractVector{<:Integer}=collect(1:n), T::Type=Int; point_labels::AbstractVector=collect(1:n))
 ```
 
-n点上の射影空間P^dに対して、指定された点の順序付けと点のラベルを持つブラケット代数を構築します。`point*labels`が整数のベクトルである場合、それは`collect(1:n)`と等しいことが期待されます。`coefficient*ring`は、ブラケット代数の係数を含む環です。
+与えられた点の順序と点のラベルを持つ n 点上の射影空間 P^d に対するブラケット代数を構築します。`point*labels` が整数のベクトルである場合、それは `collect(1:n)` と等しいことが期待されます。`coefficient*ring` は、ブラケット代数の係数を含む環です。
 
 # 例
 

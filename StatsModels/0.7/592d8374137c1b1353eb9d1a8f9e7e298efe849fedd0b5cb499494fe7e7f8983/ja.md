@@ -2,7 +2,7 @@
 HypothesisCoding(hypotheses::Vector{Pair}; levels=nothing)
 ```
 
-仮説を `label=>hypothesis_vector` ペアのベクトルとして指定します。 ラベルはペアのキーから生成されます。 `levels` 引数は、仮説ベクトルの各エントリのレベルの名前を提供します。 省略した場合、`ContrastsMatrix` を構築する際にデータに対して `levels` 関数が呼び出されます。
+仮説を `label=>hypothesis_vector` ペアのベクターとして指定します。 ラベルはペアのキーから生成されます。 `levels` 引数は、仮説ベクターの各エントリのレベルの名前を提供します。 省略した場合、`ContrastsMatrix` を構築する際にデータに対して `levels` 関数が呼び出されます。
 
 # 例
 

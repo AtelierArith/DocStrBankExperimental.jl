@@ -4,4 +4,4 @@
     u::NodalField{UFT}) where {GFT <: Number, UFT <: Number}
 ```
 
-剛性マトリックスを計算して組み立てます。
+剛性行列を計算して組み立てます。

@@ -2,7 +2,7 @@
 struct MDBM_Problem{fcT,N,Nf,Nc,t01T,t11T,IT,FT}
 ```
 
-マルチ次元二分法のための主要なデータを格納します。
+Multi-Dimensional Bisection Methodのための主なデータを格納します。
 
 # 例
 
@@ -14,7 +14,7 @@ using Reexport
 function foo(x,y)
     x^2.0+y^2.0-2.0^2.0
 end
-function c(x,y) # c>0 の領域のみを分析します
+function c(x,y) # c>0の領域のみを分析します
     x-y
 end
 

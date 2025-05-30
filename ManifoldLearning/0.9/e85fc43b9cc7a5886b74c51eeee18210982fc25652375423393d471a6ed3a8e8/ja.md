@@ -2,4 +2,4 @@
 fit(NonlinearDimensionalityReduction, X)
 ```
 
-データ `X` に基づいてモデルのフィッティングを行います。
+データ `X` を考慮してモデルのフィッティングを行います。

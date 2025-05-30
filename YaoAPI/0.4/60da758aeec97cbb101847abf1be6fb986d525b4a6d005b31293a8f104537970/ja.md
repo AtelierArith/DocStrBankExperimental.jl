@@ -6,7 +6,7 @@ purify(r::DensityMatrix; nbit_env::Int=nactive(r)) -> ArrayReg
 
 ### 例
 
-以下の例は、レジスタ、縮退密度行列、および浄化されたレジスタ上でローカル演算子を測定する方法を示しています。これらの結果は一貫しているはずです。
+以下の例は、レジスタ、縮退密度行列、および浄化されたレジスタ上でローカルオペレーターを測定する方法を示しています。それらの結果は一貫しているはずです。
 
 ```jldoctest; setup=:(using Yao, Random; Random.seed!(123))
 julia> reg = ghz_state(3)

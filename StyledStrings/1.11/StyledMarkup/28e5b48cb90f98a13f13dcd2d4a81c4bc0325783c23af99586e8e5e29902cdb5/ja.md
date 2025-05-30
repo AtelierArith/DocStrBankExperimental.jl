@@ -2,7 +2,7 @@
 @styled_str -> AnnotatedString
 ```
 
-スタイル付き文字列を構築します。文字列内の `{<specs>:<content>}` 構造は、カンマ区切りの仕様 `<specs>` のリストに従って `<content>` にフォーマットを適用します。各仕様は、フェイス名、インラインフェイス仕様、または `key=value` ペアの形式を取ることができます。値には、`{...}` でラップされている必要があります。これには `,=:{}` のいずれかの文字が含まれている場合です。
+スタイル付き文字列を構築します。文字列内の `{<specs>:<content>}` 構造は、カンマ区切りの仕様 `<specs>` のリストに従って `<content>` にフォーマットを適用します。各仕様は、フェイス名、インラインフェイス仕様、または `key=value` ペアの形式を取ることができます。値には、`{...}` でラップされている必要があります。これは、`=:{}` のいずれかの文字を含む場合です。
 
 `$` を使った文字列補間は、通常の文字列と同じように機能しますが、引用符はエスケープする必要があります。フェイス、キー、および値も `$` で補間できます。
 
@@ -14,7 +14,7 @@ styled"The {bold:{italic:quick} {(foreground=#cd853f):brown} fox} jumped over th
 
 # 拡張ヘルプ
 
-このマクロは、以下の EBNF 文法で説明できます。
+このマクロは、次の EBNF 文法で説明できます。
 
 ```ebnf
 styledstring = { styled | interpolated | escaped | plain } ;
@@ -30,7 +30,7 @@ styled = '{', ws, annotations, ':', content, '}' ;
 content = { interpolated | plain | escaped | styled } ;
 annotations = annotation | annotations, ws, ',', ws, annotation ;
 annotation = face | inlineface | keyvalue ;
-ws = { ' ' | '\t' | '\n' } ; (* whitespace *)
+ws = { ' ' | '\t' | '\n' } ; (* ホワイトスペース *)
 
 face = facename | interpolated ;
 facename = [A-Za-z0-9_]+ ;
@@ -45,7 +45,7 @@ curlybraced = '{' { escaped | plain } '}' ;
 simplevalue = [^${},:], [^,:]* ;
 ```
 
-上記の文法にエンコードされていない追加の規定は、`plain` が [`unescape_string`](@ref) に対する有効な入力であるべきであり、`specialchar` は保持されるべきであるということです。
+上記の文法にエンコードされていない追加の規定は、`plain` が [`unescape_string`](@ref) に対する有効な入力であるべきであり、`specialchar` が保持されることです。
 
 `inlineface` の上記の文法は簡略化されており、実際の実装はもう少し洗練されています。完全な動作は以下に示されています。
 

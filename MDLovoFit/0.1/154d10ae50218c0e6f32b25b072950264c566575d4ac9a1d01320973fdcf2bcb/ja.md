@@ -10,4 +10,4 @@ MapFractionsResult
 
 `rmsd_high` はアライメントに考慮されなかった割合のRMSDを含みます。
 
-`rmsd_all` は全体の構造のRMSDを含みます。
+`rmsd_all` は全体構造のRMSDを含みます。

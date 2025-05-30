@@ -11,7 +11,7 @@ PSNR の定義: $10 \log_{10} \frac{\max{(x_0)}^2}{MSE(x, x_0)}$
   * `x::AbstractVector{T} where T<:Number`: ノイズのある信号。
   * `x₀::AbstractVector{T} where T<:Number`: 参照信号。
 
-# 戻り値
+# 返り値
 
 `::AbstractFloat`: x と x₀ の間の PSNR。
 

@@ -14,4 +14,4 @@ ParsaniKetchesonDeconinck3S82(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!
 
 ## 参考文献
 
-Parsani, Matteo, David I. Ketcheson, and W. Deconinck.     スペクトル差分法に適用される波動伝播問題のための最適化された明示的ルンゲ–クッタスキーム。     SIAM Journal on Scientific Computing 35.2 (2013): A957-A986.     doi: https://doi.org/10.1137/120885899
+Parsani, Matteo, David I. Ketcheson, and W. Deconinck.     波動伝播問題に適用されるスペクトル差分法のための最適化された明示的ルンゲ–クッタスキーム。     SIAM Journal on Scientific Computing 35.2 (2013): A957-A986.     doi: https://doi.org/10.1137/120885899

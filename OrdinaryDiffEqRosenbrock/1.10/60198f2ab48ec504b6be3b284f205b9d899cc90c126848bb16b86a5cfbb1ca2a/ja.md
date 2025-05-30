@@ -8,7 +8,7 @@ RosenbrockW6S4OS(; chunk_size = Val{0}(),
                    precs = DEFAULT_PRECS)
 ```
 
-ロゼンブロック-ワナー-W(olfbrandt)法。4次のL安定ロゼンブロック-W法（固定ステップのみ）。
+ロゼンブロック・ワナー・W(olfbrandt)法。4次のL安定ロゼンブロック-W法（固定ステップのみ）。
 
 ### キーワード引数
 

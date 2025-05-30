@@ -2,7 +2,7 @@
 nparameters(block) -> Int
 ```
 
-`block`内のパラメータの数を返します。 [`niparams`](@ref)も参照してください。
+`block`内のパラメータの数を返します。[`niparams`](@ref)も参照してください。
 
 ### 例
 

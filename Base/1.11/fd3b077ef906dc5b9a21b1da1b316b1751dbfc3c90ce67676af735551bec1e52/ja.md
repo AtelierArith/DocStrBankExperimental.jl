@@ -5,7 +5,7 @@ zero(::Type)
 
 `x`の型に対する加法単位元を取得します（`x`は型自体を指定することもできます）。
 
-関連情報としては、[`iszero`](@ref)、[`one`](@ref)、[`oneunit`](@ref)、[`oftype`](@ref)があります。
+関連項目としては、[`iszero`](@ref)、[`one`](@ref)、[`oneunit`](@ref)、[`oftype`](@ref)があります。
 
 # 例
 

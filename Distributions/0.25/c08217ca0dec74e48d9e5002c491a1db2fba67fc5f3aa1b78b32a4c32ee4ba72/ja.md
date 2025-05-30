@@ -17,4 +17,4 @@ ntrials(d)      # 試行の回数を取得します。すなわち n
 
 外部リンク：
 
-  * [ウィキペディアのベータ二項分布](https://en.wikipedia.org/wiki/Beta-binomial_distribution)
+  * [ベータ二項分布 - Wikipedia](https://en.wikipedia.org/wiki/Beta-binomial_distribution)

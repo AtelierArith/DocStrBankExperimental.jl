@@ -1,4 +1,4 @@
-cmdstanの実行可能ファイル（`bin/stanc`や`bin/stansummary`など）が含まれているディレクトリ。
+`bin/stanc`や`bin/stansummary`などのcmdstan実行可能ファイルを含むディレクトリ。
 
 # 拡張ヘルプ
 

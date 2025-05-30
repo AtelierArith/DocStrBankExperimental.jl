@@ -18,4 +18,4 @@ julia> rand(a,5)
  [-0.31864, -0.30548]
 ```
 
-参照: [`cut`](@ref), [`cdf`](@ref), [`mass`](@ref)
+関連項目: [`cut`](@ref), [`cdf`](@ref), [`mass`](@ref)

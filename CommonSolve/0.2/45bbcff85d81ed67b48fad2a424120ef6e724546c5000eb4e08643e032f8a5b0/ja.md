@@ -9,4 +9,4 @@ iter = CommonSolve.init(prob::ProblemType,alg::SolverType; kwargs...)::IterType
 CommonSolve.solve!(iter)::SolutionType
 ```
 
-キーワード引数は、すべてのアルゴリズムの選択に対して一貫しています。`iter`型は、異なる問題タイプに対して異なります。
+キーワード引数は、すべてのアルゴリズムの選択に対して一貫しています。`iter`タイプは、異なる問題タイプに対して異なります。

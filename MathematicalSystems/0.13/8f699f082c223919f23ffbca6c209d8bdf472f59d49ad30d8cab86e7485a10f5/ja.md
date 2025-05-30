@@ -2,7 +2,7 @@
 SecondOrderConstrainedLinearControlContinuousSystem
 ```
 
-連続時間の2次制約付き線形制御システムの形式：
+連続時間の二次制約付き線形制御システムの形式：
 
 $$
     Mx''(t) + Cx'(t) + Kx(t) = Bu(t), \; x(t) ∈ \mathcal{X}, \; u(t) ∈ \mathcal{U} \; \forall t.

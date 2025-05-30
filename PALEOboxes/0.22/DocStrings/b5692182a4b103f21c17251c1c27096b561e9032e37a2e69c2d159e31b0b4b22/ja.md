@@ -2,7 +2,7 @@
 DocStrings
 ```
 
-Juliaの`DocStringExtensions`パッケージを拡張して、ドキュメント文字列に反応パラメータと変数をリストするためのPALEO特有の「略語」を提供します。
+Juliaの`DocStringExtensions`パッケージを拡張して、PALEO特有の「略語」を提供し、ドキュメント文字列に反応パラメータと変数をリストします。
 
 `PARS`、`METHODS*SETUP`、`METHODS*INITIALIZE`、`METHODS_DO`をエクスポートします。
 

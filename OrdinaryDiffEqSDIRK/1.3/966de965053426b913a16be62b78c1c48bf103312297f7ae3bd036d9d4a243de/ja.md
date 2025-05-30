@@ -17,7 +17,7 @@ SDIRK法。2次のA安定なシンプレクティックかつ対称的な暗黙�
 
   * `autodiff`: [ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用して、自動微分を[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)経由で使用するか、有限差分を[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)経由で使用するかを指定します。デフォルトは自動微分のための`AutoForwardDiff()`で、デフォルトでは`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、キーワード引数`fdtype`のデフォルト値が`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`を持つ`AutoFiniteDiff()` ADTypeを使用できます。
   * `standardtag`: ForwardDiffのデフォルトの関数固有のタグの代わりに、パッケージ固有のタグを使用するかどうかを指定します。詳細については、[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
-  * `concrete_jac`: ヤコビ行列を構築する必要があるかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
+  * `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
   * `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、`ImplicitMidpoint(linsolve = KLUFactorization())`を指定します。`nothing`が渡されると、`DefaultLinearSolver`が使用されます。
   * `precs`: 任意の[LinearSolve.jl互換の前処理器](https://docs.sciml.ai/LinearSolve/stable/basics/Preconditioners/)を左または右の前処理器として使用できます。前処理器は、引数が次のように定義される`Pl,Pr = precs(W,du,u,p,t,newW,Plprev,Prprev,solverdata)`関数によって指定されます。
 
@@ -45,7 +45,7 @@ SDIRK法。2次のA安定なシンプレクティックかつ対称的な暗黙�
   * `nlsolve`: TBD
 
       * `extrapolant`: TBD
-  * `step_limiter!`: 形式`limiter!(u, integrator, p, t)`の関数
+  * `step_limiter!`: `limiter!(u, integrator, p, t)`の形式の関数
 
 ## 参考文献
 

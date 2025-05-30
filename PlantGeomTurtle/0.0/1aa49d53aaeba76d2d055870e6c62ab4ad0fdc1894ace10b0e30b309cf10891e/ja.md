@@ -21,7 +21,7 @@ HollowCube!(turtle; length = 1.0, width = 1.0, height = 1.0, move = false, kwarg
 
 ## 戻り値
 
-`nothing` を返しますが、副作用として `turtle` を変更します。
+`nothing` を返しますが、亀を副作用として変更します。
 
 ## 例
 

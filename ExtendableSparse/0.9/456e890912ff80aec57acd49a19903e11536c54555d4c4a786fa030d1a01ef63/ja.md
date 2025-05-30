@@ -3,4 +3,4 @@ ParallelJacobiPreconditioner(;valuetype=Float64, indextype=Int64)
 ParallelJacobiPreconditioner(matrix)
 ```
 
-パラレルジャコビ前処理器
+並列ヤコビ前処理器

@@ -4,7 +4,7 @@ stratifiedobs([f], data, [p = 0.7], [shuffle = true], [obsdim], [rng]) -> Tuple
 
 `data`を`p`の値に比例して複数の互いに排他的なサブセットに分割します。観測値は、置換なしの層化サンプリングを使用してデータのサブセットに割り当てられます。これらのサブセットは、最初の要素が`p`の最初の浮動小数点数で指定された`data`の観測値の割合を含むサブセットの`Tuple`として返されます。
 
-例えば、`p`が`Float64`自体である場合、返り値は2つの要素（すなわちサブセット）を持つタプルになります。この場合、最初の要素には`p`で指定された観測値の割合が含まれ、2番目の要素には残りが含まれます。以下のコードでは、最初のサブセット`train`には約70%の観測値が含まれ、2番目のサブセット`test`には残りが含まれます。[`splitobs`](@ref)との主な違いは、`y`のクラス分布が`train`と`test`で積極的に保持されることです。
+例えば、`p`が`Float64`自体である場合、返り値は2つの要素（すなわちサブセット）を持つタプルになります。最初の要素には`p`で指定された観測値の割合が含まれ、2番目の要素には残りが含まれます。以下のコードでは、最初のサブセット`train`には約70%の観測値が含まれ、2番目のサブセット`test`には残りが含まれます。[`splitobs`](@ref)との主な違いは、`y`のクラス分布が`train`と`test`で積極的に保持されることです。
 
 ```julia
 train, test = stratifiedobs(y, p = 0.7)
@@ -23,7 +23,7 @@ train, test = stratifiedobs((X, y), p = 0.7)
 (X_train,y_train), (X_test,y_test) = stratifiedobs((X, y), p = 0.7)
 ```
 
-オプションのパラメータ`shuffle`は、結果のデータサブセットをシャッフルするかどうかを決定します。`false`の場合、サブセット内の観測値はラベルに従ってグループ化されます。
+オプションのパラメータ`shuffle`は、結果のデータサブセットがシャッフルされるべきかどうかを決定します。`false`の場合、サブセット内の観測値はそのラベルに従ってグループ化されます。
 
 ```julia
 julia> y = ["a", "b", "b", "b", "b", "a"] # 2つの不均衡クラス
@@ -83,10 +83,10 @@ julia> train, test = stratifiedobs((x, y), rng=MersenneTwister(42))
 (([5, 3, 1, 4], [:b, :b, :a, :b]), ([2, 6], [:b, :a]))
 ```
 
-この関数が機能するためには、`data`の型が[`nobs`](@ref)と[`getobs`](@ref)を実装している必要があります。例えば、以下のコードは`stratifiedobs`が`DataTable`で機能するようにします。
+この関数が機能するためには、`data`の型が[`nobs`](@ref)と[`getobs`](@ref)を実装している必要があります。例えば、以下のコードは`stratifiedobs`が`DataTable`で動作することを可能にします。
 
 ```julia
-# DataTables.jlを機能させる
+# DataTables.jlを動作させる
 LearnBase.getobs(data::DataTable, i) = data[i,:]
 StatsBase.nobs(data::DataTable) = nrow(data)
 ```

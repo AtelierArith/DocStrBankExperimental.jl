@@ -1,0 +1,1 @@
+Performs a trigram analysis on the input string, to determine how close it is to English. That is, splits the input string into groups of three letters, and assigns a score based on the frequency of the trigrams in true English.

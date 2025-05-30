@@ -3,7 +3,7 @@
           defect_threshold = 0.1, max_num_subintervals = 3000)
 ```
 
-5段階のLobattoIIIa法。
+5次のLobattoIIIa法。
 
 ## キーワード引数
 
@@ -16,7 +16,7 @@
       * `TwoPointBVProblem`の場合、`diffmode`のみが使用されます（可能であれば`AutoSparse(AutoForwardDiff)`がデフォルト、そうでなければ`AutoSparse(AutoFiniteDiff)`）。
       * `BVProblem`の場合、`bc_diffmode`と`nonbc_diffmode`が使用されます。`nonbc_diffmode`は可能であれば`AutoSparse(AutoForwardDiff)`がデフォルト、そうでなければ`AutoSparse(AutoFiniteDiff)`。`bc_diffmode`は可能であれば`AutoForwardDiff`がデフォルト、そうでなければ`AutoFiniteDiff`。
   * `nested_nlsolve`: 暗黙のFIRKステップのためにネストされた非線形解法を使用するかどうか。デフォルトは`false`。`false`に設定すると、FIRKステージはグローバル残差の一部として解かれます。一般的な推奨は、大きな問題には`true`を、小さな問題には`false`を選択することです。
-  * `nest_tol`: ネストされたソルバーの許容誤差。デフォルトは何も指定されておらず、`NonlinearSolve`が自動的に許容誤差を選択します。
+  * `nest_tol`: ネストされたソルバーの許容誤差。デフォルトは何も設定されておらず、`NonlinearSolve`が自動的に許容誤差を選択します。
   * `defect_threshold`: 欠陥制御のための閾値。
   * `max_num_subintervals`: 最大サブ区間の数、デフォルトは3000。
 
@@ -27,7 +27,7 @@
 ## 参考文献
 
 ```
-  LobattoおよびRadau法の参考文献:
+  LobattoおよびRadau法の参考文献：
   ```bibtex
       @Inbook{Jay2015,
       author="Jay, Laurent O.",
@@ -46,7 +46,7 @@
       year = {2015},
   }
   ```
-  欠陥制御の実装に関する参考文献、MATLABの`bvp5c`ソルバーに基づく:
+  MATLABの`bvp5c`ソルバーに基づく欠陥制御の実装に関する参考文献：
   ```bibtex
   @article{shampine_solving_nodate,
   title = {Solving {Boundary} {Value} {Problems} for {Ordinary} {Diﬀerential} {Equations} in {Matlab} with bvp4c

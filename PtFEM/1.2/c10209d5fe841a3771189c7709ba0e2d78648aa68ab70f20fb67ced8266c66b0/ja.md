@@ -32,7 +32,7 @@ p61(data)
 
 ```julia
 * limit = 250                  : 繰り返し回数の制限
-* penalty = 1e20               : 自由度が固定された場合に使用されるペナルティ
+* penalty = 1e20               : 自由度固定に使用されるペナルティ
 * etype::Vector{Int}         : np_types > 1 の場合の要素材料ベクトル
 ```
 

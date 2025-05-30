@@ -10,7 +10,7 @@ end
 ## フィールド
 
   * `.constant`: 式の定数 `c`。
-  * `.terms`: `OrderedDict`、キーは `VarType`、値は `CoefType` で、スパースベクトル `a` を説明します。
+  * `.terms`: `VarType` のキーと `CoefType` の値を持つ `OrderedDict` で、スパースベクトル `a` を説明します。
 
 ## 例
 

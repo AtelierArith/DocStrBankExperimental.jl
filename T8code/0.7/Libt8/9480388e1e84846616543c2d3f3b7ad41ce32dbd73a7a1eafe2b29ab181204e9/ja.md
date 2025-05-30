@@ -11,11 +11,11 @@ t8_forest_get_local_id(forest, gtreeid)
 
 # 戻り値
 
-ツリーが*forest*内のローカルツリーである場合、そのローカルID。そうでない場合は負の数。
+ツリーがローカルツリーである場合、*forest*内のツリーのローカルID。そうでない場合は負の数。
 
 # 参照
 
-https://github.com/DLR-AMR/t8code/wiki/Tree-indexing ツリーインデックスに関する詳細については、こちらをご覧ください。
+https://github.com/DLR-AMR/t8code/wiki/Tree-indexing ツリーインデックスに関する詳細については。
 
 ### プロトタイプ
 

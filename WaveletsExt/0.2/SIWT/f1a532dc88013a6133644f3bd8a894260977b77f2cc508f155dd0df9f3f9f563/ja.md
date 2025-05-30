@@ -24,4 +24,4 @@ siwtObj = siwpd(x, wt)
 bestbasistree!(siwtObj)
 ```
 
-**関連情報:** [`bestbasis_treeselection!`](@ref), [`isvalidtree`](@ref)
+**関連項目:** [`bestbasis_treeselection!`](@ref), [`isvalidtree`](@ref)

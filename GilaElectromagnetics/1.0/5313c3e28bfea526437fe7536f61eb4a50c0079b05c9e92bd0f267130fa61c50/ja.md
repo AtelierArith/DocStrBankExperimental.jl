@@ -17,5 +17,7 @@ useGpu::Bool=false, setTyp::DataType=ComplexF64)
 
 （波長の単位で）。
 
-  * `useGpu::Bool=false`: GPUを使用するかどうか（true）またはCPUを使用するか（false）。
-  * `setTyp::DataType=ComplexF64`: 演算子の要素タイプ。`Complex`のサブタイプでなければなりません。
+  * `useGpu::Bool=false`: GPUを使用するかどうか（true）またはCPU（false）。
+  * `setTyp::DataType=ComplexF64`: 演算子の要素タイプ。`Complex`の
+
+サブタイプでなければなりません。

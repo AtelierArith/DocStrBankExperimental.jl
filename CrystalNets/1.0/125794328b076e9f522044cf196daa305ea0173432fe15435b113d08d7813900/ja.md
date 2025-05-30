@@ -7,7 +7,7 @@ add_to_current_archive!(id, genome)
 入力の`id`と`genome`は、この操作によって変更されません。
 
 !!! note
-    この変更は、このJuliaセッションの期間中のみ有効です。
+    この変更は、このJuliaセッションの期間中のみ持続します。
 
     アーカイブを保存し、次回の実行で使用したい場合は、この関数を呼び出した後に[`set_default_archive!`](@ref)を使用してください。
 

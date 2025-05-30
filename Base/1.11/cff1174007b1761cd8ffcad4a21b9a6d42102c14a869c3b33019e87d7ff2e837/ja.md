@@ -4,9 +4,9 @@ round(z::Complex[, RoundingModeReal, [RoundingModeImaginary]]; digits=0, base=10
 round(z::Complex[, RoundingModeReal, [RoundingModeImaginary]]; sigdigits, base=10)
 ```
 
-複素数 `z` に対して同じ型の最も近い整数値を返します。指定された [`RoundingMode`](@ref) を使用して、結びつきを解消します。最初の [`RoundingMode`](@ref) は実数成分の丸めに使用され、2番目は虚数成分の丸めに使用されます。
+複素数 `z` に対して同じ型の最も近い整数値を返します。指定された [`RoundingMode`](@ref) を使用して、結びつきを解消します。最初の [`RoundingMode`](@ref) は実数成分の丸めに使用され、2 番目は虚数成分の丸めに使用されます。
 
-`RoundingModeReal` と `RoundingModeImaginary` はデフォルトで [`RoundNearest`](@ref) に設定されており、これは最も近い整数に丸めます。結びつき（0.5の分数値）は最も近い偶数に丸められます。
+`RoundingModeReal` と `RoundingModeImaginary` はデフォルトで [`RoundNearest`](@ref) に設定されており、これは最も近い整数に丸めます。結びつき（0.5 の分数値）は最も近い偶数に丸められます。
 
 # 例
 

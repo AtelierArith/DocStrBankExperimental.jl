@@ -3,14 +3,14 @@
 # 引数
 
   * `forest`:[in] 新しい要素が属するフォレスト
-  * `forest_from`:[in] 適応されるフォレスト
+  * `forest_from`:[in] 適応されるフォレスト。
   * `which_tree`:[in] *elements* を含むローカルツリー
   * `lelement_id`:[in] 現在の要素のツリー内の *forest_old* におけるローカル要素 ID
   * `ts`:[in] ツリーの eclass スキーム
   * `is_family`:[in] 1 の場合、*elements* の最初の *num_elements* エントリがファミリーを形成します。0 の場合、形成しません。
-  * `num_elements`:[in] *elements* で定義されているエントリの数
+  * `num_elements`:[in] *elements* に定義されているエントリの数
   * `elements`:[in] ファミリーへのポインタ、または *is_family* が 0 の場合は 1 つの要素へのポインタ。
 
 # 戻り値
 
-*elements* の最初のエントリを細分化すべき場合は 1、ファミリー *elements* を粗視化すべき場合は -1、*elements* の最初のエントリを削除すべき場合は -2、その他の場合は 0 を返します。
+*elements* の最初のエントリを細分化すべき場合は 1、ファミリー *elements* を粗視化すべき場合は -1、*elements* の最初のエントリを削除すべき場合は -2、それ以外の場合は 0 を返します。

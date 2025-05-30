@@ -2,7 +2,7 @@
 detect_unbound_args(mod1, mod2...; recursive=false, allowed_undefineds=nothing)
 ```
 
-未束縛の型パラメータを持つ可能性のある `Method` のベクターを返します。`recursive=true` を使用すると、すべてのサブモジュールでテストします。
+未束縛の型パラメータを持つ可能性のある `Method` のベクターを返します。すべてのサブモジュールでテストするには `recursive=true` を使用します。
 
 デフォルトでは、未定義のシンボルは警告を引き起こします。この警告は、警告をスキップできる `GlobalRef` のコレクションを提供することで抑制できます。たとえば、次のように設定することで
 

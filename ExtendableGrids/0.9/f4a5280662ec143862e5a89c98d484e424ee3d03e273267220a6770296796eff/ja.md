@@ -2,4 +2,4 @@
 abstract type AbstractGridComponent <: ExtendableGrids.AbstractExtendableGridApexType
 ```
 
-グリッドコンポーネントのためのエイペックスタイプ。
+グリッドコンポーネントのためのエイペックス型。

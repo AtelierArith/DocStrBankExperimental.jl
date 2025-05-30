@@ -2,7 +2,7 @@
 filecontains(needle)
 ```
 
-与えられた `StackFrame` がそのファイルパスに `needle` を含む場合に `true` を返す `StackFrame` フィルターです。
+与えられた `StackFrame` のファイルパスに `needle` が含まれている場合に `true` を返す `StackFrame` フィルターです。
 
 # 例
 

@@ -6,7 +6,7 @@ Set{T} <: AbstractSet{T}
 
 `Set`は、`in`、`union`、`intersect`などの集合演算の効率的な実装を持っています。`Set`内の要素は、要素の`isequal`の定義によって決定されるユニークなものです。`Set`内の要素の順序は実装の詳細であり、信頼することはできません。
 
-関連情報: [`AbstractSet`](@ref), [`BitSet`](@ref), [`Dict`](@ref), [`push!`](@ref), [`empty!`](@ref), [`union!`](@ref), [`in`](@ref), [`isequal`](@ref)
+参照: [`AbstractSet`](@ref), [`BitSet`](@ref), [`Dict`](@ref), [`push!`](@ref), [`empty!`](@ref), [`union!`](@ref), [`in`](@ref), [`isequal`](@ref)
 
 # 例
 

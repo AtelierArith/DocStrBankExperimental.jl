@@ -16,7 +16,7 @@ benchmarkpkg(pkg, [target]::Union{String, BenchmarkConfig}; kwargs...)
   * `logger_factory` - ベンチマーク中に使用されるロガーを指定します。引数なしでロガーを作成する呼び出し可能オブジェクト（通常は型）でなければなりません。いくつかのパッケージ内の定数として存在する必要があります（例：匿名関数は機能しません）。
   * `progressoptions` - 非推奨。
 
-結果は [`judge`](@ref) のような関数で使用できます。選択した場合、[`writeresults`](@ref) を使用して結果を手動で保存できます。ここで `results` はこの関数の戻り値です。[`readresults`](@ref) を使用して再度読み込むことができます。
+結果は [`judge`](@ref) のような関数で使用できます。選択した場合、[`writeresults`](@ref) を使用して結果を手動で保存できます。ここで `results` はこの関数の戻り値です。[`readresults`](@ref) を使用して再度読み取ることができます。
 
 **例の呼び出し**:
 
@@ -30,6 +30,6 @@ benchmarkpkg(MyPkg, "my-feature"; script="/home/me/mycustombenchmark.jl")
 benchmarkpkg(MyPkg, BenchmarkConfig(id = "my-feature",
                                             env = Dict("JULIA_NUM_THREADS" => 4),
                                             juliacmd = `julia -O3`))
-benchmarkpkg(MyPkg,  # ベンチマークを実行し、結果の（中央値の）値を 1000 で割る
+benchmarkpkg(MyPkg,  # ベンチマークを実行し、結果の（中央値）を1000で割る
     postprocess=(results)->(results["g"] = median(results["g"])/1_000)
 ```

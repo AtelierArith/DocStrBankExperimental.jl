@@ -4,7 +4,7 @@ findlast(predicate::Function, A)
 
 `predicate` が `true` を返す `A` の最後の要素のインデックスまたはキーを返します。そのような要素がない場合は `nothing` を返します。
 
-インデックスまたはキーは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
+インデックスまたはキーは [`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
 
 # 例
 

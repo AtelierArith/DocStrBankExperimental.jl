@@ -9,13 +9,13 @@ Voronoi有限体積法に基づく結合非線形偏微分方程式（楕円-放
   * [VoronoiFVMDiffEq.jl](https://github.com/j-fu/VoronoiFVMDiffEq.jl): VoronoiFVMをDifferentialEquations.jlで使用するためのグルーパッケージ
   * [ExtendableSparse.jl](https://github.com/j-fu/ExtendableSparse.jl): 便利で効率的なスパース行列のアセンブリ
   * [ExtendableGrids.jl](https://github.com/j-fu/ExtendableGrids.jl): 非構造化グリッド管理ライブラリ
-  * [SimplexGridFactory.jl](https://github.com/j-fu/SimplexGridFactory.jl): 統一された高レベルメッシュジェネレーターインターフェース
-  * [Triangulate.jl](https://github.com/JuliaGeometry/Triangulate.jl): J. Shewchukによる[Triangle](https://www.cs.cmu.edu/~quake/triangle.html)三角形メッシュジェネレーターのJuliaラッパー
-  * [TetGen.jl](https://github.com/JuliaGeometry/TetGen.jl): H. Siによる[TetGen](http://www.tetgen.org)四面体メッシュジェネレーターのJuliaラッパー
-  * [GridVisualize.jl](https://github.com/j-fu/GridVisualize.jl): ExtendableGrids.jlに関連するグリッドおよび関数の視覚化
-  * [PlutoVista.jl](https://github.com/j-fu/PlutoVista.jl): Plutoノートブックで使用するための[GridVisualize.jl](https://github.com/j-fu/GridVisualize.jl)のバックエンド。
+  * [SimplexGridFactory.jl](https://github.com/j-fu/SimplexGridFactory.jl): 統一された高レベルのメッシュ生成インターフェース
+  * [Triangulate.jl](https://github.com/JuliaGeometry/Triangulate.jl): J. Shewchukによる[Triangle](https://www.cs.cmu.edu/~quake/triangle.html)三角形メッシュ生成器のJuliaラッパー
+  * [TetGen.jl](https://github.com/JuliaGeometry/TetGen.jl): H. Siによる[TetGen](http://www.tetgen.org)四面体メッシュ生成器のJuliaラッパー
+  * [GridVisualize.jl](https://github.com/j-fu/GridVisualize.jl): ExtendableGrids.jlに関連するグリッドと関数の視覚化
+  * [PlutoVista.jl](https://github.com/j-fu/PlutoVista.jl): Plutoノートブックで使用するための[GridVisualize.jl](https://github.com/j-fu/GridVisualize.jl)のバックエンド
 
-## 一部の代替案
+## いくつかの代替案
 
   * [GradientRobustMultiPhysics.jl](https://github.com/chmerdon/GradientRobustMultiPhysics.jl): Ch. Merdonによる同じパッケージベースからの勾配ロバストFEMを実装した有限要素ライブラリ
   * [Trixi.jl](https://github.com/trixi-framework/Trixi.jl): ハイパーボリック保存則のための数値シミュレーションフレームワーク

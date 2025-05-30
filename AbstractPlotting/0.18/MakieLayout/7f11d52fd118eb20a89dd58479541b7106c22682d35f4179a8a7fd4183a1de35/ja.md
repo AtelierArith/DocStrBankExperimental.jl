@@ -2,7 +2,7 @@ Toggleには以下の属性があります：
 
 `active` デフォルト: `false` トグルがアクティブかどうかを示します。
 
-`alignmode` デフォルト: `Inside()` 親のGridLayout内でのトグルの整列モード。
+`alignmode` デフォルト: `Inside()` 親のGridLayoutにおけるトグルの整列モード。
 
 `buttoncolor` デフォルト: `COLOR_ACCENT[]` トグルボタンの色。
 
@@ -10,7 +10,7 @@ Toggleには以下の属性があります：
 
 `framecolor_active` デフォルト: `COLOR_ACCENT_DIMMED[]` トグルがホバーされたときの境界線の色。
 
-`framecolor_inactive` デフォルト: `RGBf0(0.94, 0.94, 0.94)` トグルが非アクティブなときの境界線の色。
+`framecolor_inactive` デフォルト: `RGBf0(0.94, 0.94, 0.94)` トグルが非アクティブのときの境界線の色。
 
 `halign` デフォルト: `:center` 提案されたバウンディングボックス内でのトグルの水平整列。
 

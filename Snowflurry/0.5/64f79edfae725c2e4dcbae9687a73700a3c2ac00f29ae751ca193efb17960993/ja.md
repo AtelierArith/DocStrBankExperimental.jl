@@ -1,4 +1,4 @@
-A structure representing a Bra (i.e., a row vector of complex values). A Bra is created as the complex conjugate of a Ket.
+ブラ（すなわち、複素値の行ベクトル）を表す構造体。ブラはケトの複素共役として作成されます。
 
 # 例
 
@@ -17,10 +17,10 @@ julia> _ψ = Bra(ψ)
 0.0 - 0.0im
 
 
-julia> _ψ * ψ    # A Bra times a Ket is a scalar
+julia> _ψ * ψ    # ブラとケトの積はスカラー
 1.0 + 0.0im
 
-julia> ψ*_ψ     # A Ket times a Bra is an operator
+julia> ψ*_ψ     # ケトとブラの積は演算子
 (3, 3)-element Snowflurry.DenseOperator:
 Underlying data ComplexF64:
 0.0 + 0.0im    0.0 + 0.0im    0.0 + 0.0im

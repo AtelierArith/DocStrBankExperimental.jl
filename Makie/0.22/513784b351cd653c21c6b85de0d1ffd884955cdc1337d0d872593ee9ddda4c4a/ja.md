@@ -6,5 +6,5 @@ SpotLight(color, position, direction, angles)
 
 利用可能性:
 
-  * GLMakie `shading = MultiLightShading`を使用
+  * GLMakie with `shading = MultiLightShading`
   * RPRMakie

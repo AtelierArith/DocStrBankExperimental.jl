@@ -4,7 +4,7 @@
 
 渡す`NamedTuple`は1つの`Slider`を指定します。常に`range`と`label`を渡す必要があり、オプションで値ラベルのための`format`を指定できます。それ以外にも、`startvalue`のように`Slider`が受け取る任意のキーワードを設定できます。
 
-`format`キーワードは、Format.jlスタイルの`String`（例: "{:.2f}Hz"）や関数であることができます。
+`format`キーワードは、"{:.2f}Hz"のようなFormat.jlスタイルの`String`や関数であることができます。
 
 ## コンストラクタ
 

@@ -8,4 +8,4 @@ mutable struct FEMMDeforLinearESNICEH8{
 } <: AbstractFEMMDeforLinearESNICE
 ```
 
-エネルギーサンプリング安定化ノード統合連続要素（ESNICE）のためのFEMMタイプで、8ノードのヘキサヘドロンに基づいています。
+8ノード六面体に基づくエネルギーサンプリング安定化ノード統合連続体要素（ESNICE）のためのFEMMタイプ。

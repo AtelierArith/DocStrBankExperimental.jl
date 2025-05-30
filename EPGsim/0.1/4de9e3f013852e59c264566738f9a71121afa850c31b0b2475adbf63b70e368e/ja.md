@@ -2,7 +2,7 @@
 epgRotation!(E::EPGStates, alpha::Float64, phi::Float64=0.0)
 ```
 
-は、EPG状態のセットに対してBloch回転（<=> RFパルス）を適用します。
+は、EPG状態のセットにBloch回転（<=> RFパルス）を適用します。
 
 # 引数
 

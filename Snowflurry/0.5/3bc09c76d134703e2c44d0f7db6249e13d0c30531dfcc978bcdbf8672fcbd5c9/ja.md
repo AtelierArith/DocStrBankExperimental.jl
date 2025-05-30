@@ -2,7 +2,7 @@
 SimplifyTrivialGatesTranspiler
 ```
 
-状態 `Ket` に影響を与えないゲート（例：`Identity`）や、パラメータが null のパラメータ化ゲート（例：`rotation_x(target, 0.)`）を削除するトランスパイラステージです。入力および出力回路は、任意の状態 `Ket` に対して同じ操作を行います（グローバル位相を除く）。各ケースで `Base.isapprox()` に使用される許容誤差は、トランスパイラにオプション引数を渡すことで設定できます（例：`transpiler=SimplifyTrivialGatesTranspiler(1.0e-10)`）。
+効果のないゲート（例：`Identity`）や、パラメータがnullのパラメータ化ゲート（例：`rotation_x(target, 0.)`）を削除するトランスパイラーステージ。入力および出力回路は、任意の状態`Ket`に対して同じ操作を実行します（グローバル位相を除く）。各ケースで`Base.isapprox()`に使用される許容誤差は、トランスパイラーにオプション引数を渡すことで設定できます（例：`transpiler=SimplifyTrivialGatesTranspiler(1.0e-10)`）。
 
 # フィールド
 

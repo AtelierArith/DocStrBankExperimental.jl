@@ -8,7 +8,7 @@ submit_job(
 )
 ```
 
-`client`を使用して、ホストサーバー上のQPUサービスに`circuit`を送信します。QPUサービスは`machine_name`によって指定されます。回路の実行回数は`shot_count`によって指定されます。
+`client`を使用して、ホストサーバー上のQPUサービスに`circuit`を送信します。QPUサービスは`machine_name`で指定されます。回路の実行回数は`shot_count`で指定されます。
 
 回路IDを返します。これは、[`get_status`](@ref)を呼び出す際に使用できます。
 

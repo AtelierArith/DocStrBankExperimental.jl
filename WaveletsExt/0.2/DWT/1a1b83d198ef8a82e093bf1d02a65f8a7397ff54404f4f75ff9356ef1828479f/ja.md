@@ -7,7 +7,7 @@ iwpd(xw, wt, tree)
 
 # 引数
 
-  * `x̂::AbstractVector{T} where T<:Number` または `x̂::AbstractArray{T,2} where T<:Number`: 再構成された信号のための出力ベクトル/行列。
+  * `x̂::AbstractVector{T} where T<:Number` または `x̂::AbstractArray{T,2} where T<:Number`: 再構成された信号のための割り当てられた出力ベクトル/行列。
   * `xw::AbstractArray{T,2} where T<:Number` または `xw::AbstractArray{T,3} where T<:Number`: 入力配列。2D入力は1Dウェーブレット再構成を受け、3D入力は2Dウェーブレット再構成を受けます。
   * `wt::OrthoFilter`: ウェーブレットフィルター。
   * `L::Integer`: （デフォルト: `minimum(size(x)[1:end-1]) |> maxtransformlevels`）ウェーブレット分解のレベル数。

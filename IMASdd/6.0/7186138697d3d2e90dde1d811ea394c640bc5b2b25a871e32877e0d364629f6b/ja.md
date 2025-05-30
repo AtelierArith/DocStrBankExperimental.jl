@@ -2,4 +2,4 @@
 units(@nospecialize(ids::IDS), field::Symbol)
 ```
 
-与えられたIDSフィールドの単位を返す文字列
+指定されたIDSフィールドの単位を持つ文字列を返します。

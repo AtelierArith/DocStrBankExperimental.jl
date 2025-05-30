@@ -14,5 +14,3 @@ pressure_drop(f::Fluid, b::Bend)
 # 戻り値
 
   * `DynamicQuantity.AbstractQuantity`: チューブを流れる流体の圧力損失
-
-```

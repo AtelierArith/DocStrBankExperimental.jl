@@ -2,7 +2,7 @@
 generatesignals(fn, L)
 ```
 
-関数シンボル `fn` に基づいて長さ 2ᴸ の信号を生成します。現在受け入れられている入力は、D. Donoho と I. Johnstone の "Adapting to Unknown Smoothness via Wavelet  Shrinkage" Preprint Stanford, January 93, p 27-28 に基づいています。
+関数シンボル `fn` に基づいて、長さ 2ᴸ の信号を生成します。現在受け入れられている入力は、D. Donoho と I. Johnstone の "Adapting to Unknown Smoothness via Wavelet  Shrinkage" Preprint Stanford, January 93, p 27-28 に基づいています。
 
   * `:blocks`
   * `:bumps`

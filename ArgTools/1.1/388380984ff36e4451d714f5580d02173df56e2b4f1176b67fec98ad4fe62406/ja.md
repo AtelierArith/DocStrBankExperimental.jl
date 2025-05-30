@@ -13,13 +13,13 @@ end
 
 doブロックに渡される`arg`は引数の値そのものではありません。なぜなら、いくつかのテスト引数タイプは各テストケースのために初期化および最終化する必要があるからです。オープンファイルハンドル引数を考えてみてください：一度テストに使用したら、再度使用することはできません。次のテストのためにそれを閉じて、ファイルを再度開く必要があります。この関数`arg`は、`@arg_test arg begin ... end`を使用して`ArgWrite`インスタンスに変換できます。
 
-また、`arg_readers`のようにパス名を受け取る`arg_writers`メソッドもあります：
+`arg_readers`のようにパス名を受け取る`arg_writers`メソッドもあります：
 
 ```
 arg_writers(path::AbstractString, [ type = ArgWrite ]) do arg::Function
     ## テスト前のセットアップ ##
     @arg_test arg begin
-        # ここで`arg :: ArgWrite`
+        # ここで `arg :: ArgWrite`
         ## `arg`を使ったテスト ##
     end
     ## テスト後のクリーンアップ ##
