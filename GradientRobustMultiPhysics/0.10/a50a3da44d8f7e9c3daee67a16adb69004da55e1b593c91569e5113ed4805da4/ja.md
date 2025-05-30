@@ -12,4 +12,4 @@ function nodevalues!(
     continuous::Bool = false)
 ```
 
-有限要素関数を係数ベクトル source（FESpace FE の係数ベクトルとして解釈される）と指定された FunctionOperator を用いて、グリッドの（指定された領域の）すべてのノードで評価し、値を target に書き込みます。非連続（continuous = false）量は平均化されます。
+有限要素関数を係数ベクトルsource（FESpace FEの係数ベクトルとして解釈される）と指定されたFunctionOperatorを用いて、グリッドの（指定された領域の）すべてのノードで評価し、その値をtargetに書き込みます。非連続（continuous = false）量は平均化されます。

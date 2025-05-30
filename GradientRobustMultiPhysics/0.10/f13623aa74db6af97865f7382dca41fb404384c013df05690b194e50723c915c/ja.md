@@ -17,4 +17,4 @@ L2ErrorIntegrator(
 
 ```
 
-アイテムインテグレーターを作成し、離散FEVectorBlockオペレーター評価を指定されたcompare*dataと比較し、L2誤差|| compare*data(x) - factor*discrete(x) ||を返します。quadorderが「auto」のままの場合、評価にはデータのquadorderの2倍が使用されます。
+アイテムインテグレーターを作成し、与えられた compare*data に対して離散 FEVectorBlock 演算子評価を比較し、L2誤差 || compare*data(x) - factor*discrete(x) || を返します。quadorder が "auto" のままの場合、評価にはデータの quadorder の2倍が使用されます。

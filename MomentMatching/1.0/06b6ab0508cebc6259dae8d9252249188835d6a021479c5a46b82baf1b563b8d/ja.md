@@ -12,9 +12,9 @@ marginal_fobj(
 
 # 必要な引数
 
-  * estset: EstimationSetupのインスタンス。別のドキュメント[`EstimationSetup`](@ref)を参照してください。
-  * mmsolu: EstimationResultのインスタンス。別のドキュメント[`EstimationResult`](@ref)を参照してください。
+  * estset: EstimationSetupのインスタンス。別のドキュメントを参照してください [`EstimationSetup`](@ref)。
+  * mmsolu: EstimationResultのインスタンス。別のドキュメントを参照してください [`EstimationResult`](@ref)。
 
 # オプションの引数
 
-  * gridx: 目的関数を評価する最適点の周りの点のグリッド。
+  * gridx: 目的関数を評価する最適解の周りの点のグリッド。

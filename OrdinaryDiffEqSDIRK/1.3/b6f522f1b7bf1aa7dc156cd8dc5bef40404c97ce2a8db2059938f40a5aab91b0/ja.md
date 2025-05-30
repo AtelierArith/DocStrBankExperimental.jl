@@ -17,7 +17,7 @@ SDIRK法。分割を伴うA-L安定な硬度精度4次ESDIRK法。
 
 ### キーワード引数
 
-  * `autodiff`: 自動微分を使用するかどうかを指定するために[ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用します。自動微分には[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)を使用するか、有限差分には[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)を使用します。デフォルトでは自動微分のために`AutoForwardDiff()`が使用され、デフォルトで`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、デフォルト値`Val{:forward}()`を持つキーワード引数`fdtype`があり、代替として`Val{:central}()`と`Val{:complex}()`があります。
+  * `autodiff`: 自動微分を使用するかどうかを指定するために[ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用します。自動微分には[ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl)を使用するか、有限差分には[FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)を使用します。デフォルトでは自動微分のために`AutoForwardDiff()`が使用され、デフォルトで`chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。`FiniteDiff.jl`を使用するには、`fdtype`というキーワード引数を持つ`AutoFiniteDiff()` ADTypeを使用できます。デフォルト値は`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`があります。
   * `standardtag`: ForwardDiffのデフォルトの関数固有のタグの代わりにパッケージ固有のタグを使用するかどうかを指定します。詳細については[このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。デフォルトは`Val{true}()`です。
   * `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは`nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
   * `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、`KenCarp4(linsolve = KLUFactorization())`と指定します。`nothing`が渡されると、`DefaultLinearSolver`が使用されます。

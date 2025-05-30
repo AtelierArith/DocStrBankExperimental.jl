@@ -3,7 +3,7 @@ PermutationSpace(values; k)
 PermutationSpace(k)
 ```
 
-値をkのサイズで順列することによって定義された探索空間（k-順列）を定義します。
+kのサイズの値を順列することによって定義された探索空間を定義します（k-順列）。
 
 ```julia-repl
 julia> space = PermutationSpace([:red, :green, :blue])

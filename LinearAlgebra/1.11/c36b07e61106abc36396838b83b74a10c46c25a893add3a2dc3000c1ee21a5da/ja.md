@@ -4,7 +4,7 @@ diag(M, k::Integer=0)
 
 行列の `k` 番目の対角線をベクトルとして返します。
 
-関連情報としては [`diagm`](@ref), [`diagind`](@ref), [`Diagonal`](@ref), [`isdiag`](@ref) があります。
+関連情報として [`diagm`](@ref)、[`diagind`](@ref)、[`Diagonal`](@ref)、[`isdiag`](@ref) を参照してください。
 
 # 例
 

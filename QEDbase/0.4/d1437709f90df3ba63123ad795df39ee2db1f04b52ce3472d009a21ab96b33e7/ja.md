@@ -7,13 +7,13 @@
     )
 ```
 
-与えられた四モーメントを持つ指向性のオンシェル粒子の基底状態を返します。内部使用のみ。
+与えられた四運動量を持つ指向性のオンシェル粒子の基底状態を返します。内部使用のみ。
 
 # 入力
 
   * `particle` – 粒子のタイプ、すなわち、[`AbstractParticleType`](@ref) のインスタンス、例: `QEDcore.Electron`、`QEDcore.Positron`、または `QEDcore.Photon`。
   * `direction` – 粒子の方向、すなわち [`Incoming`](@ref) または [`Outgoing`](@ref)。
-  * `momentum` – 粒子の四モーメント
+  * `momentum` – 粒子の四運動量
   * `[spin_or_pol]` – 指定された場合、粒子のスピンまたは偏光、例: [`SpinUp`](@ref)/[`SpinDown`](@ref) または [`PolarizationX`](@ref)/[`PolarizationY`](@ref)。
 
 # 出力
@@ -50,7 +50,7 @@ using QEDbase, QEDcore
 mass = 1.0                              # 電子の質量を1.0に設定
 px,py,pz = rand(3)                      # ランダムな空間成分を生成
 E = sqrt(px^2 + py^2 + pz^2 + mass^2)   # エネルギーを計算、すなわち電子はオンシェル
-mom = SFourMomentum(E, px, py, pz)      # 電子の四モーメントを初期化
+mom = SFourMomentum(E, px, py, pz)      # 電子の四運動量を初期化
 
 # スピン = SpinUp の入射電子の状態を計算
 # 注意: base_state はエクスポートされていません！
@@ -93,33 +93,33 @@ julia> electron_states = base_state(Electron(), Incoming(), mom, AllSpin())
 
 
 !!! note "慣習"
-    モーメント $p$ を持つ入射フェルミオンに対して、明示的な式を使用します：
+    運動量 $p$ を持つ入射フェルミオンに対して、明示的な式を使用します：
 
     $$
     u_\sigma(p) = \frac{\gamma^\mu p_\mu + m}{\sqrt{\vert p_0\vert  + m}} \eta_\sigma,
     $$
 
-    ここで、基本的なベーススピノールは次のように与えられます。
+    ここで、基本スピンorは次のように与えられます。
 
     $$
     \eta_1 = (1, 0, 0, 0)^T\\
     \eta_2 = (0, 1, 0, 0)^T
     $$
 
-    モーメント $p$ を持つ出射反フェルミオンに対して、明示的な式を使用します：
+    運動量 $p$ を持つ出射反フェルミオンに対して、明示的な式を使用します：
 
     $$
     v_\sigma(p) = \frac{-\gamma^\mu p_\mu + m}{\sqrt{\vert p_0\vert  + m}} \chi_\sigma,
     $$
 
-    ここで、基本的なベーススピノールは次のように与えられます。
+    ここで、基本スピンorは次のように与えられます。
 
     $$
     \chi_1 = (0, 0, 1, 0)^T\\
     \chi_2 = (0, 0, 0, 1)^T
     $$
 
-    モーメント $p$ を持つ出射フェルミオンと入射反フェルミオンに対して、基底状態はそれぞれの入射フェルミオンまたは出射反フェルミオン状態のディラック随伴として与えられます：
+    運動量 $p$ を持つ出射フェルミオンと入射反フェルミオンに対して、基底状態はそれぞれの入射フェルミオンまたは出射反フェルミオン状態のディラック随伴として与えられます：
 
     $$
     \overline{u}_\sigma(p) = u_\sigma^\dagger \gamma^0\\
@@ -128,7 +128,7 @@ julia> electron_states = base_state(Electron(), Incoming(), mom, AllSpin())
 
     ここで、$v_\sigma$ はそれぞれの出射反フェルミオンの基底状態です。
 
-    四モーメント $k^\mu = \omega (1, \cos\phi \sin\theta, \sin\phi \sin\theta, \cos\theta)$ を持つ光子に対して、二つの偏光ベクトルは次のように与えられます。
+    四運動量 $k^\mu = \omega (1, \cos\phi \sin\theta, \sin\phi \sin\theta, \cos\theta)$ を持つ光子に対して、二つの偏光ベクトルは次のように与えられます。
 
     $$
     \begin{align*}
@@ -139,5 +139,5 @@ julia> electron_states = base_state(Electron(), Incoming(), mom, AllSpin())
 
 
 !!! warning
-    現在の実装には、渡された引数がオンシェル粒子を記述しているかどうかを検証する**チェック**が組み込まれていません。すなわち、`p*p≈mass^2`。オフシェル粒子で `base_state` を使用すると、予測不可能な動作を引き起こします。
+    現在の実装では、渡された引数がオンシェル粒子を記述しているかどうかを検証する**チェックは組み込まれていません**。すなわち、`p*p≈mass^2`。オフシェル粒子で `base_state` を使用すると、予測不可能な動作を引き起こします。
 

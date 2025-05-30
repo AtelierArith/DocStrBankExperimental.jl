@@ -2,7 +2,7 @@
   LineForcingModel(shape::Union{Body,BodyList},transform::MotionTransform,model_function!)
 ```
 
-`shape`（すなわち、`Body`、`BodyList`）、`transform`（形状を配置する場所を指定するため）、および`model_function!`（強制の強さを返す関数）をバンドルします。`model_function!`は、次の形式の署名を持つインプレースでなければなりません。
+`shape`（すなわち、`Body`、`BodyList`）、`transform`（形状を配置する場所を指定するため）、および線型強制のための`model_function!`（強制の強さを返す関数）を束ねます。`model_function!`は、次の形式の署名を持つインプレースでなければなりません。
 
 ```
   model_function!(str,state,t,fcache,phys_params)

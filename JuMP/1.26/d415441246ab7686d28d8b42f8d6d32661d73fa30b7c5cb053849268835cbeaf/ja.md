@@ -2,4 +2,4 @@
 GenericVariableRef{T} <: AbstractVariableRef
 ```
 
-モデルと対応する MOI.VariableIndex への参照を保持します。
+モデルと対応するMOI.VariableIndexへの参照を保持します。

@@ -4,9 +4,9 @@ delete_upper_bound(v::GenericVariableRef)
 
 変数の上限制約を削除します。
 
-存在しない場合はエラーになります。
+存在しない場合はエラーが発生します。
 
-関連項目としては [`UpperBoundRef`](@ref)、[`has_upper_bound`](@ref)、[`upper_bound`](@ref)、[`set_upper_bound`](@ref) があります。
+関連情報としては [`UpperBoundRef`](@ref)、[`has_upper_bound`](@ref)、[`upper_bound`](@ref)、[`set_upper_bound`](@ref) があります。
 
 ## 例
 

@@ -18,7 +18,7 @@ fit(TSNE, data; p=30, maxoutdim=2, kwargs...)
   * `exaggeration`: 元の空間と縮小空間の間のタイトネス制御パラメータ (*デフォルト* `12`)。
   * `initialize`: 埋め込みの初期化パラメータ (*デフォルト* `:pca`)。
   * `rng`: 初期埋め込みの初期化のための乱数生成オブジェクト。
-  * `nntype`: 最近傍構築クラス (`AbstractNearestNeighbors` から派生)
+  * `nntype`: 最近傍構築クラス (`AbstractNearestNeighbors` から派生)。
 
 # 例
 

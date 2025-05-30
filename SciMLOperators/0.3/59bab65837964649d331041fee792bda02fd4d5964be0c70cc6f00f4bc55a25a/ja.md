@@ -10,9 +10,9 @@ DiagonalOperator(
 
 `AbstractVecOrMat`に適用できる要素ごとのスケーリング（対角スケーリング）操作を表します。`diag`が長さNの`AbstractVector`である場合、`L = DiagonalOperator(diag, ...)`は`size(u, 1) == N`の`AbstractArray`に適用できます。`u`の各列は`diag`によってスケーリングされ、`LinearAlgebra.Diagonal(diag) * u`のようになります。
 
-`diag`が多次元配列である場合、`L = DiagonalOperator(diag, ...)`はサイズ`(N, N)`の演算子を形成し、ここで`N = size(diag, 1)`は`diag`の先頭の長さです。`L`は、`length(u) = length(diag}`の配列に対する要素ごとのスケーリング操作となり、先頭の長さは`size(u, 1) = N`です。
+`diag`が多次元配列である場合、`L = DiagonalOperator(diag, ...)`はサイズが`(N, N)`の演算子を形成し、ここで`N = size(diag, 1)`は`diag`の先頭の長さです。`L`は、`length(u) = length(diag}`の配列に対する要素ごとのスケーリング操作となり、先頭の長さは`size(u, 1) = N`です。
 
-その状態は、演算子評価中にユーザー提供の`update_func`によって更新されます（`L([v,], u, p, t)`）、または`update_coefficients[!](L, u, p, t)`への呼び出しによって更新されます。どちらも`update_function`、`update_func`を再帰的に呼び出し、これは次のシグネチャを持つと仮定されます。
+その状態は、演算子評価中にユーザー提供の`update_func`によって更新されます（`L([v,], u, p, t)`）、または`update_coefficients[!](L, u, p, t)`への呼び出しによって更新されます。両方とも`update_function`、`update_func`を再帰的に呼び出し、これは次のシグネチャを持つと仮定されます。
 
 ```
 update_func(diag::AbstractVecOrMat, u, p, t; <accepted kwargs>) -> new_diag

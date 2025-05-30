@@ -6,4 +6,4 @@ apply_adaboost_stumps_proba(stumps::Ensemble, coeffs, features, labels::Abstract
 
 `col_labels` は異なるラベルを含むベクトルで、例えば `["versicolor", "virginica", "setosa"]` です。その順序は出力行列の列の順序を決定します。
 
-[`build_adaboost_stumps`](@ref) も参照してください。 
+[`build_adaboost_stumps`](@ref) も参照してください。  ```

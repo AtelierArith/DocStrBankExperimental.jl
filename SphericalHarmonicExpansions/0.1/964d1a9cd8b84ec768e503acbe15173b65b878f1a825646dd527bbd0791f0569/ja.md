@@ -2,7 +2,7 @@
 translation(C::SphericalHarmonicCoefficients,v::Array{Float64,1})
 ```
 
-*説明:* 係数の翻訳: vによる展開点のシフト
+*説明:* 係数の翻訳: 拡張点を v だけシフトする
 
 *入力:*
 
@@ -12,5 +12,3 @@ translation(C::SphericalHarmonicCoefficients,v::Array{Float64,1})
 *出力:*
 
   * `cT` - 翻訳された係数、タイプ: SphericalHarmonicCoefficients (cT.R = C.R, cT.solid = C.solid)
-
-```

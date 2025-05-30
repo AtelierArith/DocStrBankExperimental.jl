@@ -2,17 +2,17 @@
 plot_tfbdry([plt], tree[; start, nd_col, ln_col, bg_col])
 ```
 
-与えられた木に対して、葉ノードの視覚的表現を出力します。ユーザーは各レベルのノードカウントを0または1から開始するオプションを持ちます。
+与えられたツリーに対して、葉ノードの視覚的表現を出力します。ユーザーは各レベルのノードカウントを0または1から開始するオプションがあります。
 
 # 引数
 
   * `plt::Plots.Plot`: プロットオブジェクト。
-  * `tree::BitVector`: 葉ノードをプロットするための木。`BitVector`の形式で提供されます。
+  * `tree::BitVector`: 葉ノードをプロットするためのツリー。`BitVector`の形式で提供されます。
   * `depth::Integer`: (デフォルト: `log2(length(tree)+1)-1 |> Int`) 表示される最大深さ。
 
 # キーワード引数
 
-  * `start::Integer`: (デフォルト: `0`) 木の根をゼロインデックスまたはワンインデックスにするかどうか。
+  * `start::Integer`: (デフォルト: `0`) ツリーのルートをゼロインデックスまたは1インデックスにするかどうか。
   * `node_color::Symbol`: (デフォルト: `:black`) 葉ノードの色。
   * `line_color::Symbol`: (デフォルト: `:black`) プロット内の線の色。
   * `background_color::Symbol`: (デフォルト: `:white`) 背景の色。
@@ -26,7 +26,7 @@ plot_tfbdry([plt], tree[; start, nd_col, ln_col, bg_col])
 ```julia
 using Wavelets, WaveletsExt
 
-# Waveletsの`maketree`を使用して木を構築
+# Wavelets `maketree`を使用してツリーを構築
 tree = maketree(128, 7, :dwt)
 
 # 葉ノードをプロット

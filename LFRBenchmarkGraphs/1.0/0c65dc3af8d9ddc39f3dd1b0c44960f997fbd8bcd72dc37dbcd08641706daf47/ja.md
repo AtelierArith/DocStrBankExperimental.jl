@@ -18,12 +18,12 @@ lancichinetti_fortunato_radicchi(n::Integer, k_avg::Integer, k_max::Integer)
 
 ### その他のオプション
 
-外部次数/総次数の比率の分布が混合パラメータによって上限（下限）で制約されるベンチマークを生成したい場合は、これらのオプションのいずれかを使用します。言い換えれば、これらのオプションのいずれかを使用すると、混合パラメータは外部次数/総次数の平均比（従来のように）ではなく、その分布の最大（または最小）になります。これらのオプションを使用する際、プログラムが本質的に行うのは、外部次数を常に超過（または不足）で近似し、必要に応じて次数分布を修正することです。それでも、この最後の可能性はごく少数のノードに対して発生し、数値シミュレーションはそれが次数分布に著しく影響を与えないことを示しています。
+外部次数/総次数の比率の分布が混合パラメータによって上限（下限）で制約されるベンチマークを生成したい場合。言い換えれば、これらのオプションのいずれかを使用すると、混合パラメータは外部次数/総次数の平均比（従来のように）ではなく、その分布の最大（または最小）になります。これらのオプションのいずれかを使用する場合、プログラムが本質的に行うことは、外部次数を常に超過（または不足）で近似し、必要に応じて次数分布を修正することです。それでも、この最後の可能性はごく少数のノードに対して発生し、数値シミュレーションはそれが次数分布に著しく影響を与えないことを示しています。
 
   * `excess=false`: true の場合、次数分布は μ によって上限が設定されます。
   * `defect=false`: true の場合、次数分布は μ によって下限が設定されます。
 
-!!! warning "超過および不足オプションの使用"
+!!! warning "超過および欠陥オプションの使用"
     `excess` と `defect` の両方のオプションは同時に `true` にはできません
 
 
@@ -35,7 +35,7 @@ lancichinetti_fortunato_radicchi(n::Integer, k_avg::Integer, k_max::Integer)
 
   * 重複コミュニティを持つ向き付きおよび重み付きグラフにおけるコミュニティ検出アルゴリズムのテストのためのベンチマーク、Andrea Lancichinetti と Santo Fortunato、2009年。 [https://doi.org/10.1103/PhysRevE.80.016118](https://doi.org/10.1103/PhysRevE.80.016118)
   * コミュニティ検出アルゴリズムのテストのためのベンチマークグラフ、Andrea Lancichinetti、Santo Fortunato、Filippo Radicchi、2008年。 [https://doi.org/10.1103/PhysRevE.78.046110](https://doi.org/10.1103/PhysRevE.78.046110)
-  * [著者によるオリジナルソースコードへのリンク](https://sites.google.com/site/andrealancichinetti/benchmarks?authuser=0)
+  * [著者による元のソースコードへのリンク](https://sites.google.com/site/andrealancichinetti/benchmarks?authuser=0)
 
 ## 例
 

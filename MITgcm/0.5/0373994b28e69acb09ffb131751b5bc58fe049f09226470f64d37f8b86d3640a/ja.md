@@ -2,7 +2,7 @@
 read_namelist(fil)
 ```
 
-`MITgcm` の名前リストファイルをネイティブ形式で読み込み、解析して `NamedTuple` として返します。
+`MITgcm` のネームリストファイルをネイティブ形式で読み込み、解析して `NamedTuple` として返します。
 
 ```
 using MITgcm

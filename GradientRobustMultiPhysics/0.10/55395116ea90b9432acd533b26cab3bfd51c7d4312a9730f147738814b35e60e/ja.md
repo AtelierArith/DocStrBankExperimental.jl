@@ -2,4 +2,4 @@
 abstract type APT_BilinearForm <: GradientRobustMultiPhysics.AssemblyPatternType
 ```
 
-バイリニアフォームアセンブリパターンタイプ
+双線形形式アセンブリパターンタイプ

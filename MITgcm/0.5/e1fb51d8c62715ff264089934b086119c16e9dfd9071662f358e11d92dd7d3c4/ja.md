@@ -10,6 +10,6 @@ T=2.0 .+ 8.0*tmp; S=34.0 .+ 0.5*tmp;
 mld=MixedLayerDepth(T,S,D,"BM"); isapprox(mld,134.0)
 
 using Plots
-plot(ρP,-D,w=2,label="ポテンシャル密度",ylabel="深さ")
-plot!(vec([ρP[1] ρP[end]]),-fill(mld,2),label="混合層深度",w=2,c="black",s=:dash)
+plot(ρP,-D,w=2,label="Potential Density",ylabel="Depth")
+plot!(vec([ρP[1] ρP[end]]),-fill(mld,2),label="Mixed Layer Depth",w=2,c="black",s=:dash)
 ```

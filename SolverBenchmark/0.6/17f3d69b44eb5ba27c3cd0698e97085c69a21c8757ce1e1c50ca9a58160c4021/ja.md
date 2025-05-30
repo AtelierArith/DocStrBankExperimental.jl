@@ -2,7 +2,7 @@
 hl = gradient_highlighter(df, col; cmap=:coolwarm)
 ```
 
-値にカラ―グラデーションを適用するPrettyTablesハイライターで、`cols`で指定された列に適用されます。
+値に色のグラデーションを適用するPrettyTablesハイライターで、`cols`で指定された列に適用されます。
 
 ### 入力引数
 

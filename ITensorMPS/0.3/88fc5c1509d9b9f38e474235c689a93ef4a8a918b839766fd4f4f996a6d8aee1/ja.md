@@ -55,5 +55,3 @@ DMRGアルゴリズムのスイープ数は、`nsweeps` キーワード引数を
   * `write_path::String = tempdir()` - maxdimが `write_when_maxdim_exceeds` オプションを超えた場合にファイルをディスクに保存するために使用するパス（RAMを節約するため）。
 
 [^krylovkit]: `ITensors.jl` の `dmrg` 関数は現在、内部固有ソルバーとして `KrylovKit.jl` の `eigsolve` 関数を使用しています。詳細については、`KrylovKit.jl` の `eigsolve` 関数に関するドキュメントを参照してください: [KrylovKit.eigsolve](https://jutho.github.io/KrylovKit.jl/stable/man/eig/#KrylovKit.eigsolve).
-
-```

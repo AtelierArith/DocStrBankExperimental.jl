@@ -3,7 +3,7 @@ eye(),
 eye(size::Integer)
 ```
 
-単位行列を `DenseOperator` として返します。これは次のように定義されます：
+`DenseOperator` としての単位行列を返します。これは次のように定義されます：
 
 $$
 I = \begin{bmatrix}

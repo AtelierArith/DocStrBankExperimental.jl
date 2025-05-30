@@ -2,9 +2,9 @@
 SimplifiedLCMC([categories])
 ```
 
-文字頻度データセット：簡体字テキストコーパスに基づく、標準的な中国語のランカスターコーパス。コーパスの詳細については、彼らの[ウェブサイト](https://www.lancaster.ac.uk/fass/projects/corpus/LCMC/default.htm)を参照してください。
+文字頻度データセット：簡体字中国語のランカスターコーパス、簡体字テキストコーパスに基づく簡体字用語のみ。コーパスの詳細については、彼らの[ウェブサイト](https://www.lancaster.ac.uk/fass/projects/corpus/LCMC/default.htm)を参照してください。
 
-文字頻度は、選択したカテゴリに基づいてのみ計算できます（有効なカテゴリキーと対応するカテゴリ名については`CJKFrequencies.LCMC_CATEGORIES`を参照してください）。無効なカテゴリは無視されます。
+文字頻度は、選択したカテゴリのみに基づくことができます（有効なカテゴリキーと対応するカテゴリ名については`CJKFrequencies.LCMC_CATEGORIES`を参照）。無効なカテゴリは無視されます。
 
 ## 例
 
@@ -24,7 +24,7 @@ DataStructures.Accumulator{String,Int64} with 45411 entries:
   ⋮      => ⋮
 ```
 
-または、サブセットのみを読み込む（引数は任意のイテラブルにできます）：
+または、サブセットのみを読み込む（引数は任意のイテラブルで可能）：
 
 ```julia-repl
 julia> charfreq(SimplifiedLCMC("ABEGKLMNR"))
@@ -46,4 +46,4 @@ DataStructures.Accumulator{String,Int64} with 35488 entries:
 
 元のコーパスは主に非営利の研究のために提供されています。完全な[エンドユーザーライセンス契約](https://www.lancaster.ac.uk/fass/projects/corpus/LCMC/lcmc/lcmc_license.htm)を必ず確認してください。
 
-[オックスフォードテキストアーカイブ](https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2474)を通じて、このコーパスは[CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)ライセンスの下で配布されています。
+[オックスフォードテキストアーカイブ](https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2474)を通じて、このコーパスは[CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)ライセンスの下で配布されています。 ```

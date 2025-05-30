@@ -2,7 +2,7 @@
 struct CustomCouplings <: OpenQuantumBase.AbstractTimeDependentCouplings
 ```
 
-`CustomCouplings` は、ユーザー定義の結合演算子のためのコンテナです。
+`CustomCouplings` は、ユーザー定義の結合演算子を格納するコンテナです。
 
 # フィールド
 

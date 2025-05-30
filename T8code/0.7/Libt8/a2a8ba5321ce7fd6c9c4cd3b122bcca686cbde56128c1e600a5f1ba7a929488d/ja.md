@@ -6,12 +6,12 @@ t8_geometry_tree_negative_volume(cmesh, gtreeid)
 
 # 引数
 
-  * `cmesh`:[in] チェックするcmesh
+  * `cmesh`:[in] 確認するcmesh
   * `gtreeid`:[in] ツリーのグローバルID
 
 # 戻り値
 
-ツリーのID gtreeid が負の体積を持っている場合は True。そうでない場合は False。
+IDがgtreeidのツリーが負の体積を持っている場合はTrue。そうでない場合はFalse。
 
 ### プロトタイプ
 

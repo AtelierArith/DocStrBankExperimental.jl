@@ -2,4 +2,4 @@
 append!(cb::CircularBuffer, datavec::AbstractVector)
 ```
 
-最後の `capacity` アイテムを最大でプッシュします。
+最大で最後の `capacity` アイテムをプッシュします。

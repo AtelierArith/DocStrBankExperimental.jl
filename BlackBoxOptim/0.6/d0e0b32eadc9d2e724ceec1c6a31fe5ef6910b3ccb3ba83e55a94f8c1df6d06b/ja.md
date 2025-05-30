@@ -1,1 +1,1 @@
-`BlackBoxOptim`のデフォルトパラメーターストレージ。
+`BlackBoxOptim`におけるデフォルトパラメータのストレージ。

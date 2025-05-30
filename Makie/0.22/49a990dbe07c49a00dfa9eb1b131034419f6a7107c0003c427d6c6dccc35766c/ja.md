@@ -16,25 +16,25 @@ textlabel(text_position; attributes...)
 
 **`background_color`** =  `:white`  — 背景の色を設定します。頂点ごとの色のために`Vector{<:Colorant}`、単一の`Colorant`、またはハッチング用の通常のパターンでポリを覆う`<: AbstractPattern`を指定できます。
 
-**`clip_planes`** =  `Plane3f[]`  — クリップ平面は3D空間でのクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
+**`clip_planes`** =  `Plane3f[]`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクターを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
 **`cornerradius`** =  `5.0`  — Rect2背景形状が与えられたときのコーナー半径を設定します。
 
 **`cornervertices`** =  `10`  — 丸みを帯びたコーナーに関与する頂点の数を設定します。少なくとも2でなければなりません。
 
-**`depth_shift`** =  `0.0`  — 他のすべての変換の後にテキストラベルの深度値を調整します。すなわち、クリップ空間で`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — 他のすべての変換の後にテキストラベルの深さ値を調整します。すなわち、クリップ空間で`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
-**`draw_on_top`** =  `true`  — テキストラベルが前面に描画されるか（true、デフォルト）、その位置に適した深度で描画されるかを制御します。
+**`draw_on_top`** =  `true`  — テキストラベルが前面に描画されるか（true、デフォルト）、その位置に適した深さで描画されるかを制御します。
 
 **`font`** =  `@inherit font`  — フォントを設定します。`fonts`辞書で検索される`Symbol`、またはフォントの（部分的な）名前やフォントファイルのファイルパスを指定する`String`を指定できます。
 
-**`fonts`** =  `@inherit fonts`  — `Symbol`で指定されたフォントを検索するための辞書として使用されます。例えば、`:regular`、`:bold`、または`:italic`などです。
+**`fonts`** =  `@inherit fonts`  — `Symbol`で指定されたフォントを検索するための辞書として使用されます。例えば、`:regular`、`:bold`、または`:italic`です。
 
 **`fontsize`** =  `@inherit fontsize`  — ピクセル単位のフォントサイズです。
 
 **`fxaa`** =  `false`  — 背景がfxaa（アンチエイリアス、GLMakieのみ）でレンダリングされるかどうかを制御します。これはデフォルトで`false`に設定されており、テキストの周りのアーティファクトを防ぎます。
 
-**`inspectable`** =  `@inherit inspectable`  — プロットがssao（スクリーンスペース環境遮蔽）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`のときにのみ適用されます。
+**`inspectable`** =  `@inherit inspectable`  — プロットがssao（スクリーンスペース環境光遮蔽）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`のときにのみ適用されます。
 
 **`inspector_clear`** =  `automatic`  — DataInspector内のカスタムインジケーターをクリーンアップするためのコールバック関数`(inspector, plot) -> ...`を設定します。
 
@@ -50,15 +50,15 @@ textlabel(text_position; attributes...)
 
 **`lineheight`** =  `1.0`  — 行の高さの倍率です。
 
-**`linestyle`** =  `nothing`  — アウトラインのダッシュパターンを設定します。オプションは、`:solid`（`nothing`と同等）、`:dot`、`:dash`、`:dashdot`、および`:dashdotdot`です。これらは、ギャップスタイル修飾子`(:normal, :dense, :loose)`を持つタプルでも指定できます。例えば、`(:dot, :loose)`や`(:dashdot, :dense)`などです。
+**`linestyle`** =  `nothing`  — アウトラインのダッシュパターンを設定します。オプションは、`:solid`（`nothing`と同等）、`:dot`、`:dash`、`:dashdot`、および`:dashdotdot`です。これらは、ギャップスタイル修飾子`(:normal, :dense, :loose)`を持つタプルでも指定できます。例えば、`(:dot, :loose)`や`(:dashdot, :dense)`です。
 
 カスタムパターンについては、[`Makie.Linestyle`](@ref)を参照してください。
 
 **`miter_limit`** =  `@inherit miter_limit`  — ミタージョインが切り捨てられる最小内側ジョイン角度を設定します。`Makie.miter_distance_to_angle`も参照してください。
 
-**`offset`** =  `(0.0, 0.0)`  — 指定された位置からのテキストラベルのオフセットを`markerspace`単位で設定します。
+**`offset`** =  `(0.0, 0.0)`  — `markerspace`単位で指定された位置からのテキストラベルのオフセットです。
 
-**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特にGLバックエンドで深度チェックを無視することを意味します。
+**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特にGLバックエンドで深さチェックを無視することを意味します。
 
 **`padding`** =  `4`  — テキストの境界ボックスと背景形状の間のパディングを設定します。
 
@@ -78,7 +78,7 @@ textlabel(text_position; attributes...)
 
 **`strokewidth`** =  `1`  — アウトラインの幅を設定します。
 
-**`text`** =  `""`  — 表示するテキストの1つの部分またはテキストのベクトルを指定します。数は指定された位置の数と一致する必要があります。Makieは、通常のテキストに使用される`String`と、`MathTeXEngine.jl`を使用して数式をレイアウトする`LaTeXString`をサポートしています。
+**`text`** =  `""`  — 表示するテキストの1つの部分またはテキストのベクターを指定します。数は指定された位置の数と一致する必要があります。Makieは、通常のテキストに使用される`String`と、`MathTeXEngine.jl`を使用して数式をレイアウトする`LaTeXString`をサポートしています。
 
 **`text_align`** =  `(:center, :center)`  — `position`に対する文字列の整列を設定します。`:left, :center, :right, :top, :bottom, :baseline`または分数を使用します。
 

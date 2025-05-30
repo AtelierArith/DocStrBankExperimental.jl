@@ -7,7 +7,7 @@ deletecolmetadata!(dfr::DataFrameRows, col::ColumnIndex, key::AbstractString)
 
 `df`の列`col`とキー`key`に設定された列レベルのメタデータを削除し、`df`を返します。
 
-`SubDataFrame`および`DataFrameRow`については、親からの`:note`スタイルのメタデータのみが削除できます（他のスタイルはビューに伝播しないため）。
+`SubDataFrame`および`DataFrameRow`に対しては、親からの`:note`スタイルのメタデータのみが削除できます（他のスタイルはビューに伝播しないため）。
 
 参照: [`metadata`](@ref), [`metadatakeys`](@ref), [`metadata!`](@ref), [`deletemetadata!`](@ref), [`emptymetadata!`](@ref), [`colmetadata`](@ref), [`colmetadatakeys`](@ref), [`colmetadata!`](@ref), [`emptycolmetadata!`](@ref).
 

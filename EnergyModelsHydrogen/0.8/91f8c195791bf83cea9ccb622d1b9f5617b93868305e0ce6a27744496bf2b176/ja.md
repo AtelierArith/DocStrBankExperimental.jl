@@ -1,3 +1,3 @@
 `EnergyModelsHydrogen`のメインモジュール。
 
-このモジュールは、`SimpleElectrolyzer`および`Electrolyzer`のタイプを通じて電気分解を記述するための制約、`Reformer`のタイプを通じて天然ガス改質を記述するための制約、そして`SimpleHydrogenStorage`および`HydrogenStorage`のタイプを通じて水素貯蔵を記述するための制約を実装しています。
+このモジュールは、`SimpleElectrolyzer`および`Electrolyzer`のタイプを通じて電気分解を記述するための制約、`Reformer`のタイプを通じて天然ガス改質、そして`SimpleHydrogenStorage`および`HydrogenStorage`のタイプを通じて水素貯蔵を実装しています。

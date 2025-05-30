@@ -2,7 +2,7 @@
 contour(x, y, z)
 ```
 
-x::Vector、y::Vector、z::Matrixを span する平面の等高線プロットを作成します。
+x::Vector、y::Vector、z::Matrixを span する等高線プロットを作成します。
 
 ## 属性
 

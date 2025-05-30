@@ -2,7 +2,7 @@
 t8_cmesh_trees_get_ghost_ext(trees, lghost_id, face_neigh, ttf)
 ```
 
-特定のゴーストへのポインタをtrees構造体から返し、さらにそのface*neighborおよびtree*to_face配列へのポインタを返します。
+特定のゴーストへのポインタをtrees構造体から返し、さらにそのface*neighborおよびtree*to_face配列へのポインタも返します。
 
 # 引数
 
@@ -13,7 +13,7 @@ t8_cmesh_trees_get_ghost_ext(trees, lghost_id, face_neigh, ttf)
 
 # 戻り値
 
-ローカルID *tree*を持つ木へのポインタ。
+ローカルID *tree* を持つ木へのポインタ。
 
 ### プロトタイプ
 

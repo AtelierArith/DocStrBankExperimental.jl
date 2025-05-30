@@ -2,9 +2,9 @@
 all_spin_pols(process::AbstractProcessDefinition)
 ```
 
-この関数は、プロセスの[`spin_pols`](@ref)によって許可されるすべての完全に確定したスピンと偏光の組み合わせを生成するイテレータを返します。返される各要素は、プロセス自身のスピンと偏光の順序で、入射スピンと偏光、出射スピンと偏光のタプルです。
+この関数は、プロセスの[`spin_pols`](@ref)によって許可されるすべての完全に確定したスピンと偏光の組み合わせを生成するイテレータを返します。返される各要素は、プロセス自身のスピンと偏光の順序で、入射スピンと偏光および出射スピンと偏光のタプルです。
 
-これは、確定したスピンと偏光、[`AllSpin`](@ref)、[`AllPolarization`](@ref)、および同期されたバージョン[`SyncedPolarization`](@ref)と[`SyncedSpin`](@ref)と連携して機能します。
+これは、確定したスピンと偏光、[`AllSpin`](@ref)、[`AllPolarization`](@ref)、および同期されたバージョン[`SyncedPolarization`](@ref)と[`SyncedSpin`](@ref)と一緒に機能します。
 
 ```julia
 julia> using QEDbase; using QEDcore; using QEDprocesses;

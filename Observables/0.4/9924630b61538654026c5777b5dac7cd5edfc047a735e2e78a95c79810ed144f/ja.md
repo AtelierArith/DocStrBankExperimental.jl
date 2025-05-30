@@ -4,9 +4,9 @@ on(f, observable::AbstractObservable; weak = false)
 
 関数 `f` を `observable` のリスナーとして追加します。`observable` の値が `observable[] = val` を介して設定されるたびに、`f` が `val` で呼び出されます。
 
-`f` と `observable` をラップし、`off(f, observable)` の代わりに `off(observerfunction)` を呼び出すことで簡単に切断できる [`ObserverFunction`](@ref) を返します。代わりに古い `Observable` から新しい `Observable` を計算したい場合は、[`map(f, ::Observable)`](@ref) を使用してください。
+`f` と `observable` をラップする [`ObserverFunction`](@ref) を返し、`off(f, observable)` の代わりに `off(observerfunction)` を呼び出すことで簡単に切断できるようにします。代わりに古い `Observable` から新しい `Observable` を計算したい場合は、[`map(f, ::Observable)`](@ref) を使用してください。
 
-`weak = true` が設定されている場合、返された `ObserverFunction` がどこにも参照されなくなり、ガーベジコレクションされると、新しい接続は削除されます。これは、親オブジェクトが外部のオブザーバブルに接続し、結果として得られた `ObserverFunction` インスタンスを保存する場合に便利です。その後、その親オブジェクトがガーベジコレクションされると、弱いオブザーバブル接続が自動的に削除されます。
+`weak = true` が設定されている場合、返された `ObserverFunction` がどこにも参照されなくなり、ガーベジコレクトされると新しい接続は削除されます。これは、親オブジェクトが外部のオブザーバブルに接続し、結果として得られた `ObserverFunction` インスタンスを保存する場合に便利です。その後、その親オブジェクトがガーベジコレクトされると、弱いオブザーバブル接続は自動的に削除されます。
 
 # 例
 

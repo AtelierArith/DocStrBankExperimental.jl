@@ -4,7 +4,7 @@ save_at(worker, sym, val)
 
 値 `val` を `worker` のシンボル `sym` に保存します。`sym` は引用符で囲む必要があります（またはシンボルを含む必要があります）。`val` は処理中にアンコートされ、ワーカーで評価されます。ワーカーに正確なコマンドを渡したい場合は、引用符で囲んでください。
 
-これはおおまかにパッケージ ParallelDataTransfers に基づいていますが、明示的なフェッチなどを省略/遅延させることで、少し柔軟に作られています。特に、`save_at` はおおよそ `ParallelDataTransfers.sendto` と同じであり、`get_val_from` は `ParallelDataTransfers.getfrom` と非常に似ています。
+これはパッケージ ParallelDataTransfers に基づいていますが、明示的なフェッチなどを省略/遅延させることで、少し柔軟に作られています。特に、`save_at` はおおよそ `ParallelDataTransfers.sendto` と同じであり、`get_val_from` は `ParallelDataTransfers.getfrom` と非常に似ています。
 
 # 戻り値
 

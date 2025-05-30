@@ -2,7 +2,7 @@
 SyntheticRule{probability::Float64[, item::Union{Nothing, Integer}, match::Function])
 ```
 
-累積「クリック率」のためのマッチングルール。アイテムインデックスが与えられたとき、`match` が `true` を返すとサンプリング時の受け入れ確率が増加します。`match` は特徴名 => 値の辞書を受け取ります。
+累積「クリック率」のためのマッチングルール。アイテムインデックスが与えられた場合、`match`が`true`を返すときにサンプリング時の受け入れ確率を増加させます。`match`は特徴名 => 値の辞書を受け取ります。
 
 ```julia
 rules = SyntheticRule[]

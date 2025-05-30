@@ -10,4 +10,4 @@ itp = interpolate((nodes1, nodes2, ...), A, interpmode)
   * `Gridded(Constant())`
   * `Gridded(Linear())`
 
-異なる補間スキームを各軸に沿って使用したい場合は、そのような値のタプルであることもできます。
+異なる軸に沿って異なる補間スキームを使用したい場合は、そのような値のタプルであることもできます。

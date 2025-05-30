@@ -5,9 +5,9 @@ colorscheme_to_text(cscheme::ColorScheme, schemename, filename;
 )
 ```
 
-ColorSchemeをJuliaのテキストファイルに書き込みます。
+Write a ColorScheme to a Julia text file.
 
-## 例
+## Example
 
 ```
 colorscheme_to_text(ColorSchemes.vermeer,
@@ -18,7 +18,7 @@ colorscheme_to_text(ColorSchemes.vermeer,
     )
 ```
 
-そして、次のように読み戻します：
+and read it back in with:
 
 ```
 include("/tmp/the_lost_vermeer.jl")

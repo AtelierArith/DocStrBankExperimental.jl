@@ -6,7 +6,7 @@ Motions(type::String, parameters::Vector{Float64})
 
 ## フィールド
 
-  * `motion_type`: "hold"、"velocity*const"、"velocity*linear"、"oscillatory"、"ramp*1"、"ramp*2" の選択を許可
+  * `motion_type`: "hold", "velocity*const", "velocity*linear", "oscillatory", "ramp*1", "ramp*2" の選択を許可
   * `motion_params`: モーションを説明するために提供される数値パラメータ
 
 ## コンストラクタ

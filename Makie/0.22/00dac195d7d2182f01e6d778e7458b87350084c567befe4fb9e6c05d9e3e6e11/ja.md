@@ -8,4 +8,4 @@ help(func[; extended = false])
 
 特定の関数の属性に関するヘルプを得るには、`help_attributes(plot_Type)`と入力してください。
 
-オプションの`extended = true`キーワード引数を使用して、より詳細な情報を表示できます。
+オプションの`extended = true`キーワード引数を使用して、より詳細を確認できます。

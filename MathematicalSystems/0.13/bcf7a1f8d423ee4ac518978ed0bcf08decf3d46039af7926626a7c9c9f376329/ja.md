@@ -11,4 +11,4 @@ nextinput(input::VaryingInput, n::Int=1)
 
 ### 出力
 
-この入力の最初の `n` 要素を最大で表す `Base.Iterators.Take` 型のイテレータ。
+この入力の最初の `n` 要素を表す `Base.Iterators.Take` 型のイテレータ。

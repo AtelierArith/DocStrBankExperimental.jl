@@ -6,4 +6,4 @@ fill!(
 
 ```
 
-`FEMatrixBlock` のカスタム `fill` 関数（ブロックのみを填充し、完全な FEMatrix は填充しません）。
+`FEMatrixBlock` のカスタム `fill` 関数（ブロックのみを埋め、完全な FEMatrix は埋めません）。

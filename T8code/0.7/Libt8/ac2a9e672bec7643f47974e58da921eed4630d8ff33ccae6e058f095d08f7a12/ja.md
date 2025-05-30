@@ -2,7 +2,7 @@
 t8_cmesh_set_partition_range(cmesh, set_face_knowledge, first_local_tree, last_local_tree)
 ```
 
-cmeshが分割されたcmeshとして理解され、プロセッサのローカルツリー範囲を指定します。この関数は、cmeshが別のcmeshから派生していない場合、t8*cmesh*set*partition*offsetsよりも優先されるべきです。この呼び出しは、cmeshがまだt8*cmesh*commitへの呼び出しを介してコミットされていない場合にのみ有効です。
+cmeshが分割されたcmeshとして理解され、プロセッサのローカルツリー範囲を指定します。この関数は、cmeshが別のcmeshから派生していない場合に、t8*cmesh*set*partition*offsetsよりも優先されるべきです。この呼び出しは、cmeshがまだt8*cmesh*commitへの呼び出しを介してコミットされていない場合にのみ有効です。
 
 !!! note
     *set*face*knowledge*の値が-1または3以外はまだサポートされていません。

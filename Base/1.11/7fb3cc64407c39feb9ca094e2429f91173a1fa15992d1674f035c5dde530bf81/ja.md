@@ -6,7 +6,7 @@ findmax(itr) -> (x, index)
 
 インデックスは [`keys(itr)`](@ref) および [`pairs(itr)`](@ref) によって返されるものと同じ型です。
 
-関連項目: [`findmin`](@ref), [`argmax`](@ref), [`maximum`](@ref).
+関連情報: [`findmin`](@ref), [`argmax`](@ref), [`maximum`](@ref).
 
 # 例
 

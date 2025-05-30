@@ -7,6 +7,6 @@ dtransform(val, fn, workers, tgt::Symbol=val)
 # 例
 
 ```
-# 保存されたすべてのデータを2倍にする
+# 保存されたすべてのデータを2倍する
 dtransform(:myData, (d)->(2*d), workers())
 ```

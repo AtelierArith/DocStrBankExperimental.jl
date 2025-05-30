@@ -2,4 +2,4 @@
 momenta(psp::AbstractPhaseSpacePoint, ::ParticleDirection)
 ```
 
-与えられた `ParticleDirection` に対するすべての粒子の運動量の `Tuple` を返します。
+指定された `ParticleDirection` に対して、すべての粒子の運動量の `Tuple` を返します。

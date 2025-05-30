@@ -14,4 +14,4 @@ PresetTimeCallback(tstops, user_affect!;
 
 ## キーワード引数
 
-  * `filter_tstops`: 統合時間範囲の終わりを超える tstops をフィルタリングするかどうか。デフォルトは true です。false の場合、tstops は統合の間隔を拡張できます。
+  * `filter_tstops`: 統合の時間範囲の終わりを超える tstops をフィルタリングするかどうか。デフォルトは true です。false の場合、tstops は統合の間隔を拡張できます。

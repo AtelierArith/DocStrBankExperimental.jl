@@ -29,13 +29,13 @@ streamplot(v, -2..2, -2..2)
 
 **`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトではクリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
-**`color`** =  `norm`  — 線の色を選択するには、`color`属性に関数`color_func(dx::Point)`を渡すことができます。これは任意の関数または関数の合成に設定できます。`color_func`に渡される`dx`は、色付けされる点での`f`の出力です。
+**`color`** =  `norm`  — 線の色を選択するには、`color`属性に関数`color_func(dx::Point)`を渡します。これは任意の関数または関数の合成に設定できます。`color_func`に渡される`dx`は、色付けされる点での`f`の出力です。
 
 **`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出すことができます。
 
 **`colorrange`** =  `automatic`  — `colormap`の開始点と終了点を表す値。
 
-**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10`および`Makie.Symlog10`の`Colorbar`と一緒にうまく機能します。
+**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar`と一緒に`identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10`および`Makie.Symlog10`と一緒にうまく機能します。
 
 **`density`** =  `1.0`  — *ドキュメントはありません。*
 
@@ -77,9 +77,9 @@ streamplot(v, -2..2, -2..2)
 
 **`quality`** =  `16`  — *ドキュメントはありません。*
 
-**`space`** =  `:data`  — プロットを包含するボックスの変換空間を設定します。可能な入力については`Makie.spaces()`を参照してください。
+**`space`** =  `:data`  — プロットを囲むボックスの変換空間を設定します。可能な入力については`Makie.spaces()`を参照してください。
 
-**`ssao`** =  `false`  — プロットがssao（スクリーンスペース環境オクルージョン）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`のときにのみ適用されます。
+**`ssao`** =  `false`  — プロットがssao（スクリーンスペース環境オクルージョン）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true`と一緒にのみ適用されます。
 
 **`stepsize`** =  `0.01`  — *ドキュメントはありません。*
 

@@ -7,11 +7,11 @@ BoundaryValueDiffEqAscher.Ascher2(; nlsolve = NewtonRaphson(), max_num_subinterv
 ## キーワード引数
 
   * `nlsolve`: 内部非線形ソルバー。SciML `NonlinearProblem` インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
-  * `max_num_subintervals`: 最大サブインターバルの数、デフォルトは3000です。
+  * `max_num_subintervals`: 最大サブインターバル数、デフォルトは3000です。
   * `zeta`: サイド条件ポイント、常に提供する必要があります。
 
 !!! note
-    型の安定性のために、`BVPJacobianAlgorithm` のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
+    型の安定性のために、`BVPJacobianAlgorithm`内のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
 
 
 ## 参考文献

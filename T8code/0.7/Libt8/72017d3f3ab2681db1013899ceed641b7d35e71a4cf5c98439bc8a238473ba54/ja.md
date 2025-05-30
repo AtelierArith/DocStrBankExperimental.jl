@@ -2,7 +2,7 @@
 t8_forest_ltreeid_to_cmesh_ltreeid(forest, ltreeid)
 ```
 
-森林内の木のローカルIDを指定すると、関連するcmesh内の木のローカルIDを計算します。
+与えられた森林内の木のローカルIDに基づいて、関連するcmesh内の木のローカルIDを計算します。
 
 !!! note
     森のローカルツリーに対して、これはt8*forest*cmesh*ltreeid*to_ltreeidの逆関数です。

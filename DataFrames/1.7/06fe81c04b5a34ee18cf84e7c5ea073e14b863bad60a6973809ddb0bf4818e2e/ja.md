@@ -17,9 +17,9 @@ crossjoin(df1, df2, dfs...; makeunique = false)
 
 2つ以上のデータフレームが渡された場合、結合は左結合的に再帰的に行われます。
 
-メタデータ：テーブルレベルの`:note`スタイルのメタデータは、すべての渡されたテーブルで定義され、同じ値を持つキーに対してのみ保持されます。列レベルの`:note`スタイルのメタデータは、両方のテーブルから保持されます。
+メタデータ: テーブルレベルの`:note`スタイルのメタデータは、すべての渡されたテーブルで定義され、同じ値を持つキーに対してのみ保持されます。列レベルの`:note`スタイルのメタデータは、両方のテーブルから保持されます。
 
-参照：[`innerjoin`](@ref)、[`leftjoin`](@ref)、[`rightjoin`](@ref)、           [`outerjoin`](@ref)、[`semijoin`](@ref)、[`antijoin`](@ref)。
+参照: [`innerjoin`](@ref), [`leftjoin`](@ref), [`rightjoin`](@ref),           [`outerjoin`](@ref), [`semijoin`](@ref), [`antijoin`](@ref).
 
 # 例
 

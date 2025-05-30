@@ -4,7 +4,7 @@ rownumber(dfr::DataFrameRow)
 
 `dfr` が作成された `AbstractDataFrame` の行番号を返します。
 
-これは、`parentindices` が返すタプルの最初の要素とは異なることに注意してください。後者は、`dfr` がアクセスするデータが格納されている元の `DataFrame` での行番号を示します。
+これは、`parentindices` が返すタプルの最初の要素とは異なることに注意してください。後者は、`dfr` がアクセスするデータが格納されている元の `DataFrame` である `parent(dfr)` の行番号を示します。
 
 # 例
 

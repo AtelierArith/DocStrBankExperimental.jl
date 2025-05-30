@@ -2,7 +2,7 @@
 qr(A::SparseMatrixCSC; tol=_default_tol(A), ordering=ORDERING_DEFAULT) -> QRSparse
 ```
 
-スパース行列 `A` の `QR` 分解を計算します。フィル削減行と列の置換が使用され、`F.R = F.Q'*A[F.prow,F.pcol]` となります。このタイプの主な用途は、[`\`](@ref) を使用して最小二乗または過剰決定問題を解決することです。この関数は C ライブラリ SPQR[^ACM933] を呼び出します。
+スパース行列 `A` の `QR` 因子分解を計算します。フィル削減行と列の置換が使用され、`F.R = F.Q'*A[F.prow,F.pcol]` となります。このタイプの主な用途は、[`\`](@ref) を使用して最小二乗または過剰決定問題を解決することです。この関数は C ライブラリ SPQR[^ACM933] を呼び出します。
 
 !!! note
     `qr(A::SparseMatrixCSC)` は [SuiteSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse) の一部である SPQR ライブラリを使用します。このライブラリは [`Float64`](@ref) または `ComplexF64` 要素を持つスパース行列のみをサポートしているため、Julia v1.4 以降、`qr` は `A` を `SparseMatrixCSC{Float64}` または `SparseMatrixCSC{ComplexF64}` 型のコピーに変換します。

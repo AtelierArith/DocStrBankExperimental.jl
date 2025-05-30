@@ -26,7 +26,7 @@ sample(model, AIS(N), MCMCDistributed(), Ns, Nc[; optional keyword args])
 
 `progress`: 冗長性を無効にするためのブール値。
 
-# `CommonLogDensity`の最小例：
+# `CommonLogDensity`の最小例:
 
 ```julia
 using KissABC
@@ -39,7 +39,7 @@ res = sample(D, AIS(50), 1000, ntransitions = 100, discard_initial = 500, progre
 println(res)
 ```
 
-出力：
+出力:
 
 ```
 Particles{Float64,1000}[1.43 ± 1.4, 0.99 ± 0.67]
@@ -58,7 +58,7 @@ res = sample(plan, AIS(100), 2000, discard_initial = 10000, progress = false)
 println(res)
 ```
 
-出力：
+出力:
 
 ```
 0.0 ± 0.46

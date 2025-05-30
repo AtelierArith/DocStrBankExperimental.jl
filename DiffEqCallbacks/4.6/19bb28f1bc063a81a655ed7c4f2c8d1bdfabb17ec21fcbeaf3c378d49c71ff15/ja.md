@@ -2,4 +2,4 @@
 SavedValues(tType::DataType, savevalType::DataType)
 ```
 
-Return `SavedValues{tType, savevalType}` with empty storage vectors.
+`SavedValues{tType, savevalType}` を空のストレージベクターで返します。

@@ -7,4 +7,4 @@ GlobalEqualityConstraint(
 )::EqualityConstraint
 ```
 
-グローバル変数に対する等式制約をNamedTrajectoryで構築します。
+NamedTrajectory内のグローバル変数に対する等式制約を構築します。

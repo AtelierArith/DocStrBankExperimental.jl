@@ -1,1 +1,1 @@
-`seriestype`を使用したプロット: `path3d`
+`seriestype`を使ったプロット: `path3d`

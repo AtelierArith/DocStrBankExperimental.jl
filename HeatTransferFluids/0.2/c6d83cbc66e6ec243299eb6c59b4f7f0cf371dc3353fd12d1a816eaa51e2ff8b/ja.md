@@ -4,7 +4,7 @@ pressure_drop(f::Fluid, t::Tube[; friction])
 
 流体が特定の摩擦を持つチューブを流れるときの圧力降下を計算します。
 
-詳細については、VDI Heat Atlasの1057ページを参照してください。
+詳細については、VDI Heat Atlasのp. 1057を参照してください。
 
 # 引数
 

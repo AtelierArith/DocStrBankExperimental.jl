@@ -8,7 +8,7 @@ stats = bmark_results_to_dataframes(results)
 SUITE[solver][case] = ...
 ```
 
-ここで `solver` は DataFrame で比較されるソルバーの一つとして記録され、case はテストケースです。例えば：
+ここで `solver` は `DataFrame` で比較されるソルバーの1つとして記録され、case はテストケースです。例えば：
 
 ```
 SUITE["CG"]["BCSSTK09"] = @benchmarkable ...

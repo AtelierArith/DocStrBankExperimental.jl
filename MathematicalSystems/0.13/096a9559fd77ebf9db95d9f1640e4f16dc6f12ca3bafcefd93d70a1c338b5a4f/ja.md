@@ -14,8 +14,8 @@ successor(system::AbstractDiscreteSystem, x::AbstractVector, u::AbstractVector;
 
 ### 出力
 
-状態`x`と入力`u`にシステムを適用した結果。
+状態 `x` と入力 `u` にシステムを適用した結果。
 
 ### 注意事項
 
-システムが制御されていないがノイズがある場合、入力`u`はノイズとして解釈されます。
+システムが制御されていないがノイズがある場合、入力 `u` はノイズとして解釈されます。

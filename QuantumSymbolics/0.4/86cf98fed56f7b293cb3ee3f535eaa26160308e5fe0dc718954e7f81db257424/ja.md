@@ -1,4 +1,4 @@
-生成（作成）演算子。
+生成（昇降）演算子。
 
 ```jldoctest
 julia> f = FockState(2)

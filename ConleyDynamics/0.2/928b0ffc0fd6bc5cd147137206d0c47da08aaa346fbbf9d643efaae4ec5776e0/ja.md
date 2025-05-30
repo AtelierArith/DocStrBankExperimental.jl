@@ -2,4 +2,4 @@
 lefschetz_is_closed(lc::LefschetzComplex, subcomp::Vector{Int})
 ```
 
-Lefschetz複体の部分集合が閉じているかどうかを判断します。
+レフシェッツ複体の部分集合が閉じているかどうかを判断します。

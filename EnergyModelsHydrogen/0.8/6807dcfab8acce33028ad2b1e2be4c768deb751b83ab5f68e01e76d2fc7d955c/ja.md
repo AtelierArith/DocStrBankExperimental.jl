@@ -10,8 +10,8 @@ SimpleElectrolyzer <: AbstractElectrolyzer
 
   * **`id`** はノードの名前/識別子です。
   * **`cap::TimeProfile`** は設置された容量です。
-  * **`opex_var::TimeProfile`** は容量使用あたりの変動運営費です。
-  * **`opex_fixed::TimeProfile`** は設置された容量あたりの固定運営費です。
+  * **`opex_var::TimeProfile`** は容量使用あたりの変動運営費用です。
+  * **`opex_fixed::TimeProfile`** は設置された容量あたりの固定運営費用です。
   * **`input::Dict{<:Resource, <:Real}`** は変換値 `Real` を持つ入力 [`Resource`](@extref EnergyModelsBase.Resource) です。
   * **`output::Dict{<:Resource, <:Real}`** は変換値 `Real` を持つ生産された [`Resource`](@extref EnergyModelsBase.Resource) です。
   * **`data::Vector{Data}`** は追加データ（例: 投資用）です。
@@ -22,6 +22,6 @@ SimpleElectrolyzer <: AbstractElectrolyzer
 
 !!! note
       * 定格電解槽効率は `input` と `output` の組み合わせを通じて捉えられます。
-      * 固定および変動運営費は常に設置された容量とその使用に関連しています。これは、容量を入力を通じて1の値で定義した場合、変動運営費が必要な電力を通じて計算されることを意味します。
-      * スタックの交換は、戦略的な期間中にのみ行うことができます。最初の運用期間において。これは、戦略的な期間が繰り返されると問題が発生するためです。
+      * 固定および変動運営費用は常に設置された容量とその使用に関連しています。これは、容量を入力を通じて1の値で定義した場合、変動運営費用が必要な電力を通じて計算されることを意味します。
+      * スタック交換は、戦略的期間中にのみ行うことができ、最初の運用期間に行われます。これは、戦略的期間が繰り返されると問題が発生するためです。
 

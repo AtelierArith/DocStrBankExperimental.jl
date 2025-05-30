@@ -2,4 +2,4 @@
 valuecols(gd::GroupedDataFrame)
 ```
 
-`parent(gd)` でグループ化に使用されていない `Symbol` 列名のベクトルを返します。
+親 `parent(gd)` でグループ化に使用されていない `Symbol` 列名のベクターを返します。

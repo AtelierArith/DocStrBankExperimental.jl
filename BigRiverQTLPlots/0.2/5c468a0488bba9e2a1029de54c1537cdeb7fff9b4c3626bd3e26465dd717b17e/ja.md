@@ -1,3 +1,4 @@
+```julia
 plot_manhattan(vLOD::Vector{<: AbstractFloat}, dfgInfo::DataFrame; 		chrColname::String="Chr", mbColname::String="Mb", 		thresholds::Vector{<: AbstractFloat}=[], kwargs...)
 
 QTL分析のための散布図を生成します。
@@ -25,3 +26,4 @@ QTL分析のための散布図を生成します。
   * `significance` はLODスコアのしきい値を推定するための有意水準を含む <: AbstractFloat 数値ベクトルです。
 
 `scanresult` に置換行列が含まれていない場合、元の最大LODスコアがプロットされ、`significance` ベクトルの値が比較のためのしきい値として使用されます。
+```

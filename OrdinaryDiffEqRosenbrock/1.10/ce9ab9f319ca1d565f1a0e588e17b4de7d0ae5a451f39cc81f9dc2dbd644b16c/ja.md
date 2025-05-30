@@ -13,7 +13,7 @@ Rodas4(; - `standardtag`: パッケージ固有のタグを使用するかどう
              `fdtype`を持ち、デフォルト値は`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`があります。
          - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
              `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかです。
+             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
          - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
            たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
            `Rodas4(linsolve = KLUFactorization())`を指定します。
@@ -59,11 +59,11 @@ Rodas4(; - `standardtag`: パッケージ固有のタグを使用するかどう
   * `chunk_size`: TBD
   * `standardtag`: TBD
   * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
-  * `concrete_jac`: `jac!(J, u, p, t)`の形式の関数
+  * `concrete_jac`: 形式`jac!(J, u, p, t)`の関数
   * `diff_type`: TBD
   * `linsolve`: 内部線形システムのカスタムソルバー
   * `precs`: 内部線形ソルバーのカスタム前処理器
-  * `step_limiter!`: `limiter!(u, integrator, p, t)`の形式の関数
+  * `step_limiter!`: 形式`limiter!(u, integrator, p, t)`の関数
 
 ## 参考文献
 

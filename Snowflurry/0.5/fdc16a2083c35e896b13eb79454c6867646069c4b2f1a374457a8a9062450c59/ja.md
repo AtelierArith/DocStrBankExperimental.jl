@@ -2,7 +2,7 @@
 CircuitContainsAReadoutTranspiler
 ```
 
-少なくとも1つの`Readout`命令が`QuantumCircuit`に存在することを保証するトランスパイラーステージです。そうでない場合、エラーがスローされます。このトランスパイラーステージは`QuantumCircuit`を変更しません。
+`QuantumCircuit`に少なくとも1つの`Readout`命令が存在することを保証するトランスパイラーステージです。そうでない場合、エラーがスローされます。このトランスパイラーステージは`QuantumCircuit`を変更しません。
 
 # 例
 

@@ -10,7 +10,7 @@ simulate(df, rx_to_dist, xrange; return_dist, seed)
 ## 必須引数
 
   * `df::DataFrame`: 各行にパラメータを持つデータフレーム
-  * `rx_to_dist::Function`: 行オブジェクトとx値の2つの引数を持つ呼び出し可能な関数。`Distribution`インスタンスを返す必要があります。
+  * `rx_to_dist::Function`: 2つの引数（行オブジェクトとx値）を持つ呼び出し可能な関数。`Distribution`インスタンスを返す必要があります。
   * `xrange`: 引数を持つイテラブル
 
 ## オプション引数
@@ -20,7 +20,7 @@ simulate(df, rx_to_dist, xrange; return_dist, seed)
 
 ## 戻り値
 
-各アイテムがxrange引数のすべてのアイテムから生成されたベクター。各アイテムは再び、分布を取得するための`rx_to_dist`呼び出しから得られたベクターです。そしてそれからサンプリングされます。引数`return_dist=true`の場合、サンプリングステップは省略されます。
+各アイテムがxrange引数のすべてのアイテムから生成されたベクター。各アイテムは再び`rx_to_dist`呼び出しから得られた分布からサンプリングされたベクターです。引数`return_dist=true`の場合、サンプリングステップは省略されます。
 
 ## 例
 

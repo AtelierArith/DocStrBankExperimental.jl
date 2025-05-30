@@ -21,7 +21,7 @@ ExtendedKalmanFilter(model::SimModel; <キーワード引数>)
   * `σP_0=fill(1/model.nx,model.nx)`または*`sigmaP_0`* : 初期推定共分散$\mathbf{P}(0)$の主対角線を、標準偏差ベクトルとして指定します。
   * `σQ=fill(1/model.nx,model.nx)`または*`sigmaQ`* : `model`のプロセスノイズ共分散$\mathbf{Q}$の主対角線を、標準偏差ベクトルとして指定します。
   * `σR=fill(1,length(i_ym))`または*`sigmaR`* : 測定出力のセンサーノイズ共分散$\mathbf{R}$の主対角線を、標準偏差ベクトルとして指定します。
-  * `nint_u=0`: 操作入力における未測定の擾乱の確率モデルのための積分器量（ベクトル）、積分器なしの場合は`nint_u=0`を使用します（拡張ヘルプを参照）。
+  * `nint_u=0`: 操作入力における未測定の擾乱の確率モデルのための積分器の量（ベクトル）、積分器なしの場合は`nint_u=0`を使用します（拡張ヘルプを参照）。
   * `nint_ym=default_nint(model,i_ym,nint_u)` : 測定出力における未測定の擾乱のための`nint_u`と同じで、積分器なしの場合は`nint_ym=0`を使用します（拡張ヘルプを参照）。
   * `σQint_u=fill(1,sum(nint_u))`または*`sigmaQint_u`* : 操作入力における未測定の擾乱のための$\mathbf{Q_{int_u}}$（積分器で構成）。
   * `σPint_u_0=fill(1,sum(nint_u))`または*`sigmaPint_u_0`* : 操作入力における未測定の擾乱のための$\mathbf{P_{int_u}}(0)$（積分器で構成）。

@@ -3,19 +3,19 @@ permutedims(A::AbstractArray, perm)
 permutedims(A::AbstractMatrix)
 ```
 
-配列 `A` の次元（軸）を入れ替えます。`perm` は、`ndims(A)` の整数のタプルまたはベクターで、入れ替えの順序を指定します。
+配列 `A` の次元（軸）を入れ替えます。`perm` は、`ndims(A)` の整数のタプルまたはベクターで、入れ替えを指定します。
 
-`A` が 2 次元配列（[`AbstractMatrix`](@ref)）の場合、`perm` はデフォルトで `(2,1)` となり、`A` の 2 つの軸（行と列）を入れ替えます。これは、操作が再帰的でないため、特に数値以外の値の配列（再帰的な `transpose` はエラーを引き起こす）や線形演算子を表さない 2 次元配列に対して便利です。
+`A` が 2 次元配列（[`AbstractMatrix`](@ref)）の場合、`perm` はデフォルトで `(2,1)` となり、`A` の 2 つの軸（行と列）を入れ替えます。これは、操作が再帰的でないため、特に非数値の値の配列（再帰的な `transpose` はエラーを引き起こす場合があります）や線形演算子を表さない 2 次元配列に対して便利です。
 
 1 次元配列については、[`permutedims(v::AbstractVector)`](@ref) を参照してください。これは 1 行の「行列」を返します。
 
-他にも [`permutedims!`](@ref)、[`PermutedDimsArray`](@ref)、[`transpose`](@ref)、[`invperm`](@ref) を参照してください。
+他にも [`permutedims!`](@ref)、[`PermutedDimsArray`](@ref)、[`transpose`](@ref)、[`invperm`](@ref) があります。
 
 # 例
 
 ## 2 次元配列:
 
-`transpose` とは異なり、`permutedims` は文字列などの任意の非数値要素の 2 次元配列の行と列を入れ替えるために使用できます。
+`transpose` とは異なり、`permutedims` は任意の非数値要素（文字列など）の 2 次元配列の行と列を入れ替えるために使用できます。
 
 ```jldoctest
 julia> A = ["a" "b" "c"
@@ -87,7 +87,7 @@ julia> A == permutedims(B, invperm(perm)) # 逆順序
 true
 ```
 
-`B = permutedims(A, perm)` の各次元 `i` に対して、`A` の対応する次元は `perm[i]` になります。これは、等式 `size(B, i) == size(A, perm[i])` が成り立つことを意味します。
+`B = permutedims(A, perm)` の各次元 `i` に対して、`A` の対応する次元は `perm[i]` になります。これは、`size(B, i) == size(A, perm[i])` が成り立つことを意味します。
 
 ```jldoctest
 julia> A = randn(5, 7, 11, 13);

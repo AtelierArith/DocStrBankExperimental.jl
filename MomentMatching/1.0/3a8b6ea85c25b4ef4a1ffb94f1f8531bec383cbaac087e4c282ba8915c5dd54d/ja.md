@@ -15,5 +15,5 @@ marginal_fobj(
 
   * estset: EstimationSetupのインスタンス。別のドキュメントを参照してください [`EstimationSetup`](@ref)。
   * mmsolu: EstimationResultのインスタンス。別のドキュメントを参照してください [`EstimationResult`](@ref)。
-  * num_marg: 評価する最適点の周りの点の数。
+  * num_marg: 最適点の周りで評価する点の数。
   * scale_margs: 評価される点のグリッドを構築するためのスケールパラメータ。

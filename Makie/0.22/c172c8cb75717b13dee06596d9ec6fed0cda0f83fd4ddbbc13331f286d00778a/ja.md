@@ -13,7 +13,7 @@ errorbars(xy_error_low_high; kwargs...)
 
 xy位置にエラーバーをプロットし、指定された`direction`のエラーによって拡張します。
 
-相対エラーの代わりに低値から高値までの区間をプロットしたい場合は、`rangebars`を使用してください。
+相対エラーの代わりに低値から高値の間隔をプロットしたい場合は、`rangebars`を使用してください。
 
 ## プロットタイプ
 
@@ -69,7 +69,7 @@ xy位置にエラーバーをプロットし、指定された`direction`のエ�
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明度をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序独立透明度を使用します。
+**`transparency`** =  `false`  — プロットが透明度をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序に依存しない透明度を使用します。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。
 

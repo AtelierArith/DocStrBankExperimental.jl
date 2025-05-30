@@ -16,4 +16,4 @@ stats = judgement_results_to_dataframes(judgement)
 
 出力:
 
-  * `stats::Dict{Symbol,Dict{Symbol,DataFrame}}`: ターゲットおよびベースラインのベンチマーク結果を含む `Dict{Symbol,DataFrame}` の辞書。 この辞書の要素は、`bmark_results_to_dataframes(main)` および `bmark_results_to_dataframes(commit)` によって返されるものと同じです。
+  * `stats::Dict{Symbol,Dict{Symbol,DataFrame}}`: ターゲットとベースラインのベンチマーク結果を含む `Dict{Symbol,DataFrame}` の辞書。 この辞書の要素は、`bmark_results_to_dataframes(main)` および `bmark_results_to_dataframes(commit)` によって返されるものと同じです。

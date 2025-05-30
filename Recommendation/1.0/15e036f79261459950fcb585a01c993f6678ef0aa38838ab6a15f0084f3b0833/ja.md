@@ -8,7 +8,7 @@ $$
 \mathrm{MAP} = \frac{1}{|\mathcal{I}^+_u|} \sum_{n = 1}^{|\mathcal{I}|} \mathrm{Precision@}n \cdot  \mathbb{1}_{\mathcal{I}^+_u}(i_n).
 $$
 
-注意すべきは、MAPはPrecision@$1$、Precision@$2$、$\dots$、Precision@$|\mathcal{I}|$の合計の単純な平均ではなく、より高いランクの真のポジティブがより良いMAPをもたらすということです。
+注意すべきは、MAPはPrecision@$1$、Precision@$2$、$\dots$、Precision@$|\mathcal{I}|$の合計の単純な平均ではなく、より高いランクの真陽性がより良いMAPをもたらすということです。
 
 ```
 measure(

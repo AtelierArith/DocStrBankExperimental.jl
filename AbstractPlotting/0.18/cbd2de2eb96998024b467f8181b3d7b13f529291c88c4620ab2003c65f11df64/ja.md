@@ -4,7 +4,7 @@ scatter(x, y)
 scatter(x, y, z)
 ```
 
-`(x, y, z)`, `(x, y)`、または `positions` の各要素に対してマーカーをプロットします。
+`(x, y, z)`、`(x, y)`、または `positions` の各要素に対してマーカーをプロットします。
 
 ## 属性
 

@@ -2,7 +2,7 @@
 groupindices(gd::GroupedDataFrame)
 ```
 
-`parent(gd)`の各行に対するグループインデックスのベクターを返します。
+`parent(gd)`の各行に対するグループインデックスのベクトルを返します。
 
 グループ`gd[i]`に現れる行はインデックス`i`が割り当てられます。どのグループにも存在しない行には`missing`が割り当てられます（これは、`gd`を作成する際に`skipmissing=true`が渡された場合や、`gd`がより大きな[`GroupedDataFrame`](@ref)のサブセットである場合に発生する可能性があります）。
 

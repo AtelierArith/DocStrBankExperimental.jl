@@ -2,7 +2,7 @@
 struct RampBi <: AbstractRampParameters
 ```
 
-ノードの正および負のランプ制約のためのパラメータ。
+ノードの正および負のランピング制約のためのパラメータ。
 
 # フィールド
 
@@ -10,5 +10,5 @@ struct RampBi <: AbstractRampParameters
   * **`down::TimeProfile`** はノードの最大負変化率です。
 
 !!! note
-    単一の `TimeProfile` を入力として提供する場合、正および負の境界に同じプロファイルが使用されます。
+    単一の `TimeProfile` を入力として提供した場合、正および負の境界に同じプロファイルが使用されます。
 

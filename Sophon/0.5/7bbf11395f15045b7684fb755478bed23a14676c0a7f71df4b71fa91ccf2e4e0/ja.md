@@ -23,7 +23,7 @@ ResNet(in_dims::Int, out_dims::Int, activation::Function;
 
   * `outermost`: 最後の層に活性化関数を使用するかどうか。`false`の場合、活性化関数は最後の層の出力に適用されます。
   * `init_weight`: 重みの初期化方法。
-  * `allow_fast_activation`: `true`の場合、特定の活性化がより高速なバージョンで近似できます。新しい活性化関数はNNlib.fast_act(activation)によって与えられます。
+  * `allow_fast_activation`: `true`の場合、特定の活性化がより高速なバージョンで近似されることができます。新しい活性化関数はNNlib.fast_act(activation)によって与えられます。
 
 ## 例
 

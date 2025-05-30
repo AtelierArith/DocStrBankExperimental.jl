@@ -2,7 +2,7 @@
 constraint_object(con_ref::ConstraintRef)
 ```
 
-`con_ref`で参照される制約の基礎となる制約データを返します。
+`con_ref`で参照される制約の基礎データを返します。
 
 ## 例
 

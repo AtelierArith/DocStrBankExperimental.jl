@@ -8,7 +8,7 @@ dual_objective_value(model::GenericModel; result::Int = 1)
 
 この関数は、[`MOI.DualObjectiveValue`](@ref) 属性をクエリすることと同等です。
 
-関連情報: [`result_count`](@ref)。
+関連情報: [`result_count`](@ref).
 
 ## 例
 

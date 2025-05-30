@@ -6,7 +6,7 @@ t8_cmesh_trees_get_ghost(trees, lghost)
 
 # 引数
 
-  * `trees`:[in] ツリーを検索するためのツリー構造。
+  * `trees`:[in] ツリーを検索するためのtress構造体。
   * `lghost`:[in] ゴーストのローカルID。
 
 # 戻り値

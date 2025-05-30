@@ -2,9 +2,9 @@
 typemax(T)
 ```
 
-指定された（実数の）数値 `DataType` が表現できる最大値。
+指定された（実数の）数値 `DataType` によって表現可能な最大値。
 
-関連情報: [`floatmax`](@ref), [`typemin`](@ref), [`eps`](@ref)。
+関連情報: [`floatmax`](@ref), [`typemin`](@ref), [`eps`](@ref).
 
 # 例
 
@@ -21,6 +21,6 @@ Inf
 julia> typemax(Float32)
 Inf32
 
-julia> floatmax(Float32)  # 最大の有限 Float32 浮動小数点数
+julia> floatmax(Float32)  # 最大の有限な Float32 浮動小数点数
 3.4028235f38
 ```

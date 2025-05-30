@@ -10,6 +10,4 @@ Categorical(colormaplike)
 fig, ax, pl = barplot(1:3; color=1:3, colormap=Makie.Categorical(:viridis))
 ```
 
-!!! warning
-    この機能は、APIがまだ最終決定されていないため、破壊的なリリースの外で変更される可能性があります。
-
+!!! 警告     この機能は、APIがまだ最終化されていないため、破壊的なリリースの外で変更される可能性があります。

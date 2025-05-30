@@ -17,4 +17,8 @@ export mykey end # MyModule
 
 julia> using .MyModule
 
-julia> mykey() :MyModule*mykey*a*b*c_123 ```
+julia> mykey() :MyModule*mykey*a*b*c_123
+
+```
+
+```

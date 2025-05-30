@@ -4,7 +4,7 @@ eachrow(A::AbstractVecOrMat) <: AbstractVector
 
 [`RowSlices`](@ref) オブジェクトを作成し、行列またはベクトル `A` の行のベクトルを返します。行スライスは `A` の `AbstractVector` ビューとして返されます。
 
-逆の操作については [`stack`](@ref)`(rows; dims=1)` を参照してください。
+逆の操作については、[`stack`](@ref)`(rows; dims=1)` を参照してください。
 
 また、[`eachcol`](@ref)、[`eachslice`](@ref)、および [`mapslices`](@ref) も参照してください。
 

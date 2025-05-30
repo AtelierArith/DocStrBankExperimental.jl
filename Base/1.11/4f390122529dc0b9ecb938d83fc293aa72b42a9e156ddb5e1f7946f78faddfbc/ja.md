@@ -8,7 +8,7 @@ div(x, y, r::RoundingMode=RoundToZero)
 round(x / y, r)
 ```
 
-中間的な丸めなしで。
+中間の丸めなしで。
 
 !!! compat "Julia 1.4"
     `RoundingMode`を取る三引数メソッドは、Julia 1.4以降が必要です。

@@ -13,4 +13,4 @@ random_matrix_product_uai(
 
 ```
 
-ランダムなUAIModelを生成して、行列積状態（MPS）を表します。[`random_matrix_product_state`](@ref)と似ていますが、UAIModelを直接返します。
+行列積状態（MPS）を表すランダムなUAIModelを生成します。[`random_matrix_product_state`](@ref)と似ていますが、UAIModelを直接返します。

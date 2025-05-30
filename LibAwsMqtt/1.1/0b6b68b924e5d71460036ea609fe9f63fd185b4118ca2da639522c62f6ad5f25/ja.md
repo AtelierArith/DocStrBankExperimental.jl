@@ -6,9 +6,9 @@ mqtt5 クライアントでの Unsubscribe 操作をキューに追加します
 
 # 引数
 
-  * `client`: Unsubscribe をキューに追加する mqtt5 クライアント
+  * `client`: Unsubscribe のキューを追加する mqtt5 クライアント
   * `unsubscribe_options`: Unsubscribe 操作のための設定オプション
-  * `completion_options`: 完了コールバックの設定。対応する UNSUBACK が受信されるか、失敗条件に達したときに呼び出されます。エラーコードは Unsubscribe の完全な失敗を示し、成功コードはユーザーがトピックフィルターごとのフィードバックのためにすべての UNSUBACK の理由コードを確認する必要があることを示します。
+  * `completion_options`: 完了コールバックの設定。対応する UNSUBACK が受信されるか、失敗条件に達したときに呼び出されます。エラーコードは Unsubscribe の完全な失敗を示し、成功コードはユーザーがすべての UNSUBACK の理由コードをトピックフィルターごとに確認する必要があることを示します。
 
 # 戻り値
 

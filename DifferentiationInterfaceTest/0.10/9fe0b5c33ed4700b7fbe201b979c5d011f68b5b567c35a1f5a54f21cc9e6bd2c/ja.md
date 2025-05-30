@@ -53,8 +53,8 @@ test_differentiation(
 **テストカテゴリ:**
 
   * `correctness=true`: 各シナリオで指定された理論値と微分結果を比較するかどうか
-  * `type_stability=:none`: JET.jlを使用して演算子の型安定性をチェックするかどうか（およびその方法）
-  * `allocations=:none`: AllocCheck.jlを使用して演算子内のアロケーションをチェックするかどうか（およびその方法）
+  * `type_stability=:none`: JET.jlを使用して演算子の型の安定性をチェックするかどうか（およびその方法）
+  * `allocations=:none`: AllocCheck.jlを使用して演算子内のメモリ割り当てをチェックするかどうか（およびその方法）
   * `benchmark=:none`: Chairmarks.jlを使用して演算子をベンチマークするかどうか（およびその方法）
 
 `type_stability`、`allocations`、および`benchmark`について、可能な値は`:none`、`:prepared`、または`:full`です。各設定は異なるサブセットの呼び出しをテスト/ベンチマークします：
@@ -67,7 +67,7 @@ test_differentiation(
 
 **その他のオプション:**
 
-  * `excluded::Vector{Symbol}`: 除外する演算子のリスト（例: [`FIRST_ORDER`](@ref) または [`SECOND_ORDER`](@ref)）
+  * `excluded::Vector{Symbol}`: 除外する演算子のリスト、例えば[`FIRST_ORDER`](@ref)や[`SECOND_ORDER`](@ref)
   * `detailed=false`: 詳細なテストセットを作成するか、簡潔なテストセットを作成するか
   * `logging=false`: 進行状況をログに記録するかどうか
 
@@ -77,13 +77,13 @@ test_differentiation(
   * `atol=0`: 正確性テストのための絶対精度（参照出力と比較する際）
   * `rtol=1e-3`: 正確性テストのための相対精度（参照出力と比較する際）
   * `scenario_intact=true`: 演算子が適用された後にシナリオが変更されていないかどうかをチェックするか
-  * `sparsity=false`: ヤコビアン/ヘッセ行列のスパースパターンをチェックするかどうか
+  * `sparsity=false`: ヤコビ行列/ヘッセ行列のスパースパターンをチェックするかどうか
   * `reprepare::Bool=true`: 準備引数のサイズが間違っている場合にテスト前に準備を変更するかどうか
 
-**型安定性オプション:**
+**型の安定性オプション:**
 
   * `ignored_modules=nothing`: JET.jlが無視すべきモジュールのリスト
-  * `function_filter`: JET.jlが無視すべき関数のフィルター（合理的なデフォルトあり）
+  * `function_filter`: JET.jlが無視すべき関数のフィルター（合理的なデフォルト付き）
 
 **ベンチマークオプション:**
 

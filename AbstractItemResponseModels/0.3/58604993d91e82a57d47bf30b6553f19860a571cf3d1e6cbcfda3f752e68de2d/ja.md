@@ -14,4 +14,4 @@ iif(model::ItemResponseModel, theta, i, y)
 
 `estimation_type(model) == PointEstimate` の場合、アイテム情報関数はスカラー値を返す必要があります。
 
-`estimation_type(model) == SamplingEstimate` の場合、アイテム情報関数は引き出されたサンプルの数と同じ長さの値のベクトルを返す必要があります。
+`estimation_type(model) == SamplingEstimate` の場合、アイテム情報関数は引き出されたサンプルの数と等しい長さの値のベクトルを返す必要があります。

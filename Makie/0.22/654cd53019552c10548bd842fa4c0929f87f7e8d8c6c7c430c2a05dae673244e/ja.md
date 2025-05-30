@@ -7,19 +7,19 @@ x = Observable(rand(100))
 y = Observable(rand(100))
 ```
 
-## 前
+## 変更前
 
 ```julia
 z = lift((x, y) -> x .+ y, x, y)
 ```
 
-## 後
+## 変更後
 
 ```julia
 z = @lift($x .+ $y)
 ```
 
-式がオブザーバブルに評価される場合は、その式の周りに括弧を使うこともできます。
+式がオブザーバブルに評価される場合は、その式の周りに括弧を使用することもできます。
 
 ```julia
 nt = (x = Observable(1), y = Observable(2))

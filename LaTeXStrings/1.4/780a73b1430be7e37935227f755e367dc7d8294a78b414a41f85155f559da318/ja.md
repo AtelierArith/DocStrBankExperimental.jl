@@ -2,7 +2,7 @@
 L"..."
 ```
 
-`LaTeXString`を作成し、`latexstring(raw"...")`と同等ですが、`%$`を使って補間が可能です。
+`LaTeXString`を作成し、`latexstring(raw"...")`と同等ですが、`%$`を使って補間することができます。
 
 ```jldoctest
 julia> L"x = \sqrt{2}"

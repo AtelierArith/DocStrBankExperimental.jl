@@ -64,7 +64,7 @@ rv = 0.0
 W = NoiseTransport(t0, f!, RV, rv, noise_prototype = zeros(4))
 ```
 
-多次元プロセスを持つランダムベクトルも持つことができ、この場合、`RV`のインプレースバージョンが必要です。例えば。
+多次元プロセスを持つランダムベクトルも持つことができ、その場合は`RV`のインプレースバージョンが必要です。例えば。
 
 ```julia
 using Random: randn!

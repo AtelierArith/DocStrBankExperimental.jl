@@ -10,7 +10,7 @@ SHLDDRK52(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
 
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
-  * `thread`: Juliaが複数のスレッドで起動されたときに、適切なCPU配列での内部ブロードキャストを直列（`thread = OrdinaryDiffEq.False()`）にするか、複数のスレッドを使用するか（`thread = OrdinaryDiffEq.True()`）を決定します。
+  * `thread`: Juliaが複数のスレッドで起動されたときに、適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、または複数のスレッドを使用すべきかを決定します（`thread = OrdinaryDiffEq.True()`）。
 
 ## 参考文献
 

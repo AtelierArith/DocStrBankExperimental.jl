@@ -4,4 +4,4 @@ set_data_dimension!(domain::Domain, dim::NamedDimension [, coordinates], ; allow
 
 [`NamedDimension`](@ref)としてドメインデータ次元を定義し、オプションで座標名のベクトルを添付します。
 
-変数は、`:data_dims`変数属性を使用して名前のリストとしてデータ次元を指定できます。
+変数は、その`:data_dims`変数属性を使用して、名前のリストとしてデータ次元を指定できます。

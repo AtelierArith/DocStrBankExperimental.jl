@@ -4,7 +4,7 @@ NonlinearOperator(func::Function, head::Symbol)
 
 `head`という名前の関数を表す呼び出し可能な構造体（ファンクタ）。
 
-[`AbstractJuMPScalar`](@ref)sで呼び出されると、この構造体は[`GenericNonlinearExpr`](@ref)を返します。
+[`AbstractJuMPScalar`](@ref)で呼び出されると、この構造体は[`GenericNonlinearExpr`](@ref)を返します。
 
 非JuMP型で呼び出されると、この構造体は`func(args...)`の評価を返します。
 

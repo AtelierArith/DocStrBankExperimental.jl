@@ -18,4 +18,4 @@ julia> rand(my_interval, 5)
  3.0495310142685526
 ```
 
-関連情報は [`BoxConstrainedSpace`](@ref) を参照してください。
+関連項目 [`BoxConstrainedSpace`](@ref)

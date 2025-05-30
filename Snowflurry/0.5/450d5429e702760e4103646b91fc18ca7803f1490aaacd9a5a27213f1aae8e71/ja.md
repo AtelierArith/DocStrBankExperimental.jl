@@ -2,7 +2,7 @@
 ReadoutsDoNotConflictTranspiler
 ```
 
-`QuantumCircuit` に存在する各 `Readout` 命令が競合する宛先ビットを持たないことを保証するトランスパイラステージです。そうでない場合はエラーがスローされます。このトランスパイラステージは `QuantumCircuit` を変更しません。
+`QuantumCircuit` に存在する各 `Readout` 命令が競合する宛先ビットを持たないことを保証するトランスパイラステージです。そうでない場合、エラーがスローされます。このトランスパイラステージは `QuantumCircuit` を変更しません。
 
 # 例
 

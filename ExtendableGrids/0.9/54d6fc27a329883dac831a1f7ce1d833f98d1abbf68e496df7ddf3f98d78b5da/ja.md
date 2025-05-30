@@ -5,4 +5,4 @@ SerialVariableTargetAdjacency(
 
 ```
 
-空の SerialVariableTargetAdjacency を作成します。
+空のSerialVariableTargetAdjacencyを作成します。

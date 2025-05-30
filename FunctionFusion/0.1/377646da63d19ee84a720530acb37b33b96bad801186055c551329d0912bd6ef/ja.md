@@ -2,7 +2,7 @@
 @artifact name[,name...] = Type
 ```
 
-`Type` に関連付けられた `Artifact` を宣言します。
+`Type`に関連付けられた`Artifact`を宣言します。
 
 # 例
 

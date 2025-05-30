@@ -2,4 +2,4 @@
 pCN(noise::AbstractNoiseProcess, ρ; reset=true,reverse=false,indx=nothing)
 ```
 
-`noise` と相関 ρ を持つ追加のエントロピーから新しいが相関のあるノイズプロセスを作成します。
+`noise` と相関を持つ新しいノイズプロセスを追加のエントロピーとともに作成します。相関は ρ です。

@@ -14,8 +14,8 @@ f(x; a, b, c)= \begin{cases}
 $$
 
 ```julia
-TriangularDist(a, b)        # 下限 a、上限 b、およびモード (a+b)/2 の三角分布
-TriangularDist(a, b, c)     # 下限 a、上限 b、およびモード c の三角分布
+TriangularDist(a, b)        # 下限 a、上限 b、モード (a+b)/2 の三角分布
+TriangularDist(a, b, c)     # 下限 a、上限 b、モード c の三角分布
 
 params(d)       # パラメータを取得します。すなわち (a, b, c)
 minimum(d)      # 下限を取得します。すなわち a
@@ -25,4 +25,4 @@ mode(d)         # モードを取得します。すなわち c
 
 外部リンク
 
-  * [三角分布 - Wikipedia](http://en.wikipedia.org/wiki/Triangular_distribution)
+  * [ウィキペディアの三角分布](http://en.wikipedia.org/wiki/Triangular_distribution)

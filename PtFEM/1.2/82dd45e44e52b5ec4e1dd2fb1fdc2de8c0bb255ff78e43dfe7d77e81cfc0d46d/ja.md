@@ -17,7 +17,7 @@ p41(data)
 ### 必要なデータ辞書キー
 
 ```julia
-* struc_el::StructuralElement                          : 構造的フィン要素のタイプ
+* struc_el::StructuralElement                          : 構造要素のタイプ
 * support::Array{Tuple{Int,Array{Int,1}},1}        : 固定変位ベクトル
 * loaded_nodes::Array{Tuple{Int,Array{Float64,1}},1} : ノード荷重ベクトル
 * properties::Vector{Float64}                          : 材料特性

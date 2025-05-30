@@ -3,7 +3,7 @@ nand(x, y)
 ⊼(x, y)
 ```
 
-`x` と `y` のビット単位の nand (not and)。引数の一方が `missing` の場合は [`missing`](@ref) を返す [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) を実装しています。
+`x` と `y` のビット単位の nand (not and)。引数の一つが `missing` の場合、[`missing`](@ref) を返す [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) を実装しています。
 
 中置演算 `a ⊼ b` は `nand(a,b)` の同義語であり、`⊼` は Julia REPL で `\nand` または `\barwedge` をタブ補完することで入力できます。
 

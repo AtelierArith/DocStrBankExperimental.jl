@@ -20,20 +20,20 @@ Siren(layer_sizes::Int...; omega=30.0f0, init_weight=nothing)
 ```julia
 julia> Siren(2, 32, 32, 1; omega=5.0f0)
 Chain(
-    layer_1 = Dense(2 => 32, sin),      # 96 パラメータ
-    layer_2 = Dense(32 => 32, sin),     # 1_056 パラメータ
-    layer_3 = Dense(32 => 1),           # 33 パラメータ
-)         # 合計: 1_185 パラメータ,
-          #        0 ステート, サマリーサイズ 48 バイト.
+    layer_1 = Dense(2 => 32, sin),      # 96 parameters
+    layer_2 = Dense(32 => 32, sin),     # 1_056 parameters
+    layer_3 = Dense(32 => 1),           # 33 parameters
+)         # Total: 1_185 parameters,
+          #        plus 0 states, summarysize 48 bytes.
 
 julia> Siren(3, 1; hidden_dims=20, num_layers=3)
 Chain(
-    layer_1 = Dense(3 => 20, sin),      # 80 パラメータ
-    layer_2 = Dense(20 => 20, sin),     # 420 パラメータ
-    layer_3 = Dense(20 => 20, sin),     # 420 パラメータ
-    layer_4 = Dense(20 => 1),           # 21 パラメータ
-)         # 合計: 941 パラメータ,
-          #        0 ステート, サマリーサイズ 64 バイト.
+    layer_1 = Dense(3 => 20, sin),      # 80 parameters
+    layer_2 = Dense(20 => 20, sin),     # 420 parameters
+    layer_3 = Dense(20 => 20, sin),     # 420 parameters
+    layer_4 = Dense(20 => 1),           # 21 parameters
+)         # Total: 941 parameters,
+          #        plus 0 states, summarysize 64 bytes.
 
 # 入力層のために独自の初期化アルゴリズムを使用します。
 julia> init_weight(rng::AbstractRNG, out_dims::Int, in_dims::Int) = randn(rng, Float32, out_dims, in_dims) .* 2.5f0

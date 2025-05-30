@@ -4,7 +4,7 @@ CKLLSRK85_4FM_4R(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
                    thread = OrdinaryDiffEq.False())
 ```
 
-明示的ルンゲ・クッタ法。低ストレージ法 8段階、5次低ストレージスキーム、圧縮性ナビエ–ストークス方程式に最適化されています。
+明示的ルンゲ-クッタ法。低ストレージ法 8段階、5次低ストレージスキーム、圧縮可能なナビエ–ストークス方程式に最適化されています。
 
 ### キーワード引数
 

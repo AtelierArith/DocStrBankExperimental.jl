@@ -2,7 +2,7 @@
 randperm!([rng=default_rng(),] A::Array{<:Integer})
 ```
 
-`A`に長さ`length(A)`のランダムな順列を構築します。オプションの`rng`引数は乱数生成器を指定します（[Random Numbers](@ref)を参照）。任意のベクトルをランダムに順列するには、[`shuffle`](@ref)または[`shuffle!`](@ref)を参照してください。
+`A`に長さ`length(A)`のランダムな順列を構築します。オプションの`rng`引数は乱数生成器を指定します（[乱数](@ref)を参照）。任意のベクトルをランダムに順列するには、[`shuffle`](@ref)または[`shuffle!`](@ref)を参照してください。
 
 # 例
 

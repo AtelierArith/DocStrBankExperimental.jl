@@ -20,7 +20,7 @@ volume(x, y, z, volume_data)
   * `:iso`: 与えられた浮動小数点データ内の等値面を表示します。これには `isovalue - isorange .. isovalue + isorange` 内のサンプルのみがピクセルの最終色に含まれます。
   * `:absorption`: ボリュームデータからサンプリングされた浮動小数点値に基づいて色を蓄積します。各レイステップ（前方から開始）で、ボリュームデータから値がサンプリングされ、その後カラーマップをサンプリングするために使用されます。結果の色はレイステップサイズによって重み付けされ、以前に蓄積された色とブレンドされます。各ステップの重みは乗算的な `absorption` 属性で調整できます。
   * `:mip`: 与えられた浮動小数点データの最大強度投影を表示します。これは、各レイからサンプリングされた最大値からピクセルの色を導き出します。
-  * `:absorptionrgba`: このアルゴリズムは :absorption と一致しますが、RGBAボリュームデータから直接色をサンプリングします。各レイステップでデータから色がサンプリングされ、レイステップサイズによって重み付けされ、以前に蓄積された色とブレンドされます。また、`absorption` を考慮します。
+  * `:absorptionrgba`: このアルゴリズムは :absorption に一致しますが、RGBAボリュームデータから直接色をサンプリングします。各レイステップでデータから色がサンプリングされ、レイステップサイズによって重み付けされ、以前に蓄積された色とブレンドされます。また、`absorption` を考慮します。
   * `:additive`: `accumulated_color = 1 - (1 - accumulated_color) * (1 - sampled_color)` を使用して色を蓄積します。ここで `sampled_color` は現在のレイステップでのボリュームデータのサンプルです。
   * `:indexedabsorption`: このアルゴリズムは :absorption と同様に動作しますが、ボリュームデータをインデックスとして解釈します。これらはカラーマップへの直接インデックスとして使用されます。また、`absorption` を考慮します。
 
@@ -70,7 +70,7 @@ volume(x, y, z, volume_data)
 
 **`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特に GL バックエンドで深度チェックを無視することを意味します。
 
-**`shading`** =  `automatic`  — 使用される照明アルゴリズムを設定します。オプションは `NoShading`（照明なし）、`FastShading`（AmbientLight + PointLight）または `MultiLightShading`（複数の光、GLMakie のみ）です。これは RPRMakie には影響しません。
+**`shading`** =  `automatic`  — 使用される照明アルゴリズムを設定します。オプションは `NoShading`（照明なし）、`FastShading`（AmbientLight + PointLight）または `MultiLightShading`（複数の光、GLMakie のみ）です。これは RPRMakie には影響しないことに注意してください。
 
 **`shininess`** =  `32.0`  — 反射の鋭さを設定します。
 

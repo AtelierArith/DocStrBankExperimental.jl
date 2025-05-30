@@ -1,5 +1,5 @@
 ```
-Tikhonov(; <キーワード引数>)
+Tikhonov(; <keyword arguments>)
 ```
 
 この関数は、n次元配列のティホノフ正則化子を計算する関数を返します。
@@ -8,7 +8,7 @@ Tikhonov(; <キーワード引数>)
 
   * `num_dims=2`:
   * `sum_dims=[1, 2]`: 合計を求める次元を含む配列
-  * `weights=nothing`: 異なる次元の寄与に重みを付けるための重みを含む配列。`weights=nothing`の場合、すべての次元は同じ重みが付けられます。
+  * `weights=nothing`: 異なる次元の寄与に重みを付けるための重みを含む配列。`weights=nothing`の場合、すべての次元は同等に重み付けされます。
   * `step=1`: 配列インデックスのステップ幅を示す整数
   * `mode="laplace"`: ティホノフ正則化子の異なるモードを考慮するための `"laplace"`、`"spatial_grad_square"`、`"identity"` のいずれか。デフォルトは `"laplace"` です。
 

@@ -2,7 +2,7 @@
 logerfc(x)
 ```
 
-自然対数の補完誤差関数の $x$ の計算、すなわち
+自然対数の補完誤差関数の $x$ の値を計算します。すなわち、
 
 $$
 \operatorname{logerfc}(x) = \ln(\operatorname{erfc}(x))

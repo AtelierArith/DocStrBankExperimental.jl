@@ -10,4 +10,4 @@ ceil(x; sigdigits::Integer= [, base = 10])
 
 キーワード `digits`、`sigdigits` および `base` は [`round`](@ref) と同様に機能します。
 
-新しい型の `ceil` をサポートするには、`Base.round(x::NewType, ::RoundingMode{:Up})` を定義します。
+新しい型に対して `ceil` をサポートするには、`Base.round(x::NewType, ::RoundingMode{:Up})` を定義します。

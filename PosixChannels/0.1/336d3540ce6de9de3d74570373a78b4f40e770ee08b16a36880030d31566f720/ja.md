@@ -22,7 +22,7 @@ PosixChannel{T}(name, kwargs...)
 
 ## 作成の詳細
 
-新しいキューを作成する際（フラグ`O_CREAT`が有効）、追加の情報を提供する必要があります。
+新しいキューを作成する際（フラグ`O_CREAT`が有効な場合）、追加の情報を提供する必要があります。
 
   * `create_r_user::Bool=true`: ユーザーに対してキューを読み取り可能にします。
   * `create_w_user::Bool=true`: ユーザーに対してキューを書き込み可能にします。
@@ -106,7 +106,7 @@ $ julia --project receiver.jl
 チャネルを削除しています。
 ```
 
-!!! note "メッセージの型"
+!!! note "メッセージの種類"
     この例では整数を使用していますが、`isbitstype`を満たす任意の型を使用できます。例えば[`StaticStrings`](https://github.com/mkitti/StaticStrings.jl)を参照してください。
 
 

@@ -2,7 +2,7 @@
 writefasta(filename::String, data, [mode::String = "w"]; check_description=true)
 ```
 
-この関数はデータをFASTAファイルにダンプし、[FASTA形式](@ref)のセクションで詳述された仕様に従って自動的にフォーマットします。`data`は反復可能なものであり、反復時に`(description, sequence)`タプルを生成する必要があります。ここで、`description`は`String`に変換可能であり、`sequence`はASCII文字に変換可能な要素を生成する任意の反復可能オブジェクト（例：`String`、`Vector{UInt8}`など）である必要があります。
+この関数はデータをFASTAファイルにダンプし、[FASTA形式](@ref)のセクションで詳述された仕様に従って自動的にフォーマットします。`data`は反復可能なものであり、反復時に`(description, sequence)`タプルを生成する必要があります。ここで、`description`は`String`に変換可能でなければならず、`sequence`はASCII文字に変換可能な要素を生成する任意の反復可能オブジェクト（例：`String`、`Vector{UInt8}`など）である必要があります。
 
 例:
 

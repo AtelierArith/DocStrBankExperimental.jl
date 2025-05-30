@@ -4,8 +4,8 @@
 
 キーワード引数バージョン:
 
-  * `species`: 種類番号
-  * `region`: 領域番号
+  * `species`: 種の番号
+  * `region`: 領域の番号
   * `value`: 値
 
 !!! info

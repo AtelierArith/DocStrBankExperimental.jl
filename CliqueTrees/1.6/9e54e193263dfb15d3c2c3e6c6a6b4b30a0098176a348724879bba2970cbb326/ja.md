@@ -6,7 +6,7 @@ RCMMD(alg::Algorithm)
 RCMMD()
 ```
 
-[逆カサリル-マッキーアルゴリズム](https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm)。初期頂点は最小次数ヒューリスティックを使用して選択されます。
+[逆カサリル・マッキーアルゴリズム](https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm)。初期頂点は最小次数ヒューリスティックを使用して選択されます。
 
 ```julia-repl
 julia> using CliqueTrees

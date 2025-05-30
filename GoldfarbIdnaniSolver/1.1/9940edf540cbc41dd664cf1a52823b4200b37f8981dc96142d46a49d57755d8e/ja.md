@@ -12,7 +12,7 @@ solveQP!(dmat::AbstractMatrix{T}, dvec::AbstractArray{T}, Amat::AbstractMatrix{T
 
 行列Dは正定値であると仮定されています。特に、Dは対称であると仮定されています。
 
-# 入力パラメータ：
+# 入力パラメータ:
 
   * `dmat`   nxn行列、上記の行列D（通常はFloat64）      ユーザーには2つの選択肢があります：      a) Dを与える（factorized = false）、この場合、Dを分解するためにLINPACKのルーチンを使用します。      b) アルゴリズムを開始するためにR^-1が必要です。D=R^TRです。         したがって、一般的なルーチンで計算するよりも別の方法でR^-1を計算する方が安価な場合（Dはバンド行列である可能性があります）、ユーザーはR^{-1}を渡すことができます。  factorized = trueで示されます。
   * `dvec`   nx1ベクトル、上記のベクトルd（通常はFloat64）      初期の、すなわち制約のない問題の解を出力時に含みます。
@@ -22,8 +22,8 @@ solveQP!(dmat::AbstractMatrix{T}, dvec::AbstractArray{T}, Amat::AbstractMatrix{T
 
 # 出力パラメータは次のようなタプルで構成されています：
 
-1. sol   nx1 最終的な解（上記の記法でのx）
-2. lagr  qx1 最終的なラグランジュ乗数
+1. sol   nx1 最終解（上記のx）
+2. lagr  qx1 最終ラグランジュ乗数
 3. crval スカラー、最小値での基準の値
 4. iact  qx1ベクトル、最終的なフィットでアクティブな制約（int）
 5. nact  スカラー、最終的なフィットでアクティブな制約の数（int）

@@ -11,7 +11,7 @@ BFGS(; alphaguess = LineSearches.InitialStatic(),
 
 ## 説明
 
-`BFGS` メソッドは、Nocedal と Wright (sec. 8.1, 1999) に記載されている Broyden-Fletcher-Goldfarb-Shanno アルゴリズムを実装しています。また、Broyden (1970)、Fletcher (1970)、Goldfarb (1970)、Shanno (1970) の4つの個別の論文も参照されています。これは、過去の近似値と勾配を使用してヘッセ行列の近似を更新する準ニュートン法です。高次元の問題により適したアルゴリズムである制限付きメモリバリアント `LBFGS` も参照してください。
+`BFGS` メソッドは、Nocedal と Wright (sec. 8.1, 1999) に記載されている Broyden-Fletcher-Goldfarb-Shanno アルゴリズムを実装しています。また、Broyden (1970)、Fletcher (1970)、Goldfarb (1970)、Shanno (1970) の4つの個別の論文も参照されています。これは準ニュートン法であり、過去の近似値と勾配を使用してヘッセ行列の近似を更新します。高次元の問題により適したアルゴリズムである制限付きメモリバリアント `LBFGS` も参照してください。
 
 ## 参考文献
 

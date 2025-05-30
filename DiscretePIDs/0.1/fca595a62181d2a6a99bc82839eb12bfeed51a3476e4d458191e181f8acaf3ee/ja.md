@@ -1,6 +1,6 @@
 ```
 u = calculate_control!(pid::DiscretePID, r, y, uff=0)
-(pid)(r, y, uff=0) # Alternative syntax
+(pid)(r, y, uff=0) # 代替構文
 ```
 
 PIDコントローラからの制御出力を計算します。ここで、`r`は基準（セットポイント）、`y`は最新の測定値、`uff`はフィードフォワードの寄与です。入力引数の型がPIDコントローラで使用される数値型と異なる場合、計算が行われる前に変換されます。

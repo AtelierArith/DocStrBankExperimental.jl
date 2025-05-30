@@ -3,7 +3,7 @@ finestdetailrange(x, tree[, redundant])
 finestdetailrange(n, tree[, redundant])
 ```
 
-与えられたバイナリツリーに対して、最も細かい詳細係数のインデックス範囲を返します。
+与えられたバイナリツリーに基づいて、最も細かい詳細係数のインデックス範囲を返します。
 
 # 引数
 

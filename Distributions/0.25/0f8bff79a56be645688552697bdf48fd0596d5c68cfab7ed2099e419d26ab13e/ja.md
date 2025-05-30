@@ -1,1 +1,1 @@
-`F <: NamedTupleVariate{K}` は、変数またはサンプルが型 `NamedTuple{K}` であることを指定します。
+`F <: NamedTupleVariate{K}` は、変数またはサンプルが `NamedTuple{K}` 型であることを指定します。

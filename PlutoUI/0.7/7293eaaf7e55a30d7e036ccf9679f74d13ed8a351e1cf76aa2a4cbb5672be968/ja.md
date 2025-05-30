@@ -5,7 +5,7 @@ WithIOContext(x, properties::Pair...)
 `x`の表示のために設定された追加のIOContextプロパティを持つ`x`のラッパーです。
 
 !!! compat "PlutoUI 0.7.52"
-    PlutoUI 0.7.52以前では、`x`は`properties`からのプロパティのみを使用して表示され、レンダリングに使用されるIOContextからのプロパティは無視されていました。これは修正されました。
+    PlutoUI 0.7.52以前は、`x`は`properties`からのプロパティのみを使用して表示され、レンダリングに使用されるIOContextからのプロパティは無視されていました。これは修正されました。
 
 
 # 例

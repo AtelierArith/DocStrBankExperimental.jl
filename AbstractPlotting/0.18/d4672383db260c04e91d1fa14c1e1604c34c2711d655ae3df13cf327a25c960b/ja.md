@@ -2,7 +2,7 @@
 contour3d(x, y, z)
 ```
 
-x::Vector、y::Vector、z::Matrixを spanning する平面の3D等高線プロットを作成し、各レベルのz-標高を表示します。
+x::Vector、y::Vector、z::Matrixを spanning する3D等高線プロットを作成し、各レベルのz-標高を表示します。
 
 ## 属性
 

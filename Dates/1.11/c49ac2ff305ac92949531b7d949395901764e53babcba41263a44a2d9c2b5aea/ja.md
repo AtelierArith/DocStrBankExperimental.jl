@@ -2,7 +2,7 @@
 floor(x::Period, precision::T) where T <: Union{TimePeriod, Week, Day} -> T
 ```
 
-`x`を`precision`の最も近い倍数に切り下げます。`x`と`precision`が異なるサブタイプの`Period`である場合、返される値は`precision`と同じ型になります。
+`x`を`precision`の最も近い倍数に切り捨てます。`x`と`precision`が異なる`Period`のサブタイプである場合、返り値は`precision`と同じ型になります。
 
 便利のために、`precision`は値の代わりに型で指定することもできます：`floor(x, Dates.Hour)`は`floor(x, Dates.Hour(1))`のショートカットです。
 

@@ -2,7 +2,7 @@
 op_string(mime::MIME, x::GenericNonlinearExpr, ::Val{op}) where {op}
 ```
 
-`mime`と`x`を使って[`function_string`](@ref)が呼び出されたときに印刷されるべき演算子`op`の文字列を返します。
+`mime`と`x`を使って[`function_string`](@ref)が呼び出されたときに、演算子`op`のために印刷されるべき文字列を返します。
 
 ## 例
 

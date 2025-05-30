@@ -50,4 +50,4 @@ julia> x ≈ x̂                    # 標準dwtとは異なり、x ≠ x̂
 false
 ```
 
-**関連項目:** [`nonstd_wavemult`](@ref), [`mat2sparseform_nonstd`](@ref), [`ns_dwt`](@ref), [`ndyad`](@ref)
+**参照:** [`nonstd_wavemult`](@ref), [`mat2sparseform_nonstd`](@ref), [`ns_dwt`](@ref), [`ndyad`](@ref)

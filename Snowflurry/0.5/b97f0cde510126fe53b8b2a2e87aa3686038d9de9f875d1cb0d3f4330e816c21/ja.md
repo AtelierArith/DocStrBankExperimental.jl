@@ -2,6 +2,6 @@
 swap(qubit_1, qubit_2)
 ```
 
-qubit*1とqubit*2にスワップ演算子を適用するスワップゲートを返します。
+`qubit_1`と`qubit_2`にスワップ`Operator`を適用するスワップ`Gate`を返します。
 
-対応する演算子は[`swap()`](@ref)です。
+対応する`Operator`は[`swap()`](@ref)です。

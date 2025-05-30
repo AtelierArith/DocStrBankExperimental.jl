@@ -2,7 +2,7 @@
 GenericAffExpr(constant::V, kv::Vararg{Pair{K,V},N}) where {K,V,N}
 ```
 
-定数と追加の引数のペアを渡すことで [`GenericAffExpr`](@ref) を作成します。
+定数と追加の引数のペアを渡すことで[`GenericAffExpr`](@ref)を作成します。
 
 ## 例
 

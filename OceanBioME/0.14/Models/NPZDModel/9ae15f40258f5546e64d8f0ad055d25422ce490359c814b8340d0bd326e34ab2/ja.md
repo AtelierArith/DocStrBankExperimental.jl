@@ -36,11 +36,11 @@ NutrientPhytoplanktonZooplanktonDetritus(; grid::AbstractGrid{FT},
   * `surface_photosynthetically_active_radiation`: 表面での光合成可能な放射線の関数 (または将来的には配列)、形状は `f(x, y, t)` である必要があります
   * `light_attenuation_model`: 利用可能な光の減衰を統合する光減衰モデル
   * `sediment_model`: `BiogeochemicalSediment` のスロット
-  * `sinking_speed`: 沈降する任意のトレーサーのための定数沈降の名前付きタプル、フィールド (すなわち `ZFaceField(...)`) のフィールド (沈降速度は正であるべきですが、フィールドは通常の下向きが負であることに従う必要があります)
-  * `open_bottom`: トレーサーが領域を離れないように、底で沈降速度を滑らかにゼロにするべきか
+  * `sinking_speed`: 沈降する任意のトレーサーのための定数沈降の名前付きタプル、フィールド (すなわち `ZFaceField(...)`) のフィールド (沈降速度は正であることが慣例ですが、フィールドは通常の下向きが負であることに従う必要があります)
+  * `open_bottom`: トレーサーが領域を離れるのを防ぐために、沈降速度を底で滑らかにゼロにするべきか
   * `scale_negatives`: 負のトレーサーをスケールしますか？
   * `particles`: `BiogeochemicalParticles` のスロット
-  * `modifiers`: 傾向が計算されたときや状態が更新されたときに生物地球化学を修正するコンポーネントのスロット
+  * `modifiers`: 傾向が計算された後や状態が更新されたときに生物地球化学を修正するコンポーネントのスロット
 
 # 例
 

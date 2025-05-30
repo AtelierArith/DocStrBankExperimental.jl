@@ -22,4 +22,4 @@ julia> sample(grf);
 julia> sample(grf, xi=randn(randdim(grf)));
 ```
 
-関連情報: [`GaussianRandomField`](@ref), [`Matern`](@ref), [`CovarianceFunction`](@ref), [`CirculantEmbedding`]
+関連情報: [`GaussianRandomField`](@ref), [`Matern`](@ref), [`CovarianceFunction`](@ref), [`CirculantEmbedding`](@ref)

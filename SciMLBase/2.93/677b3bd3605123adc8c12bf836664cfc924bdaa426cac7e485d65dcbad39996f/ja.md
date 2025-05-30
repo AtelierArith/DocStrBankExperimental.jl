@@ -12,7 +12,7 @@ https://docs.sciml.ai/DiffEqDocs/stable/basics/solution/
 
 ## フィールド
 
-  * `u`: SDE または RODE 解の表現。解の配列として与えられ、`u[i]` は時刻 `t[i]` における解に対応します。ほとんどの場合、`sol.u` に直接アクセスするのではなく、DifferentialEquations.jl ドキュメントのソリューション処理ページで説明されている配列インターフェースを使用することをお勧めします。
+  * `u`: SDE または RODE 解の表現。解の配列として与えられ、`u[i]` は時刻 `t[i]` における解に対応します。ほとんどの場合、`sol.u` に直接アクセスすることは推奨されず、代わりに DifferentialEquations.jl ドキュメントのソリューション処理ページで説明されている配列インターフェースを使用することが推奨されます。
   * `t`: ODE 解の保存された値に対応する時間点。
   * `W`: 解から保存されたノイズプロセスの表現。DifferentialEquations.jl の[ノイズプロセスページ](https://docs.sciml.ai/DiffEqDocs/stable/features/noise_process/)を参照してください。このノイズは、ソルバーで `save_noise=true` の場合にのみ完全に保存されます。
   * `prob`: 解かれた元の SDEProblem/RODEProblem。

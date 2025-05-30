@@ -2,14 +2,14 @@
 count([f=identity,] A::AbstractArray; dims=:)
 ```
 
-`f` が `true` を返す `A` の要素の数を、指定された次元にわたってカウントします。
+`A`の要素のうち、`f`が`true`を返す要素の数を指定された次元にわたってカウントします。
 
 !!! compat "Julia 1.5"
-    `dims` キーワードは Julia 1.5 で追加されました。
+    `dims`キーワードはJulia 1.5で追加されました。
 
 
 !!! compat "Julia 1.6"
-    `init` キーワードは Julia 1.6 で追加されました。
+    `init`キーワードはJulia 1.6で追加されました。
 
 
 # 例

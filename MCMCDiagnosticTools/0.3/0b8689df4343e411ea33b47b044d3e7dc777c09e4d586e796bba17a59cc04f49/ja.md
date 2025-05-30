@@ -10,7 +10,7 @@ mcse(samples::AbstractArray{<:Union{Missing,Real}}; kind=Statistics.mean, kwargs
 
 MCSEを推定すべき推定量は `kind` で指定されます。`kind` は `samples` と同じ `eltype` のベクトルを受け入れ、実数の推定値を返す必要があります。
 
-以下の推定量については、効果的サンプルサイズ [`ess`](@ref) と漸近分散の推定値を使用してMCSEを計算し、`kwargs` は `ess` に転送されます：
+以下の推定量については、実効サンプルサイズ [`ess`](@ref) と漸近分散の推定値を使用してMCSEを計算し、`kwargs` は `ess` に転送されます：
 
   * [`Statistics.mean`](@extref)
   * [`Statistics.median`](@extref)

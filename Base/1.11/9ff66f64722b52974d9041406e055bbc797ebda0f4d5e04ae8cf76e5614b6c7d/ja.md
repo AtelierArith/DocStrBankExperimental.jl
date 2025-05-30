@@ -1,6 +1,6 @@
-`Lockable(value, lock = ReentrantLock())`
+Lockable(value, lock = ReentrantLock())
 
-`value`をラップし、提供された`lock`に関連付けられた`Lockable`オブジェクトを作成します。このオブジェクトは[`@lock`](@ref)、[`lock`](@ref)、[`trylock`](@ref)、[`unlock`](@ref)をサポートします。値にアクセスするには、ロックを保持しながらロック可能オブジェクトのインデックスを指定します。
+`value`をラップし、提供された`lock`に関連付けられた`Lockable`オブジェクトを作成します。このオブジェクトは[`@lock`](@ref)、[`lock`](@ref)、[`trylock`](@ref)、[`unlock`](@ref)をサポートします。値にアクセスするには、ロックを保持しながらロック可能なオブジェクトをインデックスします。
 
 !!! compat "Julia 1.11"
     Julia 1.11以上が必要です。

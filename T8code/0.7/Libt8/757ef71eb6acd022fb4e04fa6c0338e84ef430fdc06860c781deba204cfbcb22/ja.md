@@ -2,7 +2,7 @@
 t8_forest_vtk_write_file_via_API(forest, fileprefix, write_treeid, write_mpirank, write_level, write_element_id, curved_flag, write_ghosts, num_data, data)
 ```
 
-フォレストを .pvtu ファイル形式で書き込みます。プロセスごとに 1 つの .vtu ファイルとメタ .pvtu ファイルを書き込みます。この関数は vtk ライブラリを使用します。t8code は使用するために「–with-vtk」で構成されている必要があります。現在、ピラミッド要素はサポートされていません。
+フォレストを .pvtu ファイル形式で書き込みます。プロセスごとに 1 つの .vtu ファイルとメタ .pvtu ファイルを書き込みます。この関数は vtk ライブラリを使用します。t8code は使用するために "–with-vtk" で構成されている必要があります。現在、ピラミッド要素はサポートされていません。
 
 !!! note
     t8code が vtk で構成されていない場合は、t8*forest*vtk*write*file を使用してください。

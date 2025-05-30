@@ -8,6 +8,6 @@ logpdf(d::Distribution{ArrayLikeVariate{N}}, x::AbstractArray{<:Real,N}) where {
 
 # 実装
 
-`logpdf`の代わりに、`_logpdf(d, x)`を実装するべきであり、これは`x`のサイズをチェックする必要がありません。
+`logpdf`の代わりに、`x`のサイズをチェックする必要がない`_logpdf(d, x)`を実装するべきです。
 
 参照: [`pdf`](@ref), [`gradlogpdf`](@ref).

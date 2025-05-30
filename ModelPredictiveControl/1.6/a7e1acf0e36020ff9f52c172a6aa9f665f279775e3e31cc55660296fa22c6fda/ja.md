@@ -6,7 +6,7 @@
 (mpc::PredictiveController)(ry, d=[]; kwargs...) -> u
 ```
 
-呼び出し可能な `PredictiveController` オブジェクトを [`moveinput!`](@ref) のエイリアスとして使用するファンクタ。
+[`moveinput!`](@ref) のエイリアスとして呼び出し可能な `PredictiveController` オブジェクトを許可するファンクタ。
 
 # 例
 

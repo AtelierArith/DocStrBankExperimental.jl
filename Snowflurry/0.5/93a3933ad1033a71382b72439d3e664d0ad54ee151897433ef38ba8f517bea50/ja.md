@@ -2,7 +2,7 @@
 AnyonYukonQPU <: AbstractQPU
 ```
 
-ユコン世代のアニオンシステムQPUを説明するデータ構造です。QPUは、線形配置で6つのキュービットを含んでいます（[`LineConnectivity`](@ref）を参照）。
+ユーザーのためのAnyonsシステムQPUを記述するデータ構造。QPUは線形配置で6つのキュービットを含んでいます（[`LineConnectivity`](@ref）を参照）。
 
 # フィールド
 

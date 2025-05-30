@@ -2,7 +2,7 @@
 modify_topology(modify_runnable::Functino, topology::Topology)
 ```
 
-トポロジーを、提供されたトポロジーを引数とする一引数関数である`modify_runnable`関数を使用して変更します。
+トポロジーを、提供されたトポロジーを引数とする1引数関数である`modify_runnable`関数を使用して変更します。
 
 # 例
 

@@ -8,10 +8,10 @@ moi_set(constraint::AbstractConstraint)
 moi_set(s::AbstractVectorSet, dim::Int)
 ```
 
-JuMP集合 `s` に対応する次元 `dim` のMOI集合を返します。
+JuMP集合 `s` に対応する次元 `dim` の MOI集合を返します。
 
 ```
 moi_set(s::AbstractScalarSet)
 ```
 
-JuMP集合 `s` に対応するMOI集合を返します。
+JuMP集合 `s` に対応する MOI集合を返します。

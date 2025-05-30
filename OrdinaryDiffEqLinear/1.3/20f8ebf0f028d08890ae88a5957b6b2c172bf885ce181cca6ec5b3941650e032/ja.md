@@ -4,7 +4,7 @@ RKMK4(; krylov = false,
         iop = 0)
 ```
 
-半線形ODEソルバー 第4次ルンゲ–クッタ–ムンテ–カース法。
+半線形ODEソルバー 第4次ルンゲ–クッタ–ムント・カース法。
 
 ### キーワード引数
 
@@ -14,4 +14,4 @@ RKMK4(; krylov = false,
 
 ## 参考文献
 
-@article{celledoni2014introduction,   title={Lie群積分法への入門–基本、最新の発展と応用},   author={Celledoni, Elena and Marthinsen, H{a}kon and Owren, Brynjulf},   journal={計算物理学ジャーナル},   volume={257},   pages={1040–1061},   year={2014},   publisher={エルゼビア} }
+@article{celledoni2014introduction,   title={An introduction to Lie group integrators–basics, new developments and applications},   author={Celledoni, Elena and Marthinsen, H{a}kon and Owren, Brynjulf},   journal={Journal of Computational Physics},   volume={257},   pages={1040–1061},   year={2014},   publisher={Elsevier} }

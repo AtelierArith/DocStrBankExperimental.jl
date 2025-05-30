@@ -10,9 +10,12 @@ SimulatedAnnealing(; neighbor = default_neighbor!,
 
 コンストラクタは3つのキーワードを取ります：
 
-  * `neighbor = a!(x_proposed, x_current)`, 現在の `x` の変異関数で、提案された `x`
-  * `T = b(iteration)`, 現在の反復の関数で、温度を返します
-  * `p = c(f_proposal, f_current, T)`, 現在の温度、現在の関数値、および提案された関数値の関数で、受け入れ確率を返します
+  * `neighbor = a!(x_proposed, x_current)`、現在の `x` の変異関数であり、
+
+提案された `x`
+
+  * `T = b(iteration)`、現在の反復の関数で、温度を返します
+  * `p = c(f_proposal, f_current, T)`、現在の温度、現在の関数値、および提案された関数値の関数で、受け入れ確率を返します
 
 ## 説明
 

@@ -23,4 +23,4 @@ julia> isfile(filename)
 false
 ```
 
-他にも[`isdir`](@ref)や[`ispath`](@ref)を参照してください。
+[`isdir`](@ref)および[`ispath`](@ref)も参照してください。

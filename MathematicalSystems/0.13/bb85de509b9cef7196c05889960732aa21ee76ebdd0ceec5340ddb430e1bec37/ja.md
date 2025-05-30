@@ -2,7 +2,7 @@
 AffineControlContinuousSystem
 ```
 
-次の形式の連続時間アフィン制御システム：
+連続時間アフィン制御システムの形式：
 
 $$
     x(t)' = A x(t) + B u(t) + c, \; \forall t.

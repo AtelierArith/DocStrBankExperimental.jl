@@ -19,4 +19,4 @@ expected_score(model::ItemResponseModel, theta, is; scoring_function)
 
 `estimation_type(model) == PointEstimate` の場合、`expected_score` は単一のスカラー値を返す必要があります。
 
-`estimation_type(model) == SamplingEstimate` の場合、`expected_score` は引き出されたサンプルの数と同じ長さの値のベクターを返す必要があります。 ```
+`estimation_type(model) == SamplingEstimate` の場合、`expected_score` は引き出されたサンプルの数と同じ長さの値のベクトルを返す必要があります。 ```

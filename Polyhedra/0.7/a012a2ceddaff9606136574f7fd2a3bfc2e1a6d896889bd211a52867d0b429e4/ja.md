@@ -2,7 +2,7 @@
 hrep(hyperplanes::HyperPlaneIt, halfspaces::HalfSpaceIt; d::FullDim)
 ```
 
-次元 `d` の全次元の多面体の H-表現を作成します。これは、ハイパープレーン `hyperplanes` とハーフスペース `halfspaces` の交差によって得られます。
+全次元 `d` のポリヘドロンの H-表現を作成します。これは、ハイパープレーン `hyperplanes` とハーフスペース `halfspaces` の交差に等しいです。
 
 ### 例
 
@@ -16,7 +16,7 @@ $$
 \end{aligned}
 $$
 
-次のように作成できます。
+次のように作成できます：
 
 ```jldoctest
 julia> hrep([HyperPlane([1, 1], 1)], [HalfSpace([0, -1], 0), HalfSpace([-1, 0], 0)])

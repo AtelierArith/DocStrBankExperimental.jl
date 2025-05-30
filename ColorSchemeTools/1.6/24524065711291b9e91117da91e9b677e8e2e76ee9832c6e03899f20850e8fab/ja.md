@@ -2,7 +2,7 @@
 colorscheme_weighted(colorscheme, weights, length)
 ```
 
-指定された `length`（デフォルトは50）の長さの新しい ColorScheme を返します。`colorscheme` の各色の割合は、各エントリの関連する重みで表されます。
+指定された `length`（デフォルトは50）の新しい ColorScheme を返します。ここで、`colorscheme` の各色の割合は、各エントリの関連する重みで表されます。
 
 例:
 

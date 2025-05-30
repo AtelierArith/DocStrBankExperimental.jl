@@ -12,22 +12,22 @@ $$
 \end{aligned}
 $$
 
-ここで、`x`の要素は連続、整数、またはバイナリ変数である可能性があります。
+ここで、`x`の要素は連続変数、整数変数、またはバイナリ変数である可能性があります。
 
 ## フィールド
 
-[`lp_matrix_data`](@ref)によって返される構造体には、次のフィールドがあります：
+[`lp_matrix_data`](@ref)によって返される構造体は、次のフィールドを持ちます：
 
   * `A::SparseArrays.SparseMatrixCSC{T,Int}`: スパース行列形式の制約行列。
   * `b_lower::Vector{T}`: 行の下限の密なベクトル。欠落している場合、`typemin(T)`の値が使用されます。
   * `b_upper::Vector{T}`: 行の上限の密なベクトル。欠落している場合、`typemax(T)`の値が使用されます。
   * `x_lower::Vector{T}`: 変数の下限の密なベクトル。欠落している場合、`typemin(T)`の値が使用されます。
   * `x_upper::Vector{T}`: 変数の上限の密なベクトル。欠落している場合、`typemax(T)`の値が使用されます。
-  * `c::Vector{T}`: 線形目的係数の密なベクトル
+  * `c::Vector{T}`: 線形目的係数の密なベクトル。
   * `c_offset::T`: 目的関数の定数項。
   * `sense::MOI.OptimizationSense`: モデルの目的の感覚。
-  * `integers::Vector{Int}`: 整数変数である列インデックスのソートされたリスト。
-  * `binaries::Vector{Int}`: バイナリ変数である列インデックスのソートされたリスト。
+  * `integers::Vector{Int}`: 整数変数の列インデックスのソートされたリスト。
+  * `binaries::Vector{Int}`: バイナリ変数の列インデックスのソートされたリスト。
   * `variables::Vector{GenericVariableRef{T}}`: 行列形式の列の順序に対応する[`GenericVariableRef`](@ref)のベクトル。
   * `affine_constraints::Vector{ConstraintRef}`: 行列形式の行の順序に対応する[`ConstraintRef`](@ref)のベクトル。
 

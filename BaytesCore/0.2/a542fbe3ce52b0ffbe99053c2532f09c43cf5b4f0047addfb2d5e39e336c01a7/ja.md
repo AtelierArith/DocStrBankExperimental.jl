@@ -9,4 +9,4 @@ struct ArrayConfig{K, T<:BaytesCore.DataSorting}
 # フィールド
 
   * `size::NTuple{K, Int64} where K`: データの次元。
-  * `sorted::BaytesCore.DataSorting`: データが行でソートされているかどうかのブール値。
+  * `sorted::BaytesCore.DataSorting`: データが行によってソートされているかどうかのブール値。

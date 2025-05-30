@@ -4,7 +4,7 @@ image_to_swatch(imagefilepath, samples, destinationpath;
     tilewidth=5)
 ```
 
-`imagefilepath`の画像から色のスウォッチ画像PNGを`destinationpath`に抽出します。これは、`sortcolorscheme()`、`colorscheme_to_image()`、および`save()`を順に実行するだけです。
+`imagefilepath`の画像からカラースキームを抽出し、`destinationpath`にスウォッチ画像PNGとして保存します。これは、`sortcolorscheme()`、`colorscheme_to_image()`、および`save()`を順に実行するだけです。
 
 色の数を指定します。また、行数や各色の繰り返し回数を指定することもできます。
 

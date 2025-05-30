@@ -2,4 +2,4 @@
 HasProperties(img) -> HasProperties{::Bool}
 ```
 
-`x`が`properties`メソッドを持っているかどうかを示すトレイト`HasProperties`を返します。
+`HasProperties`トレイトを返し、`x`が`properties`メソッドを持っているかどうかを示します。

@@ -71,9 +71,9 @@ end
 
 **`lowclip`** =  `automatic`  — カラーレンジ未満の任意の値の色。
 
-**`miter_limit`** =  `@inherit miter_limit`  — ミタージョインが切り捨てられる最小内角を設定します。`Makie.miter_distance_to_angle`も参照してください。
+**`miter_limit`** =  `@inherit miter_limit`  — ミタージョインが切り捨てられる最小内側ジョイン角を設定します。`Makie.miter_distance_to_angle`も参照してください。
 
-**`model`** =  `automatic`  — プロットのためのモデル行列を設定します。これは、`translate!`、`rotate!`、および`scale!`で行われた調整を上書きします。
+**`model`** =  `automatic`  — プロットのモデル行列を設定します。これは、`translate!`、`rotate!`、および`scale!`で行われた調整を上書きします。
 
 **`nan_color`** =  `:transparent`  — NaN値の色。
 

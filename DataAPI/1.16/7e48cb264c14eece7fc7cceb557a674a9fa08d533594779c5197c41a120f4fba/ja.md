@@ -2,4 +2,4 @@
 Between(first, last)
 ```
 
-`first` と `last` の間の列を（両方を含む）テーブルから選択します。
+`first` と `last` の間の列（両方を含む）をテーブルから選択します。

@@ -15,9 +15,9 @@ $$
 
 # 実装
 
-次の文献にまとめられた有理近似を使用します：
+次の文献に記載されている有理近似を使用します。
 
 > J. M. Blair, C. A. Edwards, and J. H. Johnson, "Rational Chebyshev approximations for the inverse of the error function", Math. Comp. 30, pp. 827–830 (1976). [https://doi.org/10.1090/S0025-5718-1976-0421040-7](https://doi.org/10.1090/S0025-5718-1976-0421040-7), [http://www.jstor.org/stable/2005402](http://www.jstor.org/stable/2005402)
 
 
-`BigFloat` のニュートン反復と組み合わせて使用します。
+これを `BigFloat` のニュートン反復と組み合わせます。

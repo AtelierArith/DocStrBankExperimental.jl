@@ -6,14 +6,14 @@ IdentityMultiple{T} < AbstractMatrix{T} where T
 
 ### フィールド
 
-  * `M` – 型 `T` の一様スケーリング演算子
+  * `M` – 型 `T` の均一スケーリング演算子
   * `n` – 単位行列のサイズ
 
 ### 注意事項
 
-この型は、指定されたサイズの単位行列の倍数を作成するために使用できます。倍数と次数のみが保存されるため、メモリの割り当ては最小限です。
+この型は、指定されたサイズの単位行列の倍数を作成するために使用できます。倍数と次数のみが保存されるため、割り当ては最小限です。
 
-内部的に、この型はJuliaの遅延単位演算子 `UniformScaling` をラップしています。`IdentityMultiple` は `AbstractMatrix` をサブタイプ化しているため、通常の行列演算や `AbstractMatrix` に対するディスパッチで使用できます。
+内部的に、この型はJuliaの遅延単位演算子 `UniformScaling` をラップしています。`IdentityMultiple` は `AbstractMatrix` をサブタイプ化しているため、通常の行列演算や `AbstractMatrix` に対するディスパッチに使用できます。
 
 `UniformScaling` と `IdentityMultiple` の違いは、前者のサイズが一般的であるのに対し、後者のサイズは固定されていることです。
 

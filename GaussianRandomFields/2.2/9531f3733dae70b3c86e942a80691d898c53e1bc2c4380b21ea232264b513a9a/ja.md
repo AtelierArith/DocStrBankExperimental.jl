@@ -17,7 +17,7 @@ julia> pts = pts = range(0, stop=1, length=51)
 julia> mean = fill(π, (51, 51));
 
 julia> grf = GaussianRandomField(mean, cov, Cholesky(), pts, pts)
-ガウス乱数場は 2d Matérn 共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) を使用して 51×51 の構造化グリッド上で計算され、Cholesky 分解を使用しています。
+ガウス乱数場は、Cholesky分解を使用して、51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) です。
 
 ```
 
@@ -25,7 +25,7 @@ julia> grf = GaussianRandomField(mean, cov, Cholesky(), pts, pts)
 
 ```jldoctest label2
 julia> grf = GaussianRandomField(cov, Cholesky(), pts, pts)
-ガウス乱数場は 2d Matérn 共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) を使用して 51×51 の構造化グリッド上で計算され、Cholesky 分解を使用しています。
+ガウス乱数場は、Cholesky分解を使用して、51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) です。
 
 ```
 
@@ -33,13 +33,13 @@ julia> grf = GaussianRandomField(cov, Cholesky(), pts, pts)
 
 ```jldoctest label2
 julia> grf = GaussianRandomField(cov, KarhunenLoeve(500), pts, pts)
-ガウス乱数場は 2d Matérn 共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) を使用して 51×51 の構造化グリッド上で計算され、500 項の KL 展開を使用しています。
+ガウス乱数場は、500項のKL展開を使用して、51×51の構造化グリッド上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) です。
 
 julia> exponential_cov = CovarianceFunction(2, Exponential(.1))
 2d 指数共分散関数 (λ=0.1, σ=1.0, p=2.0)
 
 julia> grf = GaussianRandomField(exponential_cov, CirculantEmbedding(), pts, pts)
-ガウス乱数場は 2d 指数共分散関数 (λ=0.1, σ=1.0, p=2.0) を使用して 51×51 の構造化グリッド上で計算され、循環埋め込みを使用しています。
+ガウス乱数場は、循環埋め込みを使用して、51×51の構造化グリッド上の2d 指数共分散関数 (λ=0.1, σ=1.0, p=2.0) です。
 
 ```
 
@@ -50,7 +50,7 @@ julia> separable_cov = SeparableCovarianceFunction(Exponential(.1), Exponential(
 2d 分離可能共分散関数 [ 指数 (λ=0.1, σ=1.0, p=2.0), 指数 (λ=0.1, σ=1.0, p=2.0) ]
 
 julia> grf = GaussianRandomField(separable_cov, KarhunenLoeve(500), pts, pts)
-ガウス乱数場は 2d 分離可能共分散関数 [ 指数 (λ=0.1, σ=1.0, p=2.0), 指数 (λ=0.1, σ=1.0, p=2.0) ] を使用して 51×51 の構造化グリッド上で計算され、500 項の KL 展開を使用しています。
+ガウス乱数場は、500項のKL展開を使用して、51×51の構造化グリッド上の2d 分離可能共分散関数 [ 指数 (λ=0.1, σ=1.0, p=2.0), 指数 (λ=0.1, σ=1.0, p=2.0) ] です。
 
 julia> plot_eigenfunction(grf, 3);
 
@@ -63,7 +63,7 @@ julia> anisotropic_cov = CovarianceFunction(2, AnisotropicExponential([500 400; 
 2d 異方性指数共分散関数 (A=[500 400; 400 500], σ=1.0)
 
 julia> grf = GaussianRandomField(anisotropic_cov, CirculantEmbedding() , pts, pts)
-ガウス乱数場は 2d 異方性指数共分散関数 (A=[500 400; 400 500], σ=1.0) を使用して 51×51 の構造化グリッド上で計算され、循環埋め込みを使用しています。
+ガウス乱数場は、循環埋め込みを使用して、51×51の構造化グリッド上の2d 異方性指数共分散関数 (A=[500 400; 400 500], σ=1.0) です。
 
 julia> heatmap(grf);
 
@@ -75,11 +75,11 @@ julia> heatmap(grf);
 julia> nodes, elements = Lshape();
 
 julia> grf = GaussianRandomField(cov, Spectral(), nodes, elements)
-ガウス乱数場は 2d Matérn 共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) を使用して 998 点と 1861 要素のメッシュ上で計算され、スペクトル分解を使用しています。
+ガウス乱数場は、スペクトル分解を使用して、998点と1861要素を持つメッシュ上の2d Matérn共分散関数 (λ=0.3, ν=1.0, σ=1.0, p=2.0) です。
 
 ```
 
-代わりに、与えられた点の集合によって定義された非構造化グリッドで乱数場を計算するために、サイズ `N` x `d` の `Matrix{T}` を単に渡すことができます。
+代わりに、サイズ `N` x `d` の `Matrix{T}` を渡して、与えられた点の集合によって定義された非構造化グリッドで乱数場を計算します。
 
 乱数場からのサンプルは `sample` 関数を使用して計算できます。
 

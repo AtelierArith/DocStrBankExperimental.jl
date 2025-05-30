@@ -35,4 +35,4 @@ iswpt!(x̂, xw, wt, 5)
 iswpt!(x̂, xw, wt)
 ```
 
-**関連項目:** [`iswpt`](@ref)
+**参照:** [`iswpt`](@ref)

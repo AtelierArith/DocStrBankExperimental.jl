@@ -3,7 +3,7 @@ sample(_rng, model)
 
 ```
 
-'mode'の事前分布からサンプリングし、NamedTupleとして返します。
+'mode'lの事前分布からサンプリングし、NamedTupleとして返します。
 
 # 例
 

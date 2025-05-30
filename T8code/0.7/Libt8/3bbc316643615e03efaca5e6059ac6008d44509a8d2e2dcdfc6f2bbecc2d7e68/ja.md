@@ -2,11 +2,11 @@
 t8_stash_joinface_sort(stash)
 ```
 
-最初の treeid の順に facejoin 配列のエントリをソートします。
+最初の treeid の順に facejoin 配列内のエントリをソートします。
 
 # 引数
 
-  * `stash`:[in,out] facejoin 配列がソートされるスタッシュ。
+  * `stash`:[in,out] ソートされる facejoin 配列を持つ stash。
 
 ### プロトタイプ
 

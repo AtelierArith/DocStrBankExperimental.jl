@@ -6,7 +6,7 @@ annotatedstring(values...)
 
 これは [`string`](@ref) のように動作しますが、存在する注釈（[`AnnotatedString`](@ref) または [`AnnotatedChar`](@ref) 値の形で）を保持することに注意を払います。
 
-また、[`AnnotatedString`](@ref) と [`AnnotatedChar`](@ref) も参照してください。
+さらに [`AnnotatedString`](@ref) と [`AnnotatedChar`](@ref) も参照してください。
 
 ## 例
 

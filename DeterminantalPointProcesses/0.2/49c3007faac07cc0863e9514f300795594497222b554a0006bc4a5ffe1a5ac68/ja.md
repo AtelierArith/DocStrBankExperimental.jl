@@ -3,7 +3,7 @@ DeterminantalPointProcess(L::AbstractMatrix; parallelize=false)
 DeterminantalPointProcess(L::Eigen; parallelize=false)
 ```
 
-対称行列 `L` を与えると、`DeterminantalPointProcess` (DPP) が作成されます。固有オブジェクトを直接渡すこともできます。
+対称行列 `L` が与えられた場合、`DeterminantalPointProcess` (DPP) を作成します。固有オブジェクトを直接渡すこともできます。
 
 ---
 

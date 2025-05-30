@@ -6,4 +6,4 @@ INFEASIBLE_POINT::ResultStatusCode
 
 ## 概要
 
-結果ベクトルは不適合点です。
+結果ベクトルは不 feasible ポイントです。

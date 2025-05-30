@@ -2,7 +2,7 @@
 varinfo(m::Module=Main, pattern::Regex=r""; all=false, imported=false, recursive=false, sortby::Symbol=:name, minsize::Int=0)
 ```
 
-モジュール内の公開グローバル変数に関する情報を提供するマークダウンテーブルを返します。オプションで、`pattern` に一致するものに制限できます。
+モジュール内の公開グローバル変数に関する情報を提供するマークダウンテーブルを返します。オプションで、`pattern` に一致するものに制限することができます。
 
 メモリ消費の推定値は、オブジェクトの内部構造のサイズの近似的な下限です。
 
@@ -12,4 +12,4 @@ varinfo(m::Module=Main, pattern::Regex=r""; all=false, imported=false, recursive
   * `sortby` : 結果をソートする列。オプションは `:name`（デフォルト）、`:size`、および `:summary` です。
   * `minsize` : サイズが少なくとも `minsize` バイトのオブジェクトのみを含めます。デフォルトは `0` です。
 
-`varinfo` の出力は表示目的のみを意図しています。モジュール内で定義されたシンボルの配列を取得するには、より一般的な操作に適した [`names`](@ref) を参照してください。
+`varinfo` の出力は表示目的のみを意図しています。モジュール内で定義されたシンボルの配列を取得するには、[`names`](@ref) を参照してください。これはより一般的な操作に適しています。

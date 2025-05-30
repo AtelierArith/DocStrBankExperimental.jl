@@ -4,7 +4,7 @@ moveinput!(mpc::PredictiveController, ry=mpc.estim.model.yop, d=[]; <keyword arg
 
 現在の制御期間の最適な操作入力値 `u` を計算します。
 
-`mpc` [`PredictiveController`](@ref) の最適化問題を解決し、結果 $\mathbf{u}(k)$ を返します。後退ホライズン原則に従い、アルゴリズムは最適な将来の操作入力 $\mathbf{u}(k+1), \mathbf{u}(k+2), ...$ を破棄します。このメソッドは `mpc` の内部データを変更しますが、`mpc.estim` の状態は変更しません。`moveinput!` の前に [`preparestate!(mpc, ym, d)`](@ref) を呼び出し、後に [`updatestate!(mpc, u, ym, d)`](@ref) を呼び出して `mpc` の状態推定を更新します。セットポイントと測定された外乱のプレビューは、`R̂y`、`R̂u`、および `D̂` のキーワード引数を使用して実装できます。
+`mpc` [`PredictiveController`](@ref) の最適化問題を解決し、結果 $\mathbf{u}(k)$ を返します。先行するホライズンの原則に従い、アルゴリズムは最適な将来の操作入力 $\mathbf{u}(k+1), \mathbf{u}(k+2), ...$ を破棄します。このメソッドは `mpc` の内部データを変更しますが、`mpc.estim` の状態は変更しません。`moveinput!` の前に [`preparestate!(mpc, ym, d)`](@ref) を呼び出し、後に [`updatestate!(mpc, u, ym, d)`](@ref) を呼び出して `mpc` の状態推定を更新します。セットポイントと測定された外乱のプレビューは、`R̂y`、`R̂u`、および `D̂` のキーワード引数で実装できます。
 
 [`PredictiveController`](@ref) オブジェクトを呼び出すと、このメソッドが呼び出されます。
 

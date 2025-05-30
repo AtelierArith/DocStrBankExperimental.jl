@@ -13,7 +13,7 @@ DecisionTreeClassifier(; pruning_purity_threshold=0.0,
 
 ハイパーパラメータ:
 
-  * `pruning_purity_threshold`: (後処理剪定) `>=thresh`の結合純度を持つ葉をマージする (デフォルト: 剪定なし)
+  * `pruning_purity_threshold`: (後処理剪定) `>=thresh` の結合純度を持つ葉をマージする (デフォルト: 剪定なし)
   * `max_depth`: 決定木の最大深さ (デフォルト: 最大なし)
   * `min_samples_leaf`: 各葉が持つ必要がある最小サンプル数 (デフォルト: 1)
   * `min_samples_split`: 分割に必要な最小サンプル数 (デフォルト: 2)

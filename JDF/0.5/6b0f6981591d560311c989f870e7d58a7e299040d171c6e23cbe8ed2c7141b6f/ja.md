@@ -2,7 +2,7 @@
 JDF.names(indir)
 ```
 
-`indir`に関連付けられたJDFの列名を読み込みます
+`indir`に関連付けられたJDFの列名をロードします。
 
 # 例
 

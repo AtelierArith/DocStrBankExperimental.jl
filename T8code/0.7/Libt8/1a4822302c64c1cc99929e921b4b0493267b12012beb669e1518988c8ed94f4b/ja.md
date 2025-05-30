@@ -2,7 +2,7 @@
 t8_element_array_init_size(element_array, scheme, num_elements)
 ```
 
-既に割り当てられた（または静的な）配列構造を初期化し、指定された数の要素を割り当て、それらをt8*element*initで初期化します。
+既に割り当てられた（または静的な）配列構造を初期化し、指定された数の要素を割り当て、t8*element*initで初期化します。
 
 # 引数
 

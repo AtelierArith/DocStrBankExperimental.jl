@@ -16,7 +16,7 @@ Beam(ndim, nst, nxe, nip, direction, fin_el, axisymmetric)
 * nxe::Int              : 異なる特性タイプの数
 * nip::Int              : 積分点の数
 * direction::Symbol     : 積分点の数
-* fin_el::FiniteElement : Line(nod, nodof)
+* fin_el::FiniteElement : 線分(nod, nodof)
 * axisymmetric::Bool    : 真の場合は軸対称
 ```
 
@@ -25,5 +25,5 @@ Beam(ndim, nst, nxe, nip, direction, fin_el, axisymmetric)
 ```julia
 ?StructuralElement      : 構造要素に関するヘルプ
 ?FiniteElement          : 有限要素タイプに関するヘルプ
-?Line                   : Line有限要素に関するヘルプ
+?Line                   : 線分有限要素に関するヘルプ
 ```

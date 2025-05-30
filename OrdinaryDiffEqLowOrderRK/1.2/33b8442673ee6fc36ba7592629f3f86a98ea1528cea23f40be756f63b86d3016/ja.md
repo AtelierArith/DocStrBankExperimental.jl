@@ -5,13 +5,13 @@ BS5(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
       lazy = true)
 ```
 
-明示的ルンゲ-クッタ法。ボガッキ-シャンピン 5/4 ルンゲ-クッタ法。（遅延 5 次補間子）。
+明示的ルンゲ-クッタ法。ボガッキ-シャンピン 5/4 ルンゲ-クッタ法。（遅延5次補間子）。
 
 ### キーワード引数
 
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
-  * `thread`: 適切な CPU 配列での内部ブロードキャスティングが直列（`thread = OrdinaryDiffEq.False()`）で行われるか、複数のスレッドを使用するか（`thread = OrdinaryDiffEq.True()`）を決定します。Julia が複数のスレッドで起動されるとき。
+  * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
   * `lazy`: 遅延補間子が使用されるかどうかを決定します。
 
 ## 参考文献

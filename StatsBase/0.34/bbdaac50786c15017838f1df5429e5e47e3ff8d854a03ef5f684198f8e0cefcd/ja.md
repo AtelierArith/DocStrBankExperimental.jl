@@ -8,4 +8,4 @@ crosscor(x, y, [lags]; demean=true)
 
 指定されていない場合、使用されるラグは `-min(size(x,1)-1, 10*log10(size(x,1)))` から `min(size(x,1), 10*log10(size(x,1)))` までの整数です。
 
-出力は `sqrt(var(x)*var(y))` で正規化されます。非正規化形式については [`crosscov`](@ref) を参照してください。
+出力は `sqrt(var(x)*var(y))` で正規化されます。未正規化の形式については [`crosscov`](@ref) を参照してください。

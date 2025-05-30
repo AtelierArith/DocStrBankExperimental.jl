@@ -4,4 +4,4 @@ getattributes(::ExponentialFamilyDistribution)
 
 指数族分布のメンバーの属性を返すか、`nothing`を返します。
 
-関連情報: [`ExponentialFamilyDistributionAttributes`](@ref)
+参照: [`ExponentialFamilyDistributionAttributes`](@ref)

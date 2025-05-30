@@ -7,7 +7,7 @@ swpt!(xw, x, wt[, L])
 # 引数
 
   * `xw::AbstractArray{T,2}` または `xw::AbstractArray{T,3} where T<:Number`: 変換された信号のための割り当て。
-  * `x::AbstractVector{T}` または `x::AbstractMatrix{T} where T<:Number`: 元の信号で、できればサイズは 2ᴷ であること（$K \in \mathbb{N}$）。
+  * `x::AbstractVector{T}` または `x::AbstractMatrix{T} where T<:Number`: 元の信号で、できればサイズは 2ᴷ で $K \in \mathbb{N}$ であること。
   * `wt::OrthoFilter`: 直交ウェーブレットフィルター。
   * `L::Integer`: (デフォルト: `maxtransformlevels(x)`) 分解のレベル数。
 
@@ -29,4 +29,4 @@ xw = Array{Float64,2}(undef, (128,128))
 swpt!(xw, x, wt)
 ```
 
-**参照:** [`swpt`](@ref)
+**関連項目:** [`swpt`](@ref)

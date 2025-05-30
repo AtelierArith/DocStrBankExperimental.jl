@@ -16,7 +16,7 @@ $$
 `tail = :both` の場合、`method` の可能な値は次のとおりです：
 
   * `:central` (デフォルト)：中央区間、すなわちp値は片側p値の最小値の2倍です。
-  * `:minlike`：最小尤度区間、すなわちp値は同じ周辺分布を持ち、同じかそれ以下の確率のテーブルをすべて合計することによって計算されます：
+  * `:minlike`：最小尤度区間、すなわちp値は同じ周辺分布を持ち、同じかそれ以下の確率のテーブルを合計することによって計算されます：
 
     $$
         p_ω = \sum_{f_ω(i)≤ f_ω(a)} f_ω(i)
@@ -25,4 +25,4 @@ $$
 # 参考文献
 
   * Gibbons, J.D., Pratt, J.W., P-values: Interpretation and Methodology, American Statistican, 29(1):20-25, 1975.
-  * Fay, M.P., Supplementary material to "Confidence intervals that match Fisher’s exact or Blaker’s exact tests". Biostatistics, Volume 11, Issue 2, 1 April 2010, Pages 373–374, [link](https://doi.org/10.1093/biostatistics/kxp050)
+  * Fay, M.P., "フィッシャーの正確検定またはブレイカーの正確検定に一致する信頼区間" の補足資料。Biostatistics, Volume 11, Issue 2, 2010年4月1日, ページ 373–374, [link](https://doi.org/10.1093/biostatistics/kxp050)

@@ -12,7 +12,7 @@ HSLDDRK64(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されたとき。
-  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を許可します。ただし、これは `Array` 型にのみ機能します。
+  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を可能にします。ただし、これは `Array` 型にのみ機能します。
 
 ## 参考文献
 

@@ -6,6 +6,6 @@ caterpillar(m::MixedModel, gf::Symbol; kwargs...)
 
 「キャタピラープロット」は、ランダム効果の条件付き平均と標準偏差の水平誤差棒プロットです。
 
-`gf` は表示されるグルーピング変数を指定します。
+`gf` は表示されるグループ化変数を指定します。
 
 `kwargs...` は [`caterpillar!`](@ref) に渡されます。

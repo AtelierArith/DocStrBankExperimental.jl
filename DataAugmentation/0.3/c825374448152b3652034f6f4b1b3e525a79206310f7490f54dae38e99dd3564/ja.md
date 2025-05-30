@@ -5,7 +5,7 @@ Keypoints{N, T, M}(points, bounds)
 
 `N`次元のキーポイントは`SVector{N, T}`として表されます。
 
-空間的な境界は、ポリゴン`bounds::Vector{SVector{N, T}}`または`sz::NTuple{N, Int}`によって与えられます。
+空間的境界は、ポリゴン`bounds::Vector{SVector{N, T}}`または`sz::NTuple{N, Int}`によって与えられます。
 
 ## 例
 

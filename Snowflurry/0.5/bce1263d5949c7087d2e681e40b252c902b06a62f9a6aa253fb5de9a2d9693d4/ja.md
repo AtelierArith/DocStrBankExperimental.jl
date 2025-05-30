@@ -2,7 +2,7 @@
 get_display_symbols(gate::AbstractGateSymbol; precision::Integer = 4,)::Vector{String}
 ```
 
-`gate`を説明するシンボルの`Vector{String}`を返します。
+`gate`を説明する`Vector{String}`のシンボルを返します。
 
 `Vector`の各要素は、`gate`が作用するキュービットに関連付けられています。これは、回路図における`gate`の配置に役立ちます。オプションのパラメータ`precision`は、`gate`パラメータの小数点以下の桁数を設定することを可能にします。
 

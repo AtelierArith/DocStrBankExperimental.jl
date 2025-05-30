@@ -13,7 +13,7 @@ t8_offset_sendsto(proca, procb, t8_offset_from, t8_offset_to)
 
 # 戻り値
 
-*proca*が*offset_from*から*offset_to*に再分配する際に*procb*にローカルツリーを送信する場合は非ゼロ、そうでない場合は0。
+*proca* が *offset_from* から *offset_to* に再分配する際に *procb* にローカルツリーを送信する場合は非ゼロ、そうでない場合は0。
 
 ### プロトタイプ
 

@@ -58,8 +58,8 @@ x *num_coords*。インデックス
 
   * `cmesh`:[in] cmesh。
   * `gtreeid`:[in] 参照点があるcmeshのグローバルツリー。
-  * `ref_coords`:[in] ツリー次元 x *num_coords* の多くのエントリを持つ配列、ポイントを指定します。
+  * `ref_coords`:[in] ツリー次元 x *num_coords* の多くのエントリの配列、ポイントを指定します。
   * `num_coords`:[in] ポイントの量。
-  * `jacobian`:[out] *ref_coords* でのヤコビアン。サイズの配列。
+  * `jacobian`:[out] *ref_coords* におけるヤコビアン。サイズの配列。
   * `tree_data`:[in] t8*geom*load*tree*data_fn によってロードされた現在のツリーのデータ。
   * `user_data`:[in] 幾何学に格納されたユーザーデータポインタ。

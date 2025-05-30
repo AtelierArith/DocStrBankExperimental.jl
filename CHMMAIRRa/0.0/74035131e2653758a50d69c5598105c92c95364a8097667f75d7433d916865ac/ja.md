@@ -25,13 +25,13 @@ detect_chimeras_from_files(V_fasta::String, assignments::String, out::String;
         )
 ```
 
-入力ファイルからCHMMAIRRaを実行し、出力ファイルに書き込み、I/Oに注意を払います。
+入力ファイルからCHMMAIRRaを実行し、出力ファイルに書き込む際のI/Oに注意します。
 
 # 引数:
 
   * `V_fasta::String`: fasta形式のVデータベース。
   * `assignments::String`: MiAIRR形式のVDJ割り当て。
-  * `out::String`: CHMMAIRRa出力を書き込む。
+  * `out::String`: CHMMAIRRaの出力を書き込む。
 
 # オプション引数:
 
@@ -46,7 +46,7 @@ detect_chimeras_from_files(V_fasta::String, assignments::String, out::String;
   * `deduplicate::Bool`: v*sequence*alignment列によって入力を重複排除する。サブサンプルが指定されている場合、重複排除の後にサブサンプリングが行われることに注意。
   * `chunk_size::Union{Int, Nothing}`: 一度にchunk_size行の入力を読み込み、そのチャンクの出力を書き込み、次のチャンクに移動する。
   * `HMM_parameters::Union{String, Nothing}`: 設定されている場合、このファイルのHMMパラメータを使用する。–receptorからのパラメータプリセットを上書きします。フォーマットについてはsrc/IG*parameters.tsvまたはsrc/TCR*parameters.tsvを参照してください。
-  * `mafft::Union{String, Nothing}`: MAFFTバイナリへのパス。提供されていない場合、システムPATH内でmafftを探そうとします。
+  * `mafft::Union{String, Nothing}`: MAFFTバイナリへのパス。提供されていない場合、システムのPATH内でmafftを探そうとします。
   * `align_database::Bool`: データベースV配列をアラインするかどうか。
   * `count_chimeric_segments::Bool`: 設定されている場合、非キメラ配列に出現するキメラセグメントの数をカウントする。chimera*segment*counts列を追加します。
   * `trim::Int`: 非キメラ配列での一致を検索する際にキメラセグメントの内側の端から切り取るヌクレオチドの数。

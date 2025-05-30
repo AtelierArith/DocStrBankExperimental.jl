@@ -1,4 +1,4 @@
-スタンダードアメリカンオプションの構造体
+標準アメリカンオプションの構造体
 
 ```
 	amOption=AmericanOption(T::num1,K::num2,isCall::Bool=true) where {num1 <: Number,num2 <: Number}

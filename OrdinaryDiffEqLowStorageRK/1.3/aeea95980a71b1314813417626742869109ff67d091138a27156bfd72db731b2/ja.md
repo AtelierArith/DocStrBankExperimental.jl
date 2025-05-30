@@ -12,8 +12,8 @@ DGLDDRK84_F(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
   * `stage_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `step_limiter!`: 形式 `limiter!(u, integrator, p, t)` の関数
   * `thread`: 適切なCPU配列での内部ブロードキャストが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
-  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を可能にします。ただし、`Array` 型にのみ機能します。
+  * `williamson_condition`: ブロードキャスト式と関数呼び出し `f` を融合させる最適化を可能にします。ただし、これは `Array` 型にのみ機能します。
 
 ## 参考文献
 
-T. Toulorge, W. Desmet.     不連続ガレルキン空間離散化のための最適ルンゲ–クッタスキーム     波動伝播問題に適用。     計算物理学ジャーナル, 231(4), pp 2067-2091, 2012.     doi: https://doi.org/10.1016/j.jcp.2011.11.024
+T. Toulorge, W. Desmet.     不連続ガレルキン空間離散化のための最適ルンゲ–クッタスキーム     波動伝播問題に適用される。     計算物理学ジャーナル, 231(4), pp 2067-2091, 2012.     doi: https://doi.org/10.1016/j.jcp.2011.11.024

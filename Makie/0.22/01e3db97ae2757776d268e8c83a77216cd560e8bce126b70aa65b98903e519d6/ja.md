@@ -33,19 +33,19 @@ spy(0..1, 0..1, x)
 
 **`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar`と一緒に使用する場合は`identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10`および`Makie.Symlog10`と一緒にうまく機能します。
 
-**`depth_shift`** =  `0.0`  — すべての他の変換後のプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダリング順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダリング順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`framecolor`** =  `:black`  — デフォルトではデータの周りにフレームが描画され、`framecolor`属性がその色に使用されます。
 
-**`framesize`** =  `1`  — フレームの線幅
+**`framesize`** =  `1`  — フレームのライン幅
 
 **`framevisible`** =  `true`  — フレームを描画するかどうか。
 
 **`fxaa`** =  `true`  — プロットがfxaa（アンチエイリアス）でレンダリングされるかどうかを調整します（GLMakieのみ）。
 
-**`highclip`** =  `automatic`  — カラー範囲を超える任意の値の色。
+**`highclip`** =  `automatic`  — カラーレンジを超える任意の値の色。
 
-**`inspectable`** =  `@inherit inspectable`  — このプロットが`DataInspector`によって表示されるべきかどうかを設定します。デフォルトは親シーンのテーマに依存します。
+**`inspectable`** =  `@inherit inspectable`  — このプロットが`DataInspector`で表示されるべきかどうかを設定します。デフォルトは親シーンのテーマに依存します。
 
 **`inspector_clear`** =  `automatic`  — DataInspector内のカスタムインジケーターをクリーンアップするためのコールバック関数`(inspector, plot) -> ...`を設定します。
 
@@ -53,9 +53,9 @@ spy(0..1, 0..1, x)
 
 **`inspector_label`** =  `automatic`  — DataInspectorによって生成されるデフォルトのラベルを置き換えるコールバック関数`(plot, index, position) -> string`を設定します。
 
-**`lowclip`** =  `automatic`  — カラー範囲未満の任意の値の色。
+**`lowclip`** =  `automatic`  — カラーレンジ未満の任意の値の色。
 
-**`marker`** =  `Rect`  — `scatter!`によってサポートされる任意のマーカーを使用できます。巨大な疎配列の場合は、非常に高速ですが、正方形のマーカーしかレンダリングできない`FastPixel`を使用する必要があります。したがって、`Axis(...; aspect=1)`なしでは、マーカーのサイズが正しくありません。比較：
+**`marker`** =  `Rect`  — `scatter!`でサポートされている任意のマーカーを使用できます。巨大な疎配列の場合は、非常に高速ですが、正方形のマーカーしかレンダリングできない`FastPixel`を使用する必要があります。したがって、`Axis(...; aspect=1)`なしでは、マーカーのサイズが正しくありません。比較：
 
 ```julia
 data = sprand(10, 10, 0.5)
@@ -67,7 +67,7 @@ f
 
 **`marker_gap`** =  `0`  — マーカーのサイズを小さくして、マーカー間に隙間を作ります。これの単位はデータ空間です。
 
-**`markersize`** =  `automatic`  — markersize=automaticはマーカーサイズをデータに合わせますが、手動で設定することもできます。
+**`markersize`** =  `automatic`  — markersize=automaticは、マーカーのサイズをデータに合わせますが、手動で設定することもできます。
 
 **`model`** =  `automatic`  — プロットのモデル行列を設定します。これは`translate!`、`rotate!`および`scale!`で行った調整を上書きします。
 
@@ -81,6 +81,6 @@ f
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序独立透明性を使用します。
+**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakieでは`transparency = true`は順序に依存しない透明性を使用します。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。

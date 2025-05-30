@@ -2,7 +2,7 @@
 eachcol(A::AbstractVecOrMat) <: AbstractVector
 ```
 
-[`ColumnSlices`](@ref) オブジェクトを作成し、行列またはベクトル `A` の列のベクトルを返します。列スライスは `A` の `AbstractVector` ビューとして返されます。
+行列またはベクトル `A` の列のベクトルである [`ColumnSlices`](@ref) オブジェクトを作成します。列スライスは `A` の `AbstractVector` ビューとして返されます。
 
 逆に関しては、[`stack`](@ref)`(cols)` または `reduce(`[`hcat`](@ref)`, cols)` を参照してください。
 
@@ -13,7 +13,7 @@ eachcol(A::AbstractVecOrMat) <: AbstractVector
 
 
 !!! compat "Julia 1.9"
-    Julia 1.9 より前は、これはイテレータを返していました。
+    Julia 1.9 より前は、これがイテレータを返していました。
 
 
 # 例

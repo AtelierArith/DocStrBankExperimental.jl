@@ -8,7 +8,7 @@ relerrorthreshold(coef, [redundant, tree, elbows; makeplot])
 
   * `coef::AbstractArray{T} where T<:Number`: 分解された信号。
   * `redundant::Bool`: (デフォルト: `false`) `xw` の変換タイプが冗長変換であるかどうか。自己相関や定常ウェーブレット変換は冗長変換の例です。
-  * `tree::Union{BitVector, Nothing}`: (デフォルト: `nothing`) `xw` を分解するための基底ツリー。`xw` が `swd` または `acwpd` を使用して分解される場合は提供する必要があります。
+  * `tree::Union{BitVector, Nothing}`: (デフォルト: `nothing`) `xw` を分解するための基底ツリー。`xw` が `swdp` または `acwpd` を使用して分解される場合は提供する必要があります。
   * `elbows::Integer`: (デフォルト: 2) 最適なしきい値を決定するために使用されるエルボーの数。
 
 # キーワード引数

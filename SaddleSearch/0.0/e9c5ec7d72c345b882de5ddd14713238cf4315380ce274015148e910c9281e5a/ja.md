@@ -1,4 +1,4 @@
-`ODEString`: NEB法の適応ODEステップサイズ選択。
+`ODEString`: NEB法による適応ODEステップサイズ選択。
 
 ### パラメータ:
 

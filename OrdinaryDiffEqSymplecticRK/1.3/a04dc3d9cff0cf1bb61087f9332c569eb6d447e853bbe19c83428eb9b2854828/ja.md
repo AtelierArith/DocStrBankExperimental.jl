@@ -8,4 +8,4 @@ LeapfrogDriftKickDrift()
 
 ## 参考文献
 
-@article{monaghan2005, 	title = {Smoothed particle hydrodynamics}, 	author = {Monaghan, Joseph J.}, 	year = {2005}, 	journal = {Reports on Progress in Physics}, 	volume = {68}, 	number = {8}, 	pages = {1703–1759}, 	doi = {10.1088/0034-4885/68/8/R01}, }
+@article{monaghan2005, 	title = {スムーズ粒子流体力学}, 	author = {モナハン, ジョセフ J.}, 	year = {2005}, 	journal = {物理学の進展に関する報告}, 	volume = {68}, 	number = {8}, 	pages = {1703–1759}, 	doi = {10.1088/0034-4885/68/8/R01}, }

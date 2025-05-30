@@ -2,7 +2,7 @@
 ancestor(c::Context; condition = x -> true, max_level::Int = typemax(Int))
 ```
 
-ノードの最初の祖先を返し、`condition`に一致するものを返します。ルールまたはクエリ内で使用することを意図しています。
+ノードの最初の祖先を返します。これは`condition`に一致します。ルールまたはクエリ内で使用することを意図しています。
 
 ## 引数
 

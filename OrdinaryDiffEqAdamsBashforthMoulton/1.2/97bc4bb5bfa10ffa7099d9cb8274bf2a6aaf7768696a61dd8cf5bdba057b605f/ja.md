@@ -2,11 +2,11 @@
 VCAB3(; thread = OrdinaryDiffEq.False())
 ```
 
-アダムス明示法 3次のアダムス法。ボガッキ-シャンピン 3/2 法が初期値を計算するために使用されます。
+アダムス明示法 3次アダムス法。ボガッキ-シャンピン3/2法が初期値を計算するために使用されます。
 
 ### キーワード引数
 
-  * `thread`: Juliaが複数のスレッドで起動されたときに、適切なCPU配列での内部ブロードキャストを直列（`thread = OrdinaryDiffEq.False()`）にするか、複数のスレッドを使用するかを決定します（`thread = OrdinaryDiffEq.True()`）。
+  * `thread`: 内部ブロードキャスティングが適切なCPU配列で直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用すべきか（`thread = OrdinaryDiffEq.True()`）を決定します。これは、Juliaが複数のスレッドで起動されたときに適用されます。
 
 ## 参考文献
 

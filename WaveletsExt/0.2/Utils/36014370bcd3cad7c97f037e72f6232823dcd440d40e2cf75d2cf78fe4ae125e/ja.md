@@ -11,7 +11,7 @@ ssim(x, x₀)
   * `x::AbstractArray{T} where T<:Number`: ノイズのある信号。
   * `x₀::AbstractArray{T} where T<:Number`: 参照信号。
 
-# 戻り値
+# 返り値
 
 `::AbstractFloat`: xとx₀の間のSNR。
 

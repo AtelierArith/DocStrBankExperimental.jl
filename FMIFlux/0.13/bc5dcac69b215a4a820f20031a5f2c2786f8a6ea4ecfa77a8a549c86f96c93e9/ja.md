@@ -4,4 +4,4 @@ ME-FMUに対して`fmiDoStep`に似た処理を行います（注意：fmiDoStep
 
 オプションとして、追加のFMU値はキーワード引数`setValueReferences`および`setValues`を介して設定できます。オプションとして、追加のFMU値はキーワード引数`getValueReferences`を介して取得できます。
 
-関数は現在のシステム状態配列（"x"）を受け取り、状態導関数（"x dot"）の配列と、オプションで`getValueReferences`のFMU値を返します。引数`t`を介してFMU時間を設定することはオプションであり、設定されていない場合はNeuralFMUの周りのODEソルバーの現在の時間が使用されます。
+関数は現在のシステム状態配列（"x"）を受け取り、状態導関数（"x dot"）の配列と、オプションで`getValueReferences`のFMU値を返します。引数`t`を介してFMU時間を設定することはオプションであり、設定されていない場合は、NeuralFMUの周りのODEソルバーの現在の時間が使用されます。

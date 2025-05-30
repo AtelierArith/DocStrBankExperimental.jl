@@ -16,13 +16,13 @@ BoxCoxTransformation <: PowerTransformation
 # ヒント
 
   * λパラメータを抽出するには、`params`を使用します。
-  * 変換は呼び出し可能であり、次のように行うことができます。
+  * 変換は呼び出し可能であり、次のように実行できます。
 
 ```@example
 bc = fit(BoxCoxTransformation, y)
 y_transformed = bc.(y)
 ```
 
-  * `empty!`を使用することで、メモリ内のBoxCoxTransformationのサイズを減らすことができますが、特定の診断（例：プロットや対数尤度の計算）はもはや利用できなくなります。
+  * `empty!`を使用することで、BoxCoxTransformationのメモリサイズを削減できますが、特定の診断（例：プロットや対数尤度の計算）は利用できなくなります。
 
 さらに[`boxcoxplot`](@ref)、[`params`](@ref)、[`boxcox`](@ref)を参照してください。

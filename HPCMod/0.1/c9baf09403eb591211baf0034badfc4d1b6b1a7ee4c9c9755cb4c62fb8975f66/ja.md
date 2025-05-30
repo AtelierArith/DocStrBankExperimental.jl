@@ -1,4 +1,4 @@
-HPCResource - HPCリソース構造体、リソースの使用状況とジョブを追跡するためのもの
+HPCResource - HPCリソース構造体、リソースの占有状況とジョブを追跡するためのもの
 
   * `nodes::Int64`: ノードの数
   * `node_used_by_job::Vector{Int64}`: そのノードを使用しているジョブIDの配列

@@ -2,7 +2,7 @@
 ellipk(m)
 ```
 
-完全楕円積分の1次の完全楕円積分 $K(m)$ をパラメータ $m$ に対して計算します。
+完全楕円積分の第1種 $K(m)$ をパラメータ $m$ に対して計算します。
 
 $$
 \operatorname{ellipk}(m)
@@ -13,7 +13,7 @@ $$
 
 外部リンク: [DLMF 19.2.8](https://dlmf.nist.gov/19.2.8), [Wikipedia](https://en.wikipedia.org/wiki/Elliptic_integral#Notational_variants).
 
-参照: [`ellipe(m)`](@ref SpecialFunctions.ellipe).
+関連項目: [`ellipe(m)`](@ref SpecialFunctions.ellipe).
 
 # 引数
 
@@ -21,7 +21,7 @@ $$
 
 # 実装
 
-以下のように、区分的近似多項式を使用します。
+以下に示すように、区分近似多項式を使用します。
 
 > 'Fast Computation of Complete Elliptic Integrals and Jacobian Elliptic Functions', Fukushima, Toshio. (2014). F09-FastEI. Celest Mech Dyn Astr, DOI 10.1007/s10569-009-9228-z, [https://pdfs.semanticscholar.org/8112/c1f56e833476b61fc54d41e194c962fbe647.pdf](https://pdfs.semanticscholar.org/8112/c1f56e833476b61fc54d41e194c962fbe647.pdf)
 

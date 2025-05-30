@@ -2,11 +2,11 @@
 findfirst(A)
 ```
 
-配列 `A` の最初の `true` 値のインデックスまたはキーを返します。該当する値が見つからない場合は `nothing` を返します。他の種類の値を検索するには、最初の引数として述語を渡します。
+`A`の最初の`true`値のインデックスまたはキーを返します。そのような値が見つからない場合は`nothing`を返します。他の種類の値を検索するには、最初の引数として述語を渡します。
 
-インデックスまたはキーは、[`keys(A)`](@ref) および [`pairs(A)`](@ref) によって返されるものと同じ型です。
+インデックスまたはキーは、[`keys(A)`](@ref)および[`pairs(A)`](@ref)によって返されるものと同じ型です。
 
-関連情報: [`findall`](@ref), [`findnext`](@ref), [`findlast`](@ref), [`searchsortedfirst`](@ref).
+関連項目: [`findall`](@ref), [`findnext`](@ref), [`findlast`](@ref), [`searchsortedfirst`](@ref).
 
 # 例
 

@@ -13,4 +13,4 @@ monitor(t::Task, onsignal...; timeout::Real=5.0, pollint::Real=0.1)
       * 引数が1つの`f`の場合、`f(msg.reason)`で実行されます;
       * `f, args...`の場合、`f(args..., msg.reason)`で実行されます。
   * `timeout::Real=5.0`: タスクを何秒間監視するか。これを超えると、理由`:timed_out`の[`Down`](@ref)が送信されます。
-  * `pollint::Real=0.1`: タスク監視のためのポーリング間隔（秒）。
+  * `pollint::Real=0.1`: タスク監視のポーリング間隔（秒）。

@@ -2,7 +2,7 @@
 t8_element_num_face_children(ts, elem, face)
 ```
 
-要素が細分化されるときの要素の面の子供の数を計算します。
+要素が細分化されるときの要素の面の子の数を計算します。
 
 # 引数
 
@@ -12,7 +12,7 @@ t8_element_num_face_children(ts, elem, face)
 
 # 戻り値
 
-*elem* が細分化される場合の *face* の子供の数。
+*elem* が細分化される場合の *face* の子の数。
 
 ### プロトタイプ
 

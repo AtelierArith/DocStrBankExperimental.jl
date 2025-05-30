@@ -12,5 +12,5 @@ request(lk::Link, M::Type{<:Msg}, args...; kwargs...)
   * `Msg::Type{<:Msg}`: メッセージタイプ、
   * `args...`: `Msg`へのオプション引数、
   * `full`: `true`の場合、完全な [`Response`](@ref) メッセージを返します。
-  * `timeout::Real=5.0`: タイムアウト（秒単位）で、これを過ぎると [`Timeout`](@ref) が返されます、
+  * `timeout::Real=5.0`: 秒単位のタイムアウト、これを過ぎると [`Timeout`](@ref) が返されます、
   * `kwargs...`: `full` または `timeout`。

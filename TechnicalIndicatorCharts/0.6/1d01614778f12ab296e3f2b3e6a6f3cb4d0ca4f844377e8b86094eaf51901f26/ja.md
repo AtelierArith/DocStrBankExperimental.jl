@@ -7,4 +7,4 @@ visualize(
 
 ```
 
-1本のlwc_lineを使用してEMAを視覚化します。
+1つのlwc_lineを使用してEMAを視覚化します。

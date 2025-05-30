@@ -1,3 +1,3 @@
 ```
-turtle.head_direction
+turtle.head.direction
 ```

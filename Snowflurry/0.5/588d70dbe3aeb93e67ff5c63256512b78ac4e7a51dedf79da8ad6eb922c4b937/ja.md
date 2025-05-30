@@ -11,7 +11,7 @@ circuit_contains_gate_type(
 
 ```jldoctest
 julia> circuit = QuantumCircuit(qubit_count = 1, instructions = [sigma_x(1), sigma_y(1)])
-Quantum Circuit Object:
+量子回路オブジェクト:
    qubit_count: 1 
    bit_count: 1 
 q[1]:──X────Y──

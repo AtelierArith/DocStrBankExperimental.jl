@@ -2,7 +2,7 @@
 struct CallbackSet{T1<:Tuple, T2<:Tuple} <: SciMLBase.DECallback
 ```
 
-複数のコールバックを連結して `CallbackSet` を形成することができます。`CallbackSet` は、コンストラクタ `ContinuousCallback`、`DiscreteCallback`、`VectorContinuousCallback` または他の `CallbackSet` インスタンスを渡すことによって構築されます：
+複数のコールバックを連鎖させて `CallbackSet` を形成することができます。`CallbackSet` は、コンストラクタ `ContinuousCallback`、`DiscreteCallback`、`VectorContinuousCallback` または他の `CallbackSet` インスタンスを渡すことによって構築されます：
 
 ```
 CallbackSet(cb1,cb2,cb3)

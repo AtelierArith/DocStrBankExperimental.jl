@@ -2,7 +2,7 @@
 t8_offset_nosend(proc, mpisize, offset_from, offset_to)
 ```
 
-再分配設定において、特定のプロセスが他のプロセス（自分自身を含む）にローカルツリーを送信するかどうかを照会します。
+与えられたプロセスが他のプロセス（自分自身を含む）にローカルツリーを送信するかどうかを再分配設定で照会します。
 
 # 引数
 
@@ -13,7 +13,7 @@ t8_offset_nosend(proc, mpisize, offset_from, offset_to)
 
 # 戻り値
 
-*proc*が*offset_from*から*offset_to*に再分配する場合にローカルツリーを送信しない場合は非ゼロ、ローカルツリーを送信する場合は0。
+*proc*が*offset_from*から*offset_to*に再分配する場合、ローカルツリーを送信しない場合は非ゼロ、送信する場合は0。
 
 ### プロトタイプ
 

@@ -4,7 +4,7 @@ Hermitian(A::AbstractMatrix, uplo::Symbol=:U)
 
 行列 `A` の上三角（`uplo = :U` の場合）または下三角（`uplo = :L` の場合）の `Hermitian` ビューを構築します。
 
-`A` の Hermitian 部分を計算するには、[`hermitianpart`](@ref) を使用してください。
+`A` のエルミート部分を計算するには、[`hermitianpart`](@ref) を使用してください。
 
 # 例
 
@@ -34,9 +34,9 @@ julia> hermitianpart(A)
  5.0+1.5im  7.0+7.0im  9.0+0.0im
 ```
 
-`Hupper` は `A` 自体が Hermitian でない限り（例えば `A == adjoint(A)` の場合） `Hlower` と等しくなりません。
+`Hupper` は `Hlower` と等しくなりません、`A` 自体がエルミートでない限り（例：`A == adjoint(A)` の場合）。
 
-対角線のすべての非実部は無視されます。
+対角の非実部はすべて無視されます。
 
 ```julia
 Hermitian(fill(complex(1,1), 1, 1)) == fill(1, 1, 1)

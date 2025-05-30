@@ -4,4 +4,4 @@ SplitODEProblem(f, u0, tspan, p; kwargs...)
 
 ```
 
-[`SplitFunction`](@ref)から分割ODE問題を定義します。
+[`SplitFunction`](@ref) から分割ODE問題を定義します。

@@ -5,7 +5,7 @@ t8_element_copy(ts, source, dest)
 **source**のすべてのエントリを**dest**にコピーします。**dest**は既存の要素でなければなりません。この関数によってメモリは割り当てられません。
 
 !!! note
-    *source* と *dest* は同じ要素を指す場合があります。
+    *source*と*dest*は同じ要素を指す場合があります。
 
 
 # 引数

@@ -21,7 +21,7 @@ julia> readline("goodbye.txt")
 julia> write("hello.txt", "world2");
 
 julia> mv("hello.txt", "goodbye.txt")
-ERROR: ArgumentError: 'goodbye.txt' exists. `force=true` is required to remove 'goodbye.txt' before moving.
+ERROR: ArgumentError: 'goodbye.txt' が存在します。 'goodbye.txt' を移動する前に削除するには `force=true` が必要です。
 Stacktrace:
  [1] #checkfor_mv_cp_cptree#10(::Bool, ::Function, ::String, ::String, ::String) at ./file.jl:293
 [...]

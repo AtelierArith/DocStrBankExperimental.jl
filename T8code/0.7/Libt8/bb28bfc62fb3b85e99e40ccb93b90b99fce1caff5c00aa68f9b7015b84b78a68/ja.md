@@ -11,7 +11,7 @@ t8_element_array_index_locidx_mutable(element_array, index)
 
 # 戻り値
 
-*element_array*の*index*位置に格納されている要素へのポインタ。
+*element_array*の*index*位置に格納された要素へのポインタ。
 
 ### プロトタイプ
 

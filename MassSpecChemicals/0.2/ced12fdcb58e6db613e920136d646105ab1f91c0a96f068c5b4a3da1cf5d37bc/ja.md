@@ -4,7 +4,7 @@ isotopologues_table(formula::AbstractString, abundance = 1; abtype = :max, thres
 isotopologues_table(tbl::Table; colchemical = :Chemical, colabundance = :Abundance, abundance = 1, colpreserve = setdiff(propertynames(tbl), [colchemical, colabundance]), kwargs...)
 isotopologues_table(v::Vector, abundance = 1; kwargs...)
 
-単一の `chemical` または `formula` の同位体分子の `Table`（`parse_chemical` によって `Chemical` に変換される）、または `v` の複数の化学物質または `tbl` の `colchemical` 列。
+単一の `chemical` または `formula` の同位体分子の `Table`（`parse_chemical` によって `Chemical` に変換）、または `v` の複数の化学物質または `tbl` の列 `colchemical`。
 
   * `abundance` は `abtype` によって指定された同位体の存在量を設定します。
 

@@ -9,7 +9,7 @@ aws_mqtt_client_connection_publish(connection, topic, qos, retain, payload, on_c
   * `connection`:[in] 公開する接続
   * `topic`:[in] 公開するトピック
   * `qos`:[in] パケットの要求されたQoS
-  * `retain`:[in] サーバーにパケットを保存させ、トピックに一致するすべての新しいサブスクリプションに送信するにはTrue
+  * `retain`:[in] サーバーにパケットを保存させ、トピックに一致するすべての新しいサブスクリプションに送信させる場合はTrue
   * `payload`:[in] 公開のペイロードとして送信するデータ
   * `on_complete`:[in](nullable) QoS 0の場合、パケットが送信されるとすぐに呼び出されます。QoS 1の場合、PUBACKを受信したときに呼び出されます。QoS 2の場合、PUBCOMPを受信したときに呼び出されます。
   * `user_data`:[in](nullable) on_completeに渡されます

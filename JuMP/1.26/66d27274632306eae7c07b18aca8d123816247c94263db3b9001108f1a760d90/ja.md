@@ -11,7 +11,7 @@
 
 ## キーワード引数
 
-  * `container = :Auto`: `container = Array`、`container = DenseAxisArray`、`container = SparseAxisArray`、またはJuMP拡張によってサポートされている他のコンテナタイプを渡すことで、コンテナタイプを強制します。
+  * `container = :Auto`: `container = Array`、`container = DenseAxisArray`、`container = SparseAxisArray`、またはJuMP拡張によってサポートされている他の任意のコンテナタイプを渡すことで、コンテナタイプを強制します。
 
 ## 例
 
@@ -27,7 +27,7 @@ julia> shared
 x[1] + 2 x[2] + 3 x[3] + 4 x[4] + 5 x[5]
 ```
 
-[`@variable`](@ref) と同様に、第二引数はインデックスセットを定義することができ、これらのインデックスは式の構築に使用できます：
+[`@variable`](@ref) と同様に、2番目の引数はインデックスセットを定義することができ、これらのインデックスは式の構築に使用できます：
 
 ```jldoctest
 julia> model = Model();

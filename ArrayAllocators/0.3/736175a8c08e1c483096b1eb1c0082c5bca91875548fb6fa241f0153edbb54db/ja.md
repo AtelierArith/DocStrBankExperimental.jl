@@ -10,7 +10,7 @@ POSIXシステムでは、`alignment` は `sizeof(Ptr)` の倍数でなければ
 
 `alignment` が指定されていない場合、`min_alignment(MemAlign)` に設定されます。
 
-`MemAlign` は、次のいずれかのプラットフォーム固有の実装の定数エイリアスです。
+`MemAlign` は次のプラットフォーム固有の実装のいずれかへの定数エイリアスです。
 
   * POSIX (LinuxおよびmacOS): [`POSIX.PosixMemAlign`](@ref)
   * Windows: [`Windows.WinMemAlign`](@ref).

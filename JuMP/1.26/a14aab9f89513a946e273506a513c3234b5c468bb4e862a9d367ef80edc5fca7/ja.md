@@ -2,9 +2,9 @@
 all_constraints(model::GenericModel, function_type, set_type)::Vector{<:ConstraintRef}
 ```
 
-モデル内のすべての制約のリストを返します。関数のタイプは `function_type` であり、セットのタイプは `set_type` です。制約は作成時間順に並べられます。
+モデル内のすべての制約のリストを返します。関数のタイプは `function_type` で、セットのタイプは `set_type` です。制約は作成時間順に並べられます。
 
-[`list_of_constraint_types`](@ref) および [`num_constraints`](@ref) も参照してください。
+関連情報として [`list_of_constraint_types`](@ref) と [`num_constraints`](@ref) を参照してください。
 
 ## 例
 

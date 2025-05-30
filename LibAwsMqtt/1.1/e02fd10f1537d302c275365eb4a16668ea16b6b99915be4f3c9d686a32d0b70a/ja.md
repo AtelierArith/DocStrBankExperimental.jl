@@ -2,7 +2,7 @@
 aws_mqtt_client_connection_set_on_any_publish_handler(connection, on_any_publish, on_any_publish_ud)
 ```
 
-ANYのパブリッシュパケットが受信されるたびに呼び出されるコールバックを設定します。接続が確立されていないときのみ設定するのが安全です。
+ANYのパブリッシュパケットが受信されるたびに呼び出されるコールバックを設定します。接続されていないときにのみ設定するのが安全です。
 
 # 引数
 

@@ -25,8 +25,8 @@ AbstractPhaseSpacePoint{PROC, MODEL, PSL, IN_PARTICLES, OUT_PARTICLES}
 
 さらに、[`AbstractPhaseSpacePoint`](@ref) の実装は、構築時にそれが有効であることを確認しなければなりません。すなわち、次の条件が満たされている必要があります：
 
-  * `IN_PARTICLES` は `incoming_particles(::PROC)` の長さ、順序、型と一致しなければならない **または** 空の `Tuple` でなければなりません。
-  * `OUT_PARTICLES` は `outgoing_particles(::PROC)` の長さ、順序、型と一致しなければならない **または** 空の `Tuple` でなければなりません。
-  * `IN_PARTICLES` と `OUT_PARTICLES` の両方が空であってはなりません。
+  * `IN_PARTICLES` は `incoming_particles(::PROC)` と長さ、順序、型が一致しなければならず、**または** 空の `Tuple` でなければなりません。
+  * `OUT_PARTICLES` は `outgoing_particles(::PROC)` と長さ、順序、型が一致しなければならず、**または** 空の `Tuple` でなければなりません。
+  * `IN_PARTICLES` と `OUT_PARTICLES` は両方とも空であってはなりません。
 
 もし `IN_PARTICLES` が空でない場合、`AbstractPhaseSpacePoint <: AbstractInPhaseSpacePoint` は真です。同様に、`OUT_PARTICLES` が空でない場合、`AbstractPhaseSpacePoint <: AbstractOutPhaseSpacePoint` は真です。したがって、`IN_PARTICLES` と `OUT_PARTICLES` の両方が空でない場合、両方の `<:` 文は真です。

@@ -4,7 +4,7 @@ pop!(collection) -> item
 
 `collection` からアイテムを削除し、それを返します。`collection` が順序付きコンテナの場合、最後のアイテムが返されます; 順序なしコンテナの場合は、任意の要素が返されます。
 
-参照: [`popfirst!`](@ref), [`popat!`](@ref), [`delete!`](@ref), [`deleteat!`](@ref), [`splice!`](@ref), および [`push!`](@ref).
+関連項目: [`popfirst!`](@ref), [`popat!`](@ref), [`delete!`](@ref), [`deleteat!`](@ref), [`splice!`](@ref), および [`push!`](@ref).
 
 # 例
 

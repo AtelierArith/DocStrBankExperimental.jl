@@ -8,6 +8,6 @@ MicrobiomeSample(name::String)
 
 メタデータは、サンプル自体に対して`getproperty`または`getindex`を使用してアクセスできます。
 
-サンプルは名前のみでインスタンス化でき、`metadata`の`Dictionary`は空白のままにできます。
+サンプルは名前だけでインスタンス化でき、`metadata`の`Dictionary`は空白のままにできます。
 
-メタデータの追加や変更は、通常の`Dictionary`と同じルールに従います。[こちら](https://github.com/andyferris/Dictionaries.jl#accessing-dictionaries)を参照してください。
+メタデータの追加や変更は、通常の`Dictionary`と同じルールに従います。[the same rules](https://github.com/andyferris/Dictionaries.jl#accessing-dictionaries)。

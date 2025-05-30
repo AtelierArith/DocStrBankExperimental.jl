@@ -6,4 +6,4 @@ exponents(t::AbstractTermLike)
 
 ### 例
 
-`exponents(x^2*y)` を呼び出すと `(2, 1)` が返されるはずです。
+`exponents(x^2*y)` を呼び出すと `(2, 1)` が返されるべきです。

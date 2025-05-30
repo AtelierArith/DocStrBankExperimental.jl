@@ -4,7 +4,7 @@ cbrt(A::AbstractMatrix{<:Real})
 
 実数値行列 `A` の実数値立方根を計算します。もし `T = cbrt(A)` であれば、`T*T*T ≈ A` となります。以下に示す例を参照してください。
 
-もし `A` が対称であれば、すなわち `HermOrSym{<:Real}` 型であれば、([`eigen`](@ref)) を使用して立方根を求めます。そうでない場合は、特化した p-th 根アルゴリズム [^S03] が利用され、実数値シュール分解 ([`schur`](@ref)) を利用して立方根を計算します。
+もし `A` が対称であれば、すなわち `HermOrSym{<:Real}` 型であれば、([`eigen`](@ref)) を使用して立方根を求めます。そうでない場合は、特化した p-th ルートアルゴリズム [^S03] が利用され、実数値シュール分解 ([`schur`](@ref)) を利用して立方根を計算します。
 
 [^S03]: Matthew I. Smith, "A Schur Algorithm for Computing Matrix pth Roots", SIAM Journal on Matrix Analysis and Applications, vol. 24, 2003, pp. 971–989. [doi:10.1137/S0895479801392697](https://doi.org/10.1137/s0895479801392697)
 

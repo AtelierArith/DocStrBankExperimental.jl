@@ -11,5 +11,5 @@ Dmrgは混合表現には対応していないことに注意してください�
 
   * `nsweeps`: スイープの数
   * `observer!`: オブザーバー（`DmrgObserver`を参照）
-  * `limits`: mpsに対する制約（`cutoff`と`maxdim`は各スイープに対して異なる値を持つベクトルである可能性があります）
+  * `limits`: mpsに対する制約（`cutoff`および`maxdim`は各スイープに対して異なる値を持つベクトルである可能性があります）
   * その他はITensorMPS.dmrgと同じです

@@ -9,7 +9,7 @@ VectorData <: PointData
   * `VectorData(d::AbstractVector[,dtype=Float64])` は、データ `d` の一次元配列のラッパーを構築し、`d` を `u` と `v` の成分に均等に分割します。
   * `VectorData(u::AbstractVector,v::AbstractVector)` は、ベクトル成分データ `u` と `v` のラッパーを構築します。
   * `VectorData(n::Int)` は、両方の成分の長さ `n` のゼロで構成されたラッパーを構築します。
-  * `VectorData(x::PointData)` は、`x` にラップされたのと同じ長さのゼロ成分のラッパーを構築します。
+  * `VectorData(x::PointData)` は、`x` にラップされたものと同じ長さのゼロ成分のラッパーを構築します。
   * `VectorData(n::Int,dtype=ComplexF64)` は、両方の成分の長さ `n` の複素値ゼロで構成されたラッパーを構築します。
 
 # 例

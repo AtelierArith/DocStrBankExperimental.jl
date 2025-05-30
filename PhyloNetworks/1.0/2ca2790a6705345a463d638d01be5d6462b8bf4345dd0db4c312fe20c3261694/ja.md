@@ -13,5 +13,5 @@ majortree(net::HybridNetwork; nofuse::Bool=false, unroot::Bool=false,
 
 警告:
 
-  * `nofuse`がtrueの場合: 保持されるハイブリッドエッジ（融合なし）のγ値は変更されませんが、`ismajor`はtrueに変更されます。
+  * `nofuse`がtrueの場合：保持されるハイブリッドエッジ（融合なし）のγ値は変更されませんが、`ismajor`はtrueに変更されます。
   * 正しい`ismajor`属性を仮定します。

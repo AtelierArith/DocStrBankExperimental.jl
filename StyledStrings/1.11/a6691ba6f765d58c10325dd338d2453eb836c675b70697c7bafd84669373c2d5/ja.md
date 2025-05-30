@@ -2,9 +2,9 @@
 addface!(name::Symbol => default::Face)
 ```
 
-名前 `name` の新しいフェイスを作成します。この名前のフェイスがすでに存在しない限り、`default` が `FACES``.default` と (そのコピーが) `FACES`.`current` に追加され、現在の値が返されます。
+名前 `name` の新しいフェイスを作成します。この名前で既にフェイスが存在しない限り、`default` が `FACES``.default` と (そのコピーが) `FACES`.`current` に追加され、現在の値が返されます。
 
-フェイス `name` がすでに存在する場合、`nothing` が返されます。
+フェイス `name` が既に存在する場合、`nothing` が返されます。
 
 # 例
 

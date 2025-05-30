@@ -14,7 +14,7 @@ performance_profile(b, T, labels; logscale=true, title="", sampletol=0.0, drawto
 
   * `logscale :: Bool=true`: 対数（基数2）パフォーマンスプロットを生成します。
   * `title :: AbstractString=""`: プロットのタイトルを設定します。
-  * `sampletol :: Float64 = 0.0`: 大量の問題を使用する際にパフォーマンスのためにプロファイルをダウンサンプリングするために使用される許容誤差。
+  * `sampletol :: Float64 = 0.0`: 大量の問題を使用する際にパフォーマンスのためにプロファイルをダウンサンプルするために使用される許容誤差。
   * `drawtol :: Float64 = 0.0`: 2つのパフォーマンス測定の間で引き分けを宣言するための許容誤差。
   * `linestyles::Vector{Symbol}`: バックエンドがサポートしている場合、プロファイルに使用するラインスタイルのベクター。
 

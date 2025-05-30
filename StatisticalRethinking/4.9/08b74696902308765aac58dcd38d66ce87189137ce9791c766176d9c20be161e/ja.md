@@ -1,6 +1,6 @@
-# リスケール
+# rescale
 
-ベクトルを「非標準化」するためにリスケールします。これは scale!() の逆です。
+ベクトルを「非標準化」するために再スケーリングします。これは、scale!()の逆です。
 
 ```julia
 rescale(x, xbar, xstd)
@@ -12,13 +12,13 @@ rescale(x, xbar, xstd)
 ### 必要な引数
 
 ```julia
-* `x::Vector{Float64}`                 : リスケールされるベクトル
-* `xbar`                               : リスケーリングのための平均値
-* `xstd`                               : リスケーリングのための標準偏差
+* `x::Vector{Float64}`                 : 再スケーリングされるベクトル
+* `xbar`                               : 再スケーリングのための平均値
+* `xstd`                               : 再スケーリングのための標準偏差
 ```
 
 ### 戻り値
 
 ```julia
-* `result::AbstractVector`             : リスケールされたベクトル
+* `result::AbstractVector`             : 再スケーリングされたベクトル
 ```

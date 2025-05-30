@@ -4,4 +4,4 @@ supernodetree(graph;
     snd::SupernodeType=DEFAULT_SUPERNODE_TYPE)
 ```
 
-スーパーノード消去木を構築します。
+スーパーノード除去木を構築します。

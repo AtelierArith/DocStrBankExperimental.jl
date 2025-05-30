@@ -8,7 +8,7 @@ differentiate(p::AbstractPolynomialLike, v::AbstractVariable, deg::Union{Int, Va
 differentiate(p::AbstractPolynomialLike, vs, deg::Union{Int, Val}=1)
 ```
 
-変数のベクトルまたはタプル `vs` に対して多項式 `p` を `deg` 回微分し、次元 `deg` の配列を返します。コンパイル時に次数が既知の場合は、`differentiate(p, v, Val{2}())` のように `Val` インスタンスとして `deg` を渡すことをお勧めします。これにより、コンパイラが戻り値の型を推論しやすくなります。
+変数のベクトルまたはタプル `vs` に対して多項式 `p` を `deg` 回微分し、次元 `deg` の配列を返します。コンパイル時に次数が分かっている場合は、`differentiate(p, v, Val{2}())` のように `Val` インスタンスとして `deg` を渡すことをお勧めします。これにより、コンパイラが戻り値の型を推論しやすくなります。
 
 ```
 differentiate(p::AbstractArray{<:AbstractPolynomialLike, N}, vs, deg::Union{Int, Val}=1) where N

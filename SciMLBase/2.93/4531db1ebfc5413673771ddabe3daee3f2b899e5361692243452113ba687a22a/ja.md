@@ -7,5 +7,5 @@ reeval_internals_due_to_modification!(integrator::DEIntegrator, continuous_modif
 
 # 引数
 
-  * `continuous_modification`: 変更が連続的な変化（連続コールバック）によるものか、離散的なコールバックによるものかを決定します。連続的な変化の場合、これは再評価を必要とする時間の変更を含むことがあります。
+  * `continuous_modification`: 変更が連続的な変化（連続コールバック）によるものか、離散的なコールバックによるものかを決定します。連続的な変化の場合、これは再評価が必要な時間の変更を含むことがあります。
   * `callback_initializealg`: コールバックによって提供される初期化アルゴリズム。DAEの場合、これはコールバック後に行われる初期化の選択です。デフォルト値の`nothing`は、DAEに対して使用される初期化の選択がコールバック後に行われるべきであることを意味します。

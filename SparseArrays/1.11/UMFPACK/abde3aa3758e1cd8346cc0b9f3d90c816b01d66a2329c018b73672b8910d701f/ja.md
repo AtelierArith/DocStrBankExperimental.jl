@@ -4,32 +4,32 @@ lu(A::AbstractSparseMatrixCSC; check = true, q = nothing, control = get_umfpack_
 
 スパース行列 `A` のLU因子分解を計算します。
 
-実数または複素数要素型のスパース `A` の場合、`F` の戻り値の型は `UmfpackLU{Tv, Ti}` であり、`Tv` は [`Float64`](@ref) または `ComplexF64` でそれぞれ、`Ti` は整数型（[`Int32`](@ref) または [`Int64`](@ref)）です。
+実数または複素数要素型のスパース `A` の場合、`F` の戻り値の型は `UmfpackLU{Tv, Ti}` であり、`Tv` は [`Float64`](@ref) または `ComplexF64` であり、`Ti` は整数型（[`Int32`](@ref) または [`Int64`](@ref)）です。
 
-`check = true` の場合、分解が失敗した場合はエラーがスローされます。`check = false` の場合、分解の有効性を確認する責任（[`issuccess`](@ref) を介して）はユーザーにあります。
+`check = true` の場合、分解が失敗した場合はエラーがスローされます。`check = false` の場合、分解の有効性を確認する責任はユーザーにあります（[`issuccess`](@ref) を介して）。
 
 置換 `q` は置換ベクトルまたは `nothing` である可能性があります。置換ベクトルが提供されない場合や `q` が `nothing` の場合、UMFPACKのデフォルトが使用されます。置換がゼロベースでない場合、ゼロベースのコピーが作成されます。
 
-`control` ベクトルは、UMFPACKのためのJulia SparseArraysパッケージのデフォルト設定にデフォルトで設定されます（注：これは反復精度を無効にするためにUMFPACKのデフォルトから修正されています）が、`UMFPACK_CONTROL` の長さのベクトルを渡すことで変更できます。可能な設定についてはUMFPACKマニュアルを参照してください。たとえば、反復精度を再有効にするには：
+`control` ベクトルは、UMFPACKのためのJulia SparseArraysパッケージのデフォルト設定にデフォルトで設定されています（注：これは反復精度を無効にするためにUMFPACKのデフォルトから変更されています）が、`UMFPACK_CONTROL` の長さのベクトルを渡すことで変更できます。可能な設定についてはUMFPACKマニュアルを参照してください。たとえば、反復精度を再有効にするには：
 
 ```
 umfpack_control = SparseArrays.UMFPACK.get_umfpack_control(Float64, Int64) # Float64スパース行列のためのJuliaデフォルト設定を読み取る
 SparseArrays.UMFPACK.show_umf_ctrl(umfpack_control) # オプション - 値を表示
-umfpack_control[SparseArrays.UMFPACK.JL_UMFPACK_IRSTEP] = 2.0 # 反復精度を再有効にする（2はUMFPACKのデフォルトの最大反復精度ステップ）
+umfpack_control[SparseArrays.UMFPACK.JL_UMFPACK_IRSTEP] = 2.0 # 反復精度を再有効にする（2はUMFPACKのデフォルトの最大反復精度ステップ数）
 
 Alu = lu(A; control = umfpack_control)
-x = Alu \ b   # Ax = bを解く、UMFPACKの反復精度を含む
+x = Alu \ b   # Ax = b を解く、UMFPACKの反復精度を含む
 ```
 
 因子分解 `F` の個々のコンポーネントにはインデックスを使用してアクセスできます：
 
 | コンポーネント | 説明                     |
 |:------- |:---------------------- |
-| `L`     | `LU` の下三角部分 `L`        |
-| `U`     | `LU` の上三角部分 `U`        |
+| `L`     | `LU` の `L`（下三角）部分      |
+| `U`     | `LU` の `U`（上三角）部分      |
 | `p`     | 右置換 `Vector`           |
 | `q`     | 左置換 `Vector`           |
-| `Rs`    | スケーリングファクターの `Vector`  |
+| `Rs`    | スケーリング係数の `Vector`     |
 | `:`     | `(L,U,p,q,Rs)` コンポーネント |
 
 `F` と `A` の関係は次の通りです。

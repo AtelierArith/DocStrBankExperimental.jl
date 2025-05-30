@@ -10,7 +10,7 @@ TFTD(phases::Bool = true, fϵ = 0.05)
 
 ここでは、ランダムフーリエ信号を生成する前後に信号から最適フィットの線形トレンドが除去/追加されます。原則として、任意のトレンドを除去できますが、これまでのところ、線形オプションのみを提供しています。
 
-関連情報: [`TFTDAAFT`](@ref), [`TFTDIAAFT`](@ref)。
+関連情報: [`TFTDAAFT`](@ref), [`TFTDIAAFT`](@ref).
 
 [^Nakamura2006]: Nakamura, Tomomichi, Michael Small, and Yoshito Hirata. "Testing for nonlinearity in irregular fluctuations with long-term trends." Physical Review E 74.2 (2006): 026205.
 

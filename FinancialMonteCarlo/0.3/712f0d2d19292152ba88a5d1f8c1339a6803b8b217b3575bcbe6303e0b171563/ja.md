@@ -1,4 +1,4 @@
-バリアアップ・アウトオプションの構造体
+バリアーアップ・アウトオプションの構造体
 
 ```
 	barOption=BarrierOptionUpOut(T::num1,K::num2,barrier::num3,isCall::Bool=true) where {num1 <: Number,num2 <: Number,num3 <: Number}

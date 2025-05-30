@@ -6,7 +6,7 @@ swpd(x, wt[, L])
 
 # 引数
 
-  * `x::AbstractVector{T}` または `x::AbstractMatrix{T} where T<:Number`: 元の信号で、サイズはできれば2ᴷであることが望ましい（$K \in \mathbb{N}$）。
+  * `x::AbstractVector{T}` または `x::AbstractMatrix{T} where T<:Number`: 元の信号で、サイズはできれば2ᴷであること（$K \in \mathbb{N}$）。
   * `wt::OrthoFilter`: 直交ウェーブレットフィルター。
   * `L::Integer`: （デフォルト: `maxtransformlevels(x)`）分解のレベル数。
 

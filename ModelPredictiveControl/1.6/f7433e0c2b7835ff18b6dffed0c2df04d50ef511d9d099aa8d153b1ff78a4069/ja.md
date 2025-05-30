@@ -4,7 +4,7 @@ updatestate!(estim::StateEstimator, u, ym, d=[]) -> x̂next
 
 現在の入力 `u`、測定された出力 `ym` および分布 `d` を使用して `estim.x̂0` の推定値を更新します。
 
-この関数は、各離散時間ステップの最後に呼び出す必要があります。 [`remove_op!`](@ref) で動作点を削除し、[`update_estimate!`](@ref) を呼び出し、次の時間ステップの状態推定値 $\mathbf{x̂}_k(k+1)$ を返します。推定値を修正するために、[`preparestate!`](@ref) をこの関数の前に呼び出す必要があります（`estim.direct == true` の場合）。デフォルトの `direct=true` オプションを持つ [`MovingHorizonEstimator`](@ref) は $\mathbf{x̂}_k(k+1)$ を推定することができないため、返される値は現在の修正された状態 $\mathbf{x̂}_k(k)$ です。
+この関数は、各離散時間ステップの最後に呼び出す必要があります。 [`remove_op!`](@ref) で動作点を削除し、[`update_estimate!`](@ref) を呼び出し、次の時間ステップの状態推定値 $\mathbf{x̂}_k(k+1)$ を返します。推定が適用可能な場合（`estim.direct == true` の場合）、この関数の前に [`preparestate!`](@ref) を呼び出す必要があります。デフォルトの `direct=true` オプションを持つ [`MovingHorizonEstimator`](@ref) は $\mathbf{x̂}_k(k+1)$ を推定することができないため、返される値は現在の修正された状態 $\mathbf{x̂}_k(k)$ です。
 
 # 例
 

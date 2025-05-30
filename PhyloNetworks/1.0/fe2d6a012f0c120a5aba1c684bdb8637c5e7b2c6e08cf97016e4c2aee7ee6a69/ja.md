@@ -8,7 +8,7 @@ getparents(node)
 親の**ノード**を取得します。
 
   * `getparent`: `edge`または`node`の**主要**（または唯一の）親ノード
-  * `getparentminor`: `node`の小親ノード
+  * `getparentminor`: `node`のマイナー親ノード
   * `getparents`: `node`のすべての親ノードのベクトル。
 
 ```
@@ -19,9 +19,9 @@ getparentedgeminor(node)
 `node`の親の**エッジ**を1つ取得します。
 
   * `getparentedge`: 主要な親エッジ。ツリーノードの場合、それは唯一の親エッジです。
-  * `getparentedgeminor`: 小親エッジ。`node`がハイブリッドの場合（`node`に小親がない場合はエラー）。
+  * `getparentedgeminor`: マイナー親エッジ。`node`がハイブリッドの場合（`node`にマイナー親がない場合はエラー）。
 
-`node`に複数の主要（または小）親エッジがある場合、最初のものが警告やエラーなしに返されます。
+`node`に複数の主要（またはマイナー）親エッジがある場合、最初のものが警告やエラーなしに返されます。
 
 *警告*: これらの関数はエッジのフィールド`ischild1`を使用します。
 

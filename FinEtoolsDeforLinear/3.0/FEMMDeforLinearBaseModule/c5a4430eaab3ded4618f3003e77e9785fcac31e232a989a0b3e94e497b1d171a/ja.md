@@ -26,9 +26,9 @@ inspectintegpoints(
   * `geom` - 参照幾何フィールド
   * `u` - 変位フィールド
   * `dT` - 温度差フィールド
-  * `felist` - 検査対象の有限要素のインデックス: 含めるfesは次の通りです: `fes[felist]`。
-  * `context`    - 構造体: 材料のupdate!()メソッドを参照してください。
-  * `inspector` - シグネチャidat = inspector(idat, j, conn, x, out, loc);を持つ関数。ここで`idat`は、検査官が状態を維持するために使用する構造体または配列で、例えば応力の最小値または最大値、`j`は要素番号、`conn`は要素の接続性、`out`はupdate!()メソッドの出力、`loc`は*参照*構成における積分点の位置です。
+  * `felist` - 検査対象の有限要素のインデックス: 含めるfesは `fes[felist]` です。
+  * `context`    - 構造体: 材料の update!() メソッドを参照してください。
+  * `inspector` - シグネチャ idat = inspector(idat, j, conn, x, out, loc); を持つ関数; ここで `idat` は、検査官が状態を維持するために使用する構造体または配列で、例えば応力の最小値または最大値、`j` は要素番号、`conn` は要素の接続性、`out` は update!() メソッドの出力、`loc` は *参照* 構成における積分点の位置です。
 
 # 戻り値
 

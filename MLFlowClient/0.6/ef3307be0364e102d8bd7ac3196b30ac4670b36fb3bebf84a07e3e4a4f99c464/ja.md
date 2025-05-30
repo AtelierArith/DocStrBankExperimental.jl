@@ -7,7 +7,7 @@ getexperiment(instance::MLFlow, experiment_id::Integer)
 
 # 引数
 
-  * `instance`: [`MLFlow`](@ref) 設定。
+  * `instance`: [`MLFlow`](@ref)の設定。
   * `experiment_id`: 関連する[`Experiment`](@ref)のID。
 
 # 戻り値

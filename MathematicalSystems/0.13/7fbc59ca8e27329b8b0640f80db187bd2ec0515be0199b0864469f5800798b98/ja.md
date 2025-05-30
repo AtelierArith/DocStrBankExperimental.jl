@@ -2,7 +2,7 @@
 BlackBoxControlContinuousSystem <: AbstractContinuousSystem
 ```
 
-右辺が次の形で定義された連続時間制御システム:
+右辺が次の形式で定義された連続時間制御システム:
 
 $$
     x(t)' = f(x(t), u(t)) \; \forall t.

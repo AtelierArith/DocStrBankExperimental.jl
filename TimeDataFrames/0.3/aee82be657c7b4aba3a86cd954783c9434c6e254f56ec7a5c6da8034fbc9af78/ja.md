@@ -2,4 +2,4 @@
 dataframe(tdf::TimeDataFrame)
 ```
 
-は、TimeDataFrame内のDataFrameを返します。
+はTimeDataFrame内のDataFrameを返します。

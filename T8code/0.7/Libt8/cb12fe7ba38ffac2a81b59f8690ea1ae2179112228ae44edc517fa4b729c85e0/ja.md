@@ -6,13 +6,13 @@ t8_cmesh_trees_start_part(trees, proc, lfirst_tree, num_trees, lfirst_ghost, num
 
 # 引数
 
-  * `trees`:[in,out] 更新される木構造体。
-  * `proc`:[in] 更新されるパートのインデックス。
-  * `lfirst_tree`:[in] そのパートの最初の木のローカル ID。
-  * `num_trees`:[in] そのパートの木の数。
-  * `lfirst_ghost`:[in] そのパートの最初のゴーストのローカル ID。
-  * `num_ghosts`:[in] そのパートのゴーストの数。
-  * `alloc`:[in] true の場合、木とゴーストの数に対して first_tree 配列が割り当てられます。cmesh がコピーされるとき、これを望まないので、alloc = 0 を渡します。
+  * `trees`:[in,out] 更新される木構造。
+  * `proc`:[in] 更新される部分のインデックス。
+  * `lfirst_tree`:[in] その部分の最初の木のローカル ID。
+  * `num_trees`:[in] その部分の木の数。
+  * `lfirst_ghost`:[in] その部分の最初のゴーストのローカル ID。
+  * `num_ghosts`:[in] その部分のゴーストの数。
+  * `alloc`:[in] true の場合、木とゴーストの数に対して first_tree 配列が割り当てられます。cmesh がコピーされるとき、これを望まないため、alloc = 0 を渡します。
 
 ### プロトタイプ
 

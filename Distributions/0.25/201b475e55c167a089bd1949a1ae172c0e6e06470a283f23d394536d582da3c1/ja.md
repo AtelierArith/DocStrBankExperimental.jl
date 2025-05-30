@@ -28,5 +28,5 @@ $$
 DirichletMultinomial(n, α) # パラメータベクトルαを持つn回の試行のためのディリクレ-多項分布。
 
 # kを正の整数とする
-DirichletMultinomial(n, k) # n回の試行と長さkの1のベクトルを持つパラメータのためのディリクレ-多項分布。
+DirichletMultinomial(n, k) # n回の試行と長さkの1のベクトルを持つパラメータのディリクレ-多項分布。
 ```

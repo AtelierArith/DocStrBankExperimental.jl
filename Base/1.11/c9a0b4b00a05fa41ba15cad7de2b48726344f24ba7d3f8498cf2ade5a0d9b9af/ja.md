@@ -24,5 +24,5 @@ julia> reverse(b)
 ```
 
 !!! compat "Julia 1.6"
-    Julia 1.6以前は、`reverse` では単一の整数 `dims` のみがサポートされています。
+    Julia 1.6以前は、`reverse` で単一の整数 `dims` のみがサポートされていました。
 

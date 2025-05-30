@@ -2,7 +2,7 @@
 orderof(x::FiniteStrainParameters)
 ```
 
-`FiniteStrainParameters`の次数を返します。
+`FiniteStrainParameters`の順序を返します。
 
 # 例
 

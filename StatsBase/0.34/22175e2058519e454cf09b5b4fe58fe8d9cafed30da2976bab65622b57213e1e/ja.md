@@ -3,7 +3,7 @@ uweights(s::Integer)
 uweights(::Type{T}, s::Integer) where T<:Real
 ```
 
-長さ `s` の `UnitWeights` ベクトルを構築し、要素の型は `T` です。すべての重み要素は同じく1です。
+長さ `s` の `UnitWeights` ベクトルを、型 `T` の重み要素で構成します。すべての重み要素は同じく1です。
 
 # 例
 

@@ -11,7 +11,7 @@ sort!(v; alg::Algorithm=defalg(v), lt=isless, by=identity, rev::Bool=false, orde
 2つの要素間の関係は次のように定義されます（`rev=true` の場合は「小さい」と「大きい」が交換されます）：
 
   * `x` は `y` より小さい場合、`lt(by(x), by(y))`（または `Base.Order.lt(order, by(x), by(y))`）が真を返します。
-  * `x` は `y` より大きい場合、`y` が `x` より小さいです。
+  * `x` は `y` より大きい場合、`y` は `x` より小さいです。
   * `x` と `y` は互いに小さくない場合、等価です（「比較不能」は「等価」の同義語として時々使用されます）。
 
 `sort!` の結果は、すべての要素が前の要素より大きいか等価であるという意味でソートされています。
@@ -23,7 +23,7 @@ sort!(v; alg::Algorithm=defalg(v), lt=isless, by=identity, rev::Bool=false, orde
   * 推移的：`lt(x, y) && lt(y, z)` は `lt(x, z)` を含意する。
   * 等価における推移的：`!lt(x, y) && !lt(y, x)` と `!lt(y, z) && !lt(z, y)` が一緒に `!lt(x, z) && !lt(z, x)` を含意する。言い換えれば：`x` と `y` が等価であり、`y` と `z` が等価である場合、`x` と `z` も等価でなければなりません。
 
-例えば、`<` は `Int` 値に対する有効な `lt` 関数ですが、`≤` は無効です：反射性を違反します。`Float64` 値の場合、`<` さえも無効です。なぜなら、4番目の条件を違反するからです：`1.0` と `NaN` は等価であり、`NaN` と `2.0` も等価ですが、`1.0` と `2.0` は等価ではありません。
+例えば、`<` は `Int` 値に対する有効な `lt` 関数ですが、`≤` は無効です：反射性を侵害します。`Float64` 値に対しては、`<` でさえ無効です。これは4番目の条件を侵害します：`1.0` と `NaN` は等価であり、`NaN` と `2.0` も等価ですが、`1.0` と `2.0` は等価ではありません。
 
 他にも [`sort`](@ref)、[`sortperm`](@ref)、[`sortslices`](@ref)、[`partialsort!`](@ref)、[`partialsortperm`](@ref)、[`issorted`](@ref)、[`searchsorted`](@ref)、[`insorted`](@ref)、[`Base.Order.ord`](@ref) を参照してください。
 

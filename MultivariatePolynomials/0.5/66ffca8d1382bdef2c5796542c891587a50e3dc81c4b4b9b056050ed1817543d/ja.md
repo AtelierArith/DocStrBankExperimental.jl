@@ -2,7 +2,7 @@
 merge_monomial_vectors{MT<:AbstractMonomialLike, MVT<:AbstractVector{MT}}(X::AbstractVector{MVT}}
 ```
 
-`X`のエントリに含まれるモノミアルのベクトルを、重複なしで昇順に返します。すなわち、`monomial_vector(vcat(X...))`です。
+`X`のエントリに含まれる単項式のベクトルを、重複なしで昇順に返します。すなわち、`monomial_vector(vcat(X...))`です。
 
 ### 例
 

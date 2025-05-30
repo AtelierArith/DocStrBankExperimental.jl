@@ -2,9 +2,9 @@
 !(x)
 ```
 
-ブールの否定。 [`missing`](@ref) が `x` が `missing` の場合に返される [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) を実装しています。
+ブール否定。 [三値論理](https://en.wikipedia.org/wiki/Three-valued_logic) を実装し、`x` が `missing` の場合は [`missing`](@ref) を返します。
 
-ビット単位の否定については、[`~`](@ref) も参照してください。
+ビット単位の否定については [`~`](@ref) も参照してください。
 
 # 例
 

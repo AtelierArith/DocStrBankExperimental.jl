@@ -6,9 +6,9 @@ t8_forest_element_neighbor_eclass(forest, ltreeid, elem, face)
 
 # 引数
 
-  * `forest.`:[in] 確定したフォレスト。
+  * `forest.`:[in] コミットされたフォレスト。
   * `ltreeid.`:[in] 要素が存在するローカルツリー。
-  * `elem.`:[in] 木 *ltreeid* にある要素。
+  * `elem.`:[in] 木 *ltreeid* 内の要素。
   * `face.`:[in] *elem* の面番号。
 
 # 戻り値

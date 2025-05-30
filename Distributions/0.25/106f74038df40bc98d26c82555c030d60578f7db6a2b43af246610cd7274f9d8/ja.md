@@ -29,4 +29,4 @@ shape(d)        # Get the shape parameter, i.e. ξ
 
 外部リンク
 
-  * [Generalized Pareto distribution on Wikipedia](https://en.wikipedia.org/wiki/Generalized_Pareto_distribution)
+  * [一般化パレート分布 - Wikipedia](https://en.wikipedia.org/wiki/Generalized_Pareto_distribution)

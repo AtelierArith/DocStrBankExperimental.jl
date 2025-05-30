@@ -2,7 +2,7 @@
 StartInvData <: AbstractInvData
 ```
 
-初期容量が `AbstractInvData` に指定されている投資データです。この構造は、フィールド **`initial::TimeProfile`** を追加した [`NoStartInvData`](@ref) に似ています。以下を参照してください。
+投資データで、初期容量が `AbstractInvData` に指定されています。この構造は、フィールド **`initial::TimeProfile`** を追加した [`NoStartInvData`](@ref) に似ています。以下を参照してください。
 
 # [`NoStartInvData`](@ref) に加えてのフィールド
 

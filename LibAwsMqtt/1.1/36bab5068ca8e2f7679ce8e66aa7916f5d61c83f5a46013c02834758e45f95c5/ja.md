@@ -9,7 +9,7 @@ aws_mqtt_client_connection_set_will(connection, topic, qos, retain, payload)
   * `connection`:[in] 接続オブジェクト
   * `topic`:[in] ウィルを公開するトピック
   * `qos`:[in] ウィルを公開する際のQoS
-  * `retain`:[in] ウィルを公開する際のリテインフラグ
+  * `retain`:[in] ウィルを公開する際の保持フラグ
   * `payload`:[in] ウィルメッセージのデータ
 
 ### プロトタイプ

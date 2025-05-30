@@ -20,7 +20,7 @@ SureShrink(xw[, redundant, tree, th])
 ```julia
 SureShrink(xw)                  # `xw`はdwt、wptの出力
 SureShrink(xw, true)            # `xw`はsdwt、acdwt、swpt、acwpdの出力
-SureShrink(xw, true, tree)      # `xw`はswpd、acwpdの出力
+SureShrink(xw, true, tree)      # `xw`はswdp、acwpdの出力
 ```
 
 **関連情報:** [`SureShrink`](@ref), [`surethreshold`](@ref)

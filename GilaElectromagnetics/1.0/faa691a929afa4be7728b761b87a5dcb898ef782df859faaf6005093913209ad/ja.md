@@ -9,11 +9,11 @@ useGpu::Bool=false, setTyp::DataType=ComplexF64)
 
 # 引数
 
-  * `celSrc::NTuple{3, Int}`: ソースボリュームの各次元のセルの数。
-  * `sclSrc::NTuple{3, Rational}`: ソースボリュームの各次元の各セルのサイズ（波長の単位）。
-  * `orgSrc::NTuple{3, Rational}`: ソースボリュームの各次元の原点（波長の単位）。
-  * `celTrg::NTuple{3, Int}`: ターゲットボリュームの各次元のセルの数。
-  * `sclTrg::NTuple{3, Rational}`: ターゲットボリュームの各次元の各セルのサイズ（波長の単位）。
-  * `orgTrg::NTuple{3, Rational}`: ターゲットボリュームの各次元の原点（波長の単位）。
+  * `celSrc::NTuple{3, Int}`: ソースボリュームの各次元におけるセルの数。
+  * `sclSrc::NTuple{3, Rational}`: ソースボリュームの各次元における各セルのサイズ（波長の単位）。
+  * `orgSrc::NTuple{3, Rational}`: ソースボリュームの各次元における原点（波長の単位）。
+  * `celTrg::NTuple{3, Int}`: ターゲットボリュームの各次元におけるセルの数。
+  * `sclTrg::NTuple{3, Rational}`: ターゲットボリュームの各次元における各セルのサイズ（波長の単位）。
+  * `orgTrg::NTuple{3, Rational}`: ターゲットボリュームの各次元における原点（波長の単位）。
   * `useGpu::Bool=false`: GPUを使用するかどうか（true）またはCPUを使用するか（false）。
   * `setTyp::DataType=ComplexF64`: 演算子の要素タイプ。`Complex`のサブタイプでなければなりません。

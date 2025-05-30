@@ -4,7 +4,7 @@ struct EstimationSetup{U<:MomentMatching.EstimationMode}
 
 # 説明
 
-モーメントマッチング推定手順のセットアップを保存するための構造体。
+モーメントマッチング推定手続きのセットアップを保存するための構造体。
 
 # フィールド
 

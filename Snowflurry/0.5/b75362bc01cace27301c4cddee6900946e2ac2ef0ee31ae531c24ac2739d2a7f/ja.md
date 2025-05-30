@@ -2,11 +2,11 @@
 SimplifyRzGatesTranspiler
 ```
 
-トランスパイラーステージは、入力回路内の `PhaseShift` ゲートを見つけ、その位相角 phi に基づいて、それらを直角の `RotationZ` ゲート（`SigmaZ`、`Z90`、`ZM90`、`Pi8` または `Pi8Dagger`）のいずれかにキャストします。`phi≈0.` の場合、ゲートは削除されます。入力回路と出力回路は、任意の状態 `Ket` に対して同じ操作を実行します（グローバル位相を除く）。各ケースで `Base.isapprox()` に使用される許容誤差は、オプションの引数を `Transpiler` に渡すことで設定できます。例: `transpiler=SimplifyRzGatesTranspiler(1.0e-10)`
+トランスパイラーステージは、入力回路内の `PhaseShift` ゲートを見つけ、その位相角 phi に基づいて、適切な直角 `RotationZ` ゲート（`SigmaZ`、`Z90`、`ZM90`、`Pi8` または `Pi8Dagger`）にキャストします。`phi≈0.` の場合、ゲートは削除されます。入力回路と出力回路は、任意の状態 `Ket`（グローバル位相を除く）に対して同じ操作を実行します。各ケースで `Base.isapprox()` に使用される許容誤差は、オプションの引数を `Transpiler` に渡すことで設定できます。例: `transpiler=SimplifyRzGatesTranspiler(1.0e-10)`
 
 # フィールド
 
-  * `atol::Real` – 回転角の比較のための絶対許容誤差（デフォルト = 1e-6）。
+  * `atol::Real` – 回転角の比較に対する絶対許容誤差（デフォルト = 1e-6）。
 
 # 例
 

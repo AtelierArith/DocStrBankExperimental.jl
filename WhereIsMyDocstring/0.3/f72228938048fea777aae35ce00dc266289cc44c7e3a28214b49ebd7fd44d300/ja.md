@@ -29,22 +29,22 @@ f(sig)
 julia> @docmatch sin
 2-element Vector{WhereIsMyDocstring.DocStr}:
  Base.sin
-  内容:
+  Content:
     sin(x) [...]
-  シグネチャタイプ:
+  Signature type:
     Tuple{Number}
-  ```@docs``` ブロックに含める:
+  Include in ```@docs``` block:
     Base.sin(::Number)
-  ソース:
+  Source:
    math.jl:490
 ================================================================================
  Base.sin
-  内容:
+  Content:
     sin(A::AbstractMatrix) [...]
-  シグネチャタイプ:
+  Signature type:
     Tuple{AbstractMatrix{<:Real}}
-  ```@docs``` ブロックに含める:
+  Include in ```@docs``` block:
     Base.sin(::AbstractMatrix{<:Real})
-  ソース:
+  Source:
     /usr/share/julia/stdlib/v1.10/LinearAlgebra/src/dense.jl:956
 ```

@@ -2,7 +2,7 @@
 LDLt <: Factorization
 ```
 
-実数の [`SymTridiagonal`](@ref) 行列 `S` の `LDLt` 因子分解の行列因子分解タイプで、`S = L*Diagonal(d)*L'` となります。ここで、`L` は [`UnitLowerTriangular`](@ref) 行列で、`d` はベクトルです。`LDLt` 因子分解 `F = ldlt(S)` の主な用途は、線形方程式系 `Sx = b` を `F\b` で解くことです。これは、対応する行列因子分解関数 [`ldlt`](@ref) の戻り値の型です。
+実数の [`SymTridiagonal`](@ref) 行列 `S` の `LDLt` 因子分解の行列因子分解タイプであり、`S = L*Diagonal(d)*L'` となります。ここで、`L` は [`UnitLowerTriangular`](@ref) 行列であり、`d` はベクトルです。`LDLt` 因子分解 `F = ldlt(S)` の主な用途は、線形方程式系 `Sx = b` を `F\b` で解くことです。これは、対応する行列因子分解関数 [`ldlt`](@ref) の返り値の型です。
 
 因子分解 `F::LDLt` の個々のコンポーネントには `getproperty` を介してアクセスできます：
 

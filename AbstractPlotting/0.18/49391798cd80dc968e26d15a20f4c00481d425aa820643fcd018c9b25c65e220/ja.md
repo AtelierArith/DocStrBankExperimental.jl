@@ -6,7 +6,7 @@ spy(x::Range, y::Range, z::AbstractSparseArray)
 N = 200_000
 x = sprand(Float64, N, N, (3(10^6)) / (N*N));
 spy(x)
-# または x と y の範囲を指定したい場合：
+# または、xとyの範囲を指定したい場合：
 spy(0..1, 0..1, x)
 ```
 

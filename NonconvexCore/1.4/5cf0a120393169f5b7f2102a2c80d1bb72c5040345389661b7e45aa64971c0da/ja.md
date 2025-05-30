@@ -9,4 +9,4 @@ GenericCriteria
 3. 目的値の変化率、`Δf`、および
 4. 最大不適合 `infeas`。
 
-収束を評価します。詳細は[`assess_convergence!`](@ref)に記載されています。
+収束を評価するために使用されます。詳細は[`assess_convergence!`](@ref)に記載されています。

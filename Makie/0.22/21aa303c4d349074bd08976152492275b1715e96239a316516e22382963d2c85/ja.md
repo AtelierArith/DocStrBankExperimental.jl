@@ -24,7 +24,7 @@ rainclouds!(ax, category_labels, data_array; plot_boxplots=true, plot_clouds=tru
 
 **`center_boxplot`** =  `true`  — ボックスプロットをカテゴリの中心に配置するかどうか。
 
-**`cloud_width`** =  `0.75`  — バイオリンプロットのサイズを決定します。`violin` のキーワード引数 `width` に対応します。
+**`cloud_width`** =  `0.75`  — バイオリンプロットのサイズを決定します。`violin` のキーワード引数の `width` に対応します。
 
 **`clouds`** =  `violin`  — [`violin`, `hist`, `nothing`] クラウドプロットをどのように表示するか、バイオリンまたはヒストグラムプロットとして、または全く表示しないか。
 
@@ -32,7 +32,7 @@ rainclouds!(ax, category_labels, data_array; plot_boxplots=true, plot_clouds=tru
 
 **`cycle`** =  `[:color => :patchcolor]`  — *ドキュメントは利用できません。*
 
-**`dodge`** =  `automatic`  — 同じ x 位置に複数の横並びのボックスを作成するためのグループ変数の整数ベクトル（データの長さ）。
+**`dodge`** =  `automatic`  — 同じ x 位置に複数の横並びのボックスを作成するためのグループ変数の整数のベクトル（データの長さ）。
 
 **`dodge_gap`** =  `0.01`  — ドッジされたボックス間の間隔。
 
@@ -50,7 +50,7 @@ rainclouds!(ax, category_labels, data_array; plot_boxplots=true, plot_clouds=tru
 
 **`plot_boxplots`** =  `true`  — データの分布を要約するためにボックスプロットを表示するかどうか。
 
-**`show_boxplot_outliers`** =  `false`  — ボックスプロットの外れ値をポイントとして表示する（散布図と組み合わせると通常は混乱を招くため、デフォルトでは表示しない）。
+**`show_boxplot_outliers`** =  `false`  — ボックスプロットの外れ値をポイントとして表示します（散布図と組み合わせると通常は混乱を招くため、デフォルトでは表示しません）。
 
 **`show_median`** =  `true`  — ボックスプロットに中央値の値の線を持つかどうかを決定します。
 

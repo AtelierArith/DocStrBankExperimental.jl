@@ -4,7 +4,7 @@ mapcols(f::Union{Function, Type}, df::AbstractDataFrame; cols=All())
 
 `df`の各列を`cols`（デフォルトではすべての列）で選択し、関数`f`を使用して変換した`DataFrame`を返します。`cols`で選択されていない列はコピーされます。
 
-`f`はすべて同じ長さの`AbstractVector`オブジェクトまたはスカラーを返す必要があります（`AbstractVector`以外のすべての値はスカラーと見なされます）。
+`f`はすべて同じ長さの`AbstractVector`オブジェクトまたはスカラーを返さなければなりません（`AbstractVector`以外のすべての値はスカラーと見なされます）。
 
 `cols`の列セレクタは、`names`関数によって受け入れられる任意の値を指定できます。
 

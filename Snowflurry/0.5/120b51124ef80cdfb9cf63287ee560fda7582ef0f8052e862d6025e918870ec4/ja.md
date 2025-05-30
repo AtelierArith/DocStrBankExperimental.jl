@@ -7,17 +7,17 @@ get_measurement_probabilities(x::Ket{Complex{T}},
 
 `Ket` `x`の`target_bodies`の測定確率をリストするベクトルを返します。
 
-各ボディのヒルベルト空間のサイズは、`hspace_size_per_body`引数に`Integer`の`Vector`を提供することで指定できます。`Vector`は各ボディのヒルベルト空間のサイズを指定する必要があります。空間のサイズが均一な場合は、単一の`Integer`を代わりに指定できます。`x`のみが提供された場合、すべてのボディに対する確率が提供されます。
+各ボディのヒルベルト空間のサイズは、`hspace_size_per_body`引数に`Integer`の`Vector`を提供することで指定できます。`Vector`は各ボディのヒルベルト空間のサイズを指定する必要があります。空間のサイズが均一な場合は、単一の`Integer`を代わりに指定できます。`x`のみが提供された場合、すべてのボディの確率が提供されます。
 
 測定確率は、最小の計算基底状態から最大の計算基底状態までリストされます。たとえば、2量子ビットの`Ket`の場合、確率は$\left|00\right\rangle$、$\left|10\right\rangle$、$\left|01\right\rangle$、および$\left|11\right\rangle$の順にリストされます。
 
 !!! note
-    規約として、量子ビット1は最も左のビットであり、その後に続くすべての量子ビットがあります。$\left|10\right\rangle$は、量子ビット1が状態$\left|1\right\rangle$であり、量子ビット2が状態$\left|0\right\rangle$であることを示します。
+    規約として、量子ビット1は最も左のビットであり、その後に続くすべての量子ビットがあります。$\left|10\right\rangle$は、量子ビット1が状態$\left|1\right\rangle$で、量子ビット2が状態$\left|0\right\rangle$にあります。
 
 
 # 例
 
-次の例では、測定する確率が$\left|00\right\rangle$で50%、$\left|01\right\rangle$で50%の`Ket`を構築します。
+次の例では、測定する確率が$\left|00\right\rangle$で50%、$\left|01\right\rangle$でも50%の`Ket`を構築します。
 
 ```jldoctest get_measurement_probabilities
 julia> ψ = 1/sqrt(2) * Ket([1, 0, 1, 0])

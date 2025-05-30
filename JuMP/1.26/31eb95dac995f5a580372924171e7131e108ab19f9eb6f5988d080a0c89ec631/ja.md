@@ -4,6 +4,7 @@ optimize!(
     ignore_optimize_hook = (model.optimize_hook === nothing),
     kwargs...,
 )
+```
 
 モデルを最適化します。
 
@@ -13,16 +14,22 @@ optimize!(
 
 ## 例
 
-```
-
-jldoctest julia> import HiGHS
+```jldoctest
+julia> import HiGHS
 
 julia> model = Model(HiGHS.Optimizer);
 
 julia> set_silent(model)
 
-julia> function my*optimize*hook(model; foo)            println("Hook called with foo = ", foo)            return optimize!(model; ignore*optimize*hook = true)        end my*optimize*hook (generic function with 1 method)
+julia> function my_optimize_hook(model; foo)
+           println("Hook called with foo = ", foo)
+           return optimize!(model; ignore_optimize_hook = true)
+       end
+my_optimize_hook (generic function with 1 method)
 
-julia> set*optimize*hook(model, my*optimize*hook) my*optimize*hook (generic function with 1 method)
+julia> set_optimize_hook(model, my_optimize_hook)
+my_optimize_hook (generic function with 1 method)
 
-julia> optimize!(model; foo = 2) Hook called with foo = 2 ```
+julia> optimize!(model; foo = 2)
+Hook called with foo = 2
+```

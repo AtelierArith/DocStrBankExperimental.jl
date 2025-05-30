@@ -6,11 +6,11 @@ struct SSAStepper <: SciMLBase.AbstractDEAlgorithm
 
 ## 注意事項
 
-  * `DiscreteProblem` から定義された `JumpProblem` のみで機能します。
-  * レート境界を持つ `ConstantRateJump`、`MassActionJump`、および `VariableRateJump` のコレクションでのみ機能します。
+  * `DiscreteProblem` から定義された `JumpProblem` のみで動作します。
+  * レート境界を持つ `ConstantRateJump`、`MassActionJump`、および `VariableRateJump` のコレクションのみで動作します。
   * `SSAStepper` によって取られた各ステップの後にチェックされるイベントのために、`DiscreteCallback` のみをサポートします。
   * 一般的なソルバーインターフェースからの出力制御の限られたサブセット、具体的には `save_start`、`save_end`、および `saveat` のみをサポートします。
-  * ODE や SDE でジャンプを使用する場合と同様に、ジャンプが発生するたびに保存するかどうかの制御は、`JumpProblem` への `save_positions` キーワード引数を介して行われます。`SSAStepper` をタイムステッパーとして選択する場合、`save_positions = (true,true)`、`(true,false)`、または `(false,true)` はすべて同等です。`SSAStepper` は、これらの各ケースで解オブジェクトにおいてポストジャンプ状態のみを保存します。これは、`SSAStepper` を介して生成された解オブジェクトが区分定数補間を使用し、ポストジャンプ状態を知るだけでサンプリングされたジャンププロセスのパスを正確に再構築できるためです。つまり、任意の `0 <= t <= tstop` に対して `sol(t)` は、`save_positions` の少なくとも1つのコンポーネントが `true` である場合に、`t` でのサンプリングされた解パスの正確な値を提供します。
+  * ODE や SDE と一緒にジャンプを使用する場合と同様に、ジャンプが発生するたびに保存するかどうかの制御は、`JumpProblem` への `save_positions` キーワード引数を介して行います。`SSAStepper` をタイムステッパーとして選択する場合、`save_positions = (true,true)`、`(true,false)`、または `(false,true)` はすべて同等です。これらの各ケースで、`SSAStepper` は解オブジェクトにおいてポストジャンプ状態のみを保存します。これは、`SSAStepper` を介して生成された解オブジェクトが区分定数補間を使用し、ポストジャンプ状態を知るだけでサンプリングされたジャンププロセスの経路を正確に再構築できるためです。つまり、`0 <= t <= tstop` の任意の `t` に対して `sol(t)` は、`save_positions` の少なくとも1つのコンポーネントが `true` である限り、`t` でのサンプリングされた解経路の正確な値を提供します。
 
 ## 例
 

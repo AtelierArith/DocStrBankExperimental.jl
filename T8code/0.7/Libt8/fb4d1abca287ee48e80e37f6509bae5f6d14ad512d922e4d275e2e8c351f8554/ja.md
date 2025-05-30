@@ -6,7 +6,7 @@ t8_cmesh_trees_destroy(trees)
 
 # 引数
 
-  * `trees`:[in,out] 解放されるツリー構造体。出力時にNULLに設定されます。
+  * `trees`:[in,out] 解体されるツリー構造体。出力時にNULLに設定されます。
 
 ### プロトタイプ
 

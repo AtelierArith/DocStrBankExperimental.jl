@@ -18,7 +18,7 @@ ReactionMethod(
   * `methodfn`: モデルフレームワークからのコールバック
   * `reaction`: この `ReactionMethod` を作成した反応
   * `name`: 説明的な名前、例えば `methodfn` の名前から生成されたもの
-  * `varlists`: 各々が [`VariableReaction`](@ref) のリストを表す VarLists のタプル。対応する変数アクセサ `vardata`（配列のビュー）が `methodfn` コールバックに提供されます。NB: コンパイル時間を短縮するために具体的に型付けされていません。パフォーマンス上重要ではありません。
+  * `varlists`: 各々が [`VariableReaction`](@ref)s のリストを表す VarLists のタプル。対応する変数アクセサ `vardata`（配列のビュー）が `methodfn` コールバックに提供されます。NB: コンパイル時間を短縮するために具体的に型付けされていません。パフォーマンス上重要ではありません。
   * `p`: `methodfn` に必要なデータを格納するための任意の型のコンテキストフィールド。
   * `operatorID`
   * `domain`
@@ -42,7 +42,7 @@ methodfn(m::ReactionMethod, vardata::Tuple, cellrange::AbstractCellRange, modelc
 
   * `m::ReactionMethod`: コンテキストは `m.reaction::AbstractReaction`（`ReactionMethod` を定義した反応）および `m.p`（`ReactionMethod` 作成時に供給された任意の追加コンテキストフィールド）として利用可能です。
   * `pars`: フィールドとしてパラメータを持つ構造体（現在は `reaction.pars` として定義された ParametersTuple のみ）
-  * `vardata`: `varlists` によって定義された [`VariableReaction`](@ref) に対応するドメインデータ配列のビューのコレクションのタプル
+  * `vardata`: `varlists` によって定義された [`VariableReaction`](@ref)s に対応するドメインデータ配列のビューのコレクションのタプル
   * `cellrange::AbstractCellRange`: 計算するセルの範囲。
   * `modelctxt`:
 

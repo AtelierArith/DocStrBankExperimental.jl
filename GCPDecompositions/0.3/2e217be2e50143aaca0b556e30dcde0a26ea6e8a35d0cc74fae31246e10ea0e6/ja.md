@@ -15,6 +15,6 @@ gcp(X::Array, r;
 
 従来の CP は、デフォルトの制約なし（すなわち、`constraints = ()`）でデフォルトの `GCPLosses.LeastSquares()` 損失に対応します。
 
-もし `LossFunctions.jl` パッケージもロードされている場合、`loss` はそのパッケージからの損失関数でも構いません。サポートされている損失を確認するには `GCPDecompositions.LossFunctionsExt.SupportedLosses` をチェックしてください。
+もし `LossFunctions.jl` パッケージも読み込まれている場合、`loss` はそのパッケージからの損失関数でも構いません。サポートされている損失を確認するには `GCPDecompositions.LossFunctionsExt.SupportedLosses` をチェックしてください。
 
 参照: `CPD`, `GCPLosses`, `GCPConstraints`, `GCPAlgorithms`。

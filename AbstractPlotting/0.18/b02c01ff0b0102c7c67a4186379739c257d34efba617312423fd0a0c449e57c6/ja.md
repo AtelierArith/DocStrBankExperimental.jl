@@ -7,7 +7,7 @@ record(func, figure, path, iter; framerate = 24, compression = 20, kwargs...)
 
 2 番目のシグネチャは `iter` を反復処理し、現在の反復要素で `func` を呼び出した後に内部で `recordframe!(io)` を呼び出します。
 
-両方の表記法は、動作するために Figure、FigureAxisPlot または Scene `figure` を必要とします。
+両方の表記法は、機能するために Figure、FigureAxisPlot または Scene `figure` を必要とします。
 
 アニメーションは `path` に保存され、フォーマットは `path` の拡張子によって決まります。許可される拡張子は次のとおりです：
 

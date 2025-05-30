@@ -13,7 +13,7 @@ t8_element_get_corner_face(ts, elem, corner, face)
 
 # 戻り値
 
-*corner* での *face*-番目の面の面番号。
+*corner* での *face*-th 面の面番号。
 
 ### プロトタイプ
 

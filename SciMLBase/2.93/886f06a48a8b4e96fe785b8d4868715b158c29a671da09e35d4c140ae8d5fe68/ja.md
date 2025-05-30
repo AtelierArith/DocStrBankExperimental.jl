@@ -2,7 +2,7 @@
 SecondOrderDDEProblem{isinplace}(f,du0,u0,h,tspan,p=NullParameters(),callback=CallbackSet())
 ```
 
-指定された関数で二次遅延微分方程式（DDE）問題を定義します。
+指定された関数で二次のDDE問題を定義します。
 
 # 引数
 

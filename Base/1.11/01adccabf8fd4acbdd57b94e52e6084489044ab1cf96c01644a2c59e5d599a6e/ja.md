@@ -12,7 +12,7 @@ split(str::AbstractString; limit::Integer=0, keepempty::Bool=false)
   * `limit`: 結果の最大サイズ。`limit=0`は最大なしを意味します（デフォルト）
   * `keepempty`: 空のフィールドを結果に保持するかどうか。`dlm`引数がない場合のデフォルトは`false`、`dlm`引数がある場合のデフォルトは`true`です。
 
-他にも[`rsplit`](@ref)、[`eachsplit`](@ref)を参照してください。
+他に[`rsplit`](@ref)、[`eachsplit`](@ref)も参照してください。
 
 # 例
 

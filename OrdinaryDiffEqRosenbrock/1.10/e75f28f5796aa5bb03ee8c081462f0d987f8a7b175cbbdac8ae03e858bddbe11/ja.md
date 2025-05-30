@@ -1,6 +1,6 @@
 ```julia
 Veldd4(; - `standardtag`: パッケージ固有のタグを使用するかどうかを指定します。
-             ForwardDiffのデフォルトの関数固有のタグの代わりに使用します。詳細については、
+             ForwardDiffのデフォルトの関数固有のタグの代わりに使用されます。詳細については、
              [このブログ記事](https://www.stochasticlifestyle.com/improved-forwarddiff-jl-stacktraces-with-package-tags/)を参照してください。
              デフォルトは`Val{true}()`です。
          - `autodiff`: [ADTypes.jl](https://sciml.github.io/ADTypes.jl/stable/)を使用して、
@@ -8,12 +8,11 @@ Veldd4(; - `standardtag`: パッケージ固有のタグを使用するかどう
              [FiniteDiff.jl](https://github.com/JuliaDiff/FiniteDiff.jl)を介して有限差分を使用するかを指定します。
              自動微分の場合、デフォルトは`AutoForwardDiff()`で、デフォルトでは
              `chunksize = 0`を使用し、したがって選択のために内部のForwardDiff.jlアルゴリズムを使用します。
-             `FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、
-             これはデフォルト値`Val{:forward}()`のキーワード引数`fdtype`を持ち、
-             代替として`Val{:central}()`と`Val{:complex}()`があります。
+             `FiniteDiff.jl`を使用するには、`AutoFiniteDiff()` ADTypeを使用でき、これはキーワード引数
+             `fdtype`を持ち、デフォルト値は`Val{:forward}()`で、代替として`Val{:central}()`と`Val{:complex}()`があります。
          - `concrete_jac`: ヤコビ行列を構築するかどうかを指定します。デフォルトは
              `nothing`で、これはソルバーの状況に応じて真/偽が選択されることを意味します。
-             たとえば、`linsolve`にKrylov部分空間法が使用されているかどうかなどです。
+             たとえば、`linsolve`にKrylov部分空間法が使用されるかどうかなどです。
          - `linsolve`: 任意の[LinearSolve.jl](https://github.com/SciML/LinearSolve.jl)互換の線形ソルバー。
            たとえば、[KLU.jl](https://github.com/JuliaSparse/KLU.jl)を使用するには、
            `Veldd4(linsolve = KLUFactorization())`を指定します。
@@ -43,8 +42,8 @@ Veldd4(; - `standardtag`: パッケージ固有のタグを使用するかどう
            ```julia
            Pl, Pr = precs(W, du, u, p, t, ::Nothing, ::Nothing, ::Nothing, solverdata)
            ```
-           これは、前処理器`(Pl,Pr)`を使用して積分器タイプを構築するために
-           ソルバーセットアップフェーズで使用されます。
+           これはソルバーのセットアップフェーズで、前処理器`(Pl,Pr)`を持つ
+           積分器タイプを構築するために使用されます。
            デフォルトは`precs=DEFAULT_PRECS`で、デフォルトの前処理器関数は次のように定義されています：
            ```julia
            DEFAULT_PRECS(W, du, u, p, t, newW, Plprev, Prprev, solverdata) = nothing, nothing
@@ -59,11 +58,11 @@ Veldd4(; - `standardtag`: パッケージ固有のタグを使用するかどう
   * `chunk_size`: TBD
   * `standardtag`: TBD
   * `autodiff`: ヤコビ行列をADを介して計算するかどうかを制御するブール値
-  * `concrete_jac`: 形式`jac!(J, u, p, t)`の関数
+  * `concrete_jac`: `jac!(J, u, p, t)`の形式の関数
   * `diff_type`: TBD
   * `linsolve`: 内部線形システムのカスタムソルバー
   * `precs`: 内部線形ソルバーのカスタム前処理器
-  * `step_limiter!`: 形式`limiter!(u, integrator, p, t)`の関数
+  * `step_limiter!`: `limiter!(u, integrator, p, t)`の形式の関数
 
 ## 参考文献
 

@@ -2,7 +2,7 @@
 boundary_condition_pressure_in(u_inner, orientation_or_normal, direction, x, t, surface_flux_function, eq::BloodFlowEquations2D)
 ```
 
-2D血流モデルに対して、指定された圧力の流入境界条件を適用します。
+2D血流モデルに対して、所定の圧力を持つ流入境界条件を適用します。
 
 ### パラメータ
 

@@ -4,7 +4,7 @@ ndigits(n::Integer; base::Integer=10, pad::Integer=1)
 
 整数 `n` を基数 `base` で表記したときの桁数を計算します（`base` は `[-1, 0, 1]` であってはいけません）。オプションで、指定されたサイズにゼロでパディングすることができます（結果は決して `pad` より小さくなりません）。
 
-関連情報として [`digits`](@ref)、[`count_ones`](@ref) を参照してください。
+関連情報としては [`digits`](@ref)、[`count_ones`](@ref) があります。
 
 # 例
 

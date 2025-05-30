@@ -2,7 +2,7 @@
 LogNormal(μ,σ)
 ```
 
-*対数正規分布*は、[`Normal`](@ref)変数の指数の分布です：$X \sim \operatorname{Normal}(\mu, \sigma)$ の場合、$\exp(X) \sim \operatorname{LogNormal}(\mu,\sigma)$ です。確率密度関数は次のようになります。
+*対数正規分布*は、[`Normal`](@ref)変数の指数の分布です：$X \sim \operatorname{Normal}(\mu, \sigma)$ならば、$\exp(X) \sim \operatorname{LogNormal}(\mu,\sigma)$です。確率密度関数は次のようになります。
 
 $$
 f(x; \mu, \sigma) = \frac{1}{x \sqrt{2 \pi \sigma^2}}

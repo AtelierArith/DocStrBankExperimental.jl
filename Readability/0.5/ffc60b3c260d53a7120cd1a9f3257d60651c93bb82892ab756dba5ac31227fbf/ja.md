@@ -9,6 +9,6 @@ speaking_time(text::String; wpm::Number=183)::Number
   * `text::String`: 分析するテキスト。
   * `wpm::Number`: 分/分の単語数。
 
-## 戻り値
+## 返り値
 
   * `Float64`: 秒単位のスピーキング時間。

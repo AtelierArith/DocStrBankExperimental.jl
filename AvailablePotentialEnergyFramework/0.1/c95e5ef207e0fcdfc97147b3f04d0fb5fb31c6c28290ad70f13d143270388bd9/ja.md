@@ -4,4 +4,4 @@ filter*array(array,smooth*x,smooth_t,position)
 
 この関数は内部でImages.jlのimfilter関数を呼び出します。
 
-最初の引数はarrayと同じサイズのバッファでなければなりません。
+最初の引数は配列と同じサイズのバッファでなければなりません。

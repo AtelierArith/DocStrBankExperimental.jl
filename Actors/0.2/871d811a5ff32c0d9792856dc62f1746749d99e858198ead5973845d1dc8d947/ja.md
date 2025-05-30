@@ -3,7 +3,7 @@ start_task(start, sv, cb=nothing;
            timeout::Real=5.0, pollint::Real=0.1)
 ```
 
-`start`の動作を持つタスクを生成し、スーパーバイザー`sv`にそれを監視させます（再起動戦略`:transient`を使用）し、その参照を返します。
+`start`の動作を持つタスクを生成し、スーパーバイザー`sv`にそれを監視させます（再起動戦略は`:transient`）そしてその参照を返します。
 
 # パラメータ
 

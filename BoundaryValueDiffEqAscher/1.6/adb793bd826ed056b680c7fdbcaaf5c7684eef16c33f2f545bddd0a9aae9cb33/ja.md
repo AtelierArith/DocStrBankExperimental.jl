@@ -7,7 +7,7 @@ BoundaryValueDiffEqAscher.Ascher6(; nlsolve = NewtonRaphson(), max_num_subinterv
 ## キーワード引数
 
   * `nlsolve`: 内部非線形ソルバー。SciML `NonlinearProblem` インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
-  * `max_num_subintervals`: 最大サブインターバルの数、デフォルトは3000。
+  * `max_num_subintervals`: 最大サブ区間の数、デフォルトは3000です。
   * `zeta`: サイド条件ポイント、常に提供する必要があります。
 
 !!! note

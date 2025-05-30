@@ -1,4 +1,4 @@
-`prime_residues(n)` は `1:n` の中で `n` に対して素な数を返します。
+`prime_residues(n)` は `1:n` の中で `n` に対して素な数です。
 
 ```julia-repl
 julia> [prime_residues(24)]

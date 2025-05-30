@@ -8,7 +8,7 @@ BendersAlgorithm
 
   * `graph` - Bendersを適用するためのPlasmo OptiGraph
   * `root_object` - Bendersアルゴリズムを開始する場所を示す`graph`内のノードまたはサブグラフ
-  * `is_MIP` = 問題がMIPであるかどうかを示すブール値
+  * `is_MIP` = 問題がMIPかどうかを示すブール値
   * `solve_order` - Bendersによって解決される順序のOptiNodesのベクトル
   * `solve_order_dict` - 特定のオブジェクトに対するすべての「次のオブジェクト」のベクトルへのマッピングを持つ辞書
   * `parent_objects` - 前のサブプロブレムへのマッピングを持つ辞書
@@ -18,13 +18,13 @@ BendersAlgorithm
   * `current_iter` - Bendersアルゴリズムの現在の反復
   * `M` - 各反復におけるコスト・トゥ・ゴー関数の下限
   * `dual_iters` - 各反復における対応する双対値へのoptinodesのマッピングを持つ辞書；双対値は次のノードの解から得られます
-  * `primal_iters` - 特定のノード上の複雑な変数のプライマル解へのoptinodesのマッピングを持つ辞書
+  * `primal_iters` - 特定のノード上の複雑な変数の原始解へのoptinodesのマッピングを持つ辞書
   * `phis` - 直後のノードの目的関数へのoptinodesのマッピングを持つ辞書
   * `phis_LR` - 次のノードのラグランジアン（強化カットに使用）緩和の目的関数へのoptinodesのマッピングを持つ辞書；MIPsにおける強化Bendersカットに使用
-  * `time_forward_pass` - フォワードパスに費やされた時間（秒）
-  * `time_backward_pass` - バックワードパスに費やされた時間（秒）
+  * `time_forward_pass` - フォワードパスに費やした時間（秒）
+  * `time_backward_pass` - バックワードパスに費やした時間（秒）
   * `time_init` - オプティマイザーの初期化にかかる時間（秒）
-  * `time_iterations` - 各反復に費やされた時間のベクトル
+  * `time_iterations` - 各反復に費やした時間のベクトル
   * `comp_vars` - ノードをその複雑な変数のベクトルにマッピングする辞書
   * `comp_var_map` - ノードを`comp_vars`内のインデックスにマッピングされた複雑な変数の辞書にマッピングする辞書
   * `var_copy_map` - ノードを次のノード上の複雑な変数のコピーにマッピングする辞書

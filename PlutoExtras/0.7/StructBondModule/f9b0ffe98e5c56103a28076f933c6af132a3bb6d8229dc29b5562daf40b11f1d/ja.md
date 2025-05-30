@@ -16,8 +16,8 @@ end
 
 これにより、周波数`freq`と高度`alt`の債券をグループ化したテーブルのような表示が作成されます。
 
-[`StructBond`](@ref)とは異なり、`@BondsList`の出力は`@bind`を使用して結びつけることを意図していません。これは既存の債券を単にグループ化するだけです。また、`StructBond`とは異なり、`BondsList`の各行は他の行とは独立して対応する債券を更新します。
+[`StructBond`](@ref)とは異なり、`@BondsList`の出力は`@bind`を使用して結びつけることを意図していません。これは、既存の債券を単にグループ化するだけです。また、`StructBond`とは異なり、`BondsList`の各行は他の行とは独立して対応する債券を更新します。
 
 `BondsList`を`StructBond`と識別し区別するのに役立ちます。
 
-関連項目: [`BondTable`](@ref), [`@NTBond`](@ref), [`StructBond`](@ref), [`Popout`](@ref), [`popoutwrap`](@ref), [`@fielddata`](@ref), [`@fieldhtml`](@ref), [`@typeasfield`](@ref), [`@popoutasfield`](@ref)
+関連情報: [`BondTable`](@ref), [`@NTBond`](@ref), [`StructBond`](@ref), [`Popout`](@ref), [`popoutwrap`](@ref), [`@fielddata`](@ref), [`@fieldhtml`](@ref), [`@typeasfield`](@ref), [`@popoutasfield`](@ref)

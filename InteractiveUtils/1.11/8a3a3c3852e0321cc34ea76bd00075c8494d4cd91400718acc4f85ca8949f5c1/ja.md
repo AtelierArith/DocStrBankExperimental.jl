@@ -4,7 +4,7 @@
 
 関数またはマクロ呼び出しの引数を評価し、その型を決定し、結果の式に対して[`code_native`](@ref)を呼び出します。
 
-任意のキーワード引数`syntax`、`debuginfo`、`binary`、または`dump_module`を関数呼び出しの前に置くことで設定できます。例えば：
+オプションのキーワード引数`syntax`、`debuginfo`、`binary`、または`dump_module`のいずれかを関数呼び出しの前に置くことで設定できます。次のようにします：
 
 ```
 @code_native syntax=:intel debuginfo=:default binary=true dump_module=false f(x)

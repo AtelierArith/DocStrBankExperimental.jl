@@ -15,4 +15,4 @@ julia> c = imp(a, b)
 Pbox: 	  ~  ( range=[1.0, 2.0], mean=1.5, var=0.083333)
 ```
 
-参照: [`env`](@ref), [`makepbox`](@ref)
+関連項目: [`env`](@ref), [`makepbox`](@ref)

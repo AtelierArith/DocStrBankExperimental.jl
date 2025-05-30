@@ -4,7 +4,7 @@ read_response_body(body::Base.CodeUnits{UInt8,String})::String
 
 Unicode コードユニットから `String` を返します。
 
-詳細については、[Julia ドキュメント](https://docs.julialang.org/en/v1/base/strings/#lib-strings)を参照してください。
+コードユニットの詳細については、[Julia ドキュメント](https://docs.julialang.org/en/v1/base/strings/#lib-strings)を参照してください。
 
 # 例
 

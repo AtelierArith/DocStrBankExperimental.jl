@@ -3,4 +3,4 @@ typehierarchy()
 
 ```
 
-ExtendableGridsの完全な型階層を印刷します。
+ExtendableGridsの完全な型階層を表示します。

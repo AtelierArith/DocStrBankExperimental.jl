@@ -15,7 +15,7 @@ rstar(
 
 この実装は、LambertとVehtariによって説明されたアルゴリズム1および2の適応です。
 
-`classifier`はMLJフレームワークの教師あり分類器でなければなりません（サポートされているモデルのリストについては[MLJドキュメント](@extref MLJ list_of_supported_models)を参照してください）。各チェーンからのサンプルの`subset`で訓練されます。各チェーンは、チェーン内の収束を追加で確認するために`split_chains`個の別々のチェーンに分割されます。分類器の訓練は、`verbosity`レベルを調整することで確認できます。
+`classifier`はMLJフレームワークの教師あり分類器でなければなりません（サポートされているモデルのリストについては[MLJドキュメント](@extref MLJ list_of_supported_models)を参照してください）。各チェーンからのサンプルの`subset`で訓練されます。各チェーンは、チェーン内の収束を追加で確認するために`split_chains`の別々のチェーンに分割されます。分類器の訓練は、`verbosity`レベルを調整することで確認できます。
 
 分類器が決定論的である場合、すなわちクラスを予測する場合、$R^*$統計量の値が返されます（アルゴリズム1）。分類器が確率的である場合、すなわちクラスの確率を出力する場合、$R^*$統計量のスケーリングされたポアソン-二項分布が返されます（アルゴリズム2）。
 
@@ -42,7 +42,7 @@ julia> round(mean(distribution); digits=2)
 1.0f0
 ```
 
-ただし、`nrounds`は早期停止に基づいて決定することが推奨されます。MLJフレームワークでは、次のようにしてこれを達成できます（追加の説明については[MLJドキュメント](@extref MLJ Controlling-Iterative-Models)を参照してください）：
+ただし、`nrounds`は早期停止に基づいて決定することをお勧めします。MLJフレームワークでは、次の方法でこれを達成できます（追加の説明については[MLJドキュメント](@extref MLJ Controlling-Iterative-Models)を参照してください）：
 
 ```jldoctest rstar
 julia> model = IteratedModel(;

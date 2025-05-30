@@ -2,7 +2,7 @@
 infer
 ```
 
-入力から出力タイプを推測します。対応する `AbstractAlgorithm` から `AbstractDiagnostics` を推測します。
+入力から出力タイプを推論します。対応する `AbstractAlgorithm` から `AbstractDiagnostics` を推論します。
 
 # 例
 

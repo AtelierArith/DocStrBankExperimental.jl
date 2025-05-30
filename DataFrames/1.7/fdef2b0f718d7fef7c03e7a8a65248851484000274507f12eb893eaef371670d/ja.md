@@ -9,7 +9,7 @@ deletemetadata!(dfr::DataFrameRows, key::AbstractString)
 
 `SubDataFrame` と `DataFrameRow` については、親からの `:note` スタイルのメタデータのみが削除できます（他のスタイルはビューに伝播しないため）。
 
-参照: [`metadata`](@ref), [`metadatakeys`](@ref), [`metadata!`](@ref), [`emptymetadata!`](@ref), [`colmetadata`](@ref), [`colmetadatakeys`](@ref), [`colmetadata!`](@ref), [`deletecolmetadata!`](@ref), [`emptycolmetadata!`](@ref).
+関連情報: [`metadata`](@ref), [`metadatakeys`](@ref), [`metadata!`](@ref), [`emptymetadata!`](@ref), [`colmetadata`](@ref), [`colmetadatakeys`](@ref), [`colmetadata!`](@ref), [`deletecolmetadata!`](@ref), [`emptycolmetadata!`](@ref).
 
 # 例
 

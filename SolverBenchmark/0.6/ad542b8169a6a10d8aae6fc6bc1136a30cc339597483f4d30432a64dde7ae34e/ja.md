@@ -15,7 +15,7 @@ statuses, avgs = quick_summary(stats; kwargs...)
 #### 戻り値
 
   * `statuses::Dict{Symbol,Dict{Symbol,Int}}`: `stats`内の各ソルバーの各最終ステータスの出現回数の辞書。この辞書の各値は`count_unique`によって返されます。
-  * `avgs::Dict{Symbol,Dict{Symbol,Float64}}`: 各ソルバーのすべての問題にわたるパフォーマンス測定の平均を含む辞書。各`avgs[solver]`は`Dict{Symbol,Float64}`で、測定値はキーワード引数`cols`で指定されたものであり、値はすべての問題にわたるそれらの測定値の平均です。
+  * `avgs::Dict{Symbol,Dict{Symbol,Float64}}`: 各ソルバーのすべての問題にわたるパフォーマンス指標の平均を含む辞書。各`avgs[solver]`は`Dict{Symbol,Float64}`であり、指標はキーワード引数`cols`で指定されたもので、値はすべての問題にわたるその指標の平均です。
 
 例: スニペット
 

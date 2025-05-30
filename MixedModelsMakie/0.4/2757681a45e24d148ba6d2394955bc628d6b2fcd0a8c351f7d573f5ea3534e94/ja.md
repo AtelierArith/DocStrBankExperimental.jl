@@ -5,7 +5,7 @@ profiledensity!(f::Indexable, pr::MixedModelProfile;
                 share_y_scale=true).
 ```
 
-パラメータ `ptyp` で始まるプロファイル ζ の密度プロットを `pr` から `f` へ追加します。
+パラメータ `ptyp` で始まるプロファイル ζ の密度プロットを `pr` から `f` に追加します。
 
 有効な `ptyp` 値は 'β'、'σ'、および 'θ' です。
 

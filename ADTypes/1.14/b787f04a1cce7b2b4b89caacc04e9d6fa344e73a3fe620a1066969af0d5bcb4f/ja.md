@@ -22,9 +22,9 @@ AutoReverseDiff(; compile::Union{Val, Bool} = Val(false))
     このキーワード引数のブールバージョンは型パラメータとして扱われます。
 
 !!! warning
-    テープの事前記録は、*例の入力で実行されたときの微分された関数が取った経路*のみをキャプチャします。該当する関数に値依存の分岐動作がある場合、事前に記録されたテープを再利用すると不正確な結果をもたらす可能性があります。そのような状況では、デフォルト設定`compile=Val(false)`を維持するべきです。詳細については、ReverseDiffの[`AbstractTape` APIドキュメント](https://juliadiff.org/ReverseDiff.jl/dev/api/#The-AbstractTape-API)を参照してください。
+    テープの事前記録は、*例の入力で実行されたときの微分された関数が取った経路*のみをキャプチャします。該当する関数が値依存の分岐動作を持つ場合、事前に記録されたテープを再利用すると不正確な結果をもたらす可能性があります。そのような状況では、デフォルト設定`compile=Val(false)`を維持するべきです。詳細については、ReverseDiffの[`AbstractTape` APIドキュメント](https://juliadiff.org/ReverseDiff.jl/dev/api/#The-AbstractTape-API)を参照してください。
 
 
 !!! info
-    名前が示唆するように、`compile`設定は、テープが記録された後に[`ReverseDiff.compile`](https://juliadiff.org/ReverseDiff.jl/dev/api/#ReverseDiff.compile)でコンパイルされるかどうかを規定するものではありません。これはプライベートな実装の詳細として残されています。
+    名前が示唆するように、`compile`設定は、記録後に[`ReverseDiff.compile`](https://juliadiff.org/ReverseDiff.jl/dev/api/#ReverseDiff.compile)でテープがコンパイルされるかどうかを規定するものではありません。これはプライベートな実装の詳細として残されています。
 

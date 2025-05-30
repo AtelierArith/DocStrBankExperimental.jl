@@ -9,11 +9,11 @@ change_nfeatures(f, x, n_features)
 # 引数
 
   * `f::LocalDiscriminantBasis`: ローカル判別基底オブジェクト。
-  * `x::AbstractMatrix{S} where S<:AbstractFloat`: 元の信号から抽出された LDB 特徴量の行列で、各列は対応する信号から抽出された係数に対応します。
-  * `n_features::Integer`: LDB によって選択される特徴量の希望数。
+  * `x::AbstractMatrix{S} where S<:AbstractFloat`: 元の信号から抽出されたLDB特徴量の行列で、各列は対応する信号から抽出された係数に対応します。
+  * `n_features::Integer`: LDBによって選択される特徴量の希望数。
 
 # 戻り値
 
-  * `xₜ::Matrix{S}`: 抽出された LDB 特徴量の行列で、行数は以前の `f.n_features` ではなく、現在は `n_features` になります。
+  * `xₜ::Matrix{S}`: 抽出されたLDB特徴量の行列で、行数は以前の `f.n_features` ではなく、現在は `n_features` になります。
 
 **関連情報:** [`LocalDiscriminantBasis`](@ref), [`fit!`](@ref), [`fit_transform`](@ref),     [`transform`](@ref), [`inverse_transform`](@ref)

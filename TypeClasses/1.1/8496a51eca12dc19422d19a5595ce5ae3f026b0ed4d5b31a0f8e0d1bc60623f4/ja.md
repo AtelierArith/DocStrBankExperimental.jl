@@ -2,4 +2,4 @@
 foldr_monoid(itr; init=TypeClasses.neutral)
 ```
 
-与えられた場合、初期要素 `init` を使用して `itr` のすべての要素を結合し、`TypeClasses.combine` を使用します。
+`itr`のすべての要素を、指定された場合は初期要素`init`を使用し、`TypeClasses.combine`を使用して結合します。

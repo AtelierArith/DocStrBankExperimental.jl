@@ -15,7 +15,7 @@ manifold = Flat())
 
 ## 説明
 
-`ConjugateGradient` メソッドは Hager と Zhang (2006) を実装し、Hager と Zhang (2013) の要素を含んでいます。デフォルトの `linesearch` は LineSearches.jl の `HagerZhang` です。このラインサーチは、Hager と Zhang (2006) で提案されたものと正確に一致します。
+`ConjugateGradient` メソッドは Hager と Zhang (2006) および Hager と Zhang (2013) の要素を実装しています。デフォルトの `linesearch` は LineSearches.jl の `HagerZhang` です。このラインサーチは Hager と Zhang (2006) で提案されたものと正確に一致します。
 
 ## 参考文献
 

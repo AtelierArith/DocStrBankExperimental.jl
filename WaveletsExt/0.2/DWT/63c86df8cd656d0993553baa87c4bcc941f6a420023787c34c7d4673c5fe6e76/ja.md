@@ -10,7 +10,7 @@ dwtall(x, wt[, L])
 
 # 引数
 
-  * `x::AbstractArray{T} where T<:Number`: 入力信号で、各スライスは1つの信号に対応します。次元$n$の入力信号`x`のセットに対して、信号は$n$次元目でスライスされます。
+  * `x::AbstractArray{T} where T<:Number`: 入力信号。各スライスは1つの信号に対応します。次元$n$の入力信号`x`のセットに対して、信号は$n$次元目でスライスされます。
   * `wt::OrthoFilter`: 直交ウェーブレットフィルター。
   * `L::Integer`: （デフォルト: `Wavelets.maxtransformlevels(xᵢ)`）ウェーブレット変換のレベル数。
 

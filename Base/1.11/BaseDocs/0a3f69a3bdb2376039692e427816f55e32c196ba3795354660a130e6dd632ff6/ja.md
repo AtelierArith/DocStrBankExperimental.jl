@@ -6,4 +6,4 @@ Int16 <: Signed <: Integer
 
 `n ∈ -32768:32767` の数を表します。このような整数は警告なしにオーバーフローするため、`typemax(Int16) + Int16(1) < 0` となります。
 
-関連情報としては [`Int`](@ref Int64)、[`widen`](@ref)、[`BigInt`](@ref) があります。
+関連情報として [`Int`](@ref Int64)、[`widen`](@ref)、[`BigInt`](@ref) を参照してください。

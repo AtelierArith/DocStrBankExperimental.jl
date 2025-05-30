@@ -12,11 +12,11 @@ annotations(strings::Vector{String}, positions::Vector{Point})
 
 **`align`** =  `(:left, :bottom)`  — `position`に対する文字列の整列を設定します。`:left, :center, :right, :top, :bottom, :baseline`または分数を使用します。
 
-**`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)`のように複数のアルファがある場合、掛け算されます。
+**`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)`のように複数のアルファが掛け合わされます。
 
 **`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
-**`color`** =  `@inherit textcolor`  — テキストの色を設定します。`Vector{<:Colorant}`を渡すことで、各グリフごとに1色を設定するか、全体のテキストに1つの色を設定できます。色が数のベクトルの場合、カラーマップ引数が数を色にマッピングするために使用されます。
+**`color`** =  `@inherit textcolor`  — テキストの色を設定します。`Vector{<:Colorant}`を渡すことで、各グリフごとに1色を設定することも、全体のテキストに1つの色を設定することもできます。色が数のベクトルの場合、カラーマップ引数が数を色にマッピングするために使用されます。
 
 **`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出します。
 
@@ -24,9 +24,9 @@ annotations(strings::Vector{String}, positions::Vector{Point})
 
 **`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar`と一緒に`identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10`、`Makie.Symlog10`と一緒にうまく機能します。
 
-**`depth_shift`** =  `0.0`  — 他のすべての変換後のプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
-**`font`** =  `@inherit font`  — フォントを設定します。`fonts`辞書で検索される`Symbol`、またはフォントの（部分的な）名前やフォントファイルのファイルパスを指定する`String`を使用できます。
+**`font`** =  `@inherit font`  — フォントを設定します。`fonts`辞書で検索される`Symbol`、またはフォントの（部分的な）名前やフォントファイルのファイルパスを指定する`String`であることができます。
 
 **`fonts`** =  `@inherit fonts`  — `Symbol`で指定されたフォントを検索するための辞書として使用されます。例えば、`:regular`、`:bold`、`:italic`などです。
 
@@ -38,7 +38,7 @@ annotations(strings::Vector{String}, positions::Vector{Point})
 
 **`glowwidth`** =  `0.0`  — テキストの周りのグロー効果のサイズを設定します。
 
-**`highclip`** =  `automatic`  — カラー範囲を超える任意の値の色。
+**`highclip`** =  `automatic`  — カラーレンジを超える任意の値の色。
 
 **`inspectable`** =  `@inherit inspectable`  — このプロットが`DataInspector`で表示されるべきかどうかを設定します。デフォルトは親シーンのテーマに依存します。
 
@@ -52,7 +52,7 @@ annotations(strings::Vector{String}, positions::Vector{Point})
 
 **`lineheight`** =  `1.0`  — 行の高さの倍率。
 
-**`lowclip`** =  `automatic`  — カラー範囲未満の任意の値の色。
+**`lowclip`** =  `automatic`  — カラーレンジ未満の任意の値の色。
 
 **`markerspace`** =  `:pixel`  — `fontsize`が作用する空間を設定します。可能な入力については`Makie.spaces()`を参照してください。
 

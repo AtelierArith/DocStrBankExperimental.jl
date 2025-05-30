@@ -10,7 +10,7 @@ IPNewton(; linesearch::Function = Optim.backtrack_constrained_grad,
 
 初期バリアペナルティ係数 `μ0` は数値として選択することも、アルゴリズムにその値を決定させるために `:auto` に設定することもできます。詳細は `initialize_μ_λ!` を参照してください。
 
-*注意*: 制約付き最適化問題に対しては、`optimize` に渡されるオプションで `allow_f_increases` と `successive_f_tol` を常に有効にすることをお勧めします。デフォルトは `Optim.Options(allow_f_increases = true, successive_f_tol = 2)` に設定されています。
+*注*: 制約付き最適化問題に対しては、`optimize` に渡されるオプションで `allow_f_increases` と `successive_f_tol` を常に有効にすることをお勧めします。デフォルトは `Optim.Options(allow_f_increases = true, successive_f_tol = 2)` に設定されています。
 
 2018年2月現在、ラインサーチアルゴリズムは制約付きインテリアポイント法に特化しています。将来的には `LineSearches.jl` からのより多くのアルゴリズムをサポートすることを期待しています。
 

@@ -6,7 +6,7 @@ BoxModel(; biogeochemistry,
            prescribed_tracers::PT = NamedTuple())
 ```
 
-`biogeochemistry`モデルのボックスモデルを構築します。これが構築されたら、`set!(model, X=1.0...)`を使って初期条件を設定できます。
+`biogeochemistry`モデルのボックスモデルを構築します。これが構築されたら、`set!(model, X=1.0...)`を使用して初期条件を設定できます。
 
 # キーワード引数
 

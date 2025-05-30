@@ -8,7 +8,7 @@ t8_cmesh_tree_vertices_negative_volume(eclass, vertices, num_vertices)
 
   * `eclass`:[in] 木のeclass。
   * `vertices`:[in] 木の頂点の座標。
-  * `num_vertices`:[in] 頂点の数。*vertices*は3 * *num_vertices*個の倍精度浮動小数点数を保持する必要があります。*num_vertices*はt8*eclass*num_vertices[*eclass*]と一致しなければなりません。
+  * `num_vertices`:[in] 頂点の数。*vertices*は3 * *num_vertices*の倍数のダブルを保持する必要があります。*num_vertices*はt8*eclass*num_vertices[*eclass*]と一致する必要があります。
 
 # 戻り値
 

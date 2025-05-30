@@ -2,7 +2,7 @@
 BrimijoinGaussianSmoothed(; kwargs...) <: BinnedStimgen
 ```
 
-各トノトピックビンが、等間隔のリストから選ばれた最大振幅値を持つガウス関数で満たされる刺激生成タイプ。
+トノトピックビンごとに、等間隔のリストから選ばれた最大振幅値を持つガウス関数で満たされる刺激生成タイプです。
 
 # キーワード
 
@@ -12,5 +12,5 @@ BrimijoinGaussianSmoothed(; kwargs...) <: BinnedStimgen
   * `Fs::Real = 44.1e3`: 刺激の周波数（Hz）。
   * `amp_min::Real = -20`: ビンが持つことができる最低dB値。
   * `amp_max::Real = 0`: ビンが持つことができる最高dB値。
-  * `amp_step::Int = 6`: `amp_min`と`amp_max`の間の均等に間隔を空けたステップの数。
+  * `amp_step::Int = 6`: `amp_min`と`amp_max`の間の均等に配置されたステップの数。
   * `n_bins::Integer = 100`: 周波数範囲を分割するビンの数。

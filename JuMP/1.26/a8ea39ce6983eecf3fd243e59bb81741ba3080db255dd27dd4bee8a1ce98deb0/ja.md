@@ -4,7 +4,7 @@ node_count(model::GenericModel)
 
 利用可能な場合、混合整数プログラムにおける最近の最適化中に探索された分岐および境界ノードの総数を返します（[`MOI.NodeCount`](@ref) 属性）。
 
-属性がソルバーによって実装されていない場合、`MOI.GetAttributeNotAllowed` エラーがスローされます。
+属性がソルバーによって実装されていない場合、`MOI.GetAttributeNotAllowed` エラーが発生します。
 
 ## 例
 

@@ -6,6 +6,6 @@ provider_ehr_launch(
 )
 ```
 
-## オプションのキーワード引数:
+## オプショナルキーワード引数:
 
   * `scope::String`. デフォルト値: `launch`.

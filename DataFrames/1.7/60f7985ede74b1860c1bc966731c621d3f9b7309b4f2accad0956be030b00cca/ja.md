@@ -10,30 +10,30 @@ unstack(df::AbstractDataFrame;
         combine=only, fill=missing, threads::Bool=true)
 ```
 
-データフレーム `df` をアンスタックします。すなわち、長い形式から広い形式に変換します。
+データフレーム `df` をアンスタックします。すなわち、ロングフォーマットからワイドフォーマットに変換します。
 
-行キーと列キーは、最初に出現した順に並べられます。
+行キーと列キーは最初に出現した順に並べられます。
 
 # 位置引数
 
   * `df` : アンスタックされる AbstractDataFrame
   * `rowkeys` : 各行のユニークキーを持つ列。指定しない場合は、`colkey` または `value` でないものをグループ化してキーを見つけます。任意の列セレクタ（`Symbol`、文字列または整数； `:`, `Cols`, `All`, `Between`, `Not`、正規表現、または `Symbol`、文字列または整数のベクター）を使用できます。`rowkeys` に列が含まれていない場合、すべての行は同じキーを持つと見なされます。
-  * `colkey` : 幅広い形式で列名を保持する列（`Symbol`、文字列または整数）、デフォルトは `:variable`
+  * `colkey` : ワイドフォーマットで列名を保持する列（`Symbol`、文字列または整数）、デフォルトは `:variable`
   * `values` : 値を格納する列（`Symbol`、文字列または整数）、デフォルトは `:value`
 
 # キーワード引数
 
-  * `renamecols`: `colkey` の各ユニーク値に対して呼び出される関数；作成される列の名前を返す必要があります（通常は文字列または `Symbol` として）。`Symbol` に変換したときに重複する名前は許可されません。デフォルトでは変換は行われません。
+  * `renamecols`: `colkey` の各ユニーク値に対して呼び出される関数；作成される列の名前を返す必要があります（通常は文字列または `Symbol` として）。`Symbol` に変換されたときに結果の名前に重複があることは許可されません。デフォルトでは変換は行われません。
   * `allowmissing`: `false`（デフォルト）の場合、`colkey` に `missing` 値が含まれているとエラーが発生します；`true` の場合、`missing` 値を参照する列が作成されます。
-  * `combine`: `only`（デフォルト）の場合、`rowkeys` と `colkey` の組み合わせに重複エントリが含まれているとエラーが発生します。そうでない場合、渡された値は、データ内の `rowkeys` と `colkey` の各組み合わせに対してすべての要素を含むベクタービューに対して呼び出される関数でなければなりません。
-  * `fill`: 欠損行/列の組み合わせはこの値で埋められます。デフォルトは `missing` です。`value` 列が `CategoricalVector` であり、`fill` が `missing` でない場合、アンスタックされた値列も `CategoricalVector` を保持するために、`fill` は `CategoricalValue` として渡す必要があります。
-  * `threads`: `combine` 関数が並行して実行できる別のタスクで実行されるかどうか（同時に複数のグループに適用される可能性があります）。タスクが実際に生成されるかどうかとその数は自動的に決定されます。`combine` が直列実行を必要とする場合やスレッドセーフでない場合は `false` に設定します。
+  * `combine`: `only`（デフォルト）の場合、`rowkeys` と `colkey` の組み合わせに重複エントリが含まれているとエラーが発生します。そうでない場合、渡された値は、データ内の `rowkeys` と `colkey` の各組み合わせに対してすべての要素を含むベクタービューに対して呼び出される関数である必要があります。
+  * `fill`: 欠損行/列の組み合わせはこの値で埋められます。デフォルトは `missing` です。`value` 列が `CategoricalVector` であり、`fill` が `missing` でない場合、アンスタックされた値列も `CategoricalVector` として保持するために、`fill` は `CategoricalValue` として渡す必要があります。
+  * `threads`: `combine` 関数が並行して実行できる別のタスクで実行されるかどうか（同時に複数のグループに適用される可能性があります）。タスクが実際に生成されるかどうか、およびその数は自動的に決定されます。`combine` が直列実行を必要とする場合やスレッドセーフでない場合は `false` に設定します。
 
 メタデータ：テーブルレベルの `:note` スタイルのメタデータと、行キー列の列レベルの `:note` スタイルのメタデータが保持されます。
 
 # 非推奨
 
-  * `allowduplicates` キーワード引数は非推奨です；代わりに `combine` キーワード引数を使用してください；`allowduplicates=true` に相当するのは `combine=last` で、`allowduplicates=false` に相当するのは `combine=only`（デフォルト）です；
+  * `allowduplicates` キーワード引数は非推奨です。代わりに `combine` キーワード引数を使用してください；`allowduplicates=true` に相当するのは `combine=last` で、`allowduplicates=false` に相当するのは `combine=only`（デフォルト）です。
 
 # 例
 
@@ -138,7 +138,7 @@ julia> unstack(long, :id, :variable, :value, renamecols=x->Symbol(:_, x))
    6 │     6       2.0       1.0       3.0
 ```
 
-上記の拡張された結果にはいくつかの違いがあることに注意してください。
+上記の拡張結果にはいくつかの違いがあることに注意してください。
 
 ```jldoctest
 julia> df = DataFrame(id=["1", "1", "2"],

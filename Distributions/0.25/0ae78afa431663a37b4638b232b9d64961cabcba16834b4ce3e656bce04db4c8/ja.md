@@ -21,4 +21,4 @@ failprob(d)     # 失敗率を取得、すなわち 1 - p
 
 外部リンク：
 
-  * [Wikipediaの二項分布](http://en.wikipedia.org/wiki/Binomial_distribution)
+  * [ウィキペディアの二項分布](http://en.wikipedia.org/wiki/Binomial_distribution)

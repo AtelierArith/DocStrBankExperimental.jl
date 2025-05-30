@@ -6,7 +6,7 @@ MPIWorkerManager([nprocs])
 
 ワーカーはすべてMPIセッションに属し、MPI操作を使用して通信できます。`MPIManager`とは異なり、MPIセッションは初期化されないため、ワーカーは`MPI.Init()`を実行する必要があります。
 
-マスタープロセス（pid 1）はセッションの一部ではなく、ワーカーとTCP/IPを介して通信します。
+マスタープロセス（pid 1）はセッションの一部ではなく、TCP/IPを介してワーカーと通信します。
 
 # 使用法
 
@@ -19,7 +19,7 @@ mgr = MPIWorkerManager() # デフォルトの数のMPIワーカーを起動（`m
 addprocs(mgr; kwoptions...)
 ```
 
-サポートされている`kwoptions`は次のとおりです：
+次の`kwoptions`がサポートされています：
 
   * `dir`: ワーカーの作業ディレクトリ。
   * `mpiexec`: MPIランチャー実行可能ファイル（デフォルト：MPI.jlからのランチャーを使用）

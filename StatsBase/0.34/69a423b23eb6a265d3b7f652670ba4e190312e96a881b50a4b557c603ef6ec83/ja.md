@@ -2,7 +2,7 @@
 cronbachalpha(covmatrix::AbstractMatrix{<:Real})
 ```
 
-共分散行列 `covmatrix` からのクロンバックのアルファ (1951) を計算します。 [公式](https://en.wikipedia.org/wiki/Cronbach%27s_alpha) に従います：
+共分散行列 `covmatrix` から Cronbach のアルファ (1951) を計算します。 [公式](https://en.wikipedia.org/wiki/Cronbach%27s_alpha) に従います：
 
 $$
 ρ = \frac{k}{k-1} \left(1 - \frac{\sum^k_{i=1} σ^2_i}{\sum_{i=1}^k \sum_{j=1}^k σ_{ij}}\right)
@@ -12,8 +12,8 @@ $$
 
 `CronbachAlpha` オブジェクトを返し、以下を保持します：
 
-  * `alpha`: `covmatrix` のすべての項目、すなわち列に対するクロンバックのアルファスコア；および
-  * `dropped`: 特定の項目、すなわち列が `covmatrix` から削除された場合のクロンバックのアルファスコアを示すベクトル。
+  * `alpha`: `covmatrix` のすべての項目、すなわち列に対する Cronbach のアルファスコア；および
+  * `dropped`: 特定の項目、すなわち列が `covmatrix` から削除された場合の Cronbach のアルファスコアを示すベクトル。
 
 # 例
 

@@ -1,1 +1,1 @@
-実験的
+Experimental

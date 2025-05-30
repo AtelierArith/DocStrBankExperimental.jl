@@ -2,9 +2,9 @@
 AnnotatedChar{S <: AbstractChar} <: AbstractChar
 ```
 
-注釈付きの文字です。
+注釈付き文字。
 
-より具体的には、これは他の[`AbstractChar`](@ref)の周りを単純にラップしたもので、ラップされた文字とともに任意のラベル付き注釈のリスト（`@NamedTuple{label::Symbol, value}`）を保持します。
+より具体的には、これは他の[`AbstractChar`](@ref)の周りのシンプルなラッパーであり、ラップされた文字とともに任意のラベル付き注釈のリスト（`@NamedTuple{label::Symbol, value}`）を保持します。
 
 関連情報: [`AnnotatedString`](@ref), [`annotatedstring`](@ref), `annotations`, および `annotate!`。
 

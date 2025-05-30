@@ -10,8 +10,8 @@ gのコピーを作成します。要素型`T`が指定されている場合、g
 julia> using Graphs
 
 julia> g = complete_graph(5)
-{5, 10} undirected simple Int64 graph
+{5, 10} 無向単純 Int64 グラフ
 
 julia> SimpleGraph{UInt8}(g)
-{5, 10} undirected simple UInt8 graph
+{5, 10} 無向単純 UInt8 グラフ
 ```

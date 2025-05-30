@@ -12,7 +12,7 @@ createrun(instance::MLFlow, experiment_id::String;
   * `instance`: [`MLFlow`](@ref)の設定。
   * `experiment_id`: 関連する[`Experiment`](@ref)のID。
   * `run_name`: [`Run`](@ref)の名前。
-  * `start_time`: [`Run`](@ref)が開始したときのUnixタイムスタンプ（ミリ秒）。
+  * `start_time`: [`Run`](@ref)が開始したときのミリ秒単位のUnixタイムスタンプ。
   * `tags`: [`Run`](@ref)の追加メタデータ。
 
 # 戻り値

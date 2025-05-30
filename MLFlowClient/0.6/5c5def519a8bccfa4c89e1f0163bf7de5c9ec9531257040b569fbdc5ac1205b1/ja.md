@@ -12,4 +12,4 @@ setmodelversiontag(instance::MLFlow, name::String, key::String, value::String)
 
 # 戻り値
 
-成功した場合は `true`。それ以外の場合は例外を発生させます。
+成功した場合は `true` を返します。それ以外の場合は例外を発生させます。

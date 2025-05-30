@@ -22,4 +22,4 @@ top_down(
 segments = top_down(xs, ys; min_segment_length=1.2)
 ```
 
-参照: [`sliding_window`](@ref), [`shortest_path`](@ref).
+関連項目: [`sliding_window`](@ref), [`shortest_path`](@ref).

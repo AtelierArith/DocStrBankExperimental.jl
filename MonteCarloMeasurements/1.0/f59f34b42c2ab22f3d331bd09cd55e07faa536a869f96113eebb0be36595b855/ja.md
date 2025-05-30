@@ -2,7 +2,7 @@
 unsafe_comparisons(onoff=true; verbose=true)
 ```
 
-警告なしで比較関数の使用を切り替えます。デフォルトでは、`mean` が粒子を比較のために浮動小数点数に減らすために使用されます。この関数は変更可能で、例として `set_comparison_function(median)` があります。
+警告なしに比較関数の使用を切り替えます。デフォルトでは、`mean` が粒子を比較のために浮動小数点数に減らすために使用されます。この関数は変更可能で、例として `set_comparison_function(median)` があります。
 
 ```
 unsafe_comparisons(mode=:reduction; verbose=true)

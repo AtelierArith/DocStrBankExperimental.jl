@@ -10,6 +10,6 @@ sample(
 )
 ```
 
-`logdensity` 関数を [`LogDensityModel`](@ref) でラップし、結果のモデルを使用して `sample` を呼び出します。
+`logdensity` 関数を [`LogDensityModel`](@ref) でラップし、結果のモデルを使って `sample` を呼び出します。
 
 `logdensity` 関数は [LogDensityProblems.jl](https://github.com/tpapp/LogDensityProblems.jl) インターフェースをサポートする必要があります。

@@ -2,7 +2,7 @@
 Camera3D(scene[; kwargs...])
 ```
 
-3Dカメラをマウスとキーボードのコントロールで設定します。
+3Dカメラをマウスとキーボードのコントロールでセットアップします。
 
 カメラの動作は、キーワード引数またはフィールド `settings` と `controls` を介して調整できます。
 
@@ -40,8 +40,8 @@ Camera3D(scene[; kwargs...])
   * `right_key = Keyboard.d` は画面の右側に向かう移動のためのキーを設定します。
   * `forward_key  = Keyboard.w` は画面に向かう移動のためのキーを設定します。
   * `backward_key = Keyboard.s` は画面から出る移動のためのキーを設定します。
-  * `zoom_in_key   = Keyboard.u` はシーンにズームインするためのキーを設定します (eyeposition を lookat に向かって移動)。
-  * `zoom_out_key  = Keyboard.o` はシーンからズームアウトするためのキーを設定します (eyeposition を lookat から遠ざける)。
+  * `zoom_in_key   = Keyboard.u` はシーンにズームインするためのキーを設定します (視点を `lookat` に向かって移動)。
+  * `zoom_out_key  = Keyboard.o` はシーンからズームアウトするためのキーを設定します (視点を `lookat` から離れて移動)。
   * `increase_fov_key = Keyboard.b` は視野を広げるためのキーを設定します。
   * `decrease_fov_key = Keyboard.n` は視野を狭めるためのキーを設定します。
   * `pan_left_key  = Keyboard.j` は画面の垂直軸の周りの回転のためのキーを設定します。
@@ -67,12 +67,12 @@ Camera3D(scene[; kwargs...])
   * `lookat = Vec3d(0)`: カメラが焦点を合わせている点。
   * `upvector = Vec3d(0, 0, 1)`: 画面の上方向に対応する世界の方向。
   * `fov = 45.0` は視野です。カメラが正投影を使用する場合は無関係です。
-  * `near = automatic` は近クリップ面の位置を設定します。カメラと近クリップ面の間のものは隠されます。0より大きくする必要があります。使用は `clipping_mode` に依存します。
-  * `far = automatic` は遠クリップ面の位置を設定します。遠クリップ面よりも遠くにあるものは隠されます。使用は `clipping_mode` に依存します。`clipping_mode = :bbox_relative` の場合はデフォルトで `1`、`:view_relative` の場合は `2`、または `:static` の場合は制限から導出された値です。
+  * `near = automatic` は近クリップ面の位置を設定します。カメラと近クリップ面の間にあるものは隠されます。0より大きくする必要があります。使用は `clipping_mode` に依存します。
+  * `far = automatic` は遠クリップ面の位置を設定します。遠クリップ面よりも遠くにあるものは隠されます。使用は `clipping_mode` に依存します。`clipping_mode = :bbox_relative` の場合はデフォルトで `1`、`:view_relative` の場合は `2`、または `:static` の制限から導出された値になります。
 
-アクティブなカメラでこれらのオブザーバブルを更新するには、適用するために `update_cam(scene)` を呼び出す必要があります。`eyeposition`、`lookat` および/または upvector を更新するには、`update_cam!(scene, eyeposition, lookat, upvector = Vec3d(0,0,1))` が推奨されます。
+アクティブなカメラでこれらのオブザーバブルを更新するには、適用されるために `update_cam(scene)` を呼び出す必要があります。`eyeposition`、`lookat` および/または `upvector` を更新するには、`update_cam!(scene, eyeposition, lookat, upvector = Vec3d(0,0,1))` が推奨されます。
 
-カメラの位置と向きは、次の関数を介して調整することもできます。
+カメラの位置と向きは、以下の関数を介して調整することもできます。
 
   * `translate_cam!(scene, v)` は、与えられたベクトル `v` によってカメラを移動します。
   * `rotate_cam!(scene, angles)` は、対応する角度でカメラをその軸の周りに回転させます。最初の角度はカメラの「右」、つまり画面の水平軸の周りを回転させ、2番目は上ベクトル/垂直軸の周り、または `fixed_axis = true` の場合は `Vec3d(0, 0, +-1)` の周りを回転させ、3番目はビュー方向、つまり画面の外側の軸の周りを回転させます。回転はカメラの現在の `rotation_center` を尊重します。

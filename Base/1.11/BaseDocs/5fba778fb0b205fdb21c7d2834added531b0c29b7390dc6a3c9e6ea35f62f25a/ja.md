@@ -34,4 +34,4 @@ julia> map(>(pi), [1 2 3 4 5])
  0  0  0  1  1
 ```
 
-[`trues`](@ref)、[`falses`](@ref)、[`ifelse`](@ref) も参照してください。
+他に [`trues`](@ref)、[`falses`](@ref)、[`ifelse`](@ref) も参照してください。

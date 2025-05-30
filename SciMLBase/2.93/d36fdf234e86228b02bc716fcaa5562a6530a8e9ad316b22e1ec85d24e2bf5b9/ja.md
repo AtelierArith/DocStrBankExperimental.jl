@@ -3,4 +3,4 @@ remake(prob::NonlinearLeastSquaresProblem; f = missing, u0 = missing, p = missin
     kwargs = missing, _kwargs...)
 ```
 
-与えられた `NonlinearLeastSquaresProblem` を再作成します。
+与えられた `NonlinearLeastSquaresProblem` を再構築します。

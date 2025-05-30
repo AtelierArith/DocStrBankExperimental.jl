@@ -41,5 +41,5 @@ julia> treewidth(graph; alg)
 
   * `alg`: 排除アルゴリズム
   * `dis`: 切断アルゴリズム
-  * `limit`: 最小部分グラフ
+  * `limit`: 最小サブグラフ
   * `level`: 最大深さ

@@ -1,1 +1,1 @@
-AlignModeは、パディングがNothingの場合はInside、Realの場合はOutside、Protrusionの場合は固定値で突出をオーバーライドします。
+AlignModeは、パディングがNothingの場合はInside、Realの場合はOutside、そしてProtrusionの場合は固定値で突出をオーバーライドします。

@@ -14,7 +14,7 @@ aws_mqtt_client_connection_reconnect(connection, on_connection_complete, userdat
 
 # 戻り値
 
-接続が正常に開始された場合は AWS*OP*SUCCESS、それ以外の場合は AWS*OP*ERR と aws*last*error() が設定されます。
+接続が正常に開始された場合は AWS*OP*SUCCESS、それ以外の場合は AWS*OP*ERR が返され、aws*last*error() が設定されます。
 
 ### プロトタイプ
 

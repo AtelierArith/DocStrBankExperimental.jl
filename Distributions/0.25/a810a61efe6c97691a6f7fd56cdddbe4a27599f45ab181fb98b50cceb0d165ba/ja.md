@@ -19,4 +19,4 @@ convolve(d1::Distribution, d2::Distribution)
   * [`Gamma`](@ref)
   * [`MvNormal`](@ref)
 
-外部リンク: [確率分布の畳み込みのリスト - Wikipedia](https://en.wikipedia.org/wiki/List_of_convolutions_of_probability_distributions)
+外部リンク: [List of convolutions of probability distributions on Wikipedia](https://en.wikipedia.org/wiki/List_of_convolutions_of_probability_distributions)

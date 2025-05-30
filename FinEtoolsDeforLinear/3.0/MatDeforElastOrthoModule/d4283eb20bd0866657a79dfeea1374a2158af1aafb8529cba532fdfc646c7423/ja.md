@@ -8,4 +8,4 @@ struct MatDeforElastOrtho{
 } <: AbstractMatDeforLinearElastic
 ```
 
-線形直交弾性材料。
+線形異方性弾性材料。

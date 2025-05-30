@@ -2,4 +2,4 @@
 velocity_vector(x::AbstractVector,ls::RigidBodyMotion,jid::Int)
 ```
 
-関節 `jid` の速度のみを含むリンクシステムのグローバル状態ベクトルのビューを返します。
+リンクされたシステムのグローバル状態ベクトルのビューを返し、関節 `jid` の速度のみを含みます。

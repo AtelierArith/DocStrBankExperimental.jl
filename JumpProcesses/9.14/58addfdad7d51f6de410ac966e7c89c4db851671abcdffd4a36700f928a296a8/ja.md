@@ -1,3 +1,3 @@
-直接合成-拒否直接法。`DirectCR`メソッドを使用して、グリッド/グラフ上でジャンプが発生する場所を特定し、`Direct`メソッドを使用してサンプリングされた位置でどのジャンプが発生するかを決定します。
+The Direct Composition-Rejection Direct method. Uses the `DirectCR` method to determine where on the grid/graph a jump occurs, and the `Direct` method to determine which jump occurs at the sampled location.
 
-Kevin R. Sanft と Hans G. Othmer, 最適なビニングを用いた定常複雑性確率シミュレーションアルゴリズム, Journal of Chemical Physics 143, 074108 (2015). doi: 10.1063/1.4928635.
+Kevin R. Sanft and Hans G. Othmer, Constant-complexity stochastic simulation algorithm with optimal binning,  Journal of Chemical Physics 143, 074108 (2015). doi: 10.1063/1.4928635.

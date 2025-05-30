@@ -3,4 +3,4 @@ gridplot(sys::VoronoiFVM.AbstractSystem; kwargs...) -> Any
 
 ```
 
-システムの背後にグリッドをプロットします
+システムの背後にグリッドをプロットします。

@@ -6,7 +6,7 @@ t8_stash_get_attribute(stash, index)
 
 # 引数
 
-  * `stash`:[in] 考慮すべきスタッシュ。
+  * `stash`:[in] 考慮されるスタッシュ。
   * `index`:[in] *stash* の属性配列内の属性のインデックス。
 
 # 戻り値

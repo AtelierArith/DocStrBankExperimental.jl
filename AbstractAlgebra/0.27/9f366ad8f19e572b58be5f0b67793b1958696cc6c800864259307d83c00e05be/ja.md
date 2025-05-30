@@ -2,7 +2,7 @@
 Array(A::MatrixElem{T}) where T <: RingElement
 ```
 
-`A`を同じ次元で同じ要素を持つJuliaの`Matrix`に変換します。
+`A`を同じ次元と同じ要素を持つJuliaの`Matrix`に変換します。
 
 # 例
 

@@ -7,7 +7,7 @@ acwpd!(xw, x, wt[, L])
 # 引数
 
   * `xw::AbstractArray{T} where T<:Number`: 出力用に割り当てられた配列。
-  * `x::AbstractArray{T} where T<:Number`: 元の信号で、できればサイズは2ᴷであること（$K \in \mathbb{N}$）。
+  * `x::AbstractArray{T} where T<:Number`: 元の信号で、できればサイズは2ᴷで$K \in \mathbb{N}$であることが望ましい。
   * `wt::OrthoFilter`: 直交ウェーブレットフィルター。
   * `L::Integer`: (デフォルト: `maxtransformlevels(x)`) 分解のレベル数。
 

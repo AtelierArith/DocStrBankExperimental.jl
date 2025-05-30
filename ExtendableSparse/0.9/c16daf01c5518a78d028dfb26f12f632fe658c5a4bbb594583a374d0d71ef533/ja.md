@@ -2,9 +2,9 @@
 abstract type AbstractFactorization{Tv, Ti}
 ```
 
-ExtendableSparseMatrixを持つ因数分解のための抽象型。
+ExtandableSparseMatrixを持つ因数分解のための抽象型。
 
-そのような前処理器は、次のフィールドを持つ必要があります。
+そのような前処理器は、以下のフィールドを持つ必要があります。
 
 ```
   A::ExtendableSparseMatrix

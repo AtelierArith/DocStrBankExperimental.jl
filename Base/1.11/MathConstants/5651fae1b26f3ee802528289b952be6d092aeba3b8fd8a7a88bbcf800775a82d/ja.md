@@ -7,7 +7,7 @@ pi
 
 Unicode `π` は、Julia REPL で `\pi` と書いてからタブを押すことで入力でき、多くのエディタでも同様です。
 
-関連項目: [`sinpi`](@ref), [`sincospi`](@ref), [`deg2rad`](@ref)。
+関連情報: [`sinpi`](@ref), [`sincospi`](@ref), [`deg2rad`](@ref)。
 
 # 例
 

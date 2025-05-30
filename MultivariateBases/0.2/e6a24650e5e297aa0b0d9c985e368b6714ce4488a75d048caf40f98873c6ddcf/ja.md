@@ -4,4 +4,4 @@ struct LaguerreBasis{P} <: AbstractMultipleOrthogonalBasis{P}
 end
 ```
 
-単変数重み関数 $w(x) = \exp(-x)$ に関して、区間 $[0, \infty]$ での直交多項式。
+単変数重み関数 $w(x) = \exp(-x)$ に関する直交多項式は、区間 $[0, \infty]$ で定義されます。

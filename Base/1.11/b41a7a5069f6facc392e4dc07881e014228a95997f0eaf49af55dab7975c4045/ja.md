@@ -7,7 +7,7 @@ union(s, itrs...)
 
 最初の引数は、返されるコンテナの種類を制御します。これが配列である場合、要素が最初に現れる順序を維持します。
 
-Unicode `∪` は、Julia REPL で `\cup` と入力してタブを押すことで、また多くのエディタで入力できます。これは中置演算子であり、`s ∪ itr` のように使用できます。
+Unicode `∪` は、Julia REPL で `\cup` と書いてからタブを押すことで入力できます。また、多くのエディタでも同様です。これは中置演算子であり、`s ∪ itr` のように使用できます。
 
 関連項目としては [`unique`](@ref)、[`intersect`](@ref)、[`isdisjoint`](@ref)、[`vcat`](@ref)、[`Iterators.flatten`](@ref) があります。
 

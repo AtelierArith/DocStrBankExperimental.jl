@@ -2,12 +2,12 @@
 BoundaryValueDiffEqAscher.Ascher1(; nlsolve = NewtonRaphson(), max_num_subintervals = 3000)
 ```
 
-1段階ガウス・レジェンドルコレクション法、アッシャーの実装から適応された適応性を持つ。
+1段階ガウス・レジェンドルコレクション法で、アッシャーの実装から適応性を持たせています。
 
 ## キーワード引数
 
   * `nlsolve`: 内部非線形ソルバー。SciML `NonlinearProblem` インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
-  * `max_num_subintervals`: 最大サブインターバル数、デフォルトは3000。
+  * `max_num_subintervals`: 最大サブインターバル数、デフォルトは3000です。
   * `zeta`: サイド条件ポイント、常に提供する必要があります。
 
 !!! note
@@ -18,7 +18,7 @@ BoundaryValueDiffEqAscher.Ascher1(; nlsolve = NewtonRaphson(), max_num_subinterv
 
 ```bibtex
 @article{Ascher1994CollocationSF,
-    title={境界値微分代数方程式のためのコレクションソフトウェア},
+    title={Collocation Software for Boundary Value Differential-Algebraic Equations},
     author={Uri M. Ascher and Raymond J. Spiteri},
     journal={SIAM J. Sci. Comput.},
     year={1994},
@@ -28,9 +28,9 @@ BoundaryValueDiffEqAscher.Ascher1(; nlsolve = NewtonRaphson(), max_num_subinterv
 }
 
 @article{Ascher1979ACS,
-    title={境界値問題の混合次数系のためのコレクションソルバー},
+    title={A collocation solver for mixed order systems of boundary value problems},
     author={Uri M. Ascher and J. Christiansen and Robert D. Russell},
-    journal={数学の計算},
+    journal={Mathematics of Computation},
     year={1979},
     volume={33},
     pages={659-679},

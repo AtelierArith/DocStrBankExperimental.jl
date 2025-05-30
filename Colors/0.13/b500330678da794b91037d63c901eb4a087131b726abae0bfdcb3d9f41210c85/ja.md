@@ -3,18 +3,18 @@ colormatch(wavelength)
 colormatch(matchingfunction, wavelength)
 ```
 
-CIE標準観察者の色マッチ関数を評価します。
+CIE標準観察者の色合せ関数を評価します。
 
 # 引数
 
-  * `matchingfunction`（オプション）：マッチング関数を指定するために使用されるタイプ。選択肢は以下の通りです：
+  * `matchingfunction`（オプション）：合せ関数を指定するために使用される型。選択肢は以下の通りです：
 
-      * `CIE1931_CMF`（デフォルト、CIE 1931 2°マッチング関数）
-      * `CIE1964_CMF`（CIE 1964 10°色マッチング関数）
-      * `CIE1931J_CMF`（`CIE1931_CMF`へのジャッド調整）
-      * `CIE1931JV_CMF`（`CIE1931_CMF`へのジャッド-ボス調整）
-      * `CIE2006_2_CMF`（CIE 2006 2° LMSコーンファンダメンタルから変換）
-      * `CIE2006_10_CMF`（CIE 2006 10° LMSコーンファンダメンタルから変換）
+      * `CIE1931_CMF`（デフォルト、CIE 1931 2°合せ関数）
+      * `CIE1964_CMF`（CIE 1964 10°色合せ関数）
+      * `CIE1931J_CMF`（`CIE1931_CMF`へのJudd調整）
+      * `CIE1931JV_CMF`（`CIE1931_CMF`へのJudd-Vos調整）
+      * `CIE2006_2_CMF`（CIE 2006 2° LMSコーン基礎から変換）
+      * `CIE2006_10_CMF`（CIE 2006 10° LMSコーン基礎から変換）
   * `wavelength`：刺激の波長（ナノメートル単位）。
 
 知覚された色のXYZ値を返します。

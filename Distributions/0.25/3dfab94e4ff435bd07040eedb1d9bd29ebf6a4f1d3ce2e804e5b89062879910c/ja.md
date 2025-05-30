@@ -21,4 +21,4 @@ params(d)     # パラメータを取得、すなわち (α, β)
 
 外部リンク
 
-  * [ベータ分布 - Wikipedia](http://en.wikipedia.org/wiki/Beta_distribution)
+  * [Beta distribution on Wikipedia](http://en.wikipedia.org/wiki/Beta_distribution)

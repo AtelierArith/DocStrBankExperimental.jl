@@ -14,7 +14,7 @@ print_tree(f::Function, g::Function, io::IO, tree; kw...)
   * `io::IO` - 書き込むIOストリーム。
   * `tree` - 出力するツリー。
   * `maxdepth::Integer = 5` - この深さでサブツリーの出力を切り捨てます。
-  * `indicate_truncation::Bool = true` - 切り捨てられたノードの下に垂直の省略記号文字を出力します。
+  * `indicate_truncation::Bool = true` - 切り捨てられたノードの下に垂直の省略記号を表示します。
   * `charset::TreeCharSet` - 枝を出力するために使用する[`TreeCharSet`](@ref)。
   * `printkeys::Union{Bool, Nothing}` - 子ノードのキーを出力するかどうか（`pairs(children(node))`を使用）。`nothing`の値は、ノードごとに[`printkeys_default`](@ref)を使用して動作を決定します。
   * `printnode_kw = (;)` - `f`に転送するキーワード引数。

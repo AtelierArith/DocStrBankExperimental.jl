@@ -4,7 +4,7 @@ unset_time_limit_sec(model::GenericModel)
 
 ソルバーの時間制限を解除します。
 
-参照: [`set_time_limit_sec`](@ref), [`time_limit_sec`](@ref).
+関連情報: [`set_time_limit_sec`](@ref), [`time_limit_sec`](@ref).
 
 ## 例
 

@@ -24,7 +24,7 @@ Rodas5Pe(; chunk_size = Val{0}(),
       * `u`: 現在のODE状態
       * `p`: ODEパラメータ
       * `t`: 現在のODE時間
-      * `newW`: `W`行列が前回の`precs`呼び出し以来更新されたかどうかを指定する`Bool`。`newW == true`のときのみ前処理器を更新することを推奨します。
+      * `newW`: `W`行列が前回の`precs`呼び出し以降に更新されたかどうかを指定する`Bool`。`newW == true`のときのみ前処理器を更新することを推奨します。
       * `Plprev`: 前の`Pl`。
       * `Prprev`: 前の`Pr`。
       * `solverdata`: ソルバーが`precs`関数に提供できるオプションの追加データ。ソルバー依存であり、変更される可能性があります。
@@ -44,4 +44,4 @@ Rodas5Pe(; chunk_size = Val{0}(),
 
 ## 参考文献
 
-  * Steinebach G. ロゼンブロック法のOrdinaryDiffEq.jl内での概要、最近の発展と応用 - プレプリント2024 https://github.com/hbrs-cse/RosenbrockMethods/blob/main/paper/JuliaPaper.pdf
+  * Steinebach G. ロゼンブロック法のOrdinaryDiffEq.jl内での概要、最近の開発と応用 - プレプリント2024 https://github.com/hbrs-cse/RosenbrockMethods/blob/main/paper/JuliaPaper.pdf

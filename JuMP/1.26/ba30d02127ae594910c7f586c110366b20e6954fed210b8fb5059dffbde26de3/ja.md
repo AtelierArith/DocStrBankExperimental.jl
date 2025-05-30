@@ -4,7 +4,7 @@ map_coefficients(f::Function, a::GenericQuadExpr)
 
 [`GenericQuadExpr`](@ref) `a` の係数と定数項に `f` を適用し、新しい式を返します。
 
-関連: [`map_coefficients_inplace!`](@ref)
+関連情報: [`map_coefficients_inplace!`](@ref)
 
 ## 例
 

@@ -6,7 +6,7 @@ datapadded = PaddedView(fillvalue, data, sz, first_datum)
 datapadded = PaddedView{T}(args...)
 ```
 
-配列 `data` のパディングされたバージョンを作成します。ここで、`data` に割り当てられていない `padded_axes` の範囲内の要素は `fillvalue` の値を持ちます。
+配列 `data` のパディングされたバージョンを作成します。`data` に割り当てられていない `padded_axes` の範囲内の要素は、`fillvalue` の値を持ちます。
 
 `data_axes` を指定して `data` の代替の軸セットを指定することで、`data` を異なるインデックスのセットに移動させることができます。これは次のように短縮できます。
 
@@ -17,7 +17,7 @@ datapadded = PaddedView(fillvalue, offsetdata, padded_axes)
 
 これは [OffsetArrays](https://github.com/JuliaArrays/OffsetArrays.jl) パッケージを使用しています。
 
-また、パディングされた配列のサイズ `sz` を指定することもでき、その場合 `datapadded` は 1 からインデックス付けが始まります。オプションで、`first_datum` を使用して `data` の `[1, 1, ...]` 要素の位置を指定できます。具体的には、`datapadded[first_datum...]` は `data[1, 1, ...]` に対応します。`first_datum` のデフォルトはすべて 1 です。
+また、パディングされた配列のサイズ `sz` を指定することもでき、その場合 `datapadded` は 1 からインデックスを開始します。オプションで、`first_datum` を使用して `data` の `[1, 1, ...]` 要素の位置を指定できます。具体的には、`datapadded[first_datum...]` は `data[1, 1, ...]` に対応します。`first_datum` のデフォルトはすべて 1 です。
 
 ビューのエルタイプ `T` はオプションです。指定されていない場合、ほとんどの場合、`T` は `eltype(data)` と推測されます。`fillvalue` が `eltype(data)` に変換できない場合、`T` は変換できるものに昇格されます。たとえば、`fillvalue == nothing` で `eltype(data) == Float32` の場合、推測されるエルタイプ `T` は `Union{Nothing, Float32}` になります。
 

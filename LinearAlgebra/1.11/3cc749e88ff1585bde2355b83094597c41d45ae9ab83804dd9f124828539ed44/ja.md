@@ -6,9 +6,9 @@ Cholesky <: Factorization
 
 三角形のコレスキー因子は、因子分解 `F::Cholesky` から `F.L` および `F.U` を介して取得でき、`A ≈ F.U' * F.U ≈ F.L * F.L'` となります。
 
-`Cholesky` オブジェクトに対して利用可能な関数は、[`size`](@ref)、[`\`](@ref)、[`inv`](@ref)、[`det`](@ref)、[`logdet`](@ref)、および [`isposdef`](@ref) です。
+`Cholesky` オブジェクトに対して利用可能な関数は次のとおりです: [`size`](@ref), [`\`](@ref), [`inv`](@ref), [`det`](@ref), [`logdet`](@ref) および [`isposdef`](@ref)。
 
-分解を反復することで、成分 `L` と `U` が得られます。
+分解を反復すると、成分 `L` と `U` が得られます。
 
 # 例
 
@@ -42,7 +42,7 @@ julia> C.L
 julia> C.L * C.U == A
 true
 
-julia> l, u = C; # destructuring via iteration
+julia> l, u = C; # 反復による分解
 
 julia> l == C.L && u == C.U
 true

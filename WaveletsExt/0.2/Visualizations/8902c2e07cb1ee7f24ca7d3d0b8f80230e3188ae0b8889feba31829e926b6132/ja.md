@@ -3,7 +3,7 @@ wiggle!(wav[; taxis, zaxis, sc, EdgeColor, FaceColor, Orient, Overlap, ZDir])
 wiggle!(plt, wav[; taxis, zaxis, sc, EdgeColor, FaceColor, Orient, Overlap, ZDir])
 ```
 
-現在表示されているグラフィックス上または `plt` の上にシェーディングされたウィグルをプロットします。現在利用可能な表示グラフィックスがない場合、新しい `Plots.Plot` オブジェクトが生成され、シェーディングされたウィグルがプロットされます。
+現在表示されているグラフィックス上または `plt` の上にシェーディングされたウィグルのセットをプロットします。現在利用可能な表示グラフィックスがない場合、新しい `Plots.Plot` オブジェクトが生成されてシェーディングされたウィグルがプロットされます。
 
 # 引数
 
@@ -51,8 +51,8 @@ wiggle!(x)
 wiggle!(plt, x)
 ```
 
-翻訳者: Nicholas Hausch – MATLABファイルは斉藤直樹によって提供されました。以前のMATLABバージョンの貢献者は、Anthony K. Booer (SLB) と Bradley Marchand (NSWC-PC) です。
+翻訳者: Nicholas Hausch – MATLABファイル提供者: Naoki Saito。以前のMATLABバージョンの貢献者はAnthony K. Booer (SLB) とBradley Marchand (NSWC-PC)です。
 
-改訂者: 斉藤直樹, 2018年2月5日。最新のJuliaバージョンの互換性のためにZeng Fung Liewによって維持されています。
+改訂者: Naoki Saito, 2018年2月5日。最新のJuliaバージョンの互換性のためにZeng Fung Liewによって維持されています。
 
 **関連情報:** [`wiggle`](@ref)

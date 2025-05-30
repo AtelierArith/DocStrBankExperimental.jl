@@ -2,7 +2,7 @@
 SecondOrderContinuousSystem
 ```
 
-次の形式の連続時間二次系：
+連続時間の二次系の形式：
 
 $$
     Mx''(t) + Cx'(t) + f_i(x) = f_e(t) \forall t

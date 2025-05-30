@@ -6,7 +6,7 @@ JuMPモデルの新しいインスタンスを作成します。
 
 `optimizer_factory`が提供されている場合、モデルは`set_optimizer(model, optimizer_factory; kwargs...)`を使用してオプティマイザで初期化されます。`kwargs`の詳細については[`set_optimizer`](@ref)を参照してください。
 
-`optimizer_factory`が提供されていない場合は、[`optimize!`](@ref)を呼び出す前に[`set_optimizer`](@ref)を使用してオプティマイザを設定します。
+`optimizer_factory`が提供されていない場合は、[`optimize!`](@ref)を呼び出す前に[`set_optimizer`](@ref)を使用してオプティマイザを設定してください。
 
 ## 値の型 `T`
 

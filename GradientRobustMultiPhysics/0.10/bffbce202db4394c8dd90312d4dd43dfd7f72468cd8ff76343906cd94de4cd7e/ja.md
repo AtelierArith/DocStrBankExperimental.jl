@@ -9,4 +9,4 @@ addblock_matmul!(
 
 ```
 
-FEVectorBlock a に行列ベクトル積 B と b（または transposed = true の場合は B' と b）を加えます。
+FEVectorBlock a に行列ベクトル積 B と b（または transposed = true の場合は B' と b）を追加します。

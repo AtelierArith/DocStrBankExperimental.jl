@@ -2,7 +2,7 @@
 NoisyConstrainedLinearDiscreteSystem
 ```
 
-加法的な外乱と次の形式の領域制約を持つ離散時間線形システム：
+加法的な摂動と次の形式の領域制約を持つ離散時間線形システム：
 
 $$
     x_{k+1} = A x_k + D w_k, \; x_k ∈ \mathcal{X}, \; w(t) ∈ \mathcal{W} \; \forall k.
@@ -13,4 +13,4 @@ $$
   * `A` – 状態行列
   * `D` – ノイズ行列
   * `X` – 状態制約
-  * `W` – 外乱集合
+  * `W` – 摂動集合

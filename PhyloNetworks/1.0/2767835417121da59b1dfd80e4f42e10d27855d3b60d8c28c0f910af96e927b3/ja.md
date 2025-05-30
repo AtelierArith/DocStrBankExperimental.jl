@@ -3,9 +3,9 @@ readnexus_treeblock(filename, treereader=readnewick, args...;
                     reticulate=true, stringmodifier=[r"#(\d+)" => s"#H\1"])
 ```
 
-nexus形式のファイルの*最初の* "trees" ブロックを読み取り、翻訳テーブルが存在する場合はそれを使用し、`HybridNetwork`のベクターを返します。`[&...]`内の情報はコメントとして解釈され、デフォルトのツリーレーダーによって破棄されます。オプションの引数`args`はツリーレーダーに渡されます。
+nexus形式のファイルの*最初の* "trees" ブロックを読み取り、変換テーブルが存在する場合はそれを使用し、`HybridNetwork`のベクターを返します。`[&...]`内の情報はコメントとして解釈され、デフォルトのツリーレーダーによって破棄されます。オプション引数`args`はツリーレーダーに渡されます。
 
-nexus形式の詳細については、[Maddison, Swofford & Maddison (1997)](https://doi.org/10.1093/sysbio/46.4.590)を参照してください。
+nexus形式については、[Maddison, Swofford & Maddison (1997)](https://doi.org/10.1093/sysbio/46.4.590)を参照してください。
 
 `reticulate`がfalseでない限り、リテキュレーションを持つネットワークを読み取るために以下の処理が行われます。
 

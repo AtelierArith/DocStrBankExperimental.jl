@@ -6,7 +6,7 @@ Controlled{G<:AbstractGateSymbol}<:AbstractGateSymbol
 
 # 例
 
-`controlled`関数を使用して、制御されたハダマールゲートを作成できます：
+`controlled`関数を使用して、制御されたハダマードゲートを作成できます：
 
 ```jldoctest controlled_hadamard
 julia> controlled_hadamard = controlled(hadamard(2), [1])
@@ -22,7 +22,7 @@ Underlying data ComplexF64:
 
 ```
 
-その後、他の`Gate`と同様に`QuantumCircuit`で使用でき、その表示シンボルは単一ターゲットの`Hadamard` `Gate`の表示シンボルから継承されます：
+それは、他の`Gate`と同様に`QuantumCircuit`で使用でき、その表示シンボルは単一ターゲットの`Hadamard` `Gate`の表示シンボルから継承されます：
 
 ```jldoctest controlled_hadamard
 julia> circuit=QuantumCircuit(qubit_count=2,instructions = [controlled_hadamard])
@@ -35,7 +35,7 @@ q[2]:──H──
           
 ```
 
-一般に、任意の数のターゲットと制御を持つ`Controlled`構造体を構築できます。たとえば、次の例は、`control_qubits=[1,2]`および`target_qubit=[3]`を持つ`ConnectedGate{SigmaX}`として、`Toffoli` `Gate`の同等のものを構築します：
+一般に、任意の数のターゲットと制御を持つ`Controlled`構造体を構築できます。たとえば、次の例は、`control_qubits=[1,2]`および`target_qubit=[3]`を持つ`ConnectedGate{SigmaX}`として、`Toffoli` `Gate`の同等物を構築します：
 
 ```jldoctest
 julia> toffoli_as_controlled_gate = controlled(sigma_x(3), [1, 2])

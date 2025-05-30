@@ -2,7 +2,7 @@
 launch(x)
 ```
 
-デフォルトは `default_ClimateModelLaunch(x)` で、`AbstractModelConfig` の `take!(x)` で構成されています。ほとんどの具体的な `AbstractModelConfig` の型に対して特化されることが期待されます。
+デフォルトは `default_ClimateModelLaunch(x)` で、`AbstractModelConfig` のための `take!(x)` で構成されています。ほとんどの具体的な `AbstractModelConfig` の型に対して特化されることが期待されます。
 
 ```
 f=ClimateModels.RandomWalker

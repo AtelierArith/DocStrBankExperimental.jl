@@ -2,9 +2,9 @@
 PSDCone
 ```
 
-正定半正定コーンオブジェクトで、[`@constraint`](@ref) マクロを使用して正定半正定な正方行列を制約するために使用できます。
+正定半コーンオブジェクトで、[`@constraint`](@ref)マクロを使用して正定半行列に制約をかけることができます。
 
-行列が `Symmetric` 型の場合、その上三角部分の列ベクトル化（列を連結して得られるベクトル）は [`MOI.PositiveSemidefiniteConeTriangle`](@ref) セットに属するように制約されます。そうでない場合、その列ベクトル化は [`MOI.PositiveSemidefiniteConeSquare`](@ref) セットに属するように制約されます。
+行列が`Symmetric`型の場合、その上三角部分の列ベクトル化（列を連結して得られるベクトル）は[`MOI.PositiveSemidefiniteConeTriangle`](@ref)集合に属するように制約されます。そうでない場合、その列ベクトル化は[`MOI.PositiveSemidefiniteConeSquare`](@ref)集合に属するように制約されます。
 
 ## 例
 

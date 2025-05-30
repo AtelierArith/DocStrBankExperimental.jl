@@ -15,4 +15,4 @@ mutable struct pbox <: AbstractPbox
 
 ここで、ml/mhは下限/上限の平均、vl/vhは下限/上限の分散です。
 
-参照：[`mean`](@ref)、[`var`](@ref)、[`uniform`](@ref)、[`normal`](@ref)、[`conv`](@ref)、[`copula`](@ref)
+参照：[`mean`](@ref), [`var`](@ref), [`uniform`](@ref), [`normal`](@ref), [`conv`](@ref), [`copula`](@ref)

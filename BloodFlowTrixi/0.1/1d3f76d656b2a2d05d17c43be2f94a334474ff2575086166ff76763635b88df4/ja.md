@@ -2,7 +2,7 @@
 boundary_condition_pressure_in(u_inner, orientation_or_normal, direction, x, t, surface_flux_function, eq::BloodFlowEquations1D)
 ```
 
-時間とともに変化する流入圧力の境界条件を実装します。
+時間とともに変化する流入圧力境界条件を実装します。
 
 ### パラメータ
 

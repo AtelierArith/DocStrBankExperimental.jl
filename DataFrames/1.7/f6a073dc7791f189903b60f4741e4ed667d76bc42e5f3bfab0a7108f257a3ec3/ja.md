@@ -6,7 +6,7 @@ mapcols!(f::Union{Function, Type}, df::DataFrame; cols=All())
 
 `f` はすべて同じ長さの `AbstractVector` オブジェクトを返すか、スカラー（`AbstractVector` 以外のすべての値はスカラーと見なされます）でなければなりません。
 
-`mapcols!` は、`f` によって返された場合、`df` から列を再利用します。
+`mapcols!` は、`f` によって返された場合、`df` の列を再利用します。
 
 メタデータ: この関数は、テーブルレベルおよび列レベルの `:note` スタイルのメタデータを保持します。
 

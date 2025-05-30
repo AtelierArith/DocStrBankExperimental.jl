@@ -2,7 +2,7 @@
 ConstrainedBlackBoxControlContinuousSystem <: AbstractContinuousSystem
 ```
 
-ドメイン制約を持つ右辺によって定義された連続時間制御システムの形式：
+ドメイン制約のある右辺によって定義された連続時間制御システム：
 
 $$
     x(t)' = f(x(t), u(t)), \; x(t) ∈ \mathcal{X}, \; u(t) ∈ \mathcal{U} \; \forall t.

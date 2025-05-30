@@ -6,7 +6,7 @@ set_string_names_on_creation(model::GenericModel, value::Bool)
 
 `set_string_name` キーワードは、`model` 内のすべての変数と制約に `String` 名を割り当てるかどうかを決定するために使用されます。
 
-デフォルトでは、`value` は `true` です。ただし、大きなモデルの場合、`set_string_names_on_creation(model, false)` を呼び出すことで、印刷やソルバーログメッセージの可読性を犠牲にしてパフォーマンスを向上させることができます。
+デフォルトでは、`value` は `true` です。ただし、大きなモデルの場合、`set_string_names_on_creation(model, false)` を呼び出すことで、印刷やソルバーログメッセージの可読性を低下させる代わりにパフォーマンスを向上させることができます。
 
 ## 例
 

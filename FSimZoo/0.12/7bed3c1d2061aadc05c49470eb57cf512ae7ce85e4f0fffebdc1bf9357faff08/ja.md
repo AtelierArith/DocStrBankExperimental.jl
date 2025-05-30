@@ -12,8 +12,8 @@
 
   * （トラッキング制御）コンストラクタの引数 `pos_cmd_func`（時間の関数で、(t) -> position(t) ∈ ℝ^3）を追加してください。
 
-`Dynamics!(env::BacksteppingPositionController)` の内部関数に引数 `pos_cmd` を追加しないでください。
+`Dynamics!(env::BacksteppingPositionController)` の内部関数には引数 `pos_cmd` を追加しないでください。
 
   * （セットポイント制御）コンストラクタの引数 `pos_cmd_func`（時間の関数で、(t) -> position(t) ∈ ℝ^3）を追加しないでください。
 
-`Dynamics!(env::BacksteppingPositionController)` の内部関数に引数 `pos_cmd` を追加してください。
+`Dynamics!(env::BacksteppingPositionController)` の内部関数には引数 `pos_cmd` を追加してください。

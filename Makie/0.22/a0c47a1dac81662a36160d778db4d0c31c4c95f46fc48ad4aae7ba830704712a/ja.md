@@ -2,7 +2,7 @@
 Resampler(matrix; max_resolution=automatic, method=Interpolations.Linear(), update_while_button_pressed=false)
 ```
 
-大きな画像/ヒートマップを表示するために `heatmap` で使用できるリサンプリングタイプを作成します。渡されるのは、Interpolations.jl の補間インターフェースとして `array(linrange, linrange)` をサポートする任意の配列です。この配列がこれをサポートしていない場合、次のように補間オブジェクトに変換されます: `Interpolations.interpolate(data, Interpolations.BSpline(method))`。
+大きな画像/ヒートマップを表示するために `heatmap` で使用できるリサンプリングタイプを作成します。渡されるのは、Interpolations.jl の補間インターフェースをサポートする `array(linrange, linrange)` の任意の配列です。この配列がこれをサポートしていない場合、次のように補間オブジェクトに変換されます: `Interpolations.interpolate(data, Interpolations.BSpline(method))`。
 
   * `max_resolution` は、画面のフル解像度を使用するために `automatic` に設定するか、希望する解像度のタプル/整数に設定できます。
   * `method` は使用される補間方法で、デフォルトは `Interpolations.Linear()` です。

@@ -8,4 +8,4 @@ CalvoSanz4()
 
 ## 参考文献
 
-@article{sanz1993symplectic, title={シンプレクティック数値法によるハミルトン問題}, author={Sanz-Serna, Jes{'u}s Maria and Calvo, Mari-Paz}, journal={International Journal of Modern Physics C}, volume={4}, number={02}, pages={385–392}, year={1993}, publisher={World Scientific} }
+@article{sanz1993symplectic, title={Symplectic numerical methods for Hamiltonian problems}, author={Sanz-Serna, Jes{'u}s Maria and Calvo, Mari-Paz}, journal={International Journal of Modern Physics C}, volume={4}, number={02}, pages={385–392}, year={1993}, publisher={World Scientific} }

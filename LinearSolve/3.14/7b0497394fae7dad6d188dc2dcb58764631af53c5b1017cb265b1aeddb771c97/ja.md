@@ -6,7 +6,7 @@ MKLPardisoIterate(; nprocs::Union{Int, Nothing} = nothing,
     dparm::Union{Vector{Tuple{Int, Int}}, Nothing} = nothing)
 ```
 
-MKL Pardisoを使用した混合因子分解+反復法。
+MKL Pardisoを使用した混合因子分解+反復法です。
 
 !!! note
     このソルバーを使用するには、Pardiso.jlパッケージを追加する必要があります。すなわち、`using Pardiso`

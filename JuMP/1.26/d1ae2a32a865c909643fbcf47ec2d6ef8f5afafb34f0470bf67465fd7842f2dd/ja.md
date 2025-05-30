@@ -2,7 +2,7 @@
 triangle_vec(matrix::Matrix)
 ```
 
-行列の上三角を、`Triangle` セットのために JuMP と MathOptInterface が要求する順序でベクトルに連結します。
+行列の上三角を、JuMPおよびMathOptInterfaceの`Triangle`集合に必要な順序でベクトルに連結して返します。
 
 ## 例
 

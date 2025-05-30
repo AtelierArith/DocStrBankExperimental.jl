@@ -7,6 +7,6 @@ ClassData(type, s₁, s₂, s₃)
   * `:tri`: 長さ32の三角信号
   * `:cbf`: 長さ128のシリンダーベルファンネル信号
 
-N. Saito と R. Coifman による「Local Discriminant Basis and their Applications」が、Journal of Mathematical Imaging and Vision, Vol. 5, 337-358 (1995) に掲載されています。
+N. Saito と R. Coifman による "Local Discriminant Basis and their Applications" が、Journal of Mathematical Imaging and Vision, Vol. 5, 337-358 (1995) に掲載されています。
 
 **参照:** [`generateclassdata`](@ref)

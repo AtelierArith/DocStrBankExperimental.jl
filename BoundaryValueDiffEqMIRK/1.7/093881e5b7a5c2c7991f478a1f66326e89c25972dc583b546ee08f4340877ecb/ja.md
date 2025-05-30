@@ -16,7 +16,7 @@ BoundaryValueDiffEqMIRK.MIRK6(; nlsolve = NewtonRaphson(), jac_alg = BVPJacobian
   * `max_num_subintervals`: 最大サブ区間の数、デフォルトは3000です。
 
 !!! note
-    型の安定性のために、`BVPJacobianAlgorithm`内のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
+    型の安定性のために、`BVPJacobianAlgorithm`のForwardDiff ADTypesのチャンクサイズを提供する必要があります。
 
 
 ## 参考文献

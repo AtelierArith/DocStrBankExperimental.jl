@@ -2,7 +2,7 @@
 direct_generic_model(::Type{T}, factory::MOI.OptimizerWithAttributes)
 ```
 
-[`direct_generic_model`](@ref)を`factory`、すなわち[`optimizer_with_attributes`](@ref)によって作成された`MOI.OptimizerWithAttributes`オブジェクトを使用して作成します。
+[`direct_generic_model`](@ref)を`factory`を使用して作成します。`factory`は[`optimizer_with_attributes`](@ref)によって作成された`MOI.OptimizerWithAttributes`オブジェクトです。
 
 ## 例
 

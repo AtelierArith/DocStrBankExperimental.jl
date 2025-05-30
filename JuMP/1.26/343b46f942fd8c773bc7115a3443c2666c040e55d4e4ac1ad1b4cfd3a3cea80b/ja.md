@@ -4,11 +4,11 @@ set_objective_sense(model::GenericModel, sense::MOI.OptimizationSense)
 
 モデルの目的の感覚を指定された感覚に設定します。
 
-関連情報: [`@objective`](@ref), [`set_objective_function`](@ref), [`set_objective`](@ref)
+参照: [`@objective`](@ref), [`set_objective_function`](@ref), [`set_objective`](@ref)
 
 ## FEASIBILITY_SENSE
 
-目的の感覚を [`FEASIBILITY_SENSE`](@ref) に設定すると、既存の目的が削除されます。
+目的の感覚を[`FEASIBILITY_SENSE`](@ref)に設定すると、既存の目的が削除されます。
 
 ## 例
 

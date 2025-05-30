@@ -26,4 +26,4 @@ brownian_values = cumsum([0; [sqrt(dt) * randn() for i in 1:(length(t) - 1)]])
 W = NoiseGrid(t, brownian_values)
 ```
 
-その後、`SDEProblem` の `noise` 引数として `W` を渡して、SDE で使用できます。
+その後、`W` を `SDEProblem` の `noise` 引数として渡して、SDEで使用できます。

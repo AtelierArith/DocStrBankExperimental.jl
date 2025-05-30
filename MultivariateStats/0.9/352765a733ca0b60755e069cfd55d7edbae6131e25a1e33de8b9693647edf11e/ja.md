@@ -14,4 +14,4 @@ mds = fit(MDS, X; distances=false, maxoutdim=size(X,1)-1)
 mds = fit(MDS, D; distances=true, maxoutdim=size(D,1)-1)
 ```
 
-ここで`D`は点間の距離の対称行列`D`です。
+ここで`D`はポイント間の距離の対称行列`D`です。

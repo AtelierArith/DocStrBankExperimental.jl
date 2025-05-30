@@ -3,7 +3,7 @@ BoundaryValueDiffEqMIRK.MIRK5(; nlsolve = NewtonRaphson(), jac_alg = BVPJacobian
         defect_threshold = 0.1, max_num_subintervals = 3000)
 ```
 
-5次の単調暗黙的ルンゲクッタ法。
+5次の単調暗黙的ルンゲ・クッタ法。
 
 ## キーワード引数
 

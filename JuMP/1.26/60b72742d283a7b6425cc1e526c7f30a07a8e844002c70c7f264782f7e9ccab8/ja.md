@@ -2,9 +2,9 @@
 normalized_rhs(constraint::ConstraintRef)
 ```
 
-`constraint`の右辺項を返します。これはJuMPが制約を正規化された形に変換した後のものです。
+`constraint`の右辺項を返します。これはJuMPが制約を正規化された形式に変換した後のものです。
 
-[`set_normalized_rhs`](@ref)も参照してください。
+関連情報として[`set_normalized_rhs`](@ref)も参照してください。
 
 ## 例
 

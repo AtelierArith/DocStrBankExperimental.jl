@@ -4,7 +4,7 @@ addprocs(machines; tunnel=false, sshflags=``, max_parallel=10, kwargs...) -> プ
 
 リモートマシン上にSSHを介してワーカープロセスを追加します。構成はキーワード引数で行います（下記参照）。特に、`exename`キーワードを使用して、リモートマシン上の`julia`バイナリへのパスを指定できます。
 
-`machines`は、`[user@]host[:port] [bind_addr[:port]]`の形式の文字列として与えられる「マシンスペック」のベクターです。`user`は現在のユーザーにデフォルト設定され、`port`は標準のSSHポートに設定されます。`[bind_addr[:port]]`が指定されている場合、他のワーカーは指定された`bind_addr`と`port`でこのワーカーに接続します。
+`machines`は、`[user@]host[:port] [bind_addr[:port]]`の形式の文字列として与えられる「マシンスペック」のベクターです。`user`は現在のユーザーにデフォルト設定され、`port`は標準SSHポートに設定されます。`[bind_addr[:port]]`が指定されている場合、他のワーカーは指定された`bind_addr`と`port`でこのワーカーに接続します。
 
 `machines`ベクター内でタプルを使用するか、`(machine_spec, count)`の形式を使用することで、リモートホスト上で複数のプロセスを起動することが可能です。`count`は指定されたホスト上で起動するワーカーの数です。ワーカー数に`:auto`を渡すと、リモートホスト上のCPUスレッドの数と同じ数のワーカーが起動します。
 
@@ -36,14 +36,14 @@ addprocs([
   * `enable_threaded_blas`: `true`の場合、追加されたプロセスでBLASが複数のスレッドで実行されます。デフォルトは`false`です。
   * `exename`: `julia`実行可能ファイルの名前。デフォルトは`"$(Sys.BINDIR)/julia"`または`"$(Sys.BINDIR)/julia-debug"`です。すべてのリモートマシンで共通のJuliaバージョンを使用することが推奨されます。そうしないと、シリアル化やコード配布が失敗する可能性があります。
   * `exeflags`: ワーカープロセスに渡される追加のフラグ。
-  * `topology`: ワーカーが互いに接続する方法を指定します。接続されていないワーカー間でメッセージを送信するとエラーが発生します。
+  * `topology`: ワーカーがどのように接続するかを指定します。接続されていないワーカー間でメッセージを送信するとエラーが発生します。
 
       * `topology=:all_to_all`: すべてのプロセスが互いに接続されています。デフォルト。
       * `topology=:master_worker`: ドライバープロセス、すなわち`pid` 1のみがワーカーに接続します。ワーカー同士は接続しません。
-      * `topology=:custom`: クラスターマネージャの`launch`メソッドが`WorkerConfig`内の`ident`および`connect_idents`フィールドを介して接続トポロジーを指定します。クラスターマネージャのID `ident`を持つワーカーは、`connect_idents`で指定されたすべてのワーカーに接続します。
+      * `topology=:custom`: クラスターマネージャの`launch`メソッドが`WorkerConfig`の`ident`および`connect_idents`フィールドを介して接続トポロジーを指定します。クラスターマネージャのID `ident`を持つワーカーは、`connect_idents`で指定されたすべてのワーカーに接続します。
   * `lazy`: `topology=:all_to_all`の場合のみ適用されます。`true`の場合、ワーカー間の接続は遅延して設定されます。すなわち、ワーカー間のリモート呼び出しの最初のインスタンスで設定されます。デフォルトは`true`です。
   * `env`: `env=["JULIA_DEPOT_PATH"=>"/depot"]`のような文字列ペアの配列を提供して、リモートマシン上で環境変数が設定されるように要求します。デフォルトでは、環境変数`JULIA_WORKER_TIMEOUT`のみが自動的にローカルからリモート環境に渡されます。
-  * `cmdline_cookie`: `--worker`コマンドラインオプションを介して認証クッキーを渡します。クッキーをssh stdioを介して渡す（より安全な）デフォルトの動作は、古い（ConPTY以前の）JuliaまたはWindowsバージョンを使用するWindowsワーカーでハングする可能性があるため、その場合は`cmdline_cookie=true`がワークアラウンドを提供します。
+  * `cmdline_cookie`: `--worker`コマンドラインオプションを介して認証クッキーを渡します。クッキーをssh stdioを介して渡す（より安全な）デフォルトの動作は、古い（ConPTY以前の）JuliaまたはWindowsバージョンを使用するWindowsワーカーでハングする可能性があるため、その場合は`cmdline_cookie=true`が回避策を提供します。
 
 !!! compat "Julia 1.6"
     キーワード引数`ssh`、`shell`、`env`および`cmdline_cookie`はJulia 1.6で追加されました。

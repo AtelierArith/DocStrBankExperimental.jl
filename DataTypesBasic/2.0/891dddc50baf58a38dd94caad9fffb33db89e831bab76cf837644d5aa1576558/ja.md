@@ -4,4 +4,4 @@ iseither(::Identity) = true
 iseither(other) = false
 ```
 
-何かが[`Either`](@ref)であるかどうかを確認します。
+[`Either`](@ref) が何かであるかを確認します。

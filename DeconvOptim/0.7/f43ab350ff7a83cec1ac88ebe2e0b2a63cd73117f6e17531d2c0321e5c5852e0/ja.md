@@ -2,7 +2,7 @@
 generate_downsample(num_dim, downsample_dims, factor)
 ```
 
-配列をダウンサンプリングするために使用できる関数を生成します（Tullio.jlに基づく）。`num_dim`（整数）は配列の次元です。`downsample_dims`はどの次元をダウンサンプリングするかのリストです。`factor`はダウンサンプリングファクターで、整数である必要があります。
+配列をダウンサンプリングするために使用できる関数を生成します（Tullio.jlに基づく）。`num_dim`（整数）は配列の次元です。`downsample_dims`はどの次元をダウンサンプリングするかのリストです。`factor`はダウンサンプリングファクターです。整数である必要があります。
 
 # 例
 

@@ -16,7 +16,7 @@ $$
 \binom{n}{k} = \frac{n!}{k! (n-k)!}
 $$
 
-非整数 `k` に対するさらなる一般化は数学的に可能ですが、ガンマ関数やベータ関数を含むため、Julia標準ライブラリには含まれておらず、[SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl) のような外部パッケージで利用可能です。
+非整数 `k` に対するさらなる一般化は数学的に可能ですが、ガンマ関数および/またはベータ関数を含むため、Julia標準ライブラリには含まれておらず、[SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl) のような外部パッケージで利用可能です。
 
 # 外部リンク
 

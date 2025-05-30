@@ -2,11 +2,11 @@
 measure([, operator], register[, locs]; nshots=1, rng=Random.GLOBAL_RNG) -> Vector{Int}
 ```
 
-量子状態を測定し、quditの測定結果を返します。この測定関数は、入力状態を崩壊させない不正なバージョンの`measure!`です。また、複数ショットの測定を行うために量子状態を再計算する必要もありません。
+量子状態を測定し、quditの測定結果を返します。この測定関数は、入力状態を崩壊させない`measure!`の不正バージョンです。また、複数ショットの測定を行うために量子状態を再計算する必要もありません。
 
 ### 引数
 
-  * `operator::AbstractBlock`は測定する演算子です。
+  * `operator::AbstractBlock`は測定するオペレーターです。
   * `register::AbstractRegister`は量子状態です。
   * `locs`は測定を行うキュービットです。`locs`が提供されていない場合、すべての現在のアクティブなquditが測定されます（アクティブなquditについては、[`focus!`](@ref)および[`relax!`](@ref)を参照してください）。
 

@@ -9,12 +9,12 @@ table_one(table, analyses; keywords...)
 ## キーワード
 
   * `groupby`: データセットを層別化する列を `Vector{Symbol}` として指定します。
-  * `nonnormal`: `:nonnormal` タイプの仮説検定が選択される列名のベクター。
-  * `minmax`: `:minmax` タイプの仮説検定が選択される列名のベクター。
+  * `nonnormal`: `:nonnormal` タイプの仮説検定が選択される列名のベクトル。
+  * `minmax`: `:minmax` タイプの仮説検定が選択される列名のベクトル。
   * `tests`: `categorical`、`nonnormal`、`minmax`、および `normal` 変数に使用する仮説検定タイプの `NamedTuple`。
   * `combine`: p値を組み合わせる際に使用する `MultipleTesting` のオブジェクト。
   * `show_total`: 合計列の要約を表示します。デフォルトは `true` です。
-  * `group_totals`: 合計を追加するグループレベルを指定するグループ `Symbol` または `String` またはシンボル/文字列のベクター。最上位以外の任意のグループレベルを選択できます（最上位はすでに `show_total` オプションで処理されています）。デフォルトは `Symbol[]` です。
+  * `group_totals`: 合計を追加するグループレベルを指定するグループ `Symbol` または `String` またはシンボル/文字列のベクトル。最上位のグループレベル以外を選択できます（最上位は `show_total` オプションですでに処理されています）。デフォルトは `Symbol[]` です。
   * `total_name`: すべての合計列の名前。デフォルトは `"Total"` です。
   * `show_n`: 各グループキーのラベルの横に行数を表示します。
   * `show_pvalues`: `P-Value` 列を表示します。デフォルトは `false` です。

@@ -4,7 +4,7 @@ propose!(_rng, algorithm, model, data, proposaltune)
 
 ```
 
-提案のインプレースバージョン。
+proposeのインプレースバージョン。
 
 # 例
 

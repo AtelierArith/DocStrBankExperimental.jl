@@ -8,7 +8,7 @@ t8_geom_get_triangle_scaling_factor(edge_index, tree_vertices, glob_intersection
 
   * `edge_index`:[in] 変位をスケーリングするエッジのインデックス。
   * `tree_vertices`:[in] ツリーの頂点座標を含む配列。
-  * `glob_intersection`:[in] グローバル参照点を通る対角頂点から引かれた線のエッジに対する交点の座標を含む配列。
+  * `glob_intersection`:[in] エッジインデックスに対して、グローバル参照点を通る反対の頂点から引かれた線の交点の座標を含む配列。
   * `glob_ref_point`:[in] グローバル空間にマッピングされた参照点の座標を含む配列。
 
 ### プロトタイプ

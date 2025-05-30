@@ -8,4 +8,4 @@ $$
 L_c\phi = \overline{\nabla\cdot\mathbf{v}} + R_c\mathbf{n}\cdot[\mathbf{v}]
 $$
 
-そして、$\phi$ を返します。
+そして $\phi$ を返します。

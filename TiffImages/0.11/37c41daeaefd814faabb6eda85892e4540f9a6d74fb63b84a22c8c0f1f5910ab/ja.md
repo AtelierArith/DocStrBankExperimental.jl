@@ -10,4 +10,4 @@ mutable struct TiffFile{O<:Unsigned, S<:FileIO.Stream}
   * `filepath`: このファイルへの相対パス
   * `io`: ファイルストリーム
   * `first_offset`: ファイルストリーム内の最初のIFDの位置
-  * `need_bswap`: このファイルがホストコンピュータとは異なるエンディアンを持っているかどうか
+  * `need_bswap`: このファイルがホストコンピュータとは異なるエンディアンを持つかどうか

@@ -12,7 +12,7 @@ Return an [`MOI.AbstractNLPEvaluator`](@ref) constructed from `model`
     使用する前に、[`MOI.initialize`](@ref)を使用して評価者を初期化する必要があります。
 
 
-## 実験的
+## Experimental
 
 これらの機能は、JuMPの将来のバージョンで変更または削除される可能性があります。
 

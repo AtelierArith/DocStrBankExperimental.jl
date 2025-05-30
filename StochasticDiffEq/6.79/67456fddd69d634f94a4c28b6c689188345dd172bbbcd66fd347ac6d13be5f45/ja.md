@@ -1,3 +1,3 @@
-Rößler A., Itô確率微分方程のための二次ルンゲ–クッタ法, SIAM J. Numer. Anal., 47, pp. 1713-1738 (2009) DOI:10.1137/060673308
+Rößler A., Second Order Runge–Kutta Methods for Itô Stochastic Differential Equations, SIAM J. Numer. Anal., 47, pp. 1713-1738 (2009) DOI:10.1137/060673308
 
-RI6: 高い弱い次数の方法、イタ SDE のための適応ステップ弱い次数 2.0（決定論的次数 2）。対角、非対角、非可換、およびスカラー加法ノイズを処理できます。
+RI6: 高い弱いオーダー法 イタ SDE 用の適応ステップ弱オーダー 2.0（決定論的オーダー 2）。対角、非対角、非可換、スカラー加法ノイズを処理できます。

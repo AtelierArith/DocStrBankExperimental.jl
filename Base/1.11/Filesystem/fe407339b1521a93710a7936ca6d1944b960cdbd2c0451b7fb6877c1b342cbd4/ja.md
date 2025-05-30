@@ -2,7 +2,7 @@
 isdir(path) -> Bool
 ```
 
-`path`がディレクトリであれば`true`を返し、そうでなければ`false`を返します。
+`path`がディレクトリであれば`true`を返し、それ以外の場合は`false`を返します。
 
 # 例
 
@@ -14,4 +14,4 @@ julia> isdir("not/a/directory")
 false
 ```
 
-他に[`isfile`](@ref)や[`ispath`](@ref)も参照してください。
+他にも[`isfile`](@ref)や[`ispath`](@ref)を参照してください。

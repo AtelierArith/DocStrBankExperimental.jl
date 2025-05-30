@@ -3,7 +3,7 @@ coarsestscalingrange(x, tree[, redundant])
 coarsestscalingrange(n, tree[, redundant])
 ```
 
-与えられたバイナリツリーに対して、最も粗いスケーリング係数のインデックス範囲を返します。
+バイナリツリーを与えると、最も粗いスケーリング係数のインデックス範囲を返します。
 
 # 引数
 

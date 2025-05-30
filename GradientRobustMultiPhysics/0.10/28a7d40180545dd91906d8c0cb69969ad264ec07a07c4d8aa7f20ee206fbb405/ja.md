@@ -1,5 +1,5 @@
 ```
-抽象型 H1P3{ncomponents,edim} <: AbstractH1FiniteElement where {ncomponents<:Int,edim<:Int}
+abstract type H1P3{ncomponents,edim} <: AbstractH1FiniteElement where {ncomponents<:Int,edim<:Int}
 ```
 
 連続的な区分三次多項式。

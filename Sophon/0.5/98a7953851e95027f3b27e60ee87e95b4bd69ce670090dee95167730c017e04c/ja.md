@@ -7,13 +7,13 @@ PINN(rng::AbstractRNG=Random.default_rng(); kwargs...)
 
 ## フィールド
 
-  * `phi`: ニューラルネットワークが1つだけの場合は [`ChainState`](@ref)、複数のニューラルネットワークがある場合は [`ChainState`](@ref) の名前付きタプル。名前はPDEの従属変数と同じです。
-  * `init_params`: ニューラルネットワークの初期パラメータ。
+  * `phi`: ニューラルネットワークが1つだけの場合は [`ChainState`](@ref)、複数のニューラルネットワークがある場合は [`ChainState`](@ref) の名前付きタプルです。名前はPDEの従属変数と同じです。
+  * `init_params`: ニューラルネットワークの初期パラメータです。
 
 ## 引数
 
   * `chain`: `AbstractExplicitLayer` または `AbstractExplicitLayer` の名前付きタプル。
-  * `rng`: ニューラルネットワークの初期化に使用する `AbstractRNG`。シードを設定したい場合は、次のように書いてください。
+  * `rng`: ニューラルネットワークの初期化に使用する `AbstractRNG`。シードを設定したい場合は、次のように書きます。
 
 ```julia
 using Random
@@ -28,7 +28,7 @@ using Sophon
 
 chain = FullyConnected((1, 6, 6, 1), sin);
 
-# 単一の従属変数
+# 単純な従属変数
 pinn = PINN(chain, rng);
 
 # 複数の従属変数

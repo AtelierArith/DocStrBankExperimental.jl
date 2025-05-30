@@ -10,7 +10,7 @@ t8_geom_linear_interpolation(coefficients, corner_values, corner_value_dim, inte
   * `corner_values`:[in] 単位正方形/立方体の各コーナー（zorderで）の空間における関数値を与えるサイズ2^dim * 3の配列。
   * `corner_value_dim`:[in] *corner_values*の次元。
   * `interpolation_dim`:[in] 補間の次元（線形の場合は1、双線形の場合は2、三線形の場合は3）
-  * `evaluated_function`:[out] サイズ*corner*value*dim*の配列で、出力として補間の結果が得られます。
+  * `evaluated_function`:[out] *corner*value*dim*のサイズの配列、出力として補間の結果が得られます。
 
 ### プロトタイプ
 

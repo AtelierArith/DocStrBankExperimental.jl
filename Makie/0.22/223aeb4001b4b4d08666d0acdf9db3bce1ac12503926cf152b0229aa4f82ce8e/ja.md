@@ -6,7 +6,7 @@ datashader(points::AbstractVector{<: Point})
     この機能は、APIがまだ確定していないため、破壊的リリースの外で変更される可能性があります。実装のバグに注意し、奇妙な動作に遭遇した場合は問題をオープンしてください。
 
 
-ポイントは、反復とインデックス取得をサポートする任意の配列タイプであり、メモリマップされた配列も含まれます。x座標とy座標の別々の配列があり、変換とコピーを避けたい場合は、次のように使用することを検討してください：
+ポイントは、メモリマップ配列を含む、反復とインデックス取得をサポートする任意の配列タイプであることができます。x座標とy座標のために別々の配列があり、変換とコピーを避けたい場合は、次のようにすることを検討してください：
 
 ```Julia
 using Makie.StructArrays
@@ -37,11 +37,11 @@ Makie.Aggregation.value(::MyAgg{T}, x::T) where {T} = x
 
 **`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)`のように複数のアルファは掛け算されます。
 
-**`async`** =  `true`  — `get_aggregation`をタスクで計算し、忙しい間はズーム/パンの更新をスキップします。インタラクションに最適ですが、例えばpngに保存する場合やDocumenterにインラインする場合は無効にする必要があります。
+**`async`** =  `true`  — `get_aggregation`をタスクで計算し、忙しい間はズーム/パンの更新をスキップします。インタラクションに最適ですが、pngなどに保存する場合やDocumenterにインラインする場合は無効にする必要があります。
 
 **`binsize`** =  `1`  — 画面のピクセルごとにいくつのビンを希望するかを定義するファクター。粗い画像を希望する場合はn > 1に設定します。
 
-**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でのクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
+**`clip_planes`** =  `automatic`  — クリップ平面は3D空間でクリッピングを行う方法を提供します。ここに最大8つの`Plane3f`平面のベクトルを設定でき、その後ろでプロットがクリップされます（つまり、見えなくなります）。デフォルトでは、クリップ平面は親プロットまたはシーンから継承されます。`Plane3f[]`を渡すことで親の`clip_planes`を削除できます。
 
 **`colormap`** =  `@inherit colormap :viridis`  — 数値`color`のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)`も使用できますし、ColorBrewerやPlotUtilsの任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()`を呼び出すことができます。
 
@@ -49,7 +49,7 @@ Makie.Aggregation.value(::MyAgg{T}, x::T) where {T} = x
 
 **`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar`と一緒に`identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10`および`Makie.Symlog10`と一緒にうまく機能します。
 
-**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。すなわち、クリップ空間で、`-1 <= depth <= 1`の範囲です。これはGLMakieおよびWGLMakieにのみ適用され、レンダリング順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。すなわち、クリップ空間で、`-1 <= depth <= 1`。これはGLMakieおよびWGLMakieにのみ適用され、レンダリング順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`fxaa`** =  `true`  — プロットがfxaa（アンチエイリアス、GLMakieのみ）でレンダリングされるかどうかを調整します。
 
@@ -63,13 +63,13 @@ Makie.Aggregation.value(::MyAgg{T}, x::T) where {T} = x
 
 **`inspector_label`** =  `automatic`  — DataInspectorによって生成されるデフォルトのラベルを置き換えるコールバック関数`(plot, index, position) -> string`を設定します。
 
-**`interpolate`** =  `false`  — 結果の画像が補間表示されるべきかどうか。補間は、いくつかのバックエンドでNaNに隣接するビンもNaNにする可能性があることに注意してください。これは、GPUハードウェアで使用される補間スキームによるものです。これにより、実際よりも多くのNaNビンが存在するように見えることがあります。
+**`interpolate`** =  `false`  — 結果の画像が補間表示されるべきかどうか。補間は、GPUハードウェアで使用される補間スキームのために、NaNに隣接するビンもNaNにする可能性があることに注意してください。これにより、実際よりも多くのNaNビンが存在するように見えることがあります。
 
 **`local_operation`** =  `identity`  — 集約後に各要素に対して呼び出される関数（`map!(x-> local_operation(x), final_aggregation_result)`）。
 
 **`lowclip`** =  `automatic`  — カラーレンジ未満の任意の値の色。
 
-**`method`** =  `AggThreads()`  — スレッド化された集約のための`AggThreads()`またはシリアル集約のための`AggSerial()`である可能性があります。
+**`method`** =  `AggThreads()`  — スレッド化された集約とシリアル集約のために`AggThreads()`または`AggSerial()`を使用できます。
 
 **`model`** =  `automatic`  — プロットのモデル行列を設定します。これは、`translate!`、`rotate!`および`scale!`で行われた調整を上書きします。
 
@@ -81,7 +81,7 @@ Makie.Aggregation.value(::MyAgg{T}, x::T) where {T} = x
 
 **`point_transform`** =  `identity`  — 集約する前に各ポイントに適用される関数。
 
-**`show_timings`** =  `false`  — 各フレームを集約するのにかかる時間を表示するには`true`に設定します。
+**`show_timings`** =  `false`  — 各フレームの集約にかかる時間を表示するには`true`に設定します。
 
 **`space`** =  `:data`  — プロットを包含するボックスの変換空間を設定します。可能な入力については`Makie.spaces()`を参照してください。
 

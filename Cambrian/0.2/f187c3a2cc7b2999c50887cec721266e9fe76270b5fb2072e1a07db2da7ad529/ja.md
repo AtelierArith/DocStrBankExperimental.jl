@@ -2,4 +2,4 @@ GAEvoは古典的な遺伝的アルゴリズムを実装しています。これ
 
 evaluate populate
 
-関数generationも定義することができます。指定がない場合、デフォルトのgeneration関数（無効なもの）が適用されます。
+関数generationも定義することができます。指定がない場合、デフォルトのgeneration関数（無効な関数）が適用されます。

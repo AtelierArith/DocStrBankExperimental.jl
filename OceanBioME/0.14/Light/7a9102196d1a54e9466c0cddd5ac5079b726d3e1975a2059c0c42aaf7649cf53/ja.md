@@ -14,5 +14,5 @@ TwoBandPhotosyntheticallyActiveRadiation(; grid::AbstractGrid{FT},
 
   * `grid`: モデルを構築するためのグリッド
   * `water_red_attenuation`, ..., `phytoplankton_chlorophyll_ratio`: パラメータ値
-  * `surface_PAR`: 表面での光合成可能放射線のための関数（または将来的には配列）、これは `f(x, y, t)` であるべきで、`x` と `y` はネイティブ座標（すなわち、直線グリッドの場合はメートル、適切な場合は緯度/経度）
+  * `surface_PAR`: 表面での光合成可能放射線のための関数（または将来的には配列）で、`f(x, y, t)` である必要があります。ここで `x` と `y` はネイティブ座標（すなわち、直線グリッドの場合はメートル、適切な場合は緯度/経度）です。
 ```

@@ -1,3 +1,3 @@
-シミュレーテッドバイナリークロスオーバー (SBX)。
+シミュレーテッドバイナリー交差（SBX）。
 
-Deb&Agrawal "Simulated binary crossover for continuous search space", 1994, Complex Systems を参照してください。
+Deb&Agrawal "連続探索空間のためのシミュレーテッドバイナリー交差", 1994, 複雑系

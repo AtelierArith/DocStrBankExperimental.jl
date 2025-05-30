@@ -2,7 +2,7 @@
 hadamard()
 ```
 
-ハダマール `Operator` は次のように定義されます：
+ハダマード `Operator` は次のように定義されます：
 
 $$
 H = \frac{1}{\sqrt{2}}\begin{bmatrix}

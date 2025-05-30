@@ -2,9 +2,9 @@
 simplex_iterations(model::GenericModel)
 ```
 
-利用可能な場合、最も最近の最適化中の単体法の累積反復回数（[`MOI.SimplexIterations`](@ref) 属性）を返します。
+利用可能な場合、最も最近の最適化中の累積単体法反復回数（[`MOI.SimplexIterations`](@ref) 属性）を返します。
 
-属性がソルバーによって実装されていない場合、`MOI.GetAttributeNotAllowed` エラーをスローします。
+属性がソルバーによって実装されていない場合、`MOI.GetAttributeNotAllowed` エラーが発生します。
 
 ## 例
 

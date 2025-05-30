@@ -5,4 +5,4 @@ conj(x::Symbolic{AbstractOperator})
 conj(x::Symbolic{AbstractSuperOperator})
 ```
 
-記号的複素共役操作。詳細は[`SConjugate`](@ref)を参照してください。
+記号的複素共役演算。詳細は[`SConjugate`](@ref)を参照してください。

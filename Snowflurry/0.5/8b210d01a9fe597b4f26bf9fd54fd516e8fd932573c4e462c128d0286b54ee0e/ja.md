@@ -9,7 +9,7 @@ get_measurement_probabilities(
 
 `target_qubits`が提供されていない場合、すべての量子ビットに対して確率が計算されます。
 
-測定確率は、計算基底状態の最小から最大までの順にリストされます。たとえば、2量子ビットの[`QuantumCircuit`](@ref)の場合、確率は$\left|00\right\rangle$、$\left|01\right\rangle$、$\left|10\right\rangle$、および$\left|11\right\rangle$の順にリストされます。
+測定確率は、最小の計算基底状態から最大の計算基底状態までリストされます。たとえば、2量子ビットの[`QuantumCircuit`](@ref)の場合、確率は$\left|00\right\rangle$、$\left|01\right\rangle$、$\left|10\right\rangle$、および$\left|11\right\rangle$の順にリストされます。
 
 !!! note
     伝統的に、量子ビット1は最も左のビットであり、その後に続くすべての量子ビットがあります。記法$\left|10\right\rangle$は、量子ビット1が状態$\left|1\right\rangle$にあり、量子ビット2が状態$\left|0\right\rangle$にあることを示します。

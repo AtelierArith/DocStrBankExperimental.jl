@@ -5,4 +5,4 @@ struct ScaledHybridSystem{T, H <: Union{DiscreteSwitchedLinearSystem, Constraine
 end
 ```
 
-各リセットマップが `γ` でスケーリングされる離散時間システム、すなわち、`system` のリセットマップ `x ↦ Ax` が `x ↦ Ax/γ` に置き換えられます。
+各リセットマップが `γ` でスケーリングされる離散時間システム、すなわち、`system` のリセットマップ `x ↦ Ax` は `x ↦ Ax/γ` に置き換えられます。

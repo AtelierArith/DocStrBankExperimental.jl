@@ -2,13 +2,13 @@
 monomials(p::AbstractPolynomialLike)
 ```
 
-`p`の非ゼロ項のモノミアルに対するイテレータを返し、ポリノミアルを減少順にソートします。
+`p`の非ゼロ項のモノミアルに対するイテレータを返し、ポリノミアルは減少順にソートされます。
 
 ```
 monomials(vars::Union{Vector{<:AbstractVariable},Tuple}, degs::AbstractVector{Int}, filter::Function = m -> true)
 ```
 
-変数`vars`を持つすべてのモノミアルベクトル`m`のベクトルを構築します。ここで、次数`degree(m)`が`degs`にあり、`filter(m)`が`true`である必要があります。
+変数`vars`を持つすべてのモノミナルベクター`m`のベクターを構築します。ここで、次数`degree(m)`が`degs`にあり、`filter(m)`が`true`である必要があります。
 
 詳細は[`ExponentsIterator`](@ref)を参照してください。
 

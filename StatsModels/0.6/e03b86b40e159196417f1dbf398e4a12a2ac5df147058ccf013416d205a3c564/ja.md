@@ -2,7 +2,7 @@
 modelcols(ts::NTuple{N, AbstractTerm}, data) where N
 ```
 
-タームのタプルが提供されると、`modelcols`は個々のタームに対してブロードキャストします。単一の行列を作成するには、タプルを[`MatrixTerm`](@ref)でラップします。
+タプルの項が提供されると、`modelcols`は個々の項に対してブロードキャストします。単一の行列を作成するには、タプルを[`MatrixTerm`](@ref)でラップします。
 
 # 例
 

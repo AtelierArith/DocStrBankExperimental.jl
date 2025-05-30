@@ -3,9 +3,9 @@ nonstd_wavemult(M, x, wt, [L], [ϵ])
 nonstd_wavemult(NM, x, wt, [L])
 ```
 
-`M`が$n$ by $n$行列である場合、$y = Mx$を計算する方法は2つあります。最初の方法は、標準の行列乗算を使用して積を計算することです。このアルゴリズムは、$O(n^2)$のオーダーで動作し、ここで$n$は`x`の長さです。
+もし`M`が$n$ by $n$の行列であれば、$y = Mx$を計算する方法は2つあります。最初の方法は、標準の行列乗算を使用して積を計算することです。このアルゴリズムは、$O(n^2)$のオーダーで動作し、ここで$n$は`x`の長さです。
 
-2番目の方法は、行列とベクトルの両方を非標準形式に変換し、非標準形式を掛け算することです。行列が非標準形式でスパースである場合、これは$O(n)$のオーダーのアルゴリズムになる可能性があります。
+2つ目の方法は、行列とベクトルの両方を非標準形式に変換し、非標準形式を掛け算することです。行列が非標準形式でスパースであれば、これは$O(n)$のオーダーのアルゴリズムになる可能性があります。
 
 !!! tip
     元の行列`M`を入力として使用することを選択することができます。`nonstd_wavemult(M, x, wt, [L], [ϵ])`を実行することで。ただし、非標準形式のスパース行列`NM`が事前に計算されている場合、`nonstd_wavemult(NM, x, wt, [L])`を実行することで冗長なステップをスキップできます。
@@ -13,12 +13,12 @@ nonstd_wavemult(NM, x, wt, [L])
 
 # 引数
 
-  * `M::AbstractVector{T} where T<:AbstractFloat`: $n$ by $n$行列。
+  * `M::AbstractVector{T} where T<:AbstractFloat`: $n$ by $n$の行列。
   * `NM::SparseMatrixCSC{T,S} where {T<:AbstractFloat, S<:Integer}`: `M`の非標準変換スパース行列。
   * `x::AbstractVector{T} where T<:AbstractFloat`: 自然基底における長さ$n$のベクトル。
   * `wt::OrthoFilter`: ウェーブレットフィルタのタイプ。
   * `L::Integer`: (デフォルト: `maxtransformlevels(x)`) 分解レベルの数。
-  * `ϵ::T where T<:AbstractFloat`: (デフォルト: `1e-4`) `M`の非標準変換のための切断基準。
+  * `ϵ::T where T<:AbstractFloat`: (デフォルト: `1e-4`) `M`の非標準変換のための切り捨て基準。
 
 # 戻り値
 

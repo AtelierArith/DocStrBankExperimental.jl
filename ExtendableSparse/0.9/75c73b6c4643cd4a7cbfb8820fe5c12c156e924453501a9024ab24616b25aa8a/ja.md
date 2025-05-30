@@ -8,4 +8,4 @@ simple!(u,A,b;
                  ) -> solution, [history]
 ```
 
-単純反復スキーム $u_{i+1}= u_i - P^{-1} (A u_i -b)$ は、IterativeSolvers.jlのメソッドと似たAPIを持っています。
+単純反復スキーム $u_{i+1}= u_i - P^{-1} (A u_i -b)$ は、IterativeSolvers.jl のメソッドと似た API を持っています。

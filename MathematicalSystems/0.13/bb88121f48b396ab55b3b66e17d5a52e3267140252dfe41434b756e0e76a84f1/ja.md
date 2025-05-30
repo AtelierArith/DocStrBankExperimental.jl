@@ -2,7 +2,7 @@
 ConstrainedDiscreteIdentitySystem <: AbstractDiscreteSystem
 ```
 
-ドメイン制約を持つ自明な単位時間離散システムの形式：
+ドメイン制約を持つ自明な単位離散時間システムの形式：
 
 $$
     x_{k+1} = x_k, \; x_k ∈ \mathcal{X} \; \forall k.

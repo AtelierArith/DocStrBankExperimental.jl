@@ -1,4 +1,4 @@
-粒子が[`is_fermion`](@ref)であり、スピンアップであることを示す具体的な型です。
+粒子が[`is_fermion`](@ref)であることを示す具体的な型で、スピンアップを持つ。
 
 ```jldoctest
 julia> using QEDbase

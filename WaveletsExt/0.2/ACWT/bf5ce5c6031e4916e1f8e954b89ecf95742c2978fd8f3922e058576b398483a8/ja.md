@@ -39,4 +39,4 @@ iacwpd!(x̂, xw, maketree(x))
 iacwpd!(x̂, xw, wt, maketree(x))
 ```
 
-**関連情報:** [`iacwpd`](@ref)
+**参照:** [`iacwpd`](@ref)

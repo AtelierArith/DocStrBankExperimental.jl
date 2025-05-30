@@ -20,7 +20,7 @@ true
 
 # 使用上の注意
 
-各インデックスは `AbstractUnitRange{<:Integer}` でなければなりませんが、同時にカスタムインデックスを使用する型であることもできます。たとえば、サブセットが必要な場合は、`begin`/`end` や [`firstindex`](@ref)/[`lastindex`](@ref) のような一般化されたインデックス構造を使用してください：
+各インデックスは `AbstractUnitRange{<:Integer}` である必要がありますが、同時にカスタムインデックスを使用する型であることもできます。たとえば、サブセットが必要な場合は、`begin`/`end` や [`firstindex`](@ref)/[`lastindex`](@ref) のような一般化されたインデックス構造を使用してください：
 
 ```julia
 ix = axes(v, 1)

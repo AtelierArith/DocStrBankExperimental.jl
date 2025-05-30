@@ -12,7 +12,7 @@ LinMPC(estim::StateEstimator; <キーワード引数>)
 julia> estim = KalmanFilter(LinModel([tf(3, [30, 1]); tf(-2, [5, 1])], 4), i_ym=[2]);
 
 julia> mpc = LinMPC(estim, Mwt=[0, 1], Nwt=[0.5], Hp=30, Hc=1)
-LinMPC コントローラー、サンプル時間 Ts = 4.0 s、OSQP オプティマイザー、KalmanFilter 推定器、および:
+LinMPC コントローラー、サンプル時間 Ts = 4.0 s、OSQP オプティマイザー、KalmanFilter 推定器、及び:
  30 予測ステップ Hp
   1 制御ステップ Hc
   1 スラック変数 ϵ (制御制約)

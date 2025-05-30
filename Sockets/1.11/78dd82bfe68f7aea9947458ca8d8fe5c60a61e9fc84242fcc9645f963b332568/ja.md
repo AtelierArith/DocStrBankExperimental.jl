@@ -2,7 +2,7 @@
 IPv6(host::Integer) -> IPv6
 ```
 
-IPアドレス `host` を [`Integer`](@ref) 形式でフォーマットされたIPv6オブジェクトを返します。
+IPアドレス `host` を [`Integer`](@ref) 形式でフォーマットされた IPv6 オブジェクトを返します。
 
 # 例
 

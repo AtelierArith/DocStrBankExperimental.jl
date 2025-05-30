@@ -6,4 +6,4 @@ airyaiprime(x)
 
 外部リンク: [DLMF 9.2](https://dlmf.nist.gov/9.2), [Wikipedia](https://en.wikipedia.org/wiki/Airy_function)
 
-参照: [`airyaiprimex`](@ref), [`airyai`](@ref), [`airybi`](@ref)
+関連項目: [`airyaiprimex`](@ref), [`airyai`](@ref), [`airybi`](@ref)

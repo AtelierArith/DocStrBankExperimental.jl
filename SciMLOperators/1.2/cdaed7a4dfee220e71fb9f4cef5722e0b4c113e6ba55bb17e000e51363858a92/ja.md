@@ -62,7 +62,7 @@ op(w, v, u, p, t, α, β; <accepted_kwargs>) -> [wを修正]
 
 ここで `u`、`v`、`w` は `AbstractArray` であり、`p` はパラメータオブジェクトで、`t`、`α`、`β` はスカラーです。最初のシグネチャは `Base.*` を使用して演算子を適用することに対応し、後の2つは三引数および五引数の `mul!` に対応します。
 
-`input` と `output` のプロトタイプ `AbstractArray` が必要で、演算子の特性（`eltype`、`size` など）を決定し、キャッシュを事前に割り当てるために使用されます。`output` 配列が提供されない場合、出力は入力と同じ型および共有されると仮定されます。
+`input` と `output` のプロトタイプ `AbstractArray` が必要で、演算子の特性（`eltype`、`size` など）を決定し、キャッシュを事前に割り当てるために使用されます。`output` 配列が提供されない場合、出力は入力と同じ型および共有されるものと仮定されます。
 
 ## キーワード引数
 
@@ -70,7 +70,7 @@ op(w, v, u, p, t, α, β; <accepted_kwargs>) -> [wを修正]
 
 ## 特性
 
-キーワード引数は演算子の特性を設定するために使用され、`op`、`op_adjoint`、`op_inverse`、`op_adjoint_inverse` にわたって均一であると仮定されます。
+キーワード引数は演算子の特性を設定するために使用され、これらは `op`、`op_adjoint`、`op_inverse`、`op_adjoint_inverse` にわたって均一であると仮定されます。
 
   * `u` - 評価中に演算子に渡される状態構造体のプロトタイプ、すなわち `L(u, p, t)`。値が提供されない場合、`u` は `nothing` に設定されます。
   * `p` - 評価中に演算子に渡されるパラメータ構造体のプロトタイプ、すなわち `L(u, p, t)`。値が提供されない場合、`p` は `nothing` に設定されます。
@@ -85,7 +85,7 @@ op(w, v, u, p, t, α, β; <accepted_kwargs>) -> [wを修正]
   * `isconvertible` - 安価な `convert(AbstractMatrix, L.op)` メソッドが利用可能な場合は `true`。デフォルトは `false` です。
   * `batch` - 入力/出力配列が行列にスタックされたバッチ列ベクトルで構成されているかどうかを示すブール値。`true` の場合、入力/出力配列は `AbstractVecOrMat` でなければならず、第二次元（バッチ次元）の長さは同じでなければなりません。バッチ次元はサイズ計算には関与しません。たとえば、`batch = true` で、`size(output), size(input) = (M, K), (N, K)` の場合、`FunctionOperator` のサイズは `(M, N)` に設定されます。`batch = false` の場合（デフォルト）、`input`/`output` 配列は任意のサイズであってもよく、`ndims(input) == ndims(output)` であれば、`FunctionOperator` のサイズは `(length(input), length(output))` に設定されます。
   * `ifcache` - コンストラクタでキャッシュ配列を割り当てます。デフォルトは `true` です。キャッシュは `cache_operator(L, input, output)` を呼び出すことで後で生成できます。
-  * `cache` - インプレース評価用の事前生成されたキャッシュ配列。型と形状は `(similar(input), similar(output),)` である必要があります。値が提供されない場合、コンストラクタはキャッシュを生成します。コンストラクタによるキャッシュ生成は、キーワード引数 `ifcache = false` を設定することで無効にできます。
+  * `cache` - インプレース評価のための事前生成されたキャッシュ配列。型と形状は `(similar(input), similar(output),)` である必要があります。値が提供されない場合、コンストラクタはキャッシュを生成します。コンストラクタによるキャッシュ生成は、キーワード引数 `ifcache = false` を設定することで無効にできます。
   * `opnorm` - `op` のノルム。`Number` または関数 `opnorm(p::Integer)` である可能性があります。デフォルトは `nothing` です。
   * `issymmetric` - 演算子が線形かつ対称である場合は `true`。デフォルトは `false` です。
   * `ishermitian` - 演算子が線形かつエルミートである場合は `true`。デフォルトは `false` です。

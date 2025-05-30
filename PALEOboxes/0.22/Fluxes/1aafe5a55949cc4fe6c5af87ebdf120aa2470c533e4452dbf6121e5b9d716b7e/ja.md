@@ -6,16 +6,16 @@
 
 # ドメイン内の生物地球化学的フラックスを定義するための規約
 
-  * ストイキオメトリー Corg:N:P:Ccarb を持つ粒子状有機物（CaCO3を含む）は通常、次のように転送されます: `flux_list` `["P", "N", "Corg::CIsotope", "Ccarb::CIsotope"]` で、関数を示す接頭辞（例: `export_`）が付けられます。
-  * 溶質フラックスは通常、次のように転送されます: `flux_list`  `["DIC::CIsotope", "TAlk", "Ca", "P", "O2", "SO4::SIsotope", "H2S::SIsotope", "CH4::CIsotope"]` （これらの名前は溶質の貯蔵庫名と一致します）で、関数を示す接頭辞（通常は `flux_` または `soluteflux_`）が付けられます。
+  * ストイキオメトリー Corg:N:P:Ccarb を持つ粒子状有機物（CaCO3を含む）は通常、次のように転送されます: `flux_list` `["P", "N", "Corg::CIsotope", "Ccarb::CIsotope"]` で、関数を示すプレフィックス（例: `export_`）が付けられます。
+  * 溶質フラックスは通常、次のように転送されます: `flux_list`  `["DIC::CIsotope", "TAlk", "Ca", "P", "O2", "SO4::SIsotope", "H2S::SIsotope", "CH4::CIsotope"]` （これらの名前は溶質のための貯蔵庫名と一致します）で、関数を示すプレフィックス（通常は `flux_` または `soluteflux_`）が付けられます。
 
 # モジュール間のグローバルフラックスを定義するための規約
 
-モデル構成 `.yaml` ファイルは、各グローバルフラックスのために `Domain` を作成し、1つ以上の [`Fluxes.ReactionFluxTarget`](@ref) を含む必要があります。フラックスは、その後、各宛先ドメインに [`Fluxes.ReactionFluxTransfer`](@ref) を追加することで転送（コピー）されます。
+モデル構成 `.yaml` ファイルは、各グローバルフラックスのために `Domain` を作成し、1つ以上の [`Fluxes.ReactionFluxTarget`](@ref) を含む必要があります。フラックスは、その後、各宛先ドメインに [`Fluxes.ReactionFluxTransfer`](@ref) を追加することによって転送（コピー）されます。
 
 地球システムフラックスの命名規約:
 
-| ドメイン名                 | ターゲット接頭辞         | flux_list (例示、必要に応じて追加)                                                                              |
+| ドメイン名                 | ターゲットプレフィックス     | flux_list (例示、必要に応じて追加)                                                                              |
 |:--------------------- |:---------------- |:---------------------------------------------------------------------------------------------------- |
 | fluxAtoLand           | flux_            | ["CO2::CIsotope", "O2"]                                                                              |
 | fluxRtoOcean          | flux_            | ["DIC::CIsotope", "TAlk", "Ca", "P", "SO4::SIsotope"]                                                |

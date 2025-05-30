@@ -6,7 +6,7 @@ CompositeRotations(clique::AbstractVector, alg::EliminationAlgorithm)
 CompositeRotations(clique::AbstractVector)
 ```
 
-与えられたクリークが順序の最後に来るように、排除アルゴリズムを評価します。
+与えられたクリークが順序の最後にあることを保証しながら、消去アルゴリズムを評価します。
 
 ```julia-repl
 julia> using CliqueTrees
@@ -29,7 +29,7 @@ CompositeRotations{Vector{Int64}, MCS}:
 
 julia> order, index = permutation(graph; alg);
 
-julia> order # 2は順序の最後の頂点です
+julia> order # 2 is the last vertex in the ordering
 8-element Vector{Int64}:
  4
  5
@@ -44,7 +44,7 @@ julia> order # 2は順序の最後の頂点です
 ### パラメータ
 
   * `clique`: クリーク
-  * `alg`: 排除アルゴリズム
+  * `alg`: 消去アルゴリズム
 
 ### 参考文献
 

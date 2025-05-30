@@ -3,4 +3,4 @@ GeneFunction(name::String, taxon::Union{Taxon, String, Missing}) <: AbstractFeat
 GeneFunction(name::String)
 ```
 
-オプショナルな層別化（`taxon`）を持つ微生物遺伝子機能オブジェクト。
+オプションの層別化（`taxon`）を持つ微生物遺伝子機能オブジェクト。

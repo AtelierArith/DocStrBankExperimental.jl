@@ -14,6 +14,6 @@ measure(state, [measures...][, t])
 measure(state, X(1))     # 可観測量 X(1) を計算
 measure(state, X)        # すべてのサイトで可観測量 X を計算
 measure(state, (X, Y))   # すべてのサイトのペアで相関 XY を計算
-measure(state, Check("check", X(1)X(2), t->sin(2t)), 0.8) # 与えられた可観測量を計算された値と照合して計算
+measure(state, Check("check", X(1)X(2), t->sin(2t)), 0.8) # 与えられた可観測量を計算された値と照合してチェック
 measure(state, [X(2), Y, (X, Y)]) # 複数の測定を一緒に
 ```

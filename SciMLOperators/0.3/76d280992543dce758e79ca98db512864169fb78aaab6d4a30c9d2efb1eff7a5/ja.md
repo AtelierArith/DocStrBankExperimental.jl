@@ -1,4 +1,4 @@
-線形演算子を `AbstractMatrix` によって表現し、`AbstractVecOrMat` に適用される可能性があります。その状態は、演算子評価中にユーザー提供の `update_func` によって更新されます（`L([v,], u, p, t)`）、または `update_coefficients[!](L, u, p, t)` への呼び出しによって更新されます。両者は再帰的に `update_function`、`update_func` を呼び出し、これは次のシグネチャを持つと仮定されます。
+線形演算子を `AbstractMatrix` によって表現し、`AbstractVecOrMat` に適用できるようにします。その状態は、演算子評価中にユーザー提供の `update_func` によって更新されます（`L([v,], u, p, t)`）、または `update_coefficients[!](L, u, p, t)` への呼び出しによって更新されます。両者は再帰的に `update_function`、`update_func` を呼び出し、これは次のシグネチャを持つと仮定されます。
 
 ```
 update_func(A::AbstractMatrix, u, p, t; <accepted kwargs>) -> newA
@@ -10,7 +10,7 @@ update_func(A::AbstractMatrix, u, p, t; <accepted kwargs>) -> newA
 update_func!(A::AbstractMatrix, u, p, t; <accepted kwargs>) -> [modifies A]
 ```
 
-`update_func[!]` によって受け入れられるキーワード引数のセットは、`MatrixOperator` に `accepted_kwargs` というキーワード引数を介して `Symbol` のタプルとして提供されなければなりません。`accepted_kwargs` が提供されていない場合、`kwargs` は `update_func[!]` に渡すことができません。
+`update_func[!]` によって受け入れられるキーワード引数のセットは、`MatrixOperator` に `accepted_kwargs` というキーワード引数を介して `Symbol` のタプルとして提供されなければなりません。`accepted_kwargs` が提供されていない場合、`kwargs` を `update_func[!]` に渡すことはできません。
 
 !!! 警告     ユーザー提供の `update_func[!]` は、その計算に `u` を使用してはなりません。`update_func[!]` への位置引数 `(u, p, t)` は、`update_coefficients[!](L, u, p, t)` によって渡され、ここで `u` は合成 `AbstractSciMLOperator` への入力ベクトルです。そのため、`u` の値や形状は、`update_func[!]` が期待する入力に対応しない可能性があります。演算子の状態がその入力ベクトルに依存する場合、それは定義上非線形演算子です。このような非線形性は `FunctionOperator` に保持することをお勧めします。このトピックは（この問題）[https://github.com/SciML/SciMLOperators.jl/issues/159] でさらに議論されています。
 

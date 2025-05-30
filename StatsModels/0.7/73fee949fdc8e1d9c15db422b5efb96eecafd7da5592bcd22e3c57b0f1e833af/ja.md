@@ -4,7 +4,7 @@ gvif(model::RegressionModel; scale=false)
 
 一般化分散膨張係数 (GVIF) を計算します。
 
-`scale=true` の場合、各 GVIF は予測子に関連する自由度（係数の数）でスケーリングされます: $GVIF^(1 / (2*df))$。
+`scale=true` の場合、各 GVIF は予測子に関連する自由度の数でスケーリングされます: $GVIF^(1 / (2*df))$。
 
 切片を除く各項に対して計算された膨張係数のベクトルを返します。言い換えれば、対応する係数は `termnames(m)[2:end]` です。
 

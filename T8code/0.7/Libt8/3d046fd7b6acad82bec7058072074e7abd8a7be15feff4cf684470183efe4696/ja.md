@@ -13,7 +13,7 @@ t8_offset_next_owner_of_tree(mpisize, gtree, offset, current_owner)
 
 # 戻り値
 
-*gtree* をローカルツリーとして持つ current_owner よりも大きい次のランクの MPI ランク。該当するランクが存在しない場合は -1。
+*gtree* をローカルツリーとして持つ current_owner よりも大きい次のランクの MPI ランク。該当するランクが存在しない場合は -1 を返します。
 
 ### プロトタイプ
 

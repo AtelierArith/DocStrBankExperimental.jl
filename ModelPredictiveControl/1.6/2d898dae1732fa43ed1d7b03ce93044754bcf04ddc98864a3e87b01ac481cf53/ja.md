@@ -11,7 +11,7 @@ SimResult(obj::PredictiveController, U_data, Y_data, D_data=[]; <keyword argumen
 # 引数
 
 !!! info
-    *`強調`* されたキーワード引数は非Unicodeの代替です。
+    *`強調`* されたキーワード引数は、非Unicodeの代替手段です。
 
 
   * `obj` : シミュレーションされた [`SimModel`](@ref)/[`StateEstimator`](@ref)/[`PredictiveController`](@ref)
@@ -23,7 +23,7 @@ SimResult(obj::PredictiveController, U_data, Y_data, D_data=[]; <keyword argumen
   * `Ŷ_data=nothing` または *`Yhat_data`* : 推定された出力
   * `Ry_data=nothing` : プラント出力セットポイント
   * `Ru_data=nothing` : 操作された入力セットポイント
-  * `plant=get_model(obj)` : シミュレーションされたプラントモデル、デフォルトは `obj` 内部プラントモデル
+  * `plant=get_model(obj)` : シミュレーションされたプラントモデル、デフォルトは `obj` 内部のプラントモデル
 
 # 例
 

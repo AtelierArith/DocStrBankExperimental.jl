@@ -12,4 +12,4 @@ mdlovofit(
 )
 ```
 
-軌道でMDLovoFitを実行します。
+軌道に対してMDLovoFitを実行します。

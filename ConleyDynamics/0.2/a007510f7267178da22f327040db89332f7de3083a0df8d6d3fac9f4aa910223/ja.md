@@ -10,4 +10,4 @@ ph_reduce!(matrix::SparseMatrix; [returnbasis=true])
   * `phpairs::Vector{Vector{Tuple{Int,Int}}}`
   * `basis::SparseMatrix`（`returnbasis=true`の場合）
 
-`matrix`が厳密上三角行列であると仮定します。関数は、`phsingles`に無限長持続区間の開始列を返し、`phpairs`に有限長持続区間の出生列と死亡列を返します。オプションの引数`returnbasis=true`が指定されている場合、関数は計算された基底行列Bも返します。`reduced = matrix * B`となります。
+`matrix`が厳密上三角行列であると仮定します。関数は、`phsingles`に無限長持続区間の開始列を返し、`phpairs`に有限長持続区間の出生列と死亡列を返します。オプション引数`returnbasis=true`が指定されている場合、関数は計算された基底行列Bも返し、`reduced = matrix * B`となります。

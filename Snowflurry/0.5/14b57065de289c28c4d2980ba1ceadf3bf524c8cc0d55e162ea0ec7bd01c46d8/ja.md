@@ -2,10 +2,10 @@
 serialize_job(circuit::QuantumCircuit,shot_count::Integer,host::String)
 ```
 
-`QPU` サービスに送信される回路構成を含む JSON 形式の文字列を作成します。`QPU` サービスの URL は `host` に対応し、回路の実行回数は `shot_count` に等しいです。
+`QPU`サービスに送信される回路構成を含むJSON形式の文字列を作成します。`QPU`サービスのURLは`host`に対応し、回路の実行回数は`shot_count`に等しいです。
 
 !!! note
-    JSON エンコーディングでは、キュービットとビットのインデックスはゼロベースのインデックスを使用します。
+    JSONエンコーディングでは、キュービットとビットのインデックスはゼロベースのインデックスを使用します。
 
 
 # 例

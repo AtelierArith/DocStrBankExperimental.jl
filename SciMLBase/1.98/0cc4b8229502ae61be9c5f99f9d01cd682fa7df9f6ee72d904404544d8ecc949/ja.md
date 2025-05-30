@@ -14,4 +14,4 @@ init(prob::OptimizationProblem, alg::AbstractOptimizationAlgorithm, args...; kwa
 
 一部の最適化アルゴリズムには、ドキュメントのソルバー部分およびそれぞれのドキュメントに記載された特別なキーワード引数があります。これらの引数は`kwargs...`として`init`に渡すことができます。
 
-[`solve(prob::OptimizationProblem, alg, args...; kwargs...)`](@ref)も参照してください。
+また、[`solve(prob::OptimizationProblem, alg, args...; kwargs...)`](@ref)も参照してください。

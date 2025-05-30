@@ -6,4 +6,4 @@ struct InterfaceQuantity{Ti} <: VoronoiFVM.AbstractQuantity{Ti}
 
   * `ispec::Any`: 量を表す種番号
   * `bregspec::Vector`: インターフェース量が定義されている境界領域
-  * `id::Any`: パラメータフィールドでインデックスとして量を使用することを可能にする量識別子
+  * `id::Any`: パラメータフィールドのインデックスとして量を使用することを可能にする量識別子

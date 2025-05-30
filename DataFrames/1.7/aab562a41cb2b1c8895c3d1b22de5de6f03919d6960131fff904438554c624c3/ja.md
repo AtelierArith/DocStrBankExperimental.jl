@@ -3,16 +3,16 @@ nonunique(df::AbstractDataFrame; keep::Symbol=:first)
 nonunique(df::AbstractDataFrame, cols; keep::Symbol=:first)
 ```
 
-`Vector{Bool}`を返し、`true`のエントリは重複行を示します。
+`true` エントリが重複行を示す `Vector{Bool}` を返します。
 
-重複行とは、少なくとも別の行が`cols`のすべての列に対して等しい値を持つ（`isequal`に従って）行のことです（デフォルトではすべての列）。`keep=:first`（デフォルト）の場合、重複行のセットの最初の出現のみが`false`のエントリで示されます。`keep=:last`の場合、重複行のセットの最後の出現のみが`false`のエントリで示されます。`keep=:noduplicates`の場合、重複のない行のみが`false`のエントリで示されます。
+重複行とは、少なくとも別の行が `cols` のすべての列に対して等しい値を持つ行のことです（デフォルトではすべての列）。`keep=:first`（デフォルト）の場合、重複行のセットの最初の出現のみが `false` エントリで示されます。`keep=:last` の場合、重複行のセットの最後の出現のみが `false` エントリで示されます。`keep=:noduplicates` の場合、重複のない行のみが `false` エントリで示されます。
 
 # 引数
 
   * `df` : `AbstractDataFrame`
-  * `cols` : 比較する列またはその変換を指定するセレクタ。`df`に少なくとも1つの列がある場合、少なくとも1つの列を返す[`select`](@ref)によって受け入れられる任意の列セレクタまたは変換であることができます。
+  * `cols` : 比較する列またはその変換を指定するセレクタ。`df` に少なくとも1つの列がある場合、少なくとも1つの列を返す [`select`](@ref) によって受け入れられる任意の列セレクタまたは変換である必要があります。
 
-他に[`unique`](@ref)および[`unique!`](@ref)も参照してください。
+他に [`unique`](@ref) および [`unique!`](@ref) も参照してください。
 
 # 例
 

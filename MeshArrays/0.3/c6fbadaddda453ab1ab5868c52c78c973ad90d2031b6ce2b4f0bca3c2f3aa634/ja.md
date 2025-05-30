@@ -17,7 +17,7 @@ using CairoMakie
 heatmap(Interpolate(Γ.Depth,L)...,colorrange=(0.,6000.))
 ```
 
-または 
+or 
 
 ```
 heatmap(Γ.Depth,interpolation=L,colorrange=(0.,6000.))

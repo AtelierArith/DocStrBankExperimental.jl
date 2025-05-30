@@ -1,8 +1,8 @@
 ```
-ConstrainedAffineControlContinuousSystem
+制約付きアフィン制御連続システム
 ```
 
-ドメイン制約を持つ連続時間アフィン制御システムの形式：
+連続時間アフィン制御システムで、次の形式のドメイン制約があります：
 
 $$
     x(t)' = A x(t) + B u(t) + c, \; x(t) ∈ \mathcal{X}, \; u(t) ∈ \mathcal{U} \; \forall t.

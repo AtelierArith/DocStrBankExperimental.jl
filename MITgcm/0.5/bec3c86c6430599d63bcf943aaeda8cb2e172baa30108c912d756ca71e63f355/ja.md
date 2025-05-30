@@ -2,7 +2,7 @@
 read_all_namelists(input_path)
 ```
 
-`input_path`にあるすべての`MITgcm`ナメリストファイルを読み込み、解析し、NamedTupleのNamedTuplesとして返します。
+`input_path`にあるすべての`MITgcm`ナメリストファイルを読み込み、解析して、NamedTupleのNamedTuplesとして返します。
 
 ```
 using MITgcm; path0=default_path()

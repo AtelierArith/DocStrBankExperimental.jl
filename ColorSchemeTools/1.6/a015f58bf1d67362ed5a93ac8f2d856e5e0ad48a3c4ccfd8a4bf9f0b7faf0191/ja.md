@@ -5,7 +5,7 @@ make_colorscheme(indexedlist;
     notes="")
 ```
 
-インデックス付きリストのような ColorScheme を作成します：
+インデックス付きリストを使用してColorSchemeを作成します：
 
 ```
 gist_rainbow = (
@@ -24,4 +24,4 @@ make_colorscheme(gist_rainbow)
 
 各アイテムの最初の要素は、カラースキーム上のポイントです。
 
-`length` キーワードを使用して、カラースキームの色の数を設定します。
+`length`キーワードを使用して、カラースキームの色の数を設定します。

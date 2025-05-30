@@ -7,7 +7,7 @@ itp = interpolate(A, interpmode)
   * `NoInterp()`
   * `BSpline(Constant())`
   * `BSpline(Linear())`
-  * `BSpline(Quadratic(bc))` （[`BoundaryCondition`](@ref) を参照）
+  * `BSpline(Quadratic(bc))` (見てください [`BoundaryCondition`](@ref))
   * `BSpline(Cubic(bc))`
 
 異なる軸に沿って異なる補間スキームを使用したい場合は、そのような値のタプルであることもできます。

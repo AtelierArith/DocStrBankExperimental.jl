@@ -1,3 +1,3 @@
 `FastQRFactorization()`
 
-FastLapackInterface.jl の QR 因子分解のバージョンです。
+FastLapackInterface.jl の QR 因数分解のバージョンです。

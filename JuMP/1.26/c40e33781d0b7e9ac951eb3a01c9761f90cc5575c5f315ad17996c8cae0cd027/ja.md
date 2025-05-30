@@ -8,7 +8,7 @@ reduced_cost(x::GenericVariableRef{T})::T where {T}
 
 このメソッドは、アクティブな変数境界のシャドウプライスを照会することと同等です（存在し、アクティブである場合）。
 
-参照: [`shadow_price`](@ref).
+参照: [`shadow_price`](@ref)。
 
 ## 例
 

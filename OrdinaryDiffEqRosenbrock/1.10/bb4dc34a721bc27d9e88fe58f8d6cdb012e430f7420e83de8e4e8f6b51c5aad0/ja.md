@@ -34,7 +34,7 @@ Rodas4P(; - `standardtag`: パッケージ固有のタグを使用するかど�
                   `newW == true`のときのみ前処理器を更新することを推奨します。
               - `Plprev`: 前の`Pl`。
               - `Prprev`: 前の`Pr`。
-              - `solverdata`: ソルバーが`precs`関数に提供できるオプションの追加データ。
+              - `solverdata`: ソルバーが`precs`関数に渡すことができるオプションの追加データ。
                   ソルバー依存であり、変更される可能性があります。
             戻り値は、LinearSolve.jl互換の前処理器のタプル`(Pl,Pr)`です。
             一方の前処理を指定するには、使用されない前処理器に対して`nothing`を返すだけです。
@@ -67,4 +67,4 @@ Rodas4P(; - `standardtag`: パッケージ固有のタグを使用するかど�
 ## 参考文献
 
   * Steinebach, G., Rentrop, P., 河川における流れと輸送のモデリングのための適応的なライン法アプローチ。    Adaptive method of lines , Wouver, A. Vande, Sauces, Ph., Schiesser, W.E. (ed.),S. 181-205,Chapman & Hall/CRC, 2001,
-  * Steinebach, G., DAEおよびライン法アプリケーションのためのROW法の次数削減。    Preprint-Nr. 1741, FB Mathematik, TH Darmstadt, 1995.
+  * Steinebach, G., DAEおよびライン法アプリケーションのためのROW法のオーダー削減。    Preprint-Nr. 1741, FB Mathematik, TH Darmstadt, 1995.

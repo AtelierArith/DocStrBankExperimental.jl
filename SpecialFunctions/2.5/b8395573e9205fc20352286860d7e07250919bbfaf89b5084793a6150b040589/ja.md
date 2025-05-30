@@ -19,7 +19,7 @@ $$
 
 外部リンク: [DLMF 7.2.2](https://dlmf.nist.gov/7.2.2), [Wikipedia](https://en.wikipedia.org/wiki/Error_function#Complementary_error_function).
 
-参照: [`erf(x)`](@ref erf).
+関連: [`erf(x)`](@ref erf).
 
 # 実装者
 

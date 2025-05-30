@@ -2,9 +2,9 @@
 HypothesisCoding(hypotheses::AbstractMatrix; levels=nothing, labels=nothing)
 ```
 
-カテゴリ変数を*仮説行列*の観点からコーディングする方法を指定します。$k$レベルの変数の場合、これは$k-1 \times k$の行列である必要があります。行列の各行は、予測因子の$k$レベルの下での平均結果に関する仮説に対応しています。行のエントリは、これらの$k$個の平均に割り当てられた重みを示し、回帰モデルの対応する予測因子はこれらのセル平均の重み付き合計を推定します。
+カテゴリ変数を*仮説行列*の観点からコーディングする方法を指定します。$k$レベルの変数について、これは$k-1 \times k$の行列である必要があります。行列の各行は、予測因子の$k$レベルの下での平均結果に関する仮説に対応します。行のエントリは、これらの$k$個の平均に割り当てられた重みを示し、回帰モデルの対応する予測因子はこれらのセル平均の重み付き合計を推定します。
 
-例えば、A、B、C、Dの4つのレベルを持つ変数があり、レベルAとBの平均結果の差がゼロと異なるという仮説をテストしたい場合、対応する仮説行列の行は`[-1, 1, 0, 0]`となります。同様に、BとCの差がゼロと異なるかどうかをテストするための仮説ベクトルは`[0, -1, 1, 0]`となります。各「連続差」仮説をテストするために、完全な仮説行列は次のようになります。
+例えば、A、B、C、Dの4つのレベルを持つ変数があり、レベルAとBの平均結果の差がゼロと異なるという仮説をテストしたい場合、対応する仮説行列の行は`[-1, 1, 0, 0]`になります。同様に、BとCの差がゼロと異なるかどうかをテストするための仮説ベクトルは`[0, -1, 1, 0]`になります。各「連続差」仮説をテストするために、完全な仮説行列は次のようになります。
 
 ```jldoctest hyp
 julia> sdiff_hypothesis = [-1  1  0  0
@@ -46,4 +46,4 @@ julia> StatsModels.ContrastsMatrix(seqdiff_hyp, ["a", "b", "c", "d"]).matrix
 
 # 参考文献
 
-Schad, D. J., Vasishth, S., Hohenstein, S., & Kliegl, R. (2020). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language, 110*, 104038. https://doi.org/10.1016/j.jml.2019.104038 ```
+Schad, D. J., Vasishth, S., Hohenstein, S., & Kliegl, R. (2020). How to capitalize on a priori contrasts in linear (mixed) models: A tutorial. *Journal of Memory and Language, 110*, 104038. https://doi.org/10.1016/j.jml.2019.104038

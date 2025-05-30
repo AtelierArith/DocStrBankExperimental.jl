@@ -1,13 +1,11 @@
 ```
-RayTracer(mesh, sources; settings = RTSettings(), acceleration = Naive, rule = nothing)
-```
-
 メッシュ、ソースのタプル（`Source`から継承したオブジェクト）または単一のソース、設定、および加速関数（`Naive`または`BVH`から選択）を使用して`RayTracer`オブジェクトを作成します。引数`rule`は加速器`BVH`にのみ必要であり、`SAH`または`AvgSplit`型のオブジェクトでなければなりません（`Naive`加速器の場合は無視されます）。
 
 ## 例
 
-```jldoctest
-julia> using PlantGeomPrimitives;
+```
+
+jldoctest julia> using PlantGeomPrimitives;
 
 julia> mesh = Ellipse();
 
@@ -19,8 +17,6 @@ julia> source = DirectionalSource(mesh, θ = 0.0, Φ = 0.0, radiosity = 1.0, nra
 
 julia> rt = RayTracer(mesh, source);
 
-julia> sources = (DirectionalSource(mesh, θ = 0.0, Φ = 0.0, radiosity = 1.0, nrays = 1_000),
-                  DirectionalSource(mesh, θ = 45.0, Φ = 0.0, radiosity = 1.0, nrays = 1_000));
+julia> sources = (DirectionalSource(mesh, θ = 0.0, Φ = 0.0, radiosity = 1.0, nrays = 1*000),                   DirectionalSource(mesh, θ = 45.0, Φ = 0.0, radiosity = 1.0, nrays = 1*000));
 
-julia> rt = RayTracer(mesh, sources);
-```
+julia> rt = RayTracer(mesh, sources); ```

@@ -11,7 +11,7 @@ t8_element_array_new_count(scheme, num_elements)
 
 # 戻り値
 
-t8*element*newが呼び出された要素のために割り当てられ、初期化された配列を返します。
+t8*element*newが呼び出された要素のために割り当てられ、初期化された要素を持つ割り当てられた配列を返します。
 
 ### プロトタイプ
 

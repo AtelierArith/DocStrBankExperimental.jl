@@ -2,7 +2,7 @@
 reshape_vector(vectorized_form::Vector, shape::AbstractShape)
 ```
 
-ベクトル化された形式 `vectorized_form` から元の形 `shape` のオブジェクトを返します。
+ベクトル化された形式 `vectorized_form` に与えられた元の形 `shape` のオブジェクトを返します。
 
 ## 例
 

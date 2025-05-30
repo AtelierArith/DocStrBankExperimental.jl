@@ -4,7 +4,7 @@ lowercase(c::AbstractChar)
 
 `c`を小文字に変換します。
 
-関連情報としては[`uppercase`](@ref)、[`titlecase`](@ref)があります。
+参照してください [`uppercase`](@ref), [`titlecase`](@ref).
 
 # 例
 

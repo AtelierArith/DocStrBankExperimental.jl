@@ -14,4 +14,4 @@ Heun(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
 
 ## 参考文献
 
-E. Hairer, S.P. Norsett, G. Wanner, (1993) Ordinary Differential Equations I. Nonstiff Problems. 第2版。スプリンガー計算数学シリーズ、スプリンガー・バーグラフ。
+E. Hairer, S.P. Norsett, G. Wanner, (1993) Solving Ordinary Differential Equations I. Nonstiff Problems. 2nd Edition. Springer Series in Computational Mathematics, Springer-Verlag.

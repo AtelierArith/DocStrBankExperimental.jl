@@ -7,7 +7,7 @@ dispatch!(x::AbstractBlock, collection)
 ### 引数
 
   * `x`: パラメータをディスパッチするブロック。
-  * `collection`: パラメータのコレクション、例えば数のリスト、`:zero` や `:random` もサポートされており、ここで `:random` は `rand(nparameters(x))` と同等です。
+  * `collection`: パラメータのコレクション、例えば数のリスト、`:zero` や `:random` もサポートされており、ここで `:random` は `rand(nparameters(x))` に相当します。
 
 !!! note
     まずコレクション内のパラメータをディスパッチしようとします。

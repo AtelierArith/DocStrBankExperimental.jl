@@ -6,4 +6,4 @@ abstract type L2P1{ncomponents} <: AbstractH1FiniteElement where {ncomponents<:I
 
 許可される ElementGeometries:
 
-  * すべて
+  * いずれか

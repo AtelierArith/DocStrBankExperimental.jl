@@ -6,7 +6,7 @@ UserKNN(
 )
 ```
 
-[ユーザーベースのCFをピアソン相関を使用して](https://dl.acm.org/citation.cfm?id=312682)。`n_neighbors`は隣接者の数$k$を表し、`normalize`は隣接者の評価の加重和が正規化されるかどうかを指定します。
+[ユーザーベースのCFをピアソン相関を使用して](https://dl.acm.org/citation.cfm?id=312682)。`n_neighbors`は隣人の数$k$を表し、`normalize`は隣人の評価の加重和が正規化されるかどうかを指定します。
 
 この手法は、次の式によってユーザー間のペアに重みを与えます：
 

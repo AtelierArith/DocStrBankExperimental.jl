@@ -9,4 +9,4 @@ TokenStreamは、ファイルからトークン化されたデータを読み取
   * `itoken::Int64`: トークン配列内の実際のトークンの位置
   * `lineno::Int64`: IOStream内の行番号
   * `comment::Char`: コメント文字
-  * `dlm::Function`: 指定された文字が区切り文字であるかどうかを示す関数。
+  * `dlm::Function`: 与えられた文字が区切り文字であるかどうかを示す関数。

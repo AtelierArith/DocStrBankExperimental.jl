@@ -2,4 +2,4 @@
 log_debug(msg)
 ```
 
-デバッグメッセージをログに記録します。 [`GitHubActionsLogger`](@ref) も参照してください。
+デバッグメッセージをログに記録します。詳細は[`GitHubActionsLogger`](@ref)を参照してください。

@@ -4,7 +4,7 @@ internal_size(Space::Type{<:AbstractSpace}, mesh::AbstractMesh; [subdomain=""] [
 
 モデル変数に使用する配列サイズ。
 
-すべての `AbstractMesh` 具体的なサブタイプ（UnstructuredVectorGrid、CartesianLinearGrid、...）はこのメソッドを実装する必要があります。
+すべての `AbstractMesh` 具体的サブタイプ（UnstructuredVectorGrid、CartesianLinearGrid、...）はこのメソッドを実装する必要があります。
 
 # オプションのキーワード引数
 

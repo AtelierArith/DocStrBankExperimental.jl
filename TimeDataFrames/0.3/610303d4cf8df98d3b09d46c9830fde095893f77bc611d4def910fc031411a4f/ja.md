@@ -2,4 +2,4 @@
 iscontinuous(tdf::TimeDataFrame)
 ```
 
-TimeDataFrameが連続しているかどうかを返します。
+は、TimeDataFrameが連続しているかどうかを返します。

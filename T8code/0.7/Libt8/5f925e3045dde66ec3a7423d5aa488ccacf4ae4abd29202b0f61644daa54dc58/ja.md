@@ -15,7 +15,7 @@ t8_forest_global_tree_id(forest, ltreeid)
 
 # 参照
 
-https://github.com/DLR-AMR/t8code/wiki/Tree-indexing ツリーインデックスに関する詳細については。
+https://github.com/DLR-AMR/t8code/wiki/Tree-indexing でツリーインデックスに関する詳細を確認してください。
 
 ### プロトタイプ
 

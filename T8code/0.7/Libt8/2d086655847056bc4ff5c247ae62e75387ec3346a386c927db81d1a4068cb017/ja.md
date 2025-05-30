@@ -2,7 +2,7 @@
 t8_forest_set_ghost_ext(forest, do_ghost, ghost_type, ghost_version)
 ```
 
-t8*forest*set*ghostと同様ですが、ゴーストアルゴリズムを変更するための追加オプションがあります。これはアルゴリズムのデバッグとタイミングに使用されます。アプリケーションはほとんど常にt8*forest*set*ghostを使用するべきです。
+t8*forest*set*ghostと同様ですが、ゴーストアルゴリズムを変更するための追加オプションがあります。これはアルゴリズムのデバッグとタイミングに使用されます。アプリケーションはほぼ常にt8*forest*set*ghostを使用するべきです。
 
 # 引数
 

@@ -3,9 +3,9 @@ diagind(M::AbstractMatrix, k::Integer = 0, indstyle::IndexStyle = IndexLinear())
 diagind(M::AbstractMatrix, indstyle::IndexStyle = IndexLinear())
 ```
 
-行列 `M` の `k` 番目の対角線のインデックスを与える `AbstractRange`。オプションで、返される範囲のタイプを決定するインデックススタイルを指定できます。`indstyle` が `IndexLinear` (デフォルト) の場合、これは `AbstractRange{Integer}` を返します。一方、`indstyle` が `IndexCartesian` の場合、これは `AbstractRange{CartesianIndex{2}}` を返します。
+行列 `M` の `k` 番目の対角線のインデックスを与える `AbstractRange`。オプションで、返される範囲のタイプを決定するインデックススタイルを指定できます。`indstyle isa IndexLinear`（デフォルト）の場合、これは `AbstractRange{Integer}` を返します。一方、`indstyle isa IndexCartesian` の場合、これは `AbstractRange{CartesianIndex{2}}` を返します。
 
-`k` が指定されていない場合、`0` (主対角線に対応) と見なされます。
+`k` が指定されていない場合、`0`（主対角線に対応）であると見なされます。
 
 参照: [`diag`](@ref), [`diagm`](@ref), [`Diagonal`](@ref).
 

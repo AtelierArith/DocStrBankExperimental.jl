@@ -42,5 +42,5 @@ julia> statevec(reg)
 ```
 
 !!! tip
-    開発者は `select!(r::RegisterType, bits::NTuple{N, <:Integer})` をオーバーロードすべきであり、`bits` が特定のビット数（例: `Int64`）を持つと仮定すべきではありません。そうしないと、利用可能な最大のクディット数が制限されます。
+    開発者は `select!(r::RegisterType, bits::NTuple{N, <:Integer})` をオーバーロードすべきであり、`bits` が特定のビット数（例えば `Int64`）を持つと仮定すべきではありません。そうしないと、最大利用可能なクディット数が制限されます。
 

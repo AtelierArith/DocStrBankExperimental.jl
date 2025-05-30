@@ -8,7 +8,7 @@ invert(measured, rec0, forward; <keyword arguments>)
 
 # 引数
 
-  * `loss=Poisson()`: `measured` と比較するために互換性のある損失関数。
+  * `loss=Poisson()`: `measured` と比較するための互換性のある損失関数。
   * `regularizer=nothing`: 損失と同じ形式の正則化関数。
   * `λ=0.05`: グローバル損失関数に対する正則化子の総重みを示す浮動小数点数。
   * `mapping=Non_negative()`: 最適化の重みのマッピングを適用します。デフォルトは非負制約を達成する放物線です。

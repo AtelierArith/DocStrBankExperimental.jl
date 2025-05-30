@@ -23,7 +23,7 @@ sol =solve(prob,SRIW1())
 
 `solve`のオプションは、[共通ソルバーオプションページ](https://diffeq.sciml.ai/stable/basics/common_solver_opts/)で定義されており、[ODEチュートリアル](https://diffeq.sciml.ai/stable/tutorials/ode_example/)で詳しく説明されています。
 
-その例では、`f(u,p,t)`というアウトオブプレース構文を使用していますが、インプレース構文（方程式系に対してより効率的）は、ローレンツの例で示されています。
+その例では、`f(u,p,t)`のようなアウトオブプレース構文を使用していますが、インプレース構文（方程式のシステムに対してより効率的）は、ローレンツの例で示されています。
 
 ```julia
 function lorenz(du,u,p,t)

@@ -17,5 +17,5 @@ https://docs.sciml.ai/DiffEqDocs/stable/basics/solution/
   * `W`: 解から保存されたノイズプロセスの表現。DifferentialEquations.jl の[ノイズプロセスページ](https://docs.sciml.ai/DiffEqDocs/stable/features/noise_process/)を参照してください。このノイズは、ソルバーで `save_noise=true` の場合にのみ完全に保存されます。
   * `prob`: 解かれた元の SDEProblem/RODEProblem。
   * `alg`: ソルバーによって使用されるアルゴリズムのタイプ。
-  * `stats`: ソルバーの統計情報、例えば必要な関数評価の数、計算されたヤコビアンの数など。
+  * `stats`: 必要な関数評価の数、計算されたヤコビアンの数など、ソルバーの統計。
   * `retcode`: ソルバーからの戻りコード。ソルバーが成功裏に解決したか、ユーザー定義のコールバックによって早期に終了したか、またはエラーによって終了したかを判断するために使用されます。詳細については、[戻りコードのドキュメント](https://docs.sciml.ai/SciMLBase/stable/interfaces/Solutions/#retcodes)を参照してください。

@@ -16,7 +16,7 @@ TRARCのいくつかのバリアントはすでに実装されており、`Adapt
   * `hess_type::Type{Hess}`: ヘッセ行列を処理するために使用される構造体。可能な値は次のとおりです: `HessDense`, `HessSparse`, `HessSparseCOO`, `HessOp`。デフォルト: `HessOp`。
   * `pdata_type::Type{ParamData}`: 前処理ステップに使用される構造体。デフォルト: `PDataKARC`。
   * `robust::Bool`: `true`はモデルの堅牢な評価を実装します。デフォルト: `true`。
-  * `verbose::Bool`: `true`は反復情報を印刷します。デフォルト: `false`。
+  * `verbose::Bool`: `true`は反復情報を出力します。デフォルト: `false`。
 
 追加の`kwargs`は停止基準に使用されます。`Stopping.jl`を参照してください。
 
@@ -57,7 +57,7 @@ stats = solve!(solver, nlp, stats)
 
 # 参考文献
 
-このメソッドは、信頼領域と立方体を用いた適応正則化の実装を統一します。
+このメソッドは、信頼領域と立方体による適応正則化の実装を統一します。
 
 ```
 Dussault, J.-P. (2020).
@@ -75,7 +75,7 @@ stats = TRARC(nlp)
 
 # 出力
 
-"実行統計: 一次の定常"
+"実行統計: 一次の定常状態"
 ```
 
 ```jldoctest; output = false
@@ -86,7 +86,7 @@ stats = solve!(solver, nlp)
 
 # 出力
 
-"実行統計: 一次の定常"
+"実行統計: 一次の定常状態"
 ```
 
 ```jldoctest; output = false
@@ -98,5 +98,5 @@ stats = solve!(solver, nlp, stats)
 
 # 出力
 
-"実行統計: 一次の定常"
+"実行統計: 一次の定常状態"
 ```

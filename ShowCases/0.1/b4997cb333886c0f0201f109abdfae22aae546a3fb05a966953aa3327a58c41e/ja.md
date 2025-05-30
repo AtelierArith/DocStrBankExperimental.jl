@@ -13,7 +13,7 @@ ShowProps(o, props=propertynames(o);
   * `show_keywords`: プロパティ名を表示するかどうか。
   * `keyword_style::Style`: キーワードに適用するスタイル。
   * `entry_style::Style`: エントリに適用するスタイル。
-  * `separator`: キーワードとプロパティの間に使用するセパレーター。デフォルトでは、`new_lines` が true の場合はスペースが追加されます。
+  * `separator`: キーワードとプロパティの間に使用するセパレーター。デフォルトでは、`new_lines` が true の場合にスペースが追加されます。
   * `kw`: [`ShowList`](@ref) に渡される他のキーワード。
 
 ## 例

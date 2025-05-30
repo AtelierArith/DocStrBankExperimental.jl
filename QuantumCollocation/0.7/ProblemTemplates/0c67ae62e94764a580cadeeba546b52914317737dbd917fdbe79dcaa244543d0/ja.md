@@ -7,7 +7,7 @@ QuantumStateMinimumTimeProblem(prob; kwargs...)
 
 # キーワード引数
 
-  * `state_name::Symbol=:ψ̃`: 状態変数のためのシンボル。
+  * `state_name::Symbol=:ψ̃`: 状態変数のシンボル。
   * `final_fidelity::Union{Real, Nothing}=nothing`: 最終的な忠実度。
   * `D=1.0`: 時間に対するコストの重み。
   * `piccolo_options::PiccoloOptions=PiccoloOptions()`: Piccoloのオプション。

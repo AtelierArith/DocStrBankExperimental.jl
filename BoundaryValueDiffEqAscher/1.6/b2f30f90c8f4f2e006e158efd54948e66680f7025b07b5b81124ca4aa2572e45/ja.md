@@ -2,12 +2,12 @@
 BoundaryValueDiffEqAscher.Ascher3(; nlsolve = NewtonRaphson(), max_num_subintervals = 3000)
 ```
 
-Ascherの実装から適応された適応性を持つ3次ガウス・レジェンドルコレクション法。
+Ascherの実装から適応された適応性を持つ3次のガウス・レジェンドルコレクション法。
 
 ## キーワード引数
 
-  * `nlsolve`: 内部非線形ソルバー。SciML `NonlinearProblem` インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されることに注意してください。
-  * `max_num_subintervals`: 最大サブ区間の数、デフォルトは3000です。
+  * `nlsolve`: 内部非線形ソルバー。SciML `NonlinearProblem` インターフェースに準拠する任意のソルバーを使用できます。ソルバーの自動微分引数は無視され、カスタムヤコビアンアルゴリズムが使用されます。
+  * `max_num_subintervals`: 最大サブインターバルの数、デフォルトは3000。
   * `zeta`: サイド条件ポイント、常に提供する必要があります。
 
 !!! note

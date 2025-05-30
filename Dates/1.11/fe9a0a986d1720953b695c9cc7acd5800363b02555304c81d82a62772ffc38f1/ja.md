@@ -1,16 +1,16 @@
 ```
-dayabbr(dt::TimeType; locale="english") -> String
-dayabbr(day::Integer; locale="english") -> String
+dayabbr(dt::TimeType; locale="japanese") -> String
+dayabbr(day::Integer; locale="japanese") -> String
 ```
 
-指定された`locale`の曜日に対応する略称を返します。`Date`または`DateTime`の曜日を受け付けます。また、`Integer`も受け付けます。
+与えられた `locale` における `Date` または `DateTime` の曜日に対応する省略名を返します。`Integer` も受け付けます。
 
 # 例
 
 ```jldoctest
 julia> dayabbr(Date("2000-01-01"))
-"Sat"
+"土"
 
 julia> dayabbr(3)
-"Wed"
+"水"
 ```

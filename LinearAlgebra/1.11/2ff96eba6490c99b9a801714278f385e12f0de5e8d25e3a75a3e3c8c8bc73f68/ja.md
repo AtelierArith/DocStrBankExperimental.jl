@@ -9,7 +9,7 @@ pinv(M, rtol::Real) = pinv(M; rtol=rtol) # to be deprecated in Julia 2.0
 
 絶対許容誤差（`atol`）と相対許容誤差（`rtol`）の最適な選択は、`M` の値と擬似逆行列の意図された用途によって異なります。デフォルトの相対許容誤差は `n*ϵ` であり、ここで `n` は `M` の最小次元のサイズ、`ϵ` は `M` の要素型の [`eps`](@ref) です。
 
-最小二乗法の観点から、密な条件の悪い行列を逆転させるためには、`rtol = sqrt(eps(real(float(oneunit(eltype(M))))))` が推奨されます。
+最小二乗法の観点から密な条件の悪い行列を逆転させる場合、`rtol = sqrt(eps(real(float(oneunit(eltype(M))))))` が推奨されます。
 
 詳細については、[^\issue8859]、[^\B96]、[^\S84]、[^\KY88] を参照してください。
 

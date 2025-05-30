@@ -12,7 +12,7 @@ sample(
 
 `N_or_isdone` が `Integer` の場合、正確に `N_or_isdone` サンプルが返されます。
 
-そうでない場合、収束基準 `N_or_isdone` が `true` を返すまでサンプリングが行われます。収束基準は次のシグネチャを持つ関数である必要があります。
+そうでない場合、収束基準 `N_or_isdone` が `true` を返すまでサンプリングが行われます。収束基準は次のシグネチャを持つ関数でなければなりません。
 
 ```julia
 isdone(rng, model, sampler, samples, state, iteration; kwargs...)

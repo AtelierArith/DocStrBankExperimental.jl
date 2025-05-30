@@ -12,5 +12,5 @@ unitary_geodesic(U_init, U_goal, times; kwargs...)
 
 # キーワード引数
 
-  * `return_unitary_isos::Bool=true`: trueの場合、各列がユニタリアイソベクである行列を返します。すなわち、vec(vcat(real(U), imag(U)))。falseの場合、ユニタリ行列のベクトルを返します。
-  * `return_generator::Bool=false`: trueの場合、測地線を生成する有効ハミルトニアンを返します。
+  * `return_unitary_isos::Bool=true`: trueの場合、各列がユニタリアイソベクトルである行列を返します。すなわち、vec(vcat(real(U), imag(U)))。falseの場合、ユニタリ行列のベクトルを返します。
+  * `return_generator::Bool=false`: trueの場合、測地線を生成する有効なハミルトニアンを返します。

@@ -26,7 +26,7 @@ struct REoptInputs <: AbstractInputs
     pwf_om::Real
     pwf_fuel::Dict{String, <:Real}
     pwf_emissions_cost::Dict{String, Float64} # グリッドおよび現地燃料燃焼排出の現在価値係数のコスト [単位なし]
-    pwf_grid_emissions::Dict{String, Float64} # グリッド排出の現在価値係数 [lbs] [単位なし]
+    pwf_grid_emissions::Dict{String, Float64} # グリッド排出の現在価値係数 [単位なし]
     pwf_offtaker::Real 
     pwf_owner::Real
     third_party_factor::Real
@@ -50,8 +50,8 @@ struct REoptInputs <: AbstractInputs
     require_ghp_purchase::Int64  # GHP購入が強制/必要かどうかの0/1バイナリ
     ghp_heating_thermal_load_served_kw::Array{Float64,2}  # GHPによって提供される暖房負荷（熱！）プロファイルの配列
     ghp_cooling_thermal_load_served_kw::Array{Float64,2}  # GHPによって提供される冷却負荷プロファイルの配列
-    space_heating_thermal_load_reduction_with_ghp_kw::Array{Float64,2}  # GHP改修からの暖房負荷削減（熱！）プロファイルの配列
-    cooling_thermal_load_reduction_with_ghp_kw::Array{Float64,2}  # GHP改修からの冷却負荷削減（熱！）プロファイルの配列
+    space_heating_thermal_load_reduction_with_ghp_kw::Array{Float64,2}  # GHP改修による暖房負荷削減（熱！）プロファイルの配列
+    cooling_thermal_load_reduction_with_ghp_kw::Array{Float64,2}  # GHP改修による冷却負荷削減（熱！）プロファイルの配列
     ghp_electric_consumption_kw::Array{Float64,2}  # GHPによって消費される電気負荷プロファイルの配列
     ghp_installed_cost::Array{Float64,1}  # GHPオプションの設置コストの配列
     ghp_om_cost_year_one::Array{Float64,1}  # GHPオプションのO&Mコストの配列    

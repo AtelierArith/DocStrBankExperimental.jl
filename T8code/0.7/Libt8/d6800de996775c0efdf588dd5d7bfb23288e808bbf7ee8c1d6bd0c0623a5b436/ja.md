@@ -2,7 +2,7 @@
 t8_element_face_child_face(ts, elem, face, face_child)
 ```
 
-要素の面とその面の子の番号を与えると、その子の要素の面番号を返します。
+要素の面とその面の子の番号を与えると、その子の面に一致する要素の子の面番号を返します。
 
 ```c++
   x ---- x   x      x           x ---- x
@@ -22,7 +22,7 @@ t8_element_face_child_face(ts, elem, face, face_child)
 
 # 戻り値
 
-*elem* の子の面で *face_child* と一致する面の番号を返します。
+*face_child* に一致する *elem* の子の面の面番号を返します。
 
 ### プロトタイプ
 

@@ -2,7 +2,7 @@
 moi_function_type(::Type{T}) where {T}
 ```
 
-与えられたJuMPオブジェクトタイプ `T` に対して、MathOptInterfaceの同等のものを返します。
+JuMPオブジェクトタイプ`T`に対して、MathOptInterfaceの同等のものを返します。
 
 参照: [`jump_function_type`](@ref)。
 

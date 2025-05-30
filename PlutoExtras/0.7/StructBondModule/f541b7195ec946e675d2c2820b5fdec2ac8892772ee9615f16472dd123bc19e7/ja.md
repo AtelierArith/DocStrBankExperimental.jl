@@ -13,7 +13,7 @@ StructBondSelect(els::Vector[, selectors::Vector{String}]; description = "Struct
 ### 引数
 
   * `els`: `StructBond` または `transformed_value(f, ::StructBond)` 要素のベクター。
-  * `selectors`: 選択に使用される名前としての文字列のベクター。提供されない場合、提供された `StructBond` 要素の `description` から名前が取られます。
+  * `selectors`: 選択に使用される名前の文字列のベクター。提供されない場合、提供された `StructBond` 要素の `description` から名前が取得されます。
 
 ### キーワード引数
 

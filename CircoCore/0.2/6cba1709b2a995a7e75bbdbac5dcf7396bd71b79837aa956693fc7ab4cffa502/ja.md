@@ -5,4 +5,4 @@ Pos(coords)
 
 3D「アクター空間」の点です。
 
-pos.x、pos.y、pos.zで座標にアクセスできます。
+pos.x、pos.y、pos.zでcoordsにアクセスできます。

@@ -4,7 +4,7 @@ SIR54(; stage_limiter! = OrdinaryDiffEq.trivial_limiter!,
         thread = OrdinaryDiffEq.False())
 ```
 
-明示的ルンゲ・クッタ法。SIR型疫病モデルに適した5次の手法です。
+明示的ルンゲ・クッタ法。SIR型疫病モデルに適した5次の方法。
 
 ### キーワード引数
 

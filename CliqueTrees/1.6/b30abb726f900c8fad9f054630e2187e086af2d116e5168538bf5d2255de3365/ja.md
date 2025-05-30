@@ -6,7 +6,7 @@ SafeRules(alg::EliminationAlgorithm, lb::WidthOrAlgorithm, ub::EliminationAlgoro
 SafeRules()
 ```
 
-グラフを安全な削減ルールを使用して前処理します。アルゴリズム `lb` は木幅の下限を計算するために使用されます。より良い下限は、アルゴリズムがより多くの削減を行うことを可能にします。
+安全な削減ルールを使用してグラフを前処理します。アルゴリズム `lb` は木幅の下限を計算するために使用されます。より良い下限は、アルゴリズムがより多くの削減を行うことを可能にします。
 
 ```julia-repl
 julia> using CliqueTrees, TreeWidthSolver

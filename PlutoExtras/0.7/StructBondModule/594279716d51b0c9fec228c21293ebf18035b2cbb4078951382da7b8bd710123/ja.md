@@ -24,6 +24,6 @@ end
 end
 ```
 
-ここで `asd` は、指定されたウィジェットによって各フィールドが対話的に制御可能な `ASD` 型のインスタンスになります。また、各ウィジェットの隣にフィールドの説明が表示されます。 `block` 内の各 `:(=)` の右側の引数は、単一の要素または2つの要素のタプルのいずれかであることができます。単一の要素が提供された場合、提供された値は `fieldbond` として解釈され、そのフィールドに表示するバンド/ウィジェットとなります。2つの要素が与えられた場合、最初の要素は説明に割り当てられ、2番目の要素は表示するバンドとなります。
+ここで `asd` は、指定されたウィジェットによって対話的に制御可能な各フィールドを持つ `ASD` 型のインスタンスになります。また、各ウィジェットの隣にフィールドの説明が表示されます。 `block` 内の各 `:(=)` の右側の引数は、単一の要素または2つの要素のタプルのいずれかであることができます。単一の要素が提供された場合、提供された値は `fieldbond` として解釈され、そのフィールドに表示するバンド/ウィジェットとなります。2つの要素が与えられた場合、最初の要素は説明に割り当てられ、2番目の要素は表示するバンドとして割り当てられます。
 
-関連情報: [`BondTable`](@ref), [`StructBond`](@ref), [`@NTBond`](@ref), [`Popout`](@ref), [`popoutwrap`](@ref), [`@fieldbond`](@ref), [`@fielddescription`](@ref), [`@fieldhtml`](@ref), [`@typeasfield`](@ref), [`@popoutasfield`](@ref)
+参照: [`BondTable`](@ref), [`StructBond`](@ref), [`@NTBond`](@ref), [`Popout`](@ref), [`popoutwrap`](@ref), [`@fieldbond`](@ref), [`@fielddescription`](@ref), [`@fieldhtml`](@ref), [`@typeasfield`](@ref), [`@popoutasfield`](@ref)

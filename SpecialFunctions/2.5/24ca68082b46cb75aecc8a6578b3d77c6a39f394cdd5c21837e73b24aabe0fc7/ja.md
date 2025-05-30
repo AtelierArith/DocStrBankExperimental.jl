@@ -8,6 +8,6 @@ $$
 \operatorname{jinc}{x} = \frac{2 J_1({\pi x})}{\pi x}.
 $$
 
-時にはソンブレロ関数またはベシンク関数として知られています。
+時にはソンブレロまたはベシンク関数として知られています。
 
 外部リンク: [Wikipedia](https://en.wikipedia.org/wiki/Sombrero_function)

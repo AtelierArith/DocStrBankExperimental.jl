@@ -2,7 +2,7 @@
 commute(A::AbstractOperator, B::AbstractOperator)
 ```
 
-`A`と`B`の交換を返します。
+`A` と `B` の交換を返します。
 
 ```jldoctest
 julia> σ_x = sigma_x()

@@ -2,4 +2,4 @@
 function Jump(::Type{<:AbstractFunctionOperator})
 ```
 
-オペレーターをそのジャンプ評価に変換します。
+演算子をそのジャンプ評価に変換します。

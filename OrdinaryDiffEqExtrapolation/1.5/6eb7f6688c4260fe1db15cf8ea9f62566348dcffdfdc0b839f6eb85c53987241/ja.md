@@ -7,15 +7,15 @@ ExtrapolationMidpointDeuflhard(; max_order = 10,
                                  sequence_factor = 2)
 ```
 
-並列化された明示的外挿法。バリセンター座標を使用した中点外挿。
+並列化された明示的外挿法。バリセントリック座標を使用した中点外挿。
 
 ### キーワード引数
 
   * `max_order`: 適応オーダーアルゴリズムの最大オーダー。
   * `min_order`: 適応オーダーアルゴリズムの最小オーダー。
   * `init_order`: 適応オーダーアルゴリズムの初期オーダー。
-  * `thread`: 適切なCPU配列での内部ブロードキャスティングが直列（`thread = OrdinaryDiffEq.False()`）で行われるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されたとき。
-  * `sequence`: ステップ番号のシーケンス、サブディバイディングシーケンスとも呼ばれます。可能な値は `:harmonic`, `:romberg` または `:bulirsch` です。
+  * `thread`: 適切なCPU配列での内部ブロードキャスティングが直列（`thread = OrdinaryDiffEq.False()`）であるべきか、複数のスレッドを使用するべきか（`thread = OrdinaryDiffEq.True()`）を決定します。Juliaが複数のスレッドで起動されるとき。
+  * `sequence`: ステップ番号のシーケンス、または分割シーケンスとも呼ばれます。可能な値は `:harmonic`, `:romberg` または `:bulirsch` です。
   * `sequence_factor`: 内部離散化を評価する際に取るシーケンスの偶数倍を示します。
 
 ## 参考文献

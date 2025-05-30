@@ -2,7 +2,7 @@
 raw_status(model::GenericModel)
 ```
 
-ソルバーが停止した理由をそのままの言葉で返します（つまり、MathOptInterfaceモデル属性 [`MOI.RawStatusString`](@ref)）。
+ソルバーが停止した理由をその言葉で返します（すなわち、MathOptInterfaceモデル属性 [`MOI.RawStatusString`](@ref)）。
 
 ## 例
 

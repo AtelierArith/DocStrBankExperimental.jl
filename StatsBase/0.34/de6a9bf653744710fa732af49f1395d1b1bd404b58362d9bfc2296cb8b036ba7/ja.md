@@ -2,4 +2,4 @@
 median(v::AbstractVector{<:Real}, w::AbstractWeights)
 ```
 
-重み付き中央値を `v` と重み `w` (型 `AbstractWeights`) で計算します。詳細については [`quantile`](@ref) のドキュメントを参照してください。
+重み `w` (型 `AbstractWeights`) を持つ `v` の加重中央値を計算します。詳細については [`quantile`](@ref) のドキュメントを参照してください。

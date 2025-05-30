@@ -23,4 +23,4 @@ yj = fit(YeoJohnsonTransformation, y)
 y_transformed = yj.(y)
 ```
 
-  * `empty!`を使用することで、メモリ内のYeoJohnsonTransformationのサイズを減らすことができますが、特定の診断（例：プロットや対数尤度の計算）はもはや利用できなくなります。
+  * `empty!`を使用することで、メモリ内のYeoJohnsonTransformationのサイズを減らすことができますが、特定の診断（例：プロットや対数尤度の計算）は利用できなくなります。

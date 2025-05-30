@@ -4,7 +4,7 @@ struct NumParMM{S<:AbstractFloat, T<:Integer}
 
 # 説明
 
-推定手続きのための数値パラメータを格納する構造体。
+推定手順のための数値パラメータを格納する構造体。
 
 # フィールド
 

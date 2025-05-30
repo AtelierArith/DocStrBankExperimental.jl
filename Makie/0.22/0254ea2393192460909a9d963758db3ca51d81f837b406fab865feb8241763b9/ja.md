@@ -10,7 +10,7 @@ hexbin(xs, ys; kwargs...)
 
 ## 属性
 
-**`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)` のように複数のアルファがある場合、掛け算されます。
+**`alpha`** =  `1.0`  — カラーマップまたは色属性のアルファ値。`plot(alpha=0.2, color=(:red, 0.5)` のように複数のアルファは掛け算されます。
 
 **`bins`** =  `20`  — `Int` の場合、x および y 方向のビンの数を設定します。`NTuple{2, Int}` の場合、x と y のビンの数を別々に設定します。
 
@@ -32,6 +32,6 @@ hexbin(xs, ys; kwargs...)
 
 **`strokewidth`** =  `0`  — *ドキュメントは利用できません。*
 
-**`threshold`** =  `1`  — ビンに表示される最小観測数。0 の場合、データ制限に収まるすべてのゼロカウントの六角形が表示されます。
+**`threshold`** =  `1`  — 表示されるビン内の最小観測数。0 の場合、データ制限に収まるすべてのゼロカウントの六角形が表示されます。
 
-**`weights`** =  `nothing`  — 各観測値の重み。`nothing`（各観測値は重み 1 を持つ）または任意の `AbstractVector{<: Real}` または `StatsBase.AbstractWeights` であることができます。
+**`weights`** =  `nothing`  — 各観測値の重み。`nothing`（各観測値は重み 1 を持つ）または任意の `AbstractVector{<: Real}` または `StatsBase.AbstractWeights` であることができます。 ```

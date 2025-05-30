@@ -2,7 +2,7 @@
 QuasiDiagonal(A::AbstractQuasiMatrix)
 ```
 
-`A`の対角成分から行列を構築します。
+`A`の対角線から行列を構築します。
 
 # 例
 

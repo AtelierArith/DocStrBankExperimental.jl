@@ -2,6 +2,6 @@
 convert_arguments(P, x, y, z, i)::(Vector, Vector, Vector, Matrix)
 ```
 
-3つの`AbstractVector`である`x`、`y`、`z`と`AbstractMatrix`である`i`を受け取り、すべてをTupleにまとめます。
+3つの`AbstractVector` `x`、`y`、`z`と`AbstractMatrix` `i`を受け取り、すべてをタプルにまとめます。
 
-`P`はプロットのタイプ（オプションです）。
+`P`はプロットタイプ（オプション）です。

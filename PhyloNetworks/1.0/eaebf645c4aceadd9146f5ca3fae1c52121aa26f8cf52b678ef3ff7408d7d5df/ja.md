@@ -24,4 +24,4 @@ julia> rotate!(net, -3)
 julia> plot(net)
 ```
 
-`LinearAlgebra`もJulia v1.5で`rotate!`という名前の関数をエクスポートしています。Julia v1.5以降で両方のパッケージを使用する必要がある場合、`rotate!`の使用は`PhyloNetworks.rotate!`のように修飾する必要があります。
+`LinearAlgebra`もJulia v1.5で`rotate!`という名前の関数をエクスポートしていることに注意してください。両方のパッケージをJulia v1.5以上で使用する必要がある場合、`rotate!`の使用は`PhyloNetworks.rotate!`のように修飾する必要があります。

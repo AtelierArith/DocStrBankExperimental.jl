@@ -11,11 +11,11 @@
 # 引数
 
   * `root_ids:: 検索するルートIDSオブジェクト。
-  * `target_fields::Union{Symbol, AbstractArray{Symbol}, Regex}: 単一のシンボル、シンボルの配列、または正規表現で指定された検索対象のフィールド。
+  * `target_fields::Union{Symbol, AbstractArray{Symbol}, Regex}: 検索するフィールド。単一のシンボル、シンボルの配列、または正規表現で指定します。
 
 # 戻り値
 
-  * `Vector{IDS_Field_Finder}`: 各フィールドの詳細（親IDS、ルートIDS、フィールドタイプ、完全なフィールドパスを含む）を含む`IDS_Field_Finder`構造体のベクター。
+  * `Vector{IDS_Field_Finder}`: 各フィールドの詳細を含む`IDS_Field_Finder`構造体のベクター。親IDS、ルートIDS、フィールドタイプ、完全なフィールドパスなどの情報が含まれます。
 
 # 例
 

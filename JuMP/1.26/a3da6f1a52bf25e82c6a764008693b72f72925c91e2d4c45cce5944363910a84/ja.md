@@ -4,7 +4,7 @@ map_coefficients_inplace!(f::Function, a::GenericQuadExpr)
 
 [`GenericQuadExpr`](@ref) `a` の係数と定数項に `f` を適用し、インプレースで更新します。
 
-関連情報: [`map_coefficients`](@ref)
+参照: [`map_coefficients`](@ref)
 
 ## 例
 

@@ -2,7 +2,7 @@
 lu!(A, pivot = RowMaximum(); check = true, allowsingular = false) -> LU
 ```
 
-`lu!` は [`lu`](@ref) と同じですが、入力 `A` を上書きすることでスペースを節約します。因子分解が `A` の要素型で表現できない数を生成した場合、例えば整数型の場合、[`InexactError`](@ref) 例外がスローされます。
+`lu!` は [`lu`](@ref) と同じですが、入力 `A` を上書きすることでスペースを節約します。因子分解が `A` の要素型で表現できない数を生成した場合、例えば整数型の場合には [`InexactError`](@ref) 例外がスローされます。
 
 !!! compat "Julia 1.11"
     `allowsingular` キーワード引数は Julia 1.11 で追加されました。

@@ -40,12 +40,12 @@ priors = [Normal(1.5, 1)]
 randomized = VectorOfArray([(sol(t[i]) + σ * randn(2)) for i in 1:length(t)])
 data = convert(Array, randomized)
 
-using CmdStan # Stanバックエンドを使用するために必要
+using CmdStan #Stanバックエンドを使用するために必要
 bayesian_result_stan = stan_inference(prob1, t, data, priors)
 
 bayesian_result_turing = turing_inference(prob1, Tsit5(), t, data, priors)
 
-using DynamicHMC # DynamicHMCバックエンドに必要
+using DynamicHMC #DynamicHMCバックエンドに必要
 bayesian_result_hmc = dynamichmc_inference(prob1, Tsit5(), t, data, priors)
 
 bayesian_result_abc = abc_inference(prob1, Tsit5(), t, data, priors)
@@ -53,19 +53,19 @@ bayesian_result_abc = abc_inference(prob1, Tsit5(), t, data, priors)
 
 ### save_idxsを使用して観測可能変数を宣言する
 
-モデルのすべての変数にデータがあるわけではありません。特定の潜在変数の場合、`save_idxs`キーワード引数を利用して観測された変数を宣言し、以下に示すように任意のバックエンドを使用して推論を実行できます。
+モデルのすべての変数に対してデータが常にあるわけではありません。特定の潜在変数の場合、`save_idxs`キーワード引数を利用して観測された変数を宣言し、以下に示すように任意のバックエンドを使用して推論を実行できます。
 
 ```julia
 sol = solve(prob1, Tsit5(), save_idxs = [1])
 randomized = VectorOfArray([(sol(t[i]) + σ * randn(1)) for i in 1:length(t)])
 data = convert(Array, randomized)
 
-using CmdStan # Stanバックエンドを使用するために必要
+using CmdStan #Stanバックエンドを使用するために必要
 bayesian_result_stan = stan_inference(prob1, t, data, priors, save_idxs = [1])
 
 bayesian_result_turing = turing_inference(prob1, Tsit5(), t, data, priors, save_idxs = [1])
 
-using DynamicHMC # DynamicHMCバックエンドに必要
+using DynamicHMC #DynamicHMCバックエンドに必要
 bayesian_result_hmc = dynamichmc_inference(prob1, Tsit5(), t, data, priors, save_idxs = [1])
 
 bayesian_result_abc = abc_inference(prob1, Tsit5(), t, data, priors, save_idxs = [1])

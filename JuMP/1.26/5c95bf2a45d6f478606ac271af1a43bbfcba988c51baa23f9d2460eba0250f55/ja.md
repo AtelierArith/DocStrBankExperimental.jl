@@ -2,15 +2,15 @@
 optimizer_with_attributes(optimizer_constructor, attrs::Pair...)
 ```
 
-最適化子コンストラクタを属性のリスト `attrs` とグループ化します。これは `MOI.OptimizerWithAttributes` と同等です。
+オプティマイザコンストラクタを属性リスト `attrs` とグループ化します。これは `MOI.OptimizerWithAttributes` と同等であることに注意してください。
 
-`Model` コンストラクタや [`set_optimizer`](@ref) に提供されると、`optimizer_constructor()` を呼び出して最適化子を作成し、その後 [`set_attribute`](@ref) を使用して属性を設定します。
+`Model` コンストラクタまたは [`set_optimizer`](@ref) に提供されると、`optimizer_constructor()` を呼び出してオプティマイザを作成し、その後 [`set_attribute`](@ref) を使用して属性を設定します。
 
 関連情報: [`set_attribute`](@ref), [`get_attribute`](@ref).
 
 ## 注意
 
-属性の文字列名は各ソルバーに特有です。興味のある属性を見つけるためには、ソルバーのドキュメントを参照する必要があります。
+属性の文字列名は各ソルバーに特有です。興味のある属性を見つけるために、ソルバーのドキュメントを参照する必要があります。
 
 ## 例
 

@@ -2,7 +2,7 @@
 fit(LLE, data; k=12, maxoutdim=2, nntype=BruteForce, tol=1e-5)
 ```
 
-`data`に対して局所線形埋め込みモデルを適合させます。
+`data`に対して局所線形埋め込みモデルをフィットさせます。
 
 # 引数
 

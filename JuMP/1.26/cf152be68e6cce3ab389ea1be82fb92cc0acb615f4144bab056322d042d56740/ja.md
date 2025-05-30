@@ -8,7 +8,7 @@ add_nonlinear_operator(
     [name::Symbol = Symbol(f),]
 )
 
-`dim` 入力引数を持つ新しい非線形演算子を `model` に追加し、名前 `name` に関連付けます。
+`dim` 入力引数を持つ新しい非線形演算子を `model` に追加し、`name` という名前に関連付けます。
 
 関数 `f` は演算子を評価し、スカラーを返す必要があります。
 
@@ -18,7 +18,7 @@ add_nonlinear_operator(
 
 ## 一変数構文
 
-`dim == 1` の場合、各関数のメソッドシグネチャは次のようになります：
+`dim == 1` の場合、各関数のメソッドシグネチャは次のようにする必要があります：
 
   * `f(::T)::T where {T<:Real}`
   * `∇f(::T)::T where {T<:Real}`
@@ -26,7 +26,7 @@ add_nonlinear_operator(
 
 ## 多変数構文
 
-`dim > 1` の場合、各関数のメソッドシグネチャは次のようになります：
+`dim > 1` の場合、各関数のメソッドシグネチャは次のようにする必要があります：
 
   * `f(x::T...)::T where {T<:Real}`
   * `∇f(g::AbstractVector{T}, x::T...)::Nothing where {T<:Real}`

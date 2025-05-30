@@ -2,12 +2,12 @@
 iacwptall(xw[, wt])
 ```
 
-信号の各スライスに対して逆自己相関ウェーブレットパケット変換 (IACWPT) を計算します。
+信号の各スライスに対して逆自己相関ウェーブレットパケット変換（IACWPT）を計算します。
 
 # 引数
 
   * `xw::AbstractArray{T} where T<:Number`: ACWPT変換された信号。
-  * `wt::Union{OrthoFilter, Nothing}`: (デフォルト: `nothing`) 直交ウェーブレットフィルター。
+  * `wt::Union{OrthoFilter, Nothing}`: （デフォルト: `nothing`）直交ウェーブレットフィルター。
 
 # 戻り値
 
@@ -30,4 +30,4 @@ xw = acwptall(x, wt)
 x̂ = iacwptall(xw)
 ```
 
-**参照:** [`iacwpt`](@ref)
+**関連情報:** [`iacwpt`](@ref)

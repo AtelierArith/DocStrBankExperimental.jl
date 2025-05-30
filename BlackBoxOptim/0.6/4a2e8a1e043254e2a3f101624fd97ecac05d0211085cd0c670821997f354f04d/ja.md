@@ -4,9 +4,9 @@ async_update_fitness!(eval::AbstractAsyncEvaluator, candidates::Any;
                       Union{AbstractFitnessEvaluationJob, Nothing}
 ```
 
-非同期的にフィットネスを計算します。*candidates* は `iterate()` インターフェースをサポートし、[`Candidate`](@ref) 要素を返す必要があります。
+非同期でフィットネスを計算します。*candidates* は `iterate()` インターフェースをサポートし、[`Candidate`](@ref) 要素を返す必要があります。
 
-[`AbstractFitnessEvaluationJob`](@ref) または *candidates* に候補が含まれていない場合は `nothing` を返します。
+[`AbstractFitnessEvaluationJob`](@ref) を返すか、*candidates* に候補が含まれていない場合は `nothing` を返します。
 
 # 引数
 

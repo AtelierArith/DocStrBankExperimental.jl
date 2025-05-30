@@ -8,3 +8,5 @@ halfdegree(t::AbstractTermLike)
   * `halfdegree(z₁^3 * conj(z₁)^4) = max(3, 4) = 4` および `halfdegree(z₁^4 * conj(z₁)^3) = max(4, 3) = 4`
   * `halfdegree(z₁^3 * z₂ * conj(z₁)^2 * conj(z₂)^4) = max(4, 6) = 6` および `halfdegree(z₁^4 * z₂ * conj(z₁) * conj(z₂)^3) = max(5, 4) = 5`
   * `halfdegree(x₁^2 * x₂^3 * z₁^3 * z₂ * conj(z₁)^2 * conj(z₂)^4) = ⌈5/2⌉ + max(4, 6) = 9`
+
+```

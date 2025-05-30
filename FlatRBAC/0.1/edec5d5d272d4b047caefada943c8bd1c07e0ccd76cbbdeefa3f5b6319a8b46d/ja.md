@@ -6,6 +6,6 @@ mutable struct Permission <:AbstractPermission
 
 ```julia
 rent_book = Permission(name="books", resources=["ulysses"], actions=["read", "rent"])
-// alternatively
+// あるいは
 rent_book = Permission("books:ulysses:read,rent")
 ```

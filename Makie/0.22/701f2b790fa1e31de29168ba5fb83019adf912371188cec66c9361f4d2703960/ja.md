@@ -16,15 +16,15 @@ ablines(intercepts, slopes; attrs...)
 
 **`color`** =  `@inherit linecolor`  — 線の色。
 
-**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを見るには、`Makie.available_gradients()` を呼び出すことができます。
+**`colormap`** =  `@inherit colormap :viridis`  — 数値 `color` のためにサンプリングされるカラーマップを設定します。`PlotUtils.cgrad(...)`、`Makie.Reverse(any_colormap)` も使用できますし、ColorBrewer や PlotUtils の任意のシンボルも使用できます。利用可能なすべてのカラ―グラデーションを確認するには、`Makie.available_gradients()` を呼び出すことができます。
 
 **`colorrange`** =  `automatic`  — `colormap` の開始点と終了点を表す値。
 
-**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar` と一緒に使用する場合は `identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10` および `Makie.Symlog10` と一緒にうまく機能します。
+**`colorscale`** =  `identity`  — 色変換関数。任意の関数を使用できますが、`Colorbar` と一緒に使用する場合は `identity`、`log`、`log2`、`log10`、`sqrt`、`logit`、`Makie.pseudolog10` および `Makie.Symlog10` の場合にのみうまく機能します。
 
 **`cycle`** =  `[:color]`  — 複数のプロットを作成する際にサイクルする属性を設定します。
 
-**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深度値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
+**`depth_shift`** =  `0.0`  — すべての他の変換の後にプロットの深さ値を調整します。つまり、クリップ空間で、`-1 <= depth <= 1` の範囲です。これは GLMakie と WGLMakie のみに適用され、レンダー順序を調整するために使用できます（調整可能なオーバードローのように）。
 
 **`fxaa`** =  `false`  — プロットが fxaa（アンチエイリアス、GLMakie のみ）でレンダリングされるかどうかを調整します。
 
@@ -38,7 +38,7 @@ ablines(intercepts, slopes; attrs...)
 
 **`inspector_label`** =  `automatic`  — DataInspector によって生成されるデフォルトのラベルを置き換えるコールバック関数 `(plot, index, position) -> string` を設定します。
 
-**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。つまり、:butt（押し出しのない平坦）、:square（1ライン幅の押し出しのある平坦）または :round。
+**`linecap`** =  `@inherit linecap`  — 使用されるラインキャップのタイプを設定します。つまり、:butt（押し出しのないフラット）、:square（1ライン幅の押し出しのあるフラット）または :round。
 
 **`linestyle`** =  `nothing`  — 線のダッシュパターンを設定します。オプションは `:solid`（`nothing` に相当）、`:dot`、`:dash`、`:dashdot` および `:dashdotdot` です。これらはギャップスタイル修飾子とともにタプルで指定することもできます。修飾子は `:normal`、`:dense` または `:loose` です。例えば、`(:dot, :loose)` または `(:dashdot, :dense)` のように。
 
@@ -52,14 +52,14 @@ ablines(intercepts, slopes; attrs...)
 
 **`nan_color`** =  `:transparent`  — NaN 値の色。
 
-**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特に GL バックエンドで深度チェックを無視することを意味します。
+**`overdraw`** =  `false`  — プロットが他のプロットの上に描画されるかどうかを制御します。これは特に GL バックエンドで深さチェックを無視することを意味します。
 
 **`space`** =  `:data`  — プロットを包含するボックスの変換空間を設定します。可能な入力については `Makie.spaces()` を参照してください。
 
-**`ssao`** =  `false`  — プロットが ssao（スクリーンスペース環境光遮蔽）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true` の場合にのみ適用されます。
+**`ssao`** =  `false`  — プロットが ssao（スクリーンスペース環境オクルージョン）でレンダリングされるかどうかを調整します。これは3Dプロットでのみ意味があり、`fxaa = true` の場合にのみ適用されます。
 
 **`transformation`** =  `:automatic`  — *ドキュメントは利用できません。*
 
-**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakie では `transparency = true` は順序独立透明性を使用する結果になります。
+**`transparency`** =  `false`  — プロットが透明性をどのように扱うかを調整します。GLMakie では `transparency = true` は順序に依存しない透明性を使用します。
 
 **`visible`** =  `true`  — プロットがレンダリングされるかどうかを制御します。

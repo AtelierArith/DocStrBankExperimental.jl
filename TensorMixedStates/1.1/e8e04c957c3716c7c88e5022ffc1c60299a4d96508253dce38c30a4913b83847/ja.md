@@ -2,7 +2,7 @@
 @def_operators(site, symbols, fermionic=false)
 ```
 
-指定されたサイトのために指定された演算子を定義します
+指定されたサイトのために与えられた演算子を定義します
 
 # 例
 

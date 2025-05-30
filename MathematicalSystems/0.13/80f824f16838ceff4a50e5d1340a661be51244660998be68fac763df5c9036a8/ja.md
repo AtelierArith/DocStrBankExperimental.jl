@@ -2,7 +2,7 @@
 ConstrainedBlackBoxDiscreteSystem <: AbstractDiscreteSystem
 ```
 
-ドメイン制約のある右辺によって定義された離散時間システムの形式：
+ドメイン制約のある右辺によって定義された離散時間システム：
 
 $$
     x_{k+1} = f(x_k), \; x_k ∈ \mathcal{X} \; \forall k.

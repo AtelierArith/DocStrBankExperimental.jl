@@ -30,7 +30,7 @@ p63(data)
 * limit = 250                  : 繰り返し制限
 * incs::Int                    : 増分荷重ステップ
 * presc::Float64               : 壁の変位増分
-* penalty = 1e20               : 自由度固定のために使用されるペナルティ
+* penalty = 1e20               : 自由度が固定された場合に使用されるペナルティ
 * etype::Vector{Int}           : np_types > 1 の場合の要素材料ベクトル
 ```
 

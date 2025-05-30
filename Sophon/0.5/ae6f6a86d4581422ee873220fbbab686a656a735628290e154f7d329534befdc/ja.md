@@ -17,7 +17,7 @@ h1 → layer1 → connection → layer2 → connection
 
 レイヤーは入力タイプに基づいて異なる動作をします：
 
-1. `(h, u, v)`の三重項で、`u`と`v`はそれ自体が長さ`N`のタプルであり、`layers`も長さ`N`のタプルです。計算は次のようになります。
+1. `(h, u, v)`の三つ組で、`u`と`v`はそれ自体が長さ`N`のタプルであり、`layers`も長さ`N`のタプルです。計算は次のようになります。
 
 ```julia
 for i in 1:N
@@ -25,7 +25,7 @@ for i in 1:N
 end
 ```
 
-2. `(h, u, v)`の三重項で、`u`と`v`は`AbstractArray`です。
+2. `(h, u, v)`の三つ組で、`u`と`v`は`AbstractArray`です。
 
 ```julia
 for i in 1:N

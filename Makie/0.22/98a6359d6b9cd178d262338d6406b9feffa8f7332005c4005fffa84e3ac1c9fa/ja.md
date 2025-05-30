@@ -7,7 +7,7 @@ crossbar(x, y, ymin, ymax; kwargs...)
 ## 引数
 
   * `x`: ボックスの位置
-  * `y`: ボックス内の中線の位置
+  * `y`: ボックス内のミッドラインの位置
   * `ymin`: ボックスの下限
   * `ymax`: ボックスの上限
 
@@ -49,7 +49,7 @@ crossbar(x, y, ymin, ymax; kwargs...)
 
 **`orientation`** =  `:vertical`  — ボックスの向き（`:vertical` または `:horizontal`）。
 
-**`show_midline`** =  `true`  — 中線を表示します。
+**`show_midline`** =  `true`  — ミッドラインを表示。
 
 **`show_notch`** =  `false`  — 切り欠きを描画するかどうか。
 

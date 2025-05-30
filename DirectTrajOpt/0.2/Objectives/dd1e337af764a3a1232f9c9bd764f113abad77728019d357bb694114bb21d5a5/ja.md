@@ -27,9 +27,9 @@ KnotPointObjective(
   * `ℓ::Function`: 目的を定義する関数、ℓ(x, p) または ℓ(x)。
   * `names::AbstractVector{Symbol}`: 最適化される軌道変数の名前。
   * `traj::NamedTrajectory`: 目的が定義される軌道。
-  * `params::AbstractVector`: 各時刻の目的関数 ℓ のためのパラメータ `p`。
+  * `params::AbstractVector`: 各時間に対する目的関数 ℓ のパラメータ `p`。
 
 # キーワード引数
 
-  * `times::AbstractVector{Int}=1:traj.T`: 目的が評価される時刻インデックス。
-  * `Qs::AbstractVector{Float64}=ones(traj.T)`: 各時刻における目的関数の重み。
+  * `times::AbstractVector{Int}=1:traj.T`: 目的が評価される時間インデックス。
+  * `Qs::AbstractVector{Float64}=ones(traj.T)`: 各時間における目的関数の重み。

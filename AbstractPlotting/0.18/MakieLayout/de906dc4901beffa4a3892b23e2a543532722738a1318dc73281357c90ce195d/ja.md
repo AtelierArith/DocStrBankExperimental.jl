@@ -1,6 +1,6 @@
 ボタンには以下の属性があります：
 
-`alignmode` デフォルト: `Inside()` 親のGridLayout内でのボタンの整列モード。
+`alignmode` デフォルト: `Inside()` 親のGridLayout内でのボタンの配置モード。
 
 `buttoncolor` デフォルト: `RGBf0(0.94, 0.94, 0.94)` ボタンの色。
 
@@ -16,7 +16,7 @@
 
 `font` デフォルト: `lift_parent_attribute(scene, :font, "DejaVu Sans")` ボタンラベルのフォントファミリー。
 
-`halign` デフォルト: `:center` 提案されたバウンディングボックス内でのボタンの水平整列。
+`halign` デフォルト: `:center` 提案されたバウンディングボックス内でのボタンの水平配置。
 
 `height` デフォルト: `Auto()` ボタンの高さ設定。
 
@@ -40,6 +40,6 @@
 
 `textsize` デフォルト: `lift_parent_attribute(scene, :fontsize, 16.0f0)` ボタンラベルのフォントサイズ。
 
-`valign` デフォルト: `:center` 提案されたバウンディングボックス内でのボタンの垂直整列。
+`valign` デフォルト: `:center` 提案されたバウンディングボックス内でのボタンの垂直配置。
 
 `width` デフォルト: `Auto()` ボタンの幅設定。

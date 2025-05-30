@@ -2,14 +2,14 @@
 t8_offset_all_owners_of_tree(mpisize, gtree, offset, owners)
 ```
 
-特定のツリーを所有するすべてのプロセスのリストを計算します。*offset* マイナス 1。
+特定の木を所有するすべてのプロセスのリストを計算します。*offset* マイナス 1。
 
 # 引数
 
   * `mpisize`:[in] MPI ランクの数、また *offset* マイナス 1 のエントリの数。
-  * `gtree`:[in] ツリーのグローバルインデックス。
+  * `gtree`:[in] 木のグローバルインデックス。
   * `offset`:[in] 考慮すべきパーティション。
-  * `owners`:[in,out] 入力時には整数エントリとゼロ要素を持つ初期化された [`sc_array`](@ref)。出力時には、*offset* において *gtree* をローカルツリーとして持つすべての MPI ランクのソートされたリスト。
+  * `owners`:[in,out] 入力時に整数エントリとゼロ要素を持つ初期化された [`sc_array`](@ref)。出力時に *gtree* を *offset* のローカルツリーとして持つすべての MPI ランクのソートされたリスト。
 
 ### プロトタイプ
 

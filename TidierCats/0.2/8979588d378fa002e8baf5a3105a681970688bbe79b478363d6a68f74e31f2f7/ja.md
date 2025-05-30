@@ -2,9 +2,9 @@
 cat_reorder(cat_var::AbstractVector, order_var::AbstractVector, fun::String, desc::Bool=true)
 ```
 
-別の変数から計算された要約統計に基づいて、カテゴリ変数列のレベルを再順序付けします。
+別の変数から計算された要約統計に基づいて、カテゴリ変数の列のレベルを再順序付けします。
 
-引数 `cat_var`: 再順序付けするカテゴリ変数列。 `order_var`: 要約統計を計算するための変数。 `fun`: 要約統計を計算するための関数。オプションは「mean」と「median」です。 `desc`: trueの場合、レベルは要約統計の降順で並べられます。
+引数 `cat_var`: 再順序付けするカテゴリ変数の列。 `order_var`: 要約統計を計算するための変数。 `fun`: 要約統計を計算するための関数。オプションは「mean」と「median」です。 `desc`: trueの場合、レベルは要約統計の降順で並べられます。
 
 # 戻り値
 

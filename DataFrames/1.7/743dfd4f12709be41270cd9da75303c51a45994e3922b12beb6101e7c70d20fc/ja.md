@@ -15,11 +15,11 @@ rename(f::Function, df::AbstractDataFrame; cols=All())
 
   * `df` : `AbstractDataFrame`；`SubDataFrame`の場合、列セレクタとして`:`を使用して作成された場合のみ名前の変更が許可されます。
   * `d` : 元の名前または列番号を新しい名前にマッピングする`AbstractDict`または`Pair`の`AbstractVector`
-  * `f` : `cols`キーワード引数で選択された各列に対して、古い名前を`String`として受け取り、新しい名前を`Symbol`に変換して返す関数；`cols`列セレクタは、`names`関数によって受け入れられる任意の値であることができます
+  * `f` : `cols`キーワード引数で選択された各列に対して、古い名前を`String`として受け取り、新しい名前を`Symbol`に変換して返す関数；`cols`列セレクタは、`names`関数によって受け入れられる任意の値を使用できます
   * `vals` : `df`の列数と同じ長さの`Symbol`または`AbstractString`のベクトルとしての新しい列名
   * `makeunique` : `false`（デフォルト）の場合、重複名が見つかった場合にエラーが発生します；`true`の場合、重複名には`_i`が接尾辞として付加されます（`i`は最初の重複のために1から始まります）。
 
-`rename`にペアが渡されると（位置引数または辞書またはベクトル内）、次のことができます：
+`rename`にペアが渡されると（位置引数または辞書またはベクトル内で）：
 
   * `from`の値は`Symbol`、`AbstractString`、または`Integer`であることができます；
   * `to`の値は`Symbol`または`AbstractString`であることができます。

@@ -48,7 +48,7 @@ p62(data)
 * (g_coord, g_num, disp)        : ここで：
                                     g_coord  : 座標
                                     g_num    : ノード番号
-                                    disp     : 変位の行列
+                                    disp     : 変位のマトリックス
 ```
 
 ### 関連ヘルプ

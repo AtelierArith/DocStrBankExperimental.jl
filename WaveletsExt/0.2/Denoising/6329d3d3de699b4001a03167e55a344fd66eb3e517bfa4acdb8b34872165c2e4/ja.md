@@ -23,7 +23,7 @@ denoiseall(x, inputtype, wt[; L=maxtransformlevels(size(x,1)),
   * `tree::BitVector`: 信号の分解ツリー。入力タイプ `:wpt` および `:swpd` に必要です。デフォルト値は `maketree(size(x,1), L, :dwt)` に設定されています。
   * `dnt::DNFT`: デノイズタイプ。デフォルトタイプは `VisuShrink(size(x,1))` に設定されています。
   * `estnoise::Union{Function, Vector{<:Number}}`: ノイズ推定。信号のノイズを推定するための関数として、または推定されたノイズのベクトルとして入力できます。デフォルトは `noisest` 関数に設定されています。
-  * `bestTH::Union{Function, Nothing}`: 信号のグループに対して最適な閾値を決定する方法。`nothing` が指定された場合、各信号は `dnt` および `estnoise` パラメータから決定されたそれぞれの最適な閾値でデノイズされます。そうでない場合は、閾値のベクトルから最適な閾値を決定するための関数を渡すことができます。例えば: `mean` や `median`。デフォルトは `nothing` に設定されています。
-  * `smooth::Symbol`: 使用される平滑化方法。`:regular` 平滑化は与えられたすべての係数を閾値処理しますが、`:undersmooth` 平滑化はウェーブレット変換の最低周波数サブスペースノードを閾値処理しません。デフォルトは `:regular` に設定されています。
+  * `bestTH::Union{Function, Nothing}`: 信号のグループに対して最適な閾値を決定する方法。`nothing` が指定された場合、各信号は `dnt` および `estnoise` パラメータから決定されたそれぞれの最適な閾値でデノイズされます。そうでない場合は、閾値のベクトルから最適な閾値を決定するための関数を渡すことができます。例: `mean` および `median`。デフォルトは `nothing` に設定されています。
+  * `smooth::Symbol`: 使用される平滑化方法。`:regular` 平滑化は与えられたすべての係数に閾値を設定しますが、`:undersmooth` 平滑化はウェーブレット変換の最低周波数サブスペースノードに閾値を設定しません。デフォルトは `:regular` に設定されています。
 
 **関連情報:** [`denoise`](@ref), [`noisest`](@ref), [`relerrorthreshold`](@ref)

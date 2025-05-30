@@ -5,7 +5,7 @@ SparseOperator{N,T<:Complex}<:AbstractOperator
 スパース（CSR）行列表現を持つ量子演算子を表す構造体で、要素の型は T です。対応する密な行列はサイズ NxN になります。
 
 !!! warning
-    `apply_operator()` メソッドはこの演算子タイプには実装されていません。代わりに `DenseOperator` を使用してみてください。
+    この演算子タイプには `apply_operator()` メソッドが実装されていません。代わりに `DenseOperator` を使用してみてください。
 
 
 # 例

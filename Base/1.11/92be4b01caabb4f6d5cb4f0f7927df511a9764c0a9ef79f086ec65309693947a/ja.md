@@ -2,7 +2,7 @@
 pop!(collection, key[, default])
 ```
 
-`collection`に`key`が存在する場合は、そのマッピングを削除して返します。存在しない場合は`default`を返すか、`default`が指定されていない場合はエラーをスローします。
+`collection`に`key`が存在する場合はそのマッピングを削除して返し、存在しない場合は`default`を返す。`default`が指定されていない場合はエラーをスローする。
 
 # 例
 

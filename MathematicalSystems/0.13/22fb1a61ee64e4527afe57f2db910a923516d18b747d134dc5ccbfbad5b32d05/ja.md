@@ -10,7 +10,7 @@ VaryingInput{UT, VUT<:AbstractVector{UT}} <: AbstractInput
 
 ### 例
 
-変化する入力はベクトルを保持し、その長さはベクトル内の要素の数に等しいです。例えば、有理数のベクトルによって与えられる入力を考えてみましょう：
+変化する入力はベクトルを保持し、その長さはベクトル内の要素の数に等しいです。例えば、有理数のベクトルによって与えられる入力を考えます：
 
 ```jldoctest varying_input
 julia> v = VaryingInput([-1//2, 1//2])
@@ -63,7 +63,7 @@ julia> [3*vi for vi in v]
   3//2
 ```
 
-この入力型は有限であるため、長さよりも多くの要素を問い合わせると、全ベクトルが返されます：
+この入力型は有限であるため、長さよりも多くの要素を問い合わせると、完全なベクトルが返されます：
 
 ```jldoctest varying_input
 julia> collect(nextinput(v, 4))

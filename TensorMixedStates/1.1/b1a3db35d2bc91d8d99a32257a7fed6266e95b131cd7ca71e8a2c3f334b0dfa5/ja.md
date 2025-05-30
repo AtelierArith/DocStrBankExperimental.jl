@@ -11,4 +11,4 @@ tdvp(evolver, t, ::Simulation; options...)
   * `coefs`: 時間依存の進化器のための係数
   * `n_expand`: n_expand ステップごとに展開ステップを行う (デフォルトの 0 は展開なしを意味します)
   * `n_symmetrize`: n_symmetrize ステップごとにエルミート化を行う (デフォルトの 0 は修正なしを意味します)
-  * その他は ITensorMPS.tdvp と同じです。
+  * その他は ITensorMPS.tdvp と同じです

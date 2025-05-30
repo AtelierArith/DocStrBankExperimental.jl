@@ -14,7 +14,7 @@ $$
 \end{aligned}
 $$
 
-ここで、$\mathbf{x}$、$\mathbf{y}$、$\mathbf{u}$、$\mathbf{d}$、および $\mathbf{p}$ はそれぞれ状態、出力、操作入力、測定された外乱、およびパラメータベクトルです。実際のところ、パラメータ引数 `p` は任意のJuliaオブジェクトにすることができますが、後で変更したい場合は可変型を使用してください（例：ベクトル）。ダイナミクスが時間の関数である場合は、単に $d(t) = t$ として定義された測定された外乱を追加してください。関数は次の2つの方法で実装できます：
+ここで、$\mathbf{x}$、$\mathbf{y}$、$\mathbf{u}$、$\mathbf{d}$、および $\mathbf{p}$ はそれぞれ状態、出力、操作入力、測定された外乱、およびパラメータベクトルです。実際、パラメータ引数 `p` は任意のJuliaオブジェクトにすることができますが、後で変更したい場合は可変型を使用してください（例：ベクトル）。ダイナミクスが時間の関数である場合は、単に $d(t) = t$ として定義された測定された外乱を追加します。関数は次の2つの方法で実装できます：
 
 1. **非変異関数**（アウトオブプレイス）：`f(x, u, d, p) -> ẋ` および `h(x, d, p) -> y` として定義します。この構文はシンプルで直感的ですが、より多くのメモリを割り当てます。
 2. **変異関数**（インプレース）：`f!(ẋ, x, u, d, p) -> nothing` および `h!(y, x, d, p) -> nothing` として定義します。この構文は割り当てを減らし、計算負担を軽減する可能性があります。
@@ -26,10 +26,10 @@ $$
 ドキュメントの残りの部分は、すべてのモデルがこの形式に最終的に到達するため、離散ダイナミクスを前提としています。オプションのパラメータ `NT` は、ベクトルの数値型を明示的に設定します（デフォルトは `Float64`）。
 
 !!! warning
-    モデルを [`NonLinMPC`](@ref)、[`ExtendedKalmanFilter`](@ref)、[`MovingHorizonEstimator`](@ref)、および [`linearize`](@ref) で使用するには、2つの関数は純粋なJuliaでなければなりません。有限差分バックエンドが使用されている場合を除きます（例：[`AutoFiniteDiff`](@extref DifferentiationInterface List)）。
+    モデルを [`NonLinMPC`](@ref)、[`ExtendedKalmanFilter`](@ref)、[`MovingHorizonEstimator`](@ref)、および [`linearize`](@ref) で使用するには、2つの関数は純粋なJuliaでなければなりません。有限差分バックエンドが使用されている場合（例：[`AutoFiniteDiff`](@extref DifferentiationInterface List)）を除きます。
 
 
-[`LinModel`](@ref) も参照してください。
+さらに [`LinModel`](@ref) も参照してください。
 
 # 引数
 
@@ -42,7 +42,7 @@ $$
   * `nd=0`: 測定された外乱の数。
   * `p=[]`: モデルのパラメータ（任意の型）。
   * `solver=RungeKutta(4)`: 連続ダイナミクスの離散化のための [`DiffSolver`](@ref) オブジェクト。離散時間モデルの場合は `nothing` を使用します（デフォルトは4次の [`RungeKutta`](@ref)）。
-  * `jacobian=AutoForwardDiff()`: [`linearize`](@ref) が呼び出されたときの `AbstractADType` バックエンド。[`DifferentiationInterface` doc](@extref DifferentiationInterface List) を参照してください。
+  * `jacobian=AutoForwardDiff()`: [`linearize`](@ref) が呼び出されたときの `AbstractADType` バックエンド。詳細は [`DifferentiationInterface` doc](@extref DifferentiationInterface List) を参照してください。
 
 # 例
 
@@ -73,7 +73,7 @@ NonLinModel with a sample time Ts = 2.0 s, empty solver and:
 # 拡張ヘルプ
 
 !!! details "拡張ヘルプ"
-    状態空間関数は離散ダイナミクスに対しても似ています：
+    状態空間関数は離散ダイナミクスの場合も似ています：
 
     $$
     \begin{aligned}
@@ -82,7 +82,7 @@ NonLinModel with a sample time Ts = 2.0 s, empty solver and:
     \end{aligned}
     $$
 
-    2つの実装方法もあります：
+    こちらも2つの実装方法があります：
 
     1. **非変異関数**：`f(x, u, d, p) -> xnext` および `h(x, d, p) -> y` として定義します。
     2. **変異関数**：`f!(xnext, x, u, d, p) -> nothing` および `h!(y, x, d, p) -> nothing` として定義します。

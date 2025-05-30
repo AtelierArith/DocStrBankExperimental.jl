@@ -3,7 +3,7 @@ pick(fig/ax/scene, x, y[, range])
 pick(fig/ax/scene, xy::VecLike[, range])
 ```
 
-与えられたピクセル位置 `xy = Vec(x, y)` の下にあるプロットと要素インデックスを返します。`range` が指定されている場合、`range` の距離までの最も近いプロットが返されます。
+与えられたピクセル位置 `xy = Vec(x, y)` の下にあるプロットと要素インデックスを返します。`range` が指定されている場合、`range` の距離内で最も近いプロットが返されます。
 
 この関数によって返される `plot` は常に原始的なプロットであり、他のプロットタイプで構成されていないものです。
 
@@ -17,4 +17,4 @@ pick(fig/ax/scene, xy::VecLike[, range])
   * `mesh` の場合、選択された三角形面の最大頂点インデックスです。
   * `volume` の場合、常に 0 です。
 
-関連情報: `pick_sorted`
+参照: `pick_sorted`

@@ -60,7 +60,7 @@ LOBSTER(; grid::AbstractGrid{FT},
   * `light_attenuation_model`: 利用可能な光の減衰を統合する光減衰モデル
   * `sediment_model`: `BiogeochemicalSediment`のためのスロット
   * `carbonates`, `oxygen`, および `variable_redfield`: 炭酸塩化学および/または酸素化学および/または可変レッドフィールド比の溶解および粒子状有機物のモデルを含める
-  * `sinking_speed`: 定数沈降の名前付きタプル、沈降する任意のトレーサーのフィールド（すなわち `ZFaceField(...)`）のためのフィールド（沈降速度は正であることが慣例ですが、フィールドは通常の下向きが負であることに従う必要があります）
+  * `sinking_speed`: 定数沈降の名前付きタプル、沈降する任意のトレーサーのフィールド（すなわち `ZFaceField(...)`）のためのもの（沈降速度は正であることが慣例ですが、フィールドは通常の下向きが負であることに従う必要があります）
   * `open_bottom`: トレーサーがドメインを離れるのを防ぐために、沈降速度を底で滑らかにゼロにするべきか
   * `scale_negatives`: 負のトレーサーをスケールしますか？
   * `particles`: `BiogeochemicalParticles`のためのスロット

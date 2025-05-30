@@ -15,7 +15,7 @@ anova(<models>...; test::Type{<: GoodnessOfFit})
     5. `TableRegressionModel{<: FixedEffectModel}`は`MixedAnova.lfe`によってフィッティングされます。
 
     複数のモデルが提供される場合、それらはネストされている必要があり、最後のモデルが最も飽和しています。
-  * `test`: 適合度のための検定統計量。利用可能な検定は[`LikelihoodRatioTest`](@ref)（[`LRT`](@ref））および[`FTest`](@ref)です。デフォルトはモデルタイプに基づいています。
+  * `test`: 適合度のための検定統計量。利用可能な検定は[`LikelihoodRatioTest`](@ref)（[`LRT`](@ref））と[`FTest`](@ref)です。デフォルトはモデルタイプに基づいています。
 
     1. `TableRegressionModel{<: LinearModel}`: `FTest`。
     2. `TableRegressionModel{<: GeneralizedLinearModel}`: 分布関数に基づいており、`canonicalgoodnessoffit`を参照してください。

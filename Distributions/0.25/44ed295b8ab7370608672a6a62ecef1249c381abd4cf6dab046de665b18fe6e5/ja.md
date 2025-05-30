@@ -23,8 +23,8 @@ SkewedExponentialPower(μ, σ, p)     # SEPDは位置μ、スケールσ、形�
 SkewedExponentialPower(μ, σ)        # SEPDは位置μ、スケールσ、形状2、歪度0.5（正規分布）
 SkewedExponentialPower(μ)           # SEPDは位置μ、スケール1、形状2、歪度0.5（正規分布）
 
-params(d)       # パラメータを取得します、すなわち (μ, σ, p, α)
-shape(d)        # 形状パラメータを取得します、すなわち p
-location(d)     # 位置パラメータを取得します、すなわち μ
-scale(d)        # スケールパラメータを取得します、すなわち σ
+params(d)       # パラメータを取得、すなわち (μ, σ, p, α)
+shape(d)        # 形状パラメータを取得、すなわち p
+location(d)     # 位置パラメータを取得、すなわち μ
+scale(d)        # スケールパラメータを取得、すなわち σ
 ```

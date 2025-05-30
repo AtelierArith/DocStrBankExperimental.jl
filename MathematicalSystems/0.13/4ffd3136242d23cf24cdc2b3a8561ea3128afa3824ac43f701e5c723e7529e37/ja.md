@@ -2,7 +2,7 @@
 SecondOrderConstrainedDiscreteSystem
 ```
 
-離散時間制約付き二次系の形式：
+離散時間制約二次系の形式：
 
 $$
     Mx_{k+2} + Cx_{k} + f_i(x_k) = f_e(t_k) \forall k, x_k ∈ X, f_e(t_k) ∈ U

@@ -8,5 +8,5 @@ CellRangeColumns <: AbstractCellRange
 
   * `domain`
   * `operatorID`
-  * `indices`: 任意の順序で全セルを反復するイテレータ
+  * `indices`: 任意の順序で全てのセルを反復するイテレータ
   * `columns`: 列を反復するイテレータ: columns[n] は、セルが上から下に順序付けられた Pair icol=>cells を返します

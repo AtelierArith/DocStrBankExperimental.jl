@@ -12,7 +12,7 @@ create_planar_mvf(lc::LefschetzComplex, coords::Vector{Vector{Float64}}, vf)
   * `create_simplicial_rectangle`
   * `create_simplicial_delaunay`
 
-各場合において、提供された座標ベクトルは、変換関数 `convert_planar_coordinates` を使用して正しいバウンディングボックスの値に変換できます。
+各ケースにおいて、提供された座標ベクトルは、変換関数 `convert_planar_coordinates` を使用して正しいバウンディングボックスの値に変換できます。
 
 # 例 1
 
@@ -95,4 +95,4 @@ fname2 = "morse_test2.pdf"
 plot_planar_cubical_morse(lc2, fname2, cm2.morse, pv=true)
 ```
 
-この場合、3つのモース集合が得られます：1つは安定平衡、1つは不安定周期軌道、最後の1つは安定周期軌道です。
+この場合、3つのモース集合が得られます：1つは安定平衡、1つは不安定周期軌道、最後の1つは安定周期軌道です。 ```
